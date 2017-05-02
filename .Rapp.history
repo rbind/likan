@@ -1,3977 +1,3086 @@
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-M <- mean(sample)#
-n <- length(sample)#
-df <- n - 1#
-#
-SSE <- sum ((sample - M) ^ 2)#
-SSR <- n * (M - mu) ^ 2#
-SST <- sum ((sample - mu) ^ 2)#
-#
-sd <- sqrt (SSE / df)#
-se <- sd / sqrt(n)#
-#
-t <- (M - mu) / se#
-#
-t^2 / (t^2 + df)#
-#
-SSR / SST#
-#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135"#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 2)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample) / sqrt(n)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample) / sqrt(n)))#
-)#
-text(#
-  x = 10, #
-  y = 1.5, #
-  label = bquote(italic(mu) == 10), #
-  adj = -0.1#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-M <- mean(sample)#
-n <- length(sample)#
-df <- n - 1#
-#
-SSE <- sum ((sample - M) ^ 2)#
-SSR <- n * (M - mu) ^ 2#
-SST <- sum ((sample - mu) ^ 2)#
-#
-sd <- sqrt (SSE / df)#
-se <- sd / sqrt(n)#
-#
-t <- (M - mu) / se#
-#
-t^2 / (t^2 + df)#
-#
-SSR / SST#
-#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135"#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.5)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample) / sqrt(n)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample) / sqrt(n)))#
-)#
-text(#
-  x = 10, #
-  y = 1.5, #
-  label = bquote(italic(mu) == 10), #
-  adj = -0.1#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-M <- mean(sample)#
-n <- length(sample)#
-df <- n - 1#
-#
-SSE <- sum ((sample - M) ^ 2)#
-SSR <- n * (M - mu) ^ 2#
-SST <- sum ((sample - mu) ^ 2)#
-#
-sd <- sqrt (SSE / df)#
-se <- sd / sqrt(n)#
-#
-t <- (M - mu) / se#
-#
-t^2 / (t^2 + df)#
-#
-SSR / SST#
-#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135"#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample) / sqrt(n)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample) / sqrt(n)))#
-)#
-text(#
-  x = 10, #
-  y = 1.5, #
-  label = bquote(italic(mu) == 10), #
-  adj = -0.1#
-)
-?text
-80/255
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-plot(t, den, type = "l")
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-qt(0.1, 8, lower.tail = FALSE)#
-plot(t, den, type = "l")
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-#
-plot(t, den, type = "l")#
-abline(v = c(low, high))
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-#
-plot(t, den, type = "l")#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  )#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "red"#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i",#
-  col = "CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "red"#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i",#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "red"#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i",#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),border="white",#
-  col = "red"#
-)
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i",#
-  col = "CF232A"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "red",#
-  border= "white"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i",#
-  col = "#CF232A"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "red",#
-  border= "white"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i",#
-  col = "#CF232A"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-?polygon
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i",#
-  col = "#CF232A"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= NA#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-?polygon
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = t, #
-  y = den, #
-  type = "l",#
-  yaxs = "i",#
-  col = "#CF232A", lwd =2#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= NA#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-?par
-?plot
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)*1.1),#
-  yaxs = "i"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)*1.01),#
-  yaxs = "i"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)*1.01), axex="a",#
-  yaxs = "i"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-?axes
-?plot
-abline(h=0)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  bty = "l"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-?par
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(c(1,2))#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, 8)#
-high <- qt(0.1, 8, lower.tail = FALSE)#
-low <- qt(0.1, 8, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, 8),#
-    dt(seq, 8),#
-    dt(high, 8),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)
-?text
-alpha <- 0.5#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(.(1-alpha))#
-)
-alpha <- 0.1#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(.(1-alpha))#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(.(1-alpha))#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(middle ~.(1-alpha) ~ of t distribuion)#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(middle ~.(1-alpha))#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle ~.(1-alpha))#
-)
-?bquote
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle .(1-alpha))#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle ~ .(1-alpha))#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle ~ .(1-alpha) ~)#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle ~ .(1-alpha) MM)#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle ~ .(1-alpha)~~ MM)#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle ~ .(1-alpha) ~~ of t distribution)#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle ~ .(1-alpha) ~~ oftdistribution)#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote(Middle ~ .(1-alpha) ~~ "of t distribution")#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote("Middle" ~ .(1-alpha) ~~ "of t distribution")#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote("Middle" ~ .(1-alpha) * 100 ~~ "% of t distribution")#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /2,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)
-text(x = high, labels = high)
-text(x = high, y=0.1, labels = high)
-?text
-text(x = high, y=0.1, labels = high, adj = 0.5)
-text(x = high, y=0.1, labels = high, adj = 1)
-text(x = high, y=0.1, labels = high, adj = 0)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-text(#
-  x = high, #
-  y = 0.1, #
-  labels = high, #
-  adj = 0#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="i")#
-text(#
-  x = high, #
-  y = 0.1, #
-  labels = highh, #
-  adj = 0#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = 0.1, #
-  labels = highh, #
-  adj = 0#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = 0.1, #
-  labels = bquote(t == .(highh)), #
-  adj = 0#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = 0.1, #
-  labels = bquote(t == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = 0.1, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /6, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /8, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /10, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of" ~~ italic(t) ~~ "distribution")#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-5, 5, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-5, 5),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-alpha <- 0.2#
-df <- 8#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp()
-pp(df = 10)
-pp(df = 100)
-pp(df = 1000)
-pp(alpha = 0.1, df = 1000)
-pp(alpha = 0.1, df = 10)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = "Frqeuency"#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp(alpha = 0.1, df = 10)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = "Frqeuency",#
-  font.lab = 2#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp(alpha = 0.1, df = 10)
-t.test()
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = "Frqeuency",#
-  font.lab = 2#
-)#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp()
-pp(tail = 1)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = "Frqeuency",#
-  font.lab = 2#
-)#
-if (tail == 2){#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-}#
-axis(1)#
-axis(2)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp(tail = 1)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = "Frqeuency",#
-  font.lab = 2#
-)#
-if (tail == 2){#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-}#
-axis(1)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-if (tail == 2){#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-}#
-highh <- formatC(high, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp(tail = 1)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = NULL,#
-  font.lab = 2#
-)#
-if (tail == 2){#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-}#
-axis(1)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-if (tail == 2){#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-}#
-highh <- ifelse(tail == 2, high, highs)#
-highh <- formatC(highh, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp(tail = 1)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = NULL,#
-  font.lab = 2#
-)#
-if (tail == 2){#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-}#
-axis(1)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-if (tail == 2){#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-}#
-highh <- ifelse(tail == 2, high, highs)#
-highh <- formatC(highh, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = NULL,#
-  font.lab = 2#
-)#
-if (tail == 2){#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-}#
-axis(1)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-if (tail == 2){#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-}#
-highh <- ifelse(tail == 2, high, highs)#
-highh <- formatC(highh, digits = 3, format="f")#
-text(#
-  x = highh, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp(tail = 1)
-pp(tail = 2)
-pp(tail = 1)
-pp(alpha = 0.01, tail = 1)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = "",#
-  font.lab = 2#
-)#
-if (tail == 2){#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-}#
-axis(1)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-if (tail == 2){#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-}#
-highh <- ifelse(tail == 2, high, highs)#
-highh <- formatC(highh, digits = 3, format="f")#
-text(#
-  x = high, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp(alpha = 0.01, tail = 1)
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = "",#
-  font.lab = 2#
-)#
-if (tail == 2){#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-}#
-axis(1)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-if (tail == 2){#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-}#
-highh <- ifelse(tail == 2, high, highs)#
-highh <- formatC(highh, digits = 3, format="f")#
-text(#
-  x = highh, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)		#
-}
-pp(alpha = 0.01, tail = 1)
-pp(alpha = 0.05, tail = 1)
-pp(alpha = 0.1, tail = 1)
-mtext()
-mtext(aa)
-mtext("aa")
-mtext(bquote(alpha == .(alpha)))
-mtext(paste(bquote(alpha == .(alpha)), "mm"))
-pp(alpha = 0.1, tail = 1)
-mtext(paste(bquote(alpha == .(alpha)), "mm"))
-pp(alpha = 0.1, tail = 1)
-mtext(bquote(alpha == .(alpha) ~~ ", df" == .(df) ))
-mtext(bquote(alpha == .(alpha)~~ ", df" == .(df) ))
-pp(alpha = 0.1, tail = 1)
-mtext(bquote(alpha == .(alpha)~~", df" == .(df) ))
-pp <- function(#
-  alpha = 0.2,#
-  df = 8, #
-  tail = 2#
-)#
-{#
-t <- seq (-4, 4, by = 0.01)#
-den <- dt(t, df)#
-low <- qt(alpha / 2, df, lower.tail = TRUE)#
-high <- qt(alpha / 2, df, lower.tail = FALSE)#
-highs <- qt(alpha, df, lower.tail = FALSE)#
-seq <- seq(low, high, by = 0.01)#
-plot(#
-  x = NULL, #
-  y = NULL, #
-  xlim = c(-4, 4),#
-  ylim = c(0, max(den)),#
-  yaxs = "i",#
-  xaxs = "i",#
-  bty = "l",#
-  axes = F,#
-  xlab = "t value",#
-  ylab = "",#
-  font.lab = 2#
-)#
-if (tail == 2){#
-polygon(#
-  x = c(#
-    low, #
-    low,#
-    seq,#
-    high,#
-    high#
-  ),#
-  y = c(#
-    0,#
-    dt(low, df),#
-    dt(seq, df),#
-    dt(high, df),#
-    0#
-  ),#
-  col = "#f4cdba",#
-  border= "white"#
-)#
-}#
-axis(1)#
-lines(#
-  x = t,#
-  y = den,#
-  col = "#CF232A"#
-)#
-if (tail == 2){#
-segments(#
-  x0 = c(low, high),#
-  y0 = c(0, 0),#
-  x1 = c(low, high),#
-  y1 = c(0.25, 0.25)#
-)		#
-} else {#
-segments(#
-  x0 = c(highs),#
-  y0 = c(0),#
-  x1 = c(highs),#
-  y1 = c(0.25, 0.25)#
-)#
-}#
-if (tail == 2){#
-text(#
-  x = 0,#
-  y = dt(0, df) /3,#
-  labels = bquote(#
-    "Middle" #
-    ~ .(100 - alpha * 100) #
-    ~~ "% of" #
-    ~~ italic(t) #
-    ~~ "distribution"#
-  )#
-)#
-}#
-highh <- ifelse(tail == 2, high, highs)#
-highh <- formatC(highh, digits = 3, format="f")#
-text(#
-  x = highh, #
-  y = dt(0, df) /2, #
-  labels = bquote(italic(t) == .(highh)), #
-  adj = -0.05#
-)#
-mtext(bquote(alpha == .(alpha)~~", df" == .(df) ))		#
-}
-pp(alpha = 0.1, tail = 1)
-pp(alpha = 0.1, tail = 2)
-pp(alpha = 0.2, tail = 2)
-pp(alpha = 0.2, tail = 1)
-pp(alpha = 0.01, tail = 1)
-qnorm(0.5+0.3)
-qnorm(0.5+0.25)
-license()
-demo()
-Japanese
-graphics::Japanese
-library(graohics)
-library(graphics)
-Japanese
-persp()
-persp
-?UseMethod
-help()
-dd<-read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
-?read.table
-dd<-read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
-library(xlsx)
-?read.xlsx
-dd<-read.table("~/Desktop/data/Experiment1Chinese.xlsx", sheeetIndex=1)
-dd<-read.table("~/Desktop/data/Experiment1Chinese.xlsx", 1)
-dd<-read.table("~/Desktop/data/Experiment1Chinese.xlsx", "sheet1")
-str(dd)
-dd<-read.xlsx("~/Desktop/data/Experiment1Chinese.xlsx", "sheet1")
-dd<-read.xlsx("~/Desktop/data/Experiment1Chinese.xlsx", "Sheet1")
-str(dd)
-dd<-read.xlsx("~/Desktop/data/data.xlsx", "Sheet1")
-str(dd)
-anova(FFD1~B, data=dd)
-?anova
-lm(FFD1~B, data=dd)
-?anova
-?aov
-aov(yield ~ block + N * P + K, npk)
-?ave
-?avo
-?t.test
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)
-t.test(sample, mu = 10)
-args(t.test)
-defaults(t.test)
-default(t.test)
-args(hist)
-args(t.test.default)
-?t.test
-args(t.test.default)
-args(t.test.formula)
-tt<-t.test(sample, mu = 10)
-str(tt)
-tt$ststistic
-tt$parameter
-tt$df
-tt$conf.int
-tt$p.value
-t.test(sample)
-t.test(sample, mu = 10)
-?pt
-pt(3, 8, lower.tail=FALSE)
-pt(3, 8, lower.tail=TRUE)
-pt(3, 8, lower.tail=FALSE) * 2
-tt
-anova(tt)
-methods(anova)
-methods(t.test)
-t.test.default
-methods(t.test.default)
-methods(t.test.default*)
-methods("t.test.default*")
-methods("t.test.default")
-methods(t.test.default)
-methods(t.test)
-methods(class=t.test)
-?t.test
-13-1.397
-13+1.397
-methods("Math")
-tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
-tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T, na.strings=c("","NA"))
-tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
-tt <- read.table("~/Desktop/data/Experiment1Chinese.csv", header=T)
-str(tt)
-tt
-tt <- read.table("~/Desktop/data/Experiment1Chinese.csv", header=T)
-tt
-tt <- read.table("~/Desktop/data/Experiment1Chinese.csv", header=T, sep = ",")
-tt
-str(tt)
-?t.test
-matrix(1:5, nrow = 2)
-matrix(1:6, nrow = 2)
-n<-matrix(1:6, nrow = 2)
-n<-matrix(1:6, nrow = 2, dimnames= c("C", "C"))
-n<-matrix(1:6, nrow = 2, dimnames= c("C", "D"))
-n<-matrix(1:6, nrow = 2, dimnames= list("C", "D"))
-n<-matrix(1:6, nrow = 3, dimnames= list("C", "D"))
-matrix(1:6, nrow = 3)
-n<-matrix(1:6, nrow = 3, dimnames= list("C", "D"))
-?matrix
-n<-matrix(1:6, nrow = 3, dimnames= list(c("A1", "A2", "A3"), c("B1", "B2")))
-n
-?matrix
-dd <-1:6
-n<-matrix(data=dd, nrow = 3, dimnames= list(c("A1", "A2", "A3"), c("B1", "B2")))
-n
-matrix(data=dd, nrow = 2, dimnames= list(c("A1", "A2", "A3"), c("B1", "B2")))
-matrix(data=dd, nrow = 2, dimnames= list(row=c("A1", "A2", "A3"), c("B1", "B2")))
-matrix(data=dd, nrow = 3, dimnames= list(row=c("A1", "A2", "A3"), c("B1", "B2")))
-matrix(data=dd, nrow = 3, dimnames= list(row=c("A1", "A2", "A3"), column=c("B1", "B2")))
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-t.test(wlr, dlr, var.equal = TRUE)
-var.test(wlr, dlr)
+pf(qf(pp,k,df),k,df)
+qf(pp, k, df)
+qq<-qf(pp, k, df)
+qq
+qq<-qf(pp, k, df)
+p <- pf(qq, k, df)
+p
 ?var.test
+var.test(wlr, dlr, alternative="less")
+var.test(wlr, dlr, alternative="")
+var.test(wlr, dlr, alternative="greater")
+pf(Fmax, k, df)
+?var.test
+pf(Fmax, df, df)
+install.packages("SuppDists")
+maxFratio()
+library(SuppDists)
+maxFratio(Fmax)
+maxFratio()
+Fmax
+df1
+df2
+pf(Fmax, df1, df2)
+pf(Fmax, df1, df2, lower.tail = FALSE)
+pf(Fmax, df1, df2) *2
+?Suppdists
+?SuppDists
+?maxFratio
+pmaxFratio(Fmax, 2, df1)
+pmaxFratio(Fmax, 2, df1,lower.tail=F)
+Fmax
+qmaxFratio(Fmax, 2, df1,lower.tail=F)
+qmaxFratio(Fmax, 2, df1,lower.tail=T)
+pmaxFratio(Fmax, 2, df1,lower.tail=T)
+pmaxFratio(Fmax, df1, 2,lower.tail=T)
+pmaxFratio(Fmax, df1, 2)
+pmaxFratio(Fmax, df1, 2, lower.tail=FALSE)
+pmaxFratio(1.35, 9, 2, lower.tail=FALSE)
+pmaxFratio(1.35, 9, 2, lower.tail=TRUE)
+pmaxFratio(1.35, 9, 2)
+2*pmaxFratio(1.35, 9, 2)
+?var.test
+?var.test
+?t.test
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)
+hist(wlr, breaks = 3.5:16.5)
+?hist
+hist(dlr, breaks = 3.5:16.5, add = TRUE)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = "red",#
+   xaxs = "i"#
+)#
+hist(dlr, breaks = 3.5:16.5, add = TRUE)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = "red",#
+   xaxs = "i"#
+)#
+hist(dlr, breaks = 3.5:16.5, add = TRUE, col = "green")
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = "red", alpha = 0.5,#
+   xaxs = "i"#
+)#
+hist(dlr, breaks = 3.5:16.5, add = TRUE, col = "green")
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("f8cea2", alpha = 0.5),#
+   xaxs = "i"#
+)#
+hist(dlr, breaks = 3.5:16.5, add = TRUE)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.5),#
+   xaxs = "i"#
+)#
+hist(dlr, breaks = 3.5:16.5, add = TRUE)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.5),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 3.5:16.5, #
+   col = col2alpha("#a0d5cf", alpha = 0.5),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 3.5:16.5, #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 1),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 3.5:16.5, #
+   col = col2alpha("#a0d5cf", alpha = 1),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 3.5:16.5, #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 3.5:16.5,#
+   xlim = c(2, 18),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 3.5:16.5, #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 3.5:16.5, #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 2.5:17.5, #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 2.5:17.5, #
+   xlim = c(2, 18),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 2.5:17.5,#
+   xlim = c(2, 18),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 2.5:17.5, #
+   xlim = c(2, 18),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+hist(#
+   x = wlr, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dlr, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+library(ggplot2)
+ggplot()
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(wlr = wlr, dlr = dlr)
+dd
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 10), rep("dlr", 10)))
+length(wlr)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))
+dd
+hist(#
+   x = dd, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 2),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[, dd$condition == "wlr"]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+dd[, condition == "wlr"]$score
+dd
+dd[, dd$condition == "wlr"]$score
+dd[, dd$condition == "wlr"]
+str(dd)
+dd[, condition == "wlr"]
+dd[, condition == "wlr"]
+dd[, condition == "wlr"]
+dd[condition == "wlr"]
+dd$condition
+dd[dd$condition == "wlr"]
+dd[dd$condition == "wlr",]
+dd[dd$condition == "wlr",]$score
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   add = TRUE#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   add = TRUE#
+)#
+hist(#
+   x = dd[dd$condition == "dlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = col2alpha("#f8cea2", alpha = 0.8),#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = col2alpha("#a0d5cf", alpha = 0.8),#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#f8cea2",#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = "#a0d5cf",#
+   add = TRUE#
+)
+col2alpha <- function(col, alpha) {#
+  col_rgb <- col2rgb(col)/255#
+  rgb(col_rgb[1], col_rgb[2], col_rgb[3], alpha = alpha)#
+}#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   xaxs = "i"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 2.5:17.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   xaxs = "i",#
+   main = ""#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 4:16#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 2.5:17.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   xaxs = "i",#
+   main = ""#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 4:16#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   xaxs = "i",#
+   main = ""#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 4:16#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   xaxs = "i",#
+   main = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 4:16#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   xaxs = "i",#
+   main = "",#
+   ylab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 4:16#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 4:16#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5, #
+   xlim = c(3, 17),   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+?axis
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+?axis
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 1, 11.5, 1,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)
+segments(#
+   10.5, 1, 11.5, 1,#
+   col = "#009f9b"#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd$score, #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd$condition == "wlr",]$score, #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+dd
+dd$score
+dd[, "score"]
+d[dd[, "condition"] == "wlr",][, "score"]
+dd[dd[, "condition"] == "wlr",][, "score"]
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   topright,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+?legend
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+?legend(wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 2,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+))
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 2,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 6,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 20,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 2,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   border = c("#009f9b", "#b78135"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 15,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10, border="white",#
+   col = c("#a0d5cf", "#f8cea2"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10, box.col = "white",#
+   col = c("#a0d5cf", "#f8cea2"),#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   box.col = "white",#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mar = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   box.col = "white",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   box.col = "white",#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   box.col = "white",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   box.col = "white",#
+   legend = c("Well lit",  "Dimly lit")#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   box.col = "white",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+?legend
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 5.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 5.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 5.5:14.5,#
+   xlim = c(4, 15),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+range(c(wlr,dlr))
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 5.5:14.5,#
+   xlim = c(4, 15),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 5.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 5.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 5.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)
+dd
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 4.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 4.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 4.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#a0d5cf", "#f8cea2"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 4.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 4.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#f8cea2", "#a0d5cf"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 4.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 4.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "Frequency",#
+   xlab = "Scores",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+axis(#
+   side = 2,#
+   at = 1:3#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#f8cea2", "#a0d5cf"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 4.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "",#
+   xlab = "",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 4.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "Frequency",#
+   xlab = "Scores",#
+   font.lab = 2,#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+axis(#
+   side = 2,#
+   at = 0:3#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#f8cea2", "#a0d5cf"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 4.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "Frequency",#
+   xlab = "Scores",#
+   font.lab = 2,#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+axis(#
+   side = 2,#
+   at = 0:3#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 4.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "Frequency",#
+   xlab = "Scores",#
+   font.lab = 2,#
+   xaxs = "i",   #
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+axis(#
+   side = 2,#
+   at = 0:3#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#f8cea2", "#a0d5cf"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 4.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "Frequency",#
+   xlab = "Scores",#
+   font.lab = 2,#
+   xaxs = "i",#
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+axis(#
+   side = 2,#
+   at = 0:3#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 4.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+par(mfrow = c(2, 1))#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 3.5:16.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "Frequency",#
+   xlab = "Scores",#
+   font.lab = 2,#
+   xaxs = "i",  #
+   yaxs = "i",       #
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+axis(#
+   side = 2,#
+   at = 0:3#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   10.5, 2, 11.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 3.5:16.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)#
+legend(#
+   "topright",#
+   lwd = 10,#
+   col = c("#f8cea2", "#a0d5cf"),#
+   bty = "n",#
+   legend = c("Well lit",  "Dimly lit")#
+)#
+#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10) + 2#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11) - 2#
+#
+dd<- data.frame(score = c(wlr, dlr), condition = c(rep("wlr", 8), rep("dlr", 8)))#
+hist(#
+   x = dd[, "score"], #
+   breaks = 4.5:14.5,#
+   xlim = c(3, 17),#
+   ylim = c(0, 3),#
+   col = "#a0d5cf",#
+   border = "#009f9b",#
+   main = "",#
+   ylab = "Frequency",#
+   xlab = "Scores",#
+   font.lab = 2,#
+   xaxs = "i",#
+   yaxs = "i",          #
+   axes = FALSE#
+)#
+axis(#
+   side = 1,#
+   at = 3:17#
+)#
+axis(#
+   side = 2,#
+   at = 0:3#
+)#
+abline(v = 10, lty = 2)#
+segments(#
+   8.5, 2, 9.5, 2,#
+   col = "#009f9b"#
+)#
+hist(#
+   x = dd[dd[, "condition"] == "wlr",][, "score"], #
+   breaks = 4.5:14.5,   #
+   col = "#f8cea2",#
+   border = "#b78135",#
+   add = TRUE#
+)
+wlr
+dlr
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n1 <- length(wlr)#
+n2 <- length(dlr)#
+df1 <- n1 - 1#
+df2 <- n2 - 1#
+df <- df1 + df2#
+#
+SS1 <- sum((wlr)^2) - (sum(wlr))^2 / n1#
+SS2 <- sum((dlr)^2) - (sum(dlr))^2 / n2#
+#
+var1 <- SS1 / df1#
+var2 <- SS2 / df2
+var1
+var2
+SS1
+SS2
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n1 <- length(wlr)#
+n2 <- length(dlr)#
+df1 <- n1 - 1#
+df2 <- n2 - 1#
+df <- df1 + df2#
+#
+SS1 <- sum((wlr)^2) - (sum(wlr))^2 / n1#
+SS2 <- sum((dlr)^2) - (sum(dlr))^2 / n2#
+#
+var1 <- SS1 / df1#
+var2 <- SS2 / df2
+sum((c(wlr, dlr))^2) - (sum(c(wlr, dlr)))^2 / (n1+n2)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+wd <- c(wlr, dlr)#
+nn <- length(wd)#
+#
+SS1 <- sum((wd)^2) - (sum(wd))^2 / nn
+SS1
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+wdo <- c(wlr, dlr)#
+wdn <- c(wlr +2, wlr -2)
+wdo
+wdn
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+#
+wdo <- c(wlr, dlr)#
+wdn <- c(wlr +2, wlr -2)#
+nn <- length(wd)#
+#
+SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
+SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn
+SST
+SSE
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+wdo <- c(wlr, dlr)#
+#
+wdn <- c(wlr +2, dlr -2)#
+nn <- length(wd)#
+#
+SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
+SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn
+SSE
+t.test(wlr, dlr)
+t.test(wlr, dlr)$t
+t.test(wlr, dlr)$
+,
+(8-10)^2 * 8 + (12-8) ^2 * 8
+(8-10)^2 * 8 + (12-10) ^2 * 8
+?power.t.test
+power.t.test(n = 20, delta = 1)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+n1 <- length(wlr)#
+M1 <- mean(wlr)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n2 <- length(dlr)#
+M2 <- mean(dlr)#
+#
+wdo <- c(wlr, dlr)#
+nn <- n1 + n2#
+M0 <- mean(wdo)#
+#
+wdn <- c(wlr + 2, dlr -2)#
+#
+SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
+SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn#
+SSR <- n1 * (M1 - M0) ^ 2 +  n2 * (M2 - M0) ^2
+SSR
+SSE
+SST
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+n1 <- length(wlr)#
+M1 <- mean(wlr)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n2 <- length(dlr)#
+M2 <- mean(dlr)#
+#
+wdo <- c(wlr, dlr)#
+nn <- n1 + n2#
+M0 <- mean(wdo)#
+#
+diff1 <- M1 - M0#
+diff2 <- M2 - M0
+diff1
+diff2
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+n1 <- length(wlr)#
+M1 <- mean(wlr)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n2 <- length(dlr)#
+M2 <- mean(dlr)#
+#
+wdo <- c(wlr, dlr)#
+nn <- n1 + n2#
+M0 <- mean(wdo)#
+#
+diff1 <- M1 - M0#
+diff2 <- M2 - M0#
+#
+wdn <- c(wlr - diff1, dlr - diff2)#
+#
+SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
+SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn#
+SSR <- n1 * (M1 - M0) ^ 2 +  n2 * (M2 - M0) ^2
+SST
+SSE
+SSR
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+n1 <- length(wlr)#
+M1 <- mean(wlr)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n2 <- length(dlr)#
+M2 <- mean(dlr)#
+#
+wdo <- c(wlr, dlr)#
+nn <- n1 + n2#
+M0 <- mean(wdo)#
+#
+diff1 <- M1 - M0#
+diff2 <- M2 - M0#
+#
+wdn <- c(wlr - diff1, dlr - diff2)#
+#
+SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
+SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn#
+SSR <- n1 * diff1 ^ 2 +  n2 * diff2 ^2
+SSR
+SSE
+SST
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+n1 <- length(wlr)#
+df1 <- n1 -1#
+M1 <- mean(wlr)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n2 <- length(dlr)#
+df2 <- n2 - 1#
+M2 <- mean(dlr)#
+#
+sp2 <- var(wlr) * df1 + var(dlr) * df2 / (df1 + df2)#
+se <- sqrt(sp2)
+se
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+n1 <- length(wlr)#
+df1 <- n1 -1#
+M1 <- mean(wlr)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n2 <- length(dlr)#
+df2 <- n2 - 1#
+M2 <- mean(dlr)#
+#
+sp2 <- (var(wlr) * df1 + var(dlr) * df2) / (df1 + df2)#
+se <- sqrt(sp2)
+se
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+n1 <- length(wlr)#
+df1 <- n1 -1#
+M1 <- mean(wlr)#
+SS1 <- sum(wlr ^ 2) - ( sum(wlr)) ^ 2 / n1#
+#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n2 <- length(dlr)#
+df2 <- n2 - 1#
+M2 <- mean(dlr)#
+SS2 <- sum(dlr ^ 2) - ( sum(dlr)) ^ 2 / n1#
+#
+sp2 <- (SS1 + SS2) / (df1 + df2)
+sp2
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+n1 <- length(wlr)#
+df1 <- n1 -1#
+M1 <- mean(wlr)#
+SS1 <- sum(wlr ^ 2) - ( sum(wlr)) ^ 2 / n1#
+#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+n2 <- length(dlr)#
+df2 <- n2 - 1#
+M2 <- mean(dlr)#
+SS2 <- sum(dlr ^ 2) - ( sum(dlr)) ^ 2 / n1#
+#
+sp2 <- (SS1 + SS2) / (df1 + df2)#
+sp2 <- (var(wlr) * df1 + var(dlr) * df2) / (df1 + df2)#
+se <- sqrt(sp2)#
+#
+cohen_d <- (M1 - M2) / se
+cohen_d
+t.test(wlr, dlr, var.equal = TRUE)
+tt<-t.test(wlr, dlr, var.equal = TRUE)
+str(tt)
+tt$statistic
+tt$parameter
+(tt$statistic)^2 / ((tt$statistic)^2 + tt$parameter)
+test <- t.test(wlr, dlr, var.equal = TRUE)#
+t_value <- test[["statistic"]]#
+df <- test[["parameter"]]
+df
+t_value
+str(df)
+attr(df) <- NULL
+attributes(df) <- NULL
+df
+str(df)
+test <- t.test(wlr, dlr, var.equal = TRUE)#
+t <- test[["statistic"]]#
+df <- test["parameter"]
+df
+test <- t.test(wlr, dlr, var.equal = TRUE)#
+t <- test[["statistic"]]#
+df <- test[[["parameter"]]]
+test <- t.test(wlr, dlr, var.equal = TRUE)#
+t <- test[["statistic"]]#
+df <- test[["parameter"]]
+ceiling(t)
+format(round(t, 2), nsmall = 2)
+round(t, 3)
 qt(0.05/2, df)
-qt(0.05/2, 14)
+test$conf.int
+qt(0.05 / 2, df)
+M1 - M2 + qt(0.05 / 2, df) * se
 ?t.test
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-t.test(wlr, dlr, var.equal = TRUE, )
 ?t.test
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-t.test(wlr, dlr, var.equal = TRUE, alternative="less")
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-t.test(wlr, dlr, var.equal = TRUE, alternative="greater")
-mean(wlr)
-mean(dlr)
-qt(0.05, 14)
-qt(0.01, 14)
+wlr <- c(6, 7, 7, 8, 8, 8, 9, 9, 10)#
+dlr <- c(11, 12, 12, 13, 13, 13, 14, 14, 15)
+wlr <- c(6, 7, 7, 8, 8, 8, 9, 9, 10)
+sd(wlr)
+?text()
+?text()
+trt1 <- c(6, 7, 7, 8, 8, 8, 9, 9, 10)#
+trt2 <- c(11, 12, 12, 13, 13, 13, 14, 14, 15)#
+sp2 <- (var(trt1) * (length(trt1) - 1) +#
+        var(trt2) * (length(trt2) - 1) #
+       ) /#
+       (length(trt1) - 1 + length(trt2) - 1)
+sp2
+trt1 <- c(6, 7, 7, 8, 8, 8, 9, 9, 10)#
+trt2 <- c(11, 12, 12, 13, 13, 13, 14, 14, 15)#
+sp2 <- (var(trt1) * (length(trt1) - 1) +#
+        var(trt2) * (length(trt2) - 1) #
+       ) /#
+       (length(trt1) - 1 + length(trt2) - 1)#
+se <- sqrt(sp2 / length(trt1) + sp2 / length(trt2))
+se
+5/se
+5/0.58
+wilcox.test(mpg ~ am, data=mtcars)
 options(servr.daemon = TRUE)#
 setwd("~/website/hugo")
-blogdown::new_post("social-discounting-and-distance-perception")
+blogdown::new_post(nonparametric-test, rmd=TRUE)
+blogdown::new_post("nonparametric-test", rmd=TRUE)
+options(servr.daemon = TRUE)#
+setwd("~/website/hugo")#
+blogdown::build_site(local = FALSE, method = "html")#
+blogdown::serve_site() #serve site
+options(servr.daemon = TRUE)#
+setwd("~/website/hugo")#
+blogdown::build_site(local = FALSE, method = "html")#
+blogdown::serve_site() #serve site
