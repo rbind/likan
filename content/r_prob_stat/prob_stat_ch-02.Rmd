@@ -1,0 +1,134 @@
+---
+title: "第1章、数据展示"
+author: "侃侃迩行"
+date: '2017-02-15'
+output:
+  blogdown::html_page:
+    toc: true
+---
+# 2.1. 什么是统计学
+# 2.2. 数据
+# 2.3. 定性数据
+
+## 2.3.1. Tables
+- vector
+```{r eval = TRUE, results = "hold"}
+Grades <- c("A", "D", "C", "D", "C", "C", "C", "C", "F", "B")
+Grades
+table(Grades)
+xtabs(~ Grades)
+table(Grades) / length(Grades) # Relative frequency table
+prop.table(table(Grades))
+```
+- data frame
+```{r eval = TRUE, results = "hold"}
+library(MASS)
+table(quine$Age)
+with(data = quine, table(Age))
+xtabs(~ Age, data = quine)
+```
+
+## 2.3.2. Barplots
+
+```{r label = "Figure_02_01", eval = TRUE, results = "hold"}
+opar <- par(no.readonly = TRUE) # read in current parameters
+par(mfrow=c(2, 2)) # change parameters
+barplot(xtabs( ~ Grades),
+        col = "gray40",
+        xlab = "Grades",
+        ylab = "Frequency"
+)
+barplot(prop.table(xtabs(~ Grades)),
+        col = "gray40",
+        xlab = "Grades",
+        ylab = "Relative Frequency"
+)
+barplot(xtabs(~ Age, data = quine),
+        col = "gray90",
+        xlab = "Age",
+        ylab = "Frequency"
+)
+barplot(prop.table(xtabs(~ Age, data = quine)),
+        col = "gray90",
+        xlab = "Age",
+        ylab = "Relative Frequency"
+)
+par(opar) # reset to original parameters
+```
+
+## 2.3.3. dotchart
+
+- 图2.2
+
+```{r label = "Figure_02_02", eval = TRUE, results = "hold", warning = FALSE}
+oldw <- getOption("warn")
+options(warn = -1)
+opar <- par(no.readonly = TRUE) # read in current parameters
+par(mfrow = c(1, 2))
+dotchart(xtabs( ~ Grades),
+         main = "Grades",
+         bg = "gray40",
+         xlim = c(0, 6)
+)
+dotchart(xtabs(~ Age, data = quine),
+        main = "Age",
+        bg = "gray60",
+        xlim = c(25, 50)
+)
+par(opar) # reset to original parameters
+options(warn = oldw)
+```
+- 图2.3
+
+```{r label = "Figure_02_03", eval = TRUE, results = "hold", warning = FALSE}
+oldw <- getOption("warn")
+options(warn = -1)
+opar <- par(no.readonly = TRUE) # read in current parameters
+par(mfrow = c(1, 2))
+TDM <- xtabs(Days ~ Age, data = quine)
+dotchart(TDM,
+         bg = "gray40",
+         xlab = "Total Days Missed",
+         xlim = c(400, 600)
+)
+ADM <- with (
+       data = quine,
+       tapply(Days, list(Age), mean)
+)
+dotchart(ADM,
+       xlab = "Avage Days Missed",
+       bg = "gray60",
+       xlim = c(10, 22)
+)
+par(opar) # reset to original parameters
+options(warn = oldw)
+```
+
+## 2.3.3. Pie charts
+
+```{r label = "Figure_02_04", eval = TRUE, results = "hold", warning = FALSE}
+opar <- par(no.readonly = TRUE) # read in current parameters
+par(mfrow = c(1, 2))
+GS <- gray(c(0.1, 0.4, 0.7, 0.8, 0.95)) # different grays
+pie(xtabs( ~ Grades, data = quine),
+    radius = 1,
+    col = GS
+)
+mtext(
+    "Grades",
+    side = 3,
+    cex = 1.25,
+    line = 1
+)
+pie(xtabs( ~ Age, data = quine),
+    radius = 1,
+    col = GS
+)
+mtext(
+    "Age",
+    side = 3,
+    cex = 1.25,
+    line = 1
+)
+par(opar) # reset to original parameters
+```

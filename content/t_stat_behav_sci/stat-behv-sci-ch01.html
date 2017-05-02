@@ -1,0 +1,166 @@
+---
+title: "Chapter 1. Introduction to Statistics"
+author: "Likan Zhan"
+date: '2017-03-08'
+slag: "ch01"
+output:
+  blogdown::html_page:
+    toc: true
+    fig_width: 12
+    fig_height: 8
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#wake-up-time-and-academic-performance">1. Wake-up time and academic performance</a></li>
+<li><a href="#the-sum-function-sum">2. The sum function: <span class="math inline">\(\sum\)</span></a></li>
+</ul>
+</div>
+<div id="wake-up-time-and-academic-performance" class="section level1">
+<h1>1. Wake-up time and academic performance</h1>
+<ul>
+<li>The data</li>
+</ul>
+<pre class="r"><code>library(xtable)
+Student &lt;- LETTERS[1 : 8]
+Wake_up_time &lt;- c(11, 9, 9, 12, 7, 10, 10, 8)
+Academic_Performance &lt;- c(2.4, 3.6, 3.2, 2.2, 3.8, 2.2, 3.0, 3.0)
+fig0104 &lt;- data.frame(Student, Wake_up_time, Academic_Performance)
+fig0104t &lt;- xtable(fig0104, digits = c(0, 0, 0, 1),
+                   align = rep(&quot;c&quot;, ncol(fig0104) + 1))
+print(fig0104t, include.rownames = FALSE, type = &#39;html&#39;)</code></pre>
+<!-- html table generated in R 3.3.3 by xtable 1.8-2 package -->
+<!-- Tue May  2 15:38:13 2017 -->
+<table border="1">
+<tr>
+<th>
+Student
+</th>
+<th>
+Wake_up_time
+</th>
+<th>
+Academic_Performance
+</th>
+</tr>
+<tr>
+<td align="center">
+A
+</td>
+<td align="center">
+11
+</td>
+<td align="center">
+2.4
+</td>
+</tr>
+<tr>
+<td align="center">
+B
+</td>
+<td align="center">
+9
+</td>
+<td align="center">
+3.6
+</td>
+</tr>
+<tr>
+<td align="center">
+C
+</td>
+<td align="center">
+9
+</td>
+<td align="center">
+3.2
+</td>
+</tr>
+<tr>
+<td align="center">
+D
+</td>
+<td align="center">
+12
+</td>
+<td align="center">
+2.2
+</td>
+</tr>
+<tr>
+<td align="center">
+E
+</td>
+<td align="center">
+7
+</td>
+<td align="center">
+3.8
+</td>
+</tr>
+<tr>
+<td align="center">
+F
+</td>
+<td align="center">
+10
+</td>
+<td align="center">
+2.2
+</td>
+</tr>
+<tr>
+<td align="center">
+G
+</td>
+<td align="center">
+10
+</td>
+<td align="center">
+3.0
+</td>
+</tr>
+<tr>
+<td align="center">
+H
+</td>
+<td align="center">
+8
+</td>
+<td align="center">
+3.0
+</td>
+</tr>
+</table>
+<ul>
+<li>Figure 1.4</li>
+</ul>
+<pre class="r"><code>plot(Academic_Performance ~ Wake_up_time,
+     data = fig0104,
+     xlab = &quot;Wake-up time&quot;, font.lab = 2,
+     ylab = &quot;Academic Performance&quot;,
+     col = &quot;red&quot;, pch = 19, cex = 1.5,
+     axes = FALSE, ylim = c(2, 4)
+     )
+axis(1, at = 6:12, tick = 6:12)
+axis(2, at = seq(1.8, 4, by = 0.2),
+     tick = seq(1.8, 4, by = 0.2))</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch01_files/figure-html/Figure_01_04-1.png" width="1152" /></p>
+</div>
+<div id="the-sum-function-sum" class="section level1">
+<h1>2. The sum function: <span class="math inline">\(\sum\)</span></h1>
+<pre class="r"><code>X &lt;- c(3, 1, 7, 4)
+S1 &lt;- sum(X)
+S2 &lt;- sum(X^2)
+S3 &lt;- (sum(X))^2
+S4 &lt;- sum(X - 1)
+S5 &lt;- sum((X - 1)^2)
+
+S1; S2; S3; S4; S5</code></pre>
+<pre><code>## [1] 15
+## [1] 75
+## [1] 225
+## [1] 11
+## [1] 49</code></pre>
+</div>

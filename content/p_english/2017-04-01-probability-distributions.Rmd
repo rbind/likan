@@ -1,0 +1,80 @@
+---
+title: "Probability Distributions in R"
+author: "Likan Zhan"
+date: '2017-04-01'
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+# 1. Introduction
+
+R has a number of built in functions for calculations involving probability distributions, both discrete and continuous, including the `binomial`, `normal`, `Poisson`, `geometric`, `gamma`, `beta`, and others we have seen.
+
+For each distribution, R has four primary functions. Each function has a one letter prefix followed by the root name of the function. The names make mnemonic sense for continuous random variables but are used in both cases. For example `dnorm` is the height of the density of a normal curve while `dbinom` returns the probability of an outcome of a binomial distribution. Here is a table of these commands.
+
+Prefix | Condinuous | Discrete
+-|-|-
+`d` | density | probability (pmf)
+`p` | probability (cdf) | probability (cdf)
+`q` | quantile | quantile
+`r` | random | random
+
+----
+
+Distribution | root
+-|-
+Binomial | `binom`
+Geometric | `geom`
+Hypergeometric|`hyper`
+Poisson | `pois`
+Normal | `norm`
+Gamma | `gamma`
+Beta | `beta`
+t | `t`
+F | `f`
+Chi-squre | `chisq`
+
+----
+
+# 2. normal distribution
+
+| Function | Purpose | Example |
+| --------|--------|-------- |
+| `dnorm(x, mean, sd)` | Probability Density Function (PDF) | `dnorm(0.1, 0, 1)` gives the density (height of the PDF) of the normal 0.1 with mean = 0 and sd = 1 |
+| `pnorm(q, mean, sd)` | Cumulative Distribution Function (CDF) | `pnorm(1.96, 0, 1)` gives the area under the standard normal curve to the left of 1.96, i.e., 0.975.|
+| `qnorm(q, mean, sd)` | Quantile Function - inverse of pnorm | `qnorm(0.975, 0, 1)` gives the value at which the CDF of the standard normal is 0.975, i.e., 1.96 |
+| `rnorm(n, mean, sd)` | Generate random numbers from normal distribution | `rnorm(10, 0, 1)` generate 10 numbers from a normal with mean = 0 and sd =1 |
+
+----
+
+
+Here are four examples,
+
+```{r eval = TRUE, echo = TRUE}
+dnorm(0.1, 0, 1)
+pnorm(1.96, 0, 1)
+qnorm(0.975, 0, 1)
+rnorm(10, 0, 1)
+```
+
+# 3. binomial distribution
+
+| Function | Purpose | Example |
+| --------|--------|-------- |
+| `dbinom(x, size, prob)` | Probability Density Function (PDF) | `dbinom(1, 2, 0.5)` gives the density (height of the PDF) of the binomial 1 with size = 2 and prob = 0.5 |
+| `pbinom(q, size, prob)` | Cumulative Distribution Function (CDF) | `pbinom(1, 2, 0.5)` gives the area under the binomial curve to the left of 1, i.e., 0.75.|
+| `qbinom(p, size, prob)` | Quantile Function - inverse of pnorm | `qbinom(0.75, 2, 0.5)` gives the value at which the CDF of the binomial is 0.75, i.e., 1.5 |
+| `rbinom(n, size, prob)` | Generate random numbers from normal distribution | `rbinom(20, 2, 0.5)` generate 4 numbers from a binomial with size = 2 and probability = 0.5 |
+
+----
+
+
+Here are four examples,
+
+```{r eval = TRUE, echo = TRUE}
+dbinom(1, 2, 0.5)
+pbinom(1, 2, 0.5)
+qbinom(0.75, 2, 0.5)
+rbinom(20, 2, 0.5)
+```

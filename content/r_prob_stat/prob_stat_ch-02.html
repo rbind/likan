@@ -1,0 +1,175 @@
+---
+title: "第1章、数据展示"
+author: "侃侃迩行"
+date: '2017-02-15'
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+
+<div id="TOC">
+<ul>
+<li><a>2.1. 什么是统计学</a></li>
+<li><a>2.2. 数据</a></li>
+<li><a>2.3. 定性数据</a><ul>
+<li><a href="#tables">2.3.1. Tables</a></li>
+<li><a href="#barplots">2.3.2. Barplots</a></li>
+<li><a href="#dotchart">2.3.3. dotchart</a></li>
+<li><a href="#pie-charts">2.3.3. Pie charts</a></li>
+</ul></li>
+</ul>
+</div>
+<div class="section level1">
+<h1>2.1. 什么是统计学</h1>
+</div>
+<div class="section level1">
+<h1>2.2. 数据</h1>
+</div>
+<div class="section level1">
+<h1>2.3. 定性数据</h1>
+<div id="tables" class="section level2">
+<h2>2.3.1. Tables</h2>
+<ul>
+<li>vector</li>
+</ul>
+<pre class="r"><code>Grades &lt;- c(&quot;A&quot;, &quot;D&quot;, &quot;C&quot;, &quot;D&quot;, &quot;C&quot;, &quot;C&quot;, &quot;C&quot;, &quot;C&quot;, &quot;F&quot;, &quot;B&quot;)
+Grades
+table(Grades)
+xtabs(~ Grades)
+table(Grades) / length(Grades) # Relative frequency table
+prop.table(table(Grades))</code></pre>
+<pre><code>##  [1] &quot;A&quot; &quot;D&quot; &quot;C&quot; &quot;D&quot; &quot;C&quot; &quot;C&quot; &quot;C&quot; &quot;C&quot; &quot;F&quot; &quot;B&quot;
+## Grades
+## A B C D F 
+## 1 1 5 2 1 
+## Grades
+## A B C D F 
+## 1 1 5 2 1 
+## Grades
+##   A   B   C   D   F 
+## 0.1 0.1 0.5 0.2 0.1 
+## Grades
+##   A   B   C   D   F 
+## 0.1 0.1 0.5 0.2 0.1</code></pre>
+<ul>
+<li>data frame</li>
+</ul>
+<pre class="r"><code>library(MASS)
+table(quine$Age)
+with(data = quine, table(Age))
+xtabs(~ Age, data = quine)</code></pre>
+<pre><code>## 
+## F0 F1 F2 F3 
+## 27 46 40 33 
+## Age
+## F0 F1 F2 F3 
+## 27 46 40 33 
+## Age
+## F0 F1 F2 F3 
+## 27 46 40 33</code></pre>
+</div>
+<div id="barplots" class="section level2">
+<h2>2.3.2. Barplots</h2>
+<pre class="r"><code>opar &lt;- par(no.readonly = TRUE) # read in current parameters
+par(mfrow=c(2, 2)) # change parameters
+barplot(xtabs( ~ Grades),
+        col = &quot;gray40&quot;,
+        xlab = &quot;Grades&quot;,
+        ylab = &quot;Frequency&quot;
+)
+barplot(prop.table(xtabs(~ Grades)),
+        col = &quot;gray40&quot;,
+        xlab = &quot;Grades&quot;,
+        ylab = &quot;Relative Frequency&quot;
+)
+barplot(xtabs(~ Age, data = quine),
+        col = &quot;gray90&quot;,
+        xlab = &quot;Age&quot;,
+        ylab = &quot;Frequency&quot;
+)
+barplot(prop.table(xtabs(~ Age, data = quine)),
+        col = &quot;gray90&quot;,
+        xlab = &quot;Age&quot;,
+        ylab = &quot;Relative Frequency&quot;
+)</code></pre>
+<p><img src="/r_prob_stat/prob_stat_ch-02_files/figure-html/Figure_02_01-1.png" width="672" /></p>
+<pre class="r"><code>par(opar) # reset to original parameters</code></pre>
+</div>
+<div id="dotchart" class="section level2">
+<h2>2.3.3. dotchart</h2>
+<ul>
+<li>图2.2</li>
+</ul>
+<pre class="r"><code>oldw &lt;- getOption(&quot;warn&quot;)
+options(warn = -1)
+opar &lt;- par(no.readonly = TRUE) # read in current parameters
+par(mfrow = c(1, 2))
+dotchart(xtabs( ~ Grades),
+         main = &quot;Grades&quot;,
+         bg = &quot;gray40&quot;,
+         xlim = c(0, 6)
+)
+dotchart(xtabs(~ Age, data = quine),
+        main = &quot;Age&quot;,
+        bg = &quot;gray60&quot;,
+        xlim = c(25, 50)
+)</code></pre>
+<p><img src="/r_prob_stat/prob_stat_ch-02_files/figure-html/Figure_02_02-1.png" width="672" /></p>
+<pre class="r"><code>par(opar) # reset to original parameters
+options(warn = oldw)</code></pre>
+<ul>
+<li>图2.3</li>
+</ul>
+<pre class="r"><code>oldw &lt;- getOption(&quot;warn&quot;)
+options(warn = -1)
+opar &lt;- par(no.readonly = TRUE) # read in current parameters
+par(mfrow = c(1, 2))
+TDM &lt;- xtabs(Days ~ Age, data = quine)
+dotchart(TDM,
+         bg = &quot;gray40&quot;,
+         xlab = &quot;Total Days Missed&quot;,
+         xlim = c(400, 600)
+)
+ADM &lt;- with (
+       data = quine,
+       tapply(Days, list(Age), mean)
+)
+dotchart(ADM,
+       xlab = &quot;Avage Days Missed&quot;,
+       bg = &quot;gray60&quot;,
+       xlim = c(10, 22)
+)</code></pre>
+<p><img src="/r_prob_stat/prob_stat_ch-02_files/figure-html/Figure_02_03-1.png" width="672" /></p>
+<pre class="r"><code>par(opar) # reset to original parameters
+options(warn = oldw)</code></pre>
+</div>
+<div id="pie-charts" class="section level2">
+<h2>2.3.3. Pie charts</h2>
+<pre class="r"><code>opar &lt;- par(no.readonly = TRUE) # read in current parameters
+par(mfrow = c(1, 2))
+GS &lt;- gray(c(0.1, 0.4, 0.7, 0.8, 0.95)) # different grays
+pie(xtabs( ~ Grades, data = quine),
+    radius = 1,
+    col = GS
+)
+mtext(
+    &quot;Grades&quot;,
+    side = 3,
+    cex = 1.25,
+    line = 1
+)
+pie(xtabs( ~ Age, data = quine),
+    radius = 1,
+    col = GS
+)
+mtext(
+    &quot;Age&quot;,
+    side = 3,
+    cex = 1.25,
+    line = 1
+)</code></pre>
+<p><img src="/r_prob_stat/prob_stat_ch-02_files/figure-html/Figure_02_04-1.png" width="672" /></p>
+<pre class="r"><code>par(opar) # reset to original parameters</code></pre>
+</div>
+</div>

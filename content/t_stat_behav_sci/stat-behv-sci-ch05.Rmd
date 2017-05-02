@@ -1,0 +1,338 @@
+---
+title: "Chapter 3. Central Tendency"
+author: "Likan Zhan"
+date: '2017-03-14'
+output:
+  blogdown::html_page:
+    number_sections: true
+    toc: true
+    fig_width: 12
+    fig_height: 8
+---
+
+# Figure 3.1
+
+```{r label = "Figure_03_01", echo = TRUE, eval = TRUE, results = "asis"}
+NoAlcoh <- c(1, 3, 4, 5, 2, 2)
+Alcohol <- c(1, 1, 2, 5, 4, 1)
+plot(NULL,
+     xlim = c(0, 8),
+     ylim = c(0, 5.5),
+     axes = FALSE,
+     xaxs = "i",
+     yaxs = "i",
+     xlab = "Attractiveness rating",
+     ylab = "Frequency", font.lab = 2
+)
+axis(1,
+     at = 0:8,
+     label = 0:8
+)
+axis(2,
+     at = 0:5,
+     label = 0:5
+)
+points(x = 1:6,
+       y = NoAlcoh,
+       pch = 19,
+       col = "#cf232a",
+       cex = 1.5
+)
+lines(x = 0:7,
+      y = c(0, NoAlcoh, 0),
+      col = "#cf232a",
+      lwd = 2
+)
+points(x = 2:7,
+       y = Alcohol,
+       pch = 1,
+       col = "#005093",
+       cex = 1.5
+)
+lines(x = 1:8,
+      y = c(0, Alcohol, 0),
+      col = "#005093",
+      lty = 2,
+      lwd = 2
+)
+legend(x = 6,
+       y = 5,
+       box.col = "white",
+       bg = "white",
+       lty = c(1, 2),
+       pch = c(19, 1),
+       col =c ("#cf232a", "#005093"),
+       legend = c("No alcohol", "Moderate alcohol")
+)
+```
+
+# Figure 3.2
+
+- Figure_03_02_a
+
+```{r label = "Figure_03_02_a", echo = TRUE, eval = TRUE, results = "asis"}
+f <- c(0, 1:4, 3:1, 0)
+barplot(height = f,
+        names.arg = 1:9,
+        space = 0,
+        xlim = c(0, 9),
+        ylab = "Frequency",
+        xlab = "X",
+        col = "#fce6bf",
+        border = "#b78135",
+        font.lab = 2)
+abline(h = 0)
+segments( c(1, 2, 3),
+          c(1, 2, 3),
+          c(8, 7, 6),
+          c(1, 2, 3),
+          col = "#b78135")
+```
+
+- Figure_03_02_b
+
+```{r label = "Figure_03_02_b", echo = TRUE, eval = TRUE, results = "asis"}
+f <- c(rep(1, 5), 2, 3, 4, 2)
+barplot(height = f,
+        names.arg = 1:9,
+        space = 0,
+        xlim = c(0, 9),
+        ylab = "Frequency",
+        xlab = "X",
+        col = "#fce6bf",
+        border = "#b78135",
+        font.lab = 2)
+abline(h = 0)
+segments( c(1, 6, 7),
+          c(1, 2, 3),
+          c(9, 9, 8),
+          c(1, 2, 3),
+          col = "#b78135")
+```
+
+- Figure_03_02_c
+
+```{r label = "Figure_03_02_c", echo = TRUE, eval = TRUE, results = "asis"}
+f <- c(2, 4, 2, rep(0, 3), 2, 4, 2)
+barplot(height = f,
+        names.arg = 1:9,
+        space = 0,
+        xlim = c(0, 9),
+        ylab = "Frequency",
+        xlab = "X",
+        col = "#fce6bf",
+        border = "#b78135",
+        font.lab = 2)
+abline(h = 0)
+segments( c(0, 0, 1, 6, 6, 7),
+          c(1, 2, 3, 1, 2, 3),
+          c(3, 3, 2, 9, 9, 8),
+          c(1, 2, 3, 1, 2, 3),
+          col = "#b78135")
+```
+
+# Figure 3.5
+
+- Figure_03_05_a
+
+```{r label = "Figure_03_05_a", echo = TRUE, eval = TRUE, results = "asis"}
+X <- c(1, 2, 3, rep(4, 4), 6)
+hist(X, xlim = c(0, 7),
+     breaks = 0.5 : 7.5,
+     yaxs = "i",
+     xaxs = "i",
+     main = "",
+     font.lab = 2
+)
+segments(
+     c(1.5, 2.5, 3.5, 0.5, 3.5, 3.5),
+     c(0, 0, 0, 1, 2, 3),
+     c(1.5, 2.5, 3.5, 4.5, 4.5, 4.5),
+     c(1, 1, 1, 1, 2, 3)
+)
+```
+
+- Figure_03_05_b
+
+```{r label = "Figure_03_05_b", echo = TRUE, eval = TRUE, results = "asis"}
+X <- c(1, 2, 3, rep(4, 4), 6)
+hist(X, xlim = c(0, 7),
+     breaks = 0.5 : 7.5,
+     yaxs = "i",
+     xaxs = "i",
+     main = "",
+     font.lab = 2
+)
+polygon( c(0.5, 0.5, 3.5, 3.5, 3.75, 3.75),
+         c(0, 1, 1, 4, 4, 0),
+         col = "#fce6bf"
+)
+segments(
+     c(1.5, 2.5, 3.5, 0.5, 3.5, 3.5),
+     c(0, 0, 0, 1, 2, 3),
+     c(1.5, 2.5, 3.5, 4.5, 4.5, 4.5),
+     c(1, 1, 1, 1, 2, 3)
+)
+abline(v = 3.75)
+```
+
+# Figure 3.6
+
+```{r label = "Figure_03_06", echo = TRUE, eval = TRUE, results = "asis"}
+X <- c(rep(2, 3), rep(3, 2), 12)
+hist(X,
+     xlim = c(0, 13),
+     ylim = c(0, 4),
+     breaks = seq(0.5, 13.5, by = 1),
+     yaxs = "i",
+     xaxs = "i",
+     main = "",
+     font.lab = 2,
+     border = "#b78135",
+     col = "#fce6bf",
+     axes = FALSE
+)
+axis(1, at = 0:13, labels = 0:13)
+axis(2, at = 0:4, labels = 0:4)
+segments(
+     c(1.5, 1.5),
+     c(1, 2),
+     c(3.5, 3.5),
+     c(1, 2),
+     col = "#b78135"
+)
+abline(v = 4,
+       lty = 3
+)
+text(x = 4,
+     y = 3.5,
+     pos = 4,
+     label = expression(paste(mu, " = 4"))
+)
+```
+
+# Figure 3.7
+
+```{r label = "Figure_03_07", echo = TRUE, eval = TRUE, results = "asis"}
+X <- c(2, 5, 8, 6, 3, 1, 2, 2, 4, 6, 7)
+barplot(X,
+        xlim = c(0, 12),
+        ylim = c(0, 9),
+        space = 0,
+        yaxs = "i",
+        border = "white",
+        col = "#00acaa",
+        axes = FALSE,
+        main = "",
+        xlab = "Tone identification score (Number correct out of 10)",
+        ylab = "Frequency",
+        font.lab = 2
+)
+axis(1,
+    at = 0.5:10.5,
+    labels = 0:10
+)
+axis(2,
+     at = 0:9,
+     labels = 0:9
+)
+abline(h = 0, lwd = 2)
+```
+
+# Figure 3.8
+
+```{r label = "Figure_03_08", echo = TRUE, eval = TRUE, results = "asis"}
+X <- c(10, rep(11, 4), rep(12, 3), 13, 100)
+Xgap <- ifelse(X > 15, X-82, X)
+hist(Xgap,
+     breaks = seq(9.5, 18.5, by = 1),
+     xaxs = "i",
+     yaxs = "i",
+     main = "",
+     xlim = c(8.5, 19),
+     axes = FALSE,
+     xlab = "Number of errors",
+     ylab = "Frequency",
+     font.lab =  2,
+     col = "#fce6bf",
+     border = "#b78135"
+)
+segments(
+     c(9.5, 10.5, 10.5),
+     c(1, 2, 3),
+     c(13.5, 12.5, 12.5),
+     c(1, 2, 3),
+     col = "#b78135"
+)
+axis(1,
+    at = c(10:15, 18),
+    label = c(10:15, 100))
+axis(2)
+abline(h = 0,
+     lwd = 1.5)
+library(plotrix)
+axis.break(1,
+     breakpos =  9,
+     style = "zigzag",
+     brw = 0.05
+)
+axis.break(1,
+     breakpos =  16,
+     style = "zigzag",
+     brw = 0.05
+)
+```
+
+# Figure 3.9
+
+```{r label = "Figure_03_09", echo = TRUE, eval = TRUE, results = "asis"}
+X = 0:4
+Y = c(19, 21, 15, 5, 10)
+plot(X, Y,
+     type =  "l",
+     ylim = c(0, 30),
+     xlim = c(-0.2, 4.1),
+     col = "#cf232a",
+     xlab = "Drug dose",
+     ylab = "Mean food consumption",
+     font.lab = 2,
+     lwd = 1.5,
+     axes = FALSE,
+     yaxs = "i",
+     xaxs = "i"
+)
+points(X, Y,
+       pch = 19,
+       col = "#cf232a",
+       lwd = 2
+)
+abline(h = 0, lwd = 1.5)
+abline(v = -0.2, lwd = 1.5)
+axis(side = 1,
+     at = 0:4,
+     label = 0:4,
+     lwd = 1
+)
+axis(side = 2,
+     at = seq(5, 30, by = 5),
+     label = seq(5,30, by = 5),
+     lwd = 1
+)
+```
+
+# Figure 3.10
+
+```{r label = "Figure_03_10", echo = TRUE, eval = TRUE, results = "asis"}
+X = c("Northeast", "South", "Midwest", "West")
+Y = c(110, 75, 90, 120)
+barplot(Y,
+        names.arg = X,
+        col = c("#d5493a", "#0bb0ae",
+                "#ef9d56", "#2aa96d"),
+        border = "white",
+        xlab = "Region of the United States",
+        ylab = "Median new house cost (in $1000s)",
+        font.lab = 2
+        )
+abline (h = 0)
+```

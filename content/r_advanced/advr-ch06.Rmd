@@ -1,0 +1,35 @@
+---
+title: "第6章、函数"
+author: "侃侃迩行"
+date: '2017-02-15'
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+[原文链接](http://adv-r.had.co.nz/Functions.html)
+
+# 1. 函数的成分 {#Function-components}
+
+R语言中，所有函数都包含三个成分:
+
+- `body()`，函数中的代码段；
+- `formals()`，调用函数时需要输入的论元；
+- `environment()`，函数变量的匹配位置；
+
+```{r eval=TRUE, results="hold"}
+f <- function(x) x^2
+f
+body(f)
+formals(f)
+environment(f)
+```
+
+我们也可以通过给`body()`、`formals()` 和 `environment()` 附值的方法改变这个函数。
+> 如何实现呢？
+
+# 2. 词汇的域 {#Lexical-scoping}
+# 3. 任何一个操作都是在调用一个函数 {#Function-call}
+# 4. 函数的论元 {#Function-Arguments}
+# 5. 函数的特殊调用方式 {#Special-calls}
+# 6. 返回值 {#Return-values}

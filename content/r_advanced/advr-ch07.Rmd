@@ -1,0 +1,196 @@
+---
+title: "第7章、面向对象的编程"
+author: "侃侃迩行"
+date: '2017-04-07'
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+原文链接：[OO field guide](http://adv-r.had.co.nz/OO-essentials.html)
+
+R有一种基本的数据类型（base types）和三种面向对象的系统（object oriented systems）。
+
+任何一个面向对象系统都有两个核心观念：*类别*（class）和 *方法*（method）。*类别* 通过描写一个对象的*特征*（attributes），以及该对象与其他*类别*的关系来定义一个对象的行为。*方法*的行为会因为输入*类别*的不同而不同。*类别*的存在是层级性的（hierachy）。如果不存在一个可应用于某个*子类别*的*方法*，那么能够应用于其*母类别*的*方法*则可应用于该*子类别*。即*子类别*能够*继承*（inherits）来自于*母类别*的*方法*。
+
+R的三种面向对象系统定义了不同的*类别*和*方法*：
+
+- *S3*执行的是叫做*范型函数*（generic-function）的面向对象系统。大部分编程语言如Java、C++、和C#，使用的是*信息传递*（message-passing）的面向对象系统。在*信息传递系统*中，由*对象*决定对送达的*信息*（方法）*调用*什么*函数*。典型情境下，这类对象在方法调用时会呈现一种特殊的表现形式，通常出现在方法／信息名称的前面，如`canvas.draRec("blue")`。而`S3`系统与信息传递系统是不同的。*S3*系统中，计算方法仍然是通过*方法*实现的。但是决定*调用*什么*方法*的，是由一种特定类别的函数来实现的，叫做*范型函数*（generic function），如`drawRect(canvas, "blue")`。*S3*是一种非常随意的系统。它没有对*类别*的定义。
+- *S4*系统与*S3*系统很像，但是更加正式。*S3*和*S4*有两个主要不同。*S4*有对*类别的*正式定义。类别的正式定义描述了每一个*类别*的表征和继承方式，还包含了用于定义*范型*（generics）和*方法*的特定帮助函数。*S4*有多种分派（dispatch）方法，也就是说范型函数能经由多于一个论元的*类别*来选择*方法*，而不限于有一个论元的*类别*。
+- *引用类别*（Reference classes），简称*RC*。*RC*与*S3*和*S4*非常不同，因为*RC*执行的是*信息传递*的面向对象系统，所以*方法*属于*类别*，而不是*函数*。*`$`*是被用来分割*对象*和*方法*的，所以*方法*的调用看起来像`canvas$drawRect("blue")`。*RC*对象也是可变的：它使用的不是`R`通常使用的*复制-修改*语义系统（copy-on-modify semantics），而是随时随地发生改变的。*RC*的可变性使得我们较难理解*RC*的逻辑，但正是这种可变性使得它们能够解决*S3*和*S4*不能解决的问题。
+
+R中还有一种实际上不是面向对象系统的类别：
+
+- *基本类别*（base types）是位于其他面向对象系统底层的内部*C*语言层次类别（C-level types）。基本类型通常由*C*语言代码控制。但是理解基本类别是非常重要的，因为基本类别提供了其他面向对象系统的建构模块。
+
+# 7.1. 基本类别 {#Base-Types}
+
+每一个R语言对象的底层都有一个*C结构*（C structure 或 *struct*）。C结构描述了*对象*在内存中的存储方式。*C结构*包含了对象的内容、内存控制的相关信息、和*类别*。该类别描述的是*R对象*的*基本类别*（base type）。本质上来说，*基本类别*并不是真正意义上的对象系统，因为只有R核心团队才有权限创造一个新的基本类别。所以，R语言中的基本类型很少发生改变。R语言中最近一次基本类型的增加发生在2011年：`NEWXP`和`FREEXP`。你通常不会在R中看到这两个类型，但是它们对诊断内存问题是非常重要的。在此之前的最后一次基本类别的增加是2005年：`S4SXP`。这是一个专门针对*S4*系统的基本类型。
+
+*数据结构*这一章介绍了最常见的一些基本类别，如原子数组（atomic vectors）、列表（lists）等。基本类型还包括函数（function）、环境（environments）、和一些奇特的对象，如名称（names）、调用（calls）、和允诺（promises）等。你可以用`typeof()`来确定一个对象的基本类型。需要注意的是，R语言中基本类型的名称是不一致的。你也可以用`is`加不同名称的方式来确定一个对象的基本类型。
+
+```{r, eval = TRUE, results = "hold"}
+# 一个函数的类别是`closure'
+f <- function() {}
+typeof(f)
+is.function(f)
+```
+
+```{r, eval = TRUE, results = "hold"}
+# 一个原函数的类别是`builtin'
+typeof(sum)
+is.primitive(sum)
+```
+
+R语言中还有与`typeof()`类似的两个函数`mode()`和`storage.mode()`。但这两个函数实际上只是`typeof()`函数的别名，而且只是为了与*S*语言兼容而存在的。所以读者完全可以忽略这两个函数。
+
+R语言中因为*基本类型*的不同，行为方式而有所不同的*函数*大多数是由C语言写成的。在这些函数中，*转化命令*（switch statements）可以导致*派送*的产生，例如`switch(TYPEOF())`。就算你从不需要写C语言代码，正确理解*基本类型*也是非常重要的，因为R中所有其他对象都是基于*基本类型*建构的：*S3*对象能够基于任何一种基本类型来建构；*S4*对象使用了一种特殊的基本类型；而*RC*对象则同时使用了*S4*对象和*环境*（environments，另外一种基本类型）。如果`is.object(x)`返回错误值`FALSE`，说明该对象是一个纯粹的基础类型，而不具有*S3*、*S4*或者*RC*的行为方式。
+
+```{r, eval = TRUE, results = "hold"}
+is.object(f)
+is.object(sum)
+```
+
+# 7.2. S3类别 {#S3}
+
+*S3*是R中*第一种*和*最简单*的面向对象系统。软件包*base*和*stats*使用的唯一一种面向对象系统即*S3*系统。*CRAN*中软件包普遍使用的系统也是$S3$系统。*S3*系统不够正式，却又是最简化的：删除该系统的任何一部分以后，他仍然是一个有用的面向对象系统。
+
+## 7.2.1. 识别*对象*、*范型函数*和*方法* {#Recognising}
+
+R中大多数对象都是S3对象。但基础R软件包中并没有确定一个对象是否为S3类型的简单方法。一种最接近的方式是：`is.object(x) & !isS4(x)`，即它是一个对象，但不是S4类型的对象。借助 *pryr* 软件包判断一个对象是否是S3类型的方法是`pryr::otype()`
+
+```{r, eval = TRUE, results = "hold", message = FALSE}
+library(pryr, quietly = TRUE)
+df <- data.frame(x = 1:10, y = letters[1:10])
+otype(df)   # 数据框（data.frame）属于S3类型
+otype(df$x) # 数值型向量（numeric vector）不属于S3类型
+otype(df$y) # 因子（factor）属于S3类型
+```
+在S3类型中，*方法*不是*对象*或*类别*而是*函数*，叫做*范型函数*，或简称*范型*（generics）。这与其他大部分编程语言不同，但在面向对象系统中却是合法的。
+
+要确定一个*函数*是否是S3*范型*，你可以用`UseMethod()`来查看该函数*调用*的源代码。`UseMethod()`能确定该函数*调用*的正确*方法*、即*方法分派* (method dispatch) 过程。与函数`otype`类似，软件包`pryr`提供了另外一个命令`ftype()`，用以描述与该函数相关的*对象系统*。
+
+```{r, eval = TRUE, results = "hold"}
+mean
+ftype(mean)
+```
+
+有些S3范型，如`[`、`sum()`、和`cbind`，无法调用`UseMethod()`，因为这些范型是基于C语言代码编写的。相对的，它们可以调用C语言函数`DispatchGroup()`或者`DispatchOrEval()`。C语言代码中调用*方法分派*的函数叫做*内在范型*（internal generics）。这些函数的说明文档可以通过`?"internal generic"`函数来调用。函数`ftype()`也能识别这些特定函数。
+
+```{r, eval = TRUE, results = "hold"}
+ftype("[")
+```
+
+给定一个*类型*，S3范型的作用是调用正确的S3*方法*。你可以通过其名称来识别该*类型*调用的S3*方法*，形式如下`generic.class()`。例如范型函数`mean()`的日期（Date）*方法*是通过`mean.Date()`来调用的；范型函数`print()`的*因子*（factor）*方法*是通过`print.factor()`调用的。
+
+```{r, eval = TRUE, results = "hold"}
+X <- 1:6
+mean(X)
+mean.Date(X)
+print(X)
+print.factor(X)
+```
+
+这也就是当代大多数编码风格指导手册不鼓励在*函数*中用点`.`的原因：使用点`.`会让它看起来像S3*方法*。例如，`t.test()`是*对象*`test`的`t`*方法*吗？类似的在*类型*中使用点`.`也会产生歧义：类型`print.data.frame()`表示的是数据框`data.frame`的`print()`方法，还是表示框`frame`的`print.data()`方法？`pryr::ftype()`能够识别这些例外，所以你可以用该函数来确定一个函数是S3方法还是范型函数。
+
+
+```{r, eval = TRUE, results = "hold"}
+ftype(t.data.frame) # 数据框data frame的t()方法
+ftype(t.test) # t检验的范型函数
+```
+
+你可以用`methods()`查看属于某个*范型函数*的所有*方法*:
+
+```{r, eval = TRUE, results = "hold"}
+methods("mean")
+methods("t.test")
+```
+
+（除了*基本*包中定义的方法，大多数S3*方法*是无法看到的，我们可以用`getS3method()`来查看它们的源代码.）
+
+我们也可以列出与某一个*类型*相关的拥有*方法*的所有范型函数：
+
+```{r, eval = TRUE, results = "hold"}
+methods(class = "ts")
+```
+
+但是，如我们下一节将要学到的，我们没有办法列出所有的S3类型。
+
+## 7.2.2. 定义*类型*和创造*对象* {#define-classes-and-creating-objects}
+
+S3是一个简单的和特设（ad hoc）的系统。S3系统中没有对*类型*的正式定义。要把一个*对象*定义为某一种*类型*，方法是给该*基本对象*（ base object）定义一个*类型特征*（class attribute）。我们可以用如下两种方式定义类型特征：
+
+```{r, eval = TRUE, results = "hold"}
+# 一步到位，定义类型
+foo <- structure(list(), class = "foo")
+# 两步走，定义类型
+foo <- list()
+class(foo) <- "foo"
+```
+
+S3对象通常是在*列表*(lists)、或有*特征*的*原子数组*基础上建构。你也可以把*函数*转化成S3对象。其他的基础类型或者在R中很少出现，或者其语义系统使得其与*特征*不能很好的工作。
+
+你可以用`class()`来确定一个对象的*类别*，或用`inherits(x, "classname")`来确定一个对象是否继承自一个特定的类别。
+
+```{r, eval = TRUE, results = "hold"}
+class(foo)
+inherits(foo, "foo")
+```
+一个S3对象的*类别*可以是一个*向量*（vector），它描述了从最特殊性的行为到最一般化的行为。例如，对象`glm()`的*类别*是`c("glm", "lm")`，说明一般化的线性模型的行为继承自线性模型的行为。*类别*名称通常用小写字母表示，并且避免使用点`.`。否则的化，命名可能会出现用下划线`my_class`还是大小写`MyClass`来区分同一类别名称中不同单词的混乱情况。
+
+大多数S3类别都提供了一个*建构函数*（constructor function）:
+
+```{r, eval = TRUE, results = "hold"}
+foo <- function(x){
+  if(!is.numeric(x)) stop("X must be numeric")
+  structure(list(x), class = "foo")
+}
+```
+如果情况允许（如`factor()`和`data.frame()`），你应该尽量使用建构函数。这将保证你用正确的*成分*创造了该*类别*。建构函数通常与*类别*名称相同。
+
+除了代码编写着提供的建构函数，S3是核查函数正确性的。所以你能够随意修改一个已有对象的类别：
+
+```{r, eval = TRUE, results = "hold"}
+# 构建一个线性模型
+mod <- lm(log(mpg) ~ log(disp), data = mtcars)
+class(mod)
+print(mod)
+```
+
+```{r, eval = TRUE, results = "hold"}
+# 把mod编程一个数据框 （？！）
+class(mod) <- "data.frame"
+# 很明显，这会导致print函数无法正常显示
+print(mod)
+# 但是，数据仍然还在
+mod $ coefficients
+```
+如果你是用过其他面向对象的语言，这会让你难以忍受。但令人惊讶的是，在R语言中，该灵活性并没有导致太多的问题：虽然你能够改变一个对象的类别，但是你绝对不应该改变。
+
+## 7.2.3. 创造新的*方法*和*范型函数* {#creating-new-methods-and-generics}
+
+要添加一个新的*范型*，你要调用`UseMethod()`来建立一个*函数*。`UseMethod()`有两个论元：一个论元是范型函数的名称，另一个论元用于*方法的指派*（method dispatch）。 如果第二个论元缺失，那么该`UseMethod()`将把第一个论元指派给该函数。你没有必要也不应该把范型函数的所有论元传递到`UseMethod()`函数的论元。`UseMethod()`能够自己找到它们。
+
+```{r, eval = TRUE, results = "hold"}
+f <- function(x) UseMethod("f")
+```
+
+没有*方法*的范型函数是没有用的。要给函数添加一个*方法*，就要用正确的名称（即`generic.class`）定义一个普通的函数：
+
+```{r, eval = TRUE, results = "hold"}
+f.a <- function(x) "Class a"
+a <- structure(list(), class = "a")
+class(a)
+```
+
+To be continued ~
+
+
+## 7.2.4. *方法指派* {#method-dispatch}
+
+
+
+# 7.3. S4类别 {#S4}
+# 7.4. RC类别 {#RC}
+# 7.5. 类别选择 {#Picking-a-system}
+# 7.6. 测验问题 {#Quize-answers}

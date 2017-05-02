@@ -1,0 +1,232 @@
+---
+title: "列联表数据的分析"
+author: "侃侃迩行"
+date: '2017-04-01'
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: false
+---
+
+测量数据可以分为连续数据和非连续性数据两种。非连续性数据（discrete）又分为顺序性（ordinal）和称名性数据（nominal）两种。如果一项研究的自变量为称名数据，因变量为计数数据，我们通常用列联表方式（tabular）展示研究结果。根据自变量的个数多少，列联表又可分为一维列联表和多维列联表。通过对列联表进行假设检验，研究者关心的是实际观测值（Observed, O）和零假设条件下理论期望值（Expected, E）之间的关系。具体来说，一维列联表评价的是观测值在某一类别变量的不同水平上的分布是否与某个既定的分布一致。多维列联表评价的是多个类别性变量对数据的交叉分类是否存在相互关系。
+
+# 1. 一维列联表和配合度检验 {#goodness-of-fit}
+
+一维列联表分析的目的是评价观测数据与理论分布的契合程度，所以又叫做`配合度检验`（goodness of fit）。以孟德尔的遗传学为例。假设两个等位基因`A`和`a`的出现概率为`p`和`1-p`。在随机配对和随机存活条件下（random mating and survival），其后代的基因型为`AA`，`Aa`和`aa`的概率将分别是$p^2$，$2p(1-p)$和$(1-p)^2$。我们如果假定显性基因`A`出现的概率是`p=0.25`，则上述三种基因型出现的概率为：
+
+```{r}
+pA <- p <- 0.25
+pa <- 1 - p
+pAA <- p ^ 2
+pAa <- 2 * p * (1-p)
+paa <- (1 - p) ^2
+c(pAA, pAa, paa)
+```
+假如显性基因`A`出现的概率为`0.25`，而且后代基因型遵循随机交配和存活条件，那么在一个样本量为100的随机样本中，我们观测到基因型为`AA`、`Aa`、和`aa`的数量将分别约为`6.25`、`37.5`和`56.25`。假如我们实际观测到的数量为`10`、`50`和`40`。观测值和预期值的差别分别为`3.75`、`12.5`和`-16.25`。（注意：期望观测值不一定是整数；期望值和观测值的差值和为零）。配合度检验中，研究者关心的是该样本数据中观测值和预期值之间的差异究竟是由取样误差导致的，还是说明零假设不成立，即这两个等位基因不是随机配对和随机存活的。
+
+```{r, echo = FALSE}
+n <- 100
+AA <- n * pAA
+Aa <- n * pAa
+aa <- n * paa
+Expected <- c(AA, Aa, aa)
+Observed <- c(10, 50, 40)
+Difference <- Observed - Expected
+data1 <- rbind(Observed, Expected, Difference)
+table1 <- as.matrix(data1, nrow = 3)
+dimnames(table1) <-
+list(Type     = c("Observed", "Expected", "Difference"),
+     Genotype = c("AA", "Aa", "aa")
+     )
+table1
+```
+统计学理论发现，对于随机取样的计数数据而言，其整体分布的方差和期望值是一样的。而且当样本量足够大时（拇指原则：当所有类别的期望值都大于5时），计数数据的分布式是近似正态的。此时，我们可以用`z`分数来确定观测数量（`O`）和期望数量（`E`）之间的差别是否足够大，即
+$$
+z=\frac{O - E}{\sqrt{E}}
+$$
+
+```{r}
+z <- ( Observed - Expected ) / sqrt(Expected)
+z <- abs(as.numeric(z))
+p <- 2 * pnorm(z, lower.tail = FALSE)
+rbind(z, p)
+```
+
+考虑到多次计算`z`分数带来的多重比较问题和预测值观测值差异之和为零这些问题，研究者往往希望同时测试所有的`z`值，即卡方的配合度检验。卡方统计量的计算方式如下：
+
+$$
+\chi^2 = \sum\frac{(O - E)^2}{E}
+$$
+
+零假设条件下，$\chi^2$数据符合自由度为$k-1$的卡方分布，其中`k`为研究中类别的总数。利用上表中的数据，我们可以做如下计算:
+
+```{r}
+Chi_sqr <- sum (z ^ 2)
+df <- length(Observed) - 1
+p_value <- pchisq(Chi_sqr, df, lower.tail = FALSE)
+cbind(Chi_sqr, p_value)
+```
+等价的， 我们也可以用`R`自带的`chisq.test()`直接进行计算，
+
+```{r}
+p <- 0.25
+prop <- c(p^2, 2 * p * (1-p), (1-p)^2)
+suppressWarnings(
+chisq.test(Observed, p = prop)
+)
+```
+这些结果说明，如果我们假定显性基因的出现率为`p=0.25`时，那么在随机配对和随机成活的条件下，我们不太可能能观测到目前的数据。
+
+一个计数数据的分布形态，通常可以用一个或几个参数来确定。前述技术数据的分布仅涉及一个参数，即`p`。在上述分析中，我们根据先前经验将`p`假定为`p=0.25`。但在大多数情况下，研究者并没有相应的经验来确定参数`p`值。此时，研究者必须用获取的样本数据对该参数值进行估计。在执行该估计的过程中，假设检验的自由度将受被估计参数个数的限制而进一步变小。以前述观测数据为例，我们可以用如下公式来估计`p`，即`A`出现的概率。
+
+```{r}
+p <- (2 * 10 + 1 * 50) / 200
+p
+```
+
+注意，该公式中分母不是样本量`100`，而是样本量的两倍，即`200`，因为该研究中基因型是一个二倍体。如果我们用这个从样本估计出来的`p`来代替原来的`p`值，那么数据中的期望值和差值都会发生改变， 如下表
+
+```{r, echo = FALSE}
+pA <- p
+pa <- 1 - p
+pAA <- p ^ 2
+pAa <- 2 * p * (1-p)
+paa <- (1 - p) ^2
+n <- 100
+AA <- n * pAA
+Aa <- n * pAa
+aa <- n * paa
+Expected <- c(AA, Aa, aa)
+Observed <- c(10, 50, 40)
+Difference <- Observed - Expected
+data2 <- rbind(Observed, Expected, Difference)
+table2 <- as.matrix(data2, nrow = 3)
+dimnames(table2) <-
+list(Type     = c("Observed", "Expected", "Difference"),
+     Genotype = c("AA", "Aa", "aa")
+     )
+table2
+```
+
+根据估计出来的`p`值，我们得出来的卡方值是$\chi^2 = 0.98$。因为我们要从样本数据中估计一个参数值，所以分布自由度又减少了一个，剩余自由度为$df=3-1-1=1$。基于此，我们得出的`P`值为`p=0.32`。此时，根据上述样本数据，我们就无法拒绝基因型的随机配对和随机成活这一零假设了。这与当我们假定显性基因的出现概率为`p=0.25`时的结果完全不同。因此我们可以得出如下结论：前述检验之所以能拒绝零假设，原因来自于我们假定的整体参数值，而不是来源于在某个给定等位基因`A`的分布概率下，表现型的异常分布。
+
+```{r}
+z <- ( Observed - Expected ) / sqrt(Expected)
+z <- abs(as.numeric(z))
+p <- 2 * pnorm(z, lower.tail = FALSE)
+Chi_sqr <- sum (z ^ 2)
+df <- length(Observed) - 1 - 1
+p_value <- pchisq(Chi_sqr, df, lower.tail = FALSE)
+cbind(Chi_sqr, p_value)
+```
+
+# 2. 二维列联表和独立性检验 {#test-of-independence}
+
+如果一项研究中有两个或更多的类别型自变量，研究者通常需要一个多维的交叉列联表来考察这两个类别变量之间是否存在联系。例如，为了研究人类的基因表现型和高血压的关系，研究者采集了样本量为100的样本数据，结果如下。 在该样本中，高血压个体在总样本中占14%。但在基因表现型为`AA`的个体中，高血压的比率仅为5%。那么在零假设为正确的前提下，即基因型和高血压不存在关系的前提下，我们观察到下述结果的概率是多少呢？
+
+```{r, echo = FALSE}
+data3 <- c(3, 7, 45, 5, 38, 2)
+table3 <- matrix(data3, nrow = 2)
+rows <- rowSums(table3)
+columns <- colSums(table3)
+total <- sum(rows)
+table3Obs <-
+rbind(cbind(table3, rows),
+      columns = c(columns, sum(columns)
+                  )
+     )
+dimnames(table3Obs) <-
+list(Hypertension = c("No", "Yes", "Total"),
+     Genotype     = c("AA", "Aa", "aa", "Total")
+     )
+
+table3Obs
+```
+目前研究者主要用两种方式检验两个或多个类别性变量的独立性问题，即费舍尔精确检验（Fisher‘s exact test）和卡方独立性检验（$\chi^2$ test of independence）。这两种方法计算的都是，当两个变量没有关系，并且列联表数据的行总和和列总和保持固定的前提下，研究者观察到一个与目前样本一样极端，或比目前样本更极端的样本的概率。例如，上表样本中更极端的数据可以是把基因型为`AA`的样本中把无高血压和有高血压被试个数变为2和8。在这种情况下，观测到的数据比原先的数据更极端，因为零假设条件下，我们在`AA`中观测到高血压病人的概率仅为$1.4 = 10 \times 15\%$名。
+
+## 2.1. 费希尔精确检验 {#Fisher}
+
+费舍尔精确检验基于超几何分布（hypergeometric distribution）。费舍尔精确检验计算的是在随机条件下，基因型为`AA`, `Aa`和`aa`的10名、50名和40名被试，得高血压病或者不得高血压病的比率。或者在随机条件下，没患高血压的86名被试和患高血压的14名被试，其基因型为`AA`, `Aa`和`aa`的比率。根据观测到的数据，费舍尔精确检验的出得结果是大约为$P=2.6 \times 10^{-5}$。所以我们能得出的结论是，如果高血压和表现型之间没有关系，我们在很大程度上不可能观察到上述结果。
+
+```{r, echo = TRUE}
+fisher.test(table3)
+```
+（ps. 博主只能用R语言中的`fisher.test()`来计算出P值，如果有谁知道手动计算超过2*2列联表的费希尔精确检验的方法，诚请不吝赐教，不胜感激）
+
+## 2.2. 卡方检验 {#chi}
+
+卡方检验基于这样一个事实：当两个事件相互独立时，两个事件同时发生的概率是这两个事件发生概率的乘积，即$P(AA \cap H) = P(AA)P(H)$。例如上述样本数据中，基因型为`AA`的被试占总被试数的比率为$P(AA)=10\%$。总被试中，高血压被试的比率为$P(H)=14\%$。此时如果被试是否患高血压和被试的基因型没有关系，样本中，基因型为`AA`且患高血压的被试的比率应该为$P(AA \cap H) = 1.4\%$。在100名个体中基因型为`AA`且患高血压的个体数量应该约为1.4名。类似的，我们能够求出每一个单元格中的期望次数，如下表：
+
+```{r, echo = FALSE}
+table3exp <- (rows %o% columns) / total
+table3exp <- outer(rows, columns) / total
+dimnames(table3exp) <-
+list(Hypertension = c("No", "Yes"),
+     Genotype     = c("AA", "Aa", "aa")
+     )
+table3exp
+```
+在求出每个单元格的期望次数后，我们就可以用列联表的配合度检验来计算卡方统计量了。计算方法如下。我们的例子中，卡方统计量的值约为 $\chi^2=29.4$。假定列联表的行数和列数分别为`r`和`c`。那么，列联表配合度检验中自由度的计算方法为`df = (r-1)(c-1)`。我们的例子中`r=2`，`c=3`，所以自由度为`2`。 利用求得的卡方值和自由度，我们可计算书P值约为$P=4.1 \times 10^{-7}$。
+
+```{r, echo = TRUE}
+chi_sqr <- sum((table3 - table3exp)^2 / table3exp)
+df <- (nrow(table3) - 1) * (ncol(table3) - 1)
+p_value <- pchisq(chi_sqr, df = df, lower.tail = FALSE)
+cbind(chi_sqr, p_value)
+```
+当然我们也可以用`R`中的`chisq.test()`函数来计算，
+
+```{r, echo = TRUE, warning = FALSE}
+suppressWarnings(
+chisq.test(table3)
+)
+```
+因为费希尔精确检验涉及非常复杂的计算，所以在实际应用中卡方检验用的更多（po主注：但是现在统计软件如`R`很大程度上可以解决这个问题）。虽然费希尔提供了`P`值的精确计算，但是当列联表中每个单元格的期望值都大于等于5的时候，卡方统计量在很大程度上可以作为该P值的近似统计量。而且，每个单元格的期望值越大、P值越不极端，卡方统计量对P值得近似程度就越好。上述例子中期望值的最小值仅为1.4，而且P值相对较小，所以两种方法计算出来的P值差异较大。如果数据不是那么极端，如下表。
+
+```{r, echo = FALSE}
+data4 <- c(3, 7, 27, 23, 8, 32)
+table4 <- matrix(data4, nrow = 2)
+rows <- rowSums(table4)
+columns <- colSums(table4)
+total <- sum(rows)
+table4Obs <-
+rbind(cbind(table4, rows),
+      columns = c(columns, sum(columns)
+                  )
+     )
+dimnames(table4Obs) <-
+list(Hypertension = c("No", "Yes", "Total"),
+     Genotype     = c("AA", "Aa", "aa", "Total")
+     )
+
+table4Obs
+```
+此列联表中每个单元格的最小期望值为3.8 (po主注，原文中数据有错误，这是po主依据p值对列联表数据作出修正后的得出的结果。)
+
+```{r, echo = FALSE}
+table4exp <- (rows %o% columns) / total
+table4exp <- outer(rows, columns) / total
+dimnames(table4exp) <-
+list(Hypertension = c("No", "Yes"),
+     Genotype     = c("AA", "Aa", "aa")
+     )
+table4exp
+```
+此时，费希尔精确检验得出的P值大约为$P=0.0031$；而卡方检验得出的P值大约为$P=0.0036$。对于不太极端的P值而言，卡方检验的近似值甚至比费希尔精确测验的值更接近精确值。
+
+```{r, echo = TRUE, warning = FALSE}
+fisher.test(table4)
+suppressWarnings(
+chisq.test(table4)
+)
+```
+
+# 3. 注意事项 {#further-notes}
+
+卡方检验基于这样一个事实，即当两个事件A和B相互独立时，$P(AB)=P(A)P(B)$，或$\log(P(AB)) = \log(P(A)) + \log(P(B))$。假定$x=P(AB)/(P(A)P(B))$，则有$\log(P(AB)) = \log(P(A)) + \log(P(B)) + \log(x)$。所以零假设条件下事件A和B相互独立等价于$x=1$，或者$\log(x)=0$。这与方差分析或加性模型（additive models）中考察某个效应是否出现类似。对于三维或高维列联表而言，另外一种独立性检验的有效方式是考察对数值$\log(counts)$是能被一个加性模型解释（独立），还是只有借助一些非加性变量才能解释（交互作用）。
+
+卡方检验的一个不足之处在于，尽管卡方分布是连续性的，但对于任何边际频率固定的列联表数据而言，P值的取值范围是有限的。另外，列联表组合中总有一个最不极端的组合，其发生的概率为$P=1$。正因为这两点不足，在全基因组关联分析（Genome-wide association study）中，当研究者对一个特质和很多个基因型进行评判时，柱形图的P值往往在不同的地方达到极值，包括P=1处。这种现象在连续数据中不会出现。但是，模拟数据显示，当我们用修正P值以控制错误发现率（false discovery rate）的方法来处理列联表数据时，得出的结果是过于保守的。
+
+# 4. 参考文献 {#reference}
+
+Altman, N., & Krzywinski, M. (2017). Points of Significance: Tabular data. *Nature Methods, 14*(4), 329-330. doi:  [10.1038/nmeth.4239](http://dx.doi.org/10.1038/nmeth.4239)

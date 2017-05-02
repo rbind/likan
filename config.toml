@@ -1,0 +1,70 @@
+baseurl = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "Likan | 侃侃迩行"
+theme = "hugo-lithium-theme"
+googleAnalytics = "google analytics"
+disqusShortname = "https-likanzhan-github-io"
+MetaDataFormat = "yaml" # format of a new post
+# SectionPagesMenu = "main"
+hasCJKLanguage = true  # .WordCount works correctly for chinese
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+enableEmoji = true
+footnotereturnlinkcontents = "↩"
+
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/about"
+    weight = 1
+
+[[menu.main]]
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 2
+
+[[menu.main]]
+    name = "Blog"
+    url = "/p_english/"
+    weight = 3
+
+[[menu.main]]
+    name = "读书"
+    url = "/reading/"
+    weight = 4
+
+[[menu.main]]
+    name = "博客"
+    url = "/p_chinese/"
+    weight = 5
+
+[params]
+    fullURL = "https://likanzhan.github.io"
+    author = "Likan Zhan"
+    intro = false
+    headline = "headline"
+    description = "Web description"
+    # options for highlight.js (version, additional languages, and theme)
+    dateFormat = " 2006-01-02 " # "2006-01-02, Mon, "
+    highlightjsVersion = "9.9.0"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    disqusURL = "https://likanzhan.github.io"
+    customCSS = ["css/custom.css"]
+    customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
+
+[params.logo]
+  url = "bodhi.png"
+  width = 100
+  height = 100
+  alt = "Logo"
+
+[params.social]
+  twitter = "likanzhan"
+  weibo = "zhanlikan"
+  github = "likanzhan"
+  email = "zhanlikan@hotmail.com"

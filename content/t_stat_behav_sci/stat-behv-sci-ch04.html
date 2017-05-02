@@ -1,0 +1,311 @@
+---
+title: "Chapter 4. Variability"
+author: "Likan Zhan"
+date: '2017-03-14'
+output:
+  blogdown::html_page:
+    toc: true
+    fig_width: 12
+    fig_height: 8
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#figure-4.3">Figure 4.3</a></li>
+<li><a href="#figure-4.5">Figure 4.5</a></li>
+<li><a href="#figure-4.7">Figure 4.7</a></li>
+<li><a href="#figure.4.8">Figure.4.8</a></li>
+</ul>
+</div>
+<div id="figure-4.3" class="section level1">
+<h1>Figure 4.3</h1>
+<pre class="r"><code>X &lt;- c(1, 9, 5, 8, 7)
+hist(X,
+     breaks = seq(0.5, 10.5, by = 1),
+     ylim = c(0, 3),
+     xlim=c(0, 11),
+     yaxs=&quot;i&quot;,
+     xaxs=&quot;i&quot;,
+     col = &quot;#f8cea2&quot;,
+     border = &quot;#b78135&quot;,
+     axes = FALSE,
+     main = &quot;&quot;,
+     font.lab = 2
+)
+axis(1,
+    at = -1:10,
+    label = -1:10
+)
+axis(2,
+    at = 0:3,
+    label = 0:3
+)
+segments(
+    c(1, 7),
+    c(1,1),
+    c(1, 7),
+    c(2.5, 2.5),
+    col = &quot;#cf232a&quot;,
+    lty = 2,
+    lwd = 2
+)
+abline(v = 6,
+      col = &quot;#cf232a&quot;,
+      lwd = 2
+)
+arrows(
+      c(3.3, 3.7, 6.3, 6.7),
+      c(2.5, 2.5, 2.5, 2.5),
+      c(1, 6, 6, 7),
+      c(2.5, 2.5, 2.5, 2.5),
+      col = &quot;#cf232a&quot;,
+      lwd = 2,
+      length = 0.1
+)
+text(c(3.5, 6.5),
+     c(2.5, 2.5),
+     c(&quot;5&quot;, &quot;1&quot;)
+)
+mtext(expression(paste(mu, &quot; = 6&quot;, sep = &quot;&quot;)),
+      side = 3,
+      adj = 0.55
+)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch04_files/figure-html/Figure_04_03-1.png" width="1152" /></p>
+</div>
+<div id="figure-4.5" class="section level1">
+<h1>Figure 4.5</h1>
+<pre class="r"><code>X &lt;- c(4, 6, 5, 11, 7, 9, 7, 3)
+hist(X,
+     breaks = seq(0.5, 11.5, by = 1),
+     ylim = c(0, 3),
+     xlim = c(0.5, 12.5),
+     yaxs = &quot;i&quot;,
+     xaxs = &quot;i&quot;,
+     col = &quot;#f8cea2&quot;,
+     border = &quot;#b78135&quot;,
+     axes = FALSE,
+     main = &quot;&quot;,
+     font.lab = 2
+)
+axis(1,
+    at = 0:12,
+    label = 0:12
+)
+axis(2,
+    at = 0:3,
+    label = 0:3
+)
+segments(
+    c(6, 11),
+    c(1, 1),
+    c(6, 11),
+    c(2.5, 2.5),
+    col = &quot;#cf232a&quot;,
+    lty = 2,
+    lwd = 2
+)
+abline(v = 6.5,
+      col = &quot;#cf232a&quot;,
+      lwd = 2
+)
+arrows(
+      c(8.7, 9.3, 6.25, 6.25),
+      c(2.5, 2.5, 2.5, 2.5),
+      c(6,   11 , 6, 6.5),
+      c(2.5, 2.5, 2.5, 2.5),
+      col = &quot;#cf232a&quot;,
+      lwd = 2,
+      length = 0.1
+)
+text(c(9  , 6.2),
+     c(2.5, 2.6),
+     c(&quot;4.5&quot;, &quot;0.5&quot;)
+)
+mtext(&quot;M = 6.5&quot;,
+      side = 3,
+      adj = 0.5
+)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch04_files/figure-html/Figure_04_05-1.png" width="1152" /></p>
+</div>
+<div id="figure-4.7" class="section level1">
+<h1>Figure 4.7</h1>
+<pre class="r"><code>X &lt;- c(28, 31, 31 , 33, 33, 34, rep(35, 3),
+       rep(36, 3), 37, 37, 38, 38, 39, 40, 43, 45
+)
+hist(X,
+     breaks = seq(27.5, 46.5, by = 1),
+     ylim = c(0, 4),
+     xlim = c(27, 47),
+     yaxs = &quot;i&quot;,
+     xaxs = &quot;i&quot;,
+     col = &quot;#f8cea2&quot;,
+     border = &quot;#b98438&quot;,
+     axes = FALSE,
+     main = &quot;&quot;,
+     font.lab = 2
+)
+axis(1,
+    at = seq(26, 46.5, by = 2),
+    label = seq(26, 46.5, by = 2)
+)
+axis(2,
+    at = 0:3,
+    label = 0:3
+)
+segments(
+    c(30.5, 32.5, 34.5),
+    c(1,    1,    2   ),
+    c(31.5, 40.5, 38.5),
+    c(1,    1,    2   ),
+    col = &quot;#b98438&quot;
+)
+
+segments(
+    c(32, 36, 40),
+    c(-1, 3,  1),
+    c(32, 36, 40),
+    c(3.7,  4,  3.7),
+    lty = c(2, 1, 2),
+    col = &quot;#cf232a&quot;,
+    lwd = 1.5
+)
+arrows(
+      c(36,  36),
+      c(3.5, 3.5),
+      c(32,  40),
+      c(3.5, 3.5),
+      col = &quot;#cf232a&quot;,
+      lwd = 1.5,
+      length = 0.1
+)
+text(c(34, 38),
+     c(3.6, 3.6),
+     c(&quot;s = 4&quot;, &quot;s = 4&quot;)
+)
+mtext(&quot;M = 36&quot;,
+      side = 3,
+      adj = 0.45
+)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch04_files/figure-html/Figure_04_07-1.png" width="1152" /></p>
+</div>
+<div id="figure.4.8" class="section level1">
+<h1>Figure.4.8</h1>
+<ul>
+<li>Figure 4.8.a</li>
+</ul>
+<pre class="r"><code>ExA &lt;- data.frame(
+       Treatment_1 = c(35, 34, 36, 35),
+       Treatment_2 = c(39, 40, 41, 40)
+)
+hist(ExA[, &quot;Treatment_1&quot;],
+     breaks = seq(31.5, 42.5, by = 1),
+     ylim = c(0, 2.7),
+     xlim = c(32, 42),
+     yaxs = &quot;i&quot;,
+     xaxs = &quot;i&quot;,
+     col = &quot;#fce2b7&quot;,
+     border = &quot;#b98438&quot;,
+     axes = FALSE,
+     main = &quot;&quot;,
+     font.lab = 2,
+     xlab = &quot;X&quot;
+)
+axis(1,
+    at = seq(32, 42, by = 1),
+    label = c(0, seq(33, 42, by = 1))
+)
+axis(2,
+    at = 0:3,
+    label = 0:3
+)
+library(plotrix)
+axis.break(1,
+     breakpos =  32.5,
+     style = &quot;zigzag&quot;,
+     brw = 0.05
+)
+text(x = 35,
+     y = 2.5,
+     label = &quot;Treatment 1: M = 35&quot;
+)
+hist(ExA[, &quot;Treatment_2&quot;],
+     breaks = seq(34.5, 42.5, by = 1),
+     ylim = c(0, 2.7),
+     xlim = c(32, 42),
+     yaxs = &quot;i&quot;,
+     xaxs = &quot;i&quot;,
+     col = &quot;#a0d5cf&quot;,
+     border = &quot;#009f9b&quot;,
+     axes = FALSE,
+     main = &quot;&quot;,
+     font.lab = 2,
+     add = TRUE
+)
+segments(
+    c(33.5, 38.5),
+    c(1,    1   ),
+    c(36.5, 41.5),
+    c(1,    1   ),
+    col =
+    c(&quot;#b98438&quot;, &quot;#009f9b&quot;)
+)
+
+text(x = 40,
+     y = 2.5,
+     label = &quot;Treatment 2: M = 40&quot;
+)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch04_files/figure-html/Figure_04_08_a-1.png" width="1152" /></p>
+<ul>
+<li>Figure 4.8.b</li>
+</ul>
+<pre class="r"><code>ExB &lt;- data.frame(
+       Treatment_1 = c(31, 15, 57, 37),
+       Treatment_2 = c(46, 21, 61, 32)
+)
+hist(ExB[, &quot;Treatment_1&quot;],
+     breaks = seq(10.5, 62.5, by = 1),
+     ylim = c(0, 1.5),
+     xlim = c(10, 63),
+     yaxs = &quot;i&quot;,
+     xaxs = &quot;i&quot;,
+     col = &quot;#fce2b7&quot;,
+     border = &quot;#b98438&quot;,
+     axes = FALSE,
+     main = &quot;&quot;,
+     font.lab = 2,
+     xlab = &quot;X&quot;
+)
+axis(1,
+    at = seq(10, 70, by = 10),
+    label = seq(10, 70, by = 10)
+)
+axis(2,
+    at = 0:3,
+    label = 0:3
+)
+
+hist(ExB[, &quot;Treatment_2&quot;],
+     breaks = seq(10.5, 62.5, by = 1),
+     ylim = c(0, 1.5),
+     xlim = c(10, 63),
+     yaxs = &quot;i&quot;,
+     xaxs = &quot;i&quot;,
+     col = &quot;#a0d5cf&quot;,
+     border = &quot;#009f9b&quot;,
+     axes = FALSE,
+     main = &quot;&quot;,
+     font.lab = 2,
+     add = TRUE
+)
+text(x = 20,
+     y = 1.3,
+     label = &quot;Treatment 1: M = 35&quot;
+)
+
+text(x = 50,
+     y = 1.3,
+     label = &quot;Treatment 2: M = 40&quot;
+)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch04_files/figure-html/Figure_04_08_b-1.png" width="1152" /></p>
+</div>

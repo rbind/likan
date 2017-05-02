@@ -1,0 +1,54 @@
+---
+title: "Chapter 1. Introduction to Statistics"
+author: "Likan Zhan"
+date: '2017-03-08'
+slag: "ch01"
+output:
+  blogdown::html_page:
+    toc: true
+    fig_width: 12
+    fig_height: 8
+---
+
+# 1. Wake-up time and academic performance
+
+- The data
+
+```{r echo = TRUE, eval = TRUE, results = "asis"}
+library(xtable)
+Student <- LETTERS[1 : 8]
+Wake_up_time <- c(11, 9, 9, 12, 7, 10, 10, 8)
+Academic_Performance <- c(2.4, 3.6, 3.2, 2.2, 3.8, 2.2, 3.0, 3.0)
+fig0104 <- data.frame(Student, Wake_up_time, Academic_Performance)
+fig0104t <- xtable(fig0104, digits = c(0, 0, 0, 1),
+                   align = rep("c", ncol(fig0104) + 1))
+print(fig0104t, include.rownames = FALSE, type = 'html')
+```
+
+- Figure 1.4
+
+```{r label = "Figure_01_04", echo = TRUE, eval = TRUE, results = "asis"}
+plot(Academic_Performance ~ Wake_up_time,
+     data = fig0104,
+     xlab = "Wake-up time", font.lab = 2,
+     ylab = "Academic Performance",
+     col = "red", pch = 19, cex = 1.5,
+     axes = FALSE, ylim = c(2, 4)
+     )
+axis(1, at = 6:12, tick = 6:12)
+axis(2, at = seq(1.8, 4, by = 0.2),
+     tick = seq(1.8, 4, by = 0.2))
+```
+
+# 2. The sum function: $\sum$
+
+```{r results = "hold"}
+X <- c(3, 1, 7, 4)
+S1 <- sum(X)
+S2 <- sum(X^2)
+S3 <- (sum(X))^2
+S4 <- sum(X - 1)
+S5 <- sum((X - 1)^2)
+
+S1; S2; S3; S4; S5
+```

@@ -1,0 +1,29 @@
+---
+title: "Nonparametric Tests of Group Differences"
+date: '2017-05-02'
+---
+
+This post is adapted from [Quick-R](http://www.statmethods.net/stats/nonparametric.html)
+
+R provides functions for carrying out Mann-Whitney U, Wilcoxon Signed Rank, Kruskal Wallis, and Friedman tests.
+
+- independent 2-group Mann-Whitney U Test 
+```{r, eval = FALSE}
+wilcox.test(y ~ A) # where y is numeric and A is A binary factor
+```
+- independent 2-group Mann-Whitney U Test
+```{r, eval = FALSE}
+wilcox.test(y, x) # where y and x are numeric
+```
+- dependent 2-group Wilcoxon Signed Rank Test 
+```{r, eval = FALSE}
+wilcox.test(y1, y2, paired = TRUE) # where y1 and y2 are numeric
+```
+- Kruskal Wallis Test One Way Anova by Ranks 
+```{r, eval = FALSE}
+kruskal.test(y ~ A) # where y1 is numeric and A is a factor
+```
+- Randomized Block Design - Friedman Test 
+```{r, eval = FALSE}
+friedman.test(y ~ A | B) # where y are the data values, A is a grouping factor and B is a blocking factor
+```
