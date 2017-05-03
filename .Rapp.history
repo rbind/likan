@@ -49,6 +49,126 @@ segments(#
 text(#
   x = 0,#
   y = dt(0, df) /3,#
+  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of t distribution")#
+)#
+highh <- formatC(high, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)
+alpha <- 0.2#
+df <- 8#
+t <- seq (-5, 5, by = 0.01)#
+den <- dt(t, df)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F#
+)#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+axis(1)#
+axis(2)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote("Middle" ~ .(100 - alpha * 100) ~~ "% of" ~~ italic(t) ~~ "distribution")#
+)#
+highh <- formatC(high, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)
+alpha <- 0.2#
+df <- 8#
+t <- seq (-5, 5, by = 0.01)#
+den <- dt(t, df)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F#
+)#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+axis(1)#
+axis(2)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
   labels = bquote(#
     "Middle" #
     ~ .(100 - alpha * 100) #
@@ -1484,7 +1604,6 @@ pmaxFratio(1.35, 9, 2)
 2*pmaxFratio(1.35, 9, 2)
 ?var.test
 options(servr.daemon = TRUE)#
-setwd("~/website/hugo")
-bolgdown::new_post("reality-monitoring-brain-mechanisms")
-blogdown::new_post("reality-monitoring-brain-mechanisms")
-pmaxFratio(1.35, 9, 2, lower.tail=FALSE)
+setwd("~/website/hugo")#
+blogdown::build_site(local = FALSE, method = "html")#
+blogdown::serve_site() #serve site
