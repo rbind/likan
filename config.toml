@@ -52,7 +52,6 @@ footnotereturnlinkcontents = "↩"
     highlightjsVersion = "9.9.0"
     highlightjsLang = ["r", "yaml"]
     highlightjsTheme = "github"
-
     disqusURL = "https://likanzhan.github.io"
     customCSS = ["css/custom.css"]
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]

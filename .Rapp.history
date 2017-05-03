@@ -1,3 +1,949 @@
+t.test()
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = "Frqeuency",#
+  font.lab = 2#
+)#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+axis(1)#
+axis(2)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+highh <- formatC(high, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp()
+pp(tail = 1)
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = "Frqeuency",#
+  font.lab = 2#
+)#
+if (tail == 2){#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+}#
+axis(1)#
+axis(2)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+highh <- formatC(high, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp(tail = 1)
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = "Frqeuency",#
+  font.lab = 2#
+)#
+if (tail == 2){#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+}#
+axis(1)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+if (tail == 2){#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+}#
+highh <- formatC(high, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp(tail = 1)
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = NULL,#
+  font.lab = 2#
+)#
+if (tail == 2){#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+}#
+axis(1)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+if (tail == 2){#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+}#
+highh <- ifelse(tail == 2, high, highs)#
+highh <- formatC(highh, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp(tail = 1)
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = NULL,#
+  font.lab = 2#
+)#
+if (tail == 2){#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+}#
+axis(1)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+if (tail == 2){#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+}#
+highh <- ifelse(tail == 2, high, highs)#
+highh <- formatC(highh, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = NULL,#
+  font.lab = 2#
+)#
+if (tail == 2){#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+}#
+axis(1)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+if (tail == 2){#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+}#
+highh <- ifelse(tail == 2, high, highs)#
+highh <- formatC(highh, digits = 3, format="f")#
+text(#
+  x = highh, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp(tail = 1)
+pp(tail = 2)
+pp(tail = 1)
+pp(alpha = 0.01, tail = 1)
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = "",#
+  font.lab = 2#
+)#
+if (tail == 2){#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+}#
+axis(1)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+if (tail == 2){#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+}#
+highh <- ifelse(tail == 2, high, highs)#
+highh <- formatC(highh, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp(alpha = 0.01, tail = 1)
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = "",#
+  font.lab = 2#
+)#
+if (tail == 2){#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+}#
+axis(1)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+if (tail == 2){#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+}#
+highh <- ifelse(tail == 2, high, highs)#
+highh <- formatC(highh, digits = 3, format="f")#
+text(#
+  x = highh, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp(alpha = 0.01, tail = 1)
+pp(alpha = 0.05, tail = 1)
+pp(alpha = 0.1, tail = 1)
+mtext()
+mtext(aa)
+mtext("aa")
+mtext(bquote(alpha == .(alpha)))
+mtext(paste(bquote(alpha == .(alpha)), "mm"))
+pp(alpha = 0.1, tail = 1)
+mtext(paste(bquote(alpha == .(alpha)), "mm"))
+pp(alpha = 0.1, tail = 1)
+mtext(bquote(alpha == .(alpha) ~~ ", df" == .(df) ))
+mtext(bquote(alpha == .(alpha)~~ ", df" == .(df) ))
+pp(alpha = 0.1, tail = 1)
+mtext(bquote(alpha == .(alpha)~~", df" == .(df) ))
+pp <- function(#
+  alpha = 0.2,#
+  df = 8, #
+  tail = 2#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+highs <- qt(alpha, df, lower.tail = FALSE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = "",#
+  font.lab = 2#
+)#
+if (tail == 2){#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+}#
+axis(1)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+if (tail == 2){#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)		#
+} else {#
+segments(#
+  x0 = c(highs),#
+  y0 = c(0),#
+  x1 = c(highs),#
+  y1 = c(0.25, 0.25)#
+)#
+}#
+if (tail == 2){#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+}#
+highh <- ifelse(tail == 2, high, highs)#
+highh <- formatC(highh, digits = 3, format="f")#
+text(#
+  x = highh, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)#
+mtext(bquote(alpha == .(alpha)~~", df" == .(df) ))		#
+}
+pp(alpha = 0.1, tail = 1)
+pp(alpha = 0.1, tail = 2)
+pp(alpha = 0.2, tail = 2)
+pp(alpha = 0.2, tail = 1)
+pp(alpha = 0.01, tail = 1)
+qnorm(0.5+0.3)
+qnorm(0.5+0.25)
+license()
+demo()
+Japanese
+graphics::Japanese
+library(graohics)
+library(graphics)
+Japanese
+persp()
+persp
+?UseMethod
+help()
+dd<-read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
+?read.table
+dd<-read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
+library(xlsx)
+?read.xlsx
+dd<-read.table("~/Desktop/data/Experiment1Chinese.xlsx", sheeetIndex=1)
+dd<-read.table("~/Desktop/data/Experiment1Chinese.xlsx", 1)
+dd<-read.table("~/Desktop/data/Experiment1Chinese.xlsx", "sheet1")
+str(dd)
+dd<-read.xlsx("~/Desktop/data/Experiment1Chinese.xlsx", "sheet1")
+dd<-read.xlsx("~/Desktop/data/Experiment1Chinese.xlsx", "Sheet1")
+str(dd)
+dd<-read.xlsx("~/Desktop/data/data.xlsx", "Sheet1")
+str(dd)
+anova(FFD1~B, data=dd)
+?anova
+lm(FFD1~B, data=dd)
+?anova
+?aov
+aov(yield ~ block + N * P + K, npk)
+?ave
+?avo
+?t.test
+sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)
+t.test(sample, mu = 10)
+args(t.test)
+defaults(t.test)
+default(t.test)
+args(hist)
+args(t.test.default)
+?t.test
+args(t.test.default)
+args(t.test.formula)
+tt<-t.test(sample, mu = 10)
+str(tt)
+tt$ststistic
+tt$parameter
+tt$df
+tt$conf.int
+tt$p.value
+t.test(sample)
+t.test(sample, mu = 10)
+?pt
+pt(3, 8, lower.tail=FALSE)
+pt(3, 8, lower.tail=TRUE)
+pt(3, 8, lower.tail=FALSE) * 2
+tt
+anova(tt)
+methods(anova)
+methods(t.test)
+t.test.default
+methods(t.test.default)
+methods(t.test.default*)
+methods("t.test.default*")
+methods("t.test.default")
+methods(t.test.default)
+methods(t.test)
+methods(class=t.test)
+?t.test
+13-1.397
+13+1.397
+methods("Math")
+tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
+tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T, na.strings=c("","NA"))
+tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
+tt <- read.table("~/Desktop/data/Experiment1Chinese.csv", header=T)
+str(tt)
+tt
+tt <- read.table("~/Desktop/data/Experiment1Chinese.csv", header=T)
+tt
+tt <- read.table("~/Desktop/data/Experiment1Chinese.csv", header=T, sep = ",")
+tt
+str(tt)
+?t.test
+matrix(1:5, nrow = 2)
+matrix(1:6, nrow = 2)
+n<-matrix(1:6, nrow = 2)
+n<-matrix(1:6, nrow = 2, dimnames= c("C", "C"))
+n<-matrix(1:6, nrow = 2, dimnames= c("C", "D"))
+n<-matrix(1:6, nrow = 2, dimnames= list("C", "D"))
+n<-matrix(1:6, nrow = 3, dimnames= list("C", "D"))
+matrix(1:6, nrow = 3)
+n<-matrix(1:6, nrow = 3, dimnames= list("C", "D"))
+?matrix
+n<-matrix(1:6, nrow = 3, dimnames= list(c("A1", "A2", "A3"), c("B1", "B2")))
+n
+?matrix
+dd <-1:6
+n<-matrix(data=dd, nrow = 3, dimnames= list(c("A1", "A2", "A3"), c("B1", "B2")))
+n
+matrix(data=dd, nrow = 2, dimnames= list(c("A1", "A2", "A3"), c("B1", "B2")))
+matrix(data=dd, nrow = 2, dimnames= list(row=c("A1", "A2", "A3"), c("B1", "B2")))
+matrix(data=dd, nrow = 3, dimnames= list(row=c("A1", "A2", "A3"), c("B1", "B2")))
+matrix(data=dd, nrow = 3, dimnames= list(row=c("A1", "A2", "A3"), column=c("B1", "B2")))
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+t.test(wlr, dlr, var.equal = TRUE)
+var.test(wlr, dlr)
+?var.test
+qt(0.05/2, df)
+qt(0.05/2, 14)
+?t.test
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+t.test(wlr, dlr, var.equal = TRUE, )
+?t.test
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+t.test(wlr, dlr, var.equal = TRUE, alternative="less")
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+t.test(wlr, dlr, var.equal = TRUE, alternative="greater")
+mean(wlr)
+mean(dlr)
 qt(0.05, 14)
 qt(0.01, 14)
 wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
@@ -119,3905 +1065,19 @@ pmaxFratio(1.35, 9, 2)
 2.58*4
 50-2.58*4
 50+2.58*4
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)
-sum(sample ^ 2) - (sum(sample)) ^ 2 / length(sample)
-ls()
-sqmple
-sample
-SS <- sum(sample ^ 2) - (sum(sample))^2 / df
-SS <- sum(sample ^ 2) - (sum(sample))^2 / df
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)
-segments()
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-segments(#
-  x0 = c(8),#
-  y0 = c(8.1),#
-  x1 = c(10),#
-  y1 = c(8.1),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-segments(#
-  x0 = c(8),#
-  y0 = c(8.1),#
-  x1 = c(10),#
-  y1 = c(8.1),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-segments(#
-  x0 = c(8),#
-  y0 = c(8.1),#
-  x1 = c(10),#
-  y1 = c(8.1),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-segments(#
-  x0 = c(8),#
-  y0 = c(8.1),#
-  x1 = c(10),#
-  y1 = c(8.1),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-segments(#
-  x0 = c(8),#
-  y0 = c(1.1),#
-  x1 = c(10),#
-  y1 = c(1.1),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-segments(#
-  x0 = c(8),#
-  y0 = c(2.1),#
-  x1 = c(10),#
-  y1 = c(2.1),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-segments(#
-  x0 = c(8),#
-  y0 = c(2.1),#
-  x1 = c(10),#
-  y1 = c(2.1),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-segments(#
-  x0 = c(8, 12),#
-  y0 = c(2.1, 2.2),#
-  x1 = c(10, 10),#
-  y1 = c(2.1, 2.2),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, length.out = length),#
-  x1 = rep(10, length.out = length),#
-  y0 = seq(2.1, length.out = length),#
-  col = "red"#
-)
-unique
-str(unique)
-y0 = seq(2.1, length.out = length)
-y0
-?seq
-y0 = seq(2.1, 3, by = 0.1)
-y0
-y0 = seq(2.1, 3, length.out = length)
-y0
-x1 = rep(10, length),
-x1 = rep(10, length)
-x1
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y0 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-arrows(#
-  x0 = c(13, 13),#
-  y0 = c(2.5, 2.5),#
-  x1 = c(14.5, 11.5),#
-  y1 = c(2.5, 2.5),#
-  length = c(0.1, 0.1)#
-)#
-text(#
-  x = 12, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 14, #
-  y = 2.6,#
-  label = bquote(s == .(sd(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 1.8, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.8, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.8, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 3, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y0 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 3, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y0 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 3, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3.5),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 3, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y0 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3.5),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)
-text(#
-  x = 10, #
-  y = 3, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y0 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3.5),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 3, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-text(#
-  x = 10, #
-  y = 3, #
-  label = bquote(italic(mu) == 10), #
-  adj = 0.5#
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 1.7)#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 3)#
-)#
-#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 3)#
-)#
-#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 3, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 3, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 3)#
-)#
-#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-segments(#
-  x0 = c(13, 10),#
-  y0 = c(2, 1),#
-  x1 = c(13, 10),#
-  y1 = c(3, 3)#
-)#
-#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-segments(#
-  x0 = c(8, 10, 12, 13, 15, 17),#
-  y0 = c(1, 1,  2,  2,  1,  1 ),#
-  x1 = c(8, 10, 12, 13, 15, 17),#
-  y1 = c(3, 3,  3,  3,  3,  3 )#
-)#
-#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-segments(#
-  x0 = c(8, 10, 12, 13, 15, 17),#
-  y0 = c(1, 1,  2,  2,  1,  1 ),#
-  x1 = c(8, 10, 12, 13, 15, 17),#
-  y1 = c(3, 3,  3,  3,  3,  3 )#
-)#
-#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 10, 12, 13, 15, 17),#
-  y0 = c(1, 1,  2,  2,  1,  1 ),#
-  x1 = c(8, 10, 12, 13, 15, 17),#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 10, 12, 13, 15, 17),#
-  y0 = c(1, 1,  2,  2,  1,  2 ),#
-  x1 = c(8, 10, 12, 13, 15, 17),#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample)#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 10, 12, 13, 15, 17),#
-  y0 = c(1, 1,  2,  2,  1,  2 ),#
-  x1 = c(8, 10, 12, 13, 15, 17),#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = 1,#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-unique
-unique[unique != 10]
-unique <- unique(sample)[sample != 10]
-unique
-sample
-unique <- unique(sample[sample != 10])
-unique
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample[sample != 10])#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 10, 12, 13, 15, 17),#
-  y0 = c(1, 1,  2,  2,  1,  2 ),#
-  x1 = c(8, 10, 12, 13, 15, 17),#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = 1,#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-length
-unique
-unique(sample)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample[sample != 10])#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 10, 12, 13, 15, 17),#
-  y0 = c(1, 1,  2,  2,  1,  2 ),#
-  x1 = c(8, 10, 12, 13, 15, 17),#
-  y1 = seq(2.1, 2.9, length.out = length + 1)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = 1,#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample[sample != 10])#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 12, 13, 15, 17),#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = c(8, 12, 13, 15, 17),#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = 1,#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) - 3#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample[sample != 10])#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 12, 13, 15, 17),#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = c(8, 12, 13, 15, 17),#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = 1,#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)#
-unique <- unique(sample[sample != 10])#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 12, 13, 15, 17),#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = c(8, 12, 13, 15, 17),#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = 1,#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-sample
-mean(sample)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-sample <- sample - (M - mu)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)
-unique <- unique(sample[sample != 10])#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 12, 13, 15, 17) - diff,#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = c(8, 12, 13, 15, 17) - diff,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-unique <- unique(sample[sample != (10 + diff)])#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 12, 13, 15, 17) - diff,#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = c(8, 12, 13, 15, 17) - diff,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-unique <- unique(sample[sample != (10 + diff)])
-unique
-sample
-mean(sample)
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17)
-sample
-diff
-unique <- unique(sample[sample != (10 + diff)])
-unique
-unique <- unique(sample[sample != (10 + diff)] - diff)#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 12, 13, 15, 17) - diff,#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = c(8, 12, 13, 15, 17) - diff,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10) #
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = 1#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-unique <- unique(sample[sample != (10 + diff)] - diff)#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 12, 13, 15, 17) - diff,#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = c(8, 12, 13, 15, 17) - diff,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = 1,#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-unique <- unique(sample[sample != (10 + diff)] - diff)#
-length <- length(unique)#
-segments(#
-  x0 = c(8, 12, 13, 15, 17) - diff,#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = c(8, 12, 13, 15, 17) - diff,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-sample <- sample - diff#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)
-unique <- unique(sample[sample != (10 + diff)] - diff)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-unique
-unique <- unique(sample[sample != (10 + diff)] - diff)
-unique
-sample
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)
-sample
-unique <- unique(sample[sample != (10 + diff)] - diff)
-unique
-unique <- unique(sample[sample != (10 + diff)] - diff)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-frequency(sample)
-table(sample)
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = c(1, 2,  2,  1,  2 ),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-ssample
-table(ssample)
-tt<-table(ssample)
-str(tt)
-as.numeric(tt$ssample)
-tt$ssample
-tt
-tt
-str(tt)
-as.numeric(tt)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = 1,#
-  x1 = 10,#
-  y1 = 3 #
-)
-ssample
-sample
-sample - dif
-diff
-sample - diff
-length(sample[sample == (10 + diff)])
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu #
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-ff <- function (#
-diff <- M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at= 13 - diff, #
-  text = bquote(italic(M) == .(mean(sample)))#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff(diff = 0)
-ff()
-ff(diff = 0)
-ff()
-ff()
-ff(diff = 0)
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff(0)
-ff()
-ff(0)
-ff()
-ff()
-ff(0)
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10),#
-  padj = -1#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff(0)
-ff()
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10)#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10)#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff(0)
-ff()
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10)#
-)#
-text(#
-  x = M,#
-  y = 2.5, #
-  label = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10)#
-)#
-text(#
-  x = M - diff,#
-  y = 2.5, #
-  label = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 7.5:17.5 - diff, #
-   axes = FALSE, #
-   xlim = c(7, 18) - diff, #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18 - diff#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu) == 10)#
-)#
-text(#
-  x = M - diff,#
-  y = 1.5, #
-  label = bquote(italic(M) == .(M - diff))#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff(0)
-ff()
-ff(0)
-par(mfrow = c(2, 1))#
-ff()#
-ff(0)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-diff <- M - mu#
-n <- length(sample)#
-sample_n <- sample - diff#
-SST <- sum(sample ^ 2) - (sum(sample)) ^ 2 / n#
-SSE <- sum(sample_n ^ 2) - (sum(sample_n)) ^ 2 / n
-diff
-qt()
-t.test(sample, mu = 10)
-t.test(sample, mu = 10, alpha = .05)
-t.test(sample, mu = 10, alpha = .2)
-?t.test
-?t.test
-?t.test
-?t.test
+library(blogdown)
+?build_site
+blogdown::build_site(local = FALSE, method = "html")
 options(servr.daemon = TRUE)#
 setwd("~/website/hugo")
-blogdown::new_post("complexity-and-compositionality-in-fluid-intelligence")
+blogdown::build_site(local = FALSE, method = "html_encoded")
+blogdown::build_site(local = FALSE, method = "html_encoded")
+blogdown::serve_site() #serve site
+blogdown::build_site(local = FALSE, method = "html_encoded")
+blogdown::serve_site() #serve site
+?build_site
+blogdown::build_site(local = FALSE, method = "html_encoded")
+？blogdown::serve_site() #serve site
+?blogdown::serve_site() #serve site
+?serve_site() #serve site
+blogdown::build_site(local = FALSE, method = "html")
