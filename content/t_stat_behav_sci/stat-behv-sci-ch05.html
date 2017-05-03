@@ -1,7 +1,7 @@
 ---
-title: "Chapter 3. Central Tendency"
+title: "Chapter 5. z-Scores"
 author: "Likan Zhan"
-date: '2017-03-14'
+date: '2017-05-03'
 output:
   blogdown::html_page:
     number_sections: true
@@ -13,331 +13,354 @@ output:
 
 <div id="TOC">
 <ul>
-<li><a href="#figure-3.1"><span class="toc-section-number">1</span> Figure 3.1</a></li>
-<li><a href="#figure-3.2"><span class="toc-section-number">2</span> Figure 3.2</a></li>
-<li><a href="#figure-3.5"><span class="toc-section-number">3</span> Figure 3.5</a></li>
-<li><a href="#figure-3.6"><span class="toc-section-number">4</span> Figure 3.6</a></li>
-<li><a href="#figure-3.7"><span class="toc-section-number">5</span> Figure 3.7</a></li>
-<li><a href="#figure-3.8"><span class="toc-section-number">6</span> Figure 3.8</a></li>
-<li><a href="#figure-3.9"><span class="toc-section-number">7</span> Figure 3.9</a></li>
-<li><a href="#figure-3.10"><span class="toc-section-number">8</span> Figure 3.10</a></li>
+<li><a href="#figure.05.02"><span class="toc-section-number">1</span> Figure.05.02</a></li>
+<li><a href="#figure.05.03"><span class="toc-section-number">2</span> Figure.05.03</a></li>
+<li><a href="#figure.05.04"><span class="toc-section-number">3</span> Figure.05.04</a></li>
+<li><a href="#centering-and-scale"><span class="toc-section-number">4</span> Centering and scale</a></li>
 </ul>
 </div>
-<div id="figure-3.1" class="section level1">
-<h1><span class="header-section-number">1</span> Figure 3.1</h1>
-<pre class="r"><code>NoAlcoh &lt;- c(1, 3, 4, 5, 2, 2)
-Alcohol &lt;- c(1, 1, 2, 5, 4, 1)
-plot(NULL,
-     xlim = c(0, 8),
-     ylim = c(0, 5.5),
+<div id="figure.05.02" class="section level1">
+<h1><span class="header-section-number">1</span> Figure.05.02</h1>
+<pre class="r"><code>X &lt;- function(mean, sd) {
+     X &lt;- seq((mean - 3 * sd),
+              (mean + 3 * sd),
+              by = 0.01
+             )
+     return(X)
+}
+
+Y &lt;- function (mean, sd, ...) {
+      dots &lt;- list(...)
+      if (length(dots) == 0)
+         X &lt;- X(mean, sd)
+      else
+        X &lt;- unlist(dots)
+      Y &lt;- dnorm(X,
+                mean = mean,
+                sd = sd
+           )
+      return(Y)
+}
+
+pp &lt;- function(mean, sd){
+plot(X(mean, sd),
+     Y(mean, sd),
+     type = &quot;l&quot;,
+     xlab = &quot;&quot;,
+     ylab = &quot;&quot;,
      axes = FALSE,
-     xaxs = &quot;i&quot;,
-     yaxs = &quot;i&quot;,
-     xlab = &quot;Attractiveness rating&quot;,
-     ylab = &quot;Frequency&quot;, font.lab = 2
+     col = &quot;#af1e23&quot;,
+     lwd = 2
 )
-axis(1,
-     at = 0:8,
-     label = 0:8
-)
-axis(2,
-     at = 0:5,
-     label = 0:5
-)
-points(x = 1:6,
-       y = NoAlcoh,
-       pch = 19,
-       col = &quot;#cf232a&quot;,
-       cex = 1.5
-)
-lines(x = 0:7,
-      y = c(0, NoAlcoh, 0),
-      col = &quot;#cf232a&quot;,
-      lwd = 2
-)
-points(x = 2:7,
-       y = Alcohol,
-       pch = 1,
-       col = &quot;#005093&quot;,
-       cex = 1.5
-)
-lines(x = 1:8,
-      y = c(0, Alcohol, 0),
-      col = &quot;#005093&quot;,
-      lty = 2,
-      lwd = 2
-)
-legend(x = 6,
-       y = 5,
-       box.col = &quot;white&quot;,
-       bg = &quot;white&quot;,
-       lty = c(1, 2),
-       pch = c(19, 1),
-       col =c (&quot;#cf232a&quot;, &quot;#005093&quot;),
-       legend = c(&quot;No alcohol&quot;, &quot;Moderate alcohol&quot;)
-)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_01-1.png" width="1152" /></p>
-</div>
-<div id="figure-3.2" class="section level1">
-<h1><span class="header-section-number">2</span> Figure 3.2</h1>
-<ul>
-<li>Figure_03_02_a</li>
-</ul>
-<pre class="r"><code>f &lt;- c(0, 1:4, 3:1, 0)
-barplot(height = f,
-        names.arg = 1:9,
-        space = 0,
-        xlim = c(0, 9),
-        ylab = &quot;Frequency&quot;,
-        xlab = &quot;X&quot;,
-        col = &quot;#fce6bf&quot;,
-        border = &quot;#b78135&quot;,
-        font.lab = 2)
 abline(h = 0)
-segments( c(1, 2, 3),
-          c(1, 2, 3),
-          c(8, 7, 6),
-          c(1, 2, 3),
-          col = &quot;#b78135&quot;)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_02_a-1.png" width="1152" /></p>
-<ul>
-<li>Figure_03_02_b</li>
-</ul>
-<pre class="r"><code>f &lt;- c(rep(1, 5), 2, 3, 4, 2)
-barplot(height = f,
-        names.arg = 1:9,
-        space = 0,
-        xlim = c(0, 9),
-        ylab = &quot;Frequency&quot;,
-        xlab = &quot;X&quot;,
-        col = &quot;#fce6bf&quot;,
-        border = &quot;#b78135&quot;,
-        font.lab = 2)
-abline(h = 0)
-segments( c(1, 6, 7),
-          c(1, 2, 3),
-          c(9, 9, 8),
-          c(1, 2, 3),
-          col = &quot;#b78135&quot;)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_02_b-1.png" width="1152" /></p>
-<ul>
-<li>Figure_03_02_c</li>
-</ul>
-<pre class="r"><code>f &lt;- c(2, 4, 2, rep(0, 3), 2, 4, 2)
-barplot(height = f,
-        names.arg = 1:9,
-        space = 0,
-        xlim = c(0, 9),
-        ylab = &quot;Frequency&quot;,
-        xlab = &quot;X&quot;,
-        col = &quot;#fce6bf&quot;,
-        border = &quot;#b78135&quot;,
-        font.lab = 2)
-abline(h = 0)
-segments( c(0, 0, 1, 6, 6, 7),
-          c(1, 2, 3, 1, 2, 3),
-          c(3, 3, 2, 9, 9, 8),
-          c(1, 2, 3, 1, 2, 3),
-          col = &quot;#b78135&quot;)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_02_c-1.png" width="1152" /></p>
-</div>
-<div id="figure-3.5" class="section level1">
-<h1><span class="header-section-number">3</span> Figure 3.5</h1>
-<ul>
-<li>Figure_03_05_a</li>
-</ul>
-<pre class="r"><code>X &lt;- c(1, 2, 3, rep(4, 4), 6)
-hist(X, xlim = c(0, 7),
-     breaks = 0.5 : 7.5,
-     yaxs = &quot;i&quot;,
-     xaxs = &quot;i&quot;,
-     main = &quot;&quot;,
-     font.lab = 2
-)
 segments(
-     c(1.5, 2.5, 3.5, 0.5, 3.5, 3.5),
-     c(0, 0, 0, 1, 2, 3),
-     c(1.5, 2.5, 3.5, 4.5, 4.5, 4.5),
-     c(1, 1, 1, 1, 2, 3)
-)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_05_a-1.png" width="1152" /></p>
-<ul>
-<li>Figure_03_05_b</li>
-</ul>
-<pre class="r"><code>X &lt;- c(1, 2, 3, rep(4, 4), 6)
-hist(X, xlim = c(0, 7),
-     breaks = 0.5 : 7.5,
-     yaxs = &quot;i&quot;,
-     xaxs = &quot;i&quot;,
-     main = &quot;&quot;,
-     font.lab = 2
+     c(mean, mean + sd),
+     c(0, 0),
+     c(mean, mean + sd),
+     c(Y(mean, sd, mean),
+       Y(mean, sd, mean + sd)
+      ),
+      lty = c(1, 2)
 )
-polygon( c(0.5, 0.5, 3.5, 3.5, 3.75, 3.75),
-         c(0, 1, 1, 4, 4, 0),
-         col = &quot;#fce6bf&quot;
+arrows(
+      mean,
+      Y(mean, sd, mean + sd),
+      mean + sd,
+      Y(mean, sd, mean + sd),
+      length = 0.08
 )
-segments(
-     c(1.5, 2.5, 3.5, 0.5, 3.5, 3.5),
-     c(0, 0, 0, 1, 2, 3),
-     c(1.5, 2.5, 3.5, 4.5, 4.5, 4.5),
-     c(1, 1, 1, 1, 2, 3)
+text(
+    x = mean + sd / 2,
+    y = Y(mean, sd, mean + sd),
+    pos = 3,
+    label = bquote(sigma == .(sd)),
 )
-abline(v = 3.75)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_05_b-1.png" width="1152" /></p>
+mtext(c(mean, mean + sd),
+      side = c(1, 1),
+      adj = c(3, 4) / 6,
+      padj = - 0.7
+)
+mtext(&quot;X = 76&quot;,
+      side = 1,
+      adj = (3 + 6 / sd ) /6,
+      padj = 2
+)
+arrows(76,
+      -Y(mean, sd, mean + sd) / 6,
+      76,
+      0,
+      xpd = TRUE,
+      length = 0.08
+)
+}
+par(mfrow = c(1, 2))
+pp(70, 3)
+pp(70, 12)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_05_02-1.png" width="1152" /></p>
 </div>
-<div id="figure-3.6" class="section level1">
-<h1><span class="header-section-number">4</span> Figure 3.6</h1>
-<pre class="r"><code>X &lt;- c(rep(2, 3), rep(3, 2), 12)
-hist(X,
-     xlim = c(0, 13),
-     ylim = c(0, 4),
-     breaks = seq(0.5, 13.5, by = 1),
-     yaxs = &quot;i&quot;,
-     xaxs = &quot;i&quot;,
-     main = &quot;&quot;,
-     font.lab = 2,
-     border = &quot;#b78135&quot;,
-     col = &quot;#fce6bf&quot;,
-     axes = FALSE
-)
-axis(1, at = 0:13, labels = 0:13)
-axis(2, at = 0:4, labels = 0:4)
-segments(
-     c(1.5, 1.5),
-     c(1, 2),
-     c(3.5, 3.5),
-     c(1, 2),
-     col = &quot;#b78135&quot;
-)
-abline(v = 4,
-       lty = 3
-)
-text(x = 4,
-     y = 3.5,
-     pos = 4,
-     label = expression(paste(mu, &quot; = 4&quot;))
-)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_06-1.png" width="1152" /></p>
-</div>
-<div id="figure-3.7" class="section level1">
-<h1><span class="header-section-number">5</span> Figure 3.7</h1>
-<pre class="r"><code>X &lt;- c(2, 5, 8, 6, 3, 1, 2, 2, 4, 6, 7)
-barplot(X,
-        xlim = c(0, 12),
-        ylim = c(0, 9),
-        space = 0,
-        yaxs = &quot;i&quot;,
-        border = &quot;white&quot;,
-        col = &quot;#00acaa&quot;,
-        axes = FALSE,
-        main = &quot;&quot;,
-        xlab = &quot;Tone identification score (Number correct out of 10)&quot;,
-        ylab = &quot;Frequency&quot;,
-        font.lab = 2
-)
-axis(1,
-    at = 0.5:10.5,
-    labels = 0:10
-)
-axis(2,
-     at = 0:9,
-     labels = 0:9
-)
-abline(h = 0, lwd = 2)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_07-1.png" width="1152" /></p>
-</div>
-<div id="figure-3.8" class="section level1">
-<h1><span class="header-section-number">6</span> Figure 3.8</h1>
-<pre class="r"><code>X &lt;- c(10, rep(11, 4), rep(12, 3), 13, 100)
-Xgap &lt;- ifelse(X &gt; 15, X-82, X)
-hist(Xgap,
-     breaks = seq(9.5, 18.5, by = 1),
-     xaxs = &quot;i&quot;,
-     yaxs = &quot;i&quot;,
-     main = &quot;&quot;,
-     xlim = c(8.5, 19),
+<div id="figure.05.03" class="section level1">
+<h1><span class="header-section-number">2</span> Figure.05.03</h1>
+<pre class="r"><code>X &lt;- function(mean, sd) {
+     X &lt;- seq((mean - 3 * sd),
+              (mean + 3 * sd),
+              by = 0.01
+             )
+     return(X)
+}
+
+Y &lt;- function (mean, sd, ...) {
+      dots &lt;- list(...)
+      if (length(dots) == 0)
+         X &lt;- X(mean, sd)
+      else
+        X &lt;- unlist(dots)
+      Y &lt;- dnorm(X,
+                mean = mean,
+                sd = sd
+           )
+      return(Y)
+}
+
+pp &lt;- function(mean, sd){
+plot(X(mean, sd),
+     Y(mean, sd),
+     xlim = c(mean - 4 * sd,
+              mean + 4 * sd),
+     type = &quot;l&quot;,
+     xlab = &quot;&quot;,
+     ylab = &quot;&quot;,
      axes = FALSE,
-     xlab = &quot;Number of errors&quot;,
-     ylab = &quot;Frequency&quot;,
-     font.lab =  2,
-     col = &quot;#fce6bf&quot;,
-     border = &quot;#b78135&quot;
+     col = &quot;#af1e23&quot;,
+     lwd = 2
+)
+axis(
+    1,
+    at = seq(mean -  3 * sd,
+             mean + 3 * sd,
+             by = sd
+             ),
+    labels = FALSE,
+    line = 0,
+)
+axis(
+    1,
+    at = seq(mean -  3 * sd,
+             mean + 3 * sd,
+             by = sd
+            ),
+    labels = seq(-3, 3, by = 1),
+    line = 2
+)
+mtext(expression(mu),
+      1,
+      padj = 1)
+mtext(text = c(&quot;X&quot;, &quot;z&quot;),
+      side = c(1, 1),
+      adj = c(0.87, 0.87),
+      xpd = TRUE,
+      padj = c(-0.5, 2.5)
 )
 segments(
-     c(9.5, 10.5, 10.5),
-     c(1, 2, 3),
-     c(13.5, 12.5, 12.5),
-     c(1, 2, 3),
-     col = &quot;#b78135&quot;
+     x0 = c(
+       mean,
+       mean + sd,
+       mean + 2 * sd,
+       mean - sd,
+       mean - 2 * sd
+       ),
+     y0 = 0,
+     x1 = c(
+       mean,
+       mean + sd,
+       mean + 2 * sd,
+       mean - sd,
+       mean - 2 * sd
+       ),
+     y1 = c(
+       Y(mean, sd, mean),
+       rep(
+       Y(mean, sd, mean + sd),
+       4
+       )
+     ),
+      lty = 5
 )
-axis(1,
-    at = c(10:15, 18),
-    label = c(10:15, 100))
-axis(2)
-abline(h = 0,
-     lwd = 1.5)
-library(plotrix)
-axis.break(1,
-     breakpos =  9,
-     style = &quot;zigzag&quot;,
-     brw = 0.05
+text(
+    x = mean + sd / 2,
+    y = Y(mean, sd, mean + sd),
+    pos = 3,
+    label = bquote(sigma),
 )
-axis.break(1,
-     breakpos =  16,
-     style = &quot;zigzag&quot;,
-     brw = 0.05
-)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_08-1.png" width="1152" /></p>
+arrows(
+      x0 = c(
+        mean,
+        mean,
+        mean + sd,
+        mean - sd
+      ),
+      y0 = Y(mean, sd, mean + sd),
+      x1 = c(
+        mean + sd,
+        mean - sd,
+        mean + 2 * sd,
+        mean - 2 * sd
+      ),
+      y1 = Y(mean, sd, mean + sd),
+      length = 0.08
+)
+}
+pp(70, 3)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_05_03-1.png" width="1152" /></p>
 </div>
-<div id="figure-3.9" class="section level1">
-<h1><span class="header-section-number">7</span> Figure 3.9</h1>
-<pre class="r"><code>X = 0:4
-Y = c(19, 21, 15, 5, 10)
-plot(X, Y,
-     type =  &quot;l&quot;,
-     ylim = c(0, 30),
-     xlim = c(-0.2, 4.1),
-     col = &quot;#cf232a&quot;,
-     xlab = &quot;Drug dose&quot;,
-     ylab = &quot;Mean food consumption&quot;,
-     font.lab = 2,
-     lwd = 1.5,
+<div id="figure.05.04" class="section level1">
+<h1><span class="header-section-number">3</span> Figure.05.04</h1>
+<pre class="r"><code>X &lt;- function(mean, sd) {
+     X &lt;- seq((mean - 3 * sd),
+              (mean + 3 * sd),
+              by = 0.01
+             )
+     return(X)
+}
+
+Y &lt;- function (mean, sd, ...) {
+      dots &lt;- list(...)
+      if (length(dots) == 0)
+         X &lt;- X(mean, sd)
+      else
+        X &lt;- unlist(dots)
+      Y &lt;- dnorm(X,
+                mean = mean,
+                sd = sd
+           )
+      return(Y)
+}
+
+pp &lt;- function(mean, sd){
+plot(X(mean, sd),
+     Y(mean, sd),
+     xlim = c(mean - 4 * sd,
+              mean + 4 * sd),
+     type = &quot;l&quot;,
+     xlab = &quot;&quot;,
+     ylab = &quot;&quot;,
      axes = FALSE,
-     yaxs = &quot;i&quot;,
-     xaxs = &quot;i&quot;
+     col = &quot;#af1e23&quot;,
+     lwd = 3
 )
-points(X, Y,
-       pch = 19,
-       col = &quot;#cf232a&quot;,
-       lwd = 2
+axis(
+    1,
+    at = seq(mean -  3 * sd,
+             mean + 3 * sd,
+             by = sd
+             ),
+    labels = FALSE,
+    line = 0,
 )
-abline(h = 0, lwd = 1.5)
-abline(v = -0.2, lwd = 1.5)
-axis(side = 1,
-     at = 0:4,
-     label = 0:4,
-     lwd = 1
+mtext(text = c(
+        bquote(.(mean)),
+        bquote(.(mean - 2 * sd))
+        ),
+      side = 1,
+      padj = 1,
+      adj = c(3, 3 - 1.45) / 6
+      )
+mtext(text = &quot;X&quot;,
+      side = 1,
+      adj = 0.87,
+      xpd = TRUE,
+      padj =-0.5
 )
-axis(side = 2,
-     at = seq(5, 30, by = 5),
-     label = seq(5,30, by = 5),
-     lwd = 1
-)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_09-1.png" width="1152" /></p>
+segments(
+     x0 = c(
+       mean,
+       mean - sd,
+       mean - 2 * sd
+       ),
+     y0 = 0,
+     x1 = c(
+       mean,
+       mean - sd,
+       mean - 2 * sd
+       ),
+     y1 = c(
+       Y(mean, sd, mean),
+       rep(
+       Y(mean, sd, mean + sd),
+       2
+       )
+     ),
+      lty = c(1, 5, 5)
+)
+text(
+    x = c(
+     mean - sd / 2,
+     mean - 1.5 * sd
+    ),
+    y = Y(mean, sd, mean + sd),
+    pos = 3,
+    label = bquote(sigma),
+)
+arrows(
+      x0 = c(
+        mean,
+        mean - sd
+      ),
+      y0 = Y(mean, sd, mean + sd),
+      x1 = c(
+        mean - sd,
+        mean - 2 * sd
+      ),
+      y1 = Y(mean, sd, mean + sd),
+      length = 0.08
+)
+segments(x0 = c(mean - 2 * sd,
+                mean,
+                mean - 2 * sd
+         ),
+         y0 = c(
+              -Y(65, 3, 65)/5,
+              -Y(65, 3, 65)/4,
+              -Y(65, 3, 65)/4
+         ),
+         x1 = c(mean,
+                mean,
+                mean - 2 * sd
+         ),
+         y1 = c(
+                -Y(65, 3, 65)/5,
+                -Y(65, 3, 65)/7.5,
+                -Y(65, 3, 65)/7.5
+         ),
+         xpd = TRUE
+)
+mtext(
+      text = &quot;6 points&quot;,
+      side = 1,
+      adj = 2.3/6,
+      padj = 4,
+)
+}
+pp(65, 3)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_05_04-1.png" width="1152" /></p>
 </div>
-<div id="figure-3.10" class="section level1">
-<h1><span class="header-section-number">8</span> Figure 3.10</h1>
-<pre class="r"><code>X = c(&quot;Northeast&quot;, &quot;South&quot;, &quot;Midwest&quot;, &quot;West&quot;)
-Y = c(110, 75, 90, 120)
-barplot(Y,
-        names.arg = X,
-        col = c(&quot;#d5493a&quot;, &quot;#0bb0ae&quot;,
-                &quot;#ef9d56&quot;, &quot;#2aa96d&quot;),
-        border = &quot;white&quot;,
-        xlab = &quot;Region of the United States&quot;,
-        ylab = &quot;Median new house cost (in $1000s)&quot;,
-        font.lab = 2
-        )
-abline (h = 0)</code></pre>
-<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_03_10-1.png" width="1152" /></p>
+<div id="centering-and-scale" class="section level1">
+<h1><span class="header-section-number">4</span> Centering and scale</h1>
+<pre class="r"><code>X &lt;- c(0, 2, 4, 4, 5)
+SS &lt;- sum(X^2) - (sum(X))^2 / length(X)
+s &lt;- sqrt(SS / (length(X) - 1))
+M &lt;- mean(X)
+z &lt;- (X - M) / s
+print(z)</code></pre>
+<pre><code>## [1] -1.5 -0.5  0.5  0.5  1.0</code></pre>
+<pre class="r"><code>scale(X)</code></pre>
+<pre><code>##      [,1]
+## [1,] -1.5
+## [2,] -0.5
+## [3,]  0.5
+## [4,]  0.5
+## [5,]  1.0
+## attr(,&quot;scaled:center&quot;)
+## [1] 3
+## attr(,&quot;scaled:scale&quot;)
+## [1] 2</code></pre>
 </div>

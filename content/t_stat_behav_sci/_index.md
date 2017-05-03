@@ -52,7 +52,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 04. Variability. [Slides](http://statbehavsci.netlify.com/CH.04.pdf); [Scripts](/t_stat_behav_sci/stat-behv-sci-ch04/)
 
 - Part II. Foundations of Inferential Statistics
-  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [Slides](http://statbehavsci.netlify.com/CH.05.pdf)
+  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [Slides](http://statbehavsci.netlify.com/CH.05.pdf); [Scripts](/t_stat_behav_sci/stat-behv-sci-ch05/)
   - Chapter 06. Probability. [Slides](http://statbehavsci.netlify.com/CH.06.pdf)
   - Chapter 07. Probability and Samples: The Distribution of Sample Means. [Slides](http://statbehavsci.netlify.com/CH.07.pdf)
   - Chapter 08. Introduction to Hypothesis Testing. [Slides](http://statbehavsci.netlify.com/CH.08.pdf)

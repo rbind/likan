@@ -1,7 +1,7 @@
 ---
 title: "Chapter 1. Introduction to Statistics"
 author: "Likan Zhan"
-date: '2017-03-08'
+date: '2017-03-01'
 slag: "ch01"
 output:
   blogdown::html_page:
