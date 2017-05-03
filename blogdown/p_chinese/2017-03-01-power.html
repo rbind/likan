@@ -1,0 +1,285 @@
+---
+title: 正确理解和使用P值
+author: 侃侃迩行
+date: '2017-03-01'
+output:
+  blogdown::html_page:
+    toc: true
+    fig_width: 6
+    fig_height: 4
+---
+
+<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<!-- BLOGDOWN-BODY-BEFORE -->
+<div id="TOC">
+<ul>
+<li><a href="#p">1. P值、效力和效应</a></li>
+<li><a href="#Bayes-factor">2. 贝叶斯因子</a></li>
+<li><a href="#False-discovery-rate">3. 错误发现率</a></li>
+<li><a href="#Confidence-intervals">4. 置信区间</a></li>
+<li><a href="#Further-reading">5. 延伸阅读</a></li>
+</ul>
+</div>
+<!-- /BLOGDOWN-BODY-BEFORE -->
+<p>什么是P值？</p>
+<blockquote>
+<p><em>Informally, a p-value is the probability under a specified statistical model that a statistical summary of the data (e.g., the sample mean di erence between two compared groups) would be equal to or more extreme than its observed value.</em></p>
+</blockquote>
+<p>P值检验的是研究者采集到的样本与某一个统计假设的相容程度，而不是这个统计假设的正确与否。</p>
+<div id="p" class="section level1">
+<h1>1. P值、效力和效应</h1>
+<p>研究者通常希望确定一个理论或假设正确与否。以独立样本T检验的典型应用情境为例，我们希望确定某种疾病是否影响人的某个生理指标，从而为将来该疾病者的诊断和治疗奠定基础。该研究问题会产生两个假设：</p>
+<ul>
+<li><p>零假设（<span class="math inline">\(H_0\)</span>）：该疾病不影响该生理指标；</p></li>
+<li><p>备择假设（<span class="math inline">\(H_1\)</span>）: 该疾病影响该生理指标；</p></li>
+</ul>
+<p>大多数情况下，我们通常无法以一种二元论的方式确定该理论正确还是错误，只能从概率层次上对该问题进行回答：该疾病对某生理指标有影响的概率是 <span class="math inline">\(\pi_0\)</span>，没有影响的概率是 <span class="math inline">\(1-\pi_0\)</span>。当<span class="math inline">\(\frac{\pi}{1-\pi}\)</span>的比率足够大时，我们就说<code>该疾病影响该生理指标</code>。</p>
+<p>实际应用中让这个问题变得更复杂的是：研究者通常没有办法收集这两个被试群体的所有数据，而只能从其中选取一个样本。我们要从收集到的样本数据去推论这两个整体的关系。样本数据也会产生两种结果：</p>
+<ul>
+<li>不能支持零假设：样本数据现实该疾病影响该生理指标，<span class="math inline">\(A\)</span>；</li>
+<li>支持零假设：样本数据显示该疾病不影响该生理指表, <span class="math inline">\(1-A\)</span>；</li>
+</ul>
+<p>由于整体和样本之间的不同关系，实验会产生四种不同的结果：</p>
+<p>第一种情况发生在零假设正确时，即疾病实际上不影响生理指标时。此时如果因为取样误差，样本数据显示疾病影响生理指标，这就产生了所说的<code>虚报</code>或者叫<code>I</code>类错误。虚报发生的概率就是我们通常所说的P值：是当研究总体符合零假设的情况下，我们收集到该样本数据的可能性，<span class="math inline">\(\alpha = P(A|(1-\pi_0)\)</span>。</p>
+<pre class="r"><code>n &lt;- 10
+sd &lt;- 1
+p_value &lt;- 0.05
+Cohen_D &lt;- 4
+
+Mean0 &lt;- 0
+t_value &lt;- qt(p_value / 2, df = n, lower.tail = FALSE)
+lw &lt;- Mean0 - t_value * sd
+up &lt;- Mean0 + t_value * sd
+
+X0 &lt;- Mean0 + seq(-4, 4, by = 0.01) * sd
+Y0 &lt;- dt(X0, df = n)
+Mean1 &lt;- Mean0 + Cohen_D * sd
+X1 &lt;- X0 + Mean1
+Y1 &lt;- Y0
+
+Xmin &lt;- min(c(X0, X1))
+Xmax &lt;- max(c(X0, X1))</code></pre>
+<pre class="r"><code>plot(X0, Y0, type = &quot;n&quot;, xlab = &quot;&quot;, ylab = &quot;&quot;,
+     main = NULL, axes = FALSE, xlim = c(Xmin, Xmax))
+lines(X0, Y0)
+axis(1, at = seq(Xmin, Xmax, sd), pos = 0)
+mtext(expression(H[0]), side = 3,
+      adj = 4.15 / (Xmax-Xmin), padj = 0.4)
+abline(v = t_value, lty = 3)
+
+polygon(c(min(X0[X0 &gt;= up]),
+              X0[X0 &gt;= up],
+          max(X0[X0 &gt;= up])),
+        c(0, Y0[X0 &gt;= up], 0),
+        col = rgb(1, 0, 0, 0.4))
+polygon(c(min(X0[X0 &lt;= lw]),
+              X0[X0 &lt;= lw],
+          max(X0[X0 &lt;= lw])),
+        c(0, Y0[X0 &lt;= lw], 0),
+        col = rgb(1, 0, 0, 0.4))
+text(x = t_value + 0.4, y = -0.01,
+     expression(alpha/2), pos = 3, col = &quot;blue&quot;)</code></pre>
+<p><img src="#####content/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-2-1.png" width="576" /></p>
+<p>第二种情况也发生在零假设正确，即疾病实际上不影响生理指标时，研究者的样本数据也没发现有影响的证据，即<code>正确拒斥</code>。正确拒斥的计算方法为 <span class="math inline">\(1-\alpha = P((1-A)|(1-\pi_0))\)</span>。</p>
+<pre class="r"><code>plot(X0, Y0, type = &quot;n&quot;,
+     xlab = &quot;&quot;, ylab = &quot;&quot;,
+     main = NULL, axes = FALSE,
+     xlim = c(Xmin, Xmax))
+lines(X0, Y0)
+axis(1, at = seq(Xmin, Xmax, sd), pos = 0)
+mtext(expression(H[0]), side = 3,
+      adj = 4.15 / (Xmax-Xmin), padj = 0.4)
+abline(v = t_value, lty = 3)
+
+polygon(c(min(X0[X0 &gt;= lw &amp; X0 &lt;= up]),
+              X0[X0 &gt;= lw &amp; X0 &lt;= up],
+          max(X0[X0 &gt;= lw &amp; X0 &lt;= up])),
+        c(0, Y0[X0 &gt;= lw &amp; X0 &lt;= up], 0),
+        col = rgb(0, 0, 1, 0.4))
+text(x = Mean0, y = 0.1,
+     expression(1-alpha), pos = 3)</code></pre>
+<p><img src="#####content/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-3-1.png" width="576" /></p>
+<p>第三种情况发生在备择假设正确，即疾病的确影响该生理指标时。此时如果样本数据没能发现疾病对生理指标的影响，我们就说产生了<code>漏报</code>，或者叫<code>II</code>类错误。二类错误产生的概率按如下公式计算：<span class="math inline">\(\beta=P((1-A)|\pi_0)\)</span>。</p>
+<pre class="r"><code>plot(X1, Y1, type = &quot;n&quot;, xlab = &quot;&quot;, ylab = &quot;&quot;,
+     main = NULL, axes = FALSE, xlim = c(Xmin, Xmax))
+lines(X0, Y0)
+lines(X1, Y1)
+mtext(expression(H[0]), side = 3,
+      adj = 4.15 / (Xmax-Xmin), padj = 0.4)
+abline(v = t_value, lty = 3)
+axis(1, at = seq(Xmin, Xmax, sd), pos = 0)
+mtext(expression(H[1]), side = 3,
+      adj = (4 + Cohen_D) / (Xmax-Xmin), padj = 0.4)
+polygon(c(min(X1[X1 &lt;= up]),
+              X1[X1 &lt;= up],
+          max(X1[X1 &lt;= up])),
+        c(0, Y1[X1 &lt;= up], 0),
+        col = rgb(0.5, 0, 0.5, 0.4))
+text(x = t_value - 0.35, y = 0.00,
+        expression(beta), pos = 3, col = &quot;blue&quot;)</code></pre>
+<p><img src="#####content/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-4-1.png" width="576" /></p>
+<p>第四种情况也发生在备择假设正确，即疾病的确影响该生理指标时。此时如果样本数据能正确发现疾病对生理指标的影响，我们就说产生了<code>击中</code>。统计中击中的概率就叫做`统计效力’（statistical power），计算公式如下：<span class="math inline">\(1-\beta=P(A|\pi_0)\)</span>。</p>
+<pre class="r"><code>plot(X1, Y1, type = &quot;n&quot;, xlab = &quot;&quot;, ylab = &quot;&quot;,
+     main = NULL, axes = FALSE, xlim = c(Xmin, Xmax))
+lines(X0, Y0)
+lines(X1, Y1)
+mtext(expression(H[0]), side = 3,
+      adj = 4.15 / (Xmax-Xmin), padj = 0.4)
+abline(v = t_value, lty = 3)
+axis(1, at = seq(Xmin, Xmax, sd), pos = 0)
+mtext(expression(H[1]), side = 3,
+      adj = (4 + Cohen_D) / (Xmax-Xmin), padj = 0.4)
+polygon(c(min(X1[X1 &gt;= up]),
+              X1[X1 &gt;= up],
+          max(X1[X1 &gt;= up])),
+        c(0, Y1[X1 &gt;= up], 0),
+        col = rgb(0.5, 0.5, 0.5, 0.4))
+text(x = Mean1, y = 0.1,
+        expression(1-beta), pos = 3, col = &quot;blue&quot;)</code></pre>
+<p><img src="#####content/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-5-1.png" width="576" /></p>
+<p>上述四种情况可以总结为下面这个表格：</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="center"><span class="math inline">\(H_0\)</span></th>
+<th align="center"><span class="math inline">\(H_1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>没有拒绝零假设</td>
+<td align="center">正确拒斥（<span class="math inline">\(1-\alpha\)</span>）</td>
+<td align="center">漏报（II类错误，<span class="math inline">\(\beta\)</span>值）</td>
+</tr>
+<tr class="even">
+<td>拒绝零假设</td>
+<td align="center">虚报（I类错误，<span class="math inline">\(\alpha\)</span>值）</td>
+<td align="center">击中（统计效力，<span class="math inline">\(1-\beta\)</span>）</td>
+</tr>
+</tbody>
+</table>
+<p>效应值（Effect size）指零假设分布和备择假设分布的标准化距离，如上 图<span class="math inline">\(H_0\)</span>的平均值和<span class="math inline">\(H_1\)</span>平均值之间的标准化距离，即<span class="math inline">\(D = \frac{M_{H0} - M_{H1}}{SD_p}\)</span>，<span class="math inline">\(SD_p\)</span> 指 <span class="math inline">\(H_0\)</span> 和 <span class="math inline">\(H_1\)</span> 的合并标准差。根据上图可知，效应值大小影响了零假设分布和备择假设分布之间的分离程度。效应值越大，同样P值情况下，统计的效力就越大。</p>
+<p>在效应值不变的情况下，P值越大，统计效力就越大。独立样本t检验中，假设两个样本的样本量均为 <span class="math inline">\(n=10\)</span>，标准差均为 <span class="math inline">\(\sigma^2=1\)</span>，效应值为 <span class="math inline">\(D=1.32\)</span>，那么统计效力和P值的关系如下图：</p>
+<pre class="r"><code>pvalue &lt;- seq(0, 0.1, by = 0.001)
+ptt &lt;- function (pvalue) {
+       pt &lt;- power.t.test(
+             n = 10,
+             delta = 1.32,
+             sd = 1,
+             sig.level = pvalue,
+             type = &quot;two.sample&quot;,
+             alternative = &quot;two.sided&quot;
+             )
+      ptt &lt;- pt$power
+      return(ptt)
+}
+power &lt;- sapply(pvalue, FUN = ptt)
+
+plot(pvalue, power,
+     ylim = c(0, 1),
+     type = &quot;l&quot;, lwd = 2,
+     font.lab = 2,
+     xlab = expression(alpha),
+     ylab = &quot;Power&quot;)
+lines(x = c(0.05, 0.05),
+      y = c(-1, ptt(0.05)),
+      lty = 3)
+lines(x = c(-1, 0.05),
+      y = c(ptt(0.05), ptt(0.05)),
+      lty = 3)
+lines(x = c(0.005, 0.005),
+      y = c(-1, ptt(0.005)),
+      lty = 3)
+lines(x = c(-1, 0.005),
+      y = c(ptt(0.005), ptt(0.005)),
+      lty = 3)</code></pre>
+<p><img src="#####content/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-6-1.png" width="576" /></p>
+<p>此时假如两个组别平均值差别为 <span class="math inline">\(H = 1.2\)</span>，两个组别的合并标准差（pooled SD）为 <span class="math inline">\(S_p = 1.1\)</span>，那么此时的P值约为0.025。其计算方式如下P：</p>
+<pre class="r"><code>n &lt;- 10
+HD &lt;- 1.2
+Sp &lt;- 1.1
+t &lt;- HD / (Sp * sqrt(2/n))
+df &lt;- 2 * (n - 1)
+pvalue0 &lt;- 2 * pt(t, df, lower.tail = FALSE)
+pvalue0</code></pre>
+<pre><code>## [1] 0.02529368</code></pre>
+<p>所以，P值本身并不能检验两个前提假设的正确与否。但是研究者真正关心的却是前提假设正确与否。在我们的例子中就是：某项疾病是否影响某项生理指标的水平。美国统计学会在2016发文专门阐述P值的文章的附件种，18篇简短评论提供了从P值推论出前提假设正确与否的不同可能性。文章总结出了三种主要的方法。</p>
+</div>
+<div id="Bayes-factor" class="section level1">
+<h1>2. 贝叶斯因子</h1>
+<p>如前所述P值指的是零假设正确的前提下，我们得到某结果的概率：<span class="math inline">\(P(A|\pi_0)\)</span>；而研究者关心的是在得出某结果的前提下，零假设的正确与否，即<span class="math inline">\(P(\pi_0|A)\)</span>。它本质上是一个先验概率和后验概率的贝叶斯问题。所以理论上来说可以用贝叶斯方法解决该问题。但是贝叶斯分析必须在零假设和备择假设两种情境下主观的确定一个模型参数的先验分布，这增加了贝叶斯方法的主观性。</p>
+<p>为此，在对美国统计学会撰文的评论中， Benjamin 和 Berger提出可以只用P值计算一个贝叶斯因子（Bayes factor）的上限，<span class="math inline">\(\overline{B}\)</span>。其计算公式如下：</p>
+<p><span class="math display">\[
+\overline{B}\leq -\frac{1}{e\times P \times ln(P)}
+\]</span> 其中P是我们计算出来的显著性水平。</p>
+<p>这个上限的计算不需要假定一个先验概率。其含义也比较简单。例如 <span class="math inline">\(\overline{B}=10\)</span> 表示备择假设正确可能性与比零假设正确可能性之比的最大值是10。因为它表示了备择假设和零假设中那一个假设更可能正确，所以贝叶斯成分可以被用来做假设检验。通常认为当贝叶斯因子为20或者更大时，我们就有充分的理由接受备择假设，拒绝零假设。</p>
+<p>贝叶斯因子和P值的关系可以用下图表示：</p>
+<pre class="r"><code>B &lt;- function(P) {
+     -1 / ( exp(1) * P * log(P))
+  }
+plot(pvalue, B(pvalue),
+     ylim = c(0, 55),
+     type = &quot;l&quot;, lwd = 2,
+     ylab = expression( bar(B)),
+     xlab = &quot;P&quot;,
+     font.lab = 2
+     )
+lines(x = c(0.05, 0.05),
+      y = c(-100, B(0.05)),
+      lty = 3)
+lines(x = c(-100, 0.05),
+      y = c(B(0.05), B(0.05)),
+      lty = 2)
+lines(x = c(0.005, 0.005),
+      y = c(-100, B(0.005)),
+      lty = 3)
+lines(x = c(-100, 0.005),
+      y = c(B(0.005), B(0.005)),
+      lty = 2,
+      col = &quot;blue&quot;)</code></pre>
+<p><img src="#####content/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-8-1.png" width="576" /></p>
+<p>按照上述标准，当显著性水平 <span class="math inline">\(\alpha=0.05\)</span> 时，贝叶斯因子仅为 <span class="math inline">\(\overline{B} \leq 2.5\)</span>。回到我们之前的例子，当<span class="math inline">\(P=0.025\)</span>时，备择假设正确与零假设正确的比率最大不会超过3.9，即 <span class="math inline">\(\overline{B}\leq 3.9\)</span>。如果我们坚持<span class="math inline">\(\overline{B}\)</span>应该大于20，那么此时的P值应该小于0.0032才行。Johnson认为P值小于0.005就可以了。</p>
+<p>贝叶斯因子的计算不涉及测验的统计效力。所以如果我们假设效应值（effect size）仍然为1.32，但在<span class="math inline">\(\alpha&lt;0.005\)</span>的水平上拒绝零假设，此时的统计效力（power）仅为43%。如下图:</p>
+<pre class="r"><code>plot(B(pvalue), power,
+     ylim = c(0, 1),
+     type = &quot;l&quot;, lwd = 2,
+     xlab = expression( bar(B)),
+     font.lab = 2
+     )</code></pre>
+<p><img src="#####content/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-9-1.png" width="576" /></p>
+<p>此时要达到80%的统计效力，我们的样本量应该提高到 <span class="math inline">\(n=18\)</span>才行。</p>
+</div>
+<div id="False-discovery-rate" class="section level1">
+<h1>3. 错误发现率</h1>
+<p>同样是对美国统计学会撰文的评论中，Altman 认为研究者应该用错误拒绝率（false discovery rate，FDR）来代替P值，来检验前提假设的正确与否。一个测验中，如果零假设的真正概率是<span class="math inline">\(\pi_0\)</span>，那么备择假设的真正概率为<span class="math inline">\(1-\pi_0\)</span>。假设我们在显著性水平为<span class="math inline">\(\alpha\)</span>上拒绝零假设，即<span class="math inline">\(P&lt;\alpha\)</span>，此时我们错误拒绝的概率应该是<span class="math inline">\(\alpha\pi_0\)</span>。假如该检验的统计效力为<span class="math inline">\(\beta\)</span>，那么我们拒绝该测验的概率为<span class="math inline">\(\beta(1-\pi_0)\)</span>。</p>
+<p>据此，作者把错误发现率（false discovery rate，FDR）定义为错误拒绝的期望概率与所有拒绝的期望概率的比率。即 <span class="math display">\[
+eFDR = \frac{\alpha\pi_0}{\alpha\pi_0+\beta(1-\pi_0)}
+\]</span></p>
+<p>对于先验概率<span class="math inline">\(\pi_0\)</span>的确定，Altman提出了如下一些拇指原则：在高通量情景中（high-throughput scenario），<span class="math inline">\(\pi_0\)</span>可以经由数据估计出来；在低通量的实验中（ low-throughput testing），<span class="math inline">\(\pi_0\)</span>的确定应该根据先验证据中零假设的概率来确定：对一个研究设想的首次、第二次验证时，<span class="math inline">\(\pi_0\)</span>可以等于0.5或0.75；但在事后检验（post hoc test）中，<span class="math inline">\(\pi_0\)</span>应该设定为0.95。</p>
+<p>错误拒绝率和先验零假设概率的关系如下图：</p>
+<pre class="r"><code>pi0 &lt;- seq(0, 1, by = 0.01)
+alpha &lt;- 0.05
+power &lt;- ptt(alpha)
+eFDR &lt;- (alpha * pi0) / (alpha * pi0 + power * (1 - pi0) )
+plot(pi0, eFDR, type = &quot;l&quot;,
+     xlab = expression(pi[0])
+     )</code></pre>
+<p><img src="#####content/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-10-1.png" width="576" /></p>
+<p>在我们的例子中，当<span class="math inline">\(P=0.025\)</span>、统计效力为<span class="math inline">\(80\%\)</span> 时，eFDR在首次、第二次和事后检验中分别为0.03， 0.09和0.38。</p>
+<p>该方法的一个缺点是<span class="math inline">\(\pi_0\)</span>的确定有一定的随意性。回避这种随意性的一个简单的方法是通过让FDR达到某种水平的方式确定<span class="math inline">\(\pi_0\)</span>。例如在我们的例子中，在统计效力为80%的前提下，要使得<span class="math inline">\(FD=0.05\)</span>，<span class="math inline">\(\pi_0\)</span>应该不大于0.62才行。</p>
+</div>
+<div id="Confidence-intervals" class="section level1">
+<h1>4. 置信区间</h1>
+<p>在对美国统计学会文章的评论中，大部分研究者提出的建议是：在报告统计结果时，应该既报告P值，也报告置信区间（confidence intervals）。因为置信区间包含了效应值大小（effect size）的信息。</p>
+<p>作者最后强调，P值本身是一个随机变量。当数据是连续性数据、而且零假设正确时，P值是在[0, 1]的一个均匀分布（uniform distribution）。这也就是说，P值在不同样本间的变异是非常大的。而且这种变异并不随着实验样本量和统计效力的变化而变化。</p>
+<p>当备择假设成立时，P值的变异会随着统计效力的增加而变小。尽管如此，P值仍然是随机分布的。</p>
+</div>
+<div id="Further-reading" class="section level1">
+<h1>5. 延伸阅读</h1>
+<p>Altman, N., &amp; Krzywinski, M. (2017). Points of Significance: Interpreting P values. <em>Nat Meth, 14</em>(3), 213-214. <a href="doi:10.1038/nmeth.4210" class="uri">doi:10.1038/nmeth.4210</a></p>
+<p>Nuzzo, B. (2014). Statistical errors. <em>Nature, 506</em>, 150-152. <a href="doi:http://doi.org/10.1038/506150a" class="uri">doi:http://doi.org/10.1038/506150a</a></p>
+<p>Wasserstein, R. L., &amp; Lazar, N. A. (2016). The ASA‘s Statement on p-Values: Context, Process, and Purpose. <em>The American Statistician, 70</em>(2), 129-133. <a href="doi:10.1080/00031305.2016.1154108" class="uri">doi:10.1080/00031305.2016.1154108</a></p>
+</div>

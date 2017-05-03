@@ -1,0 +1,23 @@
+---
+title: Rank-Order
+author: "Likan Zhan"
+date: '2017-03-07'
+---
+
+<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<!-- BLOGDOWN-BODY-BEFORE -->
+<!-- /BLOGDOWN-BODY-BEFORE -->
+<p>Adapted from duffymo’s Stack Overflow <a href="http://stackoverflow.com/questions/2315601/understanding-the-order-function">post</a></p>
+<ol style="list-style-type: decimal">
+<li><code>rank</code> tells you what order the numbers are in,</li>
+</ol>
+<pre class="r"><code>a &lt;- c(4.1, 3.2, 6.1, 3.1)
+rank(a)</code></pre>
+<pre><code>## [1] 3 2 4 1</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><code>order</code> tells you how to get them in ascending order.</li>
+</ol>
+<pre class="r"><code>order(a)</code></pre>
+<pre><code>## [1] 4 2 1 3</code></pre>
