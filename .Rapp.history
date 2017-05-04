@@ -1,3 +1,153 @@
+pp(df = 1000)
+pp(alpha = 0.1, df = 1000)
+pp(alpha = 0.1, df = 10)
+pp <- function(#
+  alpha = 0.2,#
+  df = 8#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = "Frqeuency"#
+)#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+axis(1)#
+axis(2)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+highh <- formatC(high, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp(alpha = 0.1, df = 10)
+pp <- function(#
+  alpha = 0.2,#
+  df = 8#
+)#
+{#
+t <- seq (-4, 4, by = 0.01)#
+den <- dt(t, df)#
+high <- qt(alpha / 2, df, lower.tail = FALSE)#
+low <- qt(alpha / 2, df, lower.tail = TRUE)#
+seq <- seq(low, high, by = 0.01)#
+plot(#
+  x = NULL, #
+  y = NULL, #
+  xlim = c(-4, 4),#
+  ylim = c(0, max(den)),#
+  yaxs = "i",#
+  xaxs = "i",#
+  bty = "l",#
+  axes = F,#
+  xlab = "t value",#
+  ylab = "Frqeuency",#
+  font.lab = 2#
+)#
+polygon(#
+  x = c(#
+    low, #
+    low,#
+    seq,#
+    high,#
+    high#
+  ),#
+  y = c(#
+    0,#
+    dt(low, df),#
+    dt(seq, df),#
+    dt(high, df),#
+    0#
+  ),#
+  col = "#f4cdba",#
+  border= "white"#
+)#
+axis(1)#
+axis(2)#
+lines(#
+  x = t,#
+  y = den,#
+  col = "#CF232A"#
+)#
+segments(#
+  x0 = c(low, high),#
+  y0 = c(0, 0),#
+  x1 = c(low, high),#
+  y1 = c(0.25, 0.25)#
+)#
+text(#
+  x = 0,#
+  y = dt(0, df) /3,#
+  labels = bquote(#
+    "Middle" #
+    ~ .(100 - alpha * 100) #
+    ~~ "% of" #
+    ~~ italic(t) #
+    ~~ "distribution"#
+  )#
+)#
+highh <- formatC(high, digits = 3, format="f")#
+text(#
+  x = high, #
+  y = dt(0, df) /2, #
+  labels = bquote(italic(t) == .(highh)), #
+  adj = -0.05#
+)		#
+}
+pp(alpha = 0.1, df = 10)
 t.test()
 pp <- function(#
   alpha = 0.2,#
@@ -1065,19 +1215,18 @@ pmaxFratio(1.35, 9, 2)
 2.58*4
 50-2.58*4
 50+2.58*4
-library(blogdown)
-?build_site
-blogdown::build_site(local = FALSE, method = "html")
 options(servr.daemon = TRUE)#
-setwd("~/website/hugo")
-blogdown::build_site(local = FALSE, method = "html_encoded")
-blogdown::build_site(local = FALSE, method = "html_encoded")
-blogdown::serve_site() #serve site
-blogdown::build_site(local = FALSE, method = "html_encoded")
-blogdown::serve_site() #serve site
-?build_site
-blogdown::build_site(local = FALSE, method = "html_encoded")
-？blogdown::serve_site() #serve site
-?blogdown::serve_site() #serve site
-?serve_site() #serve site
+setwd("~/website/hugo")#
+blogdown::build_site(local = FALSE, method = "custom")
+yihui.netlify.com
+options(servr.daemon = TRUE)#
+setwd("~/website/hugo")#
 blogdown::build_site(local = FALSE, method = "html")
+library(knitr)
+library(help = "knitr")
+help(package = "knitr")
+knitr::purl("~/Documents/Admin/Works/Teachings/Stat.Behav.Sci/CH_/CH.05.Rnw")
+options(servr.daemon = TRUE)#
+setwd("~/website/hugo")#
+blogdown::build_site(local = FALSE, method = "html")#
+blogdown::serve_site() #serve site
