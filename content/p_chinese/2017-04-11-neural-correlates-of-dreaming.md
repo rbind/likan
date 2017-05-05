@@ -27,20 +27,12 @@ date: '2017-04-11'
 
 实验一和实验二发现，被叫醒前处于做梦状态的被试（vs不记得自己处于做梦状态），顶-枕叶区域的低频脑电功率（1-4赫兹）要更低（图1-2），颞-顶叶区域的高频脑电功率（20-50赫兹）要更高（图3）。而且无论被试处于非快速眼动睡眠阶段，还是处于快速眼动睡眠阶段，这两种差别均存在。
 
-![图1](https://webimages.netlify.com/nn.4545-F1.jpg)
-![图2](https://webimages.netlify.com/nn.4545-F2.jpg)
-![图3](https://webimages.netlify.com/nn.4545-F3.jpg)
-
 ---
 研究者进一步分析了实验2中被试的梦境内容与其脑电模式的关系（注，分析的REM睡眠阶段脑电模式和梦境内容的关系）。结果发现，梦境内容越具有感知性（perceiving），额叶区域激活程度越高；梦境越具有抽象性（thinking），颞-枕-顶叶区域的激活越高（图4a）。另外，涉及面孔、空间、运动和言语的梦境，分别激活梭状回面孔区(FFA)（图4b），后顶叶皮层、颞上沟和威尼克区域（图4c）。
-
-![图4](https://webimages.netlify.com/nn.4545-F4.jpg)
 
 ---
 
 为了进一步探索脑电模式和做梦与否的因果关系，实验三（被试数量为7人）不是随机叫醒处于睡觉状态中的被试，而是根据被试脑部后侧区域的低频脑电和高频脑电的功率状况叫醒处于非快速眼动睡眠阶段的被试。结果发现该模型能够正确预测处于非快速眼动睡眠阶段的被试是否在做梦（图5），从而证明了该脑电模式与做梦的因果关系。
-
-![图5](https://webimages.netlify.com/nn.4545-F5.jpg)
 
 ---
 
@@ -48,3 +40,11 @@ date: '2017-04-11'
 
 - Siclari, F., Baird, B., Perogamvros, L., Bernardi, G., LaRocque, J. J., Riedner, B., . . . Tononi, G. (2017). The neural correlates of dreaming. *Nat Neurosci*. doi:10.1038/nn.4545
 - Siclari, F., Larocque, J. J., Postle, B. R., & Tononi, G. (2013). Assessing sleep consciousness within subjects using a serial awakening paradigm. *Front Psychol, 4*, 542. doi:10.3389/fpsyg.2013.00542
+
+图片附录
+
+![图1](https://webimages.netlify.com/nn.4545-F1.jpg)
+![图2](https://webimages.netlify.com/nn.4545-F2.jpg)
+![图3](https://webimages.netlify.com/nn.4545-F3.jpg)
+![图4](https://webimages.netlify.com/nn.4545-F4.jpg)
+![图5](https://webimages.netlify.com/nn.4545-F5.jpg)

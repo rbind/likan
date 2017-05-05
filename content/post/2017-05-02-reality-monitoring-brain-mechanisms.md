@@ -5,7 +5,11 @@ date: '2017-05-02'
 show_toc: true
 ---
 
-信息源监控理论 (Source Monitoring Framework)
+# 1. 信息源监控理论
+
+ 信息源监控理论 (Source Monitoring Framework)
+
+# 2. 前额叶区域
 
 前端前额叶区域(anterior prefrontal cortex, PFC)。该区域的神经元密度较低、树突结构比其他区域复杂，被认为是最晚完成髓鞘化过程的区域。
 

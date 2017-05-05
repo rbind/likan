@@ -3,7 +3,6 @@ title: "权力感如何改变一个人?"
 author: '侃侃迩行'
 date: 2017-04-16
 show_toc: true
-draft: false
 ---
 
 有关权力的几个暗黑事实是：

@@ -2,7 +2,6 @@
 title: "阅读障碍的神经噪音假说"
 date: '2017-04-21'
 author: "侃侃迩行"
-draft: false
 show_toc: true
 ---
 
