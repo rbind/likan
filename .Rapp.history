@@ -3739,7 +3739,6 @@ mtext(#
 ff()
 ?t.test()
 ?ave
-library(blogdown)
-?new_post
+options(servr.daemon = TRUE)#
 setwd("~/website/hugo")
-new_post("XXX")
+blogdown::new_post("brain-connectivity-dynamics-during-social-interaction-reflect-social-network-structure")
