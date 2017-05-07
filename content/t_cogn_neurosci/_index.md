@@ -9,8 +9,7 @@ slag: "cogn_neurosci"
 ---
 # 1. Lecture Time and Location
 
-从下周开始（5月8日）上课地点改为“教5楼105”，上课时间不变（8:00-9:50）。<br>
-The course will meet for two hours each week (Mondays, 08:00-09:50)（周一早，08:00-09:50） in *Room 105, Teaching Building 5* （教5楼105房间）. <br>
+The course will be lectured on every **Monday**, **0800 - 0950** in **Room 105, Teaching Building 5** (**教5楼105**).
 
 # 2. Course Information
 <p align = "middle"> *How the brain enables the mind ?* </p>
