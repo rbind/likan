@@ -2,5 +2,15 @@
 title: 大脑连接和社交网络
 author: "侃侃迩行"
 date: "2017-05-06"
-slag: "brain-connectivity-dynamics-during-social-interaction-reflect-social-network-structure"
+show_toc: true
 ---
+
+# 研究方法
+
+- 社会排除任务 (social exclusion task)
+
+
+
+- 社交网络评估 (Social network assessment)。
+
+假设被试有 *n* 个朋友，如果被试的朋友圈是完全以被试为中心的 (egocentric)，那么剩余 *n* 个节点的联系应该为零。相反的，如果被试的朋友圈不是以被试为中心的，即被试的朋友彼此间也都是朋友，那么这 *n* 个节点间应该存在 `\( \frac{n\times (n-1)}{2} \)` 个联系。基于此，假设这 *n* 个节点实际存在的连接条数为 *m* ，那么该被试在其朋友圈中自我中心的密度可以用如下公式表示 `\( d = \frac{2m}{n\times (n-1)} \)`。

@@ -48,7 +48,7 @@ The course will meet for two hours each week (Mondays, 08:00-09:50)（周一早�
   - Chapter 02. Structure and Function of the Nervous System.[百度网盘](https://pan.baidu.com/s/1hsgdZhy)
   - Chapter 03. Methods of Cognitive Neuroscience.[百度网盘](https://pan.baidu.com/s/1ge59LuV)
 - Part II. Core Processes
-  - Chapter 04. Hemispheric Specialization.
+  - Chapter 04. Hemispheric Specialization. [slides](https://cognneurosci.netlify.com/CH.04.pdf)
   - Chapter 05. Sensation and Perception.
   - Chapter 06. Object Recognition.
   - Chapter 07. Attention.
