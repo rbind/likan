@@ -15,8 +15,7 @@ slag: "reading"
  - [R语言扩展](/r_extending/)
  <br> Chambers, J. M. (2016). *[Extending R](https://www.crcpress.com/Extending-R/Chambers/p/book/9781498775717)*. Boca Baton, UK: CRC Press.
  - [用R学习概率和统计学](/r_prob_stat/)
- <br>
- Ugarte, M. D., Militino, A. F., & Arnholt, A. T. (2016). *[Probability and statistics with R](https://www.crcpress.com/Probability-and-Statistics-with-R-Second-Edition/Ugarte-Militino-Arnholt/p/book/9781466504394)*. Boca Raton, UK: CRC Press.
+ <br> Ugarte, M. D., Militino, A. F., & Arnholt, A. T. (2016). *[Probability and statistics with R](https://www.crcpress.com/Probability-and-Statistics-with-R-Second-Edition/Ugarte-Militino-Arnholt/p/book/9781466504394)*. Boca Raton, UK: CRC Press.
 
 2. 学术写作
 
