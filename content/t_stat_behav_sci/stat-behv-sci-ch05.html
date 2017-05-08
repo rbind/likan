@@ -1,0 +1,366 @@
+---
+title: "Chapter 5. z-Scores"
+author: "Likan Zhan"
+date: '2017-05-03'
+output:
+  blogdown::html_page:
+    number_sections: true
+    toc: true
+    fig_width: 12
+    fig_height: 8
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#figure.05.02"><span class="toc-section-number">1</span> Figure.05.02</a></li>
+<li><a href="#figure.05.03"><span class="toc-section-number">2</span> Figure.05.03</a></li>
+<li><a href="#figure.05.04"><span class="toc-section-number">3</span> Figure.05.04</a></li>
+<li><a href="#centering-and-scale"><span class="toc-section-number">4</span> Centering and scale</a></li>
+</ul>
+</div>
+<div id="figure.05.02" class="section level1">
+<h1><span class="header-section-number">1</span> Figure.05.02</h1>
+<pre class="r"><code>X &lt;- function(mean, sd) {
+     X &lt;- seq((mean - 3 * sd),
+              (mean + 3 * sd),
+              by = 0.01
+             )
+     return(X)
+}
+
+Y &lt;- function (mean, sd, ...) {
+      dots &lt;- list(...)
+      if (length(dots) == 0)
+         X &lt;- X(mean, sd)
+      else
+        X &lt;- unlist(dots)
+      Y &lt;- dnorm(X,
+                mean = mean,
+                sd = sd
+           )
+      return(Y)
+}
+
+pp &lt;- function(mean, sd){
+plot(X(mean, sd),
+     Y(mean, sd),
+     type = &quot;l&quot;,
+     xlab = &quot;&quot;,
+     ylab = &quot;&quot;,
+     axes = FALSE,
+     col = &quot;#af1e23&quot;,
+     lwd = 2
+)
+abline(h = 0)
+segments(
+     c(mean, mean + sd),
+     c(0, 0),
+     c(mean, mean + sd),
+     c(Y(mean, sd, mean),
+       Y(mean, sd, mean + sd)
+      ),
+      lty = c(1, 2)
+)
+arrows(
+      mean,
+      Y(mean, sd, mean + sd),
+      mean + sd,
+      Y(mean, sd, mean + sd),
+      length = 0.08
+)
+text(
+    x = mean + sd / 2,
+    y = Y(mean, sd, mean + sd),
+    pos = 3,
+    label = bquote(sigma == .(sd)),
+)
+mtext(c(mean, mean + sd),
+      side = c(1, 1),
+      adj = c(3, 4) / 6,
+      padj = - 0.7
+)
+mtext(&quot;X = 76&quot;,
+      side = 1,
+      adj = (3 + 6 / sd ) /6,
+      padj = 2
+)
+arrows(76,
+      -Y(mean, sd, mean + sd) / 6,
+      76,
+      0,
+      xpd = TRUE,
+      length = 0.08
+)
+}
+par(mfrow = c(1, 2))
+pp(70, 3)
+pp(70, 12)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_05_02-1.png" width="1152" /></p>
+</div>
+<div id="figure.05.03" class="section level1">
+<h1><span class="header-section-number">2</span> Figure.05.03</h1>
+<pre class="r"><code>X &lt;- function(mean, sd) {
+     X &lt;- seq((mean - 3 * sd),
+              (mean + 3 * sd),
+              by = 0.01
+             )
+     return(X)
+}
+
+Y &lt;- function (mean, sd, ...) {
+      dots &lt;- list(...)
+      if (length(dots) == 0)
+         X &lt;- X(mean, sd)
+      else
+        X &lt;- unlist(dots)
+      Y &lt;- dnorm(X,
+                mean = mean,
+                sd = sd
+           )
+      return(Y)
+}
+
+pp &lt;- function(mean, sd){
+plot(X(mean, sd),
+     Y(mean, sd),
+     xlim = c(mean - 4 * sd,
+              mean + 4 * sd),
+     type = &quot;l&quot;,
+     xlab = &quot;&quot;,
+     ylab = &quot;&quot;,
+     axes = FALSE,
+     col = &quot;#af1e23&quot;,
+     lwd = 2
+)
+axis(
+    1,
+    at = seq(mean -  3 * sd,
+             mean + 3 * sd,
+             by = sd
+             ),
+    labels = FALSE,
+    line = 0,
+)
+axis(
+    1,
+    at = seq(mean -  3 * sd,
+             mean + 3 * sd,
+             by = sd
+            ),
+    labels = seq(-3, 3, by = 1),
+    line = 2
+)
+mtext(expression(mu),
+      1,
+      padj = 1)
+mtext(text = c(&quot;X&quot;, &quot;z&quot;),
+      side = c(1, 1),
+      adj = c(0.87, 0.87),
+      xpd = TRUE,
+      padj = c(-0.5, 2.5)
+)
+segments(
+     x0 = c(
+       mean,
+       mean + sd,
+       mean + 2 * sd,
+       mean - sd,
+       mean - 2 * sd
+       ),
+     y0 = 0,
+     x1 = c(
+       mean,
+       mean + sd,
+       mean + 2 * sd,
+       mean - sd,
+       mean - 2 * sd
+       ),
+     y1 = c(
+       Y(mean, sd, mean),
+       rep(
+       Y(mean, sd, mean + sd),
+       4
+       )
+     ),
+      lty = 5
+)
+text(
+    x = mean + sd / 2,
+    y = Y(mean, sd, mean + sd),
+    pos = 3,
+    label = bquote(sigma),
+)
+arrows(
+      x0 = c(
+        mean,
+        mean,
+        mean + sd,
+        mean - sd
+      ),
+      y0 = Y(mean, sd, mean + sd),
+      x1 = c(
+        mean + sd,
+        mean - sd,
+        mean + 2 * sd,
+        mean - 2 * sd
+      ),
+      y1 = Y(mean, sd, mean + sd),
+      length = 0.08
+)
+}
+pp(70, 3)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_05_03-1.png" width="1152" /></p>
+</div>
+<div id="figure.05.04" class="section level1">
+<h1><span class="header-section-number">3</span> Figure.05.04</h1>
+<pre class="r"><code>X &lt;- function(mean, sd) {
+     X &lt;- seq((mean - 3 * sd),
+              (mean + 3 * sd),
+              by = 0.01
+             )
+     return(X)
+}
+
+Y &lt;- function (mean, sd, ...) {
+      dots &lt;- list(...)
+      if (length(dots) == 0)
+         X &lt;- X(mean, sd)
+      else
+        X &lt;- unlist(dots)
+      Y &lt;- dnorm(X,
+                mean = mean,
+                sd = sd
+           )
+      return(Y)
+}
+
+pp &lt;- function(mean, sd){
+plot(X(mean, sd),
+     Y(mean, sd),
+     xlim = c(mean - 4 * sd,
+              mean + 4 * sd),
+     type = &quot;l&quot;,
+     xlab = &quot;&quot;,
+     ylab = &quot;&quot;,
+     axes = FALSE,
+     col = &quot;#af1e23&quot;,
+     lwd = 3
+)
+axis(
+    1,
+    at = seq(mean -  3 * sd,
+             mean + 3 * sd,
+             by = sd
+             ),
+    labels = FALSE,
+    line = 0,
+)
+mtext(text = c(
+        bquote(.(mean)),
+        bquote(.(mean - 2 * sd))
+        ),
+      side = 1,
+      padj = 1,
+      adj = c(3, 3 - 1.45) / 6
+      )
+mtext(text = &quot;X&quot;,
+      side = 1,
+      adj = 0.87,
+      xpd = TRUE,
+      padj =-0.5
+)
+segments(
+     x0 = c(
+       mean,
+       mean - sd,
+       mean - 2 * sd
+       ),
+     y0 = 0,
+     x1 = c(
+       mean,
+       mean - sd,
+       mean - 2 * sd
+       ),
+     y1 = c(
+       Y(mean, sd, mean),
+       rep(
+       Y(mean, sd, mean + sd),
+       2
+       )
+     ),
+      lty = c(1, 5, 5)
+)
+text(
+    x = c(
+     mean - sd / 2,
+     mean - 1.5 * sd
+    ),
+    y = Y(mean, sd, mean + sd),
+    pos = 3,
+    label = bquote(sigma),
+)
+arrows(
+      x0 = c(
+        mean,
+        mean - sd
+      ),
+      y0 = Y(mean, sd, mean + sd),
+      x1 = c(
+        mean - sd,
+        mean - 2 * sd
+      ),
+      y1 = Y(mean, sd, mean + sd),
+      length = 0.08
+)
+segments(x0 = c(mean - 2 * sd,
+                mean,
+                mean - 2 * sd
+         ),
+         y0 = c(
+              -Y(65, 3, 65)/5,
+              -Y(65, 3, 65)/4,
+              -Y(65, 3, 65)/4
+         ),
+         x1 = c(mean,
+                mean,
+                mean - 2 * sd
+         ),
+         y1 = c(
+                -Y(65, 3, 65)/5,
+                -Y(65, 3, 65)/7.5,
+                -Y(65, 3, 65)/7.5
+         ),
+         xpd = TRUE
+)
+mtext(
+      text = &quot;6 points&quot;,
+      side = 1,
+      adj = 2.3/6,
+      padj = 4,
+)
+}
+pp(65, 3)</code></pre>
+<p><img src="/t_stat_behav_sci/stat-behv-sci-ch05_files/figure-html/Figure_05_04-1.png" width="1152" /></p>
+</div>
+<div id="centering-and-scale" class="section level1">
+<h1><span class="header-section-number">4</span> Centering and scale</h1>
+<pre class="r"><code>X &lt;- c(0, 2, 4, 4, 5)
+SS &lt;- sum(X^2) - (sum(X))^2 / length(X)
+s &lt;- sqrt(SS / (length(X) - 1))
+M &lt;- mean(X)
+z &lt;- (X - M) / s
+print(z)</code></pre>
+<pre><code>## [1] -1.5 -0.5  0.5  0.5  1.0</code></pre>
+<pre class="r"><code>scale(X)</code></pre>
+<pre><code>##      [,1]
+## [1,] -1.5
+## [2,] -0.5
+## [3,]  0.5
+## [4,]  0.5
+## [5,]  1.0
+## attr(,&quot;scaled:center&quot;)
+## [1] 3
+## attr(,&quot;scaled:scale&quot;)
+## [1] 2</code></pre>
+</div>

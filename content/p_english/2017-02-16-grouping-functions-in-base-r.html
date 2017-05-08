@@ -1,0 +1,354 @@
+---
+title: "Grouping functions in base R"
+author: "Likan Zhan"
+date: '2017-02-16'
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: false
+---
+
+<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<!-- BLOGDOWN-BODY-BEFORE -->
+<div id="TOC">
+<ul>
+<li><a href="#apply">1. <em>apply</em></a></li>
+<li><a href="#lapply">2. <em>lapply</em></a></li>
+<li><a href="#sapply">3. <em>sapply</em></a></li>
+<li><a href="#vapply">4. <em>vapply</em></a></li>
+<li><a href="#mapply">5. <em>mapply</em></a></li>
+<li><a href="#map">6. <em>Map</em></a></li>
+<li><a href="#rapply">7. <em>rapply</em></a></li>
+<li><a href="#tapply">8. <em>tapply</em></a></li>
+</ul>
+</div>
+<!-- /BLOGDOWN-BODY-BEFORE -->
+<p>This page is addapted from the stack overflow <a href="http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega">post</a> by <em>joran</em></p>
+<p>R has many *apply functions which are ably described in the help files (e.g. ?apply). There are enough of them, though, that beginning useRs may have difficulty deciding which one is appropriate for their situation or even remembering them all. They may have a general sense that “I should be using an *apply function here”, but it can be tough to keep them all straight at first.</p>
+<p>Despite the fact (noted in other answers) that much of the functionality of the *apply family is covered by the extremely popular plyr package, the base functions remain useful and worth knowing.</p>
+<p>This answer is intended to act as a sort of signpost for new useRs to help direct them to the correct *apply function for their particular problem. Note, this is not intended to simply regurgitate or replace the R documentation! The hope is that this answer helps you to decide which *apply function suits your situation and then it is up to you to research it further. With one exception, performance differences will not be addressed.</p>
+<div id="apply" class="section level1">
+<h1>1. <em>apply</em></h1>
+<p>When you want to apply a function to the rows or columns of a matrix (and higher-dimensional analogues); not generally advisable for data frames as it will coerce to a matrix first.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Create a two dimensional matrix</li>
+</ol>
+<pre class="r"><code>M &lt;- matrix(seq(1, 16), 4, 4)
+M</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    1    5    9   13
+## [2,]    2    6   10   14
+## [3,]    3    7   11   15
+## [4,]    4    8   12   16</code></pre>
+<p>Apply <em>min</em> to rows</p>
+<pre class="r"><code>apply(M, 1, min)</code></pre>
+<pre><code>## [1] 1 2 3 4</code></pre>
+<p>Apply <em>max</em> to columns</p>
+<pre class="r"><code>apply(M, 2, max)</code></pre>
+<pre><code>## [1]  4  8 12 16</code></pre>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Create a three dimensional array</li>
+</ol>
+<pre class="r"><code>M &lt;- array(seq(32), dim = c(4,4,2))
+M</code></pre>
+<pre><code>## , , 1
+## 
+##      [,1] [,2] [,3] [,4]
+## [1,]    1    5    9   13
+## [2,]    2    6   10   14
+## [3,]    3    7   11   15
+## [4,]    4    8   12   16
+## 
+## , , 2
+## 
+##      [,1] [,2] [,3] [,4]
+## [1,]   17   21   25   29
+## [2,]   18   22   26   30
+## [3,]   19   23   27   31
+## [4,]   20   24   28   32</code></pre>
+<p>Apply <em>sum</em> across each <em>M[*, , ]</em> - i.e Sum across 2nd and 3rd dimension, and the result is one-dimensional</p>
+<pre class="r"><code>apply(M, 1, sum)</code></pre>
+<pre><code>## [1] 120 128 136 144</code></pre>
+<p>Apply <em>sum</em> across each <em>M[*,*, ]</em> - i.e Sum across 3rd dimension, and the result is two-dimensional</p>
+<pre class="r"><code>apply(M, c(1, 2), sum)</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]   18   26   34   42
+## [2,]   20   28   36   44
+## [3,]   22   30   38   46
+## [4,]   24   32   40   48</code></pre>
+<p>Furthermore, if you want row/column means or sums for a 2D matrix, be sure to investigate the highly optimized, lightning-quick <code>colMeans</code>, <code>rowMeans</code>, <code>colSums</code>, <code>rowSums</code>.</p>
+</div>
+<div id="lapply" class="section level1">
+<h1>2. <em>lapply</em></h1>
+<p>Use this function when you want to apply a function to each element of a list in turn and get a list back.</p>
+<p>This is the workhorse of many of the other *apply functions. Peel back their code and you will often find lapply underneath.</p>
+<pre class="r"><code>x &lt;- list(a = 1, b = 1:3, c = 10:100)
+x</code></pre>
+<pre><code>## $a
+## [1] 1
+## 
+## $b
+## [1] 1 2 3
+## 
+## $c
+##  [1]  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26
+## [18]  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43
+## [35]  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60
+## [52]  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77
+## [69]  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94
+## [86]  95  96  97  98  99 100</code></pre>
+<pre class="r"><code>lapply(x, FUN = length)</code></pre>
+<pre><code>## $a
+## [1] 1
+## 
+## $b
+## [1] 3
+## 
+## $c
+## [1] 91</code></pre>
+<pre class="r"><code>lapply(x, FUN = sum)</code></pre>
+<pre><code>## $a
+## [1] 1
+## 
+## $b
+## [1] 6
+## 
+## $c
+## [1] 5005</code></pre>
+</div>
+<div id="sapply" class="section level1">
+<h1>3. <em>sapply</em></h1>
+<p>When you want to apply a function to each element of a list in turn, but you want a <strong>vector</strong> back, rather than a list.</p>
+<p>If you find yourself typing `<code>unlist(lapply(...))</code>, stop and consider sapply.</p>
+<pre class="r"><code>x &lt;- list(a = 1, b = 1:3, c = 10:100)
+x</code></pre>
+<pre><code>## $a
+## [1] 1
+## 
+## $b
+## [1] 1 2 3
+## 
+## $c
+##  [1]  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26
+## [18]  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43
+## [35]  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60
+## [52]  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77
+## [69]  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94
+## [86]  95  96  97  98  99 100</code></pre>
+<p>Compare with above; a neamed vector, not a list</p>
+<pre class="r"><code>sapply(x, FUN = length)</code></pre>
+<pre><code>##  a  b  c 
+##  1  3 91</code></pre>
+<pre class="r"><code>sapply(x, FUN = sum)</code></pre>
+<pre><code>##    a    b    c 
+##    1    6 5005</code></pre>
+<p>In more advanced uses of sapply it will attempt to coerce the result to a multi-dimensional array, if appropriate. For example, if our function returns vectors of the same length, sapply will use them as columns of a matrix:</p>
+<pre class="r"><code>sapply(1:5, function(x) rnorm(3, x))</code></pre>
+<pre><code>##           [,1]     [,2]     [,3]     [,4]     [,5]
+## [1,] 0.7509195 1.440091 1.394529 2.895810 5.885908
+## [2,] 1.9313871 2.265979 3.528564 1.899621 5.441296
+## [3,] 2.3974049 2.528963 3.606198 2.881703 4.816683</code></pre>
+<p>If our function returns a 2 dimensional matrix, sapply will do essentially the same thing, treating each returned matrix as a single long vector:</p>
+<pre class="r"><code>sapply(1:5, function(x) matrix(x, 2, 2))</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    2    3    4    5
+## [2,]    1    2    3    4    5
+## [3,]    1    2    3    4    5
+## [4,]    1    2    3    4    5</code></pre>
+<p>Unless we specify <code>simplify = &quot;array&quot;</code>, in which case it will use the individual matrices to build a multi-dimensional array:</p>
+<pre class="r"><code>sapply(1:5, function(x) matrix(x, 2, 2), simplify = &quot;array&quot;)</code></pre>
+<pre><code>## , , 1
+## 
+##      [,1] [,2]
+## [1,]    1    1
+## [2,]    1    1
+## 
+## , , 2
+## 
+##      [,1] [,2]
+## [1,]    2    2
+## [2,]    2    2
+## 
+## , , 3
+## 
+##      [,1] [,2]
+## [1,]    3    3
+## [2,]    3    3
+## 
+## , , 4
+## 
+##      [,1] [,2]
+## [1,]    4    4
+## [2,]    4    4
+## 
+## , , 5
+## 
+##      [,1] [,2]
+## [1,]    5    5
+## [2,]    5    5</code></pre>
+<p>Each of these behaviors is of course contingent on our function returning vectors or matrices of the same length or dimension.</p>
+</div>
+<div id="vapply" class="section level1">
+<h1>4. <em>vapply</em></h1>
+<p>When you want to use <em>sapply</em> but perhaps need to squeeze some more speed out of your code.</p>
+<p>For vapply, you basically give R an example of what sort of thing your function will return, which can save some time coercing returned values to fit in a single atomic vector.</p>
+<pre class="r"><code>x &lt;- list(a = 1, b = 1:3, c = 10:100)
+x</code></pre>
+<pre><code>## $a
+## [1] 1
+## 
+## $b
+## [1] 1 2 3
+## 
+## $c
+##  [1]  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26
+## [18]  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43
+## [35]  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60
+## [52]  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77
+## [69]  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94
+## [86]  95  96  97  98  99 100</code></pre>
+<p>Note that since the advantage here is mainly speed, this example is only for illustration. We’re telling R that everything returned by length() should be an integer of length 1.</p>
+<pre class="r"><code>vapply(x, FUN = length, FUN.VALUE = 0L)</code></pre>
+<pre><code>##  a  b  c 
+##  1  3 91</code></pre>
+</div>
+<div id="mapply" class="section level1">
+<h1>5. <em>mapply</em></h1>
+<p>For when you have several data structures (e.g. vectors, lists) and you want to apply a function to the 1st elements of each, and then the 2nd elements of each, etc., coercing the result to a vector/array as in sapply.</p>
+<p>This is multivariate in the sense that your function must accept multiple arguments.</p>
+<p>Sums the 1st elements, the 2nd elements, etc.</p>
+<pre class="r"><code>mapply(sum, 1:5, 1:5, 1:5)</code></pre>
+<pre><code>## [1]  3  6  9 12 15</code></pre>
+<p>To do rep(1, 4), rep(2, 3), etc.</p>
+<pre class="r"><code>mapply(rep, 1:4, 4:1)</code></pre>
+<pre><code>## [[1]]
+## [1] 1 1 1 1
+## 
+## [[2]]
+## [1] 2 2 2
+## 
+## [[3]]
+## [1] 3 3
+## 
+## [[4]]
+## [1] 4</code></pre>
+</div>
+<div id="map" class="section level1">
+<h1>6. <em>Map</em></h1>
+<p>A wrapper to <code>mapply</code> with <code>SIMPLIFY = FALSE</code>, so it is guaranteed to return a list.</p>
+<pre class="r"><code>Map(sum, 1:5, 1:5, 1:5)</code></pre>
+<pre><code>## [[1]]
+## [1] 3
+## 
+## [[2]]
+## [1] 6
+## 
+## [[3]]
+## [1] 9
+## 
+## [[4]]
+## [1] 12
+## 
+## [[5]]
+## [1] 15</code></pre>
+</div>
+<div id="rapply" class="section level1">
+<h1>7. <em>rapply</em></h1>
+<p>For when you want to apply a function to each element of a <strong>nested list</strong> structure, recursively.</p>
+<p>To give you some idea of how uncommon rapply is, I forgot about it when first posting this answer! Obviously, I’m sure many people use it, but YMMV. rapply is best illustrated with a user-defined function to apply:</p>
+<p>Define a nested list stucture</p>
+<pre class="r"><code>l &lt;- list(a = list(a1 = &quot;Boo&quot;, b1 = 2, c1 = &quot;Eeek&quot;),
+          b = 3, c = &quot;Yikes&quot;,
+          d = list(a2 = 1, b2 = list(a3 = &quot;Hey&quot;, b3 = 5)))
+l</code></pre>
+<pre><code>## $a
+## $a$a1
+## [1] &quot;Boo&quot;
+## 
+## $a$b1
+## [1] 2
+## 
+## $a$c1
+## [1] &quot;Eeek&quot;
+## 
+## 
+## $b
+## [1] 3
+## 
+## $c
+## [1] &quot;Yikes&quot;
+## 
+## $d
+## $d$a2
+## [1] 1
+## 
+## $d$b2
+## $d$b2$a3
+## [1] &quot;Hey&quot;
+## 
+## $d$b2$b3
+## [1] 5</code></pre>
+<p>Define a function. note to append ! to string, otherwise increment</p>
+<pre class="r"><code>myFun &lt;- function(x){
+    if (is.character(x)){
+    return(paste(x,&quot;!&quot;,sep=&quot;&quot;))
+    }
+    else{
+    return(x + 1)
+    }
+}</code></pre>
+<p>Result is named vector, coerced to character</p>
+<pre class="r"><code>rapply(l, myFun)</code></pre>
+<pre><code>##     a.a1     a.b1     a.c1        b        c     d.a2  d.b2.a3  d.b2.b3 
+##   &quot;Boo!&quot;      &quot;3&quot;  &quot;Eeek!&quot;      &quot;4&quot; &quot;Yikes!&quot;      &quot;2&quot;   &quot;Hey!&quot;      &quot;6&quot;</code></pre>
+<p>Result is a nested list like l, with values altered</p>
+<pre class="r"><code>rapply(l, myFun, how = &quot;replace&quot;)</code></pre>
+<pre><code>## $a
+## $a$a1
+## [1] &quot;Boo!&quot;
+## 
+## $a$b1
+## [1] 3
+## 
+## $a$c1
+## [1] &quot;Eeek!&quot;
+## 
+## 
+## $b
+## [1] 4
+## 
+## $c
+## [1] &quot;Yikes!&quot;
+## 
+## $d
+## $d$a2
+## [1] 2
+## 
+## $d$b2
+## $d$b2$a3
+## [1] &quot;Hey!&quot;
+## 
+## $d$b2$b3
+## [1] 6</code></pre>
+</div>
+<div id="tapply" class="section level1">
+<h1>8. <em>tapply</em></h1>
+<p>For when you want to apply a function to subsets of a vector and the <strong>subsets</strong> are defined by some other vector, usually a factor.</p>
+<p>The black sheep of the *apply family, of sorts. The help file’s use of the phrase “ragged array” can be a bit confusing, but it is actually quite simple.</p>
+<p>Define a vector</p>
+<pre class="r"><code>x &lt;- 1:20
+x</code></pre>
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20</code></pre>
+<p>A factor (of the same length!) defining groups:</p>
+<pre class="r"><code>y &lt;- factor(rep(letters[1:5], each = 4))
+y</code></pre>
+<pre><code>##  [1] a a a a b b b b c c c c d d d d e e e e
+## Levels: a b c d e</code></pre>
+<p>Add up the values in <code>x</code> within each subgroup defined by <code>y</code>:</p>
+<pre class="r"><code>tapply(x, y, sum)</code></pre>
+<pre><code>##  a  b  c  d  e 
+## 10 26 42 58 74</code></pre>
+<p>More complex examples can be handled where the subgroups are defined by the unique combinations of a list of several factors. <code>tapply</code> is similar in spirit to the split-apply-combine functions that are common in R (<code>aggregate</code>, <code>by</code>, <code>ave</code>, <code>ddply</code>, etc.) Hence its black sheep status.</p>
+</div>

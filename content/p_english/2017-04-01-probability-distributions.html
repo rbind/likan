@@ -1,0 +1,208 @@
+---
+title: "Probability Distributions in R"
+author: "Likan Zhan"
+date: '2017-04-01'
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<!-- BLOGDOWN-BODY-BEFORE -->
+<div id="TOC">
+<ul>
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#normal-distribution">2. normal distribution</a></li>
+<li><a href="#binomial-distribution">3. binomial distribution</a></li>
+</ul>
+</div>
+<!-- /BLOGDOWN-BODY-BEFORE -->
+<div id="introduction" class="section level1">
+<h1>1. Introduction</h1>
+<p>R has a number of built in functions for calculations involving probability distributions, both discrete and continuous, including the <code>binomial</code>, <code>normal</code>, <code>Poisson</code>, <code>geometric</code>, <code>gamma</code>, <code>beta</code>, and others we have seen.</p>
+<p>For each distribution, R has four primary functions. Each function has a one letter prefix followed by the root name of the function. The names make mnemonic sense for continuous random variables but are used in both cases. For example <code>dnorm</code> is the height of the density of a normal curve while <code>dbinom</code> returns the probability of an outcome of a binomial distribution. Here is a table of these commands.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Prefix</th>
+<th>Condinuous</th>
+<th>Discrete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>d</code></td>
+<td>density</td>
+<td>probability (pmf)</td>
+</tr>
+<tr class="even">
+<td><code>p</code></td>
+<td>probability (cdf)</td>
+<td>probability (cdf)</td>
+</tr>
+<tr class="odd">
+<td><code>q</code></td>
+<td>quantile</td>
+<td>quantile</td>
+</tr>
+<tr class="even">
+<td><code>r</code></td>
+<td>random</td>
+<td>random</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<table>
+<thead>
+<tr class="header">
+<th>Distribution</th>
+<th>root</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Binomial</td>
+<td><code>binom</code></td>
+</tr>
+<tr class="even">
+<td>Geometric</td>
+<td><code>geom</code></td>
+</tr>
+<tr class="odd">
+<td>Hypergeometric</td>
+<td><code>hyper</code></td>
+</tr>
+<tr class="even">
+<td>Poisson</td>
+<td><code>pois</code></td>
+</tr>
+<tr class="odd">
+<td>Normal</td>
+<td><code>norm</code></td>
+</tr>
+<tr class="even">
+<td>Gamma</td>
+<td><code>gamma</code></td>
+</tr>
+<tr class="odd">
+<td>Beta</td>
+<td><code>beta</code></td>
+</tr>
+<tr class="even">
+<td>t</td>
+<td><code>t</code></td>
+</tr>
+<tr class="odd">
+<td>F</td>
+<td><code>f</code></td>
+</tr>
+<tr class="even">
+<td>Chi-squre</td>
+<td><code>chisq</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="normal-distribution" class="section level1">
+<h1>2. normal distribution</h1>
+<table style="width:38%;">
+<colgroup>
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Purpose</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>dnorm(x, mean, sd)</code></td>
+<td>Probability Density Function (PDF)</td>
+<td><code>dnorm(0.1, 0, 1)</code> gives the density (height of the PDF) of the normal 0.1 with mean = 0 and sd = 1</td>
+</tr>
+<tr class="even">
+<td><code>pnorm(q, mean, sd)</code></td>
+<td>Cumulative Distribution Function (CDF)</td>
+<td><code>pnorm(1.96, 0, 1)</code> gives the area under the standard normal curve to the left of 1.96, i.e., 0.975.</td>
+</tr>
+<tr class="odd">
+<td><code>qnorm(q, mean, sd)</code></td>
+<td>Quantile Function - inverse of pnorm</td>
+<td><code>qnorm(0.975, 0, 1)</code> gives the value at which the CDF of the standard normal is 0.975, i.e., 1.96</td>
+</tr>
+<tr class="even">
+<td><code>rnorm(n, mean, sd)</code></td>
+<td>Generate random numbers from normal distribution</td>
+<td><code>rnorm(10, 0, 1)</code> generate 10 numbers from a normal with mean = 0 and sd =1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Here are four examples,</p>
+<pre class="r"><code>dnorm(0.1, 0, 1)</code></pre>
+<pre><code>## [1] 0.3969525</code></pre>
+<pre class="r"><code>pnorm(1.96, 0, 1)</code></pre>
+<pre><code>## [1] 0.9750021</code></pre>
+<pre class="r"><code>qnorm(0.975, 0, 1)</code></pre>
+<pre><code>## [1] 1.959964</code></pre>
+<pre class="r"><code>rnorm(10, 0, 1)</code></pre>
+<pre><code>##  [1]  0.9969293  0.9677783 -1.1895191  0.7625485 -0.2353460  0.2988608
+##  [7]  2.2524390 -0.1299476 -0.3904332  0.7371673</code></pre>
+</div>
+<div id="binomial-distribution" class="section level1">
+<h1>3. binomial distribution</h1>
+<table style="width:38%;">
+<colgroup>
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Purpose</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>dbinom(x, size, prob)</code></td>
+<td>Probability Density Function (PDF)</td>
+<td><code>dbinom(1, 2, 0.5)</code> gives the density (height of the PDF) of the binomial 1 with size = 2 and prob = 0.5</td>
+</tr>
+<tr class="even">
+<td><code>pbinom(q, size, prob)</code></td>
+<td>Cumulative Distribution Function (CDF)</td>
+<td><code>pbinom(1, 2, 0.5)</code> gives the area under the binomial curve to the left of 1, i.e., 0.75.</td>
+</tr>
+<tr class="odd">
+<td><code>qbinom(p, size, prob)</code></td>
+<td>Quantile Function - inverse of pnorm</td>
+<td><code>qbinom(0.75, 2, 0.5)</code> gives the value at which the CDF of the binomial is 0.75, i.e., 1.5</td>
+</tr>
+<tr class="even">
+<td><code>rbinom(n, size, prob)</code></td>
+<td>Generate random numbers from normal distribution</td>
+<td><code>rbinom(20, 2, 0.5)</code> generate 4 numbers from a binomial with size = 2 and probability = 0.5</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Here are four examples,</p>
+<pre class="r"><code>dbinom(1, 2, 0.5)</code></pre>
+<pre><code>## [1] 0.5</code></pre>
+<pre class="r"><code>pbinom(1, 2, 0.5)</code></pre>
+<pre><code>## [1] 0.75</code></pre>
+<pre class="r"><code>qbinom(0.75, 2, 0.5)</code></pre>
+<pre><code>## [1] 1</code></pre>
+<pre class="r"><code>rbinom(20, 2, 0.5)</code></pre>
+<pre><code>##  [1] 0 2 0 1 1 2 2 0 1 1 0 0 1 1 0 2 0 0 1 1</code></pre>
+</div>

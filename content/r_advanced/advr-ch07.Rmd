@@ -60,7 +60,7 @@ is.object(sum)
 R中大多数对象都是S3对象。但基础R软件包中并没有确定一个对象是否为S3类型的简单方法。一种最接近的方式是：`is.object(x) & !isS4(x)`，即它是一个对象，但不是S4类型的对象。借助 *pryr* 软件包判断一个对象是否是S3类型的方法是`pryr::otype()`
 
 ```{r, eval = TRUE, results = "hold", message = FALSE}
-library(pryr, quietly = TRUE)
+library(pryr, quietly = TRUE, warn.conflicts = FALSE)
 df <- data.frame(x = 1:10, y = letters[1:10])
 otype(df)   # 数据框（data.frame）属于S3类型
 otype(df$x) # 数值型向量（numeric vector）不属于S3类型
