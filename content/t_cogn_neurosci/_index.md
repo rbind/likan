@@ -9,7 +9,7 @@ slag: "cogn_neurosci"
 ---
 # 1. Lecture Time and Location
 
-The course will be lectured at **0800 - 0950** each **Monday** in **Room 105, Teaching Building 5** (**教5楼105**).
+The course will be lectured at **0800 - 0950** on each **Monday** in **Room 105, Teaching Building 5** (**教5楼105**).
 
 # 2. Course Information
 <p align = "middle"> *How the brain enables the mind ?* </p>
