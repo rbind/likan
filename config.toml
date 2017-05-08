@@ -28,13 +28,18 @@ footnotereturnlinkcontents = "↩"
 
 [[menu.main]]
     name = "Blog"
-    url = "/blog/"
+    url = "/p_english/"
     weight = 3
 
 [[menu.main]]
     name = "读书"
     url = "/reading/"
     weight = 4
+
+[[menu.main]]
+    name = "博客"
+    url = "/p_chinese/"
+    weight = 5
 
 [params]
     fullURL = "https://likanzhan.github.io"
