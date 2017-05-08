@@ -1,11 +1,3 @@
-t.test.default
-methods(t.test.default)
-methods(t.test.default*)
-methods("t.test.default*")
-methods("t.test.default")
-methods(t.test.default)
-methods(t.test)
-methods(class=t.test)
 ?t.test
 13-1.397
 13+1.397
@@ -3741,4 +3733,14 @@ ff()
 ?ave
 options(servr.daemon = TRUE)#
 setwd("~/website/hugo")
-blogdown::new_post("brain-connectivity-dynamics-during-social-interaction-reflect-social-network-structure")
+library(blogdown)
+?build_site
+?serve_site
+?build_site
+blogdown::build_site(local = FALSE, method = "html_encoded")
+blogdown::serve_site(method = "html_encoded") #serve site
+blogdown::build_site(local = FALSE, method = "html_encoded")
+blogdown::build_site(local = FALSE, method = "html")
+blogdown::serve_site() #serve site
+blogdown::build_site(local = FALSE, method = "html")
+blogdown::build_site(local = FALSE, method = "html")
