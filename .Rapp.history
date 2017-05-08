@@ -1,12 +1,3 @@
-?t.test
-13-1.397
-13+1.397
-methods("Math")
-tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
-tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T, na.strings=c("","NA"))
-tt <- read.table("~/Desktop/data/Experiment1Chinese.txt", header=T)
-tt <- read.table("~/Desktop/data/Experiment1Chinese.csv", header=T)
-str(tt)
 tt
 tt <- read.table("~/Desktop/data/Experiment1Chinese.csv", header=T)
 tt
@@ -3731,16 +3722,34 @@ mtext(#
 ff()
 ?t.test()
 ?ave
+library(eyetrackingR)
+?make_eyetrackingr_data
+getAnywhere(make_eyetrackingr_data)
+library(eyetrackingR)#
+getAnywhere(make_eyetrackingr_data)
+library(eyetrackingR)#
+getAnywhere(make_eyetrackingr_data)
+?checkfun
+library(eyetrackingR)#
+getAnywhere(make_eyetrackingr_data)
+?checkfunc
+library(eyetrackingR)#
+getAnywhere(make_eyetrackingr_data)
+?getAnywhere
+argsAnywhere()
+library(eyetrackingR)#
+getAnywhere(make_eyetrackingr_data)
+library(eyetrackingR)#
+argsAnywhere(make_eyetrackingr_data)
+args(hist)
+getAnywhere(hist)
+search()
+?search
+?getAnywhere
 options(servr.daemon = TRUE)#
 setwd("~/website/hugo")
-library(blogdown)
-?build_site
-?serve_site
-?build_site
-blogdown::build_site(local = FALSE, method = "html_encoded")
-blogdown::serve_site(method = "html_encoded") #serve site
-blogdown::build_site(local = FALSE, method = "html_encoded")
-blogdown::build_site(local = FALSE, method = "html")
+blogdown::new_post("Google-R-Style-Guide", rmd=T)
+options(servr.daemon = TRUE)#
+setwd("~/website/hugo")#
+blogdown::build_site(local = FALSE, method = "html")#
 blogdown::serve_site() #serve site
-blogdown::build_site(local = FALSE, method = "html")
-blogdown::build_site(local = FALSE, method = "html")
