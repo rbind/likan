@@ -1,16 +1,21 @@
 ---
-title: "第1章、数据展示"
+title: "第2章、数据探索"
 author: "侃侃迩行"
 date: '2017-02-15'
 output:
   blogdown::html_page:
     toc: true
 ---
+
+```{r, echo = FALSE, eval = TRUE}
+library(PASWR2, quietly = TRUE)
+```
+
 # 2.1. 什么是统计学
 # 2.2. 数据
 # 2.3. 定性数据
 
-## 2.3.1. Tables
+## 2.3.1. 频率分析表
 - vector
 ```{r eval = TRUE, results = "hold"}
 Grades <- c("A", "D", "C", "D", "C", "C", "C", "C", "F", "B")
@@ -28,7 +33,7 @@ with(data = quine, table(Age))
 xtabs(~ Age, data = quine)
 ```
 
-## 2.3.2. Barplots
+## 2.3.2. 盒状图
 
 ```{r label = "Figure_02_01", eval = TRUE, results = "hold"}
 opar <- par(no.readonly = TRUE) # read in current parameters
@@ -56,7 +61,7 @@ barplot(prop.table(xtabs(~ Age, data = quine)),
 par(opar) # reset to original parameters
 ```
 
-## 2.3.3. dotchart
+## 2.3.3. 点状图
 
 - 图2.2
 
@@ -104,7 +109,7 @@ par(opar) # reset to original parameters
 options(warn = oldw)
 ```
 
-## 2.3.3. Pie charts
+## 2.3.3. 饼状图
 
 ```{r label = "Figure_02_04", eval = TRUE, results = "hold", warning = FALSE}
 opar <- par(no.readonly = TRUE) # read in current parameters
@@ -132,3 +137,121 @@ mtext(
 )
 par(opar) # reset to original parameters
 ```
+
+# 2.4. 定量数据
+## 2.4.1 茎叶图{#stem-leaf}
+- 茎叶图适合展示小样本数据 (小于 100 个数据)。
+```{r}
+NYYHR <- BABERUTH$hr[BABERUTH$team == "NY-A"]
+stem(NYYHR)
+rm(NYYHR)
+```
+
+## 2.4.2 Strip Charts
+
+- `stripchart()` 函数
+
+```{r, eval = TRUE}
+args(stripchart)
+```
+- 数据 `BABERUTH`
+
+```{r}
+head(BABERUTH)
+NYYHR <- with(data = BABERUTH, hr[7 : 21])
+```
+- 图 2.6
+
+```{r label = "Figure_02_06", eval = TRUE, results = "hold", warning = FALSE}
+stripchart(
+  NYYHR,
+  xlab = "Home runs per season",
+  method = "stack",
+  main = "Strip chart of home runs while a New York Yankee",
+  pch = 1
+  )
+rm (NYYHR)
+```
+
+- 图 2.7
+
+```{r label = "Figure_02_07", eval = TRUE, results = "hold", warning = FALSE}
+opar <- par(no.readonly = TRUE) # 读取现在的参数
+par(mfrow = c(1, 2))
+stripchart(
+  hr ~ team,
+  data = BABERUTH,
+  xlab = "Home runs per season",
+  method = "stack",
+  pch = 1
+  )
+title ("Strip chart of home \n runs by team")
+par(las = 1)  # 纵坐标标签改为水平方向
+stripchart(
+  hr ~ team,
+  data = BABERUTH,
+  pch = 19,
+  method = "stack",
+  col = c("gray30", "gray50", "gray70"),
+  xlab = "Home runs per season",
+  main = "Grayscale chart of \n home runs by team"
+  )
+par(opar) # 还原原始参数设置
+```
+
+## 2.4.3 密度曲线 {#Density-Curves}
+### 2.4.3.1 直方图 {#Histograms}
+
+- `hist()` 函数
+
+```{r, eval = TRUE}
+args(hist.default)
+```
+- 图 2.8
+
+```{r label = "Figure_02_08", eval = TRUE, results = "hold", warning = FALSE}
+opar <- par(no.readonly = TRUE) # 读入当下参数
+par(mfrow = c(1, 2))            # 一行两列
+bin <- seq(20, 70, 10)          # 范围20-70，宽度为10的分块
+hist(
+  BABERUTH $ hr [7: 21],
+  breaks = bin,
+  xlab = "Home Runs",
+  col = "pink",
+  main = "Bins of form (]"
+  )
+hist(
+  BABERUTH $ hr [7 : 21],
+  breaks = bin,
+  right = FALSE,
+  xlab = "Home Runs",
+  col = "pink",
+  main = "Bins of form [)"
+  )
+par(opar) # 重设为原始参数
+```
+
+- ` breaks = "Sturges" `</br>
+$$
+h_{\text{Sturges}} = \frac{R}{1+\log^n_2}
+$$
+此处的 `R` 为样本数据的全距。
+
+- `breaks = "FD"` 或 `"Freedman-Diaconis"` </br>
+$$
+h_{\text{FD}} = \frac{2\times IQR}{n^{1/3}}
+$$
+其中 IQR 为样本数据的四分位距。
+
+- `breaks = "Scott"` </br>
+$$
+h_{\text{Scott}} = \frac{2 \cdot 3 ^{1/3} \cdot \pi ^{1/6} \cdot \hat{\sigma}}{n^{1/3}}
+$$
+其中 $\hat{\sigma}$ 为样本标准差。当然 R 实际使用的是简化版的公式：
+
+$$
+h_{\text{ScottR}} = \frac{3.5 \cdot \hat{\sigma}}{n^{1/3}}
+$$
+
+- R 并不直接使用上述公式计算出来的区间，而是用 `pretty(h)` 函数对区间进行了进一步优化。
+
