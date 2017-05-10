@@ -35,7 +35,7 @@ xtabs(~ Age, data = quine)
 
 ## 2.3.2. 盒状图
 
-```{r label = "Figure_02_01", eval = TRUE, results = "hold"}
+```{r label = "Figure_02_01", eval = TRUE, fig.align="center", results = "hold"}
 opar <- par(no.readonly = TRUE) # read in current parameters
 par(mfrow=c(2, 2)) # change parameters
 barplot(xtabs( ~ Grades),
@@ -65,7 +65,7 @@ par(opar) # reset to original parameters
 
 - 图2.2
 
-```{r label = "Figure_02_02", eval = TRUE, results = "hold", warning = FALSE}
+```{r label = "Figure_02_02", eval = TRUE, fig.align="center", results = "hold", warning = FALSE}
 oldw <- getOption("warn")
 options(warn = -1)
 opar <- par(no.readonly = TRUE) # read in current parameters
@@ -85,7 +85,7 @@ options(warn = oldw)
 ```
 - 图2.3
 
-```{r label = "Figure_02_03", eval = TRUE, results = "hold", warning = FALSE}
+```{r label = "Figure_02_03", eval = TRUE, fig.align="center", results = "hold", warning = FALSE}
 oldw <- getOption("warn")
 options(warn = -1)
 opar <- par(no.readonly = TRUE) # read in current parameters
@@ -111,7 +111,7 @@ options(warn = oldw)
 
 ## 2.3.3. 饼状图
 
-```{r label = "Figure_02_04", eval = TRUE, results = "hold", warning = FALSE}
+```{r label = "Figure_02_04", eval = TRUE, fig.align="center", results = "hold", warning = FALSE}
 opar <- par(no.readonly = TRUE) # read in current parameters
 par(mfrow = c(1, 2))
 GS <- gray(c(0.1, 0.4, 0.7, 0.8, 0.95)) # different grays
@@ -162,7 +162,7 @@ NYYHR <- with(data = BABERUTH, hr[7 : 21])
 ```
 - 图 2.6
 
-```{r label = "Figure_02_06", eval = TRUE, results = "hold", warning = FALSE}
+```{r label = "Figure_02_06", eval = TRUE, fig.align="center", results = "hold", warning = FALSE}
 stripchart(
   NYYHR,
   xlab = "Home runs per season",
@@ -175,7 +175,7 @@ rm (NYYHR)
 
 - 图 2.7
 
-```{r label = "Figure_02_07", eval = TRUE, results = "hold", warning = FALSE}
+```{r label = "Figure_02_07", eval = TRUE, fig.align="center", results = "hold", warning = FALSE}
 opar <- par(no.readonly = TRUE) # 读取现在的参数
 par(mfrow = c(1, 2))
 stripchart(
@@ -209,7 +209,7 @@ args(hist.default)
 ```
 - 图 2.8
 
-```{r label = "Figure_02_08", eval = TRUE, results = "hold", warning = FALSE}
+```{r label = "Figure_02_08", eval = TRUE, fig.align="center", results = "hold", warning = FALSE}
 opar <- par(no.readonly = TRUE) # 读入当下参数
 par(mfrow = c(1, 2))            # 一行两列
 bin <- seq(20, 70, 10)          # 范围20-70，宽度为10的分块

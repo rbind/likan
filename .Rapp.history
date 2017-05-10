@@ -1,1313 +1,3 @@
-?nrows
-?nRows
-df <- 8#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(x, df)#
-plot(#
-   x, #
-   pv,#
-   type = "l"#
-)
-df <- 8#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(x, df)#
-plot(#
-   tv, #
-   pv,#
-   type = "l"#
-)
-tv
-dt(tv, df)
-df <- 8#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(x, df)#
-plot(#
-   tv, #
-   pv,#
-   type = "l"#
-)
-df <- 8#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   tv, #
-   pv,#
-   type = "l"#
-)
-?box
-df <- 8#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   tv, #
-   pv,#
-   type = "l", box = "l"#
-)
-?plot
-df <- 8#
-alpha <- 0.05#
-tail <- 2#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   tv, #
-   pv,#
-   type = "l"#
-)#
-v1 <- qt(alpha / tail, df, lower.tail = FALSE)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 2#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   tv, #
-   pv,#
-   type = "l", bty = "l"#
-)#
-v1 <- qt(alpha / tail, df, lower.tail = FALSE)#
-abline(v = v1)
-?plot
-df <- 8#
-alpha <- 0.05#
-tail <- 2#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l"#
-)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){	#
-}#
-polygon(#
-   x = px,#
-   y = py #
-)
-df <- 8#
-alpha <- 0.05#
-tail <- 2#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l"#
-)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l"#
-)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l",#
-   xaxs = "i"#
-)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l",#
-   yaxs = "i"#
-)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l",#
-   axes = ""#
-   xaxs = "i"#
-)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l",#
-   axes = FALSE,#
-   xaxs = "i"#
-)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l",#
-   axes = FALSE,#
-   xaxs = "i"#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l",#
-   axes = FALSE,#
-   xaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   bty = "l",#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   col = "#cf232a"#
-   bty = "l",#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   col = "#cf232a",#
-   bty = "l",#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   col = "#cf232a",#
-   bty = "l",#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red",#
-   border = NULL#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   col = "#cf232a",#
-   bty = "l",#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red",#
-   border = "white"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = tv, #
-   y = pv,#
-   type = "l",#
-   col = "#cf232a",#
-   bty = "l",#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red",#
-   border = NULL#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red",#
-   border = NULL#
-)#
-line(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = max(pv) * 1.1,#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red",#
-   border = NULL#
-)#
-line(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red",#
-   border = NULL#
-)#
-line(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "red",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-line(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = v1)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-hv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = vv)
-df <- 8#
-alpha <- 0.05#
-tail <- 2#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-hv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = vv)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = vv)
-df <- 8#
-alpha <- 0.05#
-tail <- 2#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v = vv)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)
-df <- 8#
-alpha <- 0.05#
-tail <- 1#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(1, df)#
-)
 df <- 8#
 alpha <- 0.05#
 tail <- 2#
@@ -3653,1310 +2343,4284 @@ r0 = 0#
 # minimise the function to get the parameter estimates#
 rootSearch = optim(r0, fnToFindRoot,method = 'BFGS', hessian=TRUE)#
 str(rootSearch)
-data()
-ff <- function (#
-diff = M - mu#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5) - diff,#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5) - diff,#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-text(#
-  x = M - diff,#
-  y = 1.5, #
-  label = bquote(italic(M) == .(M - diff))#
-)#
-ssample <- sample[sample != (10 + diff)] - diff#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == (10 + diff)]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff(0)
-ff(1)
-ff(3)
-ff()
-ff(0)
-ff(9)
-ff(2)
-ff(2mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-))
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample - diff, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-text(#
-  x = M,#
-  y = 1.5, #
-  label = bquote(italic(M) == .(M))#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  label = bquote(italic(M) == .(M))#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)
-ssample <- sample[sample != mu]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == mu]),#
-  x1 = 10,#
-  y1 = 3 #
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  label = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != mu]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == mu]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 3.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 4:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != mu]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == mu]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(4, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != mu]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == mu]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(6, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != mu]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == mu]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != mu]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == mu]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-ff <- function (#
-mu = 10#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != mu]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == mu]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff(mu= M)
-ff <- function (#
-sst = TRUE#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-if (sst) {#
-	M <- M#
-} else {#
-	M <- M + (M - mu)#
-}#
-n <- length(sample)#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == 10)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != mu]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == mu]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff(F)
-ff <- function (#
-sst = TRUE#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-if (sst) {#
-	center <- mu#
-} else {#
-	center <- M#
-}#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == center)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != center]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = 10,#
-  y0 = length(sample[sample == center]),#
-  x1 = 10,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff(F)
-sst = FALSE
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-if (sst) {#
-	center <- mu#
-} else {#
-	center <- M#
-}#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == mu)#
-)
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-sst = FALSE
-sst
-if (sst) {#
-	center <- mu#
-} else {#
-	center <- M#
-}
-center
-ssample <- sample[sample != center]
-ssample
-unique <- unique(ssample)
-unique
-length <- length(unique)
-length
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-if (sst) {#
-	center <- mu#
-} else {#
-	center <- M#
-}#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == mu)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != center]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)
-segments(#
-  x0 = center,#
-  y0 = length(sample[sample == center]),#
-  x1 = center,#
-  y1 = 3 #
-)
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(10, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)
-ff <- function (#
-sst = TRUE#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-if (sst) {#
-	center <- mu#
-} else {#
-	center <- M#
-}#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == mu)#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != center]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = center,#
-  y0 = length(sample[sample == center]),#
-  x1 = center,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(center, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff()
-ff(0)
-ff <- function (#
-sst = TRUE#
-){#
-mu <- 10#
-sample <- c(8, 10, 12, 12, 13, 13, 15, 17, 17) #
-M <- mean(sample)#
-n <- length(sample)#
-if (sst) {#
-	center <- mu#
-} else {#
-	center <- M#
-}#
-hist(#
-   x = sample, #
-   breaks = 6.5:18.5, #
-   axes = FALSE, #
-   xlim = c(7, 18), #
-   ylim = c(0, 3),#
-   xaxs = "i",#
-   yaxs = "i",#
-   main = "",#
-   col = "#f7cda1",#
-   lwd = 2,#
-   border = "#b78135",#
-   xlab = "Time spent looking at the attractive face (in seconds)",#
-   ylab = "Number of kids",#
-   font.lab = 2#
-)#
-axis(#
-   side = 2,#
-   at = 0:2#
-)#
-axis(#
-  side = 1,#
-  at = 7:18#
-)#
-segments(#
-  x0 = c(11.5, 16.5),#
-  y0 = c(1, 1),#
-  x1 = c(13.5, 17.5),#
-  y1 = c(1, 1),#
-  col = "#b78135"#
-)#
-mtext(#
-  side = 3, #
-  at = 10, #
-  text = bquote(italic(mu[0]) == .(mu))#
-)#
-mtext(#
-  side = 3,#
-  at = M, #
-  text = bquote(italic(M) == .(M))#
-)#
-ssample <- sample[sample != center]#
-unique <- unique(ssample)#
-length <- length(unique)#
-segments(#
-  x0 = unique,#
-  y0 = as.numeric(table(ssample)),#
-  x1 = unique,#
-  y1 = seq(2.1, 2.9, length.out = length)#
-)#
-segments(#
-  x0 = center,#
-  y0 = length(sample[sample == center]),#
-  x1 = center,#
-  y1 = 3 #
-)#
-segments(#
-  x0 = unique,#
-  y0 = seq(2.1, 2.9, length.out = length),#
-  x1 = rep(center, length),#
-  y1 = seq(2.1, 2.9, length.out = length),#
-  col = "red"#
-)	#
-}
-ff(0)
-ff(1)
-ff(0)
-ff(1)
-ff(0)
-BABERUTH
-PASWR2
-library(PASWR2)
-data(package="library(PASWR2)")
-data(package="PASWR2")
-options(servr.daemon = TRUE)#
-setwd("~/website/hugo")#
-blogdown::build_site(local = FALSE, method = "html")#
-blogdown::serve_site() #serve site
-options(servr.daemon = TRUE)#
-setwd("~/website/hugo")#
-blogdown::build_site(local = FALSE, method = "html")#
-blogdown::serve_site() #serve site
-search()
-searchAnywhere(stripchart)
-getAnywhere(stripchart)
-?UseMethod
-options(servr.daemon = TRUE)#
-setwd("~/website/hugo")#
-blogdown::build_site(local = FALSE, method = "html")#
-blogdown::serve_site() #serve site
-options(servr.daemon = TRUE)#
-setwd("~/website/hugo")#
-blogdown::build_site(local = FALSE, method = "html")#
-blogdown::serve_site() #serve site
-opar <- par(no.readonly = TRUE) # 读入当下参数#
-par(mfrow = c(1, 2))            # 一行两列#
-bin <- seq(20, 70, 19)          # 范围20-70，宽度为10的分块#
-hist(#
-  BABERUTH $ hr [7: 21],#
-  breaks = bin,#
-  xlab = "Home Runs",#
-  col = "pink",#
-  main = "Bins of form (]"#
-  )#
+library(bookdown)
+help(package="bookdown")
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
 #
 hist(#
-  BABERUTH $ hr [7: 21],#
-  breaks = bin,#
-  right = FALSE,#
-  xlab = "Home Runs",#
-  col = "pink",#
-  main = "Bins of form [)"#
-  )
-opar <- par(no.readonly = TRUE) # 读入当下参数#
-par(mfrow = c(1, 2))            # 一行两列#
-bin <- seq(20, 70, 19)          # 范围20-70，宽度为10的分块#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
 hist(#
-  BABERUTH $ hr [7: 21],#
-  breaks = bin,#
-  xlab = "Home Runs",#
-  col = "pink",#
-  main = "Bins of form (]"#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 3#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
   )
-opar <- par(no.readonly = TRUE) # 读入当下参数#
-par(mfrow = c(1, 2))            # 一行两列#
-bin <- seq(20, 70, 19)          # 范围20-70，宽度为10的分块#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
+#
 hist(#
-  BABERUTH $ hr [7: 21],#
-  breaks = bin,#
-  xlab = "Home Runs",#
-  col = "pink",#
-  main = "Bins of form (]"#
-  )
-x
-bin
-opar <- par(no.readonly = TRUE) # 读入当下参数#
-par(mfrow = c(1, 2))            # 一行两列#
-bin <- seq(20, 70, 19)          # 范围20-70，宽度为10的分块#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
 hist(#
-  BABERUTH $ hr [7: 21],#
-  breaks = bin,#
-  xlab = "Home Runs",#
-  col = "pink",#
-  main = "Bins of form (]"#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 3#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3.5,#
+  at = M1#
   )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
+#
+hist(#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 3#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1,#
+  line = 2#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
+#
+hist(#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 3#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1,#
+  line = 1#
+  )
+wdo <- c(wlr, dlr)#
+nn <- n1 + n2#
+M0 <- mean(wdo)#
+#
+diff1 <- M1 - M0#
+diff2 <- M2 - M0#
+#
+wdn <- c(wlr - diff1, dlr - diff2)#
+#
+SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
+SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn#
+SSR <- n1 * diff1 ^ 2 +  n2 * diff2 ^ 2#
+SSR <- SST - SSE#
+r_sqr <- SSR / SST
+wdo <- c(wlr, dlr)#
+nn <- length(wlr) + length(dlr)#
+M0 <- mean(wdo)#
+#
+diff1 <- M1 - M0#
+diff2 <- M2 - M0#
+#
+wdn <- c(wlr - diff1, dlr - diff2)#
+#
+SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
+SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn#
+SSR <- n1 * diff1 ^ 2 +  n2 * diff2 ^ 2#
+SSR <- SST - SSE#
+r_sqr <- SSR / SST
+SST
+SSE
+sum((wlr)^2) - (sum(wlr))^2/length(wlr)
+sum((dlr)^2) - (sum(dlr))^2/length(dlr)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
+#
+hist(#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 3#
+  )#
+mtext(#
+  text = c(#
+  bquote(M[1] == .(M1)),#
+  bquote(M[2] == .(M2)),#
+  bquote(M[0] == .(M0))#
+  )#
+  side = 3,#
+  at = c(M1, M2, M0),#
+  line = 1#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
+#
+hist(#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 3#
+  )#
+mtext(#
+  text = c(#
+  bquote(M[1] == .(M1)),#
+  bquote(M[2] == .(M2)),#
+  bquote(M[0] == .(M0))#
+  ),#
+  side = 3,#
+  at = c(M1, M2, M0),#
+  line = 1#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
+#
+hist(#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 3#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1,#
+  line = 1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2,#
+  line = 1#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0,#
+  line = 1#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
+#
+hist(#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 3#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(c(wlr, dlr))#
+#
+hist(#
+  x = c(wlr, dlr), #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+)#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+)#
+axis(#
+  side = 1,#
+  at = 3:17#
+)#
+axis(#
+  side = 2,#
+  at = 0:3#
+)#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+)#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+)#
+#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- table(total)
+table
+str(table)
+data.frame(table)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))
+table
+x0 = table[table$total != M1, ]$total,
+x0 = table[table$total != M1, ]$total
+x0
+sample
+smp1 <- table[table$total != M1, ]
+smp1
+nrow(samp1)
+nrow(smp1)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+smp1 <- table[table$total != M1, ] #
+segments(#
+  x0 = smp1$total,#
+  y0 = smp1$Freq,#
+  y1 = seq(3, 3.5, length.out = nrow(smp1))#
+  )
+smp1$total
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+smp1 <- table[table$total != M1, ] #
+segments(#
+  x0 = smp1$total,#
+  y0 = smp1$Freq,#
+  y1 = seq(3, 3.5, length.out = nrow(smp1))#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp1 <- data.frame(table[table$total != M1, ])#
+smp2 <- data.frame(table[table$total != M2, ])#
+smp0 <- data.frame(table[table$total != M0, ])#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = smp1$total,#
+  y0 = smp1$Freq,#
+  y1 = seq(3, 3.5, length.out = nrow(smp1))#
+  )
+smp1
+str(smp1)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp1 <- data.frame(table[table$total != M1, ])#
+smp2 <- data.frame(table[table$total != M2, ])#
+smp0 <- data.frame(table[table$total != M0, ])#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )
+seq(3, 3.5, length.out = nrow(smp1))
+smp1$Freq
+smp1$total
+segments(#
+  x0 = smp1$total,#
+  y0 = smp1$Freq,#
+  y1 = seq(3, 3.5, length.out = nrow(smp1))#
+  )
+smp1
+segments(#
+  x0 = smp1[, "total"],#
+  y0 = smp1$Freq,#
+  y1 = seq(3, 3.5, length.out = nrow(smp1))#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp1 <- data.frame(table[table$total != M1, ])#
+smp2 <- data.frame(table[table$total != M2, ])#
+smp0 <- data.frame(table[table$total != M0, ])#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(smp1[, "total"]),#
+  y0 = smp1$Freq,#
+  y1 = seq(3, 3.5, length.out = nrow(smp1))#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp1 <- data.frame(table[table$total != M1, ])#
+smp2 <- data.frame(table[table$total != M2, ])#
+smp0 <- data.frame(table[table$total != M0, ])#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(smp1[, "total"]),#
+  y0 = as.numeric(smp1$Freq),#
+  y1 = seq(3, 3.5, length.out = nrow(smp1))#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp1 <- data.frame(table[table$total != M1, ])#
+smp2 <- data.frame(table[table$total != M2, ])#
+smp0 <- data.frame(table[table$total != M0, ])#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(smp0[, "total"]),#
+  y0 = as.numeric(smp0$Freq),#
+  y1 = seq(3, 3.5, length.out = nrow(smp0))#
+  )
+smp
+smp0
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp1 <- data.frame(table[table$total != M1, ])#
+smp2 <- data.frame(table[table$total != M2, ])#
+smp0 <- data.frame(table[table$total != M0, ])#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 3.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(smp0[, "total"]),#
+  y0 = as.numeric(smp0$Freq),#
+  y1 = seq(3, 3.5, length.out = nrow(smp0))#
+  )
+smp1
+smp2
+smp0
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp1 <- table[table$total != M1, ]
+smp1
+str(smp1)
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]
+smp0
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(smp0[, "total"]),#
+  y0 = as.numeric(smp0$Freq),#
+  y1 = seq(3, 4, length.out = nrow(smp0))#
+  )
+nrow(smp0)
+smp0
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(smp0[, "total"]),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(smp0[, "total"]),#
+  y1 = seq(3, 4, length.out = nrow(smp0))#
+  )
+smp0
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = smp0[, "total"],#
+  y0 = smp0$Freq,#
+  x1 = smp0[, "total"],#
+  y1 = seq(3, 4, length.out = nrow(smp0))#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(smp0[, "total"]),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(smp0[, "total"]),#
+  y1 = seq(3, 4, length.out = nrow(smp0))#
+  )
+spm0$Freq
+smp0$Freq
+as.numeric(smp$Freq)
+as.numeric(smp1$Freq)
+as.numeric(smp1$total)
+as.numeric(smp0$total)
+as.numeric(as.character(smp0$total))
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4, length.out = nrow(smp0))#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = c(M1, M2, M0),#
+  y0 = c(0.05, 1, 1),#
+  y1 = 4#
+  )#
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = M0,#
+  y0 = 1,#
+  y1 = 4.5#
+  ) #
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(M[0] == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = M0,#
+  y0 = 1,#
+  y1 = 4.5#
+  ) #
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+segments(#
+  x0 = M0,#
+  y0 = 1,#
+  y1 = 4.5#
+  ) #
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )  #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Total ## #
+segments(#
+  x0 = c(M1 M2),#
+  y0 = 1,#
+  y1 = 4.5#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Total ## #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = 1,#
+  y1 = 4.5#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table <- data.frame(table(total))#
+smp0 <- table[table$total != M0, ]#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Total ## #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table[table1$wlr != M0, ]
+table1
+smp1
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table[table1$wlr != M0, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ## #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "red"#
+  )
+smp1
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table[table1$wlr != M1, ]
+smp1
+table1
+smp1 <- table1[table1$wlr != M1, ]
+smp1
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$wlr != M1, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ## #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$wlr != M1, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ## #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smpd$dlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp2)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$wlr != M1, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ## #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp2)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ## #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp2)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ## #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "red"#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4.5, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(3, 4.5, length.out = nrow(smp2)),#
+  col = "red"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 4.5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4.4, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4.4, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4.4, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(3.1, 4.5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(3.1, 4.5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(3.1, 4.5, length.out = nrow(smp2)),#
+  col = "red"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(4, 5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(5, 5, length.out = nrow(smp2)),#
+  col = "red"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(4, 5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "red"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 4.5#
+  )
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(4, 5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "blue"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 5#
+  )
+ff <- function(#
+  SST = FALSE#
+  ) {#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+if (SST) {#
+## Sum of Squares Total ## #
+segments(#
+  x0 = M0,#
+  y0 = 1,#
+  y1 = 4.5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 4.5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 4.5, length.out = nrow(smp0)),#
+  col = "red"#
+  ) 	#
+} else {	#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(4, 5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "blue"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 5#
+  )	#
+}#
+}
+ff()
+ff(1)
+ff(0)
+ff <- function(#
+  SST = FALSE#
+  ) {#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topright",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+if (SST) {#
+## Sum of Squares Total ## #
+segments(#
+  x0 = M0,#
+  y0 = 1,#
+  y1 = 5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 5, length.out = nrow(smp0)),#
+  col = "red"#
+  ) 	#
+} else {	#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(4, 5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "blue"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 5#
+  )	#
+}#
+}
+ff()
+ff(1)
+ff()
+ff <- function(#
+  SST = FALSE#
+  ) {#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topleft",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+if (SST) {#
+## Sum of Squares Total ## #
+segments(#
+  x0 = M0,#
+  y0 = 1,#
+  y1 = 5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 5, length.out = nrow(smp0)),#
+  col = "red"#
+  ) 	#
+} else {	#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(4, 5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "blue"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 5#
+  )	#
+}#
+}
+ff()
+ff(1)
+ff <- function(#
+  SST = FALSE#
+  ) {#
+wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
+dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
+total <- c(wlr, dlr)#
+M1 <- mean(wlr)#
+M2 <- mean(dlr)#
+M0 <- mean(total)#
+table0 <- data.frame(table(total))#
+smp0 <- table[table0$total != M0, ]#
+table1 <- data.frame(table(wlr))#
+smp1 <- table1[table1$wlr != M1, ]#
+table2 <- data.frame(table(dlr))#
+smp2 <- table2[table2$dlr != M2, ]#
+#
+hist(#
+  x = total, #
+  breaks = 3.5:16.5,#
+  xlim = c(3, 17),#
+  ylim = c(0, 5),#
+  col = "#a0d5cf",#
+  border = "#009f9b",#
+  main = "",#
+  ylab = "Frequency",#
+  xlab = "Scores",#
+  font.lab = 2,#
+  xaxs = "i",  #
+  yaxs = "i",       #
+  axes = FALSE#
+  )#
+hist(#
+  x = wlr, #
+  breaks = 3.5:16.5,   #
+  col = "#f8cea2",#
+  border = "#b78135",#
+  add = TRUE#
+  )#
+axis(#
+  side = 1,#
+  at = 3:17#
+  )#
+axis(#
+  side = 2,#
+  at = 0:3#
+  )#
+segments(#
+  10.5, 2, 11.5, 2,#
+  col = "#009f9b"#
+  )#
+legend(#
+  "topleft",#
+  lwd = 10,#
+  col = c("#f8cea2", "#a0d5cf"),#
+  bty = "n",#
+  legend = c("Well lit",  "Dimly lit")#
+  )#
+mtext(#
+  text = bquote(M[1] == .(M1)),#
+  side = 3,#
+  at = M1#
+  )#
+mtext(#
+  text = bquote(M[2] == .(M2)),#
+  side = 3,#
+  at = M2#
+  ) #
+mtext(#
+  text = bquote(mu == .(M0)),#
+  side = 3,#
+  at = M0#
+  )#
+if (SST) {#
+## Sum of Squares Total ## #
+segments(#
+  x0 = M0,#
+  y0 = 1,#
+  y1 = 5#
+  )     #
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = as.numeric(smp0$Freq),#
+  x1 = as.numeric(as.character(smp0$total)),#
+  y1 = seq(3, 5, length.out = nrow(smp0)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp0$total)),#
+  y0 = seq(3, 5, length.out = nrow(smp0)),#
+  x1 = M0,#
+  y1 = seq(3, 5, length.out = nrow(smp0)),#
+  col = "red"#
+  ) 	#
+} else {	#
+## Sum of Squares Error ##     #
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = as.numeric(smp1$Freq),#
+  x1 = as.numeric(as.character(smp1$wlr)),#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp1$wlr)),#
+  y0 = seq(3, 4, length.out = nrow(smp1)),#
+  x1 = M1,#
+  y1 = seq(3, 4, length.out = nrow(smp1)),#
+  col = "red"#
+  )    #
+ segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = as.numeric(smp2$Freq),#
+  x1 = as.numeric(as.character(smp2$dlr)),#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "gray"#
+  )#
+segments(#
+  x0 = as.numeric(as.character(smp2$dlr)),#
+  y0 = seq(4, 5, length.out = nrow(smp2)),#
+  x1 = M2,#
+  y1 = seq(4, 5, length.out = nrow(smp2)),#
+  col = "blue"#
+  )    #
+segments(#
+  x0 = c(M1, M2),#
+  y0 = c(0.05, 1),#
+  y1 = 5#
+  )	#
+}#
+}
+ff()
+ff(1)
+getAnywhere(lm)
+getAnywhere(mean)
 options(servr.daemon = TRUE)#
-setwd("~/website/hugo")#
-blogdown::build_site(local = FALSE, method = "html")#
-blogdown::serve_site() #serve site
-?pretty
+setwd("~/website/hugo")
+blogdown::new_post("body-sway-reflects-leadership-in-joint-music-performance")
