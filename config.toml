@@ -47,6 +47,7 @@ footnotereturnlinkcontents = "↩"
     intro = false
     headline = "headline"
     description = "Web description"
+    githubContentURL = "https://github.com/rbind/likan/edit/master/content/"
     # options for highlight.js (version, additional languages, and theme)
     dateFormat = "2006-01-02" # "2006-01-02, Mon, "
     highlightjsVersion = "9.9.0"
@@ -55,6 +56,10 @@ footnotereturnlinkcontents = "↩"
     disqusURL = "https://likanzhan.github.io"
     customCSS = ["css/custom.css"]
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
+
+[[lang.edit]]
+    en = "Suggest an edit of this page"
+    cn = "编辑本页"
 
 [params.logo]
   url = "bodhi.png"
