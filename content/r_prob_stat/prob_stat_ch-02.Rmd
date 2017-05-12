@@ -255,3 +255,430 @@ $$
 
 - R 并不直接使用上述公式计算出来的区间，而是用 `pretty(h)` 函数对区间进行了进一步优化。
 
+- Sturges
+```{r}
+args(pretty.default)
+```
+
+```{r warning = FALSE, results = "hold"}
+xs <- BABERUTH $ hr[7 : 21]
+R <- diff(range(xs))
+n <- length(xs)
+hs <- R / (1 + log2(n))
+nclassS <- ceiling(R / hs)
+bpS <- min(xs) + hs * 0 : nclassS
+sturgesD <- hist(
+  x = xs,
+  breaks = bpS,
+  main = "Sturges Definition",
+  xlab = "",
+  col = "pink",
+  plot = FALSE
+)
+sturgesD $ breaks # 区间分界点
+sturgesD $ counts # 每个区间数据个数
+pretty(xs, n = nclassS) # 比较友好的分界点
+
+sturgesA <- hist(
+  x = xs,
+  breaks = "Sturges",
+  main = "Sturges Adjusted",
+  xlab = "",
+  col = "blue",
+  plot = FALSE
+)
+sturgesA $ breaks
+sturgesA $ counts
+
+```
+
+- `breaks = "FD"`
+
+```{r, results = "hold"}
+n <- length(xs)
+hfd <- 2 * IQR(xs) / (n^(1/3))
+hfd
+nclassFD <- ceiling(R / hfd)
+nclassFD
+bpFD <- min(xs) + hfd * 0 : nclassFD
+bpFD
+
+FDdef <- hist(
+  x = xs,
+  breaks = bpFD,
+  main = "FD Definition",
+  xlab = "",
+  col = "pink",
+  plot = "FALSE"
+)
+FDdef $ breaks
+FDdef $ counts
+pretty(xs, n = nclassFD)
+
+FDadj <- hist(
+  x = xs,
+  breaks = "FD",
+  main = "FD Adjusted",
+  xlab = "",
+  col = "blue",
+  plot = "FALSE"
+)
+FDadj $ breaks
+FDadj $ counts
+```
+
+- `breaks = "Scott"`
+
+```{r, results = "hold"}
+hsc <- 2 * 3 ^ (1 / 3) * pi ^ (1 / 6) * sd(xs) / n ^ (1 / 3)
+hsc
+nclassSC <- ceiling (R / hsc)
+nclassSC
+bpSC <- min(xs) + hsc * 0 : nclassSC
+scottD <- hist(
+  x = xs,
+  breaks = bpSC,
+  main = "Scott Definition",
+  xlab = "",
+  col = "pink",
+  plot = FALSE
+)
+scottD $ breaks
+scottD $ counts
+pretty(xs, n = nclassSC)
+
+scottA <- hist(
+  x = xs,
+  breaks = "Scott",
+  main  = "Scott Adjusted",
+  xlab = "",
+  col = "blue",
+  plot =  FALSE
+)
+scottA $ breaks
+scottA $ counts
+```
+
+
+```{r, label = "Figure_02_09", echo = FALSE, eval = TRUE, fig.align="center", fig.width=6, fig.height=15, warning = FALSE}
+opar <- par(no.readonly = TRUE) # 读入当下参数
+par(mfrow = c(3, 2)) 
+hist(
+  x = xs,
+  breaks = bpS,
+  main = "Sturges Definition",
+  xlab = "",
+  col = "pink"
+)
+hist(
+  x = xs,
+  breaks = "Sturges",
+  main = "Sturges Adjusted",
+  xlab = "",
+  col = "blue"
+)
+hist(
+  x = xs,
+  breaks = bpFD,
+  main = "FD Definition",
+  xlab = "",
+  col = "pink"
+)
+hist(
+  x = xs,
+  breaks = "FD",
+  main = "FD Adjusted",
+  xlab = "",
+  col = "blue"
+)
+hist(
+  x = xs,
+  breaks = bpSC,
+  main = "Scott Definition",
+  xlab = "",
+  col = "pink"
+)
+hist(
+  x = xs,
+  breaks = "Scott",
+  main  = "Scott Adjusted",
+  xlab = "",
+  col = "blue"
+)
+par(opar) # 重设为原始参数
+```
+
+### 2.4.3.2 概率密度 {#Kernel-density-estimation}
+
+- 区间宽度对直方图的影响
+
+```{r, label = "Figure_02_10", eval = TRUE, fig.align="center", fig.width=6, fig.height=6}
+opar <- par(no.readonly = TRUE)
+par (mfrow = c(2, 2))
+attach(geyser)
+ff <- function(br){
+ hist(
+  x = duration, 
+  breaks = br, 
+  freq = FALSE, 
+  ylim = c(0, 1),
+  col = "pink"
+ ) 
+}
+ff(3)
+ff(6)
+ff(12)
+ff(24)
+detach(geyser)
+```
+
+- 核概率密度估计是直方图的拓展
+$$
+\hat{f}(x) = \frac{1}{hn}\sum^n_{i=1}K(\frac{x-x_i}{h})
+$$
+其中`h`平滑参数 (smoothing parameter) 或带宽 (bandwidth)。 `K(.)`是核函数 (kernel function)。核函数通常为满足下面条件的对称性密度函数：
+$$
+\int^!_{'' !}K(x)dx = 1
+$$
+常见的核函数有长方形、三角形和高斯核函数
+
+    - 长方形 (rectangular)
+$$K(x)=\frac{1}{2}, |x|<1$$
+    - 三角形 (Triangular)
+$$K(x)= 1- |x|, |x|<1$$
+
+    - 高斯 (Gaussian)
+$$K(x)= \frac{1}{\sqrt{2\pi\sigma^2}}e ^{-\frac{(x-\mu)^2}{2\sigma^2}}, -\infty < x < \infty$$
+其中$\mu=0$，$\sigma$为`h`。
+
+- 三种核密度函数与 `h` 的关系
+
+```{r, label = "Figure_02_11", fig.align="center", fig.width=8, fig.height=15}
+
+RctFun <- function(h, x){
+  (abs(x) < h) * 1/2
+}
+
+TrgFun <- function(h, x){
+  (abs(x) < h) * (1 - abs(x / h))
+}
+NrmFun <- function(h, x){
+  dnorm(x, sd = h)
+}
+ff <- function(h = 1, ker = NrmFun){
+x <- seq(-4, 4, by = 0.01)
+y <- ker (h, x)
+plot(x, y, type = "l")	
+}
+opar <- par(no.readonly = TRUE)
+par (mfrow = c(3, 2))
+ff(h = 1, ker = NrmFun)
+ff(h = 2, ker = NrmFun)
+ff(h = 1, ker = RctFun)
+ff(h = 2, ker = RctFun)
+ff(h = 1, ker = TrgFun)
+ff(h = 2, ker = TrgFun)
+```
+
+- 当 `xi` 值为 0.5 和 1 时三角核密度函数的值
+
+```{r, label = "Figure_02_12", eval = TRUE, fig.align="center", fig.width=6, fig.height=6}
+xi <- c(0.5, 1.0)
+n <- length(xi)
+x <- seq(
+  from = min(xi) - 0.5,
+  to = max(xi) + 0.5,
+  by = 0.1
+)
+h <- 0.3
+tri <- function(x){
+  (abs(x) < 1) * (1 - abs(x))
+}
+shapes <- sapply (
+  X = xi, 
+  function(xi) {
+    (1 / (h * n)) * tri((x - xi) / h)
+  }
+)
+fx <- apply(shapes, 1, sum)
+plot(x, 
+     fx, 
+     type = "l",
+     ylab = expression(hat(f)(x))
+       )
+```
+
+- `xi` 值 0.5 和 1 在不同位置上的权重
+
+```{r}
+dimnames(shapes) <- list(x, (c(xi[1], xi[2])))
+RES <- cbind(
+  shapes,
+  f = apply(shapes, 1, sum)
+  )
+RES
+```
+
+- 同一个表格中画出每一个值的密度和最后的和密度
+
+```{r, label = "Figure_02_13", eval = TRUE, fig.align="center"}
+xi <- c(2.1, 2.2, 2.3, 2.4, 2.6, 2.7, 3.2, 3.3, 3.6, 3.7)
+n <- length(xi)
+x <- seq(
+  from = min(xi) - 1,
+  to = max(xi) + 1,
+  length.out = 800
+)
+h <- 0.3
+gauss <- function(x){
+  1 / sqrt (2 * pi) * exp( - (x ^ 2) / 2)
+}
+shapes <- sapply(
+  X = xi,
+  FUN = function(xi){
+    (1 / (h * n)) * gauss((x - xi) / h)
+  }
+)
+plot(
+  x,
+  apply(shapes, 1, sum),
+  type = "l",
+  ylab = "",
+  lwd = 3
+)
+rug(xi, lwd = 2)
+apply(
+  shapes, 
+  2,
+  function(b){lines(x, b)}
+)
+```
+
+- R语言中的 `density()` 函数
+
+```{r}
+args(density.default)
+```
+
+- 用 `density()` 函数做图
+
+```{r, label = "Figure_02_14", eval = TRUE, fig.align="center"}
+library(MASS)
+opar <- par(no.readonly = TRUE)
+par(mfrow = c(1, 2))
+with(
+  data = geyser,
+  hist(waiting, 
+       freq = FALSE,
+       col = "grey95"
+       )
+)
+with(
+  data = geyser,
+  lines(density(waiting), 
+        col = "red",
+        lwd = 2
+        )
+)
+with(
+  data = geyser,
+  plot(
+    density(waiting),
+    col = "red",
+    lwd = 2,
+    main = "Density of waiting"
+  )
+)
+```
+
+# 2.5 集中量数{#Central-tendency}
+
+## 2.5.1. 平均值{#mean}
+
+- 平均值函数 `mean(x)`
+```{r}
+args(mean.default)
+```
+其中 `na.rm = TRUE` 说的是求平均值时先删除缺失值。`trim = p` 说的是求平均值前，先把数据从大到小排序，并删除两端的 $\lfloor p\times n \rfloor$ 个数之后再求平均值
+
+- 手工计算
+
+```{r, results = "hold"}
+NYYHR <- with(data = BABERUTH, hr[7 : 21])
+n <- length(NYYHR)
+NYYHR
+SNYYHR <- sort(NYYHR)
+SNYYHR
+trm <- c(0.05, 0.10, 0.15, 0.50) 
+p.trm <- function(x) floor(x * n)
+p.trm(trm)
+trm.mean <- function(trm){
+  mean(SNYYHR[(1 + p.trm(trm)) : (n - p.trm(trm))])
+}
+sapply(trm, trm.mean)
+```
+- 利用 `trim` 选项计算
+
+```{r, results = "hold"}
+sapply(trm, FUN = function(x) mean(NYYHR, trim = x))
+```
+
+## 2.5.2 中数{#median}
+
+- 中数的计算
+
+$$
+m 
+= 
+\begin{cases}
+x_{k+1} & n = 2k + 1 & odd\\
+\frac{1}{2}(x_{(k)}+x_{(k+1)}) & n = 2k & even\\
+\end{cases}
+$$
+
+- 中数和平均值的关系
+
+```{r}
+Student1 <- c(73, 75, 74, 74)
+Student2 <- c(95, 94, 12, 95)
+Student3 <- c(66, 67, 63, 100)
+SM <- rbind(Student1, Student2, Student3)
+colnames(SM) <- c("Test1", "Test2", "Test3", "Test4")
+means <- apply(SM, 1, mean)
+medians <- apply(SM, 1, median)
+TOC <- cbind(SM, means, medians)
+TOC
+```
+
+## 2.5.3 众数{#mode}
+
+- 众数指频率最高的那个值
+
+```{r, results = "hold"}
+Grades <- c("A", "D", "C", "D", "C", "C", "C", "C", "F", "B")
+table(Grades)
+names(which.max(table(Grades)))
+```
+
+- 通过概率密度曲线找众数
+
+```{r, label = "Figure_02_15", eval = TRUE, fig.align="center"}
+plot(density(VIT2005$totalprice),
+     main = ""
+     )
+```
+
+```{r}
+DV <- density(VIT2005$totalprice)
+yval <- max(DV$y)
+ID <- which(DV$y == yval)
+MODE <- DV$x[ID]
+MODE
+```
+
+## 2.5.4 百分位点{#Quantiles}
+
+- 一个分布的第 `p` 个百分位点 ($p^{th}$ quantile, $0 \leq p \leq 1$ ) 指的是满足以下条件的 $x_p$ 值 ：$\mathbb{P}(x \leq x_p) \geq p$ 和 $\mathbb{P}(X \geq x_p) \geq 1-p$。
+
+
+
