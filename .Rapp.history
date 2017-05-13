@@ -1,2743 +1,3 @@
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)	#
-}
-ff()
-ff(10)
-ff(11)
-ff(1000)
-ff(1000, 0.1)
-ff(1000, 0.1, 2)
-ff(, 0.1, 2)
-ff(, , 2)
-ff(tail = 2)
-ff(tail = 1)
-ff(tail = 3)
-ff(tail = 2)
-ff(tail = 1)
-ff(tail = 2)
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1, labels = FALSE)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)	#
-}
-ff
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1, labels = FALSE, tick = F)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)	#
-}
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1, at = NULL, labels = FALSE)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)	#
-}
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1, at = NULL, labels = FALSE)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)	#
-}
-?axis
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = "t value"#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)	#
-}
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)	#
-}
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = "t",#
-   side = 1,#
-   adj = 1#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = "t",#
-   side = 1,#
-   adj = 1, line = -1#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = "t",#
-   side = 1,#
-   adj = 1, line = -0.5#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)	#
-}#
-ff()
-fbox()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = vv#
-   side = 3,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = vv,#
-   side = 3,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = vv,#
-   side = 1,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = expression(round(vv)),#
-   side = 3,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 3,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 4))),#
-   side = 3,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 3,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 1,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 1#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 1,#
-   at = vv#
-)	#
-}#
-ff()ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 1,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 1,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 1, line = 0.2,#
-   at = vv#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 1,#
-   at = vv,#
-   line = 0.2#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = bquote(.(round(vv, 3))),#
-   side = 1,#
-   at = vv,#
-   line = 0.2#
-)	#
-}#
-ff(alpha = 0.1)
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = c(0, bquote(.(round(vv, 3)))),#
-   side = 1,#
-   at = c(0, vv),#
-   line = 0.2#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v=0)#
-segments(#
-   x0 = vv,#
-   y0 = 0,#
-   y1 = dt(vv, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = c(0, bquote(.(round(vv, 3)))),#
-   side = 1,#
-   at = c(0, vv),#
-   line = 0.2#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v=0)#
-segments(#
-   x0 = c(0, vv),#
-   y0 = 0,#
-   y1 = dt(x0, df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = c(0, bquote(.(round(vv, 3)))),#
-   side = 1,#
-   at = c(0, vv),#
-   line = 0.2#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-abline(v=0)#
-segments(#
-   x0 = c(0, vv),#
-   y0 = 0,#
-   y1 = dt(c(0, vv), df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = c(0, bquote(.(round(vv, 3)))),#
-   side = 1,#
-   at = c(0, vv),#
-   line = 0.2#
-)	#
-}#
-ff()
-ff <- function(#
-df = 8,#
-alpha = 0.05,#
-tail = 2#
-){#
-tv <- seq(-4, 4, by = 0.01)#
-pv <- dt(tv, df)#
-plot(#
-   x = NULL, #
-   y = NULL,#
-   xlim = c(-4, 4),#
-   ylim = c(0, max(pv) * 1.1),#
-   axes = FALSE,#
-   yaxs = "i",#
-   ylab = "",#
-   xlab = ""#
-)#
-axis(1, labels = FALSE, lwd.tick = 0)#
-if (tail == 2){#
-lv <- qt(alpha / 2, df, lower.tail = TRUE)#
-hv <- qt(alpha / 2, df, lower.tail = FALSE)#
-lx <- seq(-4, lv, by = 0.01)#
-ly <- dt(lx, df)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-plx <- c(min(lx), lx, max(lx))#
-ply <- c(0, ly, 0)#
-phx <- c(min(hx), hx, max(hx))#
-phy <- c(0, hy, 0)#
-px <- c(plx, phx)#
-py <- c(ply, phy)#
-vv <- c(lv, hv)#
-} else if (tail == 1){#
-hv <- qt(alpha, df, lower.tail = FALSE)#
-hx <- seq(hv, 4, by = 0.01)#
-hy <- dt(hx, df)#
-px <- c(min(hx), hx, max(hx))#
-py <- c(0, hy, 0)#
-vv <- hv	#
-}#
-polygon(#
-   x = px,#
-   y = py,#
-   col = "#f4cdba",#
-   border = NULL#
-)#
-lines(#
-   x = tv,#
-   y = pv,#
-   col = "#cf232a"#
-)#
-segments(#
-   x0 = c(0, vv),#
-   y0 = 0,#
-   y1 = dt(c(0, vv), df)#
-)#
-mtext(#
-   text = expression(italic(t)),#
-   side = 1,#
-   adj = 1, #
-   line = - 0.5#
-)#
-mtext(#
-   text = c(0, bquote(.(round(vv, 3)))),#
-   side = 1,#
-   at = c(0, vv),#
-   line = 0.2#
-)	#
-}#
-ff()
-?t.test()
-?ave
-library(eyetrackingR)
-?make_eyetrackingr_data
-getAnywhere(make_eyetrackingr_data)
-library(eyetrackingR)#
-getAnywhere(make_eyetrackingr_data)
-?checkfun
-library(eyetrackingR)#
-getAnywhere(make_eyetrackingr_data)
-?checkfunc
-library(eyetrackingR)#
-getAnywhere(make_eyetrackingr_data)
-?getAnywhere
-argsAnywhere()
-library(eyetrackingR)#
-getAnywhere(make_eyetrackingr_data)
-library(eyetrackingR)#
-argsAnywhere(make_eyetrackingr_data)
-args(hist)
-getAnywhere(hist)
-search()
-install.packages(c("rmarkdown", "pryr", "nycflights13", "png", #
-                   "stringi", "lubridate", "testthat"))
-devtools::install_github("bklamer/oldbookdown")
-?rbinomial
-?rbinom
-rbinom(2, 2, 0.5)
-rbinom(20, 2, 0.5)
-rbinom(2, 20, 0.5)
-rbinom(2, 2, 0.5)
-rbinom(20, 2, 0.5)
-rbinom(20, 1, 0.5)
-x1 <- rbinom(20, 1, 0.5)
-x1
-x1 <- rbinom(200, 1, 0.5)
-x1
-x11 <- 1 - x1
-p <- (x1) ^ x1 * (1-x1)^(1-x1)
-p
-(mu) ^ x1 * (1-mu)^(1-x1) - mu =0
-ls()
-p
-x1
-x11
-x1 <- dbinom(100, 1, 0.5)
-x1
-x1 <- nbinom(100, 1, 0.5)
-x1 <- rbinom(100, 1, 0.5)
-x1
-?optim
-require(graphics)
-fr <- function(x) {   ## Rosenbrock Banana function#
-    x1 <- x[1]#
-    x2 <- x[2]#
-    100 * (x2 - x1 * x1)^2 + (1 - x1)^2#
-}#
-grr <- function(x) { ## Gradient of 'fr'#
-    x1 <- x[1]#
-    x2 <- x[2]#
-    c(-400 * x1 * (x2 - x1 * x1) - 2 * (1 - x1),#
-       200 *      (x2 - x1 * x1))#
-}
-fr(10)
-fr(1)
-xx <- 1:5
-fr(xx)
-xx <- c(3,5)
-xx
-fr(xx)
-grr(xx)
-optim(c(-1.2,1), fr)
-fr(c(1.000260,1.000506))
-fr()nToFindRoot = function(r) {#
-  n <- c(2:10)#
-  return(abs(-100/(r+1)+sum((100-50)/((1+r)^n))))#
-}#
-# arbitrary starting values#
-r0 = 0#
-# minimise the function to get the parameter estimates#
-rootSearch = optim(r0, fnToFindRoot,method = 'BFGS', hessian=TRUE)#
-str(rootSearch)#
-fnToFindRoot(rootSearch$par)
-nToFindRoot = function(r) {#
-  n <- c(2:10)#
-  return(abs(-100/(r+1)+sum((100-50)/((1+r)^n))))#
-}#
-# arbitrary starting values#
-r0 = 0#
-# minimise the function to get the parameter estimates#
-rootSearch = optim(r0, fnToFindRoot,method = 'BFGS', hessian=TRUE)#
-str(rootSearch)#
-fnToFindRoot(rootSearch$par)
-fnToFindRoot = function(r) {#
-  n <- c(2:10)#
-  return(abs(-100/(r+1)+sum((100-50)/((1+r)^n))))#
-}#
-# arbitrary starting values#
-r0 = 0#
-# minimise the function to get the parameter estimates#
-rootSearch = optim(r0, fnToFindRoot,method = 'BFGS', hessian=TRUE)#
-str(rootSearch)#
-fnToFindRoot(rootSearch$par)
-ff <- function(mu, x1){#
-	mu <- mu ^ x1 * (1 - mu) ^ (1 - x1)#
-}
-ff(0, 1)
-optim(0, ff)
-optim(c(0, 1), ff)
-ff <- function(mu, x1 = 1){#
-	mu <- mu ^ x1 * (1 - mu) ^ (1 - x1)#
-}
-optim(1, ff)
-optim(0, ff)
-optim(c(0, 1), ff)
-ff
-fnToFindRoot = function(r) {#
-  n <- c(2:10)#
-  return(abs(-100/(r+1)+sum((100-50)/((1+r)^n))))#
-}#
-# arbitrary starting values#
-r0 = 0#
-# minimise the function to get the parameter estimates#
-rootSearch = optim(r0, fnToFindRoot,method = 'BFGS', hessian=TRUE)#
-str(rootSearch)
-fnToFindRoot(rootSearch$par)
-fnToFindRoot = function(r) {#
-  n <- c(2:10)#
-  return(abs(-100/(r+1)+sum((100-50)/((1+r)^n))))#
-}#
-# arbitrary starting values#
-r0 = 0#
-# minimise the function to get the parameter estimates#
-rootSearch = optim(r0, fnToFindRoot,method = 'BFGS', hessian=TRUE)#
-str(rootSearch)
-library(bookdown)
-help(package="bookdown")
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[1] == .(M1)),#
-  side = 3,#
-  at = M1#
-  )
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[1] == .(M1)),#
-  side = 3.5,#
-  at = M1#
-  )
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[1] == .(M1)),#
-  side = 3,#
-  at = M1,#
-  line = 2#
-  )
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[1] == .(M1)),#
-  side = 3,#
-  at = M1,#
-  line = 1#
-  )
-wdo <- c(wlr, dlr)#
-nn <- n1 + n2#
-M0 <- mean(wdo)#
-#
-diff1 <- M1 - M0#
-diff2 <- M2 - M0#
-#
-wdn <- c(wlr - diff1, dlr - diff2)#
-#
-SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
-SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn#
-SSR <- n1 * diff1 ^ 2 +  n2 * diff2 ^ 2#
-SSR <- SST - SSE#
-r_sqr <- SSR / SST
-wdo <- c(wlr, dlr)#
-nn <- length(wlr) + length(dlr)#
-M0 <- mean(wdo)#
-#
-diff1 <- M1 - M0#
-diff2 <- M2 - M0#
-#
-wdn <- c(wlr - diff1, dlr - diff2)#
-#
-SST <- sum((wdo)^2) - (sum(wdo))^2 / nn#
-SSE <- sum((wdn)^2) - (sum(wdn))^2 / nn#
-SSR <- n1 * diff1 ^ 2 +  n2 * diff2 ^ 2#
-SSR <- SST - SSE#
-r_sqr <- SSR / SST
-SST
-SSE
-sum((wlr)^2) - (sum(wlr))^2/length(wlr)
-sum((dlr)^2) - (sum(dlr))^2/length(dlr)
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 3#
-  )#
-mtext(#
-  text = c(#
-  bquote(M[1] == .(M1)),#
-  bquote(M[2] == .(M2)),#
-  bquote(M[0] == .(M0))#
-  )#
-  side = 3,#
-  at = c(M1, M2, M0),#
-  line = 1#
-  )
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 3#
-  )#
-mtext(#
-  text = c(#
-  bquote(M[1] == .(M1)),#
-  bquote(M[2] == .(M2)),#
-  bquote(M[0] == .(M0))#
-  ),#
-  side = 3,#
-  at = c(M1, M2, M0),#
-  line = 1#
-  )
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[1] == .(M1)),#
-  side = 3,#
-  at = M1,#
-  line = 1#
-  )#
-mtext(#
-  text = bquote(M[2] == .(M2)),#
-  side = 3,#
-  at = M2,#
-  line = 1#
-  ) #
-mtext(#
-  text = bquote(M[0] == .(M0)),#
-  side = 3,#
-  at = M0,#
-  line = 1#
-  )
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[1] == .(M1)),#
-  side = 3,#
-  at = M1#
-  )#
-mtext(#
-  text = bquote(M[2] == .(M2)),#
-  side = 3,#
-  at = M2#
-  ) #
-mtext(#
-  text = bquote(M[0] == .(M0)),#
-  side = 3,#
-  at = M0#
-  )
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(c(wlr, dlr))#
-#
-hist(#
-  x = c(wlr, dlr), #
-  breaks = 3.5:16.5,#
-  xlim = c(3, 17),#
-  ylim = c(0, 3.5),#
-  col = "#a0d5cf",#
-  border = "#009f9b",#
-  main = "",#
-  ylab = "Frequency",#
-  xlab = "Scores",#
-  font.lab = 2,#
-  xaxs = "i",  #
-  yaxs = "i",       #
-  axes = FALSE#
-)#
-hist(#
-  x = wlr, #
-  breaks = 3.5:16.5,   #
-  col = "#f8cea2",#
-  border = "#b78135",#
-  add = TRUE#
-)#
-axis(#
-  side = 1,#
-  at = 3:17#
-)#
-axis(#
-  side = 2,#
-  at = 0:3#
-)#
-segments(#
-  10.5, 2, 11.5, 2,#
-  col = "#009f9b"#
-)#
-legend(#
-  "topright",#
-  lwd = 10,#
-  col = c("#f8cea2", "#a0d5cf"),#
-  bty = "n",#
-  legend = c("Well lit",  "Dimly lit")#
-)#
-#
-segments(#
-  x0 = c(M1, M2, M0),#
-  y0 = c(0.05, 1, 1),#
-  y1 = 4#
-  )#
-mtext(#
-  text = bquote(M[1] == .(M1)),#
-  side = 3,#
-  at = M1#
-  )#
-mtext(#
-  text = bquote(M[2] == .(M2)),#
-  side = 3,#
-  at = M2#
-  ) #
-mtext(#
-  text = bquote(M[0] == .(M0)),#
-  side = 3,#
-  at = M0#
-  )
-wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
-dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
-total <- c(wlr, dlr)#
-M1 <- mean(wlr)#
-M2 <- mean(dlr)#
-M0 <- mean(total)#
-table <- table(total)
-table
-str(table)
-data.frame(table)
 wlr <- c(11, 9, 4, 5, 6, 7, 12, 10)#
 dlr <- c(7, 13, 14, 16, 9, 11, 15, 11)#
 total <- c(wlr, dlr)#
@@ -6409,6 +3669,696 @@ pnorm(-0.04)
 pnorm(-0.04, lower.tail=F)
 1.96*3
 pnorm(-0.04, 46, lower.tail=F)
+file.exists
+?file.exists
+args(pretty)
+args(pretty.default)
+xs <- BABERUTH $ hr[7 : 21]#
+R <- diff(range(xs))#
+n <- length(xs)#
+hs <- R / (1 + log2(n))#
+nclassS <- ceiling(R / hs)#
+bpS <- min(xs) + hs * 0 : nclassS#
+sturgesD <- hist(#
+  x = xs,#
+  breaks = bpS,#
+  main = "Sturges Definition",#
+  xlab = "",#
+  col = "pink"#
+)
+library(library(PASWR2, quietly = TRUE)#
+)
+library(PASWR2, quietly = TRUE)
+xs <- BABERUTH $ hr[7 : 21]#
+R <- diff(range(xs))#
+n <- length(xs)#
+hs <- R / (1 + log2(n))#
+nclassS <- ceiling(R / hs)#
+bpS <- min(xs) + hs * 0 : nclassS#
+sturgesD <- hist(#
+  x = xs,#
+  breaks = bpS,#
+  main = "Sturges Definition",#
+  xlab = "",#
+  col = "pink"#
+)
+sturgesD
+plot(sturgesD)
+hist(sturgesD)
+plot(sturgesD)
+?hist
+hist(sturgesD)
+plot(sturgesD)
+print(sturgesD)
+return(sturgesD)
+methods(hist)
+summary(sturgesD)
+plot(hist)
+plot(sturgesD)
+?draw
+?hist
+n <- length(xs)#
+hfd <- 2 * IQR(xs) / (n^(1/3))#
+hfd#
+nclassFD <- ceiling(R / hfd)#
+nclassFD#
+bpFD <- min(xs) + hfd * 0 : nclsssFD#
+bpFD
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+KernlDensity <- function(#
+  x = seq(-3, 2, 0.01),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  x = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrang[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    p[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+}
+KernlDensity()
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+KernlDensity <- function(#
+  x = seq(-3, 2, 0.01),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  x = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    p[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+}
+KernlDensity()
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+KernlDensity <- function(#
+  x = seq(-3, 2, 0.01),#
+  h = 1,#
+  n = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  x = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    p[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+}
+KernlDensity()
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+KernlDensity <- function(#
+  x = seq(-3, 2, 0.01),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    p[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+}
+KernlDensity()
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+KernlDensity <- function(#
+  x = seq(-3, 2, 0.01),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    prob[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+}
+KernlDensity()
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+KernlDensity <- function(#
+  x = seq(-3, 2, 0.01),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    prob[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+  list(x = x0, y = prob)#
+}
+KernlDensity()
+plot(KernlDensity())
+plot(KernlDensity(), type = "l")
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+#
+KernlDensity <- function(#
+  x = seq(-3, 2, 0.01),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    prob[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+  list(x = x0, y = prob)#
+}
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+#
+KernlDensity <- function(#
+  x = seq(-4, 4),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    prob[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+  list(x = x0, y = prob)#
+}
+KernlDensity()
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+#
+KernlDensity <- function(#
+  x = seq(-10, 10),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    prob[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+  list(x = x0, y = prob)#
+}
+KernlDensity()
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+#
+kk <- function(#
+  x = seq(-10, 10),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    prob[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+  list(x = x0, y = prob)#
+}
+kk()
+kk(seq(-4,3))
+kk(seq(-4,3), 0.5)
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}
+TriFun(-3:3)
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+#
+kk <- function(#
+  x = seq(-1, 1),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    prob[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }#
+  list(x = x0, y = prob)#
+}
+kk()
+x = seq(-3, 2, 0.01),#
+  h = 1,#
+  len = 1000,#
+  xrange = range(x),#
+  Ker = TriFun#
+  ){#
+  n = length(x)#
+  prob = rep(0, len)#
+  x0 <- seq(xrange[1], xrange[2], length = len)#
+  for (i in 1 : len) {#
+    prob[i] <- (1 / (n * h)) * sum (Ker((x - x0[i]) / h ))#
+  }
+tf <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}
+tf(0)
+tf(seq(-2, 2, 0.1))
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+x <- seq(-2, 2, 0.1)#
+plot(x, TriFun(x), type = "l")
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x))#
+}
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+x <- seq(-2, 2, 0.1)#
+plot(x, tf(1, x), type = "l")
+TriFun <- function(x){#
+  (abs(x) < 1) * (1 - abs(x))#
+}#
+x <- seq(-2, 2, 0.1)#
+plot(x, tf(2, x), type = "l")
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x))#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 1, x)#
+plot(x, y, type = "l")
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x))#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 2, x)#
+plot(x, y, type = "l")
+tf <- function(h, x){#
+  (abs(x) < 1) * (1 - abs(x)) * h#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 1, x)#
+plot(x, y, type = "l")
+tf <- function(h, x){#
+  (abs(x) < 1) * (1 - abs(x)) * h#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 2, x)#
+plot(x, y, type = "l")
+tf <- function(h, x){#
+  (abs(x) < 1) * (1 - abs(x)) / h#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 2, x)#
+plot(x, y, type = "l")
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x/h))#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 2, x)#
+plot(x, y, type = "l")
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x/h))#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 2, x)#
+plot(x, 1, type = "l")
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x/h))#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 1, x)#
+plot(x, y, type = "l")
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x/h))#
+}#
+#
+x <- seq(-4, 4, by = 0.01)#
+y <- tf(h = 3, x)#
+plot(x, y, type = "l")
+ff <- function(h = 1, ker = tri){#
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+rf <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h = 1, x)#
+plot(x, y, type = "l")	#
+}
+ff(ker = rf)
+ff(ker = tri)
+ff <- function(h = 1, ker = tri){#
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+rf <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}
+ff(ker = tri)
+ff()
+ff <- function(h = 1, ker = tr){#
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+rf <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}
+ff()
+ff <- function(h = 1, ker = tf){#
+tf <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+rf <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}
+ff()
+ff(rf)
+ff(ker = rf)
+ker()
+rf(ff <- function(h = 1, ker = TriFun){#
+TriFun <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+RecFun <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}#
+)
+ff <- function(h = 1, ker = TriFun){#
+TriFun <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+RecFun <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}
+ker()
+ff()
+ff(ker = RecFun)
+ff()
+ff(2)
+ff(3)
+ff()
+ff(ker = "RecFun")
+ff(1, RecFun)
+RecFun <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}
+RecFun(1,2)
+RecFun(1, 0.5)
+RecFun(1, 1)
+RecFun(1, 0)
+ff <- function(h = 1, ker = RecFun){#
+TriFun <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+RecFun <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}
+ff()
+ff(ker = TriFun)
+TriFun <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+RecFun <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+ff <- function(h = 1, ker = RecFun){#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}
+ff(ker = TriFun)
+ff(ker = RecFun)
+TrgFun <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+RctFun <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+NrmFun <- function(h, x){#
+  dnorm(x, sd = h)#
+}#
+ff <- function(h = 1, ker = NrmFun){#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}
+ff()
+ff(2)
+ff(1)
+ff(2)
+ff(3)
+RctFun <- function(h, x){#
+  (abs(x) < h) * 1/2#
+}#
+#
+TrgFun <- function(h, x){#
+  (abs(x) < h) * (1 - abs(x / h))#
+}#
+NrmFun <- function(h, x){#
+  dnorm(x, sd = h)#
+}#
+ff <- function(h = 1, ker = NrmFun){#
+x <- seq(-4, 4, by = 0.01)#
+y <- ker (h, x)#
+plot(x, y, type = "l")	#
+}
+ff()
+xi <- c(2.1, 2.2, 2.3, 2.4, 2.6, 2.7, 3.2, 3.3, 3.6, 3.7)#
+n <- length(xi)#
+x <- seq(#
+  from = min(xi) - 1,#
+  to = max(xi) + 1,#
+  length.out = 800#
+)#
+h <- 0.3#
+Gauss <- function(x){#
+  1 / sqrt (2 * pi) * exp(- (x^2) / h)#
+}#
+shapes <- sapply(#
+  X = xi,#
+  FUN = function(xi){#
+    (1 / (h * n)) * gauss((x - xi) / h)#
+  }#
+)#
+#
+plot(#
+  x,#
+  apply(shapes, 1, sum),#
+  type = "l",#
+  ylab = "",#
+  lwd = 3#
+)
+xi <- c(2.1, 2.2, 2.3, 2.4, 2.6, 2.7, 3.2, 3.3, 3.6, 3.7)#
+n <- length(xi)#
+x <- seq(#
+  from = min(xi) - 1,#
+  to = max(xi) + 1,#
+  length.out = 800#
+)#
+h <- 0.3#
+Gauss <- function(x){#
+  1 / sqrt (2 * pi) * exp(- (x^2) / h)#
+}#
+shapes <- sapply(#
+  X = xi,#
+  FUN = function(xi){#
+    (1 / (h * n)) * Hauss((x - xi) / h)#
+  }#
+)#
+#
+plot(#
+  x,#
+  apply(shapes, 1, sum),#
+  type = "l",#
+  ylab = "",#
+  lwd = 3#
+)
+xi <- c(2.1, 2.2, 2.3, 2.4, 2.6, 2.7, 3.2, 3.3, 3.6, 3.7)#
+n <- length(xi)#
+x <- seq(#
+  from = min(xi) - 1,#
+  to = max(xi) + 1,#
+  length.out = 800#
+)#
+h <- 0.3#
+Gauss <- function(x){#
+  1 / sqrt (2 * pi) * exp(- (x^2) / h)#
+}#
+shapes <- sapply(#
+  X = xi,#
+  FUN = function(xi){#
+    (1 / (h * n)) * Gauss((x - xi) / h)#
+  }#
+)#
+#
+plot(#
+  x,#
+  apply(shapes, 1, sum),#
+  type = "l",#
+  ylab = "",#
+  lwd = 3#
+)
+library(MASS)#
+opar <- par(no.readonly = TRUE)#
+par(mfrow = c(1, 2))#
+with(#
+  data = geyser,#
+  plot(waiting, #
+       freq = FALSE,#
+       col = "grey95"#
+       )#
+)
+？plot
+?plot
+library(MASS)#
+opar <- par(no.readonly = TRUE)#
+par(mfrow = c(1, 2))#
+with(#
+  data = geyser,#
+  hist(waiting, #
+       freq = FALSE,#
+       col = "grey95"#
+       )#
+)
+?mean
+NYYHR <- with(data = BABERUTH, hr[7 : 21])#
+n <- length(NYYHR)#
+NYYHR#
+SNYYHR <- sort(NYYHR)#
+SNYYHR#
+trm <- c(0.05, 0.10, 0.15, 0.50) #
+p.trm <- function(x) floor(x * n)#
+num.to.delete <- p.trm(trm)
+library(PASWR2, quietly = TRUE)
+NYYHR <- with(data = BABERUTH, hr[7 : 21])#
+n <- length(NYYHR)#
+NYYHR#
+SNYYHR <- sort(NYYHR)#
+SNYYHR#
+trm <- c(0.05, 0.10, 0.15, 0.50) #
+p.trm <- function(x) floor(x * n)#
+num.to.delete <- p.trm(trm)
+num.to.delete
+NYYHR <- with(data = BABERUTH, hr[7 : 21])#
+n <- length(NYYHR)#
+NYYHR#
+SNYYHR <- sort(NYYHR)#
+SNYYHR#
+trm <- c(0.05, 0.10, 0.15, 0.50) #
+p.trm <- function(x) floor(x * n)#
+p.trm(trm)#
+trm.mean <- function(trm){#
+  mean(SNYYHR[(1 + p.trm(trm) : (n - p.trm(trm))])#
+}#
+trm.mean(trm)
+NYYHR <- with(data = BABERUTH, hr[7 : 21])#
+n <- length(NYYHR)#
+NYYHR#
+SNYYHR <- sort(NYYHR)#
+SNYYHR#
+trm <- c(0.05, 0.10, 0.15, 0.50) #
+p.trm <- function(x) floor(x * n)#
+p.trm(trm)#
+trm.mean <- function(trm){#
+  mean(SNYYHR[(1 + p.trm(trm)) : (n - p.trm(trm))])#
+}#
+trm.mean(trm)
+NYYHR <- with(data = BABERUTH, hr[7 : 21])#
+n <- length(NYYHR)#
+NYYHR#
+SNYYHR <- sort(NYYHR)#
+SNYYHR#
+trm <- c(0.05, 0.10, 0.15, 0.50) #
+p.trm <- function(x) floor(x * n)#
+p.trm(trm)#
+trm.mean <- function(ptrm){#
+  mean(SNYYHR[(1 + ptrm) : (n - ptrm)])#
+}#
+trm.mean(p.trm(trm))
+my.mean <- function(x, trm = 0) mean(x, trim = trm)#
+my.mean(NYYHR, trm = trm)
+my.mean <- function(x, trm = 0) mean(x, trim = trm)#
+sapply(trm, my.mean(NYYHR, trm = x))
+sapply(trm, FUN = function(x) mean(NYYHR, trimm = x))
+trm
+trm <- c(0.05, 0.10, 0.15, 0.50)
+sapply(trm, FUN = function(x) mean(NYYHR, trimm = x))
+?mean
+sapply(trm, FUN = function(x) mean(NYYHR, trim = x))
+Grades <- c("A", "D", "C", "D", "C", "C", "C", "C", "F", "B")
+mode(Grades)
+?which.max
+which.max(table(Grades))
+install.updates()
+update.packages(ask=F)
 options(servr.daemon = TRUE)#
 setwd("~/website/hugo")
-blogdown::new_post("decisions-might-be-better-when-teams-dont-get-along")
+blogdown::new_post("beauty-requires-thought")
