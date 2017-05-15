@@ -57,7 +57,7 @@ The course will be lectured at **0800 - 0950** on each **Monday** in **Room 105,
   - Chapter 09. Memory.
   - Chapter 10. Emotion.
       - Presenters: Yujia Liu, Yanghui Meng, Xiaoling Rong, Zeping Liu
-      - Date: Jun 5
+      - Date: June 5
   - Chapter 11. Language.
       - Presenters: Xinyi Qian, Zhaoyang Li, Liyuan Li, Bo Xu, Jianyong Cai
       - Date: June 12
