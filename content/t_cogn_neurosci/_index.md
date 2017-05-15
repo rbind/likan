@@ -24,7 +24,8 @@ The course will be lectured at **0800 - 0950** on each **Monday** in **Room 105,
 # 4. Grading
 
 - Oral Presentation: 50 %
-  - See the [syllabus](#presenters) part for the oral presentation groups
+  - See the [syllabus](#presenters) part for the oral presentation groups;
+  - Submit your [Scores](https://likan.typeform.com/to/utLhPS);
 - Reading Report: 50 %
  - Your will write a reading report of an academic article.
  - The article you read should

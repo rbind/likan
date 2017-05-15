@@ -3446,5 +3446,5 @@ Data2
 562-81
 (481+81)/2
 options(servr.daemon = TRUE)#
-setwd("~/website/hugo")#
-blogdown::build_site(local = FALSE, method = "html")
+setwd("~/website/hugo")
+blogdown::new_post("origins-of-social-categorization")
