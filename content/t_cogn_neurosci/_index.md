@@ -57,13 +57,13 @@ The course will be lectured at **0800 - 0950** on each **Monday** in **Room 105,
   - Chapter 09. Memory.
   - Chapter 10. Emotion.
       - Presenters: Yujia Liu, Yanghui Meng, Xiaoling Rong, Zeping Liu
-      - Date: May 29
+      - Date: Jun 5
   - Chapter 11. Language.
       - Presenters: Xinyi Qian, Zhaoyang Li, Liyuan Li, Bo Xu, Jianyong Cai
-      - Date: June 5
+      - Date: June 12
 - Part III. Control Processes
   - Chapter 12. Cognitive Control.
   - Chapter 13. Social Cognition.
       - Presenters: Anpin Ni, Fei Gao, Yunxiao Huang, Yan Gao, Jingyi Cui
-      - Date: June 12
+      - Date: June 19
   - Chapter 14. Consciousness, Free Will, and the Law.
