@@ -43,7 +43,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 - Homework: 50%
 - Final exam: 50%
 
-# 6. Syllabus, Lecture notes, and Scripts
+# 6. Syllabus, Lecture Notes, and Scripts
 
 - Part I. Introduction and Descriptive Statistics
   - Chapter 01. Introduction to Statistics. [Slides](http://statbehavsci.netlify.com/CH.01.pdf); [Scripts](/t_stat_behav_sci/stat-behv-sci-ch01/)
