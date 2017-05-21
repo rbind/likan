@@ -1,3360 +1,3 @@
-sapply(trm, FUN = function(x) mean(NYYHR, trimm = x))
-?mean
-sapply(trm, FUN = function(x) mean(NYYHR, trim = x))
-Grades <- c("A", "D", "C", "D", "C", "C", "C", "C", "F", "B")
-mode(Grades)
-?which.max
-which.max(table(Grades))
-install.updates()
-update.packages(ask=F)
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = c(-12.5, 6.5),#
-  xlim = c(-12, 6)#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6)#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xses = "i"#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xesx = "i"#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xexs = "i"#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xaxs = "i"#
-  )
-axis(1)
-axis(1, at = c(-11, 6))
-axis(1, at = seq(-12, 6))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xses = "i",#
-  yxes = "i"#
-  )#
-axis(1, at = seq(-12, 6))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xses = "i",#
-  yses = "i"#
-  )#
-axis(1, at = seq(-12, 6))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))
-axis(2)
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-11, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-14, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-14, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-14, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-14, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-14, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-table(D)
-table(D2)
-table(D2)$Freq
-table(D2)
-tt<-table(D2)
-str(tt)
-tt<-as.data.frame(table(D2))$Freq
-tt
-(as.data.frame(table(D2))$Freq) > 1
-as.data.frame(table(D2))[(as.data.frame(table(D2))$Freq) > 1,]
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-freqency <- as.data.frame(table(D2))#
-border <- frequency[frequency$Freq >1, ]
-frequency
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-Dborder <- frequency[frequency$Freq >1, ]
-Dcount
-D2
-DCount <- as.data.frame(table(D2))
-Dcount
-DCount
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-Dborder <- DCount[Count$Freq >1, ]
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq >1, ]
-DBorder
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq >1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = DBorder$D2 - 0.5,#
-  y0 = 2: DBorder$Freq,#
-  X1 = DBorder$D2 + 0.5,#
-  y1 = DBorder$D2 + 0.5,#
-  col = "#b78135"#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq >1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = DBorder$D2 - 0.5,#
-  y0 = 2: DBorder$Freq,#
-  x1 = DBorder$D2 + 0.5,#
-  y1 = DBorder$D2 + 0.5,#
-  col = "#b78135"#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq >1, ]
-str(DBorder)
-DBorder
-DBorderD2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq >1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 2: DBorder$Freq,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 2: DBorder$Freq,#
-  col = "#b78135"#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq >1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 2: DBorder$Freq,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 2: DBorder$Freq,#
-  col = "#b78135"#
-  )
-?sapply
-as.numeric(as.character(DBorder$D2)) - 0.5
-as.numeric(as.character(DBorder$D2)) + 0.5
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 2,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 2,#
-  col = "#b78135"#
-  )
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 2.1),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 4),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 4),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5#
-  )
-?arrows
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 4),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 4),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.2#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 4),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )
-length(D2[D2==mean(D2)])
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 4),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 4),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(mu==0)),#
-  side = 3,#
-  at = 0#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 3,#
-  at = 0#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 1,#
-  at = 0,#
-  line = -1#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 1,#
-  at = 0,#
-  line = 2#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 1,#
-  at = 0,#
-  line = 4#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 1,#
-  at = 0,#
-  line = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 3,#
-  at = 0,#
-  line = - 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 3,#
-  at = 0,#
-  line = - 6#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 3,#
-  at = 0,#
-  line = - 5#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-mtext(#
-  text = bquote(mu==0),#
-  side = 3,#
-  at = 0,#
-  line = - 5#
-  )neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-text(#
-  x = 0#
-  y = length(D2[D2== 0 ]) + 0.5,#
-  label = bquote(mu = 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-text(#
-  x = 0#
-  y = length(D2[D2== 0 ]) + 0.5,#
-  label = bquote(mu = 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-text(#
-  x = 0,#
-  y = length(D2[D2== 0 ]) + 0.5,#
-  label = bquote(mu = 0)#
-  )
-?text
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-text(#
-  x = 0,#
-  y = length(D2[D2== 0 ]) + 0.5,#
-  labels = bquote(mu = 0)#
-  )
-?text
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-text(#
-  x = 0,#
-  y = 2 + 0.5,#
-  labels = bquote(mu = 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-text(#
-  x = 0,#
-  y = 1 + 0.5,#
-  labels = bquote(mu == 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-text(#
-  x = 0,#
-  y = 2.5,#
-  labels = bquote(mu == 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = 0,#
-  x1 = 0,#
-  y1 = -1#
-  )#
-text(#
-  x = 0,#
-  y = 2.3,#
-  labels = bquote(mu == 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.3#
-  )#
-text(#
-  x = 0,#
-  y = 2.3,#
-  labels = bquote(mu = 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.3#
-  )#
-text(#
-  x = 0,#
-  y = 2.3,#
-  labels = bquote(mu == 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.2#
-  )#
-text(#
-  x = 0,#
-  y = 2.3,#
-  labels = bquote(mu == 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = (mean(D2) + sd(D2)) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2)))#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.3#
-  )#
-text(#
-  x = 0,#
-  y = 2.3,#
-  labels = bquote(mu == 0)#
-  )
-mean(D2)
-sd(D2)
-D2
-sd(D2)
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2)))#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.3#
-  )#
-text(#
-  x = 0,#
-  y = 2.3,#
-  labels = bquote(mu == 0)#
-  )
-?text
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.3#
-  )#
-text(#
-  x = 0,#
-  y = 2.3,#
-  labels = bquote(mu == 0)#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.3#
-  )#
-text(#
-  x = 0,#
-  y = 2.3,#
-  labels = bquote(mu == 0), pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.2#
-  )#
-text(#
-  x = 0,#
-  y = 2.2,#
-  labels = bquote(mu == 0), pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.1#
-  )#
-text(#
-  x = 0,#
-  y = 2.1,#
-  labels = bquote(mu == 0), pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.1#
-  )#
-text(#
-  x = 0,#
-  y = 2.06,#
-  labels = bquote(mu == 0), pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.1#
-  )#
-text(#
-  x = 0,#
-  y = 2,#
-  labels = bquote(mu == 0), pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.3#
-  )#
-text(#
-  x = 0,#
-  y = 2,#
-  labels = bquote(mu == 0),#
-  pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-D2 <- swearing - neutral_word#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  ) #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.1#
-  )#
-text(#
-  x = 0,#
-  y = 2,#
-  labels = bquote(mu == 0),#
-  pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  )  #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.1#
-  )#
-text(#
-  x = 0,#
-  y = 2,#
-  labels = bquote(mu == 0),#
-  pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xlab = "Different Score"#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  )  #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.1#
-  )#
-text(#
-  x = 0,#
-  y = 2,#
-  labels = bquote(mu == 0),#
-  pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xlab = "Different Score",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  )  #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.1#
-  )#
-text(#
-  x = 0,#
-  y = 2,#
-  labels = bquote(mu == 0),#
-  pos = 3#
-  )
-neutral_word <- c(9, 8, 7, 7, 8, 9, 7, 7, 8)#
-swearing   <- c(7, 7, 3, 8, 6, 4, 6, 7, 4)#
-D2 <- c(-11, -10, -7, -2, 0, 0, 3, 4, 5)#
-#
-DCount <- as.data.frame(table(D2))#
-DBorder <- DCount[DCount$Freq > 1, ]#
-hist(#
-  x = D2,#
-  breaks = seq(-12.5, 6.5),#
-  xlim = c(-12, 6),#
-  ylim = c(0, 3),#
-  col = "#f9e3bd",#
-  border = "#b78135",#
-  axes = FALSE,#
-  main = "",#
-  xlab = "Different Score",#
-  xaxs = "i",#
-  yaxs = "i"#
-  )#
-axis(1, at = seq(-12, 6))#
-axis(2, at = seq(0, 2))#
-segments(#
-  x0 = as.numeric(as.character(DBorder$D2)) - 0.5,#
-  y0 = 1,#
-  x1 = as.numeric(as.character(DBorder$D2)) + 0.5,#
-  y1 = 1,#
-  col = "#b78135"#
-  )#
-arrows(#
-  x0 = mean(D2),#
-  y0 = 2.5,#
-  x1 = c(mean(D2) - sd(D2), mean(D2) + sd(D2)),#
-  y1 = 2.5,#
-  length = 0.1#
-  )#
-text(#
-  x = mean(D2) + sd(D2) / 2,#
-  y = 2.5,#
-  labels = bquote(s == .(sd(D2))),#
-  pos = 3#
-  )  #
-segments(#
-  x0 = mean(D2),#
-  y0 = length(D2[D2==mean(D2)]),#
-  x1 = mean(D2),#
-  y1 = 3#
-  )#
-mtext(#
-  text = bquote(M[D]==.(mean(D2))),#
-  side = 3,#
-  at = mean(D2)#
-  )  #
-segments(#
-  x0 = 0,#
-  y0 = length(D2[D2==0]),#
-  x1 = 0,#
-  y1 = 2.1#
-  )#
-text(#
-  x = 0,#
-  y = 2,#
-  labels = bquote(mu == 0),#
-  pos = 3#
-  )
-Idn <- c(18, 27, 33, 15, 20, 28)#
-attr(Idn, "cnd") <- c(rep(1, 3), rep(2, 3))
-Idn
-matrix(Idn, 3)
-Data <- c(18, 27, 33, 15, 20, 28)#
-Mtr <- matrix(data, nrow = 3)
-Data <- c(18, 27, 33, 15, 20, 28)#
-Mtr <- matrix(Data, nrow = 3)
-Mtr
-Data <- c(18, 27, 33, 15, 20, 28)#
-Mtr <- matrix(Data, nrow = 3)#
-attr(Mtr, "sbj") <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")
-Mtr
-Data <- c(18, 27, 33, 15, 20, 28)#
-Mtr <- matrix(Data, nrow = 3)
-Mtr
-rowNames()
-?rowNames
-rownames(Mtr)<- "CC"
-Mtr
-rownames(Mtr)<- "CC"
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )
-Trt1
-Data <- c(18, 27, 33, 15, 20, 28)#
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-#
-cbind(Trt1, Trt2)
-Data <- c(18, 27, 33, 15, 20, 28)#
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-#
-list(Trt1, Trt2)
-Data <- c(18, 27, 33, 15, 20, 28)#
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-#
-data.frame(Trt1=Trt1, Trt2=Trt2)
-Data <- c(18, 27, 33, 15, 20, 28)#
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )
-Trt1
-Trt2
-transform(Trt1)
-rbind(Trt1,Trt2)
-rbind(Trt1, Trt2)
-Trt1
-Trt2
-cbind(Trt1, Trt2)
-rbind(Trt1, Trt2)
-Data <- c(18, 27, 33, 15, 20, 28)#
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-Trt <- c(rep(1, 3), rep(2, 3))#
-#
-rbind(cbind(Trt1, Trt2), Trt)
-Data <- c(18, 27, 33, 15, 20, 28)#
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-Trt <- c(rep(1, 3), rep(2, 3))#
-#
-rbind(Trt, cbind(Trt1, Trt2))  #
-data.frame(Trt1=Trt1, Trt2=Trt2)#
-#
-cbind(Trt1, Trt2)#
-#
-attr(Mtr, "sbj") <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-#
-Trt <- c(rep(1, 3), rep(2, 3))#
-Rpt
-Data <- c(18, 27, 33, 15, 20, 28)#
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-Trt <- c(rep(1, 3), rep(2, 3))#
-#
-rbind(Trt, cbind(Trt1, Trt2))
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-Data <- c(18, 27, 33, 15, 20, 28)#
-rbind(Trt, sbj, Data)
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-Data <- c(18, 27, 33, 15, 20, 28)#
-data.frame(Trt, sbj, Data)
-?transpose
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-Data <- c(18, 27, 33, 15, 20, 28)#
-dd <- data.frame(Trt, sbj, Data)
-dd
-t(dd)
-data.frame(t(dd))
-Data <- c(18, 27, 33, 15, 20, 28)#
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-Data <- c(18, 27, 33, 15, 20, 28)#
-bb <- rbind(Trt, sbj, Data)#
-data.frame(t(bb))
-bb
-data.frame(bb)
-data.frame(bb, row.names = FALSE)
-data.frame(bb, row.names = "")
-data.frame(bb)
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj1 <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-sbj2 <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- rbind(Trt, sbj1, data)#
-Data2 <- rbind(Trt, sbj2, data)
-Data1
-Data2
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj1 <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-sbj2 <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(rbind(Trt, sbj1, data))#
-Data2 <- data.frame(rbind(Trt, sbj2, data))#
-Data1#
-Data2
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj1 <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-sbj2 <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- rbind(Trt, sbj1, data)#
-Data2 <- rbind(Trt, sbj2, data)#
-Data1#
-Data2
-Trt1 <- data.frame(#
-  John = 18,#
-  Mary = 27,#
-  Bill = 33#
-  )#
-Trt2 <- data.frame(#
-  Sue = 15,#
-  Tom = 20,#
-  Dave = 28#
-  )  #
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj1 <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-sbj2 <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- rbind(Trt, sbj1, data)#
-Data2 <- rbind(Trt, sbj2, data)#
-Data1 <- matrix(Data1, 3)#
-Data2
-Data1
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj1 <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-sbj2 <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- rbind(Trt, sbj1, data)#
-Data2 <- rbind(Trt, sbj2, data)
-Data1
-str(Data1)
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj1 <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-sbj2 <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- rbind(Trt, sbj1, data)#
-Data2 <- rbind(Trt, sbj2, data)#
-Data1#
-Data2
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj1 <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-sbj2 <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(rbind(Trt, sbj1, data))#
-Data2 <- rbind(Trt, sbj2, data)#
-Data1#
-Data2
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj1 <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-sbj2 <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(rbind(Trt, sbj1, data))#
-Data2 <- data.frame(rbind(Trt, sbj2, data))#
-Data1#
-Data2
-Data2
-Trt <- c(rep("Trt1", 3), rep("Trt2", 3))#
-sbj <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(rbind(data, Trt, sbj))#
-sbj <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(rbind(data, Trt, sbj))#
-Data1#
-Data2
-Treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(rbind(Treatment, data, subject))#
-sbj <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(rbind(Treatment, data, subject))#
-Data1#
-Data2
-Treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(rbind(Treatment, data, subject))#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(rbind(Treatment, data, subject))#
-Data1#
-Data2
-Data1[Data1$Treatment == "Trt1", "data"]
-Data1[Data1$Treatment == "Trt1",]
-Data1
-Data1[Data1$Treatment == "Trt1", ]
-Data1["data", Data1$Treatment == "Trt1"]
-Data1[, Data1$Treatment == "Trt1"]
-Data1[]
-Data1[Data1$Treatment == "Trt1",]
-str(Data1)
-Treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(rbind(Treatment, data, subject))
-str(Data1)
-Treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(Treatment, data, subject)
-str(Data1)
-Data1
-Treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(Treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(Treatment, data, subject)#
-Data1#
-Data2
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-Data1#
-Data2
-Data1["data", Data1$Treatment == "Trt1"]
-Data1["data", Data1$treatment == "Trt1"]
-Data1[, Data1$treatment == "Trt1"]
-Data1[Data1$treatment == "Trt1", ]
-Data1[Data1$treatment == "Trt1", "data"]
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-Data1#
-Data2#
-#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]#
-#
-SSE1 <- sum((tr1 - mean(tr1)) ^ 2) + sum((tr2 - mean(tr2)) ^ 2)
-SSE1
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-Data1#
-Data2#
-#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]#
-#
-SSE1 <- sum((tr1 - mean(tr1)) ^ 2) + sum((tr2 - mean(tr2)) ^ 2)#
-D <- tr1 - tr2#
-#
-SSE <- sum((D)^2)
-SSE
-D
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-Data1#
-Data2#
-#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]#
-#
-SSE1 <- sum((tr1 - mean(tr1)) ^ 2) + sum((tr2 - mean(tr2)) ^ 2)#
-D <- tr1 - tr2#
-#
-SSE <- sum((D - mean(D))^2)
-SSE
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-Data1#
-Data2#
-#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]#
-SSE1 <- sum((tr1 - mean(tr1)) ^ 2) + sum((tr2 - mean(tr2)) ^ 2)#
-D <- tr1 - tr2#
-SSE2 <- sum((D - mean(D))^2)#
-#
-c(SSE1, SSE2)
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-c(Data1, Data2)#
-#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]#
-SSE1 <- sum((tr1 - mean(tr1)) ^ 2) + sum((tr2 - mean(tr2)) ^ 2)#
-D <- tr1 - tr2#
-SSE2 <- sum((D - mean(D))^2)#
-#
-c(SSE1, SSE2)
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-list(Data1, Data2)#
-#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]#
-SSE1 <- sum((tr1 - mean(tr1)) ^ 2) + sum((tr2 - mean(tr2)) ^ 2)#
-D <- tr1 - tr2#
-SSE2 <- sum((D - mean(D))^2)#
-#
-c(SSE1, SSE2)
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-data.frame(Data1, Data2)#
-#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]#
-SSE1 <- sum((tr1 - mean(tr1)) ^ 2) + sum((tr2 - mean(tr2)) ^ 2)#
-D <- tr1 - tr2#
-SSE2 <- sum((D - mean(D))^2)#
-#
-c(SSE1, SSE2)
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-subject <- c("John", "Mary", "Bill", "Sue", "Tom", "Dave")#
-data <- c(18, 27, 33, 15, 20, 28)#
-Data1 <- data.frame(treatment, data, subject)#
-subject <- c("John", "Mary", "Bill", "John", "Mary", "Bill")#
-Data2 <- data.frame(treatment, data, subject)#
-Data1; Data2#
-#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]#
-SSE1 <- sum((tr1 - mean(tr1)) ^ 2) + sum((tr2 - mean(tr2)) ^ 2)#
-D <- tr1 - tr2#
-SSE2 <- sum((D - mean(D))^2)#
-#
-c(SSE1, SSE2)
-treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
-data <- c(18, 27, 33, 15, 20, 28)#
-tr1 <- Data1[Data1$treatment == "Trt1", "data"]#
-tr2 <- Data1[Data1$treatment == "Trt2", "data"]
 treatment <- c(rep("Trt1", 3), rep("Trt2", 3))#
 data <- c(18, 27, 33, 15, 20, 28)#
 tr1 <- data[treatment == "Trt1"]#
@@ -3445,6 +88,690 @@ Data2
 1000-81
 562-81
 (481+81)/2
+reg
+？reg
+?reg
+?lsfit
+?lm
+1-(1-.05)^3
+Trt1 <- c(4, 3, 6, 3, 4)#
+Trt2 <- c(0, 1, 3, 1, 0)#
+Trt3 <- c(1, 2, 2, 0, 0)#
+TrtT <- c(Trt1, Trt2, Trt3)
+TrtT
+Trt1
+Trt2
+Trt3
+Trt1 <- c(4, 3, 6, 3, 4)#
+Trt2 <- c(0, 1, 3, 1, 0)#
+Trt3 <- c(1, 2, 2, 0, 0)#
+TrtT <- c(Trt1, Trt2, Trt3)#
+#
+mean(Trt1)#
+mean(Trt2)#
+mean(Trt3)#
+mean(TrtT)
+Trt1 <- c(4, 3, 6, 3, 4)#
+Trt2 <- c(0, 1, 3, 1, 0)#
+Trt3 <- c(1, 2, 2, 0, 0)#
+TrtT <- c(Trt1, Trt2, Trt3)#
+#
+M1 <- mean(Trt1)#
+n1 <- length(Trt1)#
+M2 <- mean(Trt2)#
+n2 <- length(Trt2)#
+M3 <- mean(Trt3)#
+n3 <- length(Trt3)#
+Mt <- mean(TrtT)#
+#
+SST <- sum((TrtT - Mt)^2)#
+SSE <- sum((Trt1 - M1)^2) + sum((Trt2 - M2)^2) + sum((Trt3 - M3)^2)#
+SSR <- n1 * sum((M1 - Mt)^2) + n2 * sum((M2 - Mt)^2) + n3 * sum((M3 - Mt)^2)
+SST
+SSE
+SSR
+Trt1 <- c(4, 3, 6, 3, 4)#
+Trt2 <- c(0, 1, 3, 1, 0)#
+Trt3 <- c(1, 2, 2, 0, 0)#
+TrtT <- c(Trt1, Trt2, Trt3)#
+#
+M1 <- mean(Trt1)#
+n1 <- length(Trt1)#
+M2 <- mean(Trt2)#
+n2 <- length(Trt2)#
+M3 <- mean(Trt3)#
+n3 <- length(Trt3)#
+Mt <- mean(TrtT)#
+#
+SST <- sum((TrtT - Mt)^2)#
+SSE <- sum((Trt1 - M1)^2) + sum((Trt2 - M2)^2) + sum((Trt3 - M3)^2)#
+SSR <- n1 * sum((M1 - Mt)^2) + n2 * sum((M2 - Mt)^2) + n3 * sum((M3 - Mt)^2)#
+c(SST, SSE, SSR)
+?aov
+data <- data.frame(#
+  Trt1 = c(4, 3, 6, 3, 4),#
+  Trt2 = c(0, 1, 3, 1, 0),#
+  Trt3 = c(1, 2, 2, 0, 0)#
+  )
+data
+apply(data, 2 mean)
+apply(data, 2, mean)
+M1
+M2
+M3
+data - apply(data, 2, mean)
+apply(data, 2, function(x) x - mean(x))
+data <- data.frame(#
+  Trt1 = c(4, 3, 6, 3, 4),#
+  Trt2 = c(0, 1, 3, 1, 0),#
+  Trt3 = c(1, 2, 2, 0, 0)#
+  )#
+#
+apply(data, 2, function(x) {(x - mean(x))^2} )
+data <- data.frame(#
+  Trt1 = c(4, 3, 6, 3, 4),#
+  Trt2 = c(0, 1, 3, 1, 0),#
+  Trt3 = c(1, 2, 2, 0, 0)#
+  )#
+#
+apply(data, 2, mean(x))
+data <- data.frame(#
+  Trt1 = c(4, 3, 6, 3, 4),#
+  Trt2 = c(0, 1, 3, 1, 0),#
+  Trt3 = c(1, 2, 2, 0, 0)#
+  )#
+#
+apply(data, 2, mean)
+data <- data.frame(#
+  Trt1 = c(4, 3, 6, 3, 4),#
+  Trt2 = c(0, 1, 3, 1, 0),#
+  Trt3 = c(1, 2, 2, 0, 0)#
+  )#
+rbind(data, mean = apply(data, 2, mean(x)))
+data <- data.frame(#
+  Trt1 = c(4, 3, 6, 3, 4),#
+  Trt2 = c(0, 1, 3, 1, 0),#
+  Trt3 = c(1, 2, 2, 0, 0)#
+  )#
+rbind(data, mean = apply(data, 2, mean))
+60+120
+180*15
+180*15/60
+180*30/60
+180*20/60
+180*25/60
+75+45
+120+12
+132/4
+data <- c(53, 57, 61, 49, 52, 56, 58, 62, 51)
+data
+length(data)
+data <- c(53, 57, 61, 49, 52, 56, 58, 62, 51, 56)
+data
+t.test(data, mu = 50)
+library(knitr)
+install.packages("knitr")
+install.packages("xtable", dependencies = T)
+?text
+ff <- function(df1 = 3, df2 = 13){#
+xx <- seq(0, 7, by = .001)#
+yy <- df(xx, df1, df2)#
+low <- qf(.05, df1, df2, lower.tail = FALSE)#
+high <- qf(.01, df1, df2, lower.tail = FALSE)#
+#
+plot(NULL, NULL, #
+  ylim = c(0, 1),#
+  xlim = c(0, 7),#
+  type = "l", #
+  bty = "l",#
+  yaxs = "i",#
+  xaxs = "i",#
+  ylab = "Density",#
+  xlab = "qf"#
+  )#
+abline(v = c(low, high), lty = 2)#
+polygon(#
+  x = c(low, xx[xx >= low], max(xx)),#
+  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
+  col = "#e9c4b2",#
+  border = NULL#
+  )	#
+lines(xx, yy, col = "#cf232a", lwd = 2) #
+text(#
+  x = 1,#
+  y = 0.2,#
+  labels = bquote(df[1] == .(df1))#
+  )#
+text(#
+  x = 1,#
+  y = 0.15,#
+  labels = bquote(df[2] == .(df2))#
+  )#
+text(#
+  x = low,#
+  y = 0.2,#
+  labels = bquote(F == .(round(low, 2))),#
+  pos = 4#
+  ) #
+text(#
+  x = high,#
+  y = 0.2,#
+  labels = bquote(F == .(round(high, 2))),#
+  pos = 4#
+  )     #
+}
+ff()
+?bquote
+ff <- function(df1 = 3, df2 = 13){#
+xx <- seq(0, 7, by = .001)#
+yy <- df(xx, df1, df2)#
+low <- qf(.05, df1, df2, lower.tail = FALSE)#
+high <- qf(.01, df1, df2, lower.tail = FALSE)#
+#
+plot(NULL, NULL, #
+  ylim = c(0, 1),#
+  xlim = c(0, 7),#
+  type = "l", #
+  bty = "l",#
+  yaxs = "i",#
+  xaxs = "i",#
+  ylab = "Density",#
+  xlab = "qf"#
+  )#
+abline(v = c(low, high), lty = 2)#
+polygon(#
+  x = c(low, xx[xx >= low], max(xx)),#
+  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
+  col = "#e9c4b2",#
+  border = NULL#
+  )	#
+lines(xx, yy, col = "#cf232a", lwd = 2) #
+text(#
+  x = 1,#
+  y = 0.2,#
+  labels = bquote(df[1] == .(df1)==L)#
+  )#
+text(#
+  x = 1,#
+  y = 0.15,#
+  labels = bquote(df[2] == .(df2))#
+  )#
+text(#
+  x = low,#
+  y = 0.2,#
+  labels = bquote(F == .(round(low, 2))),#
+  pos = 4#
+  ) #
+text(#
+  x = high,#
+  y = 0.2,#
+  labels = bquote(F == .(round(high, 2))),#
+  pos = 4#
+  )     #
+}
+ff <- function(df1 = 3, df2 = 13){#
+xx <- seq(0, 7, by = .001)#
+yy <- df(xx, df1, df2)#
+low <- qf(.05, df1, df2, lower.tail = FALSE)#
+high <- qf(.01, df1, df2, lower.tail = FALSE)#
+#
+plot(NULL, NULL, #
+  ylim = c(0, 1),#
+  xlim = c(0, 7),#
+  type = "l", #
+  bty = "l",#
+  yaxs = "i",#
+  xaxs = "i",#
+  ylab = "Density",#
+  xlab = "qf"#
+  )#
+abline(v = c(low, high), lty = 2)#
+polygon(#
+  x = c(low, xx[xx >= low], max(xx)),#
+  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
+  col = "#e9c4b2",#
+  border = NULL#
+  )	#
+lines(xx, yy, col = "#cf232a", lwd = 2) #
+text(#
+  x = 1,#
+  y = 0.2,#
+  labels = bquote(df[1] == .(df1))#
+  )#
+text(#
+  x = 1,#
+  y = 0.15,#
+  labels = bquote(df[2] == .(df2))#
+  )#
+text(#
+  x = low,#
+  y = 0.2,#
+  labels = bquote(F == .(round(low, 2))),#
+  pos = 4#
+  ) #
+text(#
+  x = high,#
+  y = 0.2,#
+  labels = bquote(F == .(round(high, 2))),#
+  pos = 4#
+  )     #
+}
+ff()
+ff <- function(df1 = 3, df2 = 13){#
+xx <- seq(0, 7, by = .001)#
+yy <- df(xx, df1, df2)#
+low <- qf(.05, df1, df2, lower.tail = FALSE)#
+high <- qf(.01, df1, df2, lower.tail = FALSE)#
+#
+plot(NULL, NULL, #
+  ylim = c(0, 1),#
+  xlim = c(0, 7),#
+  type = "l", #
+  bty = "l",#
+  yaxs = "i",#
+  xaxs = "i",#
+  ylab = "Density",#
+  xlab = "qf"#
+  )#
+abline(v = c(low, high), lty = 2)#
+polygon(#
+  x = c(low, xx[xx >= low], max(xx)),#
+  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
+  col = "#e9c4b2",#
+  border = NULL#
+  )	#
+lines(xx, yy, col = "#cf232a", lwd = 2) #
+text(#
+  x = 1,#
+  y = 0.2,#
+  labels = bquote(df[1] == .(df1) "M")#
+  )#
+text(#
+  x = 1,#
+  y = 0.15,#
+  labels = bquote(df[2] == .(df2))#
+  )#
+text(#
+  x = low,#
+  y = 0.2,#
+  labels = bquote(F == .(round(low, 2))),#
+  pos = 4#
+  ) #
+text(#
+  x = high,#
+  y = 0.2,#
+  labels = bquote(F == .(round(high, 2))),#
+  pos = 4#
+  )     #
+}
+ff <- function(df1 = 3, df2 = 13){#
+xx <- seq(0, 7, by = .001)#
+yy <- df(xx, df1, df2)#
+low <- qf(.05, df1, df2, lower.tail = FALSE)#
+high <- qf(.01, df1, df2, lower.tail = FALSE)#
+#
+plot(NULL, NULL, #
+  ylim = c(0, 1),#
+  xlim = c(0, 7),#
+  type = "l", #
+  bty = "l",#
+  yaxs = "i",#
+  xaxs = "i",#
+  ylab = "Density",#
+  xlab = "qf"#
+  )#
+abline(v = c(low, high), lty = 2)#
+polygon(#
+  x = c(low, xx[xx >= low], max(xx)),#
+  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
+  col = "#e9c4b2",#
+  border = NULL#
+  )	#
+lines(xx, yy, col = "#cf232a", lwd = 2) #
+text(#
+  x = 1,#
+  y = 0.2,#
+  labels = bquote(df[1] == .(df1) == "M")#
+  )#
+text(#
+  x = 1,#
+  y = 0.15,#
+  labels = bquote(df[2] == .(df2))#
+  )#
+text(#
+  x = low,#
+  y = 0.2,#
+  labels = bquote(F == .(round(low, 2))),#
+  pos = 4#
+  ) #
+text(#
+  x = high,#
+  y = 0.2,#
+  labels = bquote(F == .(round(high, 2))),#
+  pos = 4#
+  )     #
+}
+ff <- function(df1 = 3, df2 = 13){#
+xx <- seq(0, 7, by = .001)#
+yy <- df(xx, df1, df2)#
+low <- qf(.05, df1, df2, lower.tail = FALSE)#
+high <- qf(.01, df1, df2, lower.tail = FALSE)#
+#
+plot(NULL, NULL, #
+  ylim = c(0, 1),#
+  xlim = c(0, 7),#
+  type = "l", #
+  bty = "l",#
+  yaxs = "i",#
+  xaxs = "i",#
+  ylab = "Density",#
+  xlab = "qf"#
+  )#
+abline(v = c(low, high), lty = 2)#
+polygon(#
+  x = c(low, xx[xx >= low], max(xx)),#
+  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
+  col = "#e9c4b2",#
+  border = NULL#
+  )	#
+lines(xx, yy, col = "#cf232a", lwd = 2) #
+text(#
+  x = 1,#
+  y = 0.2,#
+  labels = bquote(df[1] == .(df1))#
+  )#
+text(#
+  x = 1,#
+  y = 0.15,#
+  labels = bquote(df[2] == .(df2))#
+  )#
+text(#
+  x = low,#
+  y = 0.2,#
+  labels = bquote(F == .(round(low, 2))),#
+  pos = 4#
+  ) #
+text(#
+  x = high,#
+  y = 0.2,#
+  labels = bquote(F == .(round(high, 2))),#
+  pos = 4#
+  )     #
+}
+ff()
+ff <- function(df1 = 3, df2 = 13){#
+xx <- seq(0, 7, by = .001)#
+yy <- df(xx, df1, df2)#
+low <- qf(.05, df1, df2, lower.tail = FALSE)#
+high <- qf(.01, df1, df2, lower.tail = FALSE)#
+#
+plot(NULL, NULL, #
+  ylim = c(0, 1),#
+  xlim = c(0, 7),#
+  type = "l", #
+  bty = "l",#
+  yaxs = "i",#
+  xaxs = "i",#
+  ylab = "Density",#
+  xlab = "qf"#
+  )#
+abline(v = c(low, high), lty = 2)#
+polygon(#
+  x = c(low, xx[xx >= low], max(xx)),#
+  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
+  col = "#e9c4b2",#
+  border = NULL#
+  )	#
+lines(xx, yy, col = "#cf232a", lwd = 2) #
+text(#
+  x = 1,#
+  y = 0.2,#
+  labels = bquote(df[1] == .(df1))#
+  )#
+text(#
+  x = 1,#
+  y = 0.15,#
+  labels = bquote(df[2] == .(df2))#
+  )#
+text(#
+  x = low,#
+  y = 0.2,#
+  labels = bquote(F == .(round(low, 2))),#
+  pos = 4#
+  ) #
+text(#
+  x = high,#
+  y = 0.2,#
+  labels = bquote(F == .(round(high, 2))),#
+  pos = 4#
+  )     #
+}
+ff <- function(df1 = 3, df2 = 13){#
+xx <- seq(0, 7, by = .001)#
+yy <- df(xx, df1, df2)#
+low <- qf(.05, df1, df2, lower.tail = FALSE)#
+high <- qf(.01, df1, df2, lower.tail = FALSE)#
+#
+plot(NULL, NULL, #
+  ylim = c(0, 1),#
+  xlim = c(0, 7),#
+  type = "l", #
+  bty = "l",#
+  yaxs = "i",#
+  xaxs = "i",#
+  ylab = "Density",#
+  xlab = "qf"#
+  )#
+abline(v = c(low, high), lty = 2)#
+polygon(#
+  x = c(low, xx[xx >= low], max(xx)),#
+  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
+  col = "#e9c4b2",#
+  border = NULL#
+  )	#
+lines(xx, yy, col = "#cf232a", lwd = 2) #
+text(#
+  x = 1,#
+  y = 0.2,#
+  labels = bquote(df[1] == .(df1)~"," ~ df[2])#
+  )#
+text(#
+  x = 1,#
+  y = 0.15,#
+  labels = bquote(df[2] == .(df2))#
+  )#
+text(#
+  x = low,#
+  y = 0.2,#
+  labels = bquote(F == .(round(low, 2))),#
+  pos = 4#
+  ) #
+text(#
+  x = high,#
+  y = 0.2,#
+  labels = bquote(F == .(round(high, 2))),#
+  pos = 4#
+  )     #
+}
+ff()
+score <- c(2, 3,  8,  6,  5,  6,#
+           5, 9, 10, 13,  8,  9,#
+           8, 6, 12, 11, 11, 12#
+   )#
+data <- matrix(data = score, #
+       nrow = 6, #
+       dimnames = list(Number = paste("S", 1:6, sep = ""), #
+                       Treatment = paste("Trt", 1:3, sep = ".")#
+                       )#
+   )#
+data
+data
+score <- c(2, 3,  8,  6,  5,  6,#
+           5, 9, 10, 13,  8,  9,#
+           8, 6, 12, 11, 11, 12#
+   )#
+data <- matrix(data = score, #
+       nrow = 6, #
+       dimnames = list(Number = paste("S", 1:6, sep = ""), #
+                       Treatment = ("RRR", "RPQ", "RCQ")                       #
+                       )#
+   )#
+data
+data
+str(data)
+data$num
+as.numeric(data)
+score <- as.numeric(data)
+score
+condition <- rep(c("RRR", "RPQ", "RCQ"), each = 6)
+condition
+data.frame(score = score, condition = condition)
+score <- as.numeric(data)#
+condition <- rep(c("RRR", "RPQ", "RCQ"), each = 6)#
+sample <- data.frame(score, condition)
+sample
+ave(score ~ condition)
+?ave
+aov(score ~ condition)
+res <- aov(score ~ condition)
+summary(res)
+args(aov)
+args(aov.default)
+？TukeyHSD
+?TukeyHSD
+res
+TrykeyHSD(res)
+TurkeyHSD(res)
+res
+summary(res)
+TurkeyHSD(res)
+TukeyHSD(res)
+install.packages("agricolae", dependencies=TRUE)
+library(agricolae)
+update.packages(ask = FALSE, checkBuilt = TRUE)
+devtools::install_github('yihui/xaringan')
+install.packages("devtools", dependencies = TRUE)
+devtools::install_github('yihui/xaringan')
+library(rmarkdown)
+help(rmarkdown)
+help(package=rmarkdown)
+x<-1:10
+diag(x)
+diag(x)<y
+diag(x)<-y
+x<-diag(rep(1,3))
+x
+f(x, )<-y
+diag(x)<-vars
+diag(x)<-var
+x
+diag(x)
+mean(x)
+mean(x)<-var
+help(package=base)
+a <- b <- c <- 6
+a
+b
+c
+?eps
+y<- 1:10
+y
+x
+diag(x)
+diag(y)
+diag(x)<-y
+y<-4:6
+diag(y)
+diag(x)<-y
+diag(x)
+y
+diag(y)
+diag(x)<-y
+y
+x
+diag(x)
+x
+x<- 1:3
+y<- 4:6
+mean(x)
+mean(x) <- y
+diag(x)
+diag(y)
+diag(x)
+diag(y)
+diag(x)<-y
+y
+x
+diag(x)<-diag(y)
+y
+x
+diag(x)<-y
+y
+diag(x)
+diag(x)<-y
+mean(x)
+mean(y)
+diag(x)<-diag(y)
+'diag<-'(x, value=y)
+x<-'diag<-'(x, value=y)
+x<-diag(rep(1,3))
+x
+rep(1,3)
+diag(x)
+diag(x)<-y
+diag(x)
+x
+x<-diag(rep(1,3))
+mean(x)
+x
+mean(x)<-3
+diag(x)<-7:9
+x
+diag(x)<-7:90
+diag(x)<-7:9
+x
+help(package=base)
+diag(x)
+diag(x)[2]
+diag(x)[2]<-9
+x
+diag(x)[2]<-90
+x
+?diag<-
+..
+?'diag<-'
+x
+y
+diag(y)
+diag(x)<-diag(y)
+diag(x)
+diag(x)<-y
+x
+y<-diag(y)
+y
+diag(x)
+diag(y)
+diag(y)[2]<-10
+y
+diag(y)
+diag(x)<-diag(y)
+x
 options(servr.daemon = TRUE)#
 setwd("~/website/hugo")
-blogdown::new_post("origins-of-social-categorization")
+blogdown::new_post("messy-truth-about-weight-loss")
+library(blogdown)
+blogdown.author
+?blogdown.author
+?new_post
+help(package=blogdown)
+?new_post
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行")
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = "")
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = "")
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = FALSE)
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = FALSE)
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = "")
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = '')
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = )
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = NULL)
+blogdown::new_post("messy-truth-about-weight-loss", author = "侃侃迩行", slug = "")
