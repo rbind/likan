@@ -1,5 +1,5 @@
 ---
-title: 科学的减肥和减肥的科学
+title: 减肥的科学和科学的减肥
 author: 侃侃迩行
 date: '2017-05-19'
 show_toc: true
