@@ -5,11 +5,8 @@ date: '2017-02-16'
 draft: yes
 ---
 
-<!-- BLOGDOWN-HEAD -->
-<!-- /BLOGDOWN-HEAD -->
 
-<!-- BLOGDOWN-BODY-BEFORE -->
-<!-- /BLOGDOWN-BODY-BEFORE -->
+
 <p>This page is adapted from the stack overflow <a href="http://stats.stackexchange.com/questions/15011/generate-a-random-variable-with-a-defined-correlation-to-an-existing-variable">post</a> by <em>caracal</em> and <em>gregmacfarlane</em></p>
 <p>For vectors with mean 0, their correlation equals the cosine of their angle. So one way to find a vector <em>x</em> with exactly the desired correlation <em>r</em>, corresponding to an angle <span class="math inline">\(\theta\)</span>:</p>
 <p>Get fixed vector <span class="math inline">\(x_1\)</span> and and a random vector <span class="math inline">\(x_2\)</span></p>
@@ -39,6 +36,6 @@ print(corr)
 }
 
 xcor(1000, 0.5)</code></pre>
-<pre><code>## [1] 0.004882418</code></pre>
+<pre><code>## [1] 0.01252197</code></pre>
 <pre class="r"><code>xcor(20, 0.5)</code></pre>
-<pre><code>## [1] -0.003688121</code></pre>
+<pre><code>## [1] 0.2258278</code></pre>

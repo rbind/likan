@@ -1,12 +1,16 @@
 ---
-title: 正确理解和使用P值
-author: 侃侃迩行
+title: "正确理解和使用P值"
+author: "侃侃迩行"
 date: '2017-03-01'
 output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
   blogdown::html_page:
-    toc: true
-    fig_width: 6
     fig_height: 4
+    fig_width: 6
+    toc: yes
+  word_document: null
 ---
 
 
@@ -19,6 +23,7 @@ output:
 <li><a href="#Further-reading">5. 延伸阅读</a></li>
 </ul>
 </div>
+
 <p>什么是P值？</p>
 <blockquote>
 <p><em>Informally, a p-value is the probability under a specified statistical model that a statistical summary of the data (e.g., the sample mean di erence between two compared groups) would be equal to or more extreme than its observed value.</em></p>

@@ -8,10 +8,7 @@ output:
     number_sections: false
 ---
 
-<!-- BLOGDOWN-HEAD -->
-<!-- /BLOGDOWN-HEAD -->
 
-<!-- BLOGDOWN-BODY-BEFORE -->
 <div id="TOC">
 <ul>
 <li><a href="#apply">1. <em>apply</em></a></li>
@@ -24,7 +21,7 @@ output:
 <li><a href="#tapply">8. <em>tapply</em></a></li>
 </ul>
 </div>
-<!-- /BLOGDOWN-BODY-BEFORE -->
+
 <p>This page is addapted from the stack overflow <a href="http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega">post</a> by <em>joran</em></p>
 <p>R has many *apply functions which are ably described in the help files (e.g. ?apply). There are enough of them, though, that beginning useRs may have difficulty deciding which one is appropriate for their situation or even remembering them all. They may have a general sense that “I should be using an *apply function here”, but it can be tough to keep them all straight at first.</p>
 <p>Despite the fact (noted in other answers) that much of the functionality of the *apply family is covered by the extremely popular plyr package, the base functions remain useful and worth knowing.</p>
@@ -146,10 +143,10 @@ x</code></pre>
 ##    1    6 5005</code></pre>
 <p>In more advanced uses of sapply it will attempt to coerce the result to a multi-dimensional array, if appropriate. For example, if our function returns vectors of the same length, sapply will use them as columns of a matrix:</p>
 <pre class="r"><code>sapply(1:5, function(x) rnorm(3, x))</code></pre>
-<pre><code>##           [,1]      [,2]     [,3]     [,4]     [,5]
-## [1,] 0.3527115 2.4878285 2.515433 4.044876 6.114044
-## [2,] 0.2865114 0.8580578 1.485795 3.890343 6.172193
-## [3,] 2.3812391 2.6578205 2.788182 5.998873 4.903842</code></pre>
+<pre><code>##           [,1]     [,2]     [,3]     [,4]     [,5]
+## [1,] 1.8481032 1.527606 2.393986 3.101560 5.361437
+## [2,] 0.6678638 1.302820 3.103488 4.016917 6.897910
+## [3,] 1.3720888 2.192290 3.085835 2.857484 4.888781</code></pre>
 <p>If our function returns a 2 dimensional matrix, sapply will do essentially the same thing, treating each returned matrix as a single long vector:</p>
 <pre class="r"><code>sapply(1:5, function(x) matrix(x, 2, 2))</code></pre>
 <pre><code>##      [,1] [,2] [,3] [,4] [,5]

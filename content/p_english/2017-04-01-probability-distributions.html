@@ -7,10 +7,7 @@ output:
     toc: true
 ---
 
-<!-- BLOGDOWN-HEAD -->
-<!-- /BLOGDOWN-HEAD -->
 
-<!-- BLOGDOWN-BODY-BEFORE -->
 <div id="TOC">
 <ul>
 <li><a href="#introduction">1. Introduction</a></li>
@@ -18,7 +15,7 @@ output:
 <li><a href="#binomial-distribution">3. binomial distribution</a></li>
 </ul>
 </div>
-<!-- /BLOGDOWN-BODY-BEFORE -->
+
 <div id="introduction" class="section level1">
 <h1>1. Introduction</h1>
 <p>R has a number of built in functions for calculations involving probability distributions, both discrete and continuous, including the <code>binomial</code>, <code>normal</code>, <code>Poisson</code>, <code>geometric</code>, <code>gamma</code>, <code>beta</code>, and others we have seen.</p>
@@ -103,6 +100,10 @@ output:
 <td>Chi-squre</td>
 <td><code>chisq</code></td>
 </tr>
+<tr class="odd">
+<td>Tukey’s HSD</td>
+<td><code>tukey</code></td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -154,8 +155,8 @@ output:
 <pre class="r"><code>qnorm(0.975, 0, 1)</code></pre>
 <pre><code>## [1] 1.959964</code></pre>
 <pre class="r"><code>rnorm(10, 0, 1)</code></pre>
-<pre><code>##  [1]  0.64638500  0.38755505 -1.79465837 -0.04883552 -0.69917461
-##  [6] -1.19589370  0.36507746  0.95515763  0.35824861  0.27052791</code></pre>
+<pre><code>##  [1]  1.24720087 -0.02212148 -2.25056001  1.30493921 -1.53143777
+##  [6] -0.70863873 -1.92215666  1.40396633  1.27170437 -0.50928533</code></pre>
 </div>
 <div id="binomial-distribution" class="section level1">
 <h1>3. binomial distribution</h1>
@@ -204,5 +205,5 @@ output:
 <pre class="r"><code>qbinom(0.75, 2, 0.5)</code></pre>
 <pre><code>## [1] 1</code></pre>
 <pre class="r"><code>rbinom(20, 2, 0.5)</code></pre>
-<pre><code>##  [1] 1 1 1 2 0 0 0 1 2 2 0 0 0 2 1 1 0 1 1 2</code></pre>
+<pre><code>##  [1] 1 1 0 1 1 0 1 2 1 1 2 1 2 2 1 1 0 1 1 2</code></pre>
 </div>
