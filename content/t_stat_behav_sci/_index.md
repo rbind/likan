@@ -63,7 +63,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 11. The *t* Test for Two Related Samples. [Slides](http://statbehavsci.netlify.com/CH.11.pdf)
 
 - Part IV. Analysis of Variance
-  - Chapter 12. Introduction to Analysis of Variance
+  - Chapter 12. Introduction to Analysis of Variance. [Slides](http://statbehavsci.netlify.com/CH.12.pdf)
   - Chapter 13. Repeated-Measures Analysis of Variance
   - Chapter 14. Two-Factor Analysis of Variance (Independent Measures)
 

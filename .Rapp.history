@@ -1,9 +1,3 @@
-score <- as.numeric(data)#
-condition <- rep(c("RRR", "RPQ", "RCQ"), each = 6)#
-sample <- data.frame(score, condition)
-sample
-ave(score ~ condition)
-?ave
 aov(score ~ condition)
 res <- aov(score ~ condition)
 summary(res)
@@ -270,4 +264,11 @@ library(agricolae)
 sprintf("%f", pi)
 options(servr.daemon = TRUE)#
 setwd("~/website/hugo")
-blogdown::new_post("inferring-personal-economic-status-from-social-network-location")
+blogdown::new_post("f-statistic-and-t-square-are-identical", rmd = TRUE)
+blogdown::build_site(local = FALSE, method = "html")#
+blogdown::serve_site() #serve site
+install.packages("pryr", dependencies=T)
+blogdown::build_site(local = FALSE, method = "html")#
+blogdown::serve_site() #serve site
+blogdown::build_site(local = FALSE, method = "html")#
+blogdown::serve_site() #serve site
