@@ -1,527 +1,3 @@
-Trt1 <- c(4, 3, 6, 3, 4)#
-Trt2 <- c(0, 1, 3, 1, 0)#
-Trt3 <- c(1, 2, 2, 0, 0)#
-TrtT <- c(Trt1, Trt2, Trt3)#
-#
-mean(Trt1)#
-mean(Trt2)#
-mean(Trt3)#
-mean(TrtT)
-Trt1 <- c(4, 3, 6, 3, 4)#
-Trt2 <- c(0, 1, 3, 1, 0)#
-Trt3 <- c(1, 2, 2, 0, 0)#
-TrtT <- c(Trt1, Trt2, Trt3)#
-#
-M1 <- mean(Trt1)#
-n1 <- length(Trt1)#
-M2 <- mean(Trt2)#
-n2 <- length(Trt2)#
-M3 <- mean(Trt3)#
-n3 <- length(Trt3)#
-Mt <- mean(TrtT)#
-#
-SST <- sum((TrtT - Mt)^2)#
-SSE <- sum((Trt1 - M1)^2) + sum((Trt2 - M2)^2) + sum((Trt3 - M3)^2)#
-SSR <- n1 * sum((M1 - Mt)^2) + n2 * sum((M2 - Mt)^2) + n3 * sum((M3 - Mt)^2)
-SST
-SSE
-SSR
-Trt1 <- c(4, 3, 6, 3, 4)#
-Trt2 <- c(0, 1, 3, 1, 0)#
-Trt3 <- c(1, 2, 2, 0, 0)#
-TrtT <- c(Trt1, Trt2, Trt3)#
-#
-M1 <- mean(Trt1)#
-n1 <- length(Trt1)#
-M2 <- mean(Trt2)#
-n2 <- length(Trt2)#
-M3 <- mean(Trt3)#
-n3 <- length(Trt3)#
-Mt <- mean(TrtT)#
-#
-SST <- sum((TrtT - Mt)^2)#
-SSE <- sum((Trt1 - M1)^2) + sum((Trt2 - M2)^2) + sum((Trt3 - M3)^2)#
-SSR <- n1 * sum((M1 - Mt)^2) + n2 * sum((M2 - Mt)^2) + n3 * sum((M3 - Mt)^2)#
-c(SST, SSE, SSR)
-?aov
-data <- data.frame(#
-  Trt1 = c(4, 3, 6, 3, 4),#
-  Trt2 = c(0, 1, 3, 1, 0),#
-  Trt3 = c(1, 2, 2, 0, 0)#
-  )
-data
-apply(data, 2 mean)
-apply(data, 2, mean)
-M1
-M2
-M3
-data - apply(data, 2, mean)
-apply(data, 2, function(x) x - mean(x))
-data <- data.frame(#
-  Trt1 = c(4, 3, 6, 3, 4),#
-  Trt2 = c(0, 1, 3, 1, 0),#
-  Trt3 = c(1, 2, 2, 0, 0)#
-  )#
-#
-apply(data, 2, function(x) {(x - mean(x))^2} )
-data <- data.frame(#
-  Trt1 = c(4, 3, 6, 3, 4),#
-  Trt2 = c(0, 1, 3, 1, 0),#
-  Trt3 = c(1, 2, 2, 0, 0)#
-  )#
-#
-apply(data, 2, mean(x))
-data <- data.frame(#
-  Trt1 = c(4, 3, 6, 3, 4),#
-  Trt2 = c(0, 1, 3, 1, 0),#
-  Trt3 = c(1, 2, 2, 0, 0)#
-  )#
-#
-apply(data, 2, mean)
-data <- data.frame(#
-  Trt1 = c(4, 3, 6, 3, 4),#
-  Trt2 = c(0, 1, 3, 1, 0),#
-  Trt3 = c(1, 2, 2, 0, 0)#
-  )#
-rbind(data, mean = apply(data, 2, mean(x)))
-data <- data.frame(#
-  Trt1 = c(4, 3, 6, 3, 4),#
-  Trt2 = c(0, 1, 3, 1, 0),#
-  Trt3 = c(1, 2, 2, 0, 0)#
-  )#
-rbind(data, mean = apply(data, 2, mean))
-60+120
-180*15
-180*15/60
-180*30/60
-180*20/60
-180*25/60
-75+45
-120+12
-132/4
-data <- c(53, 57, 61, 49, 52, 56, 58, 62, 51)
-data
-length(data)
-data <- c(53, 57, 61, 49, 52, 56, 58, 62, 51, 56)
-data
-t.test(data, mu = 50)
-library(knitr)
-install.packages("knitr")
-install.packages("xtable", dependencies = T)
-?text
-ff <- function(df1 = 3, df2 = 13){#
-xx <- seq(0, 7, by = .001)#
-yy <- df(xx, df1, df2)#
-low <- qf(.05, df1, df2, lower.tail = FALSE)#
-high <- qf(.01, df1, df2, lower.tail = FALSE)#
-#
-plot(NULL, NULL, #
-  ylim = c(0, 1),#
-  xlim = c(0, 7),#
-  type = "l", #
-  bty = "l",#
-  yaxs = "i",#
-  xaxs = "i",#
-  ylab = "Density",#
-  xlab = "qf"#
-  )#
-abline(v = c(low, high), lty = 2)#
-polygon(#
-  x = c(low, xx[xx >= low], max(xx)),#
-  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
-  col = "#e9c4b2",#
-  border = NULL#
-  )	#
-lines(xx, yy, col = "#cf232a", lwd = 2) #
-text(#
-  x = 1,#
-  y = 0.2,#
-  labels = bquote(df[1] == .(df1))#
-  )#
-text(#
-  x = 1,#
-  y = 0.15,#
-  labels = bquote(df[2] == .(df2))#
-  )#
-text(#
-  x = low,#
-  y = 0.2,#
-  labels = bquote(F == .(round(low, 2))),#
-  pos = 4#
-  ) #
-text(#
-  x = high,#
-  y = 0.2,#
-  labels = bquote(F == .(round(high, 2))),#
-  pos = 4#
-  )     #
-}
-ff()
-?bquote
-ff <- function(df1 = 3, df2 = 13){#
-xx <- seq(0, 7, by = .001)#
-yy <- df(xx, df1, df2)#
-low <- qf(.05, df1, df2, lower.tail = FALSE)#
-high <- qf(.01, df1, df2, lower.tail = FALSE)#
-#
-plot(NULL, NULL, #
-  ylim = c(0, 1),#
-  xlim = c(0, 7),#
-  type = "l", #
-  bty = "l",#
-  yaxs = "i",#
-  xaxs = "i",#
-  ylab = "Density",#
-  xlab = "qf"#
-  )#
-abline(v = c(low, high), lty = 2)#
-polygon(#
-  x = c(low, xx[xx >= low], max(xx)),#
-  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
-  col = "#e9c4b2",#
-  border = NULL#
-  )	#
-lines(xx, yy, col = "#cf232a", lwd = 2) #
-text(#
-  x = 1,#
-  y = 0.2,#
-  labels = bquote(df[1] == .(df1)==L)#
-  )#
-text(#
-  x = 1,#
-  y = 0.15,#
-  labels = bquote(df[2] == .(df2))#
-  )#
-text(#
-  x = low,#
-  y = 0.2,#
-  labels = bquote(F == .(round(low, 2))),#
-  pos = 4#
-  ) #
-text(#
-  x = high,#
-  y = 0.2,#
-  labels = bquote(F == .(round(high, 2))),#
-  pos = 4#
-  )     #
-}
-ff <- function(df1 = 3, df2 = 13){#
-xx <- seq(0, 7, by = .001)#
-yy <- df(xx, df1, df2)#
-low <- qf(.05, df1, df2, lower.tail = FALSE)#
-high <- qf(.01, df1, df2, lower.tail = FALSE)#
-#
-plot(NULL, NULL, #
-  ylim = c(0, 1),#
-  xlim = c(0, 7),#
-  type = "l", #
-  bty = "l",#
-  yaxs = "i",#
-  xaxs = "i",#
-  ylab = "Density",#
-  xlab = "qf"#
-  )#
-abline(v = c(low, high), lty = 2)#
-polygon(#
-  x = c(low, xx[xx >= low], max(xx)),#
-  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
-  col = "#e9c4b2",#
-  border = NULL#
-  )	#
-lines(xx, yy, col = "#cf232a", lwd = 2) #
-text(#
-  x = 1,#
-  y = 0.2,#
-  labels = bquote(df[1] == .(df1))#
-  )#
-text(#
-  x = 1,#
-  y = 0.15,#
-  labels = bquote(df[2] == .(df2))#
-  )#
-text(#
-  x = low,#
-  y = 0.2,#
-  labels = bquote(F == .(round(low, 2))),#
-  pos = 4#
-  ) #
-text(#
-  x = high,#
-  y = 0.2,#
-  labels = bquote(F == .(round(high, 2))),#
-  pos = 4#
-  )     #
-}
-ff()
-ff <- function(df1 = 3, df2 = 13){#
-xx <- seq(0, 7, by = .001)#
-yy <- df(xx, df1, df2)#
-low <- qf(.05, df1, df2, lower.tail = FALSE)#
-high <- qf(.01, df1, df2, lower.tail = FALSE)#
-#
-plot(NULL, NULL, #
-  ylim = c(0, 1),#
-  xlim = c(0, 7),#
-  type = "l", #
-  bty = "l",#
-  yaxs = "i",#
-  xaxs = "i",#
-  ylab = "Density",#
-  xlab = "qf"#
-  )#
-abline(v = c(low, high), lty = 2)#
-polygon(#
-  x = c(low, xx[xx >= low], max(xx)),#
-  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
-  col = "#e9c4b2",#
-  border = NULL#
-  )	#
-lines(xx, yy, col = "#cf232a", lwd = 2) #
-text(#
-  x = 1,#
-  y = 0.2,#
-  labels = bquote(df[1] == .(df1) "M")#
-  )#
-text(#
-  x = 1,#
-  y = 0.15,#
-  labels = bquote(df[2] == .(df2))#
-  )#
-text(#
-  x = low,#
-  y = 0.2,#
-  labels = bquote(F == .(round(low, 2))),#
-  pos = 4#
-  ) #
-text(#
-  x = high,#
-  y = 0.2,#
-  labels = bquote(F == .(round(high, 2))),#
-  pos = 4#
-  )     #
-}
-ff <- function(df1 = 3, df2 = 13){#
-xx <- seq(0, 7, by = .001)#
-yy <- df(xx, df1, df2)#
-low <- qf(.05, df1, df2, lower.tail = FALSE)#
-high <- qf(.01, df1, df2, lower.tail = FALSE)#
-#
-plot(NULL, NULL, #
-  ylim = c(0, 1),#
-  xlim = c(0, 7),#
-  type = "l", #
-  bty = "l",#
-  yaxs = "i",#
-  xaxs = "i",#
-  ylab = "Density",#
-  xlab = "qf"#
-  )#
-abline(v = c(low, high), lty = 2)#
-polygon(#
-  x = c(low, xx[xx >= low], max(xx)),#
-  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
-  col = "#e9c4b2",#
-  border = NULL#
-  )	#
-lines(xx, yy, col = "#cf232a", lwd = 2) #
-text(#
-  x = 1,#
-  y = 0.2,#
-  labels = bquote(df[1] == .(df1) == "M")#
-  )#
-text(#
-  x = 1,#
-  y = 0.15,#
-  labels = bquote(df[2] == .(df2))#
-  )#
-text(#
-  x = low,#
-  y = 0.2,#
-  labels = bquote(F == .(round(low, 2))),#
-  pos = 4#
-  ) #
-text(#
-  x = high,#
-  y = 0.2,#
-  labels = bquote(F == .(round(high, 2))),#
-  pos = 4#
-  )     #
-}
-ff <- function(df1 = 3, df2 = 13){#
-xx <- seq(0, 7, by = .001)#
-yy <- df(xx, df1, df2)#
-low <- qf(.05, df1, df2, lower.tail = FALSE)#
-high <- qf(.01, df1, df2, lower.tail = FALSE)#
-#
-plot(NULL, NULL, #
-  ylim = c(0, 1),#
-  xlim = c(0, 7),#
-  type = "l", #
-  bty = "l",#
-  yaxs = "i",#
-  xaxs = "i",#
-  ylab = "Density",#
-  xlab = "qf"#
-  )#
-abline(v = c(low, high), lty = 2)#
-polygon(#
-  x = c(low, xx[xx >= low], max(xx)),#
-  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
-  col = "#e9c4b2",#
-  border = NULL#
-  )	#
-lines(xx, yy, col = "#cf232a", lwd = 2) #
-text(#
-  x = 1,#
-  y = 0.2,#
-  labels = bquote(df[1] == .(df1))#
-  )#
-text(#
-  x = 1,#
-  y = 0.15,#
-  labels = bquote(df[2] == .(df2))#
-  )#
-text(#
-  x = low,#
-  y = 0.2,#
-  labels = bquote(F == .(round(low, 2))),#
-  pos = 4#
-  ) #
-text(#
-  x = high,#
-  y = 0.2,#
-  labels = bquote(F == .(round(high, 2))),#
-  pos = 4#
-  )     #
-}
-ff()
-ff <- function(df1 = 3, df2 = 13){#
-xx <- seq(0, 7, by = .001)#
-yy <- df(xx, df1, df2)#
-low <- qf(.05, df1, df2, lower.tail = FALSE)#
-high <- qf(.01, df1, df2, lower.tail = FALSE)#
-#
-plot(NULL, NULL, #
-  ylim = c(0, 1),#
-  xlim = c(0, 7),#
-  type = "l", #
-  bty = "l",#
-  yaxs = "i",#
-  xaxs = "i",#
-  ylab = "Density",#
-  xlab = "qf"#
-  )#
-abline(v = c(low, high), lty = 2)#
-polygon(#
-  x = c(low, xx[xx >= low], max(xx)),#
-  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
-  col = "#e9c4b2",#
-  border = NULL#
-  )	#
-lines(xx, yy, col = "#cf232a", lwd = 2) #
-text(#
-  x = 1,#
-  y = 0.2,#
-  labels = bquote(df[1] == .(df1))#
-  )#
-text(#
-  x = 1,#
-  y = 0.15,#
-  labels = bquote(df[2] == .(df2))#
-  )#
-text(#
-  x = low,#
-  y = 0.2,#
-  labels = bquote(F == .(round(low, 2))),#
-  pos = 4#
-  ) #
-text(#
-  x = high,#
-  y = 0.2,#
-  labels = bquote(F == .(round(high, 2))),#
-  pos = 4#
-  )     #
-}
-ff <- function(df1 = 3, df2 = 13){#
-xx <- seq(0, 7, by = .001)#
-yy <- df(xx, df1, df2)#
-low <- qf(.05, df1, df2, lower.tail = FALSE)#
-high <- qf(.01, df1, df2, lower.tail = FALSE)#
-#
-plot(NULL, NULL, #
-  ylim = c(0, 1),#
-  xlim = c(0, 7),#
-  type = "l", #
-  bty = "l",#
-  yaxs = "i",#
-  xaxs = "i",#
-  ylab = "Density",#
-  xlab = "qf"#
-  )#
-abline(v = c(low, high), lty = 2)#
-polygon(#
-  x = c(low, xx[xx >= low], max(xx)),#
-  y = c(0, df(c(xx[xx >= low], max(xx)), df1, df2)),#
-  col = "#e9c4b2",#
-  border = NULL#
-  )	#
-lines(xx, yy, col = "#cf232a", lwd = 2) #
-text(#
-  x = 1,#
-  y = 0.2,#
-  labels = bquote(df[1] == .(df1)~"," ~ df[2])#
-  )#
-text(#
-  x = 1,#
-  y = 0.15,#
-  labels = bquote(df[2] == .(df2))#
-  )#
-text(#
-  x = low,#
-  y = 0.2,#
-  labels = bquote(F == .(round(low, 2))),#
-  pos = 4#
-  ) #
-text(#
-  x = high,#
-  y = 0.2,#
-  labels = bquote(F == .(round(high, 2))),#
-  pos = 4#
-  )     #
-}
-ff()
-score <- c(2, 3,  8,  6,  5,  6,#
-           5, 9, 10, 13,  8,  9,#
-           8, 6, 12, 11, 11, 12#
-   )#
-data <- matrix(data = score, #
-       nrow = 6, #
-       dimnames = list(Number = paste("S", 1:6, sep = ""), #
-                       Treatment = paste("Trt", 1:3, sep = ".")#
-                       )#
-   )#
-data
-data
-score <- c(2, 3,  8,  6,  5,  6,#
-           5, 9, 10, 13,  8,  9,#
-           8, 6, 12, 11, 11, 12#
-   )#
-data <- matrix(data = score, #
-       nrow = 6, #
-       dimnames = list(Number = paste("S", 1:6, sep = ""), #
-                       Treatment = ("RRR", "RPQ", "RCQ")                       #
-                       )#
-   )#
-data
-data
-str(data)
-data$num
-as.numeric(data)
-score <- as.numeric(data)
-score
-condition <- rep(c("RRR", "RPQ", "RCQ"), each = 6)
-condition
-data.frame(score = score, condition = condition)
 score <- as.numeric(data)#
 condition <- rep(c("RRR", "RPQ", "RCQ"), each = 6)#
 sample <- data.frame(score, condition)
@@ -666,37 +142,72 @@ f1(9)
 quote(f1)
 quote(f1())
 ?TukeyHSD
-?qtukey
-?qtukey
-qtukey(0.95, 15, 2)
-qtukey(0.95, 15, 3)
-qtukey(0.95, 15, 6)
-qtukey(0.95, 6, 15)
-qtukey(0.05/2, 6, 15)
-qtukey(0.05/2, 6, 15, lower.tail = FALSE)
-qtukey(0.05, 6, 15, lower.tail = FALSE)
-qtukey(0.05, 3, 15, lower.tail = FALSE)
-options(servr.daemon = TRUE)#
-setwd("~/website/hugo")#
-blogdown::build_site(local = FALSE, method = "html")#
-blogdown::serve_site() #serve site
-install.packages(plyr, dependencies=TRUE)
-install.packages("plyr", dependencies=TRUE)
-options(servr.daemon = TRUE)#
-setwd("~/website/hugo")#
-blogdown::build_site(local = FALSE, method = "html")#
-blogdown::serve_site() #serve site
-combn(1:3, 3)
-combn(1:3, 2)
-combn(x("RRR", "RPQ", "RCQ"), 2)
-combn(c("RRR", "RPQ", "RCQ"), 2)
-t(combn(c("RRR", "RPQ", "RCQ"), 2))
-cc<-t(combn(c("RRR", "RPQ", "RCQ"), 2))
+eval(parse(x))
+?parse
+parse(text = c("A", "B", "C"))
+A<- 3
+B<-4
+C<-5
+tt<-parse(text = c("A", "B", "C"))
+tt
+eval(tt)
+?eval
+eval(tt)
+tt<-parse(text = list("A", "B", "C"))
+tt
+tt<-parse(text = print("A", "B", "C"))
+tt<-parse(text = `print`("A", "B", "C"))
+x<-100
+eval(parse(text="x"))
+y<-1000
+z<-9
+sapply(c("x", "y", "z"), function(x)eval(parse(text=x)))
+sapply(c("x", "y", "z"), function(x)eval(parse(x)))
+sapply(c("x", "y", "z"), function(x)eval(parse(text = x)))
+eval(parse(text=x))
+eval(parse(text=y))
+eval(parse(text=z))
+eval(parse(text=c("z","y")))
+eval(parse(text=data.frame("z","y")))
+eval(parse(text=("z","y")))
+eval(parse(text=c("z","y")))
+eval(parse(text=paste("x", "+", "y")))
+parse(text=paste("x", "+", "y"))
+eval(parse(text=paste(cc[,1], "+", "y")))
+cc
+eval(parse(text=paste(cc[,1], "+", "y")))
+cc
+cc <- c("x", "y", "z")
+cc
+eval(parse(text=paste(cc[, 1], "+", "y")))
 cc[1]
-cc[1,]
-cc[,1]
-cc[,1] - cc[,2]
-cc[,1] - cc[,2]
+eval(parse(text=paste(cc[1], "+", "y")))
+eval(parse(text=paste(cc[1], "+", cc[2])))
+eval(parse(text=paste(cc[1], "+", cc[3])))
+cc
+x
+y
+z
+combn(x = 1:5, m = 3)
+combn(x = c("RRR", "RPQ", "RCQ"), m = 2)
+tt<-combn(x = c("RRR", "RPQ", "RCQ"), m = 2)
+tt <- t(combn(x = c("RRR", "RPQ", "RCQ"), m = 2))
+tt
+paste(tt[,1], "-", tt[,2])
+RRR<-5
+RPQ <- 9
+RCQ<-10
+eval(paste(tt[,1], "-", tt[,2]))
+eval(paste(tt[1,1], "-", tt[1, 2]))
+eval(parse(text=paste(tt[1,1], "-", tt[1, 2])))
+eval(parse(text=paste(tt[,1], "-", tt[, 2])))
+eval(parse(text=paste(tt[1,1], "-", tt[1, 2])))
+eval(parse(text=paste(tt[2,1], "-", tt[2, 2])))
+pp<-paste(tt[,1], "-", tt[,2])
+str(pp)
+as.data.frame(paste(tt[,1], "-", tt[,2]))
+?paste
+Mean
 score <- c(2, 3,  8,  6,  5,  6,#
            5, 9, 10, 13,  8,  9,#
            8, 6, 12, 11, 11, 12#
@@ -708,20 +219,55 @@ data <- matrix(data = score, #
                        )#
    )#
 data
+score
+data
 Mean <- apply(data, 2, mean)
-MEan
 Mean
+str(mean)
+str(Mean)
+names(Mean)
+score <- c(2, 3,  8,  6,  5,  6,#
+           5, 9, 10, 13,  8,  9,#
+           8, 6, 12, 11, 11, 12#
+   )#
+data <- matrix(data = score, #
+       nrow = 6, #
+       dimnames = list(Number = paste("S", 1:6, sep = ""), #
+                       Treatment = c("RRR", "RPQ", "RCQ")                       #
+                       )#
+   )#
+data
+data
+Mean <- apply(data, 2, mean)
+Mean
+expand.grid(Mean, Mean)
 Mean[1]
-RRR<-5
-RPQ<-9
-RCQ <- 10
-eval(cc[,1])
-eval(cc[,1])
-eval(parse(cc[,1]))
-eval(parse(text=cc[,1]))
-cc[,1]
-cc[1:3,1]
-eval(parse(text=cc[1:3,1]))
-eval(parse(text="RRR"))
-eval(parse(text="RRR"))
-eval(parse(text="RPQ"))
+Mean[names(Mean)=="RRR"]
+RRR <- Mean[names(Mean)=="RRR"]
+RRR
+RPQ <- Mean[names(Mean)=="RPQ"]
+RPQ
+RCQ <- Mean[names(Mean)=="RCQ"]
+RCQ
+diff(Mean)
+combn(1:3, 2)
+combn(1:3, 2)[1,]
+combn(1:3, 2)[1,] - combn(1:3, 2)[2,]
+Mean
+str(Mean)
+Mean$RRR
+Mean$$RRR
+Mean$RRR
+Mean[names(Mean) = "RRR"]
+Mean[names(Mean) == "RRR"]
+Mean
+combn(Mean, 2)
+library(agricolae)
+?sheffe.test
+?scheffe.test
+?commandArgs
+?sprintf
+sprintf("%f", pi)
+options(servr.daemon = TRUE)#
+setwd("~/website/hugo")
+blogdown::new_post("inferring-personal-economic-status-from-social-network-location")

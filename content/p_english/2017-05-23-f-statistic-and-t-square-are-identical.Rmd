@@ -1,0 +1,102 @@
+---
+title: Why squared-t-statistic and F-statistic are identical
+author: Likan
+date: '2017-05-23'
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+# 1. Notations
+
+Let's suppose two independent samples,
+
+|Sample 1| Sample 2|
+|:------:|:-------:|
+|$X_{11}$|$X_{12}$|
+|$X_{21}$|$X_{22}$|
+|$X_{31}$|$X_{32}$|
+|$\vdots$|$\vdots$|
+|$X_{n1}$|$X_{n2}$|
+
+where,
+
+- $n_1$ is the size of sample one;
+- $n_2$ is the size of sample two;
+- $M_1$ is the mean of sample one;
+- $M_2$ is the mean of sample two;
+- $M_g$ is the weighted mean of the two samples, defined as follows
+$$
+M_g = \frac{n_1 \cdot M_1 + n_2 \cdot M_2}{n_1 + n_2}
+$$
+
+# 2. The logic behind the prove
+
+- Given the two samples, the $F$-statistic is,
+
+$$
+F = \frac{MSR}{MSE}
+$$
+
+There are only two conditions, so $k = 2$ and the sum of squares ($SSR$) and mean sum of squares ($MSR$) are the same,
+
+$$
+MSR = SSR = n_1 \cdot (M_1 - M_g)^2 + n_2 \cdot (M_2 - M_g)^2
+$$
+
+And the $MSE$ in the denominator of the $F$-ratio is,
+
+$$
+MSE = \frac{SS_1 + SS_2}{df_1 + df_2}
+$$
+
+- Given the same two samples, the squared $t$-statistic is
+
+$$
+\begin{equation}
+\begin{split}
+t^2
+& = \Bigg(\frac{M_1 - M_2}{\sqrt{\frac{sp^2}{n_1} +\frac{sp^2}{n_2}}}\Bigg)^2\\
+& = \frac{(M_1 - M_2) ^2}{\frac{sp^2}{n_1} + \frac{sp^2}{n_2}}\\
+ & = \frac{\frac{(M_1 - M_2) ^2}{\frac{n_1 + n_2}{n_1 \cdot n_2}}}{sp^2}
+\end{split}
+\end{equation}
+$$
+
+As we can see, the $sp^2$ in the $t$-statistic and $MSE$ in the $F$-statistic are the same,
+
+$$
+SSE = sp^2 = \frac{SS_1 + SS_2}{df_1 + df_2}
+$$
+
+So to prove $t^2 = F$, we need to prove the numerator in the squared-t-statistic and $MSR$ are the same, i.e.,
+
+$$
+n_1 \cdot (M_1 - M_g)^2 + n_2 \cdot (M_2 - M_g)^2
+=
+\frac{(M_1 - M_2) ^2}{\frac{n_1 + n_2}{n_1 \cdot n_2}}
+$$
+
+# 3. The process of the prove
+
+To the previous equation, we first need to replace the $M_g$ in $MSR$ with its definition, i.e., the weigheted mean of $M_1$ and $M_2$,
+
+$$
+\begin{equation}
+\begin{split}
+MSR
+& = n_1 \cdot (M_1 - M_g)^2 + n_2 \cdot (M_2 - M_g)^2\\
+& = n_1 \cdot \Bigg(M_1 - \frac{n_1 \cdot M_1 + n_2 \cdot M_2}{n_1 + n_2}\Bigg)^2 + n_2 \cdot \Bigg(M_2 - \frac{n_1 \cdot M_1 + n_2 \cdot M_2}{n_1 + n_2}\Bigg)^2\\
+& = n_1 \cdot \Bigg(\frac{n_1 \cdot M_1 + n_2 \cdot M_1 - n_1 \cdot M_1 - n_2 \cdot M_2}{n_1 + n_2}\Bigg)^2 + n_2 \cdot \Bigg(\frac{n_1 \cdot M_2 + n_2 \cdot M_2 - n_1 \cdot M_1 - n_2 \cdot M_2}{n_1 + n_2}\Bigg)^2\\
+& = n_1 \cdot \Bigg(\frac{n_2 \cdot M_1 - n_2 \cdot M_2}{n_1 + n_2}\Bigg)^2 + n_2 \cdot \Bigg(\frac{n_1 \cdot M_2 - n_1 \cdot M_1 }{n_1 + n_2}\Bigg)^2\\
+& = \Bigg( \frac{M_1 - M_2}{n_1 + n_2} \Bigg)^2 \cdot (n_1 \cdot n_2^2 + n_2 \cdot n_1^2)\\
+& = \frac{(M_1 - M_2)^2}{(n_1 + n_2)^2} \cdot (n_1 \cdot n_2 ) \cdot (n_1 + n_2)\\
+& = \frac{(M_1 - M_2)^2}{n_1 + n_2} \cdot (n_1 \cdot n_2 ) \\
+& = \frac{(M_1 - M_2) ^2}{\frac{n_1 + n_2}{n_1 \cdot n_2}}\\
+\end{split}
+\end{equation}
+$$
+
+# 4. Reference
+
+O'Brien, & Francis J., Jr. (1982). [A Proof That t2 and F are Identical: The General Case](http://files.eric.ed.gov/fulltext/ED215894.pdf).

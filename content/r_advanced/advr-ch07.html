@@ -7,10 +7,7 @@ output:
     toc: true
 ---
 
-<!-- BLOGDOWN-HEAD -->
-<!-- /BLOGDOWN-HEAD -->
 
-<!-- BLOGDOWN-BODY-BEFORE -->
 <div id="TOC">
 <ul>
 <li><a href="#Base-Types">7.1. 基本类别</a></li>
@@ -26,7 +23,7 @@ output:
 <li><a href="#Quize-answers">7.6. 测验问题</a></li>
 </ul>
 </div>
-<!-- /BLOGDOWN-BODY-BEFORE -->
+
 <p>原文链接：<a href="http://adv-r.had.co.nz/OO-essentials.html">OO field guide</a></p>
 <p>R有一种基本的数据类型（base types）和三种面向对象的系统（object oriented systems）。</p>
 <p>任何一个面向对象系统都有两个核心观念：<em>类别</em>（class）和 <em>方法</em>（method）。<em>类别</em> 通过描写一个对象的<em>特征</em>（attributes），以及该对象与其他<em>类别</em>的关系来定义一个对象的行为。<em>方法</em>的行为会因为输入<em>类别</em>的不同而不同。<em>类别</em>的存在是层级性的（hierachy）。如果不存在一个可应用于某个<em>子类别</em>的<em>方法</em>，那么能够应用于其<em>母类别</em>的<em>方法</em>则可应用于该<em>子类别</em>。即<em>子类别</em>能够<em>继承</em>（inherits）来自于<em>母类别</em>的<em>方法</em>。</p>
@@ -82,7 +79,7 @@ otype(df$y) # 因子（factor）属于S3类型</code></pre>
 ftype(mean)</code></pre>
 <pre><code>## function (x, ...) 
 ## UseMethod(&quot;mean&quot;)
-## &lt;bytecode: 0x7fe5b780b808&gt;
+## &lt;bytecode: 0x7f8a49c6f1c8&gt;
 ## &lt;environment: namespace:base&gt;
 ## [1] &quot;s3&quot;      &quot;generic&quot;</code></pre>
 <p>有些S3范型，如<code>[</code>、<code>sum()</code>、和<code>cbind</code>，无法调用<code>UseMethod()</code>，因为这些范型是基于C语言代码编写的。相对的，它们可以调用C语言函数<code>DispatchGroup()</code>或者<code>DispatchOrEval()</code>。C语言代码中调用<em>方法分派</em>的函数叫做<em>内在范型</em>（internal generics）。这些函数的说明文档可以通过<code>?&quot;internal generic&quot;</code>函数来调用。函数<code>ftype()</code>也能识别这些特定函数。</p>
@@ -94,6 +91,7 @@ mean(X)
 mean.Date(X)
 print(X)
 print.factor(X)</code></pre>
+<pre><code>## Warning in print.factor(X): factor levels must be &quot;character&quot;</code></pre>
 <pre><code>## [1] 3.5
 ## [1] &quot;1970-01-04&quot;
 ## [1] 1 2 3 4 5 6
