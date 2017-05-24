@@ -42,7 +42,7 @@ footnotereturnlinkcontents = "↩"
     weight = 5
 
 [params]
-    fullURL = "https://likanzhan.github.io"
+    fullURL = "http://likan.info"
     author = "Likan Zhan"
     intro = false
     headline = "headline"
