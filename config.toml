@@ -12,9 +12,6 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
 
-[permalinks]
-    post = "/:year/:month/:day/:slug/"
-
 [[menu.main]]
     name = "English"
     url = "/en／"
