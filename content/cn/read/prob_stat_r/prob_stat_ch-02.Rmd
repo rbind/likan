@@ -1,5 +1,5 @@
 ---
-title: "第2章、数据探索"
+title: "第 02 章、数据探索"
 author: "侃侃迩行"
 date: '2017-02-15'
 output:
@@ -362,7 +362,7 @@ scottA $ counts
 
 ```{r, label = "Figure_02_09", echo = FALSE, eval = TRUE, fig.align="center", fig.width=6, fig.height=15, warning = FALSE}
 opar <- par(no.readonly = TRUE) # 读入当下参数
-par(mfrow = c(3, 2)) 
+par(mfrow = c(3, 2))
 hist(
   x = xs,
   breaks = bpS,
@@ -418,12 +418,12 @@ par (mfrow = c(2, 2))
 attach(geyser)
 ff <- function(br){
  hist(
-  x = duration, 
-  breaks = br, 
-  freq = FALSE, 
+  x = duration,
+  breaks = br,
+  freq = FALSE,
   ylim = c(0, 1),
   col = "pink"
- ) 
+ )
 }
 ff(3)
 ff(6)
@@ -468,7 +468,7 @@ NrmFun <- function(h, x){
 ff <- function(h = 1, ker = NrmFun){
 x <- seq(-4, 4, by = 0.01)
 y <- ker (h, x)
-plot(x, y, type = "l")	
+plot(x, y, type = "l")
 }
 opar <- par(no.readonly = TRUE)
 par (mfrow = c(3, 2))
@@ -495,14 +495,14 @@ tri <- function(x){
   (abs(x) < 1) * (1 - abs(x))
 }
 shapes <- sapply (
-  X = xi, 
+  X = xi,
   function(xi) {
     (1 / (h * n)) * tri((x - xi) / h)
   }
 )
 fx <- apply(shapes, 1, sum)
-plot(x, 
-     fx, 
+plot(x,
+     fx,
      type = "l",
      ylab = expression(hat(f)(x))
        )
@@ -548,7 +548,7 @@ plot(
 )
 rug(xi, lwd = 2)
 apply(
-  shapes, 
+  shapes,
   2,
   function(b){lines(x, b)}
 )
@@ -568,14 +568,14 @@ opar <- par(no.readonly = TRUE)
 par(mfrow = c(1, 2))
 with(
   data = geyser,
-  hist(waiting, 
+  hist(waiting,
        freq = FALSE,
        col = "grey95"
        )
 )
 with(
   data = geyser,
-  lines(density(waiting), 
+  lines(density(waiting),
         col = "red",
         lwd = 2
         )
@@ -609,7 +609,7 @@ n <- length(NYYHR)
 NYYHR
 SNYYHR <- sort(NYYHR)
 SNYYHR
-trm <- c(0.05, 0.10, 0.15, 0.50) 
+trm <- c(0.05, 0.10, 0.15, 0.50)
 p.trm <- function(x) floor(x * n)
 p.trm(trm)
 trm.mean <- function(trm){
@@ -628,8 +628,8 @@ sapply(trm, FUN = function(x) mean(NYYHR, trim = x))
 - 中数的计算
 
 $$
-m 
-= 
+m
+=
 \begin{cases}
 x_{k+1} & n = 2k + 1 & odd\\
 \frac{1}{2}(x_{(k)}+x_{(k+1)}) & n = 2k & even\\
@@ -679,6 +679,3 @@ MODE
 ## 2.5.4 百分位点{#Quantiles}
 
 - 一个分布的第 `p` 个百分位点 ($p^{th}$ quantile, $0 \leq p \leq 1$ ) 指的是满足以下条件的 $x_p$ 值 ：$\mathbb{P}(x \leq x_p) \geq p$ 和 $\mathbb{P}(X \geq x_p) \geq 1-p$。
-
-
-
