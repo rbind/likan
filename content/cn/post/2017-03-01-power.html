@@ -82,7 +82,7 @@ polygon(c(min(X0[X0 &lt;= lw]),
         col = rgb(1, 0, 0, 0.4))
 text(x = t_value + 0.4, y = -0.01,
      expression(alpha/2), pos = 3, col = &quot;blue&quot;)</code></pre>
-<p><img src="/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-2-1.png" width="576" /></p>
+<p><img src="/cn/post/2017-03-01-power_files/figure-html/unnamed-chunk-2-1.png" width="576" /></p>
 <p>第二种情况也发生在零假设正确，即疾病实际上不影响生理指标时，研究者的样本数据也没发现有影响的证据，即<code>正确拒斥</code>。正确拒斥的计算方法为 <span class="math inline">\(1-\alpha = P((1-A)|(1-\pi_0))\)</span>。</p>
 <pre class="r"><code>plot(X0, Y0, type = &quot;n&quot;,
      xlab = &quot;&quot;, ylab = &quot;&quot;,
@@ -101,7 +101,7 @@ polygon(c(min(X0[X0 &gt;= lw &amp; X0 &lt;= up]),
         col = rgb(0, 0, 1, 0.4))
 text(x = Mean0, y = 0.1,
      expression(1-alpha), pos = 3)</code></pre>
-<p><img src="/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-3-1.png" width="576" /></p>
+<p><img src="/cn/post/2017-03-01-power_files/figure-html/unnamed-chunk-3-1.png" width="576" /></p>
 <p>第三种情况发生在备择假设正确，即疾病的确影响该生理指标时。此时如果样本数据没能发现疾病对生理指标的影响，我们就说产生了<code>漏报</code>，或者叫<code>II</code>类错误。二类错误产生的概率按如下公式计算：<span class="math inline">\(\beta=P((1-A)|\pi_0)\)</span>。</p>
 <pre class="r"><code>plot(X1, Y1, type = &quot;n&quot;, xlab = &quot;&quot;, ylab = &quot;&quot;,
      main = NULL, axes = FALSE, xlim = c(Xmin, Xmax))
@@ -120,7 +120,7 @@ polygon(c(min(X1[X1 &lt;= up]),
         col = rgb(0.5, 0, 0.5, 0.4))
 text(x = t_value - 0.35, y = 0.00,
         expression(beta), pos = 3, col = &quot;blue&quot;)</code></pre>
-<p><img src="/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-4-1.png" width="576" /></p>
+<p><img src="/cn/post/2017-03-01-power_files/figure-html/unnamed-chunk-4-1.png" width="576" /></p>
 <p>第四种情况也发生在备择假设正确，即疾病的确影响该生理指标时。此时如果样本数据能正确发现疾病对生理指标的影响，我们就说产生了<code>击中</code>。统计中击中的概率就叫做`统计效力’（statistical power），计算公式如下：<span class="math inline">\(1-\beta=P(A|\pi_0)\)</span>。</p>
 <pre class="r"><code>plot(X1, Y1, type = &quot;n&quot;, xlab = &quot;&quot;, ylab = &quot;&quot;,
      main = NULL, axes = FALSE, xlim = c(Xmin, Xmax))
@@ -139,7 +139,7 @@ polygon(c(min(X1[X1 &gt;= up]),
         col = rgb(0.5, 0.5, 0.5, 0.4))
 text(x = Mean1, y = 0.1,
         expression(1-beta), pos = 3, col = &quot;blue&quot;)</code></pre>
-<p><img src="/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-5-1.png" width="576" /></p>
+<p><img src="/cn/post/2017-03-01-power_files/figure-html/unnamed-chunk-5-1.png" width="576" /></p>
 <p>上述四种情况可以总结为下面这个表格：</p>
 <table>
 <thead>
@@ -197,7 +197,7 @@ lines(x = c(0.005, 0.005),
 lines(x = c(-1, 0.005),
       y = c(ptt(0.005), ptt(0.005)),
       lty = 3)</code></pre>
-<p><img src="/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-6-1.png" width="576" /></p>
+<p><img src="/cn/post/2017-03-01-power_files/figure-html/unnamed-chunk-6-1.png" width="576" /></p>
 <p>此时假如两个组别平均值差别为 <span class="math inline">\(H = 1.2\)</span>，两个组别的合并标准差（pooled SD）为 <span class="math inline">\(S_p = 1.1\)</span>，那么此时的P值约为0.025。其计算方式如下P：</p>
 <pre class="r"><code>n &lt;- 10
 HD &lt;- 1.2
@@ -241,7 +241,7 @@ lines(x = c(-100, 0.005),
       y = c(B(0.005), B(0.005)),
       lty = 2,
       col = &quot;blue&quot;)</code></pre>
-<p><img src="/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-8-1.png" width="576" /></p>
+<p><img src="/cn/post/2017-03-01-power_files/figure-html/unnamed-chunk-8-1.png" width="576" /></p>
 <p>按照上述标准，当显著性水平 <span class="math inline">\(\alpha=0.05\)</span> 时，贝叶斯因子仅为 <span class="math inline">\(\overline{B} \leq 2.5\)</span>。回到我们之前的例子，当<span class="math inline">\(P=0.025\)</span>时，备择假设正确与零假设正确的比率最大不会超过3.9，即 <span class="math inline">\(\overline{B}\leq 3.9\)</span>。如果我们坚持<span class="math inline">\(\overline{B}\)</span>应该大于20，那么此时的P值应该小于0.0032才行。Johnson认为P值小于0.005就可以了。</p>
 <p>贝叶斯因子的计算不涉及测验的统计效力。所以如果我们假设效应值（effect size）仍然为1.32，但在<span class="math inline">\(\alpha&lt;0.005\)</span>的水平上拒绝零假设，此时的统计效力（power）仅为43%。如下图:</p>
 <pre class="r"><code>plot(B(pvalue), power,
@@ -250,7 +250,7 @@ lines(x = c(-100, 0.005),
      xlab = expression( bar(B)),
      font.lab = 2
      )</code></pre>
-<p><img src="/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-9-1.png" width="576" /></p>
+<p><img src="/cn/post/2017-03-01-power_files/figure-html/unnamed-chunk-9-1.png" width="576" /></p>
 <p>此时要达到80%的统计效力，我们的样本量应该提高到 <span class="math inline">\(n=18\)</span>才行。</p>
 </div>
 <div id="False-discovery-rate" class="section level1">
@@ -268,7 +268,7 @@ eFDR &lt;- (alpha * pi0) / (alpha * pi0 + power * (1 - pi0) )
 plot(pi0, eFDR, type = &quot;l&quot;,
      xlab = expression(pi[0])
      )</code></pre>
-<p><img src="/p_chinese/2017-03-01-power_files/figure-html/unnamed-chunk-10-1.png" width="576" /></p>
+<p><img src="/cn/post/2017-03-01-power_files/figure-html/unnamed-chunk-10-1.png" width="576" /></p>
 <p>在我们的例子中，当<span class="math inline">\(P=0.025\)</span>、统计效力为<span class="math inline">\(80\%\)</span> 时，eFDR在首次、第二次和事后检验中分别为0.03， 0.09和0.38。</p>
 <p>该方法的一个缺点是<span class="math inline">\(\pi_0\)</span>的确定有一定的随意性。回避这种随意性的一个简单的方法是通过让FDR达到某种水平的方式确定<span class="math inline">\(\pi_0\)</span>。例如在我们的例子中，在统计效力为80%的前提下，要使得<span class="math inline">\(FD=0.05\)</span>，<span class="math inline">\(\pi_0\)</span>应该不大于0.62才行。</p>
 </div>
