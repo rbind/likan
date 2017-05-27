@@ -11,7 +11,7 @@ disable_comments: true
 <br>
 练习答案：[Advanded R Solutions](https://bookdown.org/Tazinho/Advanced-R-Solutions/)
 
- - 第01章、[简介](/r_advanced/advr-ch01/)
+ - 第01章、[简介](/cn/read/advanced_r/advr-ch01/)
 
 - 第一部分、基础知识
 
@@ -19,8 +19,8 @@ disable_comments: true
  - 第03章、数据筛选
  - 第04章、词汇
  - 第05章、代码风格
- - 第06章、[函数](/r_advanced/advr-ch06/)
- - 第07章、[面向对象编程](/r_advanced/advr-ch07/)
+ - 第06章、[函数](/cn/read/advanced_r/advr-ch06/)
+ - 第07章、[面向对象编程](/cn/read/advanced_r/advr-ch07/)
  - 第08章、运行环境
  - 第09章、调试和纠错
 

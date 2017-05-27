@@ -12,34 +12,48 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
 
-
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "About"
-    url = "/about/about"
+    name = "English"
+    url = "/en／"
     weight = 1
 
 [[menu.main]]
-    name = "Teaching"
-    url = "/teaching/"
+    name = "中文"
+    url = "/cn/"
     weight = 2
 
-[[menu.main]]
+[[menu.en]]
+    name = "Teaching"
+    url = "/en/teach/"
+    weight = 2
+
+[[menu.en]]
     name = "Blog"
-    url = "/p_english/"
+    url = "/en/post/"
     weight = 3
 
-[[menu.main]]
-    name = "读书"
-    url = "/reading/"
+[[menu.en]]
+    name = "中文"
+    url = "/cn/"
     weight = 4
 
-[[menu.main]]
+[[menu.cn]]
+    name = "读书"
+    url = "/cn/read/"
+    weight = 1
+
+[[menu.cn]]
     name = "博客"
-    url = "/p_chinese/"
-    weight = 5
+    url = "/cn/post/"
+    weight = 2
+
+[[menu.cn]]
+    name = "English"
+    url = "/en／"
+    weight = 3
 
 [params]
     fullURL = "http://likan.info"

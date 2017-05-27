@@ -10,7 +10,7 @@ disable_comments: true
 - 前言
 
 - 第一部分、理解R语言
- - 第01章、[对象、函数和接口](/r_extending/extendingr-ch01/)
+ - 第01章、[对象、函数和接口](/cn/read/extending_r/extr-ch01/)
  - 第02章、R语言的进化
  - 第03章、R语言的操作
 

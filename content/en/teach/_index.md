@@ -9,11 +9,11 @@ disable_comments: true
 
 - Semester two (March - July)
 
-   - [Introduction to Cognitive Neuroscience](/t_cogn_neurosci/)
-   - [Statistics for the Behavioral Sciences](/t_stat_behav_sci/)
+   - [Introduction to Cognitive Neuroscience](/en/teach/cogn_neurosci/)
+   - [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/)
 
 
 - Semester one (September - January)
 
-   - [Using R for Statistics and Data Visualization](/t_appl_regres/)
+   - [Using R for Statistics and Data Visualization](/en/teach/appl_regres/)
    - Foundations of Scientific Research

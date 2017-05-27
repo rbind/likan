@@ -46,13 +46,13 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 # 6. Syllabus, Lecture Notes, and Scripts
 
 - Part I. Introduction and Descriptive Statistics
-  - Chapter 01. Introduction to Statistics. [Slides](http://statbehavsci.netlify.com/CH.01.pdf); [Scripts](/t_stat_behav_sci/stat-behv-sci-ch01/)
-  - Chapter 02. Frequency Distributions. [Slides](http://statbehavsci.netlify.com/CH.02.pdf); [Scripts](/t_stat_behav_sci/stat-behv-sci-ch02/)
-  - Chapter 03. Central Tendency. [Slides](http://statbehavsci.netlify.com/CH.03.pdf); [Scripts](/t_stat_behav_sci/stat-behv-sci-ch03/)
-  - Chapter 04. Variability. [Slides](http://statbehavsci.netlify.com/CH.04.pdf); [Scripts](/t_stat_behav_sci/stat-behv-sci-ch04/)
+  - Chapter 01. Introduction to Statistics. [Slides](http://statbehavsci.netlify.com/CH.01.pdf); [Scripts](/en/teach/stat_behav_sci/stat-behv-sci-ch01/)
+  - Chapter 02. Frequency Distributions. [Slides](http://statbehavsci.netlify.com/CH.02.pdf); [Scripts](/en/teach/stat_behav_sci/stat-behv-sci-ch02/)
+  - Chapter 03. Central Tendency. [Slides](http://statbehavsci.netlify.com/CH.03.pdf); [Scripts](/en/teach/stat_behav_sci/stat-behv-sci-ch03/)
+  - Chapter 04. Variability. [Slides](http://statbehavsci.netlify.com/CH.04.pdf); [Scripts](/en/teach/stat_behav_sci/stat-behv-sci-ch04/)
 
 - Part II. Foundations of Inferential Statistics
-  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [Slides](http://statbehavsci.netlify.com/CH.05.pdf); [Scripts](/t_stat_behav_sci/stat-behv-sci-ch05/)
+  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [Slides](http://statbehavsci.netlify.com/CH.05.pdf); [Scripts](/en/teach/stat_behav_sci/stat-behv-sci-ch05/)
   - Chapter 06. Probability. [Slides](http://statbehavsci.netlify.com/CH.06.pdf)
   - Chapter 07. Probability and Samples: The Distribution of Sample Means. [Slides](http://statbehavsci.netlify.com/CH.07.pdf); [Solutions](http://statbehavsci.netlify.com/CH.07.Solutions.png)
   - Chapter 08. Introduction to Hypothesis Testing. [Slides](http://statbehavsci.netlify.com/CH.08.pdf)
