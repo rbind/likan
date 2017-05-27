@@ -1,7 +1,6 @@
 ---
 title: "Introduction"
-date: "2016-05-05T21:48:51-07:00"
-disable_comments: true
+date: "2016-05-05"
 ---
 
-english introduction
+![brain_in_a_vat](http://webimages.netlify.com/brain_in_a_vat.png)

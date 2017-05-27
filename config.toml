@@ -23,6 +23,11 @@ footnotereturnlinkcontents = "↩"
     weight = 2
 
 [[menu.en]]
+    name = "About"
+    url = "/en/about/"
+    weight = 1
+
+[[menu.en]]
     name = "Teaching"
     url = "/en/teach/"
     weight = 2
@@ -38,19 +43,24 @@ footnotereturnlinkcontents = "↩"
     weight = 4
 
 [[menu.cn]]
+    name = "关于"
+    url = "/cn/about/"
+    weight = 1
+
+[[menu.cn]]
     name = "读书"
     url = "/cn/read/"
-    weight = 1
+    weight = 2
 
 [[menu.cn]]
     name = "博客"
     url = "/cn/post/"
-    weight = 2
+    weight = 3
 
 [[menu.cn]]
     name = "English"
     url = "/en／"
-    weight = 3
+    weight = 4
 
 [params]
     fullURL = "http://likan.info"
