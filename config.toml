@@ -28,7 +28,7 @@ footnotereturnlinkcontents = "↩"
     weight = 1
 
 [[menu.en]]
-    name = "Teach"
+    name = "Teaching"
     url = "/en/teach/"
     weight = 2
 
