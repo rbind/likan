@@ -2,8 +2,7 @@
 title: "人类语言的独特性究竟是什么? "
 author: 侃侃迩行
 date: '2017-02-21'
-categories: []
-tags: []
+Type: "post"
 show_toc: true
 ---
 
