@@ -43,8 +43,8 @@ footnotereturnlinkcontents = "↩"
     weight = 4
 
 [[menu.en]]
-    name = "Publication"
-    url = "/en/cv/"
+    name = "Publications"
+    url = "/en/publication/"
     weight = 5
 
 [[menu.en]]
