@@ -1,5 +1,5 @@
 ---
-title: "第2章、数据探索"
+title: "第 02 章、数据探索"
 author: "侃侃迩行"
 date: '2017-02-15'
 output:
@@ -456,12 +456,12 @@ par (mfrow = c(2, 2))
 attach(geyser)
 ff &lt;- function(br){
  hist(
-  x = duration, 
-  breaks = br, 
-  freq = FALSE, 
+  x = duration,
+  breaks = br,
+  freq = FALSE,
   ylim = c(0, 1),
   col = &quot;pink&quot;
- ) 
+ )
 }
 ff(3)
 ff(6)
@@ -495,7 +495,7 @@ NrmFun &lt;- function(h, x){
 ff &lt;- function(h = 1, ker = NrmFun){
 x &lt;- seq(-4, 4, by = 0.01)
 y &lt;- ker (h, x)
-plot(x, y, type = &quot;l&quot;)  
+plot(x, y, type = &quot;l&quot;)
 }
 opar &lt;- par(no.readonly = TRUE)
 par (mfrow = c(3, 2))
@@ -521,14 +521,14 @@ tri &lt;- function(x){
   (abs(x) &lt; 1) * (1 - abs(x))
 }
 shapes &lt;- sapply (
-  X = xi, 
+  X = xi,
   function(xi) {
     (1 / (h * n)) * tri((x - xi) / h)
   }
 )
 fx &lt;- apply(shapes, 1, sum)
-plot(x, 
-     fx, 
+plot(x,
+     fx,
      type = &quot;l&quot;,
      ylab = expression(hat(f)(x))
        )</code></pre>
@@ -588,7 +588,7 @@ plot(
 )
 rug(xi, lwd = 2)
 apply(
-  shapes, 
+  shapes,
   2,
   function(b){lines(x, b)}
 )</code></pre>
@@ -612,14 +612,14 @@ opar &lt;- par(no.readonly = TRUE)
 par(mfrow = c(1, 2))
 with(
   data = geyser,
-  hist(waiting, 
+  hist(waiting,
        freq = FALSE,
        col = &quot;grey95&quot;
        )
 )
 with(
   data = geyser,
-  lines(density(waiting), 
+  lines(density(waiting),
         col = &quot;red&quot;,
         lwd = 2
         )
@@ -656,7 +656,7 @@ n &lt;- length(NYYHR)
 NYYHR
 SNYYHR &lt;- sort(NYYHR)
 SNYYHR
-trm &lt;- c(0.05, 0.10, 0.15, 0.50) 
+trm &lt;- c(0.05, 0.10, 0.15, 0.50)
 p.trm &lt;- function(x) floor(x * n)
 p.trm(trm)
 trm.mean &lt;- function(trm){
@@ -679,8 +679,8 @@ sapply(trm, trm.mean)</code></pre>
 <li>中数的计算</li>
 </ul>
 <p><span class="math display">\[
-m 
-= 
+m
+=
 \begin{cases}
 x_{k+1} &amp; n = 2k + 1 &amp; odd\\
 \frac{1}{2}(x_{(k)}+x_{(k+1)}) &amp; n = 2k &amp; even\\

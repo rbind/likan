@@ -64,7 +64,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 
 - Part IV. Analysis of Variance
   - Chapter 12. Introduction to Analysis of Variance. [Slides](http://statbehavsci.netlify.com/CH.12.pdf)
-  - Chapter 13. Repeated-Measures Analysis of Variance
+  - Chapter 13. Repeated-Measures Analysis of Variance. [Slides](http://statbehavsci.netlify.com/CH.13.pdf)
   - Chapter 14. Two-Factor Analysis of Variance (Independent Measures)
 
 - Part V. Correlations and Nonparametric Tests
