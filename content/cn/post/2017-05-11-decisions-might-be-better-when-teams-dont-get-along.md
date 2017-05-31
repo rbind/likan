@@ -1,5 +1,6 @@
 ---
 title: "头脑风暴真的有用吗？"
+author: "侃侃迩行"
 date: '2017-05-11'
 show_toc: true
 ---
