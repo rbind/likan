@@ -3,6 +3,7 @@ title: "Google's R Style Guide"
 Author: "Likan"
 date: '2017-05-08'
 show_toc: true
+tags: ["style", "r"]
 ---
 This post is retrieved from [google](https://google.github.io/styleguide/Rguide.xml)
 

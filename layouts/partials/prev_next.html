@@ -1,6 +1,7 @@
+<!--- Likan's Modification --->
 {{ if .Params.tags }}
     <p>
-        <span color="grey"> Tagged: </span>
+      <span color="black"> Tagged: </span>
         {{ $len := len .Params.tags }}
         {{ range $index, $tag := .Params.tags }}
             <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/"> <font color="red">{{ . }}</font></a>
@@ -8,6 +9,7 @@
         {{ end }}
     </p>
 {{ end}}
+<!--- Likan's Modification --->
 
 {{ if or .PrevInSection .NextInSection }}
 <nav id="article-nav">

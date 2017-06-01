@@ -11,6 +11,7 @@ output:
     fig_width: 6
     toc: yes
   word_document: null
+tags: ["stat", "r"]  
 ---
 
 什么是P值？
