@@ -1,7 +1,7 @@
 baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
-title = "Likan | 侃侃迩行"
+# title = "Likan | 侃侃迩行"
 theme = "hugo-lithium-theme"
 googleAnalytics = "google analytics"
 disqusShortname = "https-likanzhan-github-io"
@@ -79,7 +79,7 @@ footnotereturnlinkcontents = "↩"
 
 [[menu.cn]]
     name = "English"
-    url = "/en／"
+    url = "/en/"
     weight = 4
 
 [params]
@@ -97,10 +97,6 @@ footnotereturnlinkcontents = "↩"
     disqusURL = "https://likanzhan.github.io"
     customCSS = ["css/custom.css"]
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
-
-[[lang.edit]]
-    en = "Suggest an edit of this page"
-    cn = "编辑本页"
 
 [params.logo]
   url = "bodhi.png"
