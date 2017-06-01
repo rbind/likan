@@ -1,7 +1,7 @@
 baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
-# title = "Likan | 侃侃迩行"
+title = "Likan | 侃侃迩行"
 theme = "hugo-lithium-theme"
 googleAnalytics = "google analytics"
 disqusShortname = "https-likanzhan-github-io"
