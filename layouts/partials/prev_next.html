@@ -1,3 +1,14 @@
+{{ if .Params.tags }}
+    <p>
+        <span color="grey"> Tagged: </span>
+        {{ $len := len .Params.tags }}
+        {{ range $index, $tag := .Params.tags }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/"> <font color="red">{{ . }}</font></a>
+            {{- if lt $index (sub $len 1) -}}, {{ end }}
+        {{ end }}
+    </p>
+{{ end}}
+
 {{ if or .PrevInSection .NextInSection }}
 <nav id="article-nav">
     {{ if .PrevInSection }}
