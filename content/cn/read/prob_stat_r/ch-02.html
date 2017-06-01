@@ -108,7 +108,7 @@ barplot(prop.table(xtabs(~ Age, data = quine)),
         xlab = &quot;Age&quot;,
         ylab = &quot;Relative Frequency&quot;
 )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_01-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_01-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>par(opar) # reset to original parameters</code></pre>
 </div>
 <div class="section level2">
@@ -130,7 +130,7 @@ dotchart(xtabs(~ Age, data = quine),
         bg = &quot;gray60&quot;,
         xlim = c(25, 50)
 )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_02-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_02-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>par(opar) # reset to original parameters
 options(warn = oldw)</code></pre>
 <ul>
@@ -155,7 +155,7 @@ dotchart(ADM,
        bg = &quot;gray60&quot;,
        xlim = c(10, 22)
 )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_03-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_03-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>par(opar) # reset to original parameters
 options(warn = oldw)</code></pre>
 </div>
@@ -184,7 +184,7 @@ mtext(
     cex = 1.25,
     line = 1
 )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_04-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_04-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>par(opar) # reset to original parameters</code></pre>
 </div>
 </div>
@@ -237,12 +237,14 @@ stem(NYYHR)</code></pre>
   main = &quot;Strip chart of home runs while a New York Yankee&quot;,
   pch = 1
   )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_06-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_06-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>rm (NYYHR)</code></pre>
 <ul>
 <li>图 2.7</li>
 </ul>
-<pre class="r"><code>opar &lt;- par(no.readonly = TRUE) # 读取现在的参数
+<pre class="r"><code>oldw &lt;- getOption(&quot;warn&quot;)
+options(warn = -1)
+opar &lt;- par(no.readonly = TRUE) # 读取现在的参数
 par(mfrow = c(1, 2))
 stripchart(
   hr ~ team,
@@ -262,7 +264,7 @@ stripchart(
   xlab = &quot;Home runs per season&quot;,
   main = &quot;Grayscale chart of \n home runs by team&quot;
   )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_07-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_07-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>par(opar) # 还原原始参数设置</code></pre>
 </div>
 <div id="Density-Curves" class="section level2">
@@ -283,7 +285,9 @@ stripchart(
 <ul>
 <li>图 2.8</li>
 </ul>
-<pre class="r"><code>opar &lt;- par(no.readonly = TRUE) # 读入当下参数
+<pre class="r"><code>oldw &lt;- getOption(&quot;warn&quot;)
+options(warn = -1)
+opar &lt;- par(no.readonly = TRUE) # 读入当下参数
 par(mfrow = c(1, 2))            # 一行两列
 bin &lt;- seq(20, 70, 10)          # 范围20-70，宽度为10的分块
 hist(
@@ -301,7 +305,7 @@ hist(
   col = &quot;pink&quot;,
   main = &quot;Bins of form [)&quot;
   )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_08-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_08-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>par(opar) # 重设为原始参数</code></pre>
 <ul>
 <li><p><code>breaks = &quot;Sturges&quot;</code></br> <span class="math display">\[
@@ -325,7 +329,10 @@ h_{\text{ScottR}} = \frac{3.5 \cdot \hat{\sigma}}{n^{1/3}}
 <pre><code>## function (x, n = 5, min.n = n%/%3, shrink.sml = 0.75, high.u.bias = 1.5, 
 ##     u5.bias = 0.5 + 1.5 * high.u.bias, eps.correct = 0, ...) 
 ## NULL</code></pre>
-<pre class="r"><code>xs &lt;- BABERUTH $ hr[7 : 21]
+<pre class="r"><code>oldw &lt;- getOption(&quot;warn&quot;)
+options(warn = -1)
+opar &lt;- par(no.readonly = TRUE) # 读取现在的参数
+xs &lt;- BABERUTH $ hr[7 : 21]
 R &lt;- diff(range(xs))
 n &lt;- length(xs)
 hs &lt;- R / (1 + log2(n))
@@ -352,7 +359,8 @@ sturgesA &lt;- hist(
   plot = FALSE
 )
 sturgesA $ breaks
-sturgesA $ counts</code></pre>
+sturgesA $ counts
+par(opar) # 重设为原始参数</code></pre>
 <pre><code>## [1] 22.00000 29.74421 37.48842 45.23264 52.97685 60.72106
 ## [1] 2 2 2 5 4
 ## [1] 20 30 40 50 60
@@ -376,10 +384,8 @@ FDdef &lt;- hist(
   xlab = &quot;&quot;,
   col = &quot;pink&quot;,
   plot = &quot;FALSE&quot;
-)</code></pre>
-<pre><code>## Warning in hist.default(x = xs, breaks = bpFD, main = &quot;FD Definition&quot;, xlab
-## = &quot;&quot;, : arguments &#39;col&#39;, &#39;main&#39;, &#39;xlab&#39; are not made use of</code></pre>
-<pre class="r"><code>FDdef $ breaks
+)
+FDdef $ breaks
 FDdef $ counts
 pretty(xs, n = nclassFD)
 
@@ -390,10 +396,8 @@ FDadj &lt;- hist(
   xlab = &quot;&quot;,
   col = &quot;blue&quot;,
   plot = &quot;FALSE&quot;
-)</code></pre>
-<pre><code>## Warning in hist.default(x = xs, breaks = &quot;FD&quot;, main = &quot;FD Adjusted&quot;, xlab =
-## &quot;&quot;, : arguments &#39;col&#39;, &#39;main&#39;, &#39;xlab&#39; are not made use of</code></pre>
-<pre class="r"><code>FDadj $ breaks
+)
+FDadj $ breaks
 FDadj $ counts</code></pre>
 <pre><code>## [1] 10.94796
 ## [1] 4
@@ -418,10 +422,8 @@ scottD &lt;- hist(
   xlab = &quot;&quot;,
   col = &quot;pink&quot;,
   plot = FALSE
-)</code></pre>
-<pre><code>## Warning in hist.default(x = xs, breaks = bpSC, main = &quot;Scott Definition&quot;, :
-## arguments &#39;col&#39;, &#39;main&#39;, &#39;xlab&#39; are not made use of</code></pre>
-<pre class="r"><code>scottD $ breaks
+)
+scottD $ breaks
 scottD $ counts
 pretty(xs, n = nclassSC)
 
@@ -432,10 +434,8 @@ scottA &lt;- hist(
   xlab = &quot;&quot;,
   col = &quot;blue&quot;,
   plot =  FALSE
-)</code></pre>
-<pre><code>## Warning in hist.default(x = xs, breaks = &quot;Scott&quot;, main = &quot;Scott
-## Adjusted&quot;, : arguments &#39;col&#39;, &#39;main&#39;, &#39;xlab&#39; are not made use of</code></pre>
-<pre class="r"><code>scottA $ breaks
+)
+scottA $ breaks
 scottA $ counts</code></pre>
 <pre><code>## [1] 15.91972
 ## [1] 3
@@ -444,14 +444,16 @@ scottA $ counts</code></pre>
 ## [1] 20 30 40 50 60
 ## [1] 20 30 40 50 60
 ## [1] 2 2 7 4</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_09-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_09-1.png" width="576" style="display: block; margin: auto;" /></p>
 </div>
 <div id="Kernel-density-estimation" class="section level3">
 <h3>2.4.3.2 概率密度</h3>
 <ul>
 <li>区间宽度对直方图的影响</li>
 </ul>
-<pre class="r"><code>opar &lt;- par(no.readonly = TRUE)
+<pre class="r"><code>oldw &lt;- getOption(&quot;warn&quot;)
+options(warn = -1)
+opar &lt;- par(no.readonly = TRUE) # 读取现在的参数
 par (mfrow = c(2, 2))
 attach(geyser)
 ff &lt;- function(br){
@@ -467,7 +469,7 @@ ff(3)
 ff(6)
 ff(12)
 ff(24)</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_10-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_10-1.png" width="576" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>detach(geyser)</code></pre>
 <ul>
 <li><p>核概率密度估计是直方图的拓展 <span class="math display">\[
@@ -505,7 +507,7 @@ ff(h = 1, ker = RctFun)
 ff(h = 2, ker = RctFun)
 ff(h = 1, ker = TrgFun)
 ff(h = 2, ker = TrgFun)</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_11-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_11-1.png" width="768" style="display: block; margin: auto;" /></p>
 <ul>
 <li>当 <code>xi</code> 值为 0.5 和 1 时三角核密度函数的值</li>
 </ul>
@@ -532,7 +534,7 @@ plot(x,
      type = &quot;l&quot;,
      ylab = expression(hat(f)(x))
        )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_12-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_12-1.png" width="576" style="display: block; margin: auto;" /></p>
 <ul>
 <li><code>xi</code> 值 0.5 和 1 在不同位置上的权重</li>
 </ul>
@@ -592,7 +594,7 @@ apply(
   2,
   function(b){lines(x, b)}
 )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_13-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_13-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre><code>## NULL</code></pre>
 <ul>
 <li>R语言中的 <code>density()</code> 函数</li>
@@ -633,7 +635,7 @@ with(
     main = &quot;Density of waiting&quot;
   )
 )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_14-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_14-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 </div>
@@ -721,7 +723,7 @@ names(which.max(table(Grades)))</code></pre>
 <pre class="r"><code>plot(density(VIT2005$totalprice),
      main = &quot;&quot;
      )</code></pre>
-<p><img src="/cn/read/prob_stat_r/prob_stat_ch-02_files/figure-html/Figure_02_15-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/cn/read/prob_stat_r/ch-02_files/figure-html/Figure_02_15-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>DV &lt;- density(VIT2005$totalprice)
 yval &lt;- max(DV$y)
 ID &lt;- which(DV$y == yval)

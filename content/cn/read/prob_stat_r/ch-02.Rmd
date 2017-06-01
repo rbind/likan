@@ -176,6 +176,8 @@ rm (NYYHR)
 - 图 2.7
 
 ```{r label = "Figure_02_07", eval = TRUE, fig.align="center", results = "hold", warning = FALSE}
+oldw <- getOption("warn")
+options(warn = -1)
 opar <- par(no.readonly = TRUE) # 读取现在的参数
 par(mfrow = c(1, 2))
 stripchart(
@@ -210,6 +212,8 @@ args(hist.default)
 - 图 2.8
 
 ```{r label = "Figure_02_08", eval = TRUE, fig.align="center", results = "hold", warning = FALSE}
+oldw <- getOption("warn")
+options(warn = -1)
 opar <- par(no.readonly = TRUE) # 读入当下参数
 par(mfrow = c(1, 2))            # 一行两列
 bin <- seq(20, 70, 10)          # 范围20-70，宽度为10的分块
@@ -261,6 +265,9 @@ args(pretty.default)
 ```
 
 ```{r warning = FALSE, results = "hold"}
+oldw <- getOption("warn")
+options(warn = -1)
+opar <- par(no.readonly = TRUE) # 读取现在的参数
 xs <- BABERUTH $ hr[7 : 21]
 R <- diff(range(xs))
 n <- length(xs)
@@ -289,7 +296,7 @@ sturgesA <- hist(
 )
 sturgesA $ breaks
 sturgesA $ counts
-
+par(opar) # 重设为原始参数
 ```
 
 - `breaks = "FD"`
@@ -361,7 +368,9 @@ scottA $ counts
 
 
 ```{r, label = "Figure_02_09", echo = FALSE, eval = TRUE, fig.align="center", fig.width=6, fig.height=15, warning = FALSE}
-opar <- par(no.readonly = TRUE) # 读入当下参数
+oldw <- getOption("warn")
+options(warn = -1)
+opar <- par(no.readonly = TRUE) # 读取现在的参数
 par(mfrow = c(3, 2))
 hist(
   x = xs,
@@ -413,7 +422,9 @@ par(opar) # 重设为原始参数
 - 区间宽度对直方图的影响
 
 ```{r, label = "Figure_02_10", eval = TRUE, fig.align="center", fig.width=6, fig.height=6}
-opar <- par(no.readonly = TRUE)
+oldw <- getOption("warn")
+options(warn = -1)
+opar <- par(no.readonly = TRUE) # 读取现在的参数
 par (mfrow = c(2, 2))
 attach(geyser)
 ff <- function(br){

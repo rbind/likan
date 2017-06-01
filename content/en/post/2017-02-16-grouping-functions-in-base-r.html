@@ -143,10 +143,10 @@ x</code></pre>
 ##    1    6 5005</code></pre>
 <p>In more advanced uses of sapply it will attempt to coerce the result to a multi-dimensional array, if appropriate. For example, if our function returns vectors of the same length, sapply will use them as columns of a matrix:</p>
 <pre class="r"><code>sapply(1:5, function(x) rnorm(3, x))</code></pre>
-<pre><code>##          [,1]      [,2]     [,3]     [,4]     [,5]
-## [1,] 1.732101 2.0626411 2.553690 2.610838 5.366331
-## [2,] 2.450065 1.5062817 3.101550 3.070937 6.201593
-## [3,] 3.984016 0.3821647 2.988831 2.204217 5.103863</code></pre>
+<pre><code>##            [,1]      [,2]     [,3]     [,4]     [,5]
+## [1,]  1.1316319 0.9776742 3.838329 4.645535 3.403815
+## [2,] -0.1387361 3.7461179 2.910138 2.087191 6.711453
+## [3,] -0.3036297 1.3471287 0.977449 5.435286 5.106573</code></pre>
 <p>If our function returns a 2 dimensional matrix, sapply will do essentially the same thing, treating each returned matrix as a single long vector:</p>
 <pre class="r"><code>sapply(1:5, function(x) matrix(x, 2, 2))</code></pre>
 <pre><code>##      [,1] [,2] [,3] [,4] [,5]

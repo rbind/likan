@@ -79,7 +79,7 @@ otype(df$y) # 因子（factor）属于S3类型</code></pre>
 ftype(mean)</code></pre>
 <pre><code>## function (x, ...) 
 ## UseMethod(&quot;mean&quot;)
-## &lt;bytecode: 0x7f96b889d9c8&gt;
+## &lt;bytecode: 0x7fe6fab7e3c8&gt;
 ## &lt;environment: namespace:base&gt;
 ## [1] &quot;s3&quot;      &quot;generic&quot;</code></pre>
 <p>有些S3范型，如<code>[</code>、<code>sum()</code>、和<code>cbind</code>，无法调用<code>UseMethod()</code>，因为这些范型是基于C语言代码编写的。相对的，它们可以调用C语言函数<code>DispatchGroup()</code>或者<code>DispatchOrEval()</code>。C语言代码中调用<em>方法分派</em>的函数叫做<em>内在范型</em>（internal generics）。这些函数的说明文档可以通过<code>?&quot;internal generic&quot;</code>函数来调用。函数<code>ftype()</code>也能识别这些特定函数。</p>
