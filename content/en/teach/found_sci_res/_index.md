@@ -8,7 +8,7 @@ show_toc: true
 ---
 # 1. Lecture Time and Location
 
-怎么样
+TBA
 
 # 2. Course Information
 
