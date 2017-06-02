@@ -26,7 +26,6 @@ TBA
 - Stanovich, K. E. (2013). *How to think straight about psychology* (10 ed.). Boston, MA: Pearson Education, Inc.
 - Strunk, W., jr. (1918). *The elements of style*.
 
-
 # 4. Grading
 
 TBA
