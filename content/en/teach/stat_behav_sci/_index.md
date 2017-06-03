@@ -16,13 +16,13 @@ Class time will be devoted primarily to lectures, but also to reviewing homework
 
 Statistical procedures provide researchers with objective and systematic methods for describing and interpreting their research results. Scientific research is the system that we use to gather information, and statistics are the tools that we use to distill the information into sensible and justified conclusions. The goal of this course is not only to teach the methods of statistics, but also to convey the basic principles of objectivity and logic that are essential for science and valuable for decision making in everyday life.
 
-This course is an introductory course of *Statistics for the the Behavioral Sciences* (行为科学统计学). A primary goal of this course is to make the task of learning statistics as easy and painless as possible. Topics of this course include Frequency Distribution, Centtral Tendency, Variability, z-scores, Probability and Samples, Hypothesis Testing, t-test, ANOVA, Correlation, Regression, Chi-Square test, and Binomal test etc. At the end of the course you should be able to read behavioural research that uses basic statistical methods; to undertake elementary data analysis; and to take more advanced courses in statistics, such as the course *[Using R for Statistics and Data Visualization](/t_appl_regres/)*. More specifically, you will learn:
+This course is an introductory course of *Statistics for the the Behavioral Sciences* (行为科学统计学). A primary goal of this course is to make the task of learning statistics as easy and painless as possible. Topics of this course include Frequency Distribution, Centtral Tendency, Variability, z-scores, Probability and Samples, Hypothesis Testing, t-test, ANOVA, Correlation, Regression, Chi-Square test, and Binomal test etc. At the end of the course you should be able to read behavioural research that uses basic statistical methods; to undertake elementary data analysis; and to take more advanced courses in statistics, such as the course *[Using R for Statistics and Data Visualization](/en/teach/appl_regres/)*. More specifically, you will learn:
 
 - to summarize statistical data and to discover patterns in data;
 - to draw inferences from a sample to a larger population from which the sample was drawn; and
 - to use the computer software `R` to analyze statistical data.
 
-本课程是心理统计学的入门课程，授课对象为言语听觉科学本科生高年级和基础心理学、语言病理学、汉语国际教育、语言学及应用语言学研究生一年级学生。本人在下学期还会专门给研究生开设一门叫做《[R语言与数据统计和数据可视化](/t_appl_regres/)》的高级统计课程。有兴趣在下学期选修该高级统计课程，但本科阶段没有学过统计学的研究生同学，应该先选修本心理统计学入门课程。本课程授课内容包括统计学简介、频率分布、集中量数、变异量数、正态分布和z分数、概率、样本和概率、假设检验、t检验（t检验简介、独立样本t检验和相关样本t检验）、方差分析（方差分析简介、重复测量的方差分析和独立样本的双因素方差分析）、相关、回归分析、卡方检验和符号检验等。
+本课程是心理统计学的入门课程，授课对象为言语听觉科学本科生高年级和基础心理学、语言病理学、汉语国际教育、语言学及应用语言学研究生一年级学生。本人在下学期还会专门给研究生开设一门叫做《[R语言与数据统计和数据可视化](/en/teach/appl_regres/)》的高级统计课程。有兴趣在下学期选修该高级统计课程，但本科阶段没有学过统计学的研究生同学，应该先选修本心理统计学入门课程。本课程授课内容包括统计学简介、频率分布、集中量数、变异量数、正态分布和z分数、概率、样本和概率、假设检验、t检验（t检验简介、独立样本t检验和相关样本t检验）、方差分析（方差分析简介、重复测量的方差分析和独立样本的双因素方差分析）、相关、回归分析、卡方检验和符号检验等。
 
 # 3. Textbook
 
