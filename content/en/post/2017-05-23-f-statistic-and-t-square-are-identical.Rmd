@@ -26,6 +26,7 @@ where,
 - $M_1$ is the mean of sample one;
 - $M_2$ is the mean of sample two;
 - $M_g$ is the weighted mean of the two samples, defined as follows
+
 $$
 M_g = \frac{n_1 \cdot M_1 + n_2 \cdot M_2}{n_1 + n_2}
 $$
