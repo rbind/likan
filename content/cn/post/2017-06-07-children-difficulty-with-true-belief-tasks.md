@@ -22,3 +22,11 @@ show_toc: true
 # 3. 实验结果
 
 研究者用经典的位置改变任务和体式任务研究了儿童对正确信念和错误信念的理解能力。实验一和实验二重复了前人结果，即儿童正确信念任务下的正确率出现了一个明显的 U 字形发展过程 （图 2-3 ）。 有趣的是，当实验中出现了两个行为主体，其中一个行为主体有错误信念，另一个行为主体有正确信念时，四岁到六岁儿童在正确信念条件下的行为反应有了显著提高 (图 4 )。这支持了表现缺失观点。
+
+# 4. 图片附录
+
+参见原文
+
+# 5. 参考文献
+
+Oktay-Gur, N., & Rakoczy, H. (2017). Children's difficulty with true belief tasks: Competence deficit or performance problem? Cognition, 166, 28-41. doi:10.1016/j.cognition.2017.05.002
