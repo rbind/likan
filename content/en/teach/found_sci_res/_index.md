@@ -18,7 +18,7 @@ TBA
 
 - The Process of Scientific Research
     - Chambers, C. (2017). *The seven deadly sins of psychology: A manifesto for reforming the culture of scientific practice*. Princeton, NJ: Princeton University Press.
-    - Evans, J. S. B. T. (2016). *How to Be a Researcher: A strategic guide for academic success*. East Sussex: FA: Routledge.
+    - Evans, J. S. B. T. (2016). *How to Be a Researcher: A strategic guide for academic success*. East Sussex, FA: Routledge.
     - Hock, R. R. (2009). *Forty studies that changed psychology: Explorations into the history of psychological research* (6 ed.). New Jersey, NJ: Pearson Education.
     - Stanovich, K. E. (2013). *How to think straight about psychology* (10 ed.). Boston, MA: Pearson Education.
 
