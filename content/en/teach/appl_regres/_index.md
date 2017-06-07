@@ -23,7 +23,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. Textbooks
 
 - Fox, J. (2016). *Applied Regression Analysis and Generalized Linear Models* (3 ed.). Thousand Oaks, CA: SAGE.
-- Chambers, J. M. (2016). Extending R. Boca Baton, UK: CRC Press.
+- Chambers, J. M. (2016). *Extending R*. Boca Baton, UK: CRC Press.
 - Wickham, H. (2015). *Advanced* R. Boca Baton, UK: CRC Press.
 
 # 5. Syllabus, Lecture Notes, and Scripts
