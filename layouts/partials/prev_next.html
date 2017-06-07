@@ -1,10 +1,10 @@
 <!--- Likan's Modification --->
 {{ if .Params.tags }}
     <p>
-      <span color="black"> Tagged: </span>
+       <i class="fa fa-tags" aria-hidden="true"></i>
         {{ $len := len .Params.tags }}
         {{ range $index, $tag := .Params.tags }}
-            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/"> <font color="red">{{ . }}</font></a>
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/"> <font color="black">{{ . }}</font></a>
             {{- if lt $index (sub $len 1) -}}, {{ end }}
         {{ end }}
     </p>
