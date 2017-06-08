@@ -1,18 +1,27 @@
 ---
 title: "Curriculum Vitae"
-disable_comments: true
 output:
   pdf_document:
     includes:
-       in_header: header.tex
+      in_header: header.tex
     latex_engine: xelatex
-pdf_download_link: Download [pdf_version](/en/cv/LZhan.pdf)
+disable_comments: true
+type: cv
+pdf: /en/cv/_index.pdf
 ---
 
 # Likan Zhan
 
 
-Email: zhanlikan@hotmail.com; Homepage: <http://likan.info>
+Email: zhanlikan@hotmail.com
+
+Homepage: <http://likan.info>
+
+### Academic appointment
+
+- 2014.10 ~ Now, Assistant professor, <br/>
+Institute for Speech Pathology and the Brain Science, <br/>
+Beijing Language and Culture University, Beijing, China
 
 ### Education
 
@@ -22,12 +31,6 @@ Email: zhanlikan@hotmail.com; Homepage: <http://likan.info>
   Beijing Language and Culture University, Beijing, China
 - 2000.09 ~ 2004.07, M. A. Teaching Chinese as a Second Language, </br>
   Beijing Language and Culture University, Beijing, China
-
-### Academic appointments
-
-- 2014.10 ~ Now, Assistant professor, </br>
-Institute for Speech Pathology and the Brain Science, </br>
-Beijing Language and Culture University, Beijing, China
 
 ### Professional skills
 

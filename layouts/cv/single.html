@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+<main class="content" role="main">
+
+<div style="text-align: left">
+<a href = "{{ .Params.pdf }}" class = "fa fa-file-pdf-o" title="icon title"> PDF </a>
+</div>
+{{ .Content }}
+
+</main>
+
+{{ partial "footer.html" . }}
