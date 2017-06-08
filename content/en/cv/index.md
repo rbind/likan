@@ -7,7 +7,7 @@ output:
     latex_engine: xelatex
 disable_comments: true
 type: cv
-pdf: /en/cv/_index.pdf
+pdf: /en/cv/LZhan.pdf
 ---
 
 # Likan Zhan
