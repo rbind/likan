@@ -4,47 +4,50 @@ disable_comments: true
 output:
   pdf_document:
     includes:
-      in_header: header.tex
+       in_header: header.tex
     latex_engine: xelatex
+pdf_download_link: Download [pdf_version](/en/cv/LZhan.pdf)
 ---
 
 # Likan Zhan
 
-> download [pdf_version](/en/cv/LZhan.pdf)
 
-## Contact Information
+Email: zhanlikan@hotmail.com; Homepage: <http://likan.info>
 
-QQ电子邮箱QQ
+### Education
 
-Email: zhanlikan@hotmail.com
+- 2010.10 ~ 2014.09, Ph. D. Cognitive Science, </br>
+  Macquarie University, Sydney, Australia
+- 2007.09 ~ 2010.07, M. E. Cognitive Psychology, </br>
+  Beijing Language and Culture University, Beijing, China
+- 2000.09 ~ 2004.07, M. A. Teaching Chinese as a Second Language, </br>
+  Beijing Language and Culture University, Beijing, China
 
-Homepage: <http://likan.info>
+### Academic appointments
 
-## Research Interest
+- 2014.10 ~ Now, Assistant professor, </br>
+Institute for Speech Pathology and the Brain Science, </br>
+Beijing Language and Culture University, Beijing, China
 
-XXX
+### Professional skills
 
-## Education Background
+- Eye tracker </br>
+  Advanced experience in using Eyelink II/1000 plus (SR Research Ltd.), such as</br>
+  *Experiment Builder*, for experiment building; </br>
+  *Data Viewer*, for data analysis.
 
-- 2009 ~ 2013, XX
-- 2006 ~ 2009, XX
-- 2002 ~ 2006, XX
+- R </br>
+  Moderate experience in using R; such as, </br>
+  Packages *lme4*, *car*, for data analysis, e.g., GLMMs; </br>
+  Package *ggplot2*, for data visualization.
 
-## Publications
+- Neuroimaging </br>
+  In charge of establishing the first Child MEG lab in China, familiar with </br>
+  *Yokogawa* MEG system, for equipment maintenance and data acquisition; </br>
+  *BESA*, and packages *fieldtrip* and *SPM12* of Matlab, for data analysis.
 
-Books and book chapters:
+- LaTeX </br>
+  Familiar with LaTeX for typesetting, </br>
+  such as packages *beamer* and *tikz*
 
-1. XX
-1. XX
-
-Papers:
-
-1. WW
-1. WW
-1. WWW
-
-## Professional Experience
-
-XX
-
-### Internship
+### Publications
