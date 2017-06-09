@@ -6,8 +6,8 @@ output:
       in_header: header.tex
     latex_engine: xelatex
 disable_comments: true
-type: cv
-pdf: /en/cv/LZhan.pdf
+type: "cv"
+pdf: "/en/cv/LZhan.pdf"
 ---
 
 # Likan Zhan
