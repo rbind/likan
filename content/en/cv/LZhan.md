@@ -1,5 +1,6 @@
 ---
 title: "Curriculum Vitae"
+date: "2017-06-01"
 output:
   pdf_document:
     includes:
@@ -19,8 +20,8 @@ Homepage: <http://likan.info>
 
 ### Academic appointment
 
-- 2014.10 ~ Now, Assistant professor, <br/>
-Institute for Speech Pathology and the Brain Science, <br/>
+- 2014.10 ~ Now, Assistant professor,</br/>
+Institute for Speech Pathology and the Brain Science,</br/>
 Beijing Language and Culture University, Beijing, China
 
 ### Education
