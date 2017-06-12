@@ -3,6 +3,7 @@ title: "Measurement Error"
 author: "Likan Zhan"
 date: '2017-02-16'
 draft: yes
+tags: ["stat", "r"]
 ---
 
 This page is adapted from the stack overflow [post](http://stats.stackexchange.com/questions/15011/generate-a-random-variable-with-a-defined-correlation-to-an-existing-variable) by _caracal_ and _gregmacfarlane_

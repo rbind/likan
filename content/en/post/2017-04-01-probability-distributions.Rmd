@@ -5,6 +5,7 @@ date: '2017-04-01'
 output:
   blogdown::html_page:
     toc: true
+tags: ["stat", "r"]
 ---
 
 # 1. Introduction

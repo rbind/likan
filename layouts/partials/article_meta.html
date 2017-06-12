@@ -6,7 +6,18 @@
 
 {{if not .Params.hide_article_meta}}
 <div class="article-date">
-  <span>{{ with .Params.author}} {{  print . " · " }} {{ end }} {{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat ) }}</span>
+  <span>{{ with .Params.author}} {{  print . " · " }} {{ end }} {{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat ) }}
+    <!--- Likan's Modification --->
+    {{ if .Params.tags }} ·
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            {{ $len := len .Params.tags }}
+            {{ range $index, $tag := .Params.tags }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/"> {{ . }} </a>
+                {{- if lt $index (sub $len 1) -}}, {{ end }}
+            {{ end }}
+    {{ end}}
+    <!--- Likan's Modification --->
+  </span>
   <span class="article-toolbar">
     {{ with .Section }}
     <a href="/{{ . }}/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss" aria-hidden="true" title="RSS feed"></i></a>

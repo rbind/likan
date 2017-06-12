@@ -3,15 +3,9 @@ title: "正确理解和使用P值"
 author: "侃侃迩行"
 date: '2017-03-01'
 output:
-  pdf_document:
-    latex_engine: xelatex
-    toc: yes
   blogdown::html_page:
-    fig_height: 4
-    fig_width: 6
     toc: yes
-  word_document: null
-tags: ["stat", "r"]  
+tags: ["stat", "r"]
 ---
 
 什么是P值？

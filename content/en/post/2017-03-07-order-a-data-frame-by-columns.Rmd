@@ -2,6 +2,7 @@
 title: Order a data frame by columns
 author: "Likan Zhan"
 date: '2017-03-07'
+tags: ["stat", "r"]
 ---
 
 Addapted from Dirk Eddelbuettel's stackoverflow [post](http://stackoverflow.com/questions/1296646/how-to-sort-a-dataframe-by-columns).
