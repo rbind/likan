@@ -43,8 +43,8 @@ The course will be lectured at **0800 - 0950** on each **Monday** in **Room 105,
 # 5. Lecture Notes
 
 - Part I. Background and methods
-  - Chapter 00. Introduction to the Course. [Slides](http://cognneurosci.likan.info/CH.00.pdf)
-  - Chapter 01. A Brief History of Cognitive Neuroscience. [Slides](http://cognneurosci.likan.info/CH.01.pdf)
+  - Chapter 00. Introduction to the Course. [Slides](https://cognneurosci.likan.info/CH.00.pdf)
+  - Chapter 01. A Brief History of Cognitive Neuroscience. [Slides](https://cognneurosci.likan.info/CH.01.pdf)
   - Chapter 02. Structure and Function of the Nervous System.[百度网盘](https://pan.baidu.com/s/1hsgdZhy)
   - Chapter 03. Methods of Cognitive Neuroscience.[百度网盘](https://pan.baidu.com/s/1geBal6j)
 - Part II. Core Processes

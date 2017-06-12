@@ -46,25 +46,25 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 # 6. Syllabus, Lecture Notes, and Scripts
 
 - Part I. Introduction and Descriptive Statistics
-  - Chapter 01. Introduction to Statistics. [Slides](http://statbehavsci.likan.info/CH.01.pdf); [Scripts](/en/teach/stat_behav_sci/ch_01/)
-  - Chapter 02. Frequency Distributions. [Slides](http://statbehavsci.likan.info/CH.02.pdf); [Scripts](/en/teach/stat_behav_sci/ch_02/)
-  - Chapter 03. Central Tendency. [Slides](http://statbehavsci.likan.info/CH.03.pdf); [Scripts](/en/teach/stat_behav_sci/ch_03/)
-  - Chapter 04. Variability. [Slides](http://statbehavsci.likan.info/CH.04.pdf); [Scripts](/en/teach/stat_behav_sci/ch_04/)
+  - Chapter 01. Introduction to Statistics. [Slides](https://statbehavsci.likan.info/CH.01.pdf); [Scripts](/en/teach/stat_behav_sci/ch_01/)
+  - Chapter 02. Frequency Distributions. [Slides](https://statbehavsci.likan.info/CH.02.pdf); [Scripts](/en/teach/stat_behav_sci/ch_02/)
+  - Chapter 03. Central Tendency. [Slides](https://statbehavsci.likan.info/CH.03.pdf); [Scripts](/en/teach/stat_behav_sci/ch_03/)
+  - Chapter 04. Variability. [Slides](https://statbehavsci.likan.info/CH.04.pdf); [Scripts](/en/teach/stat_behav_sci/ch_04/)
 
 - Part II. Foundations of Inferential Statistics
   - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [Slides](http://statbehavsci.likan.info/CH.05.pdf); [Scripts](/en/teach/stat_behav_sci/ch_05/)
-  - Chapter 06. Probability. [Slides](http://statbehavsci.likan.info/CH.06.pdf)
-  - Chapter 07. Probability and Samples: The Distribution of Sample Means. [Slides](http://statbehavsci.likan.info/CH.07.pdf); [Solutions](http://statbehavsci.likan.info/CH.07.Solutions.png)
-  - Chapter 08. Introduction to Hypothesis Testing. [Slides](http://statbehavsci.likan.info/CH.08.pdf)
+  - Chapter 06. Probability. [Slides](https://statbehavsci.likan.info/CH.06.pdf)
+  - Chapter 07. Probability and Samples: The Distribution of Sample Means. [Slides](https://statbehavsci.likan.info/CH.07.pdf); [Solutions](https://statbehavsci.likan.info/CH.07.Solutions.png)
+  - Chapter 08. Introduction to Hypothesis Testing. [Slides](https://statbehavsci.likan.info/CH.08.pdf)
 
 - Part III. Using *t*-Statistics for Inferences
-  - Chapter 09. Introduction to the *t* Statistic. [Slides](http://statbehavsci.likan.info/CH.09.pdf)
-  - Chapter 10. The *t* Test for Two Independent Samples. [Slides](http://statbehavsci.likan.info/CH.10.pdf)
-  - Chapter 11. The *t* Test for Two Related Samples. [Slides](http://statbehavsci.likan.info/CH.11.pdf)
+  - Chapter 09. Introduction to the *t* Statistic. [Slides](https://statbehavsci.likan.info/CH.09.pdf)
+  - Chapter 10. The *t* Test for Two Independent Samples. [Slides](https://statbehavsci.likan.info/CH.10.pdf)
+  - Chapter 11. The *t* Test for Two Related Samples. [Slides](https://statbehavsci.likan.info/CH.11.pdf)
 
 - Part IV. Analysis of Variance
-  - Chapter 12. Introduction to Analysis of Variance. [Slides](http://statbehavsci.likan.info/CH.12.pdf)
-  - Chapter 13. Repeated-Measures Analysis of Variance. [Slides](http://statbehavsci.likan.info/CH.13.pdf)
+  - Chapter 12. Introduction to Analysis of Variance. [Slides](https://statbehavsci.likan.info/CH.12.pdf)
+  - Chapter 13. Repeated-Measures Analysis of Variance. [Slides](https://statbehavsci.likan.info/CH.13.pdf)
   - Chapter 14. Two-Factor Analysis of Variance (Independent Measures). [Slides](http://statbehavsci.likan.info/CH.14.pdf); [Scripts](/en/teach/stat_behav_sci/ch_14/)
 
 - Part V. Correlations and Nonparametric Tests
