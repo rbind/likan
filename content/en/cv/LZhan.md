@@ -30,8 +30,10 @@ Beijing Language and Culture University, Beijing, China
 
 - 2010.10 ~ 2014.09, Ph.D. Cognitive Science, <br>
   Macquarie University, Sydney, Australia
+  
 - 2007.09 ~ 2010.07, M.E. Cognitive Psychology, <br>
   Beijing Language and Culture University, Beijing, China
+  
 - 2000.09 ~ 2004.07, B.A. Teaching Chinese as a Second Language, <br>
   Beijing Language and Culture University, Beijing, China
 
