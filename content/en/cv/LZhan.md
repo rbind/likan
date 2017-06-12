@@ -38,10 +38,10 @@ Beijing Language and Culture University, Beijing, China
 
 ## Teaching responsibilities
 
-- [Statistics for Behavioral Sciences](http://likan.info/en/teach/stat_behav_sci/)
+- [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/)
 - [Using R for Statistics and Data visualization](/en/teach/appl_regres/)
-- [Introduction to Cognitive Neuroscience](http://likan.info/en/teach/cogn_neurosci/)
-- [Foundations of Scientific Research](http://likan.info/en/teach/found_sci_res/)
+- [Introduction to Cognitive Neuroscience](/en/teach/cogn_neurosci/)
+- [Foundations of Scientific Research](/en/teach/found_sci_res/)
 
 ## Publications
 

@@ -1,4 +1,4 @@
-baseurl = "http://likan.info/"
+baseurl = "https://likan.info/"
 relativeurls = true
 languageCode = "en-us"
 title = "Likan | 侃侃迩行"
@@ -78,7 +78,6 @@ footnotereturnlinkcontents = "↩"
     weight = 5
 
 [params]
-    fullURL = "http://likan.info"
     author = "Likan Zhan"
     intro = false
     headline = "headline"
