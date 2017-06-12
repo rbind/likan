@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://likan.info/"
 relativeurls = true
 languageCode = "en-us"
 title = "Likan | 侃侃迩行"

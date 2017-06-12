@@ -38,16 +38,16 @@ Beijing Language and Culture University, Beijing, China
 
 ## Teaching responsibilities
 
-- [Statistics for Behavioral Sciences](/en/teach/stat_behav_sci/)
-- [Using R for Statistics and Data visualization](/en/teach/appl_regress/)
-- [Introduction to Cognitive Neuroscience](/en/teach/cogn_neurosci/)
-- [Foundations of Scientific Research](/en/teach/found_sci_res/)
+- [Statistics for Behavioral Sciences](http://likan.info/en/teach/stat_behav_sci/)
+- [Using R for Statistics and Data visualization](/en/teach/appl_regres/)
+- [Introduction to Cognitive Neuroscience](http://likan.info/en/teach/cogn_neurosci/)
+- [Foundations of Scientific Research](http://likan.info/en/teach/found_sci_res/)
 
 ## Publications
 
 1. Periodicals
 
-- Moscati, V., **Zhan, L.**, & Zhou, P. (2016). Children's on-line processing of epistemic modals. *Journal of Child Language*, 1-16. doi: 10.1017/S0305000916000313 <a href = "http://publications.likan.info/JChildLang2016.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
+- Moscati, V., **Zhan, L.**, & Zhou, P. (2016). Children's on-line processing of epistemic modals. *Journal of Child Language*, 1-16. doi: 10.1017/S0305000916000313 [<a class="fa fa-file-pdf-o" title = "Full Text"></a>](http://publications.likan.info/JChildLang2016.pdf)
 
 - **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 <a href = "http://publications.likan.info/JCognPsychol2015.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
 
