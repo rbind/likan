@@ -47,7 +47,7 @@ Beijing Language and Culture University, Beijing, China
 
 1. Periodicals
 
-- Moscati, V., **Zhan, L.**, & Zhou, P. (2016). Children's on-line processing of epistemic modals. *Journal of Child Language*, 1-16. doi: 10.1017/S0305000916000313 [<a class="fa fa-file-pdf-o" title = "Full Text"></a>](https://publications.likan.info/JChildLang2016.pdf)
+- Moscati, V., **Zhan, L.**, & Zhou, P. (2016). Children's on-line processing of epistemic modals. *Journal of Child Language*, 1-16. doi: 10.1017/S0305000916000313 <a href="https://publications.likan.info/JChildLang2016.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
 
 - **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 <a href = "https://publications.likan.info/JCognPsychol2015.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
 
