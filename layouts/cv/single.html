@@ -1,13 +1,12 @@
 {{ partial "header.html" . }}
-
 <main class="content" role="main">
-
-<div style="text-align: right">
-<a href = "{{ .Params.pdf }}" class = "fa fa-file-pdf-o" title="PDF version "> CV </a>
-</div>
-
-{{ .Content }}
-
+<article class="article">
+  <div class="article-content">
+    <div style="text-align: right">
+    <a href = "{{ .Params.pdf }}" class = "fa fa-file-pdf-o" title="PDF version "> Download </a>
+    </div>
+    {{ .Content }}
+  </div>
+</article>
 </main>
-
 {{ partial "footer.html" . }}

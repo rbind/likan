@@ -17,9 +17,8 @@ type: cv
 
 # Likan Zhan
 
-Email: zhanlikan@hotmail.com
-
-Personal website: <http://likan.info>
+- Email: zhanlikan@hotmail.com
+- Personal website: <http://likan.info>
 
 ## Academic appointment
 
@@ -35,6 +34,27 @@ Beijing Language and Culture University, Beijing, China
   Beijing Language and Culture University, Beijing, China
 - 2000.09 ~ 2004.07, B.A. Teaching Chinese as a Second Language, <br>
   Beijing Language and Culture University, Beijing, China
+
+
+## Teaching responsibilities
+
+- [Statistics for Behavioral Sciences](/en/teach/stat_behav_sci/)
+- [Using R for Statistics and Data visualization](/en/teach/appl_regress/)
+- [Introduction to Cognitive Neuroscience](/en/teach/cogn_neurosci/)
+- [Foundations of Scientific Research](/en/teach/found_sci_res/)
+
+## Publications
+
+1. Periodicals
+
+- Moscati, V., **Zhan, L.**, & Zhou, P. (2016). Children's on-line processing of epistemic modals. *Journal of Child Language*, 1-16. doi: 10.1017/S0305000916000313 <a href = "http://publications.likan.info/JChildLang2016.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
+
+- **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 <a href = "http://publications.likan.info/JCognPsychol2015.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
+
+- Zhou, P., Crain, S., & **Zhan, L.** (2014). Grammatical aspect and event recognition in children's online sentence comprehension. *Cognition, 133*(1), 262-276. doi: 10.1016/j.cognition.2014.06.018 <a href = "http://publications.likan.info/Cognition2014.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a> <br>
+- Zhou, P., Crain, S., & **Zhan, L.** (2012). Sometimes children are as good as adults: The pragmatic use of prosody in children’s on-line sentence processing. *Journal of Memory and Language, 67*(1), 149-164. doi: 10.1016/j.jml.2012.03.005 <a href = "http://publications.likan.info/JMemLang2012.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
+
+- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 <a href = "http://publications.likan.info/JChildLang2012.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
 
 ## Professional skills
 
@@ -56,16 +76,3 @@ Beijing Language and Culture University, Beijing, China
 - LaTeX </br>
   Familiar with LaTeX for typesetting, </br>
   such as packages *beamer* and *tikz*
-
-## Publications
-
-1. Periodicals
-
-- Moscati, V., **Zhan, L.**, & Zhou, P. (2016). Children's on-line processing of epistemic modals. *Journal of Child Language*, 1-16. doi: 10.1017/S0305000916000313 <a href = "http://publications.likan.info/JChildLang2016.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
-
-- **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 <a href = "http://publications.likan.info/JCognPsychol2015.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
-
-- Zhou, P., Crain, S., & **Zhan, L.** (2014). Grammatical aspect and event recognition in children's online sentence comprehension. *Cognition, 133*(1), 262-276. doi: 10.1016/j.cognition.2014.06.018 <a href = "http://publications.likan.info/Cognition2014.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a> <br>
-- Zhou, P., Crain, S., & **Zhan, L.** (2012). Sometimes children are as good as adults: The pragmatic use of prosody in children’s on-line sentence processing. *Journal of Memory and Language, 67*(1), 149-164. doi: 10.1016/j.jml.2012.03.005 <a href = "http://publications.likan.info/JMemLang2012.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
-
-- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 <a href = "http://publications.likan.info/JChildLang2012.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
