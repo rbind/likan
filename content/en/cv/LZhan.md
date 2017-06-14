@@ -17,8 +17,10 @@ type: cv
 
 # Likan Zhan
 
-- Email: zhanlikan@blcu.edu.cn
-- Personal website: <https://likan.info>
+- Addr: 15, Xueyuan Rd., Haidian District, Beijing 100083, China
+- Tel:  +86 10 8230 3468
+- Email: zhanlikan@hotmail.com
+- Website: <https://likan.info>
 
 ## Academic appointment
 
