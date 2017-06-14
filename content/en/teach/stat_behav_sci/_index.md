@@ -68,7 +68,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 14. Two-Factor Analysis of Variance (Independent Measures). [Slides](http://statbehavsci.likan.info/CH.14.pdf); [Scripts](/en/teach/stat_behav_sci/ch_14/)
 
 - Part V. Correlations and Nonparametric Tests
-  - Chapter 15. Correlation
+  - Chapter 15. Correlation. [Slides](http://statbehavsci.likan.info/CH.15.pdf);
   - Chapter 16. Introduction to Regression
   - Chapter 17. The Chi-Square Statistic: Tests for Goodness of Fit and Independence
   - Chapter 18. The Binomial Test
