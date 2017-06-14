@@ -17,7 +17,7 @@ type: cv
 
 # Likan Zhan
 
-- Email: zhanlikan@hotmail.com
+- Email: zhanlikan@blcu.edu.cn
 - Personal website: <https://likan.info>
 
 ## Academic appointment
