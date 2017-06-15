@@ -17,7 +17,7 @@ type: cv
 
 # Likan Zhan
 
-- Addr: 15, Xueyuan Rd., Haidian District, Beijing 100083, China
+- Add: 15, Xueyuan Rd., Haidian District, Beijing 100083, China
 - Tel:  +86 10 8230 3468
 - Email: zhanlikan@hotmail.com
 - Website: <https://likan.info>
