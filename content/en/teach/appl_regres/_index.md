@@ -12,7 +12,7 @@ TBA
 
 # 2. Course Information
 
-R is a language and environment for **statistical computing** and **graphics**. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories by John Chambers and colleagues.
+[R](https://cran.r-project.org) is a language and environment for **statistical computing** and **graphics**. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories by John Chambers and colleagues.
 
 R provides a wide variety of statistical (linear and nonlinear modeling, classical statistical tests, time-series analysis, classification, clustering, …) and graphical techniques, and is highly extensible. One of R's strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed.
 
@@ -21,6 +21,15 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 3. Prerequisites
 
 # 4. References
+
+- R manuals
+    - [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
+    - [R Data Import/Export](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
+    - [R Installation and Administration](https://cran.r-project.org/doc/manuals/r-release/R-admin.pdf)
+    - [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf)
+    - [The R language definition](https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf)
+    - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.pdf)
+    - [The R reference Index](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)
 
 - R language in General
     - Chambers, J. M. (2016). *Extending R*. Boca Baton, UK: CRC Press.

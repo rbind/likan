@@ -103,3 +103,6 @@ footnotereturnlinkcontents = "↩"
   weibo = "zhanlikan"
   github = "likanzhan"
   email = "zhanlikan@hotmail.com"
+
+[Taxonomies]
+  tag = "tags"
