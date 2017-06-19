@@ -63,15 +63,18 @@ type: cv
 
 ## Professional skills
 
+- Stimuli Presentation softwares </br>
+  Such as, [E-prime](https://www.pstnet.com/eprime.cfm), [Psychopy](http://www.psychopy.org), [Psychtoolbox](http://psychtoolbox.org), and [Presentation](https://www.neurobs.com/presentation)
+
+- Statistical analysis and data visualization softwares </br>
+  Moderate experience in using R for statistics and data visualization; such as, </br>
+  Packages *lme4*, *car*, for data analysis, e.g., GLMMs; </br>
+  Package *ggplot2*, for data visualization.
+
 - Eye tracker </br>
   Advanced experience in using Eyelink II/1000 plus (SR Research Ltd.), such as</br>
   *Experiment Builder*, for experiment building; </br>
   *Data Viewer*, for data analysis.
-
-- R </br>
-  Moderate experience in using R for statistics and data visualization; such as, </br>
-  Packages *lme4*, *car*, for data analysis, e.g., GLMMs; </br>
-  Package *ggplot2*, for data visualization.
 
 - Neuroimaging </br>
   In charge of establishing the first Child MEG lab in China, familiar with </br>
