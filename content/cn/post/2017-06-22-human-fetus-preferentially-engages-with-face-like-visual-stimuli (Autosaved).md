@@ -14,5 +14,3 @@ tags: []
 - 参考文献
 
 Reid, V. M., Dunn, K., Young, R. J., Amu, J., Donovan, T., & Reissland, N. (2017). The Human Fetus Preferentially Engages with Face-like Visual Stimuli. *Curr Biol, 27*(12), 1825-1828 e1823. doi:10.1016/j.cub.2017.05.044
-
-
