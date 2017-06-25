@@ -9,7 +9,7 @@ show_toc: true
 
 # 1. Lecture Time and Location
 
-The course will meet for two hours each week (Thursdays, 08:00-09:50) in *Room 202, Teaching Building 2* （教二楼202房间）. <br>
+The course will meet for two hours each week (Thursdays, 08:00-09:50) in *Room 202, Teaching Building 2*. <br>
 Class time will be devoted primarily to lectures, but also to reviewing homework, and to answering questions.
 
 # 2. Course Information
@@ -41,7 +41,11 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 # 5. Grading
 
 - Homework: 50%
+
 - Final exam: 50%
+  - Time and location: 08:00-09:50, July 13, *Room 202, Teaching Building 2*;
+  - Eighty multiple choices, evenly selected from the *learning check* problems of chapters 1 - 16;
+  - Two essay questions, selected from the *odd-numbered problems* of chapters 9 - 15.
 
 # 6. Syllabus, Lecture Notes, and Scripts
 
