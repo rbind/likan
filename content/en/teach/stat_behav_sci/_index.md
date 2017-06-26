@@ -44,8 +44,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 
 - Final exam: 50%
   - Time and location: 08:00-09:50, July 13, *Room 202, Teaching Building 2*;
-  - Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 16*;
-  - Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 15*.
+  - Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 16*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 15*.
 
 # 6. Syllabus, Lecture Notes, and Scripts
 
