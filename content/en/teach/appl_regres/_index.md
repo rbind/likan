@@ -76,6 +76,6 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 13. Time-Series Regression
     - 14. Nonlinear Regression
     - 15. Nonparametric Regression
-- Part VI: Generalized linear models
+- Part VI: Mixed-Effects Models
     - 16. Linear Mixed-Effects Models
     - 17. Generalized Linear and Nonlinear Mixed-Effects Models
