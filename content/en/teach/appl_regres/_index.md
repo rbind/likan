@@ -55,4 +55,27 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 # 5. Syllabus, Lecture Notes, and Scripts
 
-TBA
+- Part 0: Introduction
+    - 01. Introduction
+    - 02. R basics
+- Part I: Data craft
+    - 03. Data examization
+    - 04. Data transformation
+- Part II: Linear models and least squares
+    - 05. Linear least-squares regression
+    - 06. Dummy-variable regression
+    - 07. Analysis of variance
+- Part III: Linear-model diagnostics
+    - 08. Unusual and influential data
+    - 09. Non-Normality, Nonconstant Error Variance, and Nonlinearity
+    - 10. Collinearity
+- Part IV: Generalized linear models
+    - 11. Logit and Probit Models for Categorical Response Variables
+    - 12. Generalized Linear Models
+- Part V. Extending Linear and Generalized Linear Models
+    - 13. Time-Series Regression
+    - 14. Nonlinear Regression
+    - 15. Nonparametric Regression
+- Part VI: Generalized linear models
+    - 16. Linear Mixed-Effects Models
+    - 17. Generalized Linear and Nonlinear Mixed-Effects Models
