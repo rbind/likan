@@ -33,5 +33,6 @@ show_toc:true
 
 # 7. 参考文献
 
+Constantino, J. N., Kennon-McGill, S., Weichselbaum, C., Marrus, N., Haider, A., Glowinski, A. L., . . . Jones, W. (2017). Infant viewing of social scenes is under genetic control and is atypical in autism. Nature. doi:10.1038/nature22999
 
 
