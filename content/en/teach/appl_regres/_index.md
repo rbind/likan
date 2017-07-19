@@ -20,6 +20,8 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 # 3. Prerequisites
 
+Students of this course should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/), or other courses at the same level.
+
 # 4. References
 
 - R manuals
