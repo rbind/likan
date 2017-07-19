@@ -16,7 +16,7 @@ show_toc: true
 
 # 2. Course Information
 
-TBA
+This course is designed to expose students to the academic side of scientific research as they learn how to synthesize results, present them, and explore related topics. Students will analyze and discuss published research articles, engage in conversations with the teacher about different aspects of research, and design and present their own research.
 
 # 3. References
 
