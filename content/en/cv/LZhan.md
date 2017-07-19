@@ -1,17 +1,19 @@
 ---
 title: "Curriculum Vitae"
-date: '2017-06-01'
 disable_comments: yes
+date: '2017-06-01'
 output:
   pdf_document:
-    template: cv_no_title.latex
     includes:
       in_header: header.tex
     latex_engine: xelatex
     md_extensions: -autolink_bare_uris+hard_line_breaks
+    template: cv_no_title.latex
   html_document: default
+  word_document: default
 geometry: margin=1in
 pdf: /en/cv/LZhan.pdf
+fontsize: 16pt
 type: cv
 ---
 
@@ -51,7 +53,6 @@ type: cv
 ## Publications
 
 1. Periodicals
-
 - Moscati, V., **Zhan, L.**, & Zhou, P. (2016). Children's on-line processing of epistemic modals. *Journal of Child Language*, 1-16. doi: 10.1017/S0305000916000313 <a href="https://publications.likan.info/JChildLang2016.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
 
 - **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 <a href = "https://publications.likan.info/JCognPsychol2015.pdf" class="fa fa-file-pdf-o" title = "Full Text"></a>
