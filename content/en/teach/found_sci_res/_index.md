@@ -7,8 +7,12 @@ disable_comments: true
 show_toc: true
 ---
 # 1. Lecture Time and Location
-
-TBA
+- Time:
+    - 08:00 - 11:50, Even Thursdays, i.e., <br>
+      SEP 21; OCT 5, 19; NOV 2, 16, 30; DEC 14, 28;
+    - 08:00 - 09:50, Odd Thursdays, i.e., <br>
+      SEP 29; OCT 12, 26; NOV 9, 23 ; DEC  7, 21; JAN 4;
+- Location: *Room 302, Teaching Building 2*
 
 # 2. Course Information
 
@@ -16,7 +20,7 @@ TBA
 
 # 3. References
 
-- Processes of Scientific Research
+- Procedure of Scientific Research
     - Chambers, C. (2017). *The seven deadly sins of psychology: A manifesto for reforming the culture of scientific practice*. Princeton, NJ: Princeton University Press.
     - Evans, J. S. B. T. (2016). *How to Be a Researcher: A strategic guide for academic success*. East Sussex, FA: Routledge.
     - Stanovich, K. E. (2013). *How to think straight about psychology* (10 ed.). Boston, MA: Pearson Education.
