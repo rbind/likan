@@ -12,7 +12,7 @@ TBA
 
 # 2. Prerequisites
 
-Students of this course should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](../en/teach/stat_behav_sci/), or other courses of the same level. Students should be familiar with the basic concepts used in statistics, such as *Mean*, *Standard Deviation*, *Normal Distribution*, *t-statistic*, *ANOVA*, *F-ratio*, *p-value*, *Hypothesis Testing* etc.
+Students of this course should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/), or other courses of the same level. Students should be familiar with the basic concepts used in statistics, such as *Mean*, *Standard Deviation*, *Normal Distribution*, *t-statistic*, *ANOVA*, *F-ratio*, *p-value*, *Hypothesis Testing* etc.
 
 # 3. Course Information
 
