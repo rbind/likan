@@ -9,7 +9,7 @@ slag: "cogn_neurosci"
 ---
 # 1. Lecture Time and Location
 
-The course will be lectured at **0800 - 0950** on each **Monday** in **Room 105, Teaching Building 5** (**教5楼105**).
+The course will be lectured at **** on each **** in **** (****).
 
 # 2. Course Information
 <p align = "middle"> *How the brain enables the mind ?* </p>
@@ -53,18 +53,10 @@ The course will be lectured at **0800 - 0950** on each **Monday** in **Room 105,
   - Chapter 06. Object Recognition.
   - Chapter 07. Attention.
   - Chapter 08. Action. <a id="presenters"></a>
-      - Presenters: Qingxia Cen, Wenling Jiang, Lu Hua, Xin Fu, Yanan He
-      - Date: May 22
   - Chapter 09. Memory.
   - Chapter 10. Emotion.
-      - Presenters: Yujia Liu, Yanghui Meng, Xiaoling Rong, Zeping Liu
-      - Date: June 5
   - Chapter 11. Language.
-      - Presenters: Xinyi Qian, Zhaoyang Li, Liyuan Li, Bo Xu, Jianyong Cai
-      - Date: June 12
 - Part III. Control Processes
   - Chapter 12. Cognitive Control.
   - Chapter 13. Social Cognition.
-      - Presenters: Anpin Ni, Fei Gao, Yunxiao Huang, Yan Gao, Jingyi Cui
-      - Date: June 19
   - Chapter 14. Consciousness, Free Will, and the Law.
