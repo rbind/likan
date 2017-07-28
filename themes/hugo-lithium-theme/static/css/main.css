@@ -29,10 +29,6 @@ code {
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-code .MathJax {
-  background-color: white;
-}
-
 .wrapper {
   overflow: hidden;
   position: relative;
@@ -100,7 +96,7 @@ code .MathJax {
   padding: 0 15px;
   font-size: 16px;
   line-height: 1.7;
-  color: #555;
+  color: #333;
 }
 
 .article-title {
@@ -312,5 +308,14 @@ code .MathJax {
 
   .footer-links {
     font-size: inherit;
+  }
+}
+
+@media print {
+  .header, .footer {
+    display: none;
+  }
+  .article-content a {
+    box-shadow: none;
   }
 }
