@@ -1,7 +1,7 @@
 ---
 title: "Using R for statistics and data visualisation"
 author: "Likan"
-date: '2017-03-01'
+date: '2017-09-01'
 show_title: true
 disable_comments: true
 show_toc: true
