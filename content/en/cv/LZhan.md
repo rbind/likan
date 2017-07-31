@@ -46,7 +46,7 @@ type: cv
 ## Teaching responsibilities
 
 - [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/)
-- [Using R for Statistics and Data visualization](/en/teach/appl_regres/)
+- [R for Modeling and Visualizing Data](/en/teach/model_vis_data/)
 - [Introduction to Cognitive Neuroscience](/en/teach/cogn_neurosci/)
 - [Foundations of Scientific Research](/en/teach/found_sci_res/)
 
