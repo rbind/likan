@@ -1,5 +1,5 @@
 ---
-title: "R for Modeling and Visualization"
+title: "R for Modeling and Visualizing Data"
 author: "Likan"
 date: '2017-09-01'
 show_title: true

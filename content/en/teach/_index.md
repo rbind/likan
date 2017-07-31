@@ -9,7 +9,7 @@ disable_comments: true
 
 - Semester one (September - January)
 
-   - [Using R for Statistics and Data Visualization](/en/teach/appl_regres/)
+   - [Using R for Statistics and Data Visualization](/en/teach/model_vis_data/)
    - [Foundations of Scientific Research](/en/teach/found_sci_res/)
 
 - Semester two (March - July)
