@@ -1,5 +1,5 @@
 ---
-title: "Using R for statistics and data visualisation"
+title: "R for Modeling and Visualization"
 author: "Likan"
 date: '2017-09-01'
 show_title: true
@@ -33,7 +33,9 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 - R language in General
     - Chambers, J. M. (2016). *Extending R*. Boca Baton, UK: CRC Press.
-    - Wickham, H. (2015). *Advanced* R. Boca Baton, UK: CRC Press.
+    - Wickham, H. (2015). *Advanced R*. Boca Baton, UK: CRC Press.
+    - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media.
+
 
 - R graphics
     - Murrell, P. (2011). *R Graphics* (2 ed.). Boca Raton, FL: CRC Press.
@@ -50,8 +52,9 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 - Probability and statistics
     - Fieller, N. (2016). *Basics of matrix algebra for statistics with R*. Boca Raton, FL: CRC Press.
+    - Poole, D. (2015). *Linear Algebra: A Modern Introduction* (4 ed.). Stamford, CT: Gengage Learning.
     - Ugarte, M. D., Militino, A. F., & Arnholt, A. T. (2016). *Probability and statistics with R* (2 ed.). Boca Raton, UK: CRC Press.
-
+    - Stewart, J. (2016). *Calculus: Early transcendentals* (8 ed.). Boston, MA: Cengage Learning.
 
 # 5. Syllabus, Lecture Notes, and Scripts
 
