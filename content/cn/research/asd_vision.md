@@ -23,7 +23,7 @@ disable_comments: true
 
 点击下载下面的[文件](http://webimages.netlify.com/Movie_Stimulus.csv)， 你可以看到我把 133 类视频按咱们三位同学的首字母分成了三组。每个人的任务是从自己分配的类别中，到深心项目中的 24 万段视频中选取 **20** 段并下载下来。
 
-# 4. 下载如何视频
+# 4. 视频如何下载
 
 要进入 Youtube 网站和下载视频，你首先必须处于**翻墙状态**。另外，你需要用下面的地址打开一个视频 “ https://www.youtube.com/watch?v={youtube_id}"。例如，如果一个视频的 YouTube_id 是 ”1Qj6Mu_CpnM”， 那么我们在地址栏输入下面地址则可以打开这个视频 ”https://www.youtube.com/watch?v=1Qj6Mu_CpnM” 即可打开该视频。
 
