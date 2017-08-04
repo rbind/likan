@@ -3,6 +3,7 @@ title: "自闭症视觉认知的神经模式研究"
 author: "侃侃迩行"
 date: '2017-08-04'
 disable_comments: true
+show_toc: true
 ---
 
 # 1. 研究背景
