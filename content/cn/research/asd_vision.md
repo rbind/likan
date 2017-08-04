@@ -25,7 +25,7 @@ disable_comments: true
 
 # 4. 视频如何下载
 
-要进入 Youtube 网站和下载视频，你首先必须处于**翻墙状态**。另外，你需要用下面的地址打开一个视频 “ https://www.youtube.com/watch?v={youtube_id}"。例如，如果一个视频的 YouTube_id 是 ”1Qj6Mu_CpnM”， 那么我们在地址栏输入下面地址则可以打开这个视频 ”https://www.youtube.com/watch?v=1Qj6Mu_CpnM” 即可打开该视频。
+要进入 Youtube 网站和下载视频，你首先必须处于**翻墙状态**。另外，你需要用下面的地址打开一个视频 “ https://www.youtube.com/watch?v={youtube_id}"。例如，如果一个视频的 YouTube_id 是 ”1Qj6Mu_CpnM”， 那么我们在地址栏输入下面地址即可打开该视频 ”https://www.youtube.com/watch?v=1Qj6Mu_CpnM”。
 
 youtube_id 为 "1Qj6Mu_CpnM" 的视频的 "time_start" 和 "time_end" 分别是 42 和 52，说明我们实验真正用到的刺激是该视频的 42-52 秒。所以，你要仔细看该视频的 42-52 秒钟处，并决定是否下载该视频。该视频是否适合作为我们实验材料的一个重要标准是：**这十秒钟的视频是否有趣，是否可能吸引孩子的注意力**。
 
