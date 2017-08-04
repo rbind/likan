@@ -79,7 +79,7 @@ otype(df$y) # 因子（factor）属于S3类型</code></pre>
 ftype(mean)</code></pre>
 <pre><code>## function (x, ...) 
 ## UseMethod(&quot;mean&quot;)
-## &lt;bytecode: 0x7f922797af90&gt;
+## &lt;bytecode: 0x7f9316897668&gt;
 ## &lt;environment: namespace:base&gt;
 ## [1] &quot;s3&quot;      &quot;generic&quot;</code></pre>
 <p>有些S3范型，如<code>[</code>、<code>sum()</code>、和<code>cbind</code>，无法调用<code>UseMethod()</code>，因为这些范型是基于C语言代码编写的。相对的，它们可以调用C语言函数<code>DispatchGroup()</code>或者<code>DispatchOrEval()</code>。C语言代码中调用<em>方法分派</em>的函数叫做<em>内在范型</em>（internal generics）。这些函数的说明文档可以通过<code>?&quot;internal generic&quot;</code>函数来调用。函数<code>ftype()</code>也能识别这些特定函数。</p>
@@ -113,9 +113,10 @@ methods(&quot;t.test&quot;)</code></pre>
 <p>我们也可以列出与某一个<em>类型</em>相关的拥有<em>方法</em>的所有范型函数：</p>
 <pre class="r"><code>methods(class = &quot;ts&quot;)</code></pre>
 <pre><code>##  [1] [             [&lt;-           aggregate     as.data.frame cbind        
-##  [6] cycle         diff          diffinv       kernapply     lines        
-## [11] monthplot     na.omit       plot          print         t            
-## [16] time          window        window&lt;-     
+##  [6] coerce        cycle         diff          diffinv       initialize   
+## [11] kernapply     lines         Math          Math2         monthplot    
+## [16] na.omit       Ops           plot          print         show         
+## [21] slotsFromS3   t             time          window        window&lt;-     
 ## see &#39;?methods&#39; for accessing help and source code</code></pre>
 <p>但是，如我们下一节将要学到的，我们没有办法列出所有的S3类型。</p>
 </div>
