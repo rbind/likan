@@ -12,7 +12,7 @@ header-includes:
 - \setCJKmainfont{Source Han Serif CN}
 ---
 
-本文主要内容来自 Benjamin 等 72 位科学家将于近期 (2017) 发表在《自然人类行为》杂志上的文章。
+本文主要内容来自 Benjamin 等 72 位科学家将于近期 (2017) 发表在《自然人类行为》杂志上的文章。读者还可以参看 Chawla 于 8 月 3 日发表在 《自然》 杂志的相关评论。
 
 # 1. 简单介绍
 
@@ -289,8 +289,10 @@ brackets(1.03, odd_1_40_2, 1.03, odd_1_5_2, h = NULL, ticks = 0.5, curvature = 0
 
 2). Berger, J. O., & Sellke, T. (1987). Testing a Point Null Hypothesis: The Irreconcilability of P Values and Evidence. Journal of the American Statistical Association, 82(397), 112-122. 
 
-3). Johnson, V. E. (2013). Revised standards for statistical evidence. *Proceedings of the National Academy of Sciences of the United States of America, 110*(48), 19313-19317. doi:10.1073/pnas.1313476110
+3). Chawla, D. S. (2017). P-value shake-up proposed. *Nature, 548*, 16-17. doi:10.1038/nature.2017.22375
 
-4). Kass, R. E., & Raftery, A. E. (1995). Bayes Factors. *Journal of the American Statistical Association, 90*(430), 773-795. doi:10.1080/01621459.1995.10476572
+4). Johnson, V. E. (2013). Revised standards for statistical evidence. *Proceedings of the National Academy of Sciences of the United States of America, 110*(48), 19313-19317. doi:10.1073/pnas.1313476110
 
-5). Sellke, T., Bayarri, M. J., & Berger, J. O. (2001). Calibration of  p Values for Testing Precise Null Hypotheses. *The American Statistician, 55*(1), 62-71. doi:10.1198/000313001300339950
+5). Kass, R. E., & Raftery, A. E. (1995). Bayes Factors. *Journal of the American Statistical Association, 90*(430), 773-795. doi:10.1080/01621459.1995.10476572
+
+6). Sellke, T., Bayarri, M. J., & Berger, J. O. (2001). Calibration of  p Values for Testing Precise Null Hypotheses. *The American Statistician, 55*(1), 62-71. doi:10.1198/000313001300339950
