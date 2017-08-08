@@ -1,4 +1,4 @@
-BaseRUL = "https://likan.info/"
+baseurl = "https://likan.info/"
 relativeurls = true
 languageCode = "en-us"
 title = "Likan | 侃侃迩行"
