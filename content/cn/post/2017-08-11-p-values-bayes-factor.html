@@ -1,6 +1,6 @@
 ---
 title: "统计的显著性水平"
-author: "战立侃"
+author: "侃侃迩行"
 date: '2017-08-11'
 output:
   blogdown::html_page:
@@ -16,17 +16,17 @@ output:
 
 <div id="TOC">
 <ul>
-<li><a>1. 统计检验和显著性水平</a></li>
-<li><a>2. 显著性水平和贝叶斯因子</a></li>
-<li><a>3. 显著性水平和假阳性率</a></li>
-<li><a>4. 显著性水平和统计效力</a></li>
-<li><a>5. 总结</a></li>
-<li><a>6. 参考文献</a></li>
+<li><a href="#hypothesis-testing">1. 统计检验和显著性水平</a></li>
+<li><a href="#bf">2. 显著性水平和贝叶斯因子</a></li>
+<li><a href="#fpr">3. 显著性水平和假阳性率</a></li>
+<li><a href="#power">4. 显著性水平和统计效力</a></li>
+<li><a href="#summary">5. 总结</a></li>
+<li><a href="#references">6. 参考文献</a></li>
 </ul>
 </div>
 
 <p>提高某些领域研究可重复性的一个直接和简单的方法是提高假设检验的统计显著性水平。</p>
-<div class="section level1">
+<div id="hypothesis-testing" class="section level1">
 <h1>1. 统计检验和显著性水平</h1>
 <p>统计检验中，研究者最终希望确定零假设 (<span class="math inline">\(H_{i,i=0}\)</span>) 和备则假设 (<span class="math inline">\(H_{i, i \neq 0}\)</span>) 中哪一个正确。由于这两种状态的不相容性，事实情况只有两种：要么是零假设正确；要么是其中一个备择假设如 <span class="math inline">\(H_1\)</span> 正确。让事情变得更为复杂的是，研究者用于判断哪个假设正确的证据并不来自于数据整体，而来自于整体数据的一部分，即一个样本。样本统计量对于总体参数来说始终存在一定偏差，即抽样误差。</p>
 <p>第一、假如事实情况是零假设正确。假定零假设 (<span class="math inline">\(H_0\)</span>) 整体服从平均值为 <span class="math inline">\(\mu_0 = 0\)</span>, 标准差为 <span class="math inline">\(\sigma = 1\)</span> 的正态分布。即使在该零假设正确的前提下，由于抽样误差的原因，一个样本量为 <span class="math inline">\(n=1\)</span> 的随机样本的样本平均值 (<span class="math inline">\(\overline{X}_i\)</span>) 理论上来说可以是位于 <span class="math inline">\([-\infty, +\infty]\)</span> 之间的任何一个数。但是从概率上来讲，样本平均值在总体平均值 0 的位置出现的概率最高；一个位置离总体平均值越远，样本平均值在该位置出现的概率就越低。例如，一个样本平均值出现在 <span class="math inline">\(\pm 3\)</span> 位置上的概率就非常低了。 以样本平均值的大小为横坐标，该样本平均值出现的概率为纵坐标，可以画出如下样本平均值的概率密度分布图。</p>
@@ -61,7 +61,7 @@ output:
 <p>以及下面这个图：</p>
 <p><img src="/cn/post/2017-08-11-p-values-bayes-factor_files/figure-html/Figure_1_05-1.png" width="768" style="display: block; margin: auto;" /></p>
 </div>
-<div class="section level1">
+<div id="bf" class="section level1">
 <h1>2. 显著性水平和贝叶斯因子</h1>
 <p>如前所述，<em>P</em> 值指在零假设 (<span class="math inline">\(H_0\)</span>) 正确的条件下，研究者记录到某个观测值 (<span class="math inline">\(\overline{X}_{obs}\)</span>) 的概率，即 <span class="math inline">\(Pr(\overline{X}_{obs}|H_0)\)</span>。而研究者关心的是记录到该观测值时零假设或备择假设正确与否的概率，即<span class="math inline">\(Pr(H_0|\overline{X}_{obs})\)</span> 或 <span class="math inline">\(Pr(H_1|\overline{X}_{obs})\)</span> 概率的大小。大多数情况下，研究者通常无法以一种二元论的方式去确定零假设还是备择假设正确，而只能从概率上哪讲哪个假设正确的可能性更大。判断哪个可能性更大的更直接证据来自于备择假设 <span class="math inline">\(H_1\)</span> 和零假设 <span class="math inline">\(H_0\)</span> 发生概率的比率 (Odds)。如下图所示，根据贝叶斯原则，在观测值 <span class="math inline">\(\overline{X}_{obs}\)</span> 条件下，备择假设和零假设发生率之比受<strong>贝叶斯因子</strong> (Bayes factor, <strong>BF</strong>) 和<strong>先验概率</strong> (prior odds) 两个因素的共同影响。</p>
 <p><span class="math display">\[
@@ -115,7 +115,7 @@ BF \times (\text{prior odds})
 <p>用上述四种方法确定备择假设或者假定备择假设具有某种特征后，<em>P</em>-值和贝叶斯因子的关系可以用下图表示(Benjamin et al., 2017)：</p>
 <p><img src="/cn/post/2017-08-11-p-values-bayes-factor_files/figure-html/Figure_2_01-1.png" width="768" style="display: block; margin: auto;" /> 如上图所示，显著性水平为 <span class="math inline">\(P &lt; .05\)</span> 的双尾检验所对应的贝叶斯因子仅为 <span class="math inline">\(2.5 - 3.4\)</span>。根据前面的描述，此时否定零假设的证据是非常弱的。如果我们把研究的先验概率设定为 <span class="math inline">\(1:10\)</span>，此时备择假设发生的可能性仅为零假设发生可能性的三分之一，即 <span class="math inline">\(\frac{1}{3} = 3.4 \times \frac{1}{10}\)</span>。而当我们把显著性水平设定为 <span class="math inline">\(p &lt; .005\)</span> 的水平上时，贝叶斯因子就增加到了 <span class="math inline">\(13.80-25.70\)</span>。根据前述标准，此时证据力度是很强的。在同样的先验概率下，备择假设和零假设的比率增加到了 <span class="math inline">\(2.57\)</span>。</p>
 </div>
-<div class="section level1">
+<div id="fpr" class="section level1">
 <h1>3. 显著性水平和假阳性率</h1>
 <p>在贝叶斯框架下，<em>P</em>-值的一个对应替代方案是<strong>假阳性率</strong>（false positive rate，FPR)。错误发现率指在所有零假设被拒绝的情景中，零假设实际上为真的概率。假设一项研究中，零假设 (<span class="math inline">\(H_0\)</span>) 为真的概率为 <span class="math inline">\(\phi\)</span>，备择假设 (<span class="math inline">\(H_i\)</span>) 为真概率则为 <span class="math inline">\(1-\phi\)</span>。如果把假设检验的临界值设定为 <span class="math inline">\(\alpha\)</span>， 即当 <span class="math inline">\(P &lt; \alpha\)</span> 时拒绝零假设 (<span class="math inline">\(H_0\)</span>)。因为零假设发生的概率是 <span class="math inline">\(\phi\)</span>，那么研究者错误拒绝零假设的概率为 <span class="math inline">\(\alpha\phi\)</span>。另外如果该假设检验的统计效力为 <span class="math inline">\(1-\beta\)</span>，那么研究者正确拒绝零假设的概率为 <span class="math inline">\((1-\beta)(1-\phi)\)</span>。 此时错误发现率可以表示为错误决绝零假设的概率与所有拒绝零假设的概率的比率，如下图：</p>
 <p><span class="math display">\[
@@ -128,7 +128,7 @@ BF \times (\text{prior odds})
 <p><img src="/cn/post/2017-08-11-p-values-bayes-factor_files/figure-html/Figure_3_01-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>如上图所示，低统计效力加上低显著性水平 <span class="math inline">\(\alpha = 0.05\)</span> 将产生高比率的假阳性率。如果显著性水平设置为 <span class="math inline">\(P &lt; 0.05\)</span>，先验概率设定为 <em>1:10</em>，那么无论统计效力处于什么水平，该分析的假阳性率将<strong>不低于 33%</strong>。心理学及许多科学研究的一个事实是统计效力都比较低。而如果把显著性水提高到 <em>0.005</em>，则在绝大部分统计效力范围内，假阳性率可降到 <span class="math inline">\(5\%\)</span> 之下。</p>
 </div>
-<div class="section level1">
+<div id="power" class="section level1">
 <h1>4. 显著性水平和统计效力</h1>
 <p>提高统计显著性水平的缺点也是显而易见的，即提高统计的显著性水平将显著降低假设检验的统计效力、提高 II 类错误的概率。如下图所示，在 <span class="math inline">\(\alpha=0.05\)</span> 的显著性水平下，该显著性检验的统计效力为 <span class="math inline">\(1-\beta=0.80\)</span> 。 <img src="/cn/post/2017-08-11-p-values-bayes-factor_files/figure-html/Figure_1_08-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>但当我们把统计显著性提高到 <span class="math inline">\(\alpha=0.005\)</span> 时，该检验的统计效力就降低到了 <span class="math inline">\(1-\beta=0.50\)</span>。</p>
@@ -136,13 +136,13 @@ BF \times (\text{prior odds})
 <p>此时，如果想保持原来的统计效力水平，研究者就需要提高研究的样本量（实际应用中，这将增加项目的研究成本）。如下图所示，如果我们把样本量增加 70%，检验的统计效力将恢复到 <span class="math inline">\(1-\beta=0.80\)</span> 的水平。</p>
 <p><img src="/cn/post/2017-08-11-p-values-bayes-factor_files/figure-html/Figure_1_10-1.png" width="768" style="display: block; margin: auto;" /></p>
 </div>
-<div class="section level1">
+<div id="summary" class="section level1">
 <h1>5. 总结</h1>
 <p>如前所述，提高假设检验中的统计显著性水平能显著提高统计检验的贝叶斯因子水平、显著降低统计检验的假阳性率。在实践中，提高统计显著性水平也能显著提高科学研究的可重复性 (Benjamin et al., 2017)。正是基于上述原因，目前有 72 为统计学家联名发文希望在传统上使用两个标准差 (<span class="math inline">\(\alpha = .05\)</span>) 作为显著性水平的研究领域应该把显著性水平提高到三个标准差 (<span class="math inline">\(\alpha = .005\)</span>) (Benjamin et al., 2017)。</p>
 <p>在某些先验概率非常低的探索性研究领域，研究者需要远比 0.005 更为严苛的显著性水平。如通常认为基因和高能物理研究领域的显著性水平应该符合五个标准差原则 (5-sigma)，即显著性水平大约为 <span class="math inline">\(P &lt; 3\times 10^{-7}\)</span>。</p>
 <p>提高统计的显著性水平并不是解决研究可重复性问题的唯一方法。其他可能的解决方案包括选择更为合适的统计方法，如模型比较和贝叶斯学习等、更周到的实验设计、预实验等等。当然，改变 <em>P</em>-值的显著性水平最为直接和最为简单的方法。</p>
 </div>
-<div class="section level1">
+<div id="references" class="section level1">
 <h1>6. 参考文献</h1>
 <p>Altman, N., &amp; Krzywinski, M. (2017). Points of Significance: Interpreting P values. <em>Nature Methods, 14</em>(3), 213-214. <a href="doi:10.1038/nmeth.4210" class="uri">doi:10.1038/nmeth.4210</a></p>
 <p>Benjamin, D. J., et al.,. (2017). Redefine Statistical Significance. <em>Nature Human Behavior</em>. doi: <a href="http://osf.io/preprints/psyarxiv/mky9j" class="uri">http://osf.io/preprints/psyarxiv/mky9j</a></p>
