@@ -65,24 +65,12 @@ type: cv
 
 ## Professional skills
 
-- Stimuli Presentation softwares </br>
-  Such as, [E-prime](https://www.pstnet.com/eprime.cfm), [Psychopy](http://www.psychopy.org), [Psychtoolbox](http://psychtoolbox.org), and [Presentation](https://www.neurobs.com/presentation)
+- Statsistics. I teached two statistical courses to master students. I have moderate experience in using *R* for statistical modeling and data visualization. Besides the default ones, I used the following R packages a lot: [*data.table*](http://r-datatable.com), [*dplyr*](http://dplyr.tidyverse.org), [*ggplot2*](http://ggplot2.tidyverse.org), [*car*](https://cran.r-project.org/web/packages/car/index.html), [*lme4*](https://github.com/lme4/lme4), [*gam*](https://cran.r-project.org/web/packages/gam/index.html) etc. I also created a R package myself, called [*acqr*](https://github.com/likanzhan/acqr).
 
-- Statistical analysis and data visualization softwares </br>
-  Moderate experience in using R for statistics and data visualization; such as, </br>
-  Packages *lme4*, *car*, for data analysis, e.g., GLMMs; </br>
-  Package *ggplot2*, for data visualization.
+- Experimental techniques. I'm familiar with [E-prime](https://www.pstnet.com/eprime.cfm), [Psychopy](http://www.psychopy.org), [Psychtoolbox](http://psychtoolbox.org), and [Presentation](https://www.neurobs.com/presentation) for presenting test stimuli. I have advanced experience in using Eyelink II/1000 plus (SR Research Ltd.), such as *Experiment Builder* for experiment building, and *Data Viewer* for data analysis. I am in charge of establishing the first Child MEG lab in China, familiar with *Yokogawa* MEG system for equipment maintenance and MEG data acquisition. I'm also familiar with *BESA*, and some Matlab packages for analyzing the E/MEG data, such as [*fieldtrip*](http://www.fieldtriptoolbox.org) and [*SPM12*](https://github.com/neurodebian/spm12).
 
-- Eye tracker </br>
-  Advanced experience in using Eyelink II/1000 plus (SR Research Ltd.), such as</br>
-  *Experiment Builder*, for experiment building; </br>
-  *Data Viewer*, for data analysis.
+- Typesetting. I like to write with *Latex*, *Markdown*, and *R Markdown*.
 
-- Neuroimaging </br>
-  In charge of establishing the first Child MEG lab in China, familiar with </br>
-  *Yokogawa* MEG system, for equipment maintenance and data acquisition; </br>
-  *BESA*, and packages *fieldtrip* and *SPM12* of Matlab, for data analysis.
+- Perssonal website: I created a [personal website](https://likan.info) with [*hugo*](https://gohugo.io) and [*blogdown*](https://github.com/rstudio/blogdown).
 
-- LaTeX </br>
-  Familiar with LaTeX for typesetting, </br>
-  such as packages *beamer* and *tikz*
+
