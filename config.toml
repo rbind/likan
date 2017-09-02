@@ -1,16 +1,14 @@
 baseurl = "https://likan.info/"
-relativeurls = true
 languageCode = "en-us"
 title = "Likan | 侃侃迩行"
-theme = "hugo-lithium-theme"
-googleAnalytics = "google analytics"
+theme = "hugo-ivy"
+googleAnalytics = "UA-1988641-2"
 disqusShortname = "https-likanzhan-github-io"
-MetaDataFormat = "yaml" # format of a new post
-# SectionPagesMenu = "main"
-hasCJKLanguage = true  # .WordCount works correctly for chinese
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+hasCJKLanguage = true  # .WordCount works correctly for chinese
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
+MetaDataFormat = "yaml" # format of a new post
 
 [[menu.main]]
     name = "English"
@@ -83,31 +81,30 @@ footnotereturnlinkcontents = "↩"
     weight = 6
 
 [params]
-    author = "Likan Zhan"
-    intro = false
-    headline = "headline"
-    description = "Web description"
+    description = "Likan Zhan's personal website"
+    footer = "&copy; [Likan Zhan](/) 2017 - 2017 | [Github](https://github.com/likanzhan) | [Twitter](https://twitter.com/likanzhan) | [Weibo](http://weibo.com/1763551555)"
+    disqusURL = "https://likanzhan.github.io"
+    customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
     githubContentURL = "https://github.com/rbind/likan/edit/master/content/"
     # options for highlight.js (version, additional languages, and theme)
-    dateFormat = "2006-01-02" # "2006-01-02, Mon, "
-    highlightjsVersion = "9.9.0"
-    highlightjsLang = ["r", "yaml"]
+    highlightjsVersion = "9.12.0"
+    highlightjsLang = ["r", "yaml", "tex"]
     highlightjsTheme = "github"
-    disqusURL = "https://likanzhan.github.io"
-    customCSS = ["css/custom.css"]
-    customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]  
+    dateFormat = "2006-01-02" # "2006-01-02, Mon, "
 
-[params.logo]
-  url = "bodhi.png"
-  width = 100
-  height = 100
-  alt = "Logo"
+[params.author]
+      en = "Likan Zhan"
+      cn = "战立侃"
 
-[params.social]
-  twitter = "likanzhan"
-  weibo = "zhanlikan"
-  github = "likanzhan"
-  email = "zhanlikan@hotmail.com"
+[params.logo.en]
+     img = "/logo/bodhi.png"
+     url = "/"
+     alt = "Likan Zhan"
+     tag = ""
 
-[Taxonomies]
-  tag = "tags"
+[params.lang.edit]
+     cn = "编辑"
+[params.lang.license]
+     cn = "版权"
+[params.lang.subscribe]
+     cn = "订阅"
