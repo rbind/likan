@@ -1,1 +1,1 @@
-This site is created with [Hugo](https://gohugo.io)  and [blogdown](https://bookdown.org/yihui/blogdown/), and is hosted on [netlify](https://app.netlify.com). The theme of this site is [hugo-ivy](https://ivy.yihui.name).
+This site is created with [Hugo](https://gohugo.io)  and [blogdown](https://bookdown.org/yihui/blogdown/), and is hosted on [netlify](https://app.netlify.com). The theme is [hugo-ivy](https://ivy.yihui.name).
