@@ -8,7 +8,8 @@ show_toc: true
 ---
 # 1. Lecture Time and Location
 
-TBA
+- Time: Monday, 08:00 - 11:50;
+- Location: TBA
 
 # 2. Prerequisites
 
@@ -48,6 +49,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - Venables, W. N., & Ripley, B. D. (2002). *Modern Applied Statistics with S*: Springer.
     - Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting Linear Mixed-Effects Models Using lme4. *Journal of Statistical Software, 67*(1). doi:10.18637/jss.v067.i01
     - Hastie, T. J., & Tibshirani, R. J. (1990). *Generalized additive models*. Landon, UK: Chapman and Hall.
+    - Venables, W. N., & Ripley, B. D. (2002).  *Modern Applied Statistics with S*. Springer.
     - Wood, S. N. (2006). *Generalized Additive Models: an introduction with R*: CRC Press.
 
 - Probability and statistics
@@ -55,6 +57,10 @@ Linear models, their variants, and extensions are among the most useful and wide
     - Poole, D. (2015). *Linear Algebra: A Modern Introduction* (4 ed.). Stamford, CT: Gengage Learning.
     - Ugarte, M. D., Militino, A. F., & Arnholt, A. T. (2016). *Probability and statistics with R* (2 ed.). Boca Raton, UK: CRC Press.
     - Stewart, J. (2016). *Calculus: Early transcendentals* (8 ed.). Boston, MA: Cengage Learning.
+
+- Typesetting
+    - Xie, Y. (2014). *Dynamic Documents with R and knitr* (2 ed.). Boca Raton, FL: CRC Press.
+
 
 # 5. Syllabus, Lecture Notes, and Scripts
 
