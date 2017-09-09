@@ -65,6 +65,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 5. Syllabus, Lecture Notes, and Scripts
 
 - Part 0: Introduction
+    - 00. Course introduction
     - 01. R basics
 - Part I: Data craft
     - 02. Examining Data
