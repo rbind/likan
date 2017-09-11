@@ -25,33 +25,32 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. References
 
 - R manuals
-    - [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
-    - [R Data Import/Export](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
-    - [R Installation and Administration](https://cran.r-project.org/doc/manuals/r-release/R-admin.pdf)
-    - [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf)
-    - [The R language definition](https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf)
-    - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.pdf)
-    - [The R reference Index](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)
+    - An Introduction to R, [link](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
+    - R Data Import/Export, [link](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
+    - R Installation and Administration, [link](https://cran.r-project.org/doc/manuals/r-release/R-admin.pdf)
+    - Writing R Extensions, [link](https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf)
+    - The R language definition, [link](https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf)
+    - R Internals, [link](https://cran.r-project.org/doc/manuals/r-release/R-ints.pdf)
+    - The R reference Index, [link](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)
 
 - R language in General
     - Chambers, J. M. (2016). *Extending R*. Boca Baton, UK: CRC Press.
-    - Wickham, H. (2015). *Advanced R*. Boca Baton, UK: CRC Press.
-    - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media.
+    - Wickham, H. (2015). *Advanced R*. Boca Baton, UK: CRC Press. [link](http://adv-r.had.co.nz)
+    - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [link](http://r4ds.had.co.nz)
 
 
 - R graphics
     - Murrell, P. (2011). *R Graphics* (2 ed.). Boca Raton, FL: CRC Press.
     - Kassambara, A. (2015). *Complete Guide to 3D Plots in R*: STHDA.
-    - Wickham, H. (2009). *ggplot2: Elegant Graphics for Data Analysis*: Springer.
+    - Wickham, H. (2009). *ggplot2: Elegant Graphics for Data Analysis*. New York, NY: Springer.
 
 - Statistical models
     - Chambers, J. M., & Hastie, T. J. (Eds.). (1993). *Statistical Models in S*. London, UK: Champman & Hall.
     - **Fox, J. (2016). *Applied Regression Analysis and Generalized Linear Models* (3 ed.). Thousand Oaks, CA: SAGE.**
-    - Venables, W. N., & Ripley, B. D. (2002). *Modern Applied Statistics with S*: Springer.
-    - Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting Linear Mixed-Effects Models Using lme4. *Journal of Statistical Software, 67*(1). doi:10.18637/jss.v067.i01
     - Hastie, T. J., & Tibshirani, R. J. (1990). *Generalized additive models*. Landon, UK: Chapman and Hall.
     - Venables, W. N., & Ripley, B. D. (2002).  *Modern Applied Statistics with S*. Springer.
     - Wood, S. N. (2006). *Generalized Additive Models: an introduction with R*: CRC Press.
+    - Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting Linear Mixed-Effects Models Using lme4. *Journal of Statistical Software, 67*(1). doi:10.18637/jss.v067.i01
 
 - Probability and statistics
     - Fieller, N. (2016). *Basics of matrix algebra for statistics with R*. Boca Raton, FL: CRC Press.
