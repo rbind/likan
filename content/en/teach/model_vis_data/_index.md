@@ -8,9 +8,9 @@ show_toc: true
 ---
 # 1. Lecture Time and Location
 
-- Time: 08:00 - 10:50， Monday;
+- Time: 08:00 - 10:50, Monday;
 - Location: *Room 206, Teaching Building 2*
-- Starting from: 18, SEP;
+- Start from: 18, SEP;
 
 # 2. Prerequisites
 
