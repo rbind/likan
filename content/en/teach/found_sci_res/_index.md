@@ -12,7 +12,7 @@ show_toc: true
       SEP 21; OCT ~~5~~, 19; NOV 2, 16, 30; DEC 14, 28;
     - 08:00 - 09:50, Odd Thursdays, i.e., <br>
       SEP 29; OCT 12, 26; NOV 9, 23 ; DEC  7, 21; JAN 4;
-- Location: *Room 302, Teaching Building 2*
+- Location: Room 302, Teaching Building 2;
 
 # 2. Course Information
 
