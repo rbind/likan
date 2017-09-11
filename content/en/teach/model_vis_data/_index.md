@@ -14,7 +14,7 @@ show_toc: true
 
 # 2. Prerequisites
 
-Students of this course should be familiar with the basic concepts used in statistics, such as *Mean*, *Standard Deviation*, *Normal Distribution*, *t-statistic*, *ANOVA*, *F-ratio*, *p-value*, *Hypothesis Testing* etc. To acheive this, Students should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/), or other courses at the same level. Students can learning these basic concepts by themselves.
+Students of this course should be familiar with the basic concepts used in statistics, such as *Mean*, *Standard Deviation*, *Normal Distribution*, *t-statistic*, *ANOVA*, *F-ratio*, [*p-value*](https://likan.info/cn/post/2017-08-11-p-values-bayes-factor/), *Hypothesis Testing* etc. To acheive this, Students should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/), or other courses at the same level. Students can learning these basic concepts by themselves.
 
 # 3. Course Information
 
@@ -25,18 +25,18 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. References
 
 - R manuals
-    - An Introduction to R, [link](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
-    - R Data Import/Export, [link](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
-    - R Installation and Administration, [link](https://cran.r-project.org/doc/manuals/r-release/R-admin.pdf)
-    - Writing R Extensions, [link](https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf)
-    - The R language definition, [link](https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf)
-    - R Internals, [link](https://cran.r-project.org/doc/manuals/r-release/R-ints.pdf)
-    - The R reference Index, [link](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)
+    - An Introduction to R, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
+    - R Data Import/Export, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
+    - R Installation and Administration, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-admin.pdf)
+    - Writing R Extensions, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf)
+    - The R language definition, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf)
+    - R Internals, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-ints.pdf)
+    - The R reference Index, [Full text](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)
 
 - R language in General
     - Chambers, J. M. (2016). *Extending R*. Boca Baton, UK: CRC Press.
-    - Wickham, H. (2015). *Advanced R*. Boca Baton, UK: CRC Press. [link](http://adv-r.had.co.nz)
-    - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [link](http://r4ds.had.co.nz)
+    - Wickham, H. (2015). *Advanced R*. Boca Baton, UK: CRC Press. [Full text](http://adv-r.had.co.nz)
+    - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [Full text](http://r4ds.had.co.nz)
 
 
 - R graphics
