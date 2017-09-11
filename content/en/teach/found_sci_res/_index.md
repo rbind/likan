@@ -9,7 +9,7 @@ show_toc: true
 # 1. Lecture Time and Location
 - Time:
     - 08:00 - 11:50, Even Thursdays, i.e., <br>
-      SEP 21; OCT 5, 19; NOV 2, 16, 30; DEC 14, 28;
+      SEP 21; OCT ~~5~~, 19; NOV 2, 16, 30; DEC 14, 28;
     - 08:00 - 09:50, Odd Thursdays, i.e., <br>
       SEP 29; OCT 12, 26; NOV 9, 23 ; DEC  7, 21; JAN 4;
 - Location: *Room 302, Teaching Building 2*
