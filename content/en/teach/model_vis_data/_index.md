@@ -8,7 +8,7 @@ show_toc: true
 ---
 # 1. Lecture Time and Location
 
-- Time: Monday, 08:00 - 11:50;
+- Time: Monday, 08:00 - 10:50;
 - Starting Day: 18, SEP;
 - Location: TBA
 
