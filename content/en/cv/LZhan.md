@@ -1,5 +1,6 @@
 ---
 title: "Curriculum Vitae"
+date: '2017-08-01'
 disable_comments: yes
 output:
   pdf_document:
