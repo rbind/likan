@@ -2,7 +2,7 @@
 title: "人性本善吗？"
 author: "侃侃迩行"
 date: '2017-06-10'
-tags: []
+tags: [Belief in good]
 show_toc: true
 ---
 

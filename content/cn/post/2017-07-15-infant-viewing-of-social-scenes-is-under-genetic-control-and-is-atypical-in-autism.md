@@ -3,7 +3,7 @@ title: 婴儿对社会性刺激的注视模式：双生子和自闭症研究
 author: "侃侃迩行"
 date: '2017-07-15'
 categories: []
-tags: []
+tags: [ASD, Infant]
 show_toc: true
 ---
 

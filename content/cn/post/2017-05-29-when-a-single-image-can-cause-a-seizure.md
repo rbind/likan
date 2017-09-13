@@ -2,6 +2,7 @@
 title: "什么样的图片能引发某些人的痉挛？"
 author: 侃侃迩行
 date: '2017-05-29'
+tags: [photos, epilepsy]
 ---
 # 1. 什么图片容易引发痉挛？
 

@@ -3,6 +3,7 @@ title: "流体智力的核心成分是什么？"
 author: "侃侃迩行"
 date: '2017-05-03'
 show_toc: true
+tags: [Fluent Intelligence, IQ]
 ---
 
 流体智力的核心成分除了工作记忆、加工速度，或许还包括组合能力。

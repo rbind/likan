@@ -2,7 +2,7 @@
 title: 'cumsum(x) and diff(x)'
 date: '2017-03-07'
 author: "Likan Zhan"
-tags: ["stat", "r"]
+tags: [Statistics, R]
 ---
 Addapted from RHertel' [Stackoverflow](http://stackoverflow.com/questions/32009610/cumsum-the-opposite-of-diff-in-r) post.
 

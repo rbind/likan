@@ -3,6 +3,7 @@ title: "人类因何会做出对自己无益的利他行为？"
 author: "侃侃迩行"
 date: '2017-05-01'
 show_toc: true
+tags: [Altruism, Social Psychology]
 ---
 
 # 1. 研究背景

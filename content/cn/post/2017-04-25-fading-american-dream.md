@@ -2,6 +2,7 @@
 title: "美国人阶层上升的通道在消失"
 author: "侃侃迩行"
 date: '2017-04-25'
+tags: [Social ladder, Social Psychology]
 ---
 
 阶层上升的一个量化指标是孩子的收入水平比父母的收入水平变高。

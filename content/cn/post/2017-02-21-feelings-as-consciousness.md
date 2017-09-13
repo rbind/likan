@@ -3,7 +3,7 @@ title: 情绪是一种意识状态，而非本能
 author: 侃侃迩行
 date: '2017-02-21'
 categories: []
-tags: []
+tags: [emotion, instinct]
 show_toc: true
 ---
 

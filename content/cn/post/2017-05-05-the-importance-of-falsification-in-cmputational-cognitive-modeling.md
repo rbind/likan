@@ -3,6 +3,7 @@ title: "可证伪性在计算认知建模中的重要性"
 author: "侃侃迩行"
 date: '2017-05-05'
 show_toc: true
+tags: [Falsification, Cognitive Modeling]
 ---
 
 # 1. 背景介绍

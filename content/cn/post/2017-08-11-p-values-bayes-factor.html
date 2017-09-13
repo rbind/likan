@@ -11,6 +11,7 @@ output:
     includes:
       in_header: header.tex
     latex_engine: xelatex
+tags: [statistics, r]
 ---
 
 
@@ -68,7 +69,7 @@ output:
 \frac{\text{Pr }(H_1|\overline{X}_{obs})}{\text{Pr }(H_0|\overline{X}_{obs})}=
 \frac{\text{Pr }(\overline{X}_{obs}|H_1)}{\text{Pr }(\overline{X}_{obs}|H_0)}\times
 \frac{\text{Pr }(H_1)}{\text{Pr }(H_0)}=
-BF \times (\text{prior odds}) 
+BF \times (\text{prior odds})
 \]</span></p>
 <p>第一，关于备择假设和零假设发生概率之比的<strong>先验知识</strong> (prior odds) 通常来源于研究者的前期假设、相关领域科学研究的共识、或同领域相似研究问题的其他研究。通常认为，心理学研究和癌症临床研究中，备择假设和零假设的先验比率约为 <strong>1:10</strong>。而在前临床的生物医学研究 (preclinical biomedical reaearch) 领域，该先验比率会更低。</p>
 <p>第二、 <strong>贝叶斯因子</strong>来源于观测数据，贝叶斯因子的大小表明了证据的强度。贝叶斯因子越大，观测数据越有能力支持备择假设假设。按照 Kass 和 Raftery (1995) 的观点，贝叶斯因子的大小和证据强度 (strength of evidence) 存在以下关系：</p>
@@ -119,7 +120,7 @@ BF \times (\text{prior odds})
 <h1>3. 显著性水平和假阳性率</h1>
 <p>在贝叶斯框架下，<em>P</em>-值的一个对应替代方案是<strong>假阳性率</strong>（false positive rate，FPR)。错误发现率指在所有零假设被拒绝的情景中，零假设实际上为真的概率。假设一项研究中，零假设 (<span class="math inline">\(H_0\)</span>) 为真的概率为 <span class="math inline">\(\phi\)</span>，备择假设 (<span class="math inline">\(H_i\)</span>) 为真概率则为 <span class="math inline">\(1-\phi\)</span>。如果把假设检验的临界值设定为 <span class="math inline">\(\alpha\)</span>， 即当 <span class="math inline">\(P &lt; \alpha\)</span> 时拒绝零假设 (<span class="math inline">\(H_0\)</span>)。因为零假设发生的概率是 <span class="math inline">\(\phi\)</span>，那么研究者错误拒绝零假设的概率为 <span class="math inline">\(\alpha\phi\)</span>。另外如果该假设检验的统计效力为 <span class="math inline">\(1-\beta\)</span>，那么研究者正确拒绝零假设的概率为 <span class="math inline">\((1-\beta)(1-\phi)\)</span>。 此时错误发现率可以表示为错误决绝零假设的概率与所有拒绝零假设的概率的比率，如下图：</p>
 <p><span class="math display">\[
-\text{false positive rate} \approx 
+\text{false positive rate} \approx
 \frac
 {\alpha\phi}
 {\alpha\phi + (1-\beta)(1-\alpha)}

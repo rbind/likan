@@ -3,6 +3,7 @@ title: "社会性类别认知的起源"
 author: "侃侃迩行"
 date: '2017-05-15'
 show_toc: true
+tags: [Social cognition]
 ---
 
 # 1. 社会类别认知

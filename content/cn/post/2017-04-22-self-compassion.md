@@ -2,8 +2,8 @@
 title: "自我同情感"
 authof: "侃侃迩行"
 date: '2017-04-22'
-draft: false
 show_toc: true
+tags: [Self-Compassion Solution]
 ---
 
 # 1. 什么是自我同情

@@ -3,7 +3,7 @@ title: 元记忆能力发展的神经基础
 author: 侃侃迩行
 date: '2017-07-04'
 categories: []
-tags: []
+tags: [Metamemory, Neuroscience]
 ---
 
 元记忆能力监控 (metamemory monitoring) 指的是个体内省自己记忆的能力，该能力会在儿童期显著增长。但目前研究者并不清楚元记忆能力发展的神经机制，以及其对智力发展的作用。

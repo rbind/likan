@@ -10,6 +10,7 @@ output:
 header-includes:
 - \usepackage{ctex}
 - \setCJKmainfont{Source Han Serif CN}
+tags: [statistics, r]
 ---
 
 本文主要内容来自 Benjamin 等 72 位科学家将于近期 (2017) 发表在《自然人类行为》杂志上的文章。读者还可以参看 Chawla 于 8 月 3 日发表在 《自然》 杂志的相关评论。
@@ -34,7 +35,7 @@ $$
 \frac{\text{Pr }(H_1|X_{obs})}{\text{Pr }(H_0|X_{obs})}=
 \frac{\text{Pr }(X_{obs}|H_1)}{\text{Pr }(X_{obs}|H_0)}\times
 \frac{\text{Pr }(H_1)}{\text{Pr }(|H_0)}=
-BF \times (\text{prior odds}) 
+BF \times (\text{prior odds})
 $$
 
 这个公式中，*BF* 是**贝叶斯因子** (Bayes factor) 的简称。贝叶斯因子是研究者可以从观测数据中计算出来的证据。按照 Kass 和 Raftery (1995) 的观点，贝叶斯因子的大小和证据强度 (strength of evidence) 存在以下关系：
@@ -89,12 +90,12 @@ U_05  = max(data[data$p == "0.05", -1])
 L_05  = min(data[data$p == "0.05", -1])
 
 # plot margins
-# par(family = "Source Han Serif CN") # STKaiti                                     
+# par(family = "Source Han Serif CN") # STKaiti
 par(mai = c(0.8, 0.8, 0.1, 0.6))
 par(mgp = c(2, 1, 0))
 matplot(p, yy, type = 'n', log = 'xy',
         xlab = expression(paste(italic(P) , "-value")),
-        ylab = "Bayes Factor", 
+        ylab = "Bayes Factor",
         ylim = c(0.3, 100), bty = "n", xaxt = "n", yaxt = "n")
 lines(p, bfPow, col = "red", lty = 1, lwd = 2)
 lines(p, bfLR, col = "black", lty = 2, lwd = 2)
@@ -163,7 +164,7 @@ bff(type2 = 0.2)
 其次，在多数研究领域，$P < 0.005$ 所导致的假阳性率 (false positive rate) 水平是合理和可接受的。假阳性指研究者得出了统计上显著，即得出了拒绝零假设的结论，但实际上零假设是正确的。如果用 $\phi$ 表示零假设正确的概率，$(1-\beta)$ 表示正确拒绝零假设的统计效力的大小，$\alpha$ 表示 I 类错误和显著性水平的大小，那么随着被检验整体的变大，假阳性率可以用如下公式表示：
 
 $$
-\text{false positive rate} \approx 
+\text{false positive rate} \approx
 \frac
 {\alpha\phi}
 {\alpha\phi + (1-\beta)(1-\alpha)}
@@ -173,8 +174,8 @@ $$
 
 ```{r label = "Figure_2", echo = FALSE, eval = TRUE}
 #graph margins
-pow1 = c(5 : 999) / 1000 # power range for 0.005 tests 
-pow2 = c(50 : 999) / 1000 # power range for 0.05 tests 
+pow1 = c(5 : 999) / 1000 # power range for 0.005 tests
+pow2 = c(50 : 999) / 1000 # power range for 0.05 tests
 
 pow   <- c("pow1", "pow2", "pow2", "pow1",  "pow2",  "pow1")
 alpha <- c( 0.005,   0.05,   0.05,  0.005,    0.05,   0.005)
@@ -184,9 +185,9 @@ col   <- c("blue", "blue",  "red",  "red", "green", "green")
 df <- data.frame(pow, alpha, pi0, lty, col, stringsAsFactors=FALSE)
 
 ddata <- function(
- pow = "pow1", 
- alpha = 0.005, 
- pi0 = 5/6, 
+ pow = "pow1",
+ alpha = 0.005,
+ pi0 = 5/6,
  id
 ){
  N = 10^6
@@ -208,30 +209,30 @@ yy = ddata(pow = pow, alpha = alpha, pi0 = pi0)
 lines(xx, yy, lty = lty, col = col, lwd = 2)
 }
 
-# png("Figure_2.png", width = 10, height = 8, units = "in", res = 600) # Print the plot 
-#par(family = "Source Han Serif CN") # STKaiti                                     
-par(mai = c(0.8, 0.8, 0.1, 0.1)) 
+# png("Figure_2.png", width = 10, height = 8, units = "in", res = 600) # Print the plot
+#par(family = "Source Han Serif CN") # STKaiti
+par(mai = c(0.8, 0.8, 0.1, 0.1))
 par(mgp = c(2, 1, 0))
-plot(x = pow1, y = ddata(), type='n', ylim = c(0, 1), xlim = c(0, 1.5), 
+plot(x = pow1, y = ddata(), type='n', ylim = c(0, 1), xlim = c(0, 1.5),
      xlab = 'Power',
-     ylab = 'False positive rate', 
-     bty = "n", xaxt = "n", yaxt = "n") 
+     ylab = 'False positive rate',
+     bty = "n", xaxt = "n", yaxt = "n")
 #grid lines
 segments(x0 = -0.058, y0 = (0:5) * 0.2, x1 = 1, lty = 1, col = "gray92")
 for (x in 1:6) lline(x)
 
-#customizing axes 
+#customizing axes
 aat <- c(-0.5, 0, 0.2, 0.4, 0.6, 0.8, 1.0)
 llabels <- c("", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0")
-llegend <- c("Prior odds = 1:40", "Prior odds = 1:10", "Prior odds = 1:5") 
-#llegend <- c("先验概率 = 1:40", "先验概率 = 1:10", "先验概率 = 1:5") 
-axis(side = 2, at = aat, labels = llabels, 
+llegend <- c("Prior odds = 1:40", "Prior odds = 1:10", "Prior odds = 1:5")
+#llegend <- c("先验概率 = 1:40", "先验概率 = 1:10", "先验概率 = 1:5")
+axis(side = 2, at = aat, labels = llabels,
   lwd = 1, las = 1, tck = -0.01, hadj = 0.4, cex.axis = .8)
 axis(side = 1, at = aat, labels = llabels,
   lwd = 1, las = 1, tck = -0.01, padj = -1.1, cex.axis = .8)
-legend(x = 1.05, y = 1, legend = llegend, 
+legend(x = 1.05, y = 1, legend = llegend,
   pch = c(15, 15, 15), col = c("green", "red", "blue"), cex = 1)
-  
+
 library(pBrackets)
 odd_1_5_1  <- ddata(pow = "pow1", alpha = 0.005, pi0 = 5/6, id = 995)
 odd_1_5_2  <- ddata(pow = "pow2", alpha = 0.05, pi0 = 5/6, id = 950)
@@ -242,10 +243,10 @@ odd_1_40_1 <- ddata(pow = "pow1", alpha = 0.005, pi0 = 40/41, id = 995)
 
 t1label <- expression(paste(italic(P), " < 0.05 threshold"))
 t2label <- expression(paste(italic(P), " < 0.005 threshold"))
-text(1.11, (odd_1_5_2 + odd_1_40_2)/2, label = t1label, cex = 0.9,adj=0) 
+text(1.11, (odd_1_5_2 + odd_1_40_2)/2, label = t1label, cex = 0.9,adj=0)
 text(1.11, (odd_1_5_1 + odd_1_40_1)/2, label = t2label, cex = 0.9,adj=0)
 brackets(1.03, odd_1_40_1, 1.03, odd_1_5_1, h = NULL, ticks = 0.5, curvature = 0.7, type = 1, col = 1, lwd = 1, lty = 1, xpd = FALSE)
-brackets(1.03, odd_1_40_2, 1.03, odd_1_5_2, h = NULL, ticks = 0.5, curvature = 0.7, type = 1, col = 1, lwd = 1, lty = 1, xpd = FALSE) 
+brackets(1.03, odd_1_40_2, 1.03, odd_1_5_2, h = NULL, ticks = 0.5, curvature = 0.7, type = 1, col = 1, lwd = 1, lty = 1, xpd = FALSE)
 #dev.off()
 ```
 
@@ -287,7 +288,7 @@ brackets(1.03, odd_1_40_2, 1.03, odd_1_5_2, h = NULL, ticks = 0.5, curvature = 0
 
 1). Benjamin, D. J., et al.,. (2017). Redefine Statistical Significance. *Nature Human Behavior*. doi: http://osf.io/preprints/psyarxiv/mky9j
 
-2). Berger, J. O., & Sellke, T. (1987). Testing a Point Null Hypothesis: The Irreconcilability of P Values and Evidence. Journal of the American Statistical Association, 82(397), 112-122. 
+2). Berger, J. O., & Sellke, T. (1987). Testing a Point Null Hypothesis: The Irreconcilability of P Values and Evidence. Journal of the American Statistical Association, 82(397), 112-122.
 
 3). Chawla, D. S. (2017). P-value shake-up proposed. *Nature, 548*, 16-17. doi:10.1038/nature.2017.22375
 

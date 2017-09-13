@@ -2,7 +2,7 @@
 title: "心理理论任务中儿童缺失的究竟是什么？"
 author: "侃侃迩行"
 date: '2017-06-07'
-# tags: ["TOM", "chidren"]
+tags: [Theory of Mind, Children]
 show_toc: true
 ---
 

@@ -2,7 +2,7 @@
 title: Rank-Order
 author: "Likan Zhan"
 date: '2017-03-07'
-tags: ["stat", "r"]
+tags: [statistics, R]
 ---
 Adapted from duffymo's Stack Overflow [post](http://stackoverflow.com/questions/2315601/understanding-the-order-function)
 

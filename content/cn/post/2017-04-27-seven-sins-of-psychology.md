@@ -1,9 +1,9 @@
 ---
 title: "心理学研究中的七宗罪"
 author: "侃侃迩行"
-draft: false
 date: '2017-04-27'
 show_toc: true
+tags: [Sins, Book]
 ---
 
 > 该书适合任何对科学如何自我修复感兴趣的人。它应该被列为大学研究方法课程的必读书目。

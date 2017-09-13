@@ -3,6 +3,7 @@ title: "美感需要思考吗？"
 author: "侃侃迩行"
 date: '2017-05-13'
 show_toc: true
+tags: [beauty]
 ---
 
 # 1. 实验结果

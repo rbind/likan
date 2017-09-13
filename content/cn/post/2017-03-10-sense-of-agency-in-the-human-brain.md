@@ -3,6 +3,7 @@ title: '人脑中的行为主体感'
 date: '2017-03-10'
 author: "侃侃迩行"
 show_toc: true
+tags: [Agency, Neuroscience]
 ---
 
 自主感（Sense of agency）指的是自己能让某事情发生的感觉.

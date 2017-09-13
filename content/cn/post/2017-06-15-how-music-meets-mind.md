@@ -2,7 +2,7 @@
 title: 我们如何理解音乐？
 author: "侃侃迩行"
 date: '2017-06-15'
-tags: ["book", "music", "mind"]
+tags: [music]
 ---
 
 人类对音乐的理解很大程度上是一种本能行为。但音乐究竟是如何工作的？几个简单的声音串在一起形成的音乐为什么能触发情绪、激发思想、甚至定义个体？Adam Ockelford 的新书 Comparing Notes: How We Make Sense of Music 就讨论了该问题。 作者 Adam Ockelford 本身是一个作曲家、小提琴家和音乐研究者。十多年来，他还专注于对视觉障碍、自闭症和超长音乐能力儿童的音乐教育。

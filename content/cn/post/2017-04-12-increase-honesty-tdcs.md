@@ -3,6 +3,7 @@ title: "用电刺激大脑以提高人的诚实度"
 author: "侃侃迩行"
 date: "2017-04-12"
 show_toc: true
+tags: [tDCS, Honesty, Neuroscience]
 ---
 
 诚实是一个社会正常运转的重要基石。那么诚实行为的神经生物学基础是什么呢？本文用经颅电刺激研究了该问题。

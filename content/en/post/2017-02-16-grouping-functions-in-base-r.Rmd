@@ -6,6 +6,7 @@ output:
   blogdown::html_page:
     toc: true
     number_sections: false
+tags: [R]    
 ---
 
 This page is addapted from the stack overflow [post](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega) by _joran_

@@ -3,6 +3,7 @@ title: "阅读障碍的神经噪音假说"
 date: '2017-04-21'
 author: "侃侃迩行"
 show_toc: true
+tags: [Neuroscience, Dyslexia]
 ---
 
 发展性阅读障碍（developmental dyslexia）是一种受基因、神经和认知因素影响的神经发展性障碍。本文在总结前人研究的基础上提出了解释阅读障碍的新理论，即“神经噪音假说”（Neural Noise Hypothesis）（图1）。

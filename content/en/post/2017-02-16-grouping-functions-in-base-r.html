@@ -6,6 +6,7 @@ output:
   blogdown::html_page:
     toc: true
     number_sections: false
+tags: [R]    
 ---
 
 
@@ -143,10 +144,10 @@ x</code></pre>
 ##    1    6 5005</code></pre>
 <p>In more advanced uses of sapply it will attempt to coerce the result to a multi-dimensional array, if appropriate. For example, if our function returns vectors of the same length, sapply will use them as columns of a matrix:</p>
 <pre class="r"><code>sapply(1:5, function(x) rnorm(3, x))</code></pre>
-<pre><code>##          [,1]      [,2]     [,3]     [,4]     [,5]
-## [1,] 1.325073 0.8025656 2.645841 3.016382 3.865074
-## [2,] 1.122128 1.4505729 5.363337 4.677062 4.446206
-## [3,] 1.371760 2.4857453 2.227731 4.606590 5.162660</code></pre>
+<pre><code>##           [,1]      [,2]     [,3]     [,4]     [,5]
+## [1,] 1.4127842 2.3502292 3.896266 3.301678 6.512981
+## [2,] 2.4445579 1.7152097 4.051344 2.608696 4.732306
+## [3,] 0.7778089 0.9697534 4.009660 4.044121 5.449609</code></pre>
 <p>If our function returns a 2 dimensional matrix, sapply will do essentially the same thing, treating each returned matrix as a single long vector:</p>
 <pre class="r"><code>sapply(1:5, function(x) matrix(x, 2, 2))</code></pre>
 <pre><code>##      [,1] [,2] [,3] [,4] [,5]

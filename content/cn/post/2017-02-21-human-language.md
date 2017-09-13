@@ -4,6 +4,7 @@ author: 侃侃迩行
 date: '2017-02-21'
 Type: "post"
 show_toc: true
+tags: [language]
 ---
 
 # 1. 有关人类语言的两个看似矛盾的事实

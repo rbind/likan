@@ -3,6 +3,7 @@ title: "聚类分析"
 author: "侃侃迩行"
 date: "2017-06-01"
 show_toc: true
+tags: [statistics, Clustering]
 ---
 
 # 1. 什么是聚类分析

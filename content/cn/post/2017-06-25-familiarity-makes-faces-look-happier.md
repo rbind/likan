@@ -5,7 +5,7 @@ date: '2017-06-25'
 show_toc: true
 slug: familiarity-makes-faces-look-happier
 categories: []
-tags: []
+tags: [Face perception, Familiarity]
 ---
 
 # 1. 研究背景
@@ -31,5 +31,3 @@ tags: []
 # 6. 参考文献
 
 Carr, E. W., Brady, T. F., & Winkielman, P. Are You Smiling, or Have I Seen You Before? Familiarity Makes Faces Look Happier. Psychological Science, 0(0), 0956797617702003. doi:doi:10.1177/0956797617702003
-
-

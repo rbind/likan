@@ -3,6 +3,7 @@ title: 演奏者身体摇动幅度与其在乐队中角色
 author: 侃侃迩行
 date: '2017-05-10'
 show_toc: true
+tags: [Social Psychology, Leadership]
 ---
 
 # 1. 研究过程

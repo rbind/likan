@@ -3,6 +3,7 @@ title: "婴儿对旁观者干预行为的理解"
 author: "侃侃迩行"
 # ExpiryDate: '2017-04-08'
 date: '2017-04-06'
+tags: [Observer effects, infant]
 ---
 
 想象一下如下场景，

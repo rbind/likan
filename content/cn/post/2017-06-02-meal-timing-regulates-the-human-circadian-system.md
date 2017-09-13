@@ -2,7 +2,7 @@
 title: 改变饭点如何影响生物节律？
 author: 侃侃迩行
 date: '2017-06-02'
-tags: []
+tags: [Circadian System]
 ---
 
 生物节律 (Circadian rhythms)、新陈代谢 (metabolism)，和营养摄入是紧密相关的。本文研究了饭点 (meal timing) 对人类生物节律的影响。
@@ -14,4 +14,3 @@ tags: []
 参考文献
 
 Wehrens, S. M. T., Christou, S., Isherwood, C., Middleton, B., Gibbs, M. A., Archer, S. N., . . . Johnston, J. D. (2017). Meal Timing Regulates the Human Circadian System. Current Biology. doi:10.1016/j.cub.2017.04.059
-

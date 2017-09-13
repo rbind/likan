@@ -10,6 +10,7 @@ output:
 header-includes:
 - \usepackage{ctex}
 - \setCJKmainfont{Source Han Serif CN}
+tags: [statistics, r]
 ---
 
 
@@ -42,7 +43,7 @@ header-includes:
 \frac{\text{Pr }(H_1|X_{obs})}{\text{Pr }(H_0|X_{obs})}=
 \frac{\text{Pr }(X_{obs}|H_1)}{\text{Pr }(X_{obs}|H_0)}\times
 \frac{\text{Pr }(H_1)}{\text{Pr }(|H_0)}=
-BF \times (\text{prior odds}) 
+BF \times (\text{prior odds})
 \]</span></p>
 <p>这个公式中，<em>BF</em> 是<strong>贝叶斯因子</strong> (Bayes factor) 的简称。贝叶斯因子是研究者可以从观测数据中计算出来的证据。按照 Kass 和 Raftery (1995) 的观点，贝叶斯因子的大小和证据强度 (strength of evidence) 存在以下关系：</p>
 <table>
@@ -94,7 +95,7 @@ BF \times (\text{prior odds})
 <p>显著性标准是人为设定，该设定需要在 I 类错误和 II 类错误之间的进行权衡。选择 <span class="math inline">\(0.005\)</span> 作为新标准至少有两个好处。首先，显著性水平为 <span class="math inline">\(P = 0.005\)</span> 的双尾检验所对应的贝叶斯因子大小约为 <span class="math inline">\(14-26\)</span> 之间，这说明证据强度是较强的。</p>
 <p>其次，在多数研究领域，<span class="math inline">\(P &lt; 0.005\)</span> 所导致的假阳性率 (false positive rate) 水平是合理和可接受的。假阳性指研究者得出了统计上显著，即得出了拒绝零假设的结论，但实际上零假设是正确的。如果用 <span class="math inline">\(\phi\)</span> 表示零假设正确的概率，<span class="math inline">\((1-\beta)\)</span> 表示正确拒绝零假设的统计效力的大小，<span class="math inline">\(\alpha\)</span> 表示 I 类错误和显著性水平的大小，那么随着被检验整体的变大，假阳性率可以用如下公式表示：</p>
 <p><span class="math display">\[
-\text{false positive rate} \approx 
+\text{false positive rate} \approx
 \frac
 {\alpha\phi}
 {\alpha\phi + (1-\beta)(1-\alpha)}

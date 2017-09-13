@@ -2,6 +2,7 @@
 title: '什么是科学'
 author: "侃侃迩行"
 date: '2017-03-31'
+tags: [Science]
 ---
 > Science is an amazing human invention - a huge community effort to discover truth through repeated cycles of testing and self-correction.
 
