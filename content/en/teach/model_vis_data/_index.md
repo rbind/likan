@@ -10,7 +10,7 @@ show_toc: true
 
 - Time: 08:00 - 10:50, Monday;
 - Location: Room 206, Teaching Building 2;
-- Start from: 18, SEP;
+- Start from: 18， September;
 
 # 2. Prerequisites
 

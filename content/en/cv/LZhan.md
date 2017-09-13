@@ -1,7 +1,6 @@
 ---
 title: "Curriculum Vitae"
 disable_comments: yes
-date: '2017-06-01'
 output:
   pdf_document:
     includes:
