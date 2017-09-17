@@ -29,31 +29,31 @@ TBA
 # 5. Syllabus, Lecture Notes, and Scripts
 
 - Part 0: Introduction
-    - 00. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_00.pdf);
-    - 01. R basics
+    - 01. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_00.pdf);
+    - 02. R basics
 - Part I: Data craft
-    - 02. Examining Data
-    - 03. Transforming Data
+    - 03. Examining Data
+    - 04. Transforming Data
 - Part II: Linear models and least squares
-    - 04. Linear least-squares regression
-    - 05. Statistical Inference for Regression
-    - 06. Dummy-variable regression
-    - 07. Analysis of variance
+    - 05. Linear least-squares regression
+    - 06. Statistical Inference for Regression
+    - 07. Dummy-variable regression
+    - 08. Analysis of variance
 - Part III: Linear-model diagnostics
-    - 08. Unusual and influential data
-    - 09. Non-Normality, Nonconstant Error Variance, and Nonlinearity
-    - 10. Collinearity and Its Purported Remedies
+    - 09. Unusual and influential data
+    - 10. Non-Normality, Nonconstant Error Variance, and Nonlinearity
+    - 11. Collinearity and Its Purported Remedies
 - Part IV: Generalized linear models
-    - 11. Logit and Probit Models for Categorical Response Variables
-    - 12. Generalized Linear Models
+    - 12. Logit and Probit Models for Categorical Response Variables
+    - 13. Generalized Linear Models
 - Part V. Extending Linear and Generalized Linear Models
-    - 13. Time-Series Regression and Generalized Least Squares
-    - 14. Nonlinear Regression
-    - 15. Nonparametric Regression
-    - 16. Bootstrapping Regression Models
+    - 14. Time-Series Regression and Generalized Least Squares
+    - 15. Nonlinear Regression
+    - 16. Nonparametric Regression
+    - 17. Bootstrapping Regression Models
 - Part VI: Mixed-Effects Models
-    - 17. Linear Mixed-Effects Models
-    - 18. Generalized Linear and Nonlinear Mixed-Effects Models
+    - 18. Linear Mixed-Effects Models
+    - 19. Generalized Linear and Nonlinear Mixed-Effects Models
 
 
 # 6. References
