@@ -12,7 +12,7 @@ output:
 tutorial::go_interactive(greedy = TRUE, height = 600)
 ```
 
-```{r}
+```{r, include = FALSE}
 a <- 2
 b <- 3
 
