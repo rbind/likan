@@ -26,7 +26,11 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 TBA
 
-# 5. Syllabus, Lecture Notes, and Scripts
+# 5. Tools
+
+- [An interactive learning widget for R](/en/teach/model_vis_data/InteractiveR/)
+
+# 6. Syllabus, Lecture Notes, and Scripts
 
 - Part 0: Introduction
     - 01. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_00.pdf);
@@ -56,7 +60,7 @@ TBA
     - 19. Generalized Linear and Nonlinear Mixed-Effects Models
 
 
-# 6. References
+# 7. References
 
 - R manuals
     - An Introduction to R, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
