@@ -59,13 +59,15 @@ type: cv
 - **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 [fulltext](https://publications.likan.info/JCognPsychol2015.pdf)
 
 - Zhou, P., Crain, S., & **Zhan, L.** (2014). Grammatical aspect and event recognition in children's online sentence comprehension. *Cognition, 133*(1), 262-276. doi: 10.1016/j.cognition.2014.06.018 [fulltext](http://publications.likan.info/Cognition2014.pdf)
+
 - Zhou, P., Crain, S., & **Zhan, L.** (2012). Sometimes children are as good as adults: The pragmatic use of prosody in children’s on-line sentence processing. *Journal of Memory and Language, 67*(1), 149-164. doi: 10.1016/j.jml.2012.03.005 [fulltext](https://publications.likan.info/JMemLang2012.pdf)
 
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [fulltext](https://publications.likan.info/JChildLang2012.pdf)
 
+
 2. Presentations
 
-- Zhan, L. (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Paper presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China [fulltext](https://publications.likan.info/ZhanL2017UIBE.pdf)
+- **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Paper presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China [fulltext](https://publications.likan.info/ZhanL2017UIBE.pdf)
 
 ## Professional skills
 
