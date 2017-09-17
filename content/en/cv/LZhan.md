@@ -63,6 +63,10 @@ type: cv
 
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [fulltext](https://publications.likan.info/JChildLang2012.pdf)
 
+2. Presentations
+
+- Zhan, L. (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Paper presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China [fulltext](https://publications.likan.info/ZhanL2017UIBE.pdf)
+
 ## Professional skills
 
 - Statistics. I teached two statistical courses to master students. I have moderate experience in using *R* for statistical modeling and data visualization. Besides the basic ones, I used the following R packages a lot: [*data.table*](http://r-datatable.com), [*dplyr*](http://dplyr.tidyverse.org), [*ggplot2*](http://ggplot2.tidyverse.org), [*car*](https://cran.r-project.org/web/packages/car/index.html), [*lme4*](https://github.com/lme4/lme4), [*gam*](https://cran.r-project.org/web/packages/gam/index.html) etc. I also created a R package myself, called [*acqr*](https://github.com/likanzhan/acqr).
