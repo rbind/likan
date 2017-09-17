@@ -22,8 +22,11 @@ Students of this course should be familiar with the basic concepts used in stati
 
 Linear models, their variants, and extensions are among the most useful and widely used statistical tools for social research. This course aims to provide an accessible, in-depth, modern treatment of *regression analysis*, *linear models*, *generalized linear models*, and closely related methods.
 
+# 4. Grading
 
-# 4. Syllabus, Lecture Notes, and Scripts
+TBA
+
+# 5. Syllabus, Lecture Notes, and Scripts
 
 - Part 0: Introduction
     - 00. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_00.pdf);
@@ -53,7 +56,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 18. Generalized Linear and Nonlinear Mixed-Effects Models
 
 
-# 5. References
+# 6. References
 
 - R manuals
     - An Introduction to R, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)

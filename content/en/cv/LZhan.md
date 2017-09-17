@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Vitae"
-date: '2017-08-01'
 disable_comments: yes
+date: '2017-09-17'
 output:
   pdf_document:
     includes:
@@ -9,7 +9,6 @@ output:
     latex_engine: xelatex
     md_extensions: -autolink_bare_uris+hard_line_breaks
     template: cv_no_title.latex
-  html_document: default
   word_document: default
 geometry: margin=1in
 pdf: /en/cv/LZhan.pdf
