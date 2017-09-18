@@ -38,13 +38,10 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 - This course will use [R language](https://www.r-project.org) as the main software to draw graphs and do the statistical analyses.
 
 
-# 5. Grading
+# 5. Examination
 
-- Homework: 50%
-
-- Final exam: 50%
-  - Time and location: 08:00-09:50, July 13, *Room 202, Teaching Building 2*;
-  - Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 16*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 15*.
+- Time and location: 08:00-09:50, July 13, *Room 202, Teaching Building 2*;
+- Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 16*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 15*.
 
 # 6. Syllabus, Lecture Notes, and Scripts
 
