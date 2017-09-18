@@ -63,8 +63,7 @@ type: cv
 
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [fulltext](https://publications.likan.info/JChildLang2012.pdf)
 
-
-2. Presentations
+1. Presentations
 
 - **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Paper presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China [fulltext](https://publications.likan.info/ZhanL2017UIBE.pdf)
 
@@ -74,4 +73,4 @@ type: cv
 
 - Experimental techniques. I'm familiar with [E-prime](https://www.pstnet.com/eprime.cfm), [Psychopy](http://www.psychopy.org), [Psychtoolbox](http://psychtoolbox.org), and [Presentation](https://www.neurobs.com/presentation) for presenting test stimuli. I have advanced experience in using Eyelink II/1000 plus (SR Research Ltd.), such as *Experiment Builder* for experiment building, and *Data Viewer* for data analysis. I am in charge of establishing the first Child MEG lab in China, familiar with *Yokogawa* MEG system for equipment maintenance and MEG data acquisition. I'm also familiar with *BESA*, and some Matlab packages for analyzing the E/MEG data, such as [*fieldtrip*](http://www.fieldtriptoolbox.org) and [*SPM12*](https://github.com/neurodebian/spm12).
 
-- Typesetting. I like to write with *Latex*, *Markdown*, and *R Markdown*. I created a [personal website](https://likan.info) with [*hugo*](https://gohugo.io) and [*blogdown*](https://github.com/rstudio/blogdown).
+- Typesetting. I like to write with *LaTex*, *Markdown*, and *R Markdown*. I created a [personal website](https://likan.info) with [*hugo*](https://gohugo.io) and [*blogdown*](https://github.com/rstudio/blogdown).
