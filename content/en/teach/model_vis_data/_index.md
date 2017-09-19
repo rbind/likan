@@ -33,8 +33,8 @@ TBA
 # 6. Syllabus, Lecture Notes, and Scripts
 
 - Part 0: Introduction
-    - 01. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_00.pdf);
-    - 02. R basics
+    - 01. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_01.pdf);
+    - 02. R basics, [slides](https://rmodelvis.likan.info/2017_CH_02.pdf);
 - Part I: Data craft
     - 03. Examining Data
     - 04. Transforming Data
