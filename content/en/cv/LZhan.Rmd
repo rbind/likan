@@ -44,10 +44,10 @@ type: cv
 
 ## Teaching responsibilities
 
-- [Statistics for the Behavioral Sciences](https://likan.info/en/teach/stat_behav_sci/)
-- [R for Modeling and Visualizing Data](https://likan.info/en/teach/model_vis_data/)
-- [Introduction to Cognitive Neuroscience](https://likan.info/en/teach/cogn_neurosci/)
-- [Foundations of Scientific Research](https://likan.info/en/teach/found_sci_res/)
+- Statistics for the Behavioral Sciences, [More information](https://likan.info/en/teach/stat_behav_sci/)
+- R for Modeling and Visualizing Data, [More information](https://likan.info/en/teach/model_vis_data/)
+- Introduction to Cognitive Neuroscience, [More information](https://likan.info/en/teach/cogn_neurosci/)
+- Foundations of Scientific Research, [More information](https://likan.info/en/teach/found_sci_res/)
 
 ## Publications
 
