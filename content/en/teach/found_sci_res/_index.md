@@ -16,7 +16,38 @@ show_toc: true
 
 # 2. Course Information
 
-This course is designed to expose students to the academic side of scientific research as they learn how to synthesize results, present them, and explore related topics. Students will analyze and discuss published research articles, engage in conversations with the teacher about different aspects of research, and design and present their own research.
+This course is designed to expose students to the academic side of scientific research. They will learn the basic concepts of science and scientific research. They will also learn how to synthesize results, present them, and explore related topics. Students will analyze and discuss published research articles, engage in conversations with the teacher about different aspects of research, and design and present their own research.
+
+# 4. Grading
+
+TBA
+
+# 5. Lecture Notes
+
+- Part I. Introduction
+    - Chapter 01. Science and Scientific Research
+
+- Part II. Academic reading
+    - Chapter 02. Category and structure of academic articles
+    - Chapter 03. References in academic articles
+    - Chapter 04. Databases, journals, and search engines.
+    - Chapter 05. Bibliography softwares
+
+- Part III. Academic writing
+    - Chapter 06. Good writing
+    - Chapter 07. Window onto the worold
+    - Chapter 08. Curse of knowledge
+    - Chapter 09. Web, tree, and string
+    - Chapter 10. Arcs of coherence
+
+- Part IV. Reforming the Culture of Scientific Practice
+    - Chapter 11. The sin of bias
+    - Chapter 13. The sin of hidden flexibility
+    - Chapter 13. The sin of unreliability
+    - Chapter 14. The sin of data horarding
+    - Chapter 15. The sin of corruptibility
+    - Chapter 16. The sin of internment
+    - Chapter 17. Redemption
 
 # 3. References
 
@@ -35,11 +66,3 @@ This course is designed to expose students to the academic side of scientific re
 
 - Other References
     - Hock, R. R. (2009). *Forty studies that changed psychology: Explorations into the history of psychological research* (6 ed.). New Jersey, NJ: Pearson Education.
-
-# 4. Grading
-
-TBA
-
-# 5. Lecture Notes
-
-TBA
