@@ -3,7 +3,7 @@ title: "About"
 date: "2016-05-05T21:48:51-07:00"
 ---
 
-![brain_in_a_vat](http://webimages.netlify.com/brain_in_a_vat.png)
+![brain_in_a_vat](http://webimages.likan.info/brain_in_a_vat.png)
 
 This is Likan Zhan's personal website. This website has an [English](../en/) version and a [Chinese](../cn/) version. The two language versions are not a translation of each other, but contain different contents.
 
