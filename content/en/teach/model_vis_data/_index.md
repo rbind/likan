@@ -14,7 +14,7 @@ show_toc: true
 
 # 2. Prerequisites
 
-Students of this course should be familiar with the basic concepts used in statistics, such as *Mean*, *Standard Deviation*, *Normal Distribution*, *t-statistic*, *ANOVA*, *F-ratio*, [*p-value*](https://likan.info/cn/post/2017-08-11-p-values-bayes-factor/), *Hypothesis Testing* etc. To acheive this, Students should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/), or other courses at the same level. If they insist, students can also learn these basic concepts by themselves.
+Students of this course should be familiar with the basic concepts used in statistics, such as *Mean*, *Standard Deviation*, *Normal Distribution*, *t-statistic*, *ANOVA*, *F-ratio*, [*p-value*](https://likan.info/cn/post/2017-08-11-p-values-bayes-factor/), *Hypothesis Testing* etc. To acheive this, Students should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/), or other courses at the same level. Students can also learn these basic concepts by themselves.
 
 # 3. Course Information
 
