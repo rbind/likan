@@ -72,6 +72,8 @@ TBA
     - The R reference Index, [Full text](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)
 
 - R language in General
+    - Becker, R. A., Chambers, J. M., & Wilks, A. R. (1988). *The New S Language: A Programming Environment for Data Analysis and Statistics*. Pacific Grove , CA : Wadsworth. (The **Blue** book)
+    - Chambers, J. M. (1998). *Programming with data: A guide to the S language*. New York, NY: Springer. (The **Green** book)
     - Chambers, J. M. (2016). *Extending R*. Boca Baton, UK: CRC Press.
     - Wickham, H. (2015). *Advanced R*. Boca Baton, UK: CRC Press. [Full text](http://adv-r.had.co.nz)
     - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [Full text](http://r4ds.had.co.nz)
@@ -82,7 +84,7 @@ TBA
     - Wickham, H. (2009). *ggplot2: Elegant Graphics for Data Analysis*. New York, NY: Springer.
 
 - Statistical models
-    - Chambers, J. M., & Hastie, T. J. (Eds.). (1993). *Statistical Models in S*. London, UK: Champman & Hall.
+    - Chambers, J. M., & Hastie, T. J. (Eds.). (1993). *Statistical Models in S*. London, UK: Champman & Hall. (The **White** book)
     - **Fox, J. (2016). *Applied Regression Analysis and Generalized Linear Models* (3 ed.). Thousand Oaks, CA: SAGE.**
     - Hastie, T. J., & Tibshirani, R. J. (1990). *Generalized additive models*. Landon, UK: Chapman and Hall.
     - Venables, W. N., & Ripley, B. D. (2002).  *Modern Applied Statistics with S*. Springer.
