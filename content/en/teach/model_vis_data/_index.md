@@ -36,7 +36,7 @@ TBA
     - 01. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_01.pdf);
     - 02. R basics, [slides](https://rmodelvis.likan.info/2017_CH_02.pdf);
 - Part I: Data craft
-    - 03. Examining Data
+    - 03. Examining Data, [slides](https://rmodelvis.likan.info/2017_CH_03.pdf);
     - 04. Transforming Data
 - Part II: Linear models and least squares
     - 05. Linear least-squares regression
