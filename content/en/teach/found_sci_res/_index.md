@@ -25,7 +25,7 @@ TBA
 # 5. Lecture Notes
 
 - Part I. Introduction
-    - Chapter 01. Science and Scientific Research, [slides](https://foundscires.likan.info/Sci.Res.CH.01.Part1.pdf); [Assignment](https://foundscires.likan.info/Assignment_01.pdf)
+    - Chapter 01. Science and Scientific Research, [slides](https://foundscires.likan.info/Sci.Res.CH.01.pdf); [Assignment](https://foundscires.likan.info/Assignment_01.pdf)
 
 - Part II. Academic reading
     - Chapter 02. Category and structure of academic articles
