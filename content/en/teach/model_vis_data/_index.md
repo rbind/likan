@@ -38,7 +38,7 @@ TBA
     - 03. Examining Data, [slides](https://rmodelvis.likan.info/2017_CH_03.pdf);
     - 04. Transforming Data, [slides](https://rmodelvis.likan.info/2017_CH_04.pdf);
 - Part II: Linear models and least squares
-    - 05. Linear least-squares regression
+    - 05. Linear least-squares regression, [slides](https://rmodelvis.likan.info/2017_CH_05.pdf);
     - 06. Statistical Inference for Regression
     - 07. Dummy-variable regression
     - 08. Analysis of variance
