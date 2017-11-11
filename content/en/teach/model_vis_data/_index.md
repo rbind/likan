@@ -40,7 +40,7 @@ TBA
 - Part II: Linear models and least squares
     - 05. Linear least-squares regression, [slides](https://rmodelvis.likan.info/2017_CH_05.pdf);
     - 06. Statistical Inference for Regression, [slides](https://rmodelvis.likan.info/2017_CH_06.pdf);
-    - 07. Dummy-variable regression
+    - 07. Dummy-variable regression, [slides](https://rmodelvis.likan.info/2017_CH_07.pdf);
     - 08. Analysis of variance
 - Part III: Linear-model diagnostics
     - 09. Unusual and influential data
