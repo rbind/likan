@@ -41,7 +41,7 @@ TBA
     - 05. Linear least-squares regression, [slides](https://rmodelvis.likan.info/2017_CH_05.pdf);
     - 06. Statistical Inference for Regression, [slides](https://rmodelvis.likan.info/2017_CH_06.pdf);
     - 07. Dummy-variable regression, [slides](https://rmodelvis.likan.info/2017_CH_07.pdf);
-    - 08. Analysis of variance
+    - 08. Analysis of variance, [slides](https://rmodelvis.likan.info/2017_CH_08.pdf),  [data](https://socialsciences.mcmaster.ca/jfox/Books/Applied-Regression-3E/datasets/Vocabulary-2.txt)
 - Part III: Linear-model diagnostics
     - 09. Unusual and influential data
     - 10. Non-Normality, Nonconstant Error Variance, and Nonlinearity
