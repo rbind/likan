@@ -1,0 +1,37 @@
+---
+title: "seq(), seq_along(), and seq_len()"
+author: "Likan"
+date: '2017-11-22'
+slug: seq-versus-seq-along
+tags: []
+categories: []
+---
+
+
+
+<p>This should make the difference clear. <code>seq()</code> acts like <code>seq_along()</code> except when passed a vector of length 1, in which case it acts like <code>seq_len()</code>. If this ever once bites you, you’ll never use seq() again!</p>
+<pre class="r"><code>a &lt;- c(8, 9, 10)
+b &lt;- c(9, 10)
+c &lt;- 10
+
+seq_along(a)</code></pre>
+<pre><code>## [1] 1 2 3</code></pre>
+<pre class="r"><code>seq_along(b)</code></pre>
+<pre><code>## [1] 1 2</code></pre>
+<pre class="r"><code>seq_along(c)</code></pre>
+<pre><code>## [1] 1</code></pre>
+<pre class="r"><code>seq(a)</code></pre>
+<pre><code>## [1] 1 2 3</code></pre>
+<pre class="r"><code>seq(b)</code></pre>
+<pre><code>## [1] 1 2</code></pre>
+<pre class="r"><code>seq(c)</code></pre>
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+<p>It’s probably worth noting that <code>sample()</code> exhibits similarly crummy behavior:</p>
+<pre class="r"><code>sample(a)</code></pre>
+<pre><code>## [1]  8 10  9</code></pre>
+<pre class="r"><code>sample(b)</code></pre>
+<pre><code>## [1]  9 10</code></pre>
+<pre class="r"><code>sample(c)</code></pre>
+<pre><code>##  [1]  7  2  1  4  8  5 10  6  3  9</code></pre>
+<p>Reference:</p>
+<p><a href="https://stackoverflow.com/questions/13732062/seq-vs-seq-along-when-will-using-seq-cause-unintended-results/13732373#13732373">seq vs seq_along. When will using seq cause unintended results?</a></p>
