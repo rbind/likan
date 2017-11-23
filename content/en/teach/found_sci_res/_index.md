@@ -29,7 +29,7 @@ TBA
 
 - Part II. Academic reading
     - Chapter 02. Category and structure of academic articles, [slides](https://foundscires.likan.info/Sci.Res.CH.02.pdf);
-    - Chapter 03. References in academic articles
+    - Chapter 03. References in academic articles, [slides](https://foundscires.likan.info/Sci.Res.CH.03.pdf) 
     - Chapter 04. Databases, journals, and search engines.
     - Chapter 05. Bibliography softwares
 
