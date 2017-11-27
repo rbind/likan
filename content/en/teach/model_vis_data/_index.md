@@ -21,9 +21,15 @@ Students of this course should be familiar with the basic concepts used in stati
 
 Linear models, their variants, and extensions are among the most useful and widely used statistical tools for social research. This course aims to provide an accessible, in-depth, modern treatment of *regression analysis*, *linear models*, *generalized linear models*, and closely related methods.
 
-# 4. Grading
+# 4. Final Examination
 
-TBA
+- Dowload the `Final_Examination.Rmd` file from the following link: (Demo)[https://rmodelvis.likan.info/Final_Examination.Rmd]
+- Rename the file into the format *Surname_Givenname_Student number.Rmd*, such as *Zhang_San_20170708.Rmd*.
+- Open the renamed *Zhang_San_20170708.Rmd* file with *RStudio*.
+- Change the *Name_Number* in the front matter of the renamed *.Rmd* file to your own name and your student number, such as *Zhang San - 20170708*.
+- Write your answers in the region enclosed by *` ```{r} XXXX ``` `*.
+- After finishing all your answers, click the `knit to PDF` button in the `knit` drop-down menu of `RStudio`.
+- Send both the new `.Rmd` file and the knitted `.pdf` file to the following email address: `zhanlikan@blcu.edu.cn`.
 
 # 5. Tools
 
