@@ -27,7 +27,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 - Rename the file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
 - Open the renamed *`ZhangSan_20170708.Rmd`* file with *`RStudio`*.
 - Change the *`Name-Number`* region in the front matter of the renamed *`ZhangSan_20170708.Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
-- Write your answers in the region enclosed by *```{r} XXXX ```*.
+- Write your answers in the region enclosed by *```{r} XXX ```*.
 - After finishing all your answers, click the *`knit to PDF`* button in the *`knit`* drop-down menu of *`RStudio`*.
 - Send both the filled *`ZhangSan_20170708.Rmd`* file and the knitted *`ZhangSan_20170708.pdf`* file to the following email address: `zhanlikan@blcu.edu.cn`.
 
