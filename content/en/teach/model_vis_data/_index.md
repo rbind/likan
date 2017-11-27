@@ -23,9 +23,9 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 # 4. Final Examination
 
-- Dowload the *`Final_Examination.Rmd`* file from the following link: [Demo](https://rmodelvis.likan.info/Final_Examination.Rmd)
+- Download the *`Final_Examination.Rmd`* file from the following link: [Demo](https://rmodelvis.likan.info/Final_Examination.Rmd)
 - Rename the file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
-- Open the renamed *ZhangSan_20170708.Rmd* file with *RStudio*.
+- Open the renamed *`ZhangSan_20170708.Rmd`* file with *`RStudio`*.
 - Change the *`Name-Number`* region in the front matter of the renamed *`ZhangSan_20170708.Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
 - Write your answers in the region enclosed by *```{r} XXXX ```*.
 - After finishing all your answers, click the *`knit to PDF`* button in the *`knit`* drop-down menu of *`RStudio`*.
