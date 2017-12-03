@@ -49,7 +49,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 07. Dummy-variable regression, [slides](https://rmodelvis.likan.info/2017_CH_07.pdf);
     - 08. Analysis of variance, [slides](https://rmodelvis.likan.info/2017_CH_08.pdf),  [data](https://socialsciences.mcmaster.ca/jfox/Books/Applied-Regression-3E/datasets/Vocabulary-2.txt)
 - Part III: Linear-model diagnostics
-    - 09. Unusual and influential data
+    - 09. Unusual and influential data, [slides](https://rmodelvis.likan.info/2017_CH_09.pdf)
     - 10. Non-Normality, Nonconstant Error Variance, and Nonlinearity
     - 11. Collinearity and Its Purported Remedies
 - Part IV: Generalized linear models
