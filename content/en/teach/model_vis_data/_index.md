@@ -53,7 +53,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 10. Non-Normality, Nonconstant Error Variance, and Nonlinearity
     - 11. Collinearity and Its Purported Remedies
 - Part IV: Generalized linear models
-    - 12. Logit and Probit Models for Categorical Response Variables
+    - 12. Logit and Probit Models for Categorical Response Variables, [slides](https://rmodelvis.likan.info/2017_CH_12.pdf)
     - 13. Generalized Linear Models
 - Part V. Extending Linear and Generalized Linear Models
     - 14. Time-Series Regression and Generalized Least Squares
