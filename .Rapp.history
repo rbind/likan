@@ -1,0 +1,779 @@
+xx
+play(xx)
+setWavPlayer('/usr/bin/afplay')
+play(xx)
+xx <- readWave("~/Desktop/NewAudio/2.wav")
+play(xx)
+828/6
+138/23
+library(acqr)
+help(package="acqr")
+JointInfl()
+JointInfl(NP = c(4,4))
+JointInfl(slope = 1, NP = c(4,4))
+JointInfl(slope = 1, NP = c(5,1))
+JointInfl(slope = 1, NP = c(6,1))
+JointInfl(slope = 1, NP = c(7,1))
+JointInfl(n = 5, slope = 1, NP = c(7,1))
+JointInfl(n = 5, slope = 1, NP = c(mean(1:5),1))
+JointInfl(n = 5, slope = 1, NP = c(mean(1:5),-3))
+JointInfl(n = 5, slope = 1, NP = c(mean(1:5),-2))
+JointInfl(n = 5, slope = 1, NP = c(mean(1:5),-2), adj = 0)
+JointInfl(n = 5, slope = 1, NP = c(mean(1:5),-1), adj = 0)
+JointInfl(n = 5, slope = 1, NP = c(mean(1:5),0), adj = 0)
+JointInfl
+install.packages("magick")
+str(magick::magick_config())
+help(package="magick")
+library(magick)
+install.packages("magick", dependencies = TRUE)
+library(car)
+library(magick)
+set.seed(42)#
+#
+library("Matrix")#
+library("lme4")#
+library("ggplot2")#
+library("eyetrackingR")#
+#
+data("word_recognition")#
+data <- make_eyetrackingr_data(word_recognition, #
+                       participant_column = "ParticipantName",#
+                       trial_column = "Trial",#
+                       time_column = "TimeFromTrialOnset",#
+                       trackloss_column = "TrackLoss",#
+                       aoi_columns = c('Animate','Inanimate'),#
+                       treat_non_aoi_looks_as_missing = TRUE#
+                )#
+#
+# subset to response window post word-onset#
+response_window <- subset_by_window(data, #
+                                    window_start_time = 15500, #
+                                    window_end_time = 21000, #
+                                    rezero = FALSE)#
+#
+# analyze amount of trackloss by subjects and trials#
+(trackloss <- trackloss_analysis(data = response_window))#
+#
+# remove trials with > 25% of trackloss#
+response_window_clean <- clean_by_trackloss(data = response_window,#
+                                            trial_prop_thresh = .25)#
+#
+# create Target condition column#
+response_window_clean$Target <- as.factor( ifelse(test = grepl('(Spoon|Bottle)', response_window_clean$Trial), #
+                                       yes = 'Inanimate', #
+                                       no  = 'Animate') )#
+#
+response_time <- make_time_sequence_data(response_window_clean,#
+                                  time_bin_size = 100, #
+                                  predictor_columns = c("Target"),#
+                                  aois = "Animate",#
+                                  summarize_by = "ParticipantName" )#
+#
+# visualize timecourse#
+plot(response_time, predictor_column = "Target") + #
+  theme_light() +#
+  coord_cartesian(ylim = c(0,1))
+set.seed(42)#
+#
+library("Matrix")#
+library("lme4")#
+library("ggplot2")#
+library("eyetrackingR")#
+#
+data("word_recognition")#
+data <- make_eyetrackingr_data(word_recognition, #
+                       participant_column = "ParticipantName",#
+                       trial_column = "Trial",#
+                       time_column = "TimeFromTrialOnset",#
+                       trackloss_column = "TrackLoss",#
+                       aoi_columns = c('Animate','Inanimate'),#
+                       treat_non_aoi_looks_as_missing = TRUE#
+                )#
+#
+# subset to response window post word-onset#
+response_window <- subset_by_window(data, #
+                                    window_start_time = 15500, #
+                                    window_end_time = 21000, #
+                                    rezero = FALSE)#
+#
+# analyze amount of trackloss by subjects and trials#
+(trackloss <- trackloss_analysis(data = response_window))#
+#
+# remove trials with > 25% of trackloss#
+response_window_clean <- clean_by_trackloss(data = response_window,#
+                                            trial_prop_thresh = .25)#
+#
+# create Target condition column#
+response_window_clean$Target <- as.factor( ifelse(test = grepl('(Spoon|Bottle)', response_window_clean$Trial), #
+                                       yes = 'Inanimate', #
+                                       no  = 'Animate') )#
+#
+response_time <- make_time_sequence_data(response_window_clean,#
+                                  time_bin_size = 100, #
+                                  predictor_columns = c("Target"),#
+                                  aois = "Animate",#
+                                  summarize_by = "ParticipantName" )#
+#
+# visualize timecourse#
+plot(response_time, predictor_column = "Target") + #
+  theme_light() +#
+  coord_cartesian(ylim = c(0,1))                                       #
+num_sub = length(unique((response_window_clean$ParticipantName)))#
+threshold_t = qt(p = 1 - .05/2, #
+                 df = num_sub-1) # pick threshold t based on alpha = .05 two tailed
+set.seed(42)#
+#
+library("Matrix")#
+library("lme4")#
+library("ggplot2")#
+library("eyetrackingR")#
+#
+data("word_recognition")#
+data <- make_eyetrackingr_data(word_recognition, #
+                       participant_column = "ParticipantName",#
+                       trial_column = "Trial",#
+                       time_column = "TimeFromTrialOnset",#
+                       trackloss_column = "TrackLoss",#
+                       aoi_columns = c('Animate','Inanimate'),#
+                       treat_non_aoi_looks_as_missing = TRUE#
+                )#
+#
+# subset to response window post word-onset#
+response_window <- subset_by_window(data, #
+                                    window_start_time = 15500, #
+                                    window_end_time = 21000, #
+                                    rezero = FALSE)#
+#
+# analyze amount of trackloss by subjects and trials#
+(trackloss <- trackloss_analysis(data = response_window))#
+#
+# remove trials with > 25% of trackloss#
+response_window_clean <- clean_by_trackloss(data = response_window,#
+                                            trial_prop_thresh = .25)#
+#
+# create Target condition column#
+response_window_clean$Target <- as.factor( ifelse(test = grepl('(Spoon|Bottle)', response_window_clean$Trial), #
+                                       yes = 'Inanimate', #
+                                       no  = 'Animate') )#
+#
+response_time <- make_time_sequence_data(response_window_clean,#
+                                  time_bin_size = 100, #
+                                  predictor_columns = c("Target"),#
+                                  aois = "Animate",#
+                                  summarize_by = "ParticipantName" )#
+#
+# visualize timecourse#
+plot(response_time, predictor_column = "Target") + #
+  theme_light() +#
+  coord_cartesian(ylim = c(0,1))                                       #
+num_sub = length(unique((response_window_clean$ParticipantName)))#
+threshold_t = qt(p = 1 - .05/2, #
+                 df = num_sub-1) # pick threshold t based on alpha = .05 two tailed  #
+df_timeclust <- make_time_cluster_data(response_time, #
+                                      test= "t.test", paired=TRUE,#
+                                      predictor_column = "Target", #
+                                      threshold = threshold_t) #
+plot(df_timeclust) +  ylab("T-Statistic") + theme_light()#
+summary(df_timeclust)
+str(response_time)
+str(df_timeclust)
+df_timeclust[, c("ClusterNeg", "ClusterPos")]
+table(df_timeclust[, "ClusterPos"])
+df_timeclust[, "ClusterPos"]
+df_timeclust[, c("ClusterNeg", "ClusterPos")]
+str(df_timeclust)
+str(response_time)
+colnames(response_time)
+colnames(df_timeclust)
+str(response_time)
+?make_time_cluster_data
+?make_time_sequence_data
+?make_time_cluster_data
+table(response_time$TimeBin)
+Bin <- subset(response_time, TimeBin == 155)
+Bin
+subset(df_timeclust, TimeBin == 155)
+subset(df_timeclust, TimeBin == 156)
+subset(df_timeclust, TimeBin == 157)
+subset(df_timeclust, TimeBin == 158)
+subset(df_timeclust, TimeBin == 159)
+subset(df_timeclust, TimeBin == 161)
+subset(df_timeclust, TimeBin == 162)
+subset(df_timeclust, TimeBin == 163)
+subset(df_timeclust, TimeBin == 164)
+subset(df_timeclust, TimeBin == 160)
+subset(df_timeclust, TimeBin == 161)
+?t.test()
+x<-subset(df_timeclust, TimeBin == 161)
+x
+t.test(t[, "Prop"] ~ t[, "Target"])
+t.test(t[, "Prop"], t[, "Target"])
+t.test(t[, "Prop"], t[, "Target"], paired = TRUE)
+t.test(split(t[, "Prop"], t[, "Target"]), paired = TRUE)
+t[, "Prob"]
+t[, "Prop"]
+t.test(x[, "Prop"] ~ x[, "Target"])
+t.test(x[, "Prop"] ~ x[, "Target"], paired=T)
+t.test(x[, "Prop"] ~ x[, "Target"], paired = TRUE)
+?t.test(x[, "Prop"] ~ x[, "Target"], paired = TRUE)
+t.test(x[, "Prop"] ~ x[, "Target"], paired = TRUE)
+t.test(x[, "Prop"] ~ x[, "Target"])
+t.test(response_time[, "Prop"] ~ response_time[, "Target"])
+t.test(response_time[1, "Prop"] ~ response_time[1, "Target"])
+t.test(subset(df_timeclust, TimeBin == 161)[1, "Prop"] ~ subset(df_timeclust, TimeBin == 161)[1, "Target"])
+str(df_timeclust)
+table(df_timeclust$ClusterPos)
+clust_analysis <- analyze_time_clusters(df_timeclust, within_subj=TRUE, paired=TRUE,#
+                                        samples=150) # in practice, you should use a lot more
+str(clust_analysis)
+analyze_time_clusters
+eyetrackingR:::analyze_time_clusters
+methods(analyze_time_clusters)
+eyetrackingR:::analyze_time_clusters.time_cluster_data
+str(df_clusters)
+set.seed(42)#
+#
+library("Matrix")#
+library("lme4")#
+library("ggplot2")#
+library("eyetrackingR")#
+#
+data("word_recognition")#
+data <- make_eyetrackingr_data(word_recognition, #
+                       participant_column = "ParticipantName",#
+                       trial_column = "Trial",#
+                       time_column = "TimeFromTrialOnset",#
+                       trackloss_column = "TrackLoss",#
+                       aoi_columns = c('Animate','Inanimate'),#
+                       treat_non_aoi_looks_as_missing = TRUE#
+                )#
+#
+# subset to response window post word-onset#
+response_window <- subset_by_window(data, #
+                                    window_start_time = 15500, #
+                                    window_end_time = 21000, #
+                                    rezero = FALSE)#
+#
+# analyze amount of trackloss by subjects and trials#
+(trackloss <- trackloss_analysis(data = response_window))#
+#
+# remove trials with > 25% of trackloss#
+response_window_clean <- clean_by_trackloss(data = response_window,#
+                                            trial_prop_thresh = .25)#
+#
+# create Target condition column#
+response_window_clean$Target <- as.factor( ifelse(test = grepl('(Spoon|Bottle)', response_window_clean$Trial), #
+                                       yes = 'Inanimate', #
+                                       no  = 'Animate') )#
+#
+response_time <- make_time_sequence_data(response_window_clean,#
+                                  time_bin_size = 100, #
+                                  predictor_columns = c("Target"),#
+                                  aois = "Animate",#
+                                  summarize_by = "ParticipantName" )#
+#
+# visualize timecourse#
+plot(response_time, predictor_column = "Target") + #
+  theme_light() +#
+  coord_cartesian(ylim = c(0,1))                                       #
+num_sub = length(unique((response_window_clean$ParticipantName)))#
+threshold_t = qt(p = 1 - .05/2, #
+                 df = num_sub-1) # pick threshold t based on alpha = .05 two tailed  #
+df_timeclust <- make_time_cluster_data(response_time, #
+                                      test= "t.test", paired=TRUE,#
+                                      predictor_column = "Target", #
+                                      threshold = threshold_t) #
+plot(df_timeclust) +  ylab("T-Statistic") + theme_light()#
+summary(df_timeclust)    #
+#
+clust_analysis <- analyze_time_clusters(df_timeclust, within_subj=TRUE, paired=TRUE,#
+                                        samples=150) # in practice, you should use a lot more
+str(df_timeclust)
+JointInfl <- function(#
+n = 5,#
+slope = -1, #
+NP = c(n + 1, 0, n+1, -1), #
+adj = 1#
+){#
+XO <- 1:n#
+YO <- slope * XO#
+Points <- matrix(NP, nrow = 2, byrow = FALSE)#
+XN <- Points[1, ]#
+YN <- Points[2, ]#
+XT <- c(XN, XO)#
+YT <- c(YN, YO)#
+plot(YT ~ XT, cex = 2.5,#
+     xlim = c(min(XT) - adj, max(XT) + adj), #
+     ylim = c(min(YT) - adj, max(YT) + adj),#
+     xaxt = "n", yaxt = "n", xlab = "", ylab = "", font.lab = 2, #
+     for (i in 1:length(XT)) {#
+      if (i <= length(XO)) {pch = 1}#
+      else pch = c(10, 19)[1:length(XN)]#
+     }#
+     )#
+for (i in 0:length(XN)) {#
+	abline(#
+	lm(c(YO, YN[0:i]) ~ c(XO, XN[0:i])), #
+	lty = ifelse(i %in% c(0, length(XN)), 1, 1 + i),#
+	lwd = ifelse(i == length(XN), 2, 1)#
+	)#
+}#
+mtext("Y", side = 2, at = max(YT) + adj, las = 2, adj = 1.5)#
+mtext("X", side = 1, at = max(XT) + adj, las = 1, padj = 0.2)	#
+}
+JointInfl(slope = 1, NP=c(3, 1))
+JointInfl <- function(#
+n = 5,#
+slope = -1, #
+NP = c(n + 1, 0, n+1, -1), #
+adj = 1#
+){#
+XO <- 1:n#
+YO <- slope * XO#
+Points <- matrix(NP, nrow = 2, byrow = FALSE)#
+XN <- Points[1, ]#
+YN <- Points[2, ]#
+XT <- c(XN, XO)#
+YT <- c(YN, YO)#
+plot(YT ~ XT, cex = 2.5,#
+     xlim = c(min(XT) - adj, max(XT) + adj), #
+     ylim = c(min(YT) - adj, max(YT) + adj),#
+     xaxt = "n", yaxt = "n", xlab = "", ylab = "", font.lab = 2, #
+     for (i in 1:length(XT)) {#
+      if (i <= length(XO)) {pch = 1}#
+      else pch = c(19, 19)[1:length(XN)]#
+     }#
+     )#
+for (i in 0:length(XN)) {#
+	abline(#
+	lm(c(YO, YN[0:i]) ~ c(XO, XN[0:i])), #
+	lty = ifelse(i %in% c(0, length(XN)), 1, 1 + i),#
+	lwd = ifelse(i == length(XN), 2, 1)#
+	)#
+}#
+mtext("Y", side = 2, at = max(YT) + adj, las = 2, adj = 1.5)#
+mtext("X", side = 1, at = max(XT) + adj, las = 1, padj = 0.2)	#
+}
+JointInfl(slope = 1, NP=c(3, 1))
+JointInfl(slope = 1, NP=c(5, 1))
+JointInfl(slope = 1, NP=c(6, 1))
+JointInfl(slope = 1, NP=c(7, 1))
+n = 5
+NP = c(n + 1, 0, n+1, -1)
+NP
+Points <- matrix(NP, nrow = 2, byrow = FALSE)
+Points
+Points <- matrix(NP, nrow = 2, byrow = TRUE)
+Points
+df1 <- data.frame(X = XN, Y = YN)
+JointInfl <- function(#
+n = 5,#
+slope = -1, #
+NP = c(n + 1, 0, n+1, -1), #
+adj = 1#
+){#
+XO <- 1:n#
+YO <- slope * XO#
+Points <- matrix(NP, nrow = 2, byrow = FALSE)#
+XN <- Points[1, ]#
+YN <- Points[2, ]#
+XT <- c(XN, XO)#
+YT <- c(YN, YO)#
+plot(YT ~ XT, cex = 2.5,#
+     xlim = c(min(XT) - adj, max(XT) + adj), #
+     ylim = c(min(YT) - adj, max(YT) + adj),#
+     xaxt = "n", yaxt = "n", xlab = "", ylab = "", font.lab = 2, #
+     pch = ifelse((XT %in% XO) & (YT %in% YO) , 1, c(10, 19)[1:length(XN)])#
+     )#
+for (i in 0:length(XN)) {#
+	abline(#
+	lm(c(YO, YN[0:i]) ~ c(XO, XN[0:i])), #
+	lty = ifelse(i %in% c(0, length(XN)), 1, 1 + i),#
+	lwd = ifelse(i == length(XN), 2, 1)#
+	)#
+}#
+mtext("Y", side = 2, at = max(YT) + adj, las = 2, adj = 1.5)#
+mtext("X", side = 1, at = max(XT) + adj, las = 1, padj = 0.2)	#
+}
+JointInfl(slope = 1, NP=c(3, 1))
+JointInfl <- function(#
+n = 5,#
+slope = -1, #
+NP = c(n + 1, 0, n+1, -1), #
+adj = 1#
+){#
+XO <- 1:n#
+YO <- slope * XO#
+Points <- matrix(NP, nrow = 2, byrow = FALSE)#
+XN <- Points[1, ]#
+YN <- Points[2, ]#
+XT <- c(XN, XO)#
+YT <- c(YN, YO)#
+plot(YT ~ XT, cex = 2.5,#
+     xlim = c(min(XT) - adj, max(XT) + adj), #
+     ylim = c(min(YT) - adj, max(YT) + adj),#
+     xaxt = "n", yaxt = "n", xlab = "", ylab = "", font.lab = 2, #
+     pch = ifelse((XT %in% XO) & (YT %in% YO) , 1, c(19)[1:length(XN)])#
+     )#
+for (i in 0:length(XN)) {#
+	abline(#
+	lm(c(YO, YN[0:i]) ~ c(XO, XN[0:i])), #
+	lty = ifelse(i %in% c(0, length(XN)), 1, 1 + i),#
+	lwd = ifelse(i == length(XN), 2, 1)#
+	)#
+}#
+mtext("Y", side = 2, at = max(YT) + adj, las = 2, adj = 1.5)#
+mtext("X", side = 1, at = max(XT) + adj, las = 1, padj = 0.2)	#
+}
+JointInfl(slope = 1, NP=c(3, 1))
+JointInfl(slope = 1, NP=c(10, 1))
+?pch
+(XT %in% XO) & (YT %in% YO)
+JointInfl(slope = 1, NP=c(2.5, 1))
+JointInfl(slope = 1, NP=c(3, 1))
+JointInfl(slope = 1, NP=c(4, 1))
+JointInfl(slope = 1, NP=c(10, 1))
+JointInfl <- function(#
+n = 5,#
+slope = -1, #
+NP = c(n + 1, 0, n+1, -1), #
+adj = 1#
+){#
+XO <- 1:n#
+YO <- slope * XO#
+Points <- matrix(NP, nrow = 2, byrow = FALSE)#
+XN <- Points[1, ]#
+YN <- Points[2, ]#
+XT <- c(XN, XO)#
+YT <- c(YN, YO)#
+plot(YT ~ XT, cex = 2.5,#
+     xlim = c(min(XT) - adj, max(XT) + adj), #
+     ylim = c(min(YT) - adj, max(YT) + adj),#
+     xaxt = "n", yaxt = "n", xlab = "", ylab = "", font.lab = 2,#
+     for (i in 1:length(XO)) pch = 1#
+     for (i in (length(XO)+1) : length(XT)) pch = c(10, 19)[1:length(XN)]#
+     )#
+for (i in 0:length(XN)) {#
+	abline(#
+	lm(c(YO, YN[0:i]) ~ c(XO, XN[0:i])), #
+	lty = ifelse(i %in% c(0, length(XN)), 1, 1 + i),#
+	lwd = ifelse(i == length(XN), 2, 1)#
+	)#
+}#
+mtext("Y", side = 2, at = max(YT) + adj, las = 2, adj = 1.5)#
+mtext("X", side = 1, at = max(XT) + adj, las = 1, padj = 0.2)	#
+}
+JointInfl <- function(#
+n = 5,#
+slope = -1, #
+NP = c(n + 1, 0, n+1, -1), #
+adj = 1#
+){#
+XO <- 1:n#
+YO <- slope * XO#
+Points <- matrix(NP, nrow = 2, byrow = FALSE)#
+XN <- Points[1, ]#
+YN <- Points[2, ]#
+XT <- c(XN, XO)#
+YT <- c(YN, YO)#
+plot(YT ~ XT, cex = 2.5,#
+     xlim = c(min(XT) - adj, max(XT) + adj), #
+     ylim = c(min(YT) - adj, max(YT) + adj),#
+     xaxt = "n", yaxt = "n", xlab = "", ylab = "", font.lab = 2,#
+     for (i in 1:length(XO)) pch = 1#
+     for (i in (length(XO)+1):length(XT)) pch = 19]#
+     )#
+for (i in 0:length(XN)) {#
+	abline(#
+	lm(c(YO, YN[0:i]) ~ c(XO, XN[0:i])), #
+	lty = ifelse(i %in% c(0, length(XN)), 1, 1 + i),#
+	lwd = ifelse(i == length(XN), 2, 1)#
+	)#
+}#
+mtext("Y", side = 2, at = max(YT) + adj, las = 2, adj = 1.5)#
+mtext("X", side = 1, at = max(XT) + adj, las = 1, padj = 0.2)	#
+}
+library(magick)
+help(pakcage="magick")
+help(pakcage=magick)
+help(package=magick)
+ig <- image_graph(width = 1024, height = 768, res = 300)
+ig
+iglibrary(magick)#
+bg <- image_graph(width = 1024, height = 768, res = 300)#
+image <- image_read("~/Desktop/Figure_11_04.png")
+library(magick)#
+bg <- image_graph(width = 1024, height = 768, res = 300)#
+image <- image_read("~/Desktop/Figure_11_04.png")
+bg
+image
+?geometry
+library(magick)#
+BackGround <- image_graph(width = 1024, height = 768, res = 300)#
+ImgOld <- image_read("~/Desktop/Figure_11_04.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500x), filter = NULL)
+library(magick)#
+BackGround <- image_graph(width = 1024, height = 768, res = 300)#
+ImgOld <- image_read("~/Desktop/Figure_11_04.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)
+ImgNew
+image_composite(ImgOld, ImgNew)
+ImgOld
+library(magick)#
+BackGround <- image_graph(width = 1024, height = 768, res = 300)#
+ImgOld <- image_read("~/Desktop/Figure_11_04.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(ImgOld, ImgNew)#
+image_write(ImgFinal, "~/Desktop/Final.png")
+library(magick)#
+BackGround <- image_graph(width = 1024, height = 768, res = 300)#
+ImgOld <- image_read("~/Desktop/Figure_11_04.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(BackGround, ImgNew)#
+image_write(ImgFinal, "~/Desktop/Final.png")
+BackGround
+library(magick)#
+BackGround <- image_graph(width = 1024, height = 768, res = 300, bg = "white")#
+ImgOld <- image_read("~/Desktop/Figure_11_04.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(BackGround, ImgNew)
+ImgFinal
+?img_composite
+?image_composite
+ImgOld
+ImgNew
+BackGround
+help(package="magick")
+print(ImgNew)
+ImgFinal <- image_composite(ImgNew, BackGround)
+ImgFinal
+library(magick)#
+BackGround <- image_blank(width = 1024, height = 768)#
+ImgOld <- image_read("~/Desktop/Figure_11_04.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(BackGround, ImgNew)#
+image_write(ImgFinal, "~/Desktop/Final.png")
+BackGround
+ImgFinal
+library(magick)#
+BackGround <- image_blank(width = 1024, height = 768)#
+ImgOld <- image_read("~/Desktop/Figure_11_04.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(ImgNew, BackGround)#
+image_write(ImgFinal, "~/Desktop/Final.png")
+library(magick)
+help(package="magick")
+install.packages("installR")
+require(devtools)#
+install_github('andreacirilloac/updateR')
+updateR(admin_password = "MBP")
+library(updateR)
+updateR(admin_password = "MBP")
+library(acqr)
+package_df <- as.data.frame(installed.packages("/Library/Frameworks/R.framework/Versions/2.15/Resources/library"))#
+package_list <- as.character(package_df$Package)
+package_list
+package_df <- as.data.frame(installed.packages("/Library/Frameworks/R.framework/Versions/3.4.2/Resources/library"))#
+package_list <- as.character(package_df$Package)
+package_list
+package_df <- as.data.frame(installed.packages("/Library/Frameworks/R.framework/Versions/3.4/Resources/library"))#
+package_list <- as.character(package_df$Package)
+package_list
+update()
+library(car)
+library(magick)
+help(package="magick")
+BackGround <- image_blank(width = 1024, height = 768)
+BackGround
+ImgOld <- image_read("~/Desktop/Figure_11_04.png")
+ImgOld <- image_read("~/Desktop/blcu.png")
+ImgOld
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)
+ImgNew
+ImgFinal <- image_composite(BackGround, ImgNew)
+ImgFinal
+image_write(ImgFinal, "~/Desktop/Final.png")
+ImgFinal <- image_composite(BackGround, ImgNew)
+?image_composite
+ImgFinal <- image_composite(BackGround, ImgNew, operator = "blend")
+image_write(ImgFinal, "~/Desktop/Final.png")
+image_write(ImgFinal, "~/Desktop/Final.png")library(magick)#
+BackGround <- image_blank(width = 1024, height = 768)#
+ImgOld <- image_read("~/Desktop/blcu.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(BackGround, ImgNew, operator = "blend")#
+image_write(ImgFinal, "~/Desktop/Final.png")
+?image_composite
+image_write(ImgFinal, "~/Desktop/Final.png")library(magick)#
+BackGround <- image_blank(width = 1024, height = 768)#
+ImgOld <- image_read("~/Desktop/blcu.png")#
+ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(BackGround, ImgNew, operator = "blend", offset = "+100+50")#
+image_write(ImgFinal, "~/Desktop/Final.png")
+1024/2
+512/2
+260/2
+256-130
+768-560
+208/2
+library(magick)#
+BG <- image_blank(width = 1024, height = 768)#
+Agent <- image_read("~/Desktop/boy1.png")#
+Object1 <- image_read("~/Desktop/boy1.png")#
+Object2 <- image_read("~/Desktop/boy1.png")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(BG, Agent, operator = "blend", offset = "+126+104")#
+image_write(ImgFinal, "~/Desktop/Final.png")
+library(magick)#
+BG <- image_blank(width = 1024, height = 768)#
+Agent <- image_read("~/Desktop/boy1.jpg")#
+Object1 <- image_read("~/Desktop/boy1.jpg")#
+Object2 <- image_read("~/Desktop/boy1.jpg")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgFinal <- image_composite(BG, Agent, operator = "blend", offset = "+126+104")#
+image_write(ImgFinal, "~/Desktop/Final.png")
+?
+.
+?image_composite
+1024/2
+512-400
+112/2
+512+56
+768/2
+384-300
+84/2
+512/2
+256+42
+library(magick)#
+BG <- image_blank(width = 1024, height = 768)#
+Agent <- image_read("~/Desktop/boy1.png")#
+Object1 <- image_read("~/Desktop/01AF.png")#
+Object2 <- image_read("~/Desktop/02BT.png")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgAgent <- image_composite(BG, Agent, operator = "blend", offset = "+126+104")#
+ImgAgentObj1 <- image_composite(ImgAgent, Object1, operator = "blend", offset = "+568+42")#
+ImgTotal <- image_composite(ImgAgentObj1, Object2, operator = "blend", offset = "+568+298")#
+image_write(ImgFinal, "~/Desktop/ImgTotal.png")
+library(magick)#
+BG <- image_blank(width = 1024, height = 768)#
+Agent <- image_read("~/Desktop/boy1.jpg")#
+Object1 <- image_read("~/Desktop/01AF.jpg")#
+Object2 <- image_read("~/Desktop/02BT.jpg")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgAgent <- image_composite(BG, Agent, operator = "blend", offset = "+126+104")#
+ImgAgentObj1 <- image_composite(ImgAgent, Object1, operator = "blend", offset = "+568+42")#
+ImgTotal <- image_composite(ImgAgentObj1, Object2, operator = "blend", offset = "+568+298")#
+image_write(ImgFinal, "~/Desktop/ImgTotal.jpg")
+library(magick)#
+BG <- image_blank(width = 1024, height = 768)#
+Agent <- image_read("~/Desktop/boy1.jpg")#
+Object1 <- image_read("~/Desktop/01AF.jpg")#
+Object2 <- image_read("~/Desktop/01BT.jpg")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgAgent <- image_composite(BG, Agent, operator = "blend", offset = "+126+104")#
+ImgAgentObj1 <- image_composite(ImgAgent, Object1, operator = "blend", offset = "+568+42")#
+ImgTotal <- image_composite(ImgAgentObj1, Object2, operator = "blend", offset = "+568+298")#
+image_write(ImgFinal, "~/Desktop/ImgTotal.jpg")
+library(magick)#
+BG <- image_blank(width = 1024, height = 768)#
+Agent <- image_read("~/Desktop/boy1.jpg")#
+Object1 <- image_read("~/Desktop/01AF.jpg")#
+Object2 <- image_read("~/Desktop/01BT.jpg")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgAgent <- image_composite(BG, Agent, operator = "blend", offset = "+126+104")#
+ImgAgentObj1 <- image_composite(ImgAgent, Object1, operator = "blend", offset = "+568+42")#
+ImgTotal <- image_composite(ImgAgentObj1, Object2, operator = "blend", offset = "+568+298")#
+image_write(ImgTotal, "~/Desktop/ImgTotal.jpg")
+768/2
+384+42
+library(magick)#
+BG <- image_blank(width = 1024, height = 768)#
+Agent <- image_read("~/Desktop/boy1.jpg")#
+Object1 <- image_read("~/Desktop/01AF.jpg")#
+Object2 <- image_read("~/Desktop/01BT.jpg")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgAgent <- image_composite(BG, Agent, operator = "blend", offset = "+126+104")#
+ImgAgentObj1 <- image_composite(ImgAgent, Object1, operator = "blend", offset = "+568+42")#
+ImgTotal <- image_composite(ImgAgentObj1, Object2, operator = "blend", offset = "+568+426")#
+image_write(ImgTotal, "~/Desktop/ImgTotal.jpg")
+library(magick)#
+BG <- image_blank(width = 1024, height = 768, color = "white")#
+Agent <- image_read("~/Desktop/boy1.jpg")#
+Object1 <- image_read("~/Desktop/01AF.jpg")#
+Object2 <- image_read("~/Desktop/01BT.jpg")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgAgent <- image_composite(BG, Agent, operator = "blend", offset = "+126+104")#
+ImgAgentObj1 <- image_composite(ImgAgent, Object1, operator = "blend", offset = "+568+42")#
+ImgTotal <- image_composite(ImgAgentObj1, Object2, operator = "blend", offset = "+568+426")#
+image_write(ImgTotal, "~/Desktop/ImgTotal.jpg")
+library(magick)#
+BG <- image_blank(width = 1024, height = 768, color = "white")#
+Agent <- image_read("~/Desktop/boy1.jpg")#
+Object1 <- image_read("~/Desktop/01AF.jpg")#
+Object2 <- image_read("~/Desktop/01BT.jpg")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgAgent <- image_composite(BG, Agent, operator = "atop", offset = "+126+104")#
+ImgAgentObj1 <- image_composite(ImgAgent, Object1, operator = "blend", offset = "+568+42")#
+ImgTotal <- image_composite(ImgAgentObj1, Object2, operator = "blend", offset = "+568+426")#
+image_write(ImgTotal, "~/Desktop/ImgTotal.jpg")
+library(magick)#
+BG <- image_blank(width = 1024, height = 768, color = "white")#
+Agent <- image_read("~/Desktop/boy1.jpg")#
+Object1 <- image_read("~/Desktop/01AF.jpg")#
+Object2 <- image_read("~/Desktop/01BT.jpg")#
+#ImgNew <- image_resize(ImgOld, geometry_size_pixels(500), filter = NULL)#
+ImgAgent <- image_composite(BG, Agent, offset = "+126+104")#
+ImgAgentObj1 <- image_composite(ImgAgent, Object1, offset = "+568+42")#
+ImgTotal <- image_composite(ImgAgentObj1, Object2, offset = "+568+426")#
+image_write(ImgTotal, "~/Desktop/ImgTotal.jpg")
+par(mar = rep(0, 4), bg = 'black', ann = FALSE)#
+n = 100#
+with(#
+  list(x = runif(n), y = runif(n), size = runif(n, 1, 7)),#
+  plot(x, y, pch = 42, cex = size, col = 'white')#
+)
+?glm
+library(effects)
+library(nnet)
+library(xlsx)
+?predict
+methods(predict)
+?loess
+?seq
+x <- seq(from = 0, to = 1, length.out = 1000)
+x
+x <- seq(from = 1 / 10 ^ 20, to = 1 - 1 / 10 ^ 20, length.out = 1000)
+x
+x <- seq(from = 1 / 10 ^ 20, to = 1 - 1 / 10 ^ 20, length.out = 1000)#
+y <- x * (1 - x)#
+plot(y ~ x, type = "l")
+library(xtable)
+methods(print)
+?print.xtable
+?xtable
+Probability <- c(.01, .05, .10, .30, .50, .70, .90, .95, .99)#
+Odds <- Probability / (1 - Probability)#
+Logit <- log(Odds)#
+plot(Odds ~ Probability, type = "l")#
+line(Probability, Logit, lty = 2)
+Logit
+Probability <- c(.01, .05, .10, .30, .50, .70, .90, .95, .99)#
+Odds <- Probability / (1 - Probability)#
+Logit <- log(Odds)#
+plot(Odds ~ Probability, type = "l")#
+lines(x = Probability, y = Logit, lty = 2)
+Probability <- c(.01, .05, .10, .30, .50, .70, .90, .95, .99)#
+Odds <- Probability / (1 - Probability)#
+Logit <- log(Odds)#
+plot(Probability ~ Odds, type = "l")#
+lines(x = Logit, y = Probability, lty = 2)
+library(effects)
+data(package="effects")
+?library(carData)
+library(carData)
+data(package="carData")
+60*30
+options(servr.daemon = TRUE)#
+setwd("~/Documents/ADMIN/website/likan")
+blogdown::serve_site() #serve site
