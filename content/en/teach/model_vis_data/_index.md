@@ -25,9 +25,10 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 - Download the *`Final_Examination.Rmd`* file from the following link: [Demo](https://rmodelvis.likan.info/Final_Examination.Rmd)
 - Rename the file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
-- Open the renamed *`ZhangSan_20170708.Rmd`* file with *`RStudio`*.
-- Change the *`Name-Number`* region in the front matter of the renamed *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
-- Write your answers in the region enclosed by *```{r} XXX ```*.
+- Open the renamed *`.Rmd`* file with *`RStudio`*.
+- Change the *`Name-Number`* region in the front matter of the open *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
+- Write your *R* code in the region enclosed by *···{r} XXX ···*, i.e. the XXX area.
+Write your answers that don't include R code out of the region enclosed by *···{r} XXX ···*. For more information concering the *R markdown* syntax, please download the [R markdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf).
 - After finishing all your answers, click the *`knit to HTML`* button in the *`knit`* drop-down menu of *`RStudio`*.
 - Send both the filled *`.Rmd`* file and the knitted *`.html`* file to the following email address: `zhanlikan@blcu.edu.cn`.
 
@@ -35,7 +36,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 - [An interactive learning widget for R](/en/teach/model_vis_data/InteractiveR/)
 
-# 6. Syllabus, Lecture Notes, and Scripts
+# 6. Syllabus and Lecture Notes
 
 - Part 0: Introduction
     - 01. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_01.pdf);
