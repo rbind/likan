@@ -24,7 +24,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. Final Examination
 
 - To sucessfully complete the examination, your computer should have already installed the *R* software and the *R studio* software. One extra package, i.e., *car* should have also been installed before you attend this examination.
-- The exanimation paper and the data set used in the final examination are avaliable from **2018-01-11, 0900** to **2018-01-15, 0900**.
+- The exanimation paper and the data set used in the final examination are avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.
 - Download the two files from the following links: [*`Final_Examination_Formal.Rmd`*](https://rmodelvis.likan.info/Final_Examination_Formal.Rmd) file and the data set file [Titanic.txt](https://rmodelvis.likan.info/Titanic.txt).
 - Rename the `Rmd` file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
 - Open the renamed *`.Rmd`* file with *`RStudio`*.
