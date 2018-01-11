@@ -1,24 +1,3 @@
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(mobility ~ hetero, data = Angell, span= 0.75, degree = 1)#
-heteto = data.frame(hetero = seq(min(Angell$hetero), max(Angell$hetero), length.out = 10))#
-ll <- predict(lo, newdata = heteto)#
-lines(ll, col = "red")
-ll
-cars.lo <- loess(dist speed, cars)#
-predict(cars.lo, data.frame(speed = seq(5, 30, 1)), se = TRUE)#
-# to allow extrapolation#
-lines(speed,cars.lo$fit)#
-cars.lo1<-loess(dist speed, cars,span=1.5) lines(speed,cars.lo$fit,col=2)#
-cars.lo2 <- loess(dist speed, cars, control = loess.control(surface = "direct"))#
-predict(cars.lo2, data.frame(speed = seq(5, 30, 1)), se = TRUE) lines(speed,cars.lo2$fit)
-cars.lo <- loess(dist speed, cars); predict(cars.lo, data.frame(speed = seq(5, 30, 1)), se = TRUE)#
-# to allow extrapolation#
-lines(speed,cars.lo$fit)#
-cars.lo1<-loess(dist speed, cars,span=1.5) lines(speed,cars.lo$fit,col=2)#
-cars.lo2 <- loess(dist speed, cars, control = loess.control(surface = "direct"))#
-predict(cars.lo2, data.frame(speed = seq(5, 30, 1)), se = TRUE) lines(speed,cars.lo2$fit)
-cars
 cars.lo <- loess(dist, speed, cars)#
 predict(cars.lo, data.frame(speed = seq(5, 30, 1)), se = TRUE)
 plot(moral ~ hetero, data = Angell)#
@@ -667,5 +646,23 @@ help(, package="gamm4")
 gamm4
 library(gamm4)
 gamm4
+infant.mortality <- UN[, "infant.mortality"] #
+hist(x = infant.mortality, col =“red”,#
+      breaks = seq(from = 0, to = 170, by = 10),#
+      xlab = "Infant Mortality Rate (per 1000)", font.lab = 2, main = "")#
+box()
+library(car)
+infant.mortality <- UN[, "infant.mortality"] #
+hist(x = infant.mortality, col =“red”,#
+      breaks = seq(from = 0, to = 170, by = 10),#
+      xlab = "Infant Mortality Rate (per 1000)", font.lab = 2, main = "")#
+box()
+infant.mortality <- UN[, "infant.mortality"] #
+hist(x = infant.mortality, col ="red",#
+      breaks = seq(from = 0, to = 170, by = 10),#
+      xlab = "Infant Mortality Rate (per 1000)", font.lab = 2, main = "")#
+box()
+2.5/6
+options(servr.daemon = TRUE)#
 setwd("~/Documents/ADMIN/website/likan")
 blogdown::serve_site() #serve site
