@@ -32,7 +32,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 - Write your *R* code in the region enclosed by *···{r} XXX ···*, i.e. the XXX area.
 Write your answers that don't include R code out of the region enclosed by *···{r} XXX ···*.
 For more information concerning on the syntax of *Markdown* and *Rmarkdown*, please download the [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) cheatsheet and the  [R markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf) cheatsheet.
-- Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from question 2 to question 6 to answer.
+- Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from questions 2- 6 to answer.
 - After finishing all your answers, click the *`knit to HTML`* button in the *`knit`* drop-down menu of *`RStudio`*.
 - Send both the filled *`.Rmd`* file and the knitted *`.html`* file to the following email address: `zhanlikan@blcu.edu.cn` before **2018-01-15, 0900**.
 
