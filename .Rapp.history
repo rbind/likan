@@ -1,5 +1,3 @@
-cars.lo <- loess(dist, speed, cars)#
-predict(cars.lo, data.frame(speed = seq(5, 30, 1)), se = TRUE)
 plot(moral ~ hetero, data = Angell)#
 # lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
 lo <- loess(mobility ~ hetero, data = Angell, span= 0.75, degree = 1)#
@@ -663,6 +661,7 @@ hist(x = infant.mortality, col ="red",#
       xlab = "Infant Mortality Rate (per 1000)", font.lab = 2, main = "")#
 box()
 2.5/6
+?plot
 options(servr.daemon = TRUE)#
 setwd("~/Documents/ADMIN/website/likan")
 blogdown::serve_site() #serve site

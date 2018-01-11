@@ -26,13 +26,13 @@ Linear models, their variants, and extensions are among the most useful and wide
 - To sucessfully complete the examination, your computer should have already installed the *R* software and the *R studio* software. One extra package, i.e., *car* should have also been installed before you attend this examination.
 - The exanimation paper and the data set used in the final examination are avaliable from **2018-01-11, 0900** to **2018-01-15, 0900**.
 - Download the two files from the following links: [*`Final_Examination_Formal.Rmd`*](https://rmodelvis.likan.info/Final_Examination_Formal.Rmd) file and the data set file [Titanic.txt](https://rmodelvis.likan.info/Titanic.txt).
-- Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from question 2 to question 6 to answer.
 - Rename the `Rmd` file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
 - Open the renamed *`.Rmd`* file with *`RStudio`*.
 - Change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
 - Write your *R* code in the region enclosed by *···{r} XXX ···*, i.e. the XXX area.
 Write your answers that don't include R code out of the region enclosed by *···{r} XXX ···*.
 For more information concerning on the syntax of *Markdown* and *Rmarkdown*, please download the [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) cheatsheet and the  [R markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf) cheatsheet.
+- Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from question 2 to question 6 to answer.
 - After finishing all your answers, click the *`knit to HTML`* button in the *`knit`* drop-down menu of *`RStudio`*.
 - Send both the filled *`.Rmd`* file and the knitted *`.html`* file to the following email address: `zhanlikan@blcu.edu.cn` before **2018-01-15, 0900**.
 
