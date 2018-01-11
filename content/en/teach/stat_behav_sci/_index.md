@@ -30,45 +30,38 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 
 - Gravetter, F. J., & Wallnau, L. B. (2017). *[Statistics for the Behavioral Sciences](https://www.amazon.com/Statistics-Behavioral-Sciences-MindTap-Psychology/dp/1305504917)* (10 ed.): Wadsworth Publishing.
 
-# 4. R language
 
-![R](http://www.nature.com/polopoly_fs/7.22631.1418912852!/image/TB1.jpg_gen/derivatives/landscape_630/TB1.jpg)
-
-- R is a free software environment for statistical computing and graphics.
-- This course will use [R language](https://www.r-project.org) as the main software to draw graphs and do the statistical analyses.
-
-
-# 5. Examination
+# 4. Examination
 
 - Time and location: 08:00-09:50, July 13, *Room 202, Teaching Building 2*;
 - Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 16*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 15*.
 
-# 6. Syllabus, Lecture Notes, and Scripts
+# 5. Syllabus and Lecture Notes
 
 - Part I. Introduction and Descriptive Statistics
-  - Chapter 01. Introduction to Statistics. [Slides](https://statbehavsci.likan.info/CH.01.pdf); [Scripts](/en/teach/stat_behav_sci/ch_01/)
-  - Chapter 02. Frequency Distributions. [Slides](https://statbehavsci.likan.info/CH.02.pdf); [Scripts](/en/teach/stat_behav_sci/ch_02/)
-  - Chapter 03. Central Tendency. [Slides](https://statbehavsci.likan.info/CH.03.pdf); [Scripts](/en/teach/stat_behav_sci/ch_03/)
-  - Chapter 04. Variability. [Slides](https://statbehavsci.likan.info/CH.04.pdf); [Scripts](/en/teach/stat_behav_sci/ch_04/)
+  - Chapter 01. Introduction to Statistics.
+  - Chapter 02. Frequency Distributions.
+  - Chapter 03. Central Tendency.
+  - Chapter 04. Variability.
 
 - Part II. Foundations of Inferential Statistics
-  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [Slides](http://statbehavsci.likan.info/CH.05.pdf); [Scripts](/en/teach/stat_behav_sci/ch_05/)
-  - Chapter 06. Probability. [Slides](https://statbehavsci.likan.info/CH.06.pdf)
-  - Chapter 07. Probability and Samples: The Distribution of Sample Means. [Slides](https://statbehavsci.likan.info/CH.07.pdf); [Solutions](https://statbehavsci.likan.info/CH.07.Solutions.png)
-  - Chapter 08. Introduction to Hypothesis Testing. [Slides](https://statbehavsci.likan.info/CH.08.pdf)
+  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions.
+  - Chapter 06. Probability.
+  - Chapter 07. Probability and Samples: The Distribution of Sample Means.
+  - Chapter 08. Introduction to Hypothesis Testing.
 
 - Part III. Using *t*-Statistics for Inferences
-  - Chapter 09. Introduction to the *t* Statistic. [Slides](https://statbehavsci.likan.info/CH.09.pdf)
-  - Chapter 10. The *t* Test for Two Independent Samples. [Slides](https://statbehavsci.likan.info/CH.10.pdf)
-  - Chapter 11. The *t* Test for Two Related Samples. [Slides](https://statbehavsci.likan.info/CH.11.pdf)
+  - Chapter 09. Introduction to the *t* Statistic.
+  - Chapter 10. The *t* Test for Two Independent Samples.
+  - Chapter 11. The *t* Test for Two Related Samples.
 
 - Part IV. Analysis of Variance
-  - Chapter 12. Introduction to Analysis of Variance. [Slides](https://statbehavsci.likan.info/CH.12.pdf)
-  - Chapter 13. Repeated-Measures Analysis of Variance. [Slides](https://statbehavsci.likan.info/CH.13.pdf)
-  - Chapter 14. Two-Factor Analysis of Variance (Independent Measures). [Slides](http://statbehavsci.likan.info/CH.14.pdf); [Scripts](/en/teach/stat_behav_sci/ch_14/)
+  - Chapter 12. Introduction to Analysis of Variance.
+  - Chapter 13. Repeated-Measures Analysis of Variance.
+  - Chapter 14. Two-Factor Analysis of Variance (Independent Measures).
 
 - Part V. Correlations and Nonparametric Tests
-  - Chapter 15. Correlation. [Slides](http://statbehavsci.likan.info/CH.15.pdf);
-  - Chapter 16. Introduction to Regression. [Slides](http://statbehavsci.likan.info/CH.16.pdf);
+  - Chapter 15. Correlation.
+  - Chapter 16. Introduction to Regression.
   - Chapter 17. The Chi-Square Statistic: Tests for Goodness of Fit and Independence
   - Chapter 18. The Binomial Test
