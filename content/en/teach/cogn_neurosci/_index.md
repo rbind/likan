@@ -9,7 +9,7 @@ slag: "cogn_neurosci"
 ---
 # 1. Lecture Time and Location
 
-The course will be lectured at **** on each **** in **** (****).
+TBA
 
 # 2. Course Information
 <p align = "middle"> *How the brain enables the mind ?* </p>
@@ -43,12 +43,12 @@ The course will be lectured at **** on each **** in **** (****).
 # 5. Lecture Notes
 
 - Part I. Background and methods
-  - Chapter 00. Introduction to the Course. [Slides](https://cognneurosci.likan.info/CH.00.pdf)
-  - Chapter 01. A Brief History of Cognitive Neuroscience. [Slides](https://cognneurosci.likan.info/CH.01.pdf)
-  - Chapter 02. Structure and Function of the Nervous System.[百度网盘](https://pan.baidu.com/s/1hsgdZhy)
-  - Chapter 03. Methods of Cognitive Neuroscience.[百度网盘](https://pan.baidu.com/s/1geBal6j)
+  - Chapter 00. Introduction to the Course.
+  - Chapter 01. A Brief History of Cognitive Neuroscience.
+  - Chapter 02. Structure and Function of the Nervous System.
+  - Chapter 03. Methods of Cognitive Neuroscience.
 - Part II. Core Processes
-  - Chapter 04. Hemispheric Specialization. [Slides](https://cognneurosci.likan.info/CH.04.pdf)
+  - Chapter 04. Hemispheric Specialization.
   - Chapter 05. Sensation and Perception.
   - Chapter 06. Object Recognition.
   - Chapter 07. Attention.
