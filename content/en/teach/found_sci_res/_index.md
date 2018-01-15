@@ -7,12 +7,8 @@ disable_comments: true
 show_toc: true
 ---
 # 1. Lecture Time and Location
-- Time:
-    - 08:00 - 11:50, Even Thursdays, i.e., <br>
-      SEP 21; OCT ~~5~~, 19; NOV 2, 16, 30; DEC 14, 28;
-    - 08:00 - 09:50, Odd Thursdays, i.e., <br>
-      SEP 29; OCT 12, 26; NOV 9, 23 ; DEC  7, 21; JAN 4;
-- Location: Room 302, Teaching Building 2;
+- Time: TBA
+- Location: TBA
 
 # 2. Course Information
 
@@ -25,12 +21,12 @@ TBA
 # 5. Lecture Notes
 
 - Part I. Introduction
-    - Chapter 01. Science and Scientific Research, [slides](https://foundscires.likan.info/Sci.Res.CH.01.pdf); [Assignment one](https://foundscires.likan.info/Assignment_01.pdf); [Assignment two](https://foundscires.likan.info/Assignment_02.pdf)
+    - Chapter 01. Science and Scientific Research
 
 - Part II. Academic reading
-    - Chapter 02. Category and structure of academic articles, [slides](https://foundscires.likan.info/Sci.Res.CH.02.pdf);
-    - Chapter 03. References in academic articles, [slides](https://foundscires.likan.info/Sci.Res.CH.03.pdf);
-    - Chapter 04. Databases, journals, and search engines, [slides](https://foundscires.likan.info/Sci.Res.CH.04.pdf);
+    - Chapter 02. Category and structure of academic articles
+    - Chapter 03. References in academic articles
+    - Chapter 04. Databases, journals, and search engines
     - Chapter 05. Bibliography softwares
 
 - Part III. Academic writing
