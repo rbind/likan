@@ -8,8 +8,8 @@ show_toc: true
 ---
 # 1. Lecture Time and Location
 
-- Time: 08:00 - 10:50, Monday;
-- Location: Room 206, Teaching Building 2;
+- Time: TBA
+- Location: TBA
 
 # 2. Prerequisites
 
@@ -44,22 +44,22 @@ Write your answers that don't include R code out of the region enclosed by *··
 # 6. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction, [slides](https://rmodelvis.likan.info/2017_CH_01.pdf);
-    - 02. R basics, [slides](https://rmodelvis.likan.info/2017_CH_02.pdf);
+    - 01. Course introduction
+    - 02. R basics
 - Part I: Data craft
-    - 03. Examining Data, [slides](https://rmodelvis.likan.info/2017_CH_03.pdf);
-    - 04. Transforming Data, [slides](https://rmodelvis.likan.info/2017_CH_04.pdf);
+    - 03. Examining Data
+    - 04. Transforming Data
 - Part II: Linear models and least squares
-    - 05. Linear least-squares regression, [slides](https://rmodelvis.likan.info/2017_CH_05.pdf);
-    - 06. Statistical Inference for Regression, [slides](https://rmodelvis.likan.info/2017_CH_06.pdf);
-    - 07. Dummy-variable regression, [slides](https://rmodelvis.likan.info/2017_CH_07.pdf);
-    - 08. Analysis of variance, [slides](https://rmodelvis.likan.info/2017_CH_08.pdf),  [data](https://socialsciences.mcmaster.ca/jfox/Books/Applied-Regression-3E/datasets/Vocabulary-2.txt)
+    - 05. Linear least-squares regression
+    - 06. Statistical Inference for Regression
+    - 07. Dummy-variable regression
+    - 08. Analysis of variance
 - Part III: Linear-model diagnostics
-    - 09. Unusual and influential data, [slides](https://rmodelvis.likan.info/2017_CH_09.pdf)
+    - 09. Unusual and influential data
     - 10. Non-Normality, Nonconstant Error Variance, and Nonlinearity
     - 11. Collinearity and Its Purported Remedies
 - Part IV: Generalized linear models
-    - 12. Logit and Probit Models for Categorical Response Variables, [slides](https://rmodelvis.likan.info/2017_CH_12.pdf)
+    - 12. Logit and Probit Models for Categorical Response Variables
     - 13. Generalized Linear Models
 - Part V. Extending Linear and Generalized Linear Models
     - 14. Time-Series Regression and Generalized Least Squares
