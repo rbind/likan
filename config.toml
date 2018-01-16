@@ -1,6 +1,6 @@
 baseurl = "https://likan.info/"
 languageCode = "en-us"
-title = "Likan | 侃侃迩行"
+title = "Likan Zhan | 战立侃"
 theme = "hugo-ivy"
 googleAnalytics = "UA-1988641-2"
 disqusShortname = "https-likanzhan-github-io"
