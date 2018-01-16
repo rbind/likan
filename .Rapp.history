@@ -1,154 +1,3 @@
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(mobility ~ hetero, data = Angell, span= 0.75, degree = 1)#
-heteto = data.frame(hetero = seq(min(Angell$hetero), max(Angell$hetero), length.out = 10))#
-ll <- predict(lo, newdata = heteto)#
-lines(ll, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(mobility ~ hetero, data = Angell, span= 0.75, degree = 1)#
-hetero = seq(min(Angell$hetero), max(Angell$hetero), length.out = 10)#
-ll <- predict(lo, newdata = heteto)#
-lines(hetero, ll, col = "red")
-ll
-hetero
-lines(x=hetero, y=ll)
-?lines
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(mobility ~ hetero, data = Angell, span= 0.75, degree = 1)#
-lines(lo)
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.75, degree = 1)#
-lines(lo)
-?loess
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.75, degree = 1, control = loess.control(surface = "direct"))#
-lines(lo)
-lo
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.75, degree = 1, control = loess.control(surface = "direct"))#
-lines(predict(lo))
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.75, degree = 1)#
-heteto = data.frame(hetero = seq(min(Angell$hetero), max(Angell$hetero), length.out = 10))#
-ll <- predict(lo, newdata = heteto)#
-lines(ll, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.75, degree = 1)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 10)#
-ll <- predict(lo, heteto)
-ll
-lines(heteto, ll)
-lines(ll, col="red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.75, degree = 1)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.2, degree = 1)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.2, degree = 2)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.4, degree = 2)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.5, degree = 2)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.5, degree = 3)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.5, degree = 2)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.3, degree = 2)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-plot(moral ~ hetero, data = Angell)#
-# lines(lowess(Angell$hetero, Angell$moral, f= 0.2))#
-lo <- loess(moral ~ hetero, data = Angell, span= 0.4, degree = 2)#
-heteto = seq(min(Angell$hetero), max(Angell$hetero), length.out = 50)#
-predict <- predict(lo, heteto)#
-lines(heteto, predict, col = "red")
-str(Anscombe)
-plot(education ~ income, data = Angell)#
-lines(lowess(Angell$income, Angell$education, f= 0.2))
-plot(education ~ income, data = Anscombe)#
-lines(lowess(Anscombe$income, Anscombe$education, f= 0.2))
-plot(education ~ young, data = Anscombe)#
-lines(lowess(Anscombe$young, Anscombe$education, f= 0.2))
-plot(education ~ young, data = Anscombe)#
-lines(lowess(Anscombe$young, Anscombe$education, f= 0.1))
-plot(education ~ young, data = Anscombe)#
-lines(lowess(Anscombe$young, Anscombe$education, f= 0.3))
-plot(education ~ young, data = Anscombe)#
-lines(lowess(Anscombe$young, Anscombe$education, f= 0.28))
-plot(education ~ young, data = Anscombe)#
-lines(lowess(Anscombe$young, Anscombe$education, f= 0.3))
-with(#
-plot(education ~ income)#
-lines(lowess(income, education, f= 0.2))#
-)
-?with
-with(Anscombe, {#
-plot(education ~ income)#
-lines(lowess(income, education, f= 0.2))	#
-})
-scatterplotMatrix(#
-~ education + income + young + urban, data = Anscombe, #
-  smooth = TRUE, smoother = loessLine, smoother.args = list(span = 0.5), spread = FALSE,#
-  reg.line = lm#
-)
-str(Chirot)
-ncols(Chirot)
-colnames(Chirot)
-eval(colnames(Chirot))
-formula(colnames(Chirot))
-xx<-formula(colnames(Chirot))
-xx
-paste(colnames(Chirot))
-paste(colnames(Chirot), sep = "+")
-?colnames
-x<-colnames(Chirot)
-str(x)
-as.vector(x)
-x<-as.vector(x)
-str(x)
-length(x)
-?paste
-paste(x, sep="=")
-paste(x[1:5], sep="=")
-paste(x, sep ="+", collapse = "")
 paste(x, sep = "+", collapse = "")
 paste(x, sep = "+", collapse = "+")
 paste(x, collapse = "+")
@@ -662,6 +511,87 @@ hist(x = infant.mortality, col ="red",#
 box()
 2.5/6
 ?plot
-options(servr.daemon = TRUE)#
+151*600
+Sys.Date()
+?Sys.Date()
+system.time()
+system.time(print("X"))
+?system.time(print("X"))
+?system.time(print(1:1000))
+system.time(print(1:1000))
+xx<-system.time(print(1:10^10))
+xx
+?do.call
+do.call("complex", list(imag = 1:3))
+do.call("complex", 1:4)
+do.call("complex", list(x=1:4))
+do.call("complex", list(mmv= 1:3))
+do.call("complex", list(imag = 1:3))
+do.call("complex", list(imagw = 1:3))
+do.call("complex", list(imag = 1:3))
+list(imag = 1:3)
+do.call("complex", list(imag = 1:3))
+tmp <- expand.grid(letters[1:2], 1:3, c("+", "-"))
+tmp
+A <- 2
+d <- function(x) print(x^2)
+f <- function(x) print(x^2)
+f(A)
+env <- new.env()#
+assign("A", 10, envir = env)#
+assign("f", f, envir = env)#
+f <- function(x) print(x)
+A
+f
+A
+f
+f(A)
+"f"(A)
+?assign
+?do.call
+A <- 2#
+f <- function(x) print(x^2)#
+env <- new.env()#
+assign("A", 10, envir = env)#
+assign("f", f, envir = env)#
+f <- function(x) print(x)
+f(A)
+D <- 10
+assign("D", 100)
+D
+"D"
+quote(D)
+str(D)
+D
+quote(D)
+eval(quote(D))
+help(pacakge="base")
+help(package="base")
+help(, "base")
+library(carData)
+help(, carData)
+library(lme4)#
+#
+# Run model with lme4 example data#
+fit = lmer(angle ~ recipe + temp + (1|recipe:replicate), cake)#
+#
+# Model summary#
+summary(fit)#
+#
+# lme4 profile method confidence intervals#
+confint(fit)#
+#
+# Bootstrapped parametric p-values#
+boot.out = bootMer(fit, fixef, nsim=1000) #nsim determines p-value decimal places #
+p = rbind(#
+  (1-apply(boot.out$t<0, 2, mean))*2,#
+  (1-apply(boot.out$t>0, 2, mean))*2)#
+apply(p, 2, min)
+?bootMer
+p
+?bootMer
+library(knitr)
+help(, knitr)
+100/110
 setwd("~/Documents/ADMIN/website/likan")
 blogdown::serve_site() #serve site
