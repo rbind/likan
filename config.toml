@@ -61,7 +61,7 @@ MetaDataFormat = "yaml" # format of a new post
     weight = 2
 
 [[menu.cn]]
-    name = "写作"
+    name = "著作"
     url = "http://probstatr.likan.info"
     weight = 3
 
