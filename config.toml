@@ -61,24 +61,29 @@ MetaDataFormat = "yaml" # format of a new post
     weight = 2
 
 [[menu.cn]]
+    name = "写作"
+    url = "http://probstatr.likan.info"
+    weight = 3
+
+[[menu.cn]]
     name = "研究"
     url = "/cn/research/"
-    weight = 3
+    weight = 4
 
 [[menu.cn]]
     name = "读书"
     url = "/cn/read/"
-    weight = 4
+    weight = 5
 
 [[menu.cn]]
     name = "博客"
     url = "/cn/post/"
-    weight = 5
+    weight = 6
 
 [[menu.cn]]
     name = "English"
     url = "/en/"
-    weight = 6
+    weight = 7
 
 [params]
     description = "Likan Zhan's personal website"
