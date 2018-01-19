@@ -50,6 +50,7 @@ TBA
 - Procedure of Scientific Research
     - Chambers, C. (2017). *The seven deadly sins of psychology: A manifesto for reforming the culture of scientific practice*. Princeton, NJ: Princeton University Press.
     - Evans, J. S. B. T. (2016). *How to Be a Researcher: A strategic guide for academic success*. East Sussex, FA: Routledge.
+    - Leek, J. (2016). *How to be a modern scientist*: Leanpub.
     - Stanovich, K. E. (2013). *How to think straight about psychology* (10 ed.). Boston, MA: Pearson Education.
 
 - Academic writing
