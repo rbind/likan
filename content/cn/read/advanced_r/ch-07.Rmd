@@ -1,6 +1,6 @@
 ---
 title: "第 07 章、面向对象的编程"
-author: "侃侃迩行"
+author: "战立侃"
 date: '2017-04-07'
 output:
   blogdown::html_page:
