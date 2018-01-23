@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: "2016-05-05T21:48:51-07:00"
+home: true
 ---
 
 ![brain_in_a_vat](http://webimages.likan.info/brain_in_a_vat.jpg)

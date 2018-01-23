@@ -1,7 +1,8 @@
 ---
 title: "Curriculum Vitae"
 disable_comments: yes
-date: '2017-09-17'
+date: '2016-01-22'
+lastmod: '2018-01-22'
 output:
   pdf_document:
     includes:

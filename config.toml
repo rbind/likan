@@ -9,6 +9,7 @@ hasCJKLanguage = true  # .WordCount works correctly for chinese
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
 MetaDataFormat = "yaml" # format of a new post
+enableGitInfo = true
 
 [[menu.main]]
     name = "English"
@@ -19,6 +20,11 @@ MetaDataFormat = "yaml" # format of a new post
     name = "中文"
     url = "/cn/"
     weight = 2
+
+[[menu.main]]
+    name = "FLAG"
+    url = "http://probstatr.likan.info"
+    weight = 3
 
 [[menu.en]]
     name = "Home"
