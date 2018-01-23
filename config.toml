@@ -21,11 +21,6 @@ enableGitInfo = true
     url = "/cn/"
     weight = 2
 
-[[menu.main]]
-    name = "FLAG"
-    url = "http://probstatr.likan.info"
-    weight = 3
-
 [[menu.en]]
     name = "Home"
     url = "/"
@@ -67,7 +62,7 @@ enableGitInfo = true
     weight = 2
 
 [[menu.cn]]
-    name = "著作"
+    name = "写作"
     url = "http://probstatr.likan.info"
     weight = 3
 
