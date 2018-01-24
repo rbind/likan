@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+
+{{ if .Content }} {{ .Content }} {{ end }}
+<hr>
+<ul>
+  <li> Recent Updates (English) </li>
+<ul>
+  {{ range first 5 ( where .Site.Pages.ByLastmod.Reverse "Section" "en") }}
+  <li>
+    <span class="date">{{ .Lastmod.Format "2006/01/02" }}</span>
+    <a href="{{ .URL }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+<li> Recent Updates (Chinese) </li>
+
+ <ul>
+  {{ range first 5 ( where .Site.Pages.ByLastmod.Reverse "Section" "cn") }}
+  <li>
+    <span class="date">{{ .Lastmod.Format "2006/01/02" }}</span>
+    <a href="{{ .URL }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+</ul>
+
+{{ partial "footer.html" . }}
