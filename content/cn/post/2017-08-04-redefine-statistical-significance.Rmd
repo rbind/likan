@@ -1,6 +1,6 @@
 ---
 title: "72位著名科学家呼吁提高统计显著性水平以提升科学研究的可重复性"
-author: "侃侃迩行"
+author: "战立侃"
 date: '2017-08-04'
 output:
   pdf_document:

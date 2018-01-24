@@ -2,6 +2,7 @@
 title: "seq(), seq_along(), and seq_len()"
 author: "Likan"
 date: '2017-11-22'
+lastmod: '2017-11-22'
 slug: seq-versus-seq-along
 tags: []
 categories: []
@@ -28,10 +29,10 @@ seq_along(a)</code></pre>
 <pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
 <p>It’s probably worth noting that <code>sample()</code> exhibits similarly crummy behavior:</p>
 <pre class="r"><code>sample(a)</code></pre>
-<pre><code>## [1]  8 10  9</code></pre>
+<pre><code>## [1]  8  9 10</code></pre>
 <pre class="r"><code>sample(b)</code></pre>
 <pre><code>## [1]  9 10</code></pre>
 <pre class="r"><code>sample(c)</code></pre>
-<pre><code>##  [1]  7  2  1  4  8  5 10  6  3  9</code></pre>
+<pre><code>##  [1]  1 10  3  5  2  9  6  4  7  8</code></pre>
 <p>Reference:</p>
 <p><a href="https://stackoverflow.com/questions/13732062/seq-vs-seq-along-when-will-using-seq-cause-unintended-results/13732373#13732373">seq vs seq_along. When will using seq cause unintended results?</a></p>

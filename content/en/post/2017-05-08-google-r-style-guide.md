@@ -2,6 +2,7 @@
 title: "Google's R Style Guide"
 Author: "Likan"
 date: '2017-05-08'
+lastmod: '2017-05-08'
 show_toc: true
 tags: [style, R]
 ---

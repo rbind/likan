@@ -2,6 +2,7 @@
 title: 'Statistics for the Behavioral Sciences'
 author: "Likan Zhan"
 date: '2017-03-01'
+lastmod: '2018-01-01'
 disable_comments: true
 show_title: true
 show_toc: true

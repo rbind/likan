@@ -3,10 +3,9 @@ title: "Measurement Error"
 author: "Likan Zhan"
 date: '2017-02-16'
 draft: yes
-tags: [statics, R]
 ---
 
-This page is adapted from the stack overflow [post](http://stats.stackexchange.com/questions/15011/generate-a-random-variable-with-a-defined-correlation-to-an-existing-variable) by _caracal_ and _gregmacfarlane_
+This page is adapted from the stack overflow [post](http://stats.stackexchange.com/questions/15011/generate-a-random-variable-with-a-defined-correlation-to-an-existing-variable) by _caracal_ and _gregmacfarlane_.
 
 For vectors with mean 0, their correlation equals the cosine of their angle. So one way to find a vector _x_ with exactly the desired correlation _r_, corresponding to an angle $\theta$:
 

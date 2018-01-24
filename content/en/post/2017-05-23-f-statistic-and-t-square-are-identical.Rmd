@@ -2,10 +2,11 @@
 title: Why squared-t-statistic and F-statistic are identical
 author: Likan
 date: '2017-05-23'
+lastmod: '2017-05-23'
 output:
   blogdown::html_page:
     toc: true
-tags: [statistics, R]    
+tags: [statistics, R]
 ---
 
 # 1. Notations

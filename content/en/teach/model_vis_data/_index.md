@@ -2,6 +2,7 @@
 title: "R for Modeling and Visualizing Data"
 author: "Likan"
 date: '2017-09-01'
+lastmod: '2017-12-21'
 show_title: true
 disable_comments: true
 show_toc: true

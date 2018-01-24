@@ -9,7 +9,7 @@ hasCJKLanguage = true  # .WordCount works correctly for chinese
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
 MetaDataFormat = "yaml" # format of a new post
-enableGitInfo = true
+enableGitInfo = false
 
 [[menu.main]]
     name = "English"

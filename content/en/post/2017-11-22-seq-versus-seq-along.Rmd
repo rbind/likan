@@ -2,6 +2,7 @@
 title: "seq(), seq_along(), and seq_len()"
 author: "Likan"
 date: '2017-11-22'
+lastmod: '2017-11-22'
 slug: seq-versus-seq-along
 tags: []
 categories: []

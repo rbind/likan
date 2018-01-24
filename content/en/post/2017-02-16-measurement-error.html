@@ -3,12 +3,11 @@ title: "Measurement Error"
 author: "Likan Zhan"
 date: '2017-02-16'
 draft: yes
-tags: [statics, R]
 ---
 
 
 
-<p>This page is adapted from the stack overflow <a href="http://stats.stackexchange.com/questions/15011/generate-a-random-variable-with-a-defined-correlation-to-an-existing-variable">post</a> by <em>caracal</em> and <em>gregmacfarlane</em></p>
+<p>This page is adapted from the stack overflow <a href="http://stats.stackexchange.com/questions/15011/generate-a-random-variable-with-a-defined-correlation-to-an-existing-variable">post</a> by <em>caracal</em> and <em>gregmacfarlane</em>.</p>
 <p>For vectors with mean 0, their correlation equals the cosine of their angle. So one way to find a vector <em>x</em> with exactly the desired correlation <em>r</em>, corresponding to an angle <span class="math inline">\(\theta\)</span>:</p>
 <p>Get fixed vector <span class="math inline">\(x_1\)</span> and and a random vector <span class="math inline">\(x_2\)</span></p>
 <p>Center both vectors (mean 0)</p>
@@ -37,6 +36,6 @@ print(corr)
 }
 
 xcor(1000, 0.5)</code></pre>
-<pre><code>## [1] 0.008109654</code></pre>
+<pre><code>## [1] -0.05862151</code></pre>
 <pre class="r"><code>xcor(20, 0.5)</code></pre>
-<pre><code>## [1] 0.09726864</code></pre>
+<pre><code>## [1] 0.02053879</code></pre>

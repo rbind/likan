@@ -1,40 +1,5 @@
 {{ partial "header.html" . }}
 
-<!--- Format of home page, 20180124 by Likan Zhan --->
-
-{{ if .Params.home }}
-
-{{ .Content }}
-
-<div class="row">
-  <div class="column">
-  <h6> Recent Updates (English) </h6>
-  <ul>
-    {{ range first 5 ( where .Data.Pages.ByLastmod.Reverse "Section" "en") }}
-    <li>
-      <span class="date">{{ .Lastmod.Format "2006/01/02" }}</span>
-      <a href="{{ .URL }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
-  </div>
-  <div class="column">
-  <h6> Recent Updates (Chinese) </h6>
-  <ul>
-    {{ range first 5 ( where .Data.Pages.ByLastmod.Reverse "Section" "cn") }}
-    <li>
-      <span class="date">{{ .Lastmod.Format "2006/01/02" }}</span>
-      <a href="{{ .URL }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
-  </div>
-</div>
-
-{{ else }}
-
-<!--- Format of home page, 20180124 by Likan Zhan --->
-
 {{ if .Params.show_toc }} {{ .TableOfContents }} {{ end }}
 
 {{ if .Content }}
@@ -51,8 +16,6 @@
   </li>
   {{ end }}
 </ul>
-
-{{ end }}
 
 {{ end }}
 
