@@ -3,9 +3,6 @@ title: "An interactive learning widget for R"
 disable_comments: yes
 author: "Likan Zhan"
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    self_contained: false
 ---
 
 ```{r, include=FALSE}
