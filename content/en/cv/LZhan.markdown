@@ -1,0 +1,91 @@
+---
+title: "Curriculum Vitae"
+disable_comments: yes
+date: '2016-01-22'
+lastmod: '2018-01-24'
+output:
+  html_document:
+    df_print: paged
+  pdf_document:
+    includes:
+      in_header: header.tex
+    latex_engine: xelatex
+    md_extensions: -autolink_bare_uris+hard_line_breaks
+    template: cv_no_title.latex
+  word_document: default
+geometry: margin=1in
+pdf: /en/cv/LZhan.pdf
+fontsize: 16pt
+type: cv
+---
+
+# Likan Zhan
+
+- Add: 15, Xueyuan Rd., Haidian District, Beijing 100083, China
+- Tel:  +86 10 8230 3468
+- Email: zhanlikan@hotmail.com
+- Website: <https://likan.info>
+
+## Academic appointment
+
+- 2014.10 ~ Now, Assistant professor,<br>
+  MEG Laboratory for Brain Sciences, <br>
+  Institute for Speech Pathology and the Brain Science,<br>
+  Beijing Language and Culture University, Beijing, China
+
+## Education
+
+- 2010.10 ~ 2014.09, Ph.D. Cognitive Science, <br>
+  Macquarie University, Sydney, Australia
+
+- 2007.09 ~ 2010.07, M.E. Cognitive Psychology, <br>
+  Beijing Language and Culture University, Beijing, China
+
+- 2000.09 ~ 2004.07, B.A. Teaching Chinese as a Second Language, <br>
+  Beijing Language and Culture University, Beijing, China
+
+
+## Teaching responsibilities
+
+- Statistics for the Behavioral Sciences, [More information](https://likan.info/en/teach/stat_behav_sci/)
+- R for Modeling and Visualizing Data, [More information](https://likan.info/en/teach/model_vis_data/)
+- Introduction to Cognitive Neuroscience, [More information](https://likan.info/en/teach/cogn_neurosci/)
+- Foundations of Scientific Research, [More information](https://likan.info/en/teach/found_sci_res/)
+
+## Professional skills
+
+- Statistics. I teached two statistical courses to master students. I have moderate experience in using *R* for statistical modeling and data visualization. Besides the basic ones, I used the following R packages a lot: [*data.table*](http://r-datatable.com), [*dplyr*](http://dplyr.tidyverse.org), [*ggplot2*](http://ggplot2.tidyverse.org), [*car*](https://cran.r-project.org/web/packages/car/index.html), [*lme4*](https://github.com/lme4/lme4), [*gam*](https://cran.r-project.org/web/packages/gam/index.html) etc. I also created a R package myself, called [*acqr*](https://github.com/likanzhan/acqr).
+
+- Experimental techniques. I'm familiar with [E-prime](https://www.pstnet.com/eprime.cfm), [Psychopy](http://www.psychopy.org), [Psychtoolbox](http://psychtoolbox.org), and [Presentation](https://www.neurobs.com/presentation) for presenting test stimuli. I have advanced experience in using Eyelink II/1000 plus (SR Research Ltd.), such as *Experiment Builder* for experiment building, and *Data Viewer* for data analysis. I am in charge of establishing the first Child MEG lab in China, familiar with *Yokogawa* MEG system for equipment maintenance and MEG data acquisition. I'm also familiar with *BESA*, and some Matlab packages for analyzing the E/MEG data, such as [*fieldtrip*](http://www.fieldtriptoolbox.org) and [*SPM12*](https://github.com/neurodebian/spm12).
+
+- Typesetting. I like to write with LaTeX, Markdown, and R Markdown. I created a [personal website](https://likan.info) with [*hugo*](https://gohugo.io) and [*blogdown*](https://github.com/rstudio/blogdown).
+
+
+## Publications
+
+1. Periodicals
+
+- **Zhan, L.** (2018). Scalar and ignorance inferences are both computed immediately upon encountering the sentential connective: The online processing of sentences with disjunction using the visual world paradigm. *Frontiers in Psychology, 9*(61). doi: 10.3389/fpsyg.2018.00061
+
+- Moscati, V., **Zhan, L.**, & Zhou, P. (2017). Children's on-line processing of epistemic modals. *Journal of Child Language, 44*(5), 1025-1040. doi: 10.1017/S0305000916000313 [fulltext](https://publications.likan.info/JChildLang2016.pdf)
+
+- **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 [fulltext](https://publications.likan.info/JCognPsychol2015.pdf)
+
+- Zhou, P., Crain, S., & **Zhan, L.** (2014). Grammatical aspect and event recognition in children's online sentence comprehension. *Cognition, 133*(1), 262-276. doi: 10.1016/j.cognition.2014.06.018 [fulltext](http://publications.likan.info/Cognition2014.pdf)
+
+- Zhou, P., Crain, S., & **Zhan, L.** (2012). Sometimes children are as good as adults: The pragmatic use of prosody in children’s on-line sentence processing. *Journal of Memory and Language, 67*(1), 149-164. doi: 10.1016/j.jml.2012.03.005 [fulltext](https://publications.likan.info/JMemLang2012.pdf)
+
+- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [fulltext](https://publications.likan.info/JChildLang2012.pdf)
+
+2. Presentations
+
+- **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Paper presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China
+- Moscati, V., **Zhan, L.**, & Zhou, P. (2013). Reasoning on possibilities: An eye tracking study on modal knowledge. In *the 38th Annual Boston University Conference on Language Development*. Boston, USA.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013). Going beyond the information that is perceived: The hypothetical property of if-conditionals in Mandarin Chinese. In the *Second International Conference on Psycholinguistics in China*. Fuzhou, China.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013). The hypothetical property of “if”-statements: A visual- world paradigm eye-tracking study. In *CUNY2013: The 26th annual CUNY Sentence Processing Conference*. Columbia, SC.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013). The interpretation of conditionals. In *the 7th International Conference on Thinking (ICT2012)*. Birkbeck/UCL, London, UK.
+ - Zhou, P., Crain, S., & **Zhan, L.** (2013). Anticipatory eye movements in children’s processing of grammatical aspect. In *the 38th Annual Boston University Conference on Language Development*. Boston University, United States.
+- Zhou, P., Crain, S., & **Zhan, L.** (2012). Children’s pragmatic use of prosody in sentence processing. In *the 35th Generative Linguistics in the Old World (GLOW) Workshop: Production and Perception of Prosodically-Encoded Information Structure*. University of Potsdam, Potsdam, Germany.
+- **Zhan, L.**, Crain, S., & Khlentzos, D. (2011). The basic semantics of conditionals in natural language. In *The Harvard-Australia Workshop on: Language, Learning and Logic*. Macquarie University, Sydney, Australia.
+- Zhou, P., Crain, S., Gao, L., & **Zhan, L.** (2010). The role of prosody in children’s focus identi cation. In *the Generative Approaches to Language Acquisition - North America 4 (GALANA- 4)*. Toronto, Canada.
+- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2010). Children’s use of prosodic information in ambiguity resolution. In *the 8th Conference of Generative Linguistics in the Old World Asia (GLOW-in-Asia 8)*. Beijing, China.
