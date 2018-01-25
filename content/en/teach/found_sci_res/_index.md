@@ -7,6 +7,7 @@ disable_comments: true
 show_toc: true
 ---
 # 1. Lecture Time and Location
+
 - Time: TBA
 - Location: TBA
 

@@ -12,8 +12,8 @@ slag: "cogn_neurosci"
 TBA
 
 # 2. Course Information
-<p align = "middle"> *How the brain enables the mind ?* </p>
- **Cognition** (认知) is acquisition, storage, transformation, and use of knowledge. **Neuroscience** (神经科学) is the study of the structure and workings of the nervous system. **Cognitive neuroscience** (认知神经科学), then, is the study of how cognitive processes can be explained by the structure and function of the brain. This course briefly introduces the structure and function of the nervous system, the techniques used to study the nervous systems, and the main conginitive functions supported by the nervous system, such as Sensation and Perception, Object Recognition, Attention, Action, Memory, Emotion, Language, Conitive Control, Social Cognition etc.
+
+ Cognition is acquisition, storage, transformation, and use of knowledge. Neuroscience is the study of the structure and workings of the nervous system. Cognitive neuroscience, then, is the study of how cognitive processes can be explained by the structure and function of the brain. This course briefly introduces the structure and function of the nervous system, the techniques used to study the nervous systems, and the main cognitive functions supported by the nervous system, such as Sensation and Perception, Object Recognition, Attention, Action, Memory, Emotion, Language, Cognitive Control, Social Cognition etc.
 
 # 3. Textbook
 
