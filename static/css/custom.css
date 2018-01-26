@@ -15,6 +15,8 @@
 .main, .masthead {
   padding: 1em 40px;
 }
+
+/*
 .en .main header ~ p:first-of-type::first-line {
   font-variant: small-caps;
   letter-spacing: .05em;
@@ -26,6 +28,8 @@
   float: left;
   line-height: 1em;
 }
+*/  /* < ---- Remove first line format and first letter format ---> */
+
 code {
   hyphens: none;
 }
