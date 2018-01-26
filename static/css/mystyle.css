@@ -1,11 +1,35 @@
+/*  Text in the middle of a hr line, 20180126 by Likan Zhan */
 
-/* Column's property, 20180124 by Likan Zhan */
-
-.column {
-    float: left;
-    width: 45%;
+.strike {
+    display: block;
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: clip;
-    color: gray;
+    max-width: 300px;
+    margin: auto;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    border-top: 1px solid gray;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
 }

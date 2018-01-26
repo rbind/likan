@@ -1,9 +1,13 @@
 {{ partial "header.html" . }}
 
 {{ if .Content }} {{ .Content }} {{ end }}
-<hr>
+
+<div class="strike">
+   <span> Recent Updates </span>
+</div>
+
 <ul>
-  <li> Recent Updates (English) </li>
+  <li> English </li>
 <ul>
   {{ range first 5 ( where .Site.Pages.ByLastmod.Reverse "Section" "en") }}
   <li>
@@ -14,7 +18,7 @@
 </ul>
 
 </br>
-<li> Recent Updates (Chinese) </li>
+<li> Chinese </li>
 
  <ul>
   {{ range first 5 ( where .Site.Pages.ByLastmod.Reverse "Section" "cn") }}
