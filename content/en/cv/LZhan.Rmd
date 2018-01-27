@@ -15,7 +15,6 @@ output:
   word_document: default
 geometry: margin=1in
 pdf: /en/cv/LZhan.pdf
-fontsize: 16pt
 type: cv
 ---
 
@@ -23,7 +22,7 @@ type: cv
 
 - Add: 15, Xueyuan Rd., Haidian District, Beijing 100083, China
 - Tel:  +86 10 8230 3468
-- Email: zhanlikan@hotmail.com
+- Email: zhanlikan AT hotmail.com
 - Website: <https://likan.info>
 
 ## Academic appointment
@@ -84,7 +83,7 @@ type: cv
 - **Zhan, L.**, Crain, S., & Zhou, P. (2013). Going beyond the information that is perceived: The hypothetical property of if-conditionals in Mandarin Chinese. In the *Second International Conference on Psycholinguistics in China*. Fuzhou, China.
 - **Zhan, L.**, Crain, S., & Zhou, P. (2013). The hypothetical property of “if”-statements: A visual- world paradigm eye-tracking study. In *CUNY2013: The 26th annual CUNY Sentence Processing Conference*. Columbia, SC.
 - **Zhan, L.**, Crain, S., & Zhou, P. (2013). The interpretation of conditionals. In *the 7th International Conference on Thinking (ICT2012)*. Birkbeck/UCL, London, UK.
- - Zhou, P., Crain, S., & **Zhan, L.** (2013). Anticipatory eye movements in children’s processing of grammatical aspect. In *the 38th Annual Boston University Conference on Language Development*. Boston University, United States.
+- Zhou, P., Crain, S., & **Zhan, L.** (2013). Anticipatory eye movements in children’s processing of grammatical aspect. In *the 38th Annual Boston University Conference on Language Development*. Boston University, United States.
 - Zhou, P., Crain, S., & **Zhan, L.** (2012). Children’s pragmatic use of prosody in sentence processing. In *the 35th Generative Linguistics in the Old World (GLOW) Workshop: Production and Perception of Prosodically-Encoded Information Structure*. University of Potsdam, Potsdam, Germany.
 - **Zhan, L.**, Crain, S., & Khlentzos, D. (2011). The basic semantics of conditionals in natural language. In *The Harvard-Australia Workshop on: Language, Learning and Logic*. Macquarie University, Sydney, Australia.
 - Zhou, P., Crain, S., Gao, L., & **Zhan, L.** (2010). The role of prosody in children’s focus identi cation. In *the Generative Approaches to Language Acquisition - North America 4 (GALANA- 4)*. Toronto, Canada.
