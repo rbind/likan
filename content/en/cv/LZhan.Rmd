@@ -2,7 +2,7 @@
 title: "Curriculum Vitae"
 disable_comments: yes
 date: '2016-01-22'
-lastmod: '2018-01-24'
+lastmod: '2018-01-31'
 output:
   html_document:
     df_print: paged
@@ -64,7 +64,7 @@ type: cv
 
 1. Periodicals
 
-- **Zhan, L.** (2018). Scalar and ignorance inferences are both computed immediately upon encountering the sentential connective: The online processing of sentences with disjunction using the visual world paradigm. *Frontiers in Psychology, 9*(61). doi: 10.3389/fpsyg.2018.00061
+- **Zhan, L.** (2018). Scalar and ignorance inferences are both computed immediately upon encountering the sentential connective: The online processing of sentences with disjunction using the visual world paradigm. *Frontiers in Psychology, 9*(61). doi: 10.3389/fpsyg.2018.00061 [fulltext](https://publications.likan.info/fpsyg-09-00061.pdf)
 
 - Moscati, V., **Zhan, L.**, & Zhou, P. (2017). Children's on-line processing of epistemic modals. *Journal of Child Language, 44*(5), 1025-1040. doi: 10.1017/S0305000916000313 [fulltext](https://publications.likan.info/JChildLang2016.pdf)
 
