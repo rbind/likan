@@ -16,6 +16,7 @@ output:
 geometry: margin=1in
 pdf: /en/cv/LZhan.pdf
 type: cv
+urlcolor: blue
 ---
 
 # Likan Zhan
