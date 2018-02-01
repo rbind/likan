@@ -87,7 +87,7 @@ enableGitInfo = false
     weight = 7
 
 [params]
-    description = "Likan Zhan's personal website"
+    description = "The personal website of Likan Zhan"
     footer = "&copy; [Likan Zhan](/) 2017 - 2018 | [Github](https://github.com/likanzhan) | [Twitter](https://twitter.com/likanzhan) | [Weibo](http://weibo.com/1763551555)"
     disqusURL = "https://likanzhan.github.io"
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
