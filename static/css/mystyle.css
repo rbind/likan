@@ -1,3 +1,34 @@
+/* Change the height of the left border, 20180205 by Likan Zhan*/
+.main {
+  width: 700px;
+  padding: 32px 10px 20px 50px;
+  margin-left: 260px;
+  border-left: 2px solid black; /* 3px --> 2px */
+  min-height: calc(100vh - 60px);
+}
+
+@media screen and (max-width: 960px) {
+
+  .masthead {
+    width: auto;
+    float: none;
+    padding: 20px 0 60px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid black; /* 3px --> 2px */
+  }
+
+  .main {
+    width: auto;
+    padding: 40px 10px;
+    margin-left: 0;
+    border-left: none;
+    min-height: auto;
+  }
+
+}
+
 /*  Text in the middle of a hr line, 20180126 by Likan Zhan */
 
 .strike {
