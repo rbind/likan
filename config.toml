@@ -32,29 +32,29 @@ enableGitInfo = false
     weight = 2
 
 [[menu.en]]
-    name = "Teach"
-    url = "/en/teach/"
+    name = "CV"
+    url = "/en/cv/LZhan"
     weight = 3
 
 [[menu.en]]
-    name = "CV"
-    url = "/en/cv/LZhan"
+    name = "Teach"
+    url = "/en/teach/"
     weight = 4
-
-[[menu.en]]
-    name = "Paradigm"
-    url = "/en/paradigm/"
-    weight = 5
 
 [[menu.en]]
     name = "Blog"
     url = "/en/post/"
+    weight = 5
+
+[[menu.en]]
+    name = "Paradigm"
+    url = "/en/paradigm/"
     weight = 6
 
 [[menu.en]]
     name = "中文"
     url = "/cn/"
-    weight = 6
+    weight = 7
 
 [[menu.cn]]
     name = "首页"
@@ -67,23 +67,23 @@ enableGitInfo = false
     weight = 2
 
 [[menu.cn]]
-    name = "写作"
-    url = "http://probstatr.likan.info"
-    weight = 3
-
-[[menu.cn]]
-    name = "研究"
-    url = "/cn/research/"
-    weight = 4
-
-[[menu.cn]]
     name = "读书"
     url = "/cn/read/"
-    weight = 5
+    weight = 3
 
 [[menu.cn]]
     name = "博客"
     url = "/cn/post/"
+    weight = 4
+
+[[menu.cn]]
+    name = "写作"
+    url = "http://probstatr.likan.info"
+    weight = 5
+
+[[menu.cn]]
+    name = "研究"
+    url = "/cn/research/"
     weight = 6
 
 [[menu.cn]]

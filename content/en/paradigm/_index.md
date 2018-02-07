@@ -5,9 +5,6 @@ date: '2018-02-07'
 disable_comments: true
 ---
 
-This section summarizes some common experimental paradigms used in psychology.
+This section summerizes some common experimental paradigms used in psychology.
 
-
-### 1. Psycholinguistics
-
-- [Visual World Paradigm](/en/paradigm/visual-world-paradigm/)
+1. [Language](/en/paradigm/language)
