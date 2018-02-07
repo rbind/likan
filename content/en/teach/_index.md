@@ -1,9 +1,7 @@
 ---
-title: "Teaching"
+title: "Teaching Responsibilities"
 author: "Likan Zhan"
 date: '2017-03-08'
-hide_article_meta: true
-show_title: false
 disable_comments: true
 ---
 

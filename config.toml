@@ -32,7 +32,7 @@ enableGitInfo = false
     weight = 2
 
 [[menu.en]]
-    name = "Teaching"
+    name = "Teach"
     url = "/en/teach/"
     weight = 3
 
@@ -42,9 +42,14 @@ enableGitInfo = false
     weight = 4
 
 [[menu.en]]
+    name = "Paradigm"
+    url = "/en/paradigm/"
+    weight = 5
+
+[[menu.en]]
     name = "Blog"
     url = "/en/post/"
-    weight = 5
+    weight = 6
 
 [[menu.en]]
     name = "中文"
