@@ -1,0 +1,28 @@
+---
+title: "Visual World Paradigm"
+subtitle: "An eye-tracking technique"
+author: "Likan Zhan"
+date: '2018-02-07'
+lastmod: "`r Sys.Date()`"
+bibliography: [../bibliography/paradigm.bib]
+csl: [../bibliography/apa-old-doi-prefix.csl]
+output:
+  blogdown::html_page:
+    toc: true
+slug: []
+tags: []
+categories: []
+---
+
+# 1. A brief description.
+
+   This paradigm relies on two seminal work published by @RN906 and by @RN907.
+
+
+# 2. Recent Applications
+
+1. @RN905
+
+   - To Be Added.
+
+# 3. References

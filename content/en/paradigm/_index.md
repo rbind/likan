@@ -5,6 +5,6 @@ date: '2018-02-07'
 disable_comments: true
 ---
 
-This section summerizes some common experimental paradigms used in psychology.
+This section summarizes some experimental paradigms used in psychology and their recent applications.
 
 1. [Language](/en/paradigm/language)
