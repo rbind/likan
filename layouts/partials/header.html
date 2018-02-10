@@ -10,7 +10,11 @@
     <meta property="og:title" content="{{ .Site.Title }}">
     <meta property="og:type" content="website">
     {{ else }}
-    <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
+    <!--- Use different titles in different Language versions, 20180210 by Likan Zhan --->
+    {{ $section := default .Section ($.Scratch.Get "section") }}
+    <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ (index $.Site.Params.author $section) }}</title>
+    <!--- Use different titles in different Language versions, 20180210 by Likan Zhan --->
+    <!--- <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title> ---> <!--- LZ 20180210 --->
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
     {{ end }}
 
