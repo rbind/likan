@@ -8,6 +8,13 @@
   min-height: calc(100vh - 60px);
 }
 
+.masthead {
+  width: 260px;
+  padding: 20px 50px 20px 10px;
+  float: left;
+  position: fixed; /* Change to Fixed Position */
+}
+
 @media screen and (max-width: 960px) {
 
   .masthead {
@@ -19,6 +26,7 @@
     margin-right: 10px;
     border-bottom: 3px solid black;
     border-color: White; /* Change to White */
+    position: static;  /* Change to Fixed Position */
   }
 
   .main {
