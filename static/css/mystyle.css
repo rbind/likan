@@ -21,7 +21,7 @@ body {
   position: fixed; /* Change to Fixed Position */
 }
 
-@media screen and (max-width: 1024px) { /* Change weight from 960 to 1024 */
+@media screen and (max-width: 960px) {
 
   .masthead {
     width: auto;
