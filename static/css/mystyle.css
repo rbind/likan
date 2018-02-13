@@ -1,15 +1,15 @@
 /* Change the height of the left border, 20180205 by Likan Zhan*/
 .main {
-  width: 700px;
+  width: 760px; /* Change weight from 700 to 760 */
   padding: 32px 10px 20px 50px;
-  margin-left: 260px;
+  margin-left: 200px; /* Change weight from 260 to 200 */
   border-left: 2px solid black; /* Change weight from 3 to 2 */
   border-color: WhiteSmoke; /* Change the color to WiteSmoke */
   min-height: calc(100vh - 60px);
 }
 
 .masthead {
-  width: 260px;
+  width: 200px; /* Change weight from 260 to 200 */
   padding: 20px 50px 20px 10px;
   float: left;
   position: fixed; /* Change to Fixed Position */
