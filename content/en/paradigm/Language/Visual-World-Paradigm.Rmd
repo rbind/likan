@@ -21,8 +21,8 @@ categories: []
 
 # 2. Recent Applications
 
-1. @RN905
+1. @RN913
 
-   - To Be Added.
+   - On all trials, participants memorized a spoken word for a verbal recognition test at the end of the trial. During the retention period, they performed a visual search task. In crucial trials, the search target were absent. In a crucial trial, for example, the word to remember was "banana". They then saw four object printed on the screen. These contained an object that was semantically related (such as the monkey), an object that was visually related (such as the canoe), and two objects that were unrelated (such as the hat and the tambourine). In the visual search stage, participant were asked to search the banana (the template condition) or the figurine (Accessory condition). The article observed that participants' eye movements are significantly different between the accessory condition and the template condition, suggesting that language-induced attentional biases are subject to task requirements.
 
 # 3. References
