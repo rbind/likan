@@ -10,8 +10,8 @@ show_toc: true
 
 # 1. Lecture Time and Location
 
-The course will meet for two hours each week (Thursdays, 08:00-09:50) in *Room 202, Teaching Building 2*. <br>
-Class time will be devoted primarily to lectures, but also to reviewing homework, and to answering questions.
+- Time: 10:10 - 12:00, Friday
+- Location: Room 202, Teaching Building 2
 
 # 2. Course Information
 
