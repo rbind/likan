@@ -2,12 +2,12 @@
 title: 'Statistics for the Behavioral Sciences'
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "`r Sys.Date()`"
+lastmod: "2018-03-09"
 disable_comments: true
 show_toc: true
 ---
 
-# 1. Lecture Time and Location
+# 1. Time and Location
 
 - Time: 10:10 - 12:00, Friday
 
@@ -31,13 +31,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 
 - Gravetter, F. J., & Wallnau, L. B. (2017). *[Statistics for the Behavioral Sciences](https://www.amazon.com/Statistics-Behavioral-Sciences-MindTap-Psychology/dp/1305504917)* (10 ed.): Wadsworth Publishing.
 
-
-# 4. Examination
-
-- Time and location: 08:00-09:50, July 13, *Room 202, Teaching Building 2*;
-- Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 16*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 15*.
-
-# 5. Syllabus and Lecture Notes
+# 4. Syllabus and Lecture Notes
 
 - Part I. Introduction and Descriptive Statistics
   - Chapter 01. Introduction to Statistics. [<i class="fa fa-file-pdf-o"></i>](https://append.likan.info/StatBehavSci/CH.01.pdf)
@@ -66,3 +60,9 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 16. Introduction to Regression.
   - Chapter 17. The Chi-Square Statistic: Tests for Goodness of Fit and Independence
   - Chapter 18. The Binomial Test
+  
+# 5. Examination
+
+- Time and location: 08:00-09:50, July 13, *Room 202, Teaching Building 2*;
+- Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 16*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 15*.
+  
