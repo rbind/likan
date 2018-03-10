@@ -22,7 +22,7 @@ output:
 
 # 3. Textbook
 
-![TextBook](https://images-na.ssl-images-amazon.com/images/I/51%2B3AgFocKL._SX367_BO1,204,203,200_.jpg)
+![](https://images-na.ssl-images-amazon.com/images/I/51%2B3AgFocKL._SX367_BO1,204,203,200_.jpg)
 
 - Gazzaniga, M. S., Ivry, R. B., & Mangun, G. R. (2014). *[Cognitive neuroscience: The biology of the mind](https://www.amazon.com/Cognitive-Neuroscience-Biology-Mind-4th/dp/0393913481/ref=sr_1_1?s=books&ie=UTF8&qid=1489241498&sr=1-1&keywords=Cognitive+neuroscience%3A+The+biology+of+the+mind)* (4 ed.). New York, NY: Norton
 
