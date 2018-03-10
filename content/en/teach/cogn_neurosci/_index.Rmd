@@ -1,15 +1,20 @@
 ---
 title: 'Introduction to Cognitive Neuroscience'
-author: "Likan"
+author: "Likan Zhan"
 date: '2017-03-01'
-show_title: true
-disable_comments: true
-show_toc: true
-slag: "cogn_neurosci"
+lastmod: "`r Sys.Date()`"
+disable_comments: yes
+output:
+  blogdown::html_page:
+    toc: yes
 ---
-# 1. Lecture Time and Location
+# 1. Time and Location
 
-TBA
+- Time: 0800 - 1000, Each Friday
+
+- Location: Romm 202, Teaching Building 2
+
+- Lecturer: Likan Zhan
 
 # 2. Course Information
 

@@ -1,17 +1,22 @@
 ---
-title: 'Statistics for the Behavioral Sciences'
+title: "Statistics for the Behavioral Sciences"
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "2018-03-09"
-disable_comments: true
-show_toc: true
+lastmod: "`r Sys.Date()`"
+show_toc: yes
+disable_comments: yes
+output:
+  blogdown::html_page:
+    toc: yes
 ---
 
 # 1. Time and Location
 
-- Time: 10:10 - 12:00, Friday
+- Time: 10:10 - 12:00, Thursday
 
 - Location: Room 202, Teaching Building 2
+
+- Lecturer: Likan Zhan
 
 # 2. Course Information
 

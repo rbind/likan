@@ -1,3 +1,10 @@
+
+/*  Make the format of the TOC from Rmd the same as md  */
+#TOC {
+  background-color: #f8f8f8;
+  padding: .5em;
+}
+
 /* Change the height of the left border, 20180205 by Likan Zhan*/
 body {
   width: 960px;
