@@ -12,7 +12,7 @@ output:
 
 # 1. Time and Location
 
-- Time: 10:10 - 12:00, Thursday
+- Time: 10:10 - 12:00, Friday
 
 - Location: Room 202, Teaching Building 2
 
