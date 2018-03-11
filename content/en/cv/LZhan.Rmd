@@ -48,13 +48,13 @@ fontsize: 10pt
 
 ## Teaching responsibilities
 
-- Statistics for the Behavioral Sciences, [<i class="fa fa-file-text-o"> Read more...</i>](https://likan.info/en/teach/stat_behav_sci/)
+- Statistics for the Behavioral Sciences, <i class="fa fa-file-text-o"> [Read more..](https://likan.info/en/teach/stat_behav_sci/)</i>
 
-- R for Modeling and Visualizing Data, [<i class="fa fa-file-text-o"> Read more... </i>](https://likan.info/en/teach/model_vis_data/)
+- R for Modeling and Visualizing Data, <i class="fa fa-file-text-o"> [Read more..](https://likan.info/en/teach/model_vis_data/)</i>
 
-- Introduction to Cognitive Neuroscience, [<i class="fa fa-file-text-o"> Read more... </i>](https://likan.info/en/teach/cogn_neurosci/)
+- Introduction to Cognitive Neuroscience, <i class="fa fa-file-text-o"> [Read more..](https://likan.info/en/teach/cogn_neurosci/)</i>
 
-- Foundations of Scientific Research, [<i class="fa fa-file-text-o"> Read more... </i>](https://likan.info/en/teach/found_sci_res/)
+- Foundations of Scientific Research, <i class="fa fa-file-text-o"> [Read more..](https://likan.info/en/teach/found_sci_res/)</i>
 
 ## Professional skills
 
@@ -69,17 +69,18 @@ fontsize: 10pt
 
 1. Periodicals
 
-- **Zhan, L.** (2018). Scalar and ignorance inferences are both computed immediately upon encountering the sentential connective: The online processing of sentences with disjunction using the visual world paradigm. *Frontiers in Psychology, 9*. doi: 10.3389/fpsyg.2018.00061  [<i class="fa fa-file-pdf-o"> FullText</i>](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00061/full)
+- **Zhan, L.** (2018). Scalar and ignorance inferences are both computed immediately upon encountering the sentential connective: The online processing of sentences with disjunction using the visual world paradigm. *Frontiers in Psychology, 9*. doi: 10.3389/fpsyg.2018.00061  <i class="fa fa-file-pdf-o"> [FullText](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00061/full)</i>
 
-- Moscati, V., **Zhan, L.**, & Zhou, P. (2017). Children's on-line processing of epistemic modals. *Journal of Child Language, 44*(5), 1025-1040. doi: 10.1017/S0305000916000313 [<i class="fa fa-file-pdf-o"> FullText</i>](https://publications.likan.info/JChildLang2016.pdf)
+- Moscati, V., **Zhan, L.**, & Zhou, P. (2017). Children's on-line processing of epistemic modals. *Journal of Child Language, 44*(5), 1025-1040. doi: 10.1017/S0305000916000313 
+<i class="fa fa-file-pdf-o"> [FullText](https://publications.likan.info/JChildLang2016.pdf)</i>
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 [<i class="fa fa-file-pdf-o"> FullText</i>](https://publications.likan.info/JCognPsychol2015.pdf)
+- **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 <i class="fa fa-file-pdf-o"> [FullText](https://publications.likan.info/JCognPsychol2015.pdf)</i>
 
-- Zhou, P., Crain, S., & **Zhan, L.** (2014). Grammatical aspect and event recognition in children's online sentence comprehension. *Cognition, 133*(1), 262-276. doi: 10.1016/j.cognition.2014.06.018 [<i class="fa fa-file-pdf-o"> FullText</i>](http://publications.likan.info/Cognition2014.pdf)
+- Zhou, P., Crain, S., & **Zhan, L.** (2014). Grammatical aspect and event recognition in children's online sentence comprehension. *Cognition, 133*(1), 262-276. doi: 10.1016/j.cognition.2014.06.018 <i class="fa fa-file-pdf-o"> [FullText](http://publications.likan.info/Cognition2014.pdf)</i>
 
-- Zhou, P., Crain, S., & **Zhan, L.** (2012). Sometimes children are as good as adults: The pragmatic use of prosody in children’s on-line sentence processing. *Journal of Memory and Language, 67*(1), 149-164. doi: 10.1016/j.jml.2012.03.005 [<i class="fa fa-file-pdf-o"> FullText</i>](https://publications.likan.info/JMemLang2012.pdf)
+- Zhou, P., Crain, S., & **Zhan, L.** (2012). Sometimes children are as good as adults: The pragmatic use of prosody in children’s on-line sentence processing. *Journal of Memory and Language, 67*(1), 149-164. doi: 10.1016/j.jml.2012.03.005 <i class="fa fa-file-pdf-o"> [FullText](https://publications.likan.info/JMemLang2012.pdf)</i>
 
-- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [<i class="fa fa-file-pdf-o"> FullText</i>](https://publications.likan.info/JChildLang2012.pdf)
+- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 <i class="fa fa-file-pdf-o"> [FullText](https://publications.likan.info/JChildLang2012.pdf)</i>
 
 2. Presentations
 
