@@ -5,6 +5,7 @@ author: "Likan Zhan"
 date: '2018-02-07'
 lastmod: "`r Sys.Date()`"
 bibliography: [../bibliography/paradigm.bib]
+link-citations: yes
 csl: [../bibliography/apa-old-doi-prefix.csl]
 output:
   blogdown::html_page:
@@ -14,7 +15,7 @@ tags: []
 categories: []
 ---
 
-# 1. A brief description.
+# 1. A brief description
 
    This paradigm relies on two seminal work published by @RN906 and by @RN907.
 
