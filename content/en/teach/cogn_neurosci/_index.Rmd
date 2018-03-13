@@ -48,8 +48,8 @@ output:
 # 5. Lecture Notes
 
 - Part I. Background and methods
-  - Chapter 00. Introduction to the Course.
-  - Chapter 01. A Brief History of Cognitive Neuroscience.
+  - Chapter 00. Introduction to the Course. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.00.pdf)</i>
+  - Chapter 01. A Brief History of Cognitive Neuroscience. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.01.pdf)</i>
   - Chapter 02. Structure and Function of the Nervous System.
   - Chapter 03. Methods of Cognitive Neuroscience.
 - Part II. Core Processes
