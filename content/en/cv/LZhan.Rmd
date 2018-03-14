@@ -64,10 +64,31 @@ fontsize: 10pt
 
 - Typesetting. I like to write with LaTeX, Markdown, and R Markdown. I created a [personal website](https://likan.info) with [*hugo*](https://gohugo.io) and [*blogdown*](https://github.com/rstudio/blogdown).
 
+## Grants and awards
+
+1. Grants
+- 2015 - 2016. Experimental explorations of possible world semantics, The Fundamental Re- search Funds for the Central Universities, [Grant No.: 15YBB29], Zhan, L., ¥20,000.
+
+- 2015 - 2016. Introduction to psychology and introduction to scienti c research, The Funds Supporting the Growth of the New Teachers, [Grant No.: FD201530], Zhan, L., ¥7,000.
+
+- 2015 - 2016. Processing and acquisition of tone perception in Mandarin Chinese, The Fundamental Research Funds for the Central Universities, [Grant No.: 15YJ050003], Zhan, L., Shi, F., Gao, L., & Zhang, L., ¥70,000.
+
+- 2010 - 2014. The interpretation of conditionals in natural language, Cognitive Science Post- graduate Research Grant of Macquarie University, Zhan, L., $10,570.
+
+- 2013.10. The hypothetical property of conditionals in natural language, Macquarie University Postgraduate Research Fund, Zhan, L., $4,684.
+
+2. Awards
+- 2013.11. 38th Boston University Conference on Language Development, Paula Menyuk Travel Award, $300.
+
+- 2013.04. 26th Annual CUNY Sentence Processing Conference, Travel Award, $350.
 
 ## Publications
 
-1. Periodicals
+1. Book
+
+- **Zhan, L.** (2015). *The Interpretation of Conditionals in Natural Language*. Saarbrucken, Germany: Lap Lambert Academic Publishing.
+
+2. Periodicals
 
 - **Zhan, L.**, Zhou, P., & Crain, S. (2018). Using the visual-world paradigm to explore the meaning of conditionals in natural language. *Language, Cognition and Neuroscience*. doi: 10.1080/23273798.2018.1448935 <i class="fa fa-file-pdf-o"> [FullText](https://publications.likan.info/LangCognNeurosci2018.pdf)</i>
 
@@ -84,7 +105,12 @@ fontsize: 10pt
 
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 <i class="fa fa-file-pdf-o"> [FullText](https://publications.likan.info/JChildLang2012.pdf)</i>
 
-2. Presentations
+3. Conference proceedings
+
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013). The anticipatory e ects of focus operators: A visual- world paradigm eye-tracking study of “only if” and “even if” conditionals. In N. Goto, K. Otaki, A. Sato, & K. Takita (Eds.), *Proceedings of GLOW in Asia IX 2012*. Mie University, Japan.
+
+
+4. Conference presentations
 
 - **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Paper presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China
 
