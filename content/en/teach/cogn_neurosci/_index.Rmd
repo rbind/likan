@@ -26,6 +26,28 @@ output:
 
 - Gazzaniga, M. S., Ivry, R. B., & Mangun, G. R. (2014). *[Cognitive neuroscience: The biology of the mind](https://www.amazon.com/Cognitive-Neuroscience-Biology-Mind-4th/dp/0393913481/ref=sr_1_1?s=books&ie=UTF8&qid=1489241498&sr=1-1&keywords=Cognitive+neuroscience%3A+The+biology+of+the+mind)* (4 ed.). New York, NY: Norton
 
+
+# 4. Lecture Notes
+
+- Part I. Background and methods
+  - Chapter 00. Introduction to the Course. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.00.pdf)</i>
+  - Chapter 01. A Brief History of Cognitive Neuroscience. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.01.pdf)</i>
+  - Chapter 02. Structure and Function of the Nervous System.  <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.02.pdf)</i>
+  - Chapter 03. Methods of Cognitive Neuroscience.
+- Part II. Core Processes
+  - Chapter 04. Hemispheric Specialization.
+  - Chapter 05. Sensation and Perception.
+  - Chapter 06. Object Recognition.
+  - Chapter 07. Attention.
+  - Chapter 08. Action. <a id="presenters"></a>
+  - Chapter 09. Memory.
+  - Chapter 10. Emotion.
+  - Chapter 11. Language.
+- Part III. Control Processes
+  - Chapter 12. Cognitive Control.
+  - Chapter 13. Social Cognition.
+  - Chapter 14. Consciousness, Free Will, and the Law.
+  
 # 4. Grading
 
 - Oral Presentation: 50 %
@@ -46,23 +68,3 @@ output:
          - background, methods, and main findings of the article ( about 2000 - 2500 words);
          - future directions of this topic (500 - 1000 words).
 
-# 5. Lecture Notes
-
-- Part I. Background and methods
-  - Chapter 00. Introduction to the Course. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.00.pdf)</i>
-  - Chapter 01. A Brief History of Cognitive Neuroscience. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.01.pdf)</i>
-  - Chapter 02. Structure and Function of the Nervous System.  <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.02.pdf)</i>
-  - Chapter 03. Methods of Cognitive Neuroscience.
-- Part II. Core Processes
-  - Chapter 04. Hemispheric Specialization.
-  - Chapter 05. Sensation and Perception.
-  - Chapter 06. Object Recognition.
-  - Chapter 07. Attention.
-  - Chapter 08. Action. <a id="presenters"></a>
-  - Chapter 09. Memory.
-  - Chapter 10. Emotion.
-  - Chapter 11. Language.
-- Part III. Control Processes
-  - Chapter 12. Cognitive Control.
-  - Chapter 13. Social Cognition.
-  - Chapter 14. Consciousness, Free Will, and the Law.
