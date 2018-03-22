@@ -78,7 +78,7 @@ enableGitInfo = false
 
 [[menu.cn]]
     name = "写作"
-    url = "http://append.likan.info/probstatr"
+    url = "http://appendix.likan.info/probstatr"
     weight = 5
 
 [[menu.cn]]
