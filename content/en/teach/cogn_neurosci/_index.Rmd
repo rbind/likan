@@ -12,7 +12,7 @@ output:
 
 - Time: 0800 - 1000, Each Friday
 
-- Location: Romm 202, Teaching Building 2
+- Location: Room 401, Yifu Teaching Building
 
 - Lecturer: Likan Zhan
 
