@@ -41,7 +41,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 - Part I. Introduction and Descriptive Statistics
   - Chapter 01. Introduction to Statistics. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.01.pdf)</i>
   - Chapter 02. Frequency Distributions. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.02.pdf)</i>
-  - Chapter 03. Central Tendency.
+  - Chapter 03. Central Tendency. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.03.pdf)</i>
   - Chapter 04. Variability.
 
 - Part II. Foundations of Inferential Statistics

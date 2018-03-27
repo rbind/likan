@@ -3,15 +3,20 @@ title: "统计的显著性水平"
 author: "侃侃迩行"
 date: '2017-08-11'
 output:
-  blogdown::html_page:
-    toc: yes
-    fig_height: 4
-    fig_width: 8
   pdf_document:
     includes:
-      in_header: header.tex
+      in_header: header-for-chinese.tex
     latex_engine: xelatex
-tags: [statistics, r]
+  blogdown::html_page:
+    fig_height: 4
+    fig_width: 8
+    toc: yes
+  html_document:
+    df_print: paged
+    toc: yes
+tags:
+- statistics
+- r
 ---
 
 
@@ -29,8 +34,8 @@ tags: [statistics, r]
 <p>提高某些领域研究可重复性的一个直接和简单的方法是提高假设检验的统计显著性水平。</p>
 <div id="hypothesis-testing" class="section level1">
 <h1>1. 统计检验和显著性水平</h1>
-<p>统计检验中，研究者最终希望确定零假设 (<span class="math inline">\(H_{i,i=0}\)</span>) 和备则假设 (<span class="math inline">\(H_{i, i \neq 0}\)</span>) 中哪一个正确。由于这两种状态的不相容性，事实情况只有两种：要么是零假设正确；要么是其中一个备择假设如 <span class="math inline">\(H_1\)</span> 正确。让事情变得更为复杂的是，研究者用于判断哪个假设正确的证据并不来自于数据整体，而来自于整体数据的一部分，即一个样本。样本统计量对于总体参数来说始终存在一定偏差，即抽样误差。</p>
-<p>第一、假如事实情况是零假设正确。假定零假设 (<span class="math inline">\(H_0\)</span>) 整体服从平均值为 <span class="math inline">\(\mu_0 = 0\)</span>, 标准差为 <span class="math inline">\(\sigma = 1\)</span> 的正态分布。即使在该零假设正确的前提下，由于抽样误差的原因，一个样本量为 <span class="math inline">\(n=1\)</span> 的随机样本的样本平均值 (<span class="math inline">\(\overline{X}_i\)</span>) 理论上来说可以是位于 <span class="math inline">\([-\infty, +\infty]\)</span> 之间的任何一个数。但是从概率上来讲，样本平均值在总体平均值 0 的位置出现的概率最高；一个位置离总体平均值越远，样本平均值在该位置出现的概率就越低。例如，一个样本平均值出现在 <span class="math inline">\(\pm 3\)</span> 位置上的概率就非常低了。
+<p>统计检验中，研究者最终希望确定零假设 (<span class="math inline">\(H_{i,i=0}\)</span>) 和备择假设 (<span class="math inline">\(H_{i, i \neq 0}\)</span>) 中哪一个正确。由于这两种状态的不相容性，事实情况只有两种：要么是零假设正确；要么是其中一个备择假设如 <span class="math inline">\(H_1\)</span> 正确。让事情变得更为复杂的是，研究者用于判断哪个假设正确的证据并不来自于数据整体，而来自于整体数据的一部分，即一个样本。样本统计量对于总体参数来说始终存在一定偏差，即抽样误差。</p>
+<p>第一、零假设正确。假定零假设 (<span class="math inline">\(H_0\)</span>) 整体服从平均值为 <span class="math inline">\(\mu_0 = 0\)</span>, 标准差为 <span class="math inline">\(\sigma = 1\)</span> 的正态分布。即使在该零假设正确的前提下，由于抽样误差的原因，一个样本量为 <span class="math inline">\(n=1\)</span> 的随机样本的样本平均值 (<span class="math inline">\(\overline{X}_i\)</span>) 理论上来说可以是位于 <span class="math inline">\([-\infty, +\infty]\)</span> 之间的任何一个数。但是从概率上来讲，样本平均值在总体平均值 0 的位置出现的概率最高；一个位置离总体平均值越远，样本平均值在该位置出现的概率就越低。例如，一个样本平均值出现在 <span class="math inline">\(\pm 3\)</span> 位置上的概率就非常低了。
 以样本平均值的大小为横坐标，该样本平均值出现的概率为纵坐标，可以画出如下样本平均值的概率密度分布图。</p>
 <p><img src="/cn/post/2017-08-11-p-values-bayes-factor_files/figure-html/Figure_1_01-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><em>P</em>-值指在零假设正确的前提下，样本平均值 (<span class="math inline">\(\overline{X}_i\)</span>) 与某个观测值 (<span class="math inline">\(\overline{X}_\text{obs}\)</span>) 一样极端或者比观测值更极端的概率。如观测值 (<span class="math inline">\(\overline{X}_\text{obs} = -1\)</span>) 对应的 <em>P</em> 值为 <span class="math inline">\(P=0.16\)</span>。</p>
