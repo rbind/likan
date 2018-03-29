@@ -22,7 +22,7 @@ output:
 
 # 3. Textbook
 
-![](https://images-na.ssl-images-amazon.com/images/I/51%2B3AgFocKL._SX367_BO1,204,203,200_.jpg)
+![](CognNeurosci-CoverImage.jpg)
 
 - Gazzaniga, M. S., Ivry, R. B., & Mangun, G. R. (2014). *[Cognitive neuroscience: The biology of the mind](https://www.amazon.com/Cognitive-Neuroscience-Biology-Mind-4th/dp/0393913481/ref=sr_1_1?s=books&ie=UTF8&qid=1489241498&sr=1-1&keywords=Cognitive+neuroscience%3A+The+biology+of+the+mind)* (4 ed.). New York, NY: Norton
 
@@ -32,8 +32,8 @@ output:
 - Part I. Background and methods
   - Chapter 00. Introduction to the Course. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.00.pdf)</i>
   - Chapter 01. A Brief History of Cognitive Neuroscience. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.01.pdf)</i>
-  - Chapter 02. Structure and Function of the Nervous System.  <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.02.pdf)</i>
-  - Chapter 03. Methods of Cognitive Neuroscience.
+  - Chapter 02. Structure and Function of the Nervous System.  <i class="fa fa-file-pdf-o">  [Slides](https://pan.baidu.com/s/17WcRf9cdr7_X1xqjZsACfQ)</i>(password: pept)
+  - Chapter 03. Methods of Cognitive Neuroscience. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/CognNeuroSci/CH.03.pdf)</i>
 - Part II. Core Processes
   - Chapter 04. Hemispheric Specialization.
   - Chapter 05. Sensation and Perception.
