@@ -45,7 +45,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 04. Variability. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.04.pdf)</i>
 
 - Part II. Foundations of Inferential Statistics
-  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. <i class="fa fa-file-pdf-o">  [Slides] http://appendix.likan.info/teach/StatBehavSci/CH05.html)</i>
+  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. <i class="fa fa-file-pdf-o">  [Slides] (http://appendix.likan.info/teach/StatBehavSci/CH05.html)</i>
   - Chapter 06. Probability.
   - Chapter 07. Probability and Samples: The Distribution of Sample Means.
   - Chapter 08. Introduction to Hypothesis Testing.
