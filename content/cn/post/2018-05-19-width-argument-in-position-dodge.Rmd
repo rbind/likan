@@ -1,0 +1,28 @@
+---
+title: "ggplot2 包 position_dodge 命令中参数 width 什么意思"
+author: "战立侃"
+date: '2018-05-19'
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+本帖内容转译自: [What is the width argument in position_dodge?](https://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge)
+
+1. 看下面的图
+
+```{r}
+df <- data.frame(x = 1, y = 1, grp = c("A", "B"))
+DT::datatable(df, rownames = FALSE, width = 50, fillContainer = FALSE, options = list(pageLength = 8, searching = FALSE, info = FALSE, bLengthChange = FALSE))
+```
+
+2. `ggplot2` 软件包中 `position_dodge` 命令的说明文档如下：
+
+```{r, echo = FALSE, comment = ""}
+library(ggplot2)
+library(acqr)
+help_console(position_dodge, "text", lines = 14:15)
+help_console(geom_bar, "text", lines = c(15:17, 54:56))
+help_console(resolution, "text", lines = c(1, 5:8))
+help_console(geom_text, "text", lines = 82:90)
+```

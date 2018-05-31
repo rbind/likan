@@ -1,0 +1,9 @@
+df <- data.frame(x = 1, y = 1, grp = c("A", "B"))
+df
+library(dt)
+library(DT)
+?datatable
+getwd()
+blogdown::serve_site()
+?datatable
+blogdown::serve_site()
