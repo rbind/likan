@@ -7,7 +7,7 @@ output:
     toc: true
 ---
 
-本帖内容转译自: [What is the width argument in position_dodge?](https://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge)
+[原文链接](https://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge)
 
 1. 看下面的图
 
