@@ -7,3 +7,4 @@ getwd()
 blogdown::serve_site()
 ?datatable
 blogdown::serve_site()
+blogdown::serve_site()

@@ -51,8 +51,8 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 08. Introduction to Hypothesis Testing. [Slides](http://appendix.likan.info/teach/StatBehavSci/CH08.html)
 
 - Part III. Using *t*-Statistics for Inferences
-  - Chapter 09. Introduction to the *t* Statistic.
-  - Chapter 10. The *t* Test for Two Independent Samples.
+  - Chapter 09. Introduction to the *t* Statistic. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.09.pdf)</i>
+  - Chapter 10. The *t* Test for Two Independent Samples. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.10.pdf)</i>
   - Chapter 11. The *t* Test for Two Related Samples.
 
 - Part IV. Analysis of Variance
