@@ -53,7 +53,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 - Part III. Using *t*-Statistics for Inferences
   - Chapter 09. Introduction to the *t* Statistic. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.09.pdf)</i>
   - Chapter 10. The *t* Test for Two Independent Samples. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.10.pdf)</i>
-  - Chapter 11. The *t* Test for Two Related Samples.
+  - Chapter 11. The *t* Test for Two Related Samples.<i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.11.pdf)</i>
 
 - Part IV. Analysis of Variance
   - Chapter 12. Introduction to Analysis of Variance.
