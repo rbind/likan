@@ -1,0 +1,127 @@
+---
+title: R 中的 `ave` 函数
+author: ~
+date: '2018-06-15'
+slug: 
+categories: []
+tags: []
+---
+
+
+
+<ol style="list-style-type: decimal">
+<li><code>ave</code> 函数的论元</li>
+</ol>
+<pre><code>## function (x, ..., FUN = mean) 
+## NULL</code></pre>
+<ul>
+<li><p><code>x</code>, 需要分析的数据</p></li>
+<li><p><code>...</code>, 用于分组的数据，如果空缺，则把函数应用于全部数据</p></li>
+<li><p><code>FUN</code>, 应用于数据 <code>x</code> 的函数。</p></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>一个例子</li>
+</ol>
+<pre class="r"><code>Score &lt;- data.frame(
+  RRR = c(2, 3,  8,  6,  5,  6),
+  RPQ = c(5, 9, 10, 13,  8,  9),
+  RCQ = c(8, 6, 12, 11, 11, 12)
+  )
+Score_long &lt;- reshape(Score, direction = &quot;long&quot;, 
+  varying = list(names(Score)[1:3]), 
+  timevar = &quot;Condition&quot;, times = colnames(Score), v.names = &quot;Score&quot;)
+Score_long &lt;- Score_long[, names(Score_long) != &quot;id&quot;]
+row.names(Score_long) &lt;- NULL
+Score_long $ Group_Mean &lt;- ave(Score_long $ Score, Score_long $ Condition)
+Score_long $ Grand_Mean &lt;- ave(Score_long $ Score)
+Score_long</code></pre>
+<pre><code>##    Condition Score Group_Mean Grand_Mean
+## 1        RRR     2          5          8
+## 2        RRR     3          5          8
+## 3        RRR     8          5          8
+## 4        RRR     6          5          8
+## 5        RRR     5          5          8
+## 6        RRR     6          5          8
+## 7        RPQ     5          9          8
+## 8        RPQ     9          9          8
+## 9        RPQ    10          9          8
+## 10       RPQ    13          9          8
+## 11       RPQ     8          9          8
+## 12       RPQ     9          9          8
+## 13       RCQ     8         10          8
+## 14       RCQ     6         10          8
+## 15       RCQ    12         10          8
+## 16       RCQ    11         10          8
+## 17       RCQ    11         10          8
+## 18       RCQ    12         10          8</code></pre>
+<pre class="r"><code>SS_within &lt;- sum((Score_long $ Score - Score_long $ Group_Mean) ^ 2)
+SS_between &lt;- sum((Score_long $ Group_Mean - Score_long $ Grand_Mean) ^ 2)
+SS_total &lt;- sum((Score_long $ Score - Score_long $ Grand_Mean) ^ 2)
+c(SS_total, SS_between, SS_within)</code></pre>
+<pre><code>## [1] 172  84  88</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><code>ave</code> 函数的源代码</li>
+</ol>
+<pre><code>## function (x, ..., FUN = mean) 
+## {
+##     if (missing(...)) 
+##         x[] &lt;- FUN(x)
+##     else {
+##         g &lt;- interaction(...)
+##         split(x, g) &lt;- lapply(split(x, g), FUN)
+##     }
+##     x
+## }
+## &lt;bytecode: 0x7f8f20f40e28&gt;
+## &lt;environment: namespace:stats&gt;</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><code>ave</code> 函数的说明文档</li>
+</ol>
+<pre><code>## Group Averages Over Level Combinations of Factors
+## 
+## Description:
+## 
+##      Subsets of &#39;x[]&#39; are averaged, where each subset consist of those
+##      observations with the same factor levels.
+## 
+## Usage:
+## 
+##      ave(x, ..., FUN = mean)
+##      
+## Arguments:
+## 
+##        x: A numeric.
+## 
+##      ...: Grouping variables, typically factors, all of the same
+##           &#39;length&#39; as &#39;x&#39;.
+## 
+##      FUN: Function to apply for each factor level combination.
+## 
+## Value:
+## 
+##      A numeric vector, say &#39;y&#39; of length &#39;length(x)&#39;.  If &#39;...&#39; is &#39;g1,
+##      g2&#39;, e.g., &#39;y[i]&#39; is equal to &#39;FUN(x[j]&#39;, for all &#39;j&#39; with &#39;g1[j]
+##      == g1[i]&#39; and &#39;g2[j] == g2[i])&#39;.
+## 
+## See Also:
+## 
+##      &#39;mean&#39;, &#39;median&#39;.
+## 
+## Examples:
+## 
+##      require(graphics)
+##      
+##      ave(1:3)  # no grouping -&gt; grand mean
+##      
+##      attach(warpbreaks)
+##      ave(breaks, wool)
+##      ave(breaks, tension)
+##      ave(breaks, tension, FUN = function(x) mean(x, trim = 0.1))
+##      plot(breaks, main =
+##           &quot;ave( Warpbreaks )  for   wool  x  tension  combinations&quot;)
+##      lines(ave(breaks, wool, tension              ), type = &quot;s&quot;, col = &quot;blue&quot;)
+##      lines(ave(breaks, wool, tension, FUN = median), type = &quot;s&quot;, col = &quot;green&quot;)
+##      legend(40, 70, c(&quot;mean&quot;, &quot;median&quot;), lty = 1,
+##            col = c(&quot;blue&quot;,&quot;green&quot;), bg = &quot;gray90&quot;)
+##      detach()
+## </code></pre>
