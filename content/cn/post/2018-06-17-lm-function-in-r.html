@@ -26,8 +26,11 @@ tags: []
 <li><a href="#c-">2. C 语言层次</a></li>
 <li><a href="#fortran-">3. Fortran 语言层次</a></li>
 <li><a href="#appendix">4. 附录</a><ul>
-<li><a href="#r--lm-">4.1. R 语言中 <code>lm</code> 函数代码</a></li>
-<li><a href="#r--lm.fit-">4.2. R 语言 <code>lm.fit</code> 函数代码</a></li>
+<li><a href="#r-">4.1. R 语言代码</a><ul>
+<li><a href="#r--lm-">4.1.1. R 语言中 <code>lm</code> 函数代码</a></li>
+<li><a href="#r--lm.fit-">4.1.2. R 语言 <code>lm.fit</code> 函数代码</a></li>
+<li><a href="#r--lm.wfit-">4.1.3. R 语言 <code>lm.wfit</code> 函数代码</a></li>
+</ul></li>
 <li><a href="#c--cdqrls-">4.3. C 语言 <code>Cdqrls</code> 函数代码</a></li>
 <li><a href="#fortran--dqrls-">4.4. Fortran 语言 <code>dqrls</code> 函数代码</a></li>
 </ul></li>
@@ -45,8 +48,10 @@ tags: []
 </div>
 <div id="appendix" class="section level1">
 <h1>4. 附录</h1>
-<div id="r--lm-" class="section level2">
-<h2>4.1. R 语言中 <code>lm</code> 函数代码</h2>
+<div id="r-" class="section level2">
+<h2>4.1. R 语言代码</h2>
+<div id="r--lm-" class="section level3">
+<h3>4.1.1. R 语言中 <code>lm</code> 函数代码</h3>
 <pre><code>function (formula, data, subset, weights, na.action, method = &quot;qr&quot;, 
     model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE, 
     contrasts = NULL, offset, ...) 
@@ -113,11 +118,11 @@ tags: []
         z$qr &lt;- NULL
     z
 }
-&lt;bytecode: 0x7fc72c625e00&gt;
+&lt;bytecode: 0x7fb43a8b0d00&gt;
 &lt;environment: namespace:stats&gt;</code></pre>
 </div>
-<div id="r--lm.fit-" class="section level2">
-<h2>4.2. R 语言 <code>lm.fit</code> 函数代码</h2>
+<div id="r--lm.fit-" class="section level3">
+<h3>4.1.2. R 语言 <code>lm.fit</code> 函数代码</h3>
 <pre><code>function (x, y, offset = NULL, method = &quot;qr&quot;, tol = 1e-07, singular.ok = TRUE, 
     ...) 
 {
@@ -179,8 +184,122 @@ tags: []
         assign = attr(x, &quot;assign&quot;), qr = structure(qr, class = &quot;qr&quot;), 
         df.residual = n - z$rank))
 }
-&lt;bytecode: 0x7fc72b8d8850&gt;
+&lt;bytecode: 0x7fb43aaed040&gt;
 &lt;environment: namespace:stats&gt;</code></pre>
+</div>
+<div id="r--lm.wfit-" class="section level3">
+<h3>4.1.3. R 语言 <code>lm.wfit</code> 函数代码</h3>
+<pre><code>function (x, y, w, offset = NULL, method = &quot;qr&quot;, tol = 1e-07, 
+    singular.ok = TRUE, ...) 
+{
+    if (is.null(n &lt;- nrow(x))) 
+        stop(&quot;&#39;x&#39; must be a matrix&quot;)
+    if (n == 0) 
+        stop(&quot;0 (non-NA) cases&quot;)
+    ny &lt;- NCOL(y)
+    if (is.matrix(y) &amp;&amp; ny == 1L) 
+        y &lt;- drop(y)
+    if (!is.null(offset)) 
+        y &lt;- y - offset
+    if (NROW(y) != n | length(w) != n) 
+        stop(&quot;incompatible dimensions&quot;)
+    if (any(w &lt; 0 | is.na(w))) 
+        stop(&quot;missing or negative weights not allowed&quot;)
+    if (method != &quot;qr&quot;) 
+        warning(gettextf(&quot;method = &#39;%s&#39; is not supported. Using &#39;qr&#39;&quot;, 
+            method), domain = NA)
+    chkDots(...)
+    x.asgn &lt;- attr(x, &quot;assign&quot;)
+    zero.weights &lt;- any(w == 0)
+    if (zero.weights) {
+        save.r &lt;- y
+        save.f &lt;- y
+        save.w &lt;- w
+        ok &lt;- w != 0
+        nok &lt;- !ok
+        w &lt;- w[ok]
+        x0 &lt;- x[!ok, , drop = FALSE]
+        x &lt;- x[ok, , drop = FALSE]
+        n &lt;- nrow(x)
+        y0 &lt;- if (ny &gt; 1L) 
+            y[!ok, , drop = FALSE]
+        else y[!ok]
+        y &lt;- if (ny &gt; 1L) 
+            y[ok, , drop = FALSE]
+        else y[ok]
+    }
+    p &lt;- ncol(x)
+    if (p == 0) {
+        return(list(coefficients = numeric(), residuals = y, 
+            fitted.values = 0 * y, weights = w, rank = 0L, df.residual = length(y)))
+    }
+    if (n == 0) {
+        return(list(coefficients = rep(NA_real_, p), residuals = y, 
+            fitted.values = 0 * y, weights = w, rank = 0L, df.residual = 0L))
+    }
+    wts &lt;- sqrt(w)
+    z &lt;- .Call(C_Cdqrls, x * wts, y * wts, tol, FALSE)
+    if (!singular.ok &amp;&amp; z$rank &lt; p) 
+        stop(&quot;singular fit encountered&quot;)
+    coef &lt;- z$coefficients
+    pivot &lt;- z$pivot
+    r1 &lt;- seq_len(z$rank)
+    dn &lt;- colnames(x)
+    if (is.null(dn)) 
+        dn &lt;- paste0(&quot;x&quot;, 1L:p)
+    nmeffects &lt;- c(dn[pivot[r1]], rep.int(&quot;&quot;, n - z$rank))
+    r2 &lt;- if (z$rank &lt; p) 
+        (z$rank + 1L):p
+    else integer()
+    if (is.matrix(y)) {
+        coef[r2, ] &lt;- NA
+        if (z$pivoted) 
+            coef[pivot, ] &lt;- coef
+        dimnames(coef) &lt;- list(dn, colnames(y))
+        dimnames(z$effects) &lt;- list(nmeffects, colnames(y))
+    }
+    else {
+        coef[r2] &lt;- NA
+        if (z$pivoted) 
+            coef[pivot] &lt;- coef
+        names(coef) &lt;- dn
+        names(z$effects) &lt;- nmeffects
+    }
+    z$coefficients &lt;- coef
+    z$residuals &lt;- z$residuals/wts
+    z$fitted.values &lt;- y - z$residuals
+    z$weights &lt;- w
+    if (zero.weights) {
+        coef[is.na(coef)] &lt;- 0
+        f0 &lt;- x0 %*% coef
+        if (ny &gt; 1) {
+            save.r[ok, ] &lt;- z$residuals
+            save.r[nok, ] &lt;- y0 - f0
+            save.f[ok, ] &lt;- z$fitted.values
+            save.f[nok, ] &lt;- f0
+        }
+        else {
+            save.r[ok] &lt;- z$residuals
+            save.r[nok] &lt;- y0 - f0
+            save.f[ok] &lt;- z$fitted.values
+            save.f[nok] &lt;- f0
+        }
+        z$residuals &lt;- save.r
+        z$fitted.values &lt;- save.f
+        z$weights &lt;- save.w
+    }
+    if (!is.null(offset)) 
+        z$fitted.values &lt;- z$fitted.values + offset
+    if (z$pivoted) 
+        colnames(z$qr) &lt;- colnames(x)[z$pivot]
+    qr &lt;- z[c(&quot;qr&quot;, &quot;qraux&quot;, &quot;pivot&quot;, &quot;tol&quot;, &quot;rank&quot;)]
+    c(z[c(&quot;coefficients&quot;, &quot;residuals&quot;, &quot;fitted.values&quot;, &quot;effects&quot;, 
+        &quot;weights&quot;, &quot;rank&quot;)], list(assign = x.asgn, qr = structure(qr, 
+        class = &quot;qr&quot;), df.residual = n - z$rank))
+}
+&lt;bytecode: 0x7fb43ad8b858&gt;
+&lt;environment: namespace:stats&gt;</code></pre>
+</div>
 </div>
 <div id="c--cdqrls-" class="section level2">
 <h2>4.3. C 语言 <code>Cdqrls</code> 函数代码</h2>

@@ -30,15 +30,22 @@ tags: []
 
 # 4. 附录{#appendix}
 
-## 4.1. R 语言中 `lm` 函数代码
+## 4.1. R 语言代码
+
+### 4.1.1. R 语言中 `lm` 函数代码
   
   ```{r, echo = FALSE, comment = ""}
   lm
   ```
 
-## 4.2. R 语言 `lm.fit` 函数代码
+### 4.1.2. R 语言 `lm.fit` 函数代码
    ```{r, echo = FALSE,, comment = ""}
    lm.fit
+   ```
+   
+### 4.1.3. R 语言 `lm.wfit` 函数代码
+   ```{r, echo = FALSE,, comment = ""}
+   lm.wfit
    ```
 
 ## 4.3. C 语言 `Cdqrls` 函数代码
