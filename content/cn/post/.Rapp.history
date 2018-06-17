@@ -8,3 +8,11 @@ blogdown::serve_site()
 ?datatable
 blogdown::serve_site()
 blogdown::serve_site()
+cat()
+setwd("src/library/stats/src/lm.c")
+"lm.c"
+?"lm.c"
+getAnywhere(lm.c)
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()

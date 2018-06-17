@@ -2,156 +2,427 @@
 title: R 语言中的 lm 函数
 author: ~
 date: '2018-06-17'
+output:
+  pdf_document:
+    includes:
+      in_header: header-for-chinese.tex
+    latex_engine: xelatex
+  blogdown::html_page:
+    fig_height: 4
+    fig_width: 8
+    toc: yes
+  html_document:
+    df_print: paged
+    toc: yes
 slug: lm-function-in-r
 categories: []
 tags: []
 ---
 
 
+<div id="TOC">
+<ul>
+<li><a href="#r-">1. R 语言层次</a></li>
+<li><a href="#c-">2. C 语言层次</a></li>
+<li><a href="#fortran-">3. Fortran 语言层次</a></li>
+<li><a href="#appendix">4. 附录</a><ul>
+<li><a href="#r--lm-">4.1. R 语言中 <code>lm</code> 函数代码</a></li>
+<li><a href="#r--lm.fit-">4.2. R 语言 <code>lm.fit</code> 函数代码</a></li>
+<li><a href="#c--cdqrls-">4.3. C 语言 <code>Cdqrls</code> 函数代码</a></li>
+<li><a href="#fortran--dqrls-">4.4. Fortran 语言 <code>dqrls</code> 函数代码</a></li>
+</ul></li>
+</ul>
+</div>
 
-<ol style="list-style-type: decimal">
-<li>R 语言层次</li>
-</ol>
+<div id="r-" class="section level1">
+<h1>1. R 语言层次</h1>
+</div>
+<div id="c-" class="section level1">
+<h1>2. C 语言层次</h1>
+</div>
+<div id="fortran-" class="section level1">
+<h1>3. Fortran 语言层次</h1>
+</div>
+<div id="appendix" class="section level1">
+<h1>4. 附录</h1>
+<div id="r--lm-" class="section level2">
+<h2>4.1. R 语言中 <code>lm</code> 函数代码</h2>
+<pre><code>function (formula, data, subset, weights, na.action, method = &quot;qr&quot;, 
+    model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE, 
+    contrasts = NULL, offset, ...) 
+{
+    ret.x &lt;- x
+    ret.y &lt;- y
+    cl &lt;- match.call()
+    mf &lt;- match.call(expand.dots = FALSE)
+    m &lt;- match(c(&quot;formula&quot;, &quot;data&quot;, &quot;subset&quot;, &quot;weights&quot;, &quot;na.action&quot;, 
+        &quot;offset&quot;), names(mf), 0L)
+    mf &lt;- mf[c(1L, m)]
+    mf$drop.unused.levels &lt;- TRUE
+    mf[[1L]] &lt;- quote(stats::model.frame)
+    mf &lt;- eval(mf, parent.frame())
+    if (method == &quot;model.frame&quot;) 
+        return(mf)
+    else if (method != &quot;qr&quot;) 
+        warning(gettextf(&quot;method = &#39;%s&#39; is not supported. Using &#39;qr&#39;&quot;, 
+            method), domain = NA)
+    mt &lt;- attr(mf, &quot;terms&quot;)
+    y &lt;- model.response(mf, &quot;numeric&quot;)
+    w &lt;- as.vector(model.weights(mf))
+    if (!is.null(w) &amp;&amp; !is.numeric(w)) 
+        stop(&quot;&#39;weights&#39; must be a numeric vector&quot;)
+    offset &lt;- as.vector(model.offset(mf))
+    if (!is.null(offset)) {
+        if (length(offset) != NROW(y)) 
+            stop(gettextf(&quot;number of offsets is %d, should equal %d (number of observations)&quot;, 
+                length(offset), NROW(y)), domain = NA)
+    }
+    if (is.empty.model(mt)) {
+        x &lt;- NULL
+        z &lt;- list(coefficients = if (is.matrix(y)) matrix(, 0, 
+            3) else numeric(), residuals = y, fitted.values = 0 * 
+            y, weights = w, rank = 0L, df.residual = if (!is.null(w)) sum(w != 
+            0) else if (is.matrix(y)) nrow(y) else length(y))
+        if (!is.null(offset)) {
+            z$fitted.values &lt;- offset
+            z$residuals &lt;- y - offset
+        }
+    }
+    else {
+        x &lt;- model.matrix(mt, mf, contrasts)
+        z &lt;- if (is.null(w)) 
+            lm.fit(x, y, offset = offset, singular.ok = singular.ok, 
+                ...)
+        else lm.wfit(x, y, w, offset = offset, singular.ok = singular.ok, 
+            ...)
+    }
+    class(z) &lt;- c(if (is.matrix(y)) &quot;mlm&quot;, &quot;lm&quot;)
+    z$na.action &lt;- attr(mf, &quot;na.action&quot;)
+    z$offset &lt;- offset
+    z$contrasts &lt;- attr(x, &quot;contrasts&quot;)
+    z$xlevels &lt;- .getXlevels(mt, mf)
+    z$call &lt;- cl
+    z$terms &lt;- mt
+    if (model) 
+        z$model &lt;- mf
+    if (ret.x) 
+        z$x &lt;- x
+    if (ret.y) 
+        z$y &lt;- y
+    if (!qr) 
+        z$qr &lt;- NULL
+    z
+}
+&lt;bytecode: 0x7fc72c625e00&gt;
+&lt;environment: namespace:stats&gt;</code></pre>
+</div>
+<div id="r--lm.fit-" class="section level2">
+<h2>4.2. R 语言 <code>lm.fit</code> 函数代码</h2>
+<pre><code>function (x, y, offset = NULL, method = &quot;qr&quot;, tol = 1e-07, singular.ok = TRUE, 
+    ...) 
+{
+    if (is.null(n &lt;- nrow(x))) 
+        stop(&quot;&#39;x&#39; must be a matrix&quot;)
+    if (n == 0L) 
+        stop(&quot;0 (non-NA) cases&quot;)
+    p &lt;- ncol(x)
+    if (p == 0L) {
+        return(list(coefficients = numeric(), residuals = y, 
+            fitted.values = 0 * y, rank = 0, df.residual = length(y)))
+    }
+    ny &lt;- NCOL(y)
+    if (is.matrix(y) &amp;&amp; ny == 1) 
+        y &lt;- drop(y)
+    if (!is.null(offset)) 
+        y &lt;- y - offset
+    if (NROW(y) != n) 
+        stop(&quot;incompatible dimensions&quot;)
+    if (method != &quot;qr&quot;) 
+        warning(gettextf(&quot;method = &#39;%s&#39; is not supported. Using &#39;qr&#39;&quot;, 
+            method), domain = NA)
+    chkDots(...)
+    z &lt;- .Call(C_Cdqrls, x, y, tol, FALSE)
+    if (!singular.ok &amp;&amp; z$rank &lt; p) 
+        stop(&quot;singular fit encountered&quot;)
+    coef &lt;- z$coefficients
+    pivot &lt;- z$pivot
+    r1 &lt;- seq_len(z$rank)
+    dn &lt;- colnames(x)
+    if (is.null(dn)) 
+        dn &lt;- paste0(&quot;x&quot;, 1L:p)
+    nmeffects &lt;- c(dn[pivot[r1]], rep.int(&quot;&quot;, n - z$rank))
+    r2 &lt;- if (z$rank &lt; p) 
+        (z$rank + 1L):p
+    else integer()
+    if (is.matrix(y)) {
+        coef[r2, ] &lt;- NA
+        if (z$pivoted) 
+            coef[pivot, ] &lt;- coef
+        dimnames(coef) &lt;- list(dn, colnames(y))
+        dimnames(z$effects) &lt;- list(nmeffects, colnames(y))
+    }
+    else {
+        coef[r2] &lt;- NA
+        if (z$pivoted) 
+            coef[pivot] &lt;- coef
+        names(coef) &lt;- dn
+        names(z$effects) &lt;- nmeffects
+    }
+    z$coefficients &lt;- coef
+    r1 &lt;- y - z$residuals
+    if (!is.null(offset)) 
+        r1 &lt;- r1 + offset
+    if (z$pivoted) 
+        colnames(z$qr) &lt;- colnames(x)[z$pivot]
+    qr &lt;- z[c(&quot;qr&quot;, &quot;qraux&quot;, &quot;pivot&quot;, &quot;tol&quot;, &quot;rank&quot;)]
+    c(z[c(&quot;coefficients&quot;, &quot;residuals&quot;, &quot;effects&quot;, &quot;rank&quot;)], list(fitted.values = r1, 
+        assign = attr(x, &quot;assign&quot;), qr = structure(qr, class = &quot;qr&quot;), 
+        df.residual = n - z$rank))
+}
+&lt;bytecode: 0x7fc72b8d8850&gt;
+&lt;environment: namespace:stats&gt;</code></pre>
+</div>
+<div id="c--cdqrls-" class="section level2">
+<h2>4.3. C 语言 <code>Cdqrls</code> 函数代码</h2>
 <ul>
-<li>lm 函数</li>
+<li><a href="https://github.com/wch/r-source/blob/trunk/src/library/stats/src/lm.c">代码地址</a></li>
 </ul>
-<pre class="r"><code>lm</code></pre>
-<pre><code>## function (formula, data, subset, weights, na.action, method = &quot;qr&quot;, 
-##     model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE, 
-##     contrasts = NULL, offset, ...) 
-## {
-##     ret.x &lt;- x
-##     ret.y &lt;- y
-##     cl &lt;- match.call()
-##     mf &lt;- match.call(expand.dots = FALSE)
-##     m &lt;- match(c(&quot;formula&quot;, &quot;data&quot;, &quot;subset&quot;, &quot;weights&quot;, &quot;na.action&quot;, 
-##         &quot;offset&quot;), names(mf), 0L)
-##     mf &lt;- mf[c(1L, m)]
-##     mf$drop.unused.levels &lt;- TRUE
-##     mf[[1L]] &lt;- quote(stats::model.frame)
-##     mf &lt;- eval(mf, parent.frame())
-##     if (method == &quot;model.frame&quot;) 
-##         return(mf)
-##     else if (method != &quot;qr&quot;) 
-##         warning(gettextf(&quot;method = &#39;%s&#39; is not supported. Using &#39;qr&#39;&quot;, 
-##             method), domain = NA)
-##     mt &lt;- attr(mf, &quot;terms&quot;)
-##     y &lt;- model.response(mf, &quot;numeric&quot;)
-##     w &lt;- as.vector(model.weights(mf))
-##     if (!is.null(w) &amp;&amp; !is.numeric(w)) 
-##         stop(&quot;&#39;weights&#39; must be a numeric vector&quot;)
-##     offset &lt;- as.vector(model.offset(mf))
-##     if (!is.null(offset)) {
-##         if (length(offset) != NROW(y)) 
-##             stop(gettextf(&quot;number of offsets is %d, should equal %d (number of observations)&quot;, 
-##                 length(offset), NROW(y)), domain = NA)
-##     }
-##     if (is.empty.model(mt)) {
-##         x &lt;- NULL
-##         z &lt;- list(coefficients = if (is.matrix(y)) matrix(, 0, 
-##             3) else numeric(), residuals = y, fitted.values = 0 * 
-##             y, weights = w, rank = 0L, df.residual = if (!is.null(w)) sum(w != 
-##             0) else if (is.matrix(y)) nrow(y) else length(y))
-##         if (!is.null(offset)) {
-##             z$fitted.values &lt;- offset
-##             z$residuals &lt;- y - offset
-##         }
-##     }
-##     else {
-##         x &lt;- model.matrix(mt, mf, contrasts)
-##         z &lt;- if (is.null(w)) 
-##             lm.fit(x, y, offset = offset, singular.ok = singular.ok, 
-##                 ...)
-##         else lm.wfit(x, y, w, offset = offset, singular.ok = singular.ok, 
-##             ...)
-##     }
-##     class(z) &lt;- c(if (is.matrix(y)) &quot;mlm&quot;, &quot;lm&quot;)
-##     z$na.action &lt;- attr(mf, &quot;na.action&quot;)
-##     z$offset &lt;- offset
-##     z$contrasts &lt;- attr(x, &quot;contrasts&quot;)
-##     z$xlevels &lt;- .getXlevels(mt, mf)
-##     z$call &lt;- cl
-##     z$terms &lt;- mt
-##     if (model) 
-##         z$model &lt;- mf
-##     if (ret.x) 
-##         z$x &lt;- x
-##     if (ret.y) 
-##         z$y &lt;- y
-##     if (!qr) 
-##         z$qr &lt;- NULL
-##     z
-## }
-## &lt;bytecode: 0x7fcccf23fed8&gt;
-## &lt;environment: namespace:stats&gt;</code></pre>
+<pre><code>/*  R : A Computer Language for Statistical Data Analysis
+ *
+ *  Copyright (C) 2012-2013  The R Core Team
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, a copy is available at
+ *  https://www.R-project.org/Licenses/.
+ */
+
+#include &lt;R.h&gt;
+#include &lt;Rinternals.h&gt;
+#include &lt;R_ext/Applic.h&gt;
+
+#include &quot;statsR.h&quot;
+
+#ifdef ENABLE_NLS
+#include &lt;libintl.h&gt;
+#define _(String) dgettext (&quot;stats&quot;, String)
+#else
+#define _(String) (String)
+#endif
+
+/* A wrapper to replace
+
+    z &lt;- .Fortran(&quot;dqrls&quot;,
+          qr = x, n = n, p = p,
+          y = y, ny = ny,
+          tol = as.double(tol),
+          coefficients = mat.or.vec(p, ny),
+          residuals = y, effects = y, rank = integer(1L),
+          pivot = 1L:p, qraux = double(p), work = double(2*p),
+                  PACKAGE=&quot;base&quot;)
+
+    with less allocation.
+*/
+
+
+SEXP Cdqrls(SEXP x, SEXP y, SEXP tol, SEXP chk)
+{
+    SEXP ans;
+    SEXP qr, coefficients, residuals, effects, pivot, qraux;
+    int n, ny = 0, p, rank, nprotect = 4, pivoted = 0;
+    double rtol = asReal(tol), *work;
+    Rboolean check = asLogical(chk);
+
+    ans = getAttrib(x, R_DimSymbol);
+    if(check &amp;&amp; length(ans) != 2) error(_(&quot;&#39;x&#39; is not a matrix&quot;));
+    int *dims = INTEGER(ans);
+    n = dims[0]; p = dims[1];
+    if(n) ny = (int)(XLENGTH(y)/n); /* y :  n x ny, or an n - vector */
+    if(check &amp;&amp; n * ny != XLENGTH(y))
+    error(_(&quot;dimensions of &#39;x&#39; (%d,%d) and &#39;y&#39; (%d) do not match&quot;),
+          n,p, XLENGTH(y));
+
+    /* These lose attributes, so do after we have extracted dims */
+    if (TYPEOF(x) != REALSXP) {
+    PROTECT(x = coerceVector(x, REALSXP));
+    nprotect++;
+    }
+    if (TYPEOF(y) != REALSXP) {
+    PROTECT(y = coerceVector(y, REALSXP));
+    nprotect++;
+    }
+
+    double *rptr = REAL(x);
+    for (R_xlen_t i = 0 ; i &lt; XLENGTH(x) ; i++)
+    if(!R_FINITE(rptr[i])) error(_(&quot;NA/NaN/Inf in &#39;%s&#39;&quot;), &quot;x&quot;);
+
+    rptr = REAL(y);
+    for (R_xlen_t i = 0 ; i &lt; XLENGTH(y) ; i++)
+    if(!R_FINITE(rptr[i])) error(_(&quot;NA/NaN/Inf in &#39;%s&#39;&quot;), &quot;y&quot;);
+
+    const char *ansNms[] = {&quot;qr&quot;, &quot;coefficients&quot;, &quot;residuals&quot;, &quot;effects&quot;,
+                &quot;rank&quot;, &quot;pivot&quot;, &quot;qraux&quot;, &quot;tol&quot;, &quot;pivoted&quot;, &quot;&quot;};
+    PROTECT(ans = mkNamed(VECSXP, ansNms));
+    SET_VECTOR_ELT(ans, 0, qr = shallow_duplicate(x));
+    coefficients = (ny &gt; 1) ? allocMatrix(REALSXP, p, ny) : allocVector(REALSXP, p);
+    PROTECT(coefficients);
+    SET_VECTOR_ELT(ans, 1, coefficients);
+    SET_VECTOR_ELT(ans, 2, residuals = shallow_duplicate(y));
+    SET_VECTOR_ELT(ans, 3, effects = shallow_duplicate(y));
+    PROTECT(pivot = allocVector(INTSXP, p));
+    int *ip = INTEGER(pivot);
+    for(int i = 0; i &lt; p; i++) ip[i] = i+1;
+    SET_VECTOR_ELT(ans, 5, pivot);
+    PROTECT(qraux = allocVector(REALSXP, p));
+    SET_VECTOR_ELT(ans, 6, qraux);
+    SET_VECTOR_ELT(ans, 7, tol);
+
+    work = (double *) R_alloc(2 * p, sizeof(double));
+    F77_CALL(dqrls)(REAL(qr), &amp;n, &amp;p, REAL(y), &amp;ny, &amp;rtol,
+            REAL(coefficients), REAL(residuals), REAL(effects),
+            &amp;rank, INTEGER(pivot), REAL(qraux), work);
+    SET_VECTOR_ELT(ans, 4, ScalarInteger(rank));
+    for(int i = 0; i &lt; p; i++)
+    if(ip[i] != i+1) { pivoted = 1; break; }
+    SET_VECTOR_ELT(ans, 8, ScalarLogical(pivoted));
+    UNPROTECT(nprotect);
+
+    return ans;
+}</code></pre>
+</div>
+<div id="fortran--dqrls-" class="section level2">
+<h2>4.4. Fortran 语言 <code>dqrls</code> 函数代码</h2>
 <ul>
-<li>lm.fit 函数</li>
+<li><a href="https://github.com/wch/r-source/blob/trunk/src/appl/dqrls.f">代码地址</a></li>
 </ul>
-<pre class="r"><code>lm.fit</code></pre>
-<pre><code>## function (x, y, offset = NULL, method = &quot;qr&quot;, tol = 1e-07, singular.ok = TRUE, 
-##     ...) 
-## {
-##     if (is.null(n &lt;- nrow(x))) 
-##         stop(&quot;&#39;x&#39; must be a matrix&quot;)
-##     if (n == 0L) 
-##         stop(&quot;0 (non-NA) cases&quot;)
-##     p &lt;- ncol(x)
-##     if (p == 0L) {
-##         return(list(coefficients = numeric(), residuals = y, 
-##             fitted.values = 0 * y, rank = 0, df.residual = length(y)))
-##     }
-##     ny &lt;- NCOL(y)
-##     if (is.matrix(y) &amp;&amp; ny == 1) 
-##         y &lt;- drop(y)
-##     if (!is.null(offset)) 
-##         y &lt;- y - offset
-##     if (NROW(y) != n) 
-##         stop(&quot;incompatible dimensions&quot;)
-##     if (method != &quot;qr&quot;) 
-##         warning(gettextf(&quot;method = &#39;%s&#39; is not supported. Using &#39;qr&#39;&quot;, 
-##             method), domain = NA)
-##     chkDots(...)
-##     z &lt;- .Call(C_Cdqrls, x, y, tol, FALSE)
-##     if (!singular.ok &amp;&amp; z$rank &lt; p) 
-##         stop(&quot;singular fit encountered&quot;)
-##     coef &lt;- z$coefficients
-##     pivot &lt;- z$pivot
-##     r1 &lt;- seq_len(z$rank)
-##     dn &lt;- colnames(x)
-##     if (is.null(dn)) 
-##         dn &lt;- paste0(&quot;x&quot;, 1L:p)
-##     nmeffects &lt;- c(dn[pivot[r1]], rep.int(&quot;&quot;, n - z$rank))
-##     r2 &lt;- if (z$rank &lt; p) 
-##         (z$rank + 1L):p
-##     else integer()
-##     if (is.matrix(y)) {
-##         coef[r2, ] &lt;- NA
-##         if (z$pivoted) 
-##             coef[pivot, ] &lt;- coef
-##         dimnames(coef) &lt;- list(dn, colnames(y))
-##         dimnames(z$effects) &lt;- list(nmeffects, colnames(y))
-##     }
-##     else {
-##         coef[r2] &lt;- NA
-##         if (z$pivoted) 
-##             coef[pivot] &lt;- coef
-##         names(coef) &lt;- dn
-##         names(z$effects) &lt;- nmeffects
-##     }
-##     z$coefficients &lt;- coef
-##     r1 &lt;- y - z$residuals
-##     if (!is.null(offset)) 
-##         r1 &lt;- r1 + offset
-##     if (z$pivoted) 
-##         colnames(z$qr) &lt;- colnames(x)[z$pivot]
-##     qr &lt;- z[c(&quot;qr&quot;, &quot;qraux&quot;, &quot;pivot&quot;, &quot;tol&quot;, &quot;rank&quot;)]
-##     c(z[c(&quot;coefficients&quot;, &quot;residuals&quot;, &quot;effects&quot;, &quot;rank&quot;)], list(fitted.values = r1, 
-##         assign = attr(x, &quot;assign&quot;), qr = structure(qr, class = &quot;qr&quot;), 
-##         df.residual = n - z$rank))
-## }
-## &lt;bytecode: 0x7fcccf662210&gt;
-## &lt;environment: namespace:stats&gt;</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li><p>C 语言层次</p></li>
-<li><p>Fortran 语言层次</p></li>
-</ol>
+<pre><code>c
+c     dqrfit is a subroutine to compute least squares solutions
+c     to the system
+c
+c     (1)               x * b = y
+c
+c     which may be either under-determined or over-determined.
+c     the user must supply a tolerance to limit the columns of
+c     x used in computing the solution.  in effect, a set of
+c     columns with a condition number approximately bounded by
+c     1/tol is used, the other components of b being set to zero.
+c
+c     on entry
+c
+c        x      double precision(n,p).
+c               x contains n-by-p coefficient matrix of
+c               the system (1), x is destroyed by dqrfit.
+c
+c        n      the number of rows of the matrix x.
+c
+c        p      the number of columns of the matrix x.
+c
+c        y      double precision(n,ny)
+c               y contains the right hand side(s) of the system (1).
+c
+c        ny     the number of right hand sides of the system (1).
+c
+c        tol    double precision
+c               tol is the nonnegative tolerance used to
+c               determine the subset of columns of x included
+c               in the solution.  columns are pivoted out of
+c               decomposition if
+c
+c        jpvt   integer(p)
+c               the values in jpvt are permuted in the same
+c               way as the columns of x.  this can be useful
+c               in unscrambling coefficients etc.
+c
+c        work   double precision(2*p)
+c               work is an array used by dqrdc2 and dqrsl.
+c
+c     on return
+c
+c        x      contains the output array from dqrdc2.
+c               namely the qr decomposition of x stored in
+c               compact form.
+c
+c        b      double precision(p,ny)
+c               b contains the solution vectors with rows permuted
+c               in the same way as the columns of x.  components
+c               corresponding to columns not used are set to zero.
+c
+c        rsd    double precision(n,ny)
+c               rsd contains the residual vectors y-x*b.
+c
+c        qty    double precision(n,ny)     t
+c               qty contains the vectors  q y.   note that
+c               the initial p elements of this vector are
+c               permuted in the same way as the columns of x.
+c
+c        k      integer
+c               k contains the number of columns used in the
+c               solution.
+c
+c        jpvt   has its contents permuted as described above.
+c
+c        qraux  double precision(p)
+c               qraux contains auxiliary information on the
+c               qr decomposition of x.
+c
+c
+c     on return the arrays x, jpvt and qraux contain the
+c     usual output from dqrdc, so that the qr decomposition
+c     of x with pivoting is fully available to the user.
+c     in particular, columns jpvt(1), jpvt(2),...,jpvt(k)
+c     were used in the solution, and the condition number
+c     associated with those columns is estimated by
+c     abs(x(1,1)/x(k,k)).
+c
+c     dqrfit uses the linpack routines dqrdc and dqrsl.
+c
+      subroutine dqrls(x,n,p,y,ny,tol,b,rsd,qty,k,jpvt,qraux,work)
+      integer n,p,ny,k,jpvt(p)
+      double precision x(n,p),y(n,ny),tol,b(p,ny),rsd(n,ny),
+     .                 qty(n,ny),qraux(p),work(p)
+c
+c     internal variables.
+c
+      integer info,j,jj,kk
+c
+c     reduce x.
+c
+      call dqrdc2(x,n,n,p,tol,k,qraux,jpvt,work)
+c
+c     solve the truncated least squares problem for each rhs.
+c
+      if(k .gt. 0) then
+         do 20 jj=1,ny
+            call dqrsl(x,n,n,k,qraux,y(1,jj),rsd(1,jj),qty(1,jj),
+     1           b(1,jj),rsd(1,jj),rsd(1,jj),1110,info)
+   20       continue
+      else
+         do 35 i=1,n
+            do 30 jj=1,ny
+                rsd(i,jj) = y(i,jj)
+   30       continue
+   35   continue
+      endif
+c
+c     set the unused components of b to zero.
+c
+      kk = k + 1
+      do 50 j=kk,p
+         do 40 jj=1,ny
+            b(j,jj) = 0.d0
+   40    continue
+   50 continue
+      return
+      end
+</code></pre>
+</div>
+</div>
