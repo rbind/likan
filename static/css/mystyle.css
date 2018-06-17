@@ -1,3 +1,26 @@
+/* Change the format of Code, 20180717 by Likan Zhan */
+
+pre, code {
+  font-size: .9em;
+  background: #FDF9F6 /*#FAF0E6; added by likan */
+}
+
+pre code {
+  display: block;
+  border: none; /*1px solid #ddd;*/
+  box-shadow: none; /*5px 5px 5px #eee;*/
+  padding: 1em;
+  overflow-x: auto;
+  line-height: 1.75;
+}
+
+code {
+  background: #f9f9f9;
+}
+
+pre code {
+  background: none;
+}
 
 /*  Make the format of the TOC from Rmd the same as md  */
 #TOC {

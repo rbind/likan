@@ -1,0 +1,157 @@
+---
+title: R 语言中的 lm 函数
+author: ~
+date: '2018-06-17'
+slug: lm-function-in-r
+categories: []
+tags: []
+---
+
+
+
+<ol style="list-style-type: decimal">
+<li>R 语言层次</li>
+</ol>
+<ul>
+<li>lm 函数</li>
+</ul>
+<pre class="r"><code>lm</code></pre>
+<pre><code>## function (formula, data, subset, weights, na.action, method = &quot;qr&quot;, 
+##     model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE, 
+##     contrasts = NULL, offset, ...) 
+## {
+##     ret.x &lt;- x
+##     ret.y &lt;- y
+##     cl &lt;- match.call()
+##     mf &lt;- match.call(expand.dots = FALSE)
+##     m &lt;- match(c(&quot;formula&quot;, &quot;data&quot;, &quot;subset&quot;, &quot;weights&quot;, &quot;na.action&quot;, 
+##         &quot;offset&quot;), names(mf), 0L)
+##     mf &lt;- mf[c(1L, m)]
+##     mf$drop.unused.levels &lt;- TRUE
+##     mf[[1L]] &lt;- quote(stats::model.frame)
+##     mf &lt;- eval(mf, parent.frame())
+##     if (method == &quot;model.frame&quot;) 
+##         return(mf)
+##     else if (method != &quot;qr&quot;) 
+##         warning(gettextf(&quot;method = &#39;%s&#39; is not supported. Using &#39;qr&#39;&quot;, 
+##             method), domain = NA)
+##     mt &lt;- attr(mf, &quot;terms&quot;)
+##     y &lt;- model.response(mf, &quot;numeric&quot;)
+##     w &lt;- as.vector(model.weights(mf))
+##     if (!is.null(w) &amp;&amp; !is.numeric(w)) 
+##         stop(&quot;&#39;weights&#39; must be a numeric vector&quot;)
+##     offset &lt;- as.vector(model.offset(mf))
+##     if (!is.null(offset)) {
+##         if (length(offset) != NROW(y)) 
+##             stop(gettextf(&quot;number of offsets is %d, should equal %d (number of observations)&quot;, 
+##                 length(offset), NROW(y)), domain = NA)
+##     }
+##     if (is.empty.model(mt)) {
+##         x &lt;- NULL
+##         z &lt;- list(coefficients = if (is.matrix(y)) matrix(, 0, 
+##             3) else numeric(), residuals = y, fitted.values = 0 * 
+##             y, weights = w, rank = 0L, df.residual = if (!is.null(w)) sum(w != 
+##             0) else if (is.matrix(y)) nrow(y) else length(y))
+##         if (!is.null(offset)) {
+##             z$fitted.values &lt;- offset
+##             z$residuals &lt;- y - offset
+##         }
+##     }
+##     else {
+##         x &lt;- model.matrix(mt, mf, contrasts)
+##         z &lt;- if (is.null(w)) 
+##             lm.fit(x, y, offset = offset, singular.ok = singular.ok, 
+##                 ...)
+##         else lm.wfit(x, y, w, offset = offset, singular.ok = singular.ok, 
+##             ...)
+##     }
+##     class(z) &lt;- c(if (is.matrix(y)) &quot;mlm&quot;, &quot;lm&quot;)
+##     z$na.action &lt;- attr(mf, &quot;na.action&quot;)
+##     z$offset &lt;- offset
+##     z$contrasts &lt;- attr(x, &quot;contrasts&quot;)
+##     z$xlevels &lt;- .getXlevels(mt, mf)
+##     z$call &lt;- cl
+##     z$terms &lt;- mt
+##     if (model) 
+##         z$model &lt;- mf
+##     if (ret.x) 
+##         z$x &lt;- x
+##     if (ret.y) 
+##         z$y &lt;- y
+##     if (!qr) 
+##         z$qr &lt;- NULL
+##     z
+## }
+## &lt;bytecode: 0x7fcccf23fed8&gt;
+## &lt;environment: namespace:stats&gt;</code></pre>
+<ul>
+<li>lm.fit 函数</li>
+</ul>
+<pre class="r"><code>lm.fit</code></pre>
+<pre><code>## function (x, y, offset = NULL, method = &quot;qr&quot;, tol = 1e-07, singular.ok = TRUE, 
+##     ...) 
+## {
+##     if (is.null(n &lt;- nrow(x))) 
+##         stop(&quot;&#39;x&#39; must be a matrix&quot;)
+##     if (n == 0L) 
+##         stop(&quot;0 (non-NA) cases&quot;)
+##     p &lt;- ncol(x)
+##     if (p == 0L) {
+##         return(list(coefficients = numeric(), residuals = y, 
+##             fitted.values = 0 * y, rank = 0, df.residual = length(y)))
+##     }
+##     ny &lt;- NCOL(y)
+##     if (is.matrix(y) &amp;&amp; ny == 1) 
+##         y &lt;- drop(y)
+##     if (!is.null(offset)) 
+##         y &lt;- y - offset
+##     if (NROW(y) != n) 
+##         stop(&quot;incompatible dimensions&quot;)
+##     if (method != &quot;qr&quot;) 
+##         warning(gettextf(&quot;method = &#39;%s&#39; is not supported. Using &#39;qr&#39;&quot;, 
+##             method), domain = NA)
+##     chkDots(...)
+##     z &lt;- .Call(C_Cdqrls, x, y, tol, FALSE)
+##     if (!singular.ok &amp;&amp; z$rank &lt; p) 
+##         stop(&quot;singular fit encountered&quot;)
+##     coef &lt;- z$coefficients
+##     pivot &lt;- z$pivot
+##     r1 &lt;- seq_len(z$rank)
+##     dn &lt;- colnames(x)
+##     if (is.null(dn)) 
+##         dn &lt;- paste0(&quot;x&quot;, 1L:p)
+##     nmeffects &lt;- c(dn[pivot[r1]], rep.int(&quot;&quot;, n - z$rank))
+##     r2 &lt;- if (z$rank &lt; p) 
+##         (z$rank + 1L):p
+##     else integer()
+##     if (is.matrix(y)) {
+##         coef[r2, ] &lt;- NA
+##         if (z$pivoted) 
+##             coef[pivot, ] &lt;- coef
+##         dimnames(coef) &lt;- list(dn, colnames(y))
+##         dimnames(z$effects) &lt;- list(nmeffects, colnames(y))
+##     }
+##     else {
+##         coef[r2] &lt;- NA
+##         if (z$pivoted) 
+##             coef[pivot] &lt;- coef
+##         names(coef) &lt;- dn
+##         names(z$effects) &lt;- nmeffects
+##     }
+##     z$coefficients &lt;- coef
+##     r1 &lt;- y - z$residuals
+##     if (!is.null(offset)) 
+##         r1 &lt;- r1 + offset
+##     if (z$pivoted) 
+##         colnames(z$qr) &lt;- colnames(x)[z$pivot]
+##     qr &lt;- z[c(&quot;qr&quot;, &quot;qraux&quot;, &quot;pivot&quot;, &quot;tol&quot;, &quot;rank&quot;)]
+##     c(z[c(&quot;coefficients&quot;, &quot;residuals&quot;, &quot;effects&quot;, &quot;rank&quot;)], list(fitted.values = r1, 
+##         assign = attr(x, &quot;assign&quot;), qr = structure(qr, class = &quot;qr&quot;), 
+##         df.residual = n - z$rank))
+## }
+## &lt;bytecode: 0x7fcccf662210&gt;
+## &lt;environment: namespace:stats&gt;</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><p>C 语言层次</p></li>
+<li><p>Fortran 语言层次</p></li>
+</ol>

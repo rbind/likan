@@ -8,7 +8,7 @@ code {
   font-family: "Lucida Console", 'Andale Mono', 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
 pre code {
-  font-family: "Lucida Console", Monaco, 'STKaiti', 'KaiTi', 'SimKai', monospace;
+  font-family: "Inconsolata", "Lucida Console", Monaco, 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
 p code, li code {
   font-size: 90%;

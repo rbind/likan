@@ -1,0 +1,26 @@
+---
+title: R 语言中的 lm 函数
+author: ~
+date: '2018-06-17'
+slug: lm-function-in-r
+categories: []
+tags: []
+---
+
+1. R 语言层次
+
+  - lm 函数
+  
+  ```{r}
+  lm
+  ```
+  
+  - lm.fit 函数
+   ```{r}
+   lm.fit
+   ```
+   
+2. C 语言层次
+
+
+3. Fortran 语言层次
