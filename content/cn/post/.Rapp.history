@@ -7,12 +7,21 @@ getwd()
 blogdown::serve_site()
 ?datatable
 blogdown::serve_site()
-blogdown::serve_site()
 cat()
 setwd("src/library/stats/src/lm.c")
 "lm.c"
 ?"lm.c"
 getAnywhere(lm.c)
 blogdown::serve_site()
-blogdown::serve_site()
-blogdown::serve_site()
+?lm
+lm
+?lm
+args(lm)
+cl <- match.call()
+cl
+mf <- match.call(expand.dots = FALSE)#
+mf
+mf[(c(1L,m))]
+m <- match(c("formula", "data", "subset", "weights", "na.action", #
+        "offset"), names(mf), 0L)
+m

@@ -19,8 +19,14 @@ categories: []
 tags: []
 ---
 
+原文链接: [](http://madrury.github.io/jekyll/update/statistics/2016/07/20/lm-in-R.html)
+
+# 1.
+
+
 # 1. R 语言层次
 
+R 语言中一个最基本的函数是 `lm`, 即线性回归模型。线性回归的计算过程不是很复杂，涉及一些线性代数知识和一些简单的微积分知识。
    
 # 2. C 语言层次
 

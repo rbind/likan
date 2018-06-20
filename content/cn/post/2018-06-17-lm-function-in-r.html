@@ -22,6 +22,7 @@ tags: []
 
 <div id="TOC">
 <ul>
+<li><a href="#section">1.</a></li>
 <li><a href="#r-">1. R 语言层次</a></li>
 <li><a href="#c-">2. C 语言层次</a></li>
 <li><a href="#fortran-">3. Fortran 语言层次</a></li>
@@ -37,8 +38,13 @@ tags: []
 </ul>
 </div>
 
+<p>原文链接: <a href="http://madrury.github.io/jekyll/update/statistics/2016/07/20/lm-in-R.html"></a></p>
+<div id="section" class="section level1">
+<h1>1.</h1>
+</div>
 <div id="r-" class="section level1">
 <h1>1. R 语言层次</h1>
+<p>R 语言中一个最基本的函数是 <code>lm</code>, 即线性回归模型。线性回归的计算过程不是很复杂，涉及一些线性代数知识和一些简单的微积分知识。</p>
 </div>
 <div id="c-" class="section level1">
 <h1>2. C 语言层次</h1>
@@ -118,7 +124,7 @@ tags: []
         z$qr &lt;- NULL
     z
 }
-&lt;bytecode: 0x7fb43a8b0d00&gt;
+&lt;bytecode: 0x7f9270cb4130&gt;
 &lt;environment: namespace:stats&gt;</code></pre>
 </div>
 <div id="r--lm.fit-" class="section level3">
@@ -184,7 +190,7 @@ tags: []
         assign = attr(x, &quot;assign&quot;), qr = structure(qr, class = &quot;qr&quot;), 
         df.residual = n - z$rank))
 }
-&lt;bytecode: 0x7fb43aaed040&gt;
+&lt;bytecode: 0x7f9270ef0e38&gt;
 &lt;environment: namespace:stats&gt;</code></pre>
 </div>
 <div id="r--lm.wfit-" class="section level3">
@@ -297,7 +303,7 @@ tags: []
         &quot;weights&quot;, &quot;rank&quot;)], list(assign = x.asgn, qr = structure(qr, 
         class = &quot;qr&quot;), df.residual = n - z$rank))
 }
-&lt;bytecode: 0x7fb43ad8b858&gt;
+&lt;bytecode: 0x7f927419af38&gt;
 &lt;environment: namespace:stats&gt;</code></pre>
 </div>
 </div>
