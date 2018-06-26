@@ -66,8 +66,8 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 17. The Chi-Square Statistic: Tests for Goodness of Fit and Independence
   - Chapter 18. The Binomial Test
   
-# 5. Examination
+# 5. Examination (**IMPORTANT:UPDATED**)
 
-- Time and location: 08:00-09:50, July 13, *Room 202, Teaching Building 2*;
-- Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 16*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 15*.
+- Time and location: **08:00-09:50, July 13**, **Room 104, Teaching Building 4**;
+- Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 13*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 13*.
   
