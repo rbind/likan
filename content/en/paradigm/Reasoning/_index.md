@@ -7,4 +7,6 @@ disable_comments: true
 
 - [Preference Looking Paradigm](/en/paradigm/reasoning/preference-looking-paradigm/)
 
+- [False-belief-task](/en/paradigm/reasoning/false-belief-task/)
+
 - ...
