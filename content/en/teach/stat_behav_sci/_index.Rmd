@@ -1,5 +1,5 @@
 ---
-title: "Statistics for the Behavioral Sciences"
+title: "Statistics for the Behavioral Sciences **exam time and location added**"
 author: "Likan Zhan"
 date: '2017-03-01'
 lastmod: "`r Sys.Date()`"
@@ -66,8 +66,8 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 17. The Chi-Square Statistic: Tests for Goodness of Fit and Independence
   - Chapter 18. The Binomial Test
   
-# 5. Examination (**IMPORTANT:UPDATED**)
+# 5. **Examination** (**UPDATED**)
 
 - Time and location: **08:00-09:50, July 13**, **Room 104, Teaching Building 4**;
-- Structure of the exam: Eighty multiple choices, selected from the *learning check* problems of chapters *1 - 13*; Two essay questions, selected from the *odd-numbered problems* of chapters *9 - 13*.
+- Structure of the exam: 65 multiple choices, selected from the *learning check* problems of chapters *1 - 13*; 2 essay questions, selected from the *odd-numbered problems* of chapters *9 - 13*.
   

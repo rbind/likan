@@ -22,11 +22,11 @@ categories: []
 
 # 2. Recent Applications
 
-1. @RN913
+01. @RN913
 
 On all trials, participants memorized a spoken word for a verbal recognition test at the end of the trial. During the retention period, they performed a visual search task. In crucial trials, the search target were absent. In a crucial trial, for example, the word to remember was "banana". They then saw four object printed on the screen. These contained an object that was semantically related (such as the monkey), an object that was visually related (such as the canoe), and two objects that were unrelated (such as the hat and the tambourine). In the visual search stage, participant were asked to search the banana (the template condition) or the figurine (Accessory condition). The article observed that participants' eye movements are significantly different between the accessory condition and the template condition, suggesting that language-induced attentional biases are subject to task requirements.
    
-2. @RN931
+02. @RN931
 
 To explore the effects of the degree of image realism, researchers conducted two eye tracking studies using the visual world paradigm. The test image consist of four objects, such as a cigarette, a banana, an earings, and an apple. The test images consist of both the phorographs and the clipart images of the same objects. The two experiments differ in whether the test audios are noun-biased (Experiment 1), such as *John will move the apple/banana*, or verb-biased (Experiment 2), such as *John will move/peal the apple/banana*. Researchers found a modest benefit for clipart stimuli during real-time processing, but only for noun-driving mappings, i.e., the effect of realism was observed in experiment 1 but not in experiment 2.
 
