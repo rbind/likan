@@ -2,6 +2,7 @@
 title: 'R 中跟路径有关的几个函数'
 author: ~
 date: '2018-06-29'
+lastmod: "`r Sys.Date()`"
 slug: functions-related-to-path
 categories: []
 tags: []
@@ -9,15 +10,23 @@ tags: []
 
 1. 'file.path()' 根据软件的操作平台，把一系列成分组成一个在该平台下合法的路径。如果Windows系统中路径分隔符是反斜杠'\\'，而苹果系统下路径分隔符是斜杠'/'。例如，博主的系统是mac，所以该命令生成的路径是用斜杠连接的：
 
-```{r}
+```{r, results = "hold"}
 (path <- file.path("~", "R", "car"))
+```
+
+2. 'dir.exists()' 用来判断某个路径是否存在。例如，因为我把 'car' 这个软件包安装在了上述路径中，所以上述路径是存在的，所以我们运行下面的命令会得到一个TRUE的结果
+
+```{r, results = "hold"}
+dir.exists(path)
+# dir.create(path) # 如果不存在，我们可以用该命令创建一个路径
 ```
 
 2. 'path.expand(path)' 把一个路径转化为完成的路径，即把一个包含波浪线 '~' 的路径替换当前用户所在路径。
 
 ```{r, results = "hold"}
 Sys.getenv("HOME")
-path.expand(path)
+(path2 <- path.expand(path))
+dir.exists(path2)
 ```
 3.  'dirname(path)' 保留路径中除掉最底层成分的所有成分。如果路径中只有一层，则返回 '.'
 
