@@ -2,6 +2,7 @@
 title: R 中的 ave 函数
 author: ~
 date: '2018-06-15'
+lastmod: "`r Sys.Date()`"
 slug: 
 categories: []
 tags: []
@@ -47,5 +48,5 @@ ave
 
 2. `ave` 函数的说明文档
 ```{r, echo = F}
-acqr::help_console(ave)
+acqr::print_help_console(ave)
 ```

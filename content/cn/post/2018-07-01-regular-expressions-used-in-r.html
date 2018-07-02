@@ -261,7 +261,7 @@ gsub(&quot;at[.]?&quot;,  9, &quot;The fat cat sat on the mat.&quot;)</code></pr
 <ul>
 <li><code>\n</code> 当我们在一个模式中用圆括号定界了一个子字符串时，则随后我们可以用一个特定的符号在随后引用这些子字符串：<code>\1</code> 表示第一个子字符串（从左向右）；<code>\2</code> 表示第二个字符串。</li>
 </ul>
-<p>例如， 正则表达式 <code>&quot;c(..) s\\1&quot;</code> 表示：第一个字母是 <code>c</code>, 随后是任意两个字符，再之后是一个空格，再往手是一个 <code>s</code>，最后是重复字母 <code>c</code> 出现的两个字母：</p>
+<p>例如， 正则表达式 <code>&quot;c(..) s\\1&quot;</code> 表示：第一个字母是 <code>c</code>, 随后是任意两个字符，再之后是一个空格，再往手是一个 <code>s</code>，最后是重复字母 <code>c</code> 后出现的两个字母：</p>
 <pre class="r"><code>gsub(&quot;c(..) s\\1&quot;,  9, &quot;The fat cat sat on the mat.&quot;)</code></pre>
 <pre><code>[1] &quot;The fat 9 on the mat.&quot;</code></pre>
 </div>

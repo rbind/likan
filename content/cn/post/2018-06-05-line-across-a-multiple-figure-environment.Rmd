@@ -2,6 +2,7 @@
 title: 如何在多个图之间画一条线？
 author: ~
 date: '2018-06-05'
+lastmod: "`r Sys.Date()`"
 slug: line-across-a-multiple-figure-environmentRmd
 categories: []
 tags: []

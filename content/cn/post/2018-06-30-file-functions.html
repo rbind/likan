@@ -1,7 +1,8 @@
 ---
-title: R 中几个跟 file 有关的函数
+title: R 中跟 file 有关的几个函数
 author: ~
 date: '2018-06-30'
+lastmod: "2018-07-03"
 slug: file-functions
 categories: []
 tags: []
@@ -17,7 +18,7 @@ file.exists(&quot;example2.txt&quot;)</code></pre>
 <pre><code>## [1] FALSE
 ## [1] FALSE</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>我们可以用 ‘file.create()’ 来创建一个名叫 ‘example1.txt’ 和一个叫做 ‘example2.txt’ 的纯文本文档。此时再运行 ‘file.exists()’ 命令，得到的结果就是 ‘TRUE’ 了。</li>
+<li>我们可用 ‘file.create()’ 来创建一个名叫 ‘example1.txt’ 和一个叫做 ‘example2.txt’ 的纯文本文档。此时再运行 ‘file.exists()’ 命令，得到的结果就是 ‘TRUE’ 了。</li>
 </ol>
 <pre class="r"><code>invisible(file.create(&quot;example1.txt&quot;))
 invisible(file.create(&quot;example2.txt&quot;))

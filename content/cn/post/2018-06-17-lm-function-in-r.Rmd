@@ -2,6 +2,7 @@
 title: R 语言中的 lm 函数
 author: ~
 date: '2018-06-17'
+lastmod: "`r Sys.Date()`"
 output:
   pdf_document:
     includes:

@@ -2,6 +2,7 @@
 title: R 中字符串的查找和替换
 author: ~
 date: '2018-07-01'
+lastmod: "`r Sys.Date()`"
 slug: pattern-matching-and-replacement
 categories: []
 tags: []
@@ -20,7 +21,7 @@ example <- c(
 )
 ```
 
-R中有一系列的函数用于查找和替换一个字符串，例如，如果我们想知道字符串 `.at` （有关该字符串的具体含义，请参看 `?"regex"`）在向量 `example` 中出现的情况 如`grep`、`grepl`、`regexpr`、`regexec`、`gregexpr`、`sub`、`gsub`等。，则我们有以下函数可以选择：
+R中有一系列函数用于查找和替换一个字符串，例如，如果我们想知道字符串 `.at` （有关该字符串的具体含义，请参看 `?"regex"`）在向量 `example` 中出现的情况 如`grep`、`grepl`、`regexpr`、`regexec`、`gregexpr`、`sub`、`gsub`等。，则我们有以下函数可以选择：
 
 2. `grep` 函数返回原始向量中包含所要字符串的成分的所在位置：
 
