@@ -1,0 +1,45 @@
+---
+title: R 中几个跟 file 有关的函数
+author: ~
+date: '2018-06-30'
+slug: file-functions
+categories: []
+tags: []
+---
+
+
+
+<ol style="list-style-type: decimal">
+<li>函数 ‘file.exists()’ 文档是否存在。例如，当前工作区中不存在一个名称为 ‘example1.txt’ 和名称为 ‘example2.txt’ 的纯文本文档，所以输出的结果应该为 ‘FALSE’。</li>
+</ol>
+<pre class="r"><code>file.exists(&quot;example1.txt&quot;)
+file.exists(&quot;example2.txt&quot;)</code></pre>
+<pre><code>## [1] FALSE
+## [1] FALSE</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>我们可以用 ‘file.create()’ 来创建一个名叫 ‘example1.txt’ 和一个叫做 ‘example2.txt’ 的纯文本文档。此时再运行 ‘file.exists()’ 命令，得到的结果就是 ‘TRUE’ 了。</li>
+</ol>
+<pre class="r"><code>invisible(file.create(&quot;example1.txt&quot;))
+invisible(file.create(&quot;example2.txt&quot;))
+file.exists(&quot;example1.txt&quot;)
+file.exists(&quot;example2.txt&quot;)</code></pre>
+<pre><code>## [1] TRUE
+## [1] TRUE</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>接下来我们可以用 ‘list.files()’ 来查看当前目录下的文档列表</li>
+</ol>
+<pre class="r"><code>list.files(all.files = TRUE, pattern = &quot;example*&quot;) ## all.files = TRUE 说明把隐藏文件也显示出来</code></pre>
+<pre><code>## [1] &quot;example1.txt&quot; &quot;example2.txt&quot;</code></pre>
+<p>4.接下来我们可以用 ‘cat()’ 函数在这两个纯文本文档中添加一些信息。</p>
+<pre class="r"><code>cat(&quot;file A\n XX 100&quot;, file = &quot;example1.txt&quot;)
+cat(&quot;file B\n YY 200&quot;, file = &quot;example2.txt&quot;)
+# file.show(&quot;example1.txt&quot;) # 在交互运行的模式下，这个文件会被打开。</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>我们还可以用 ‘file.rename()’ 对文件名称进行重新命名</li>
+</ol>
+<pre class="r"><code># file.rename(list.files(pattern = &quot;example_*.img&quot;), paste0(&quot;Ex_&quot;, 1:700))</code></pre>
+<ol start="6" style="list-style-type: decimal">
+<li>最后，我们可以用 ‘file.remove()’ 删除刚才创建的两个纯文本文档</li>
+</ol>
+<pre class="r"><code>invisible(file.remove(&quot;example1.txt&quot;))
+invisible(file.remove(&quot;example2.txt&quot;))</code></pre>

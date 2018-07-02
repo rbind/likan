@@ -1,0 +1,84 @@
+---
+title: R 中字符串的查找和替换
+author: ~
+date: '2018-07-01'
+slug: pattern-matching-and-replacement
+categories: []
+tags: []
+---
+
+
+
+<ol style="list-style-type: decimal">
+<li>假如我们有一个名字为 <code>example</code> 的向量。该向量包含了五个纯文本元素。其具体内容如下：</li>
+</ol>
+<pre class="r"><code>example &lt;- c(
+&quot;The quick brown fox jumps over the lazy dog&quot;,
+&quot;The fat rat sat on a mat.&quot;,
+&quot;The frog and a rat sat on a mat.&quot;,
+&quot;The bat and a fat rat sat on a cat.&quot;,
+&quot;Colorless green ideas sleep furiously&quot;,
+&quot;The fat cat sat on the mat.&quot;
+)</code></pre>
+<p>R中有一系列的函数用于查找和替换一个字符串，例如，如果我们想知道字符串 <code>.at</code> （有关该字符串的具体含义，请参看 <code>?&quot;regex&quot;</code>）在向量 <code>example</code> 中出现的情况 如<code>grep</code>、<code>grepl</code>、<code>regexpr</code>、<code>regexec</code>、<code>gregexpr</code>、<code>sub</code>、<code>gsub</code>等。，则我们有以下函数可以选择：</p>
+<ol start="2" style="list-style-type: decimal">
+<li><code>grep</code> 函数返回原始向量中包含所要字符串的成分的所在位置：</li>
+</ol>
+<pre class="r"><code>grep(&quot;.at&quot;, example)</code></pre>
+<pre><code>## [1] 2 3 4 6</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li><code>grepl</code> 函数返回的是与原始向量长度一致的逻辑向量，表示原始向量中每一个成分是否包含了所要搜索的字符串：</li>
+</ol>
+<pre class="r"><code>grepl(&quot;.at&quot;, example)</code></pre>
+<pre><code>## [1] FALSE  TRUE  TRUE  TRUE FALSE  TRUE</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li><code>regexpr</code> 函数返回的是一个与原始长度相同的一个数值型向量，向量的每个成分表示搜索字符串在原始向量每一个成分中的出现位置。其中 <code>-1</code> 表示该成分中不存在要搜索的字符串：</li>
+</ol>
+<pre class="r"><code>reg &lt;- regexpr(&quot;.at&quot;, example)
+attributes(reg) &lt;- NULL
+reg</code></pre>
+<pre><code>## [1] -1  5 16  5 -1  5</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li><code>regexec</code> 函数返回的一个与原始向量长度一样的一个列表 (list)。列表的一个成分分别对应于原始向量的一个成分，用于表示搜索字符串在该成分中的<strong>首次出现</strong>位置：</li>
+</ol>
+<pre class="r"><code>reg &lt;- regexec(&quot;.at&quot;, example)
+do.call(qpcR:::rbind.na, reg)</code></pre>
+<pre><code>##      [,1]
+## [1,]   -1
+## [2,]    5
+## [3,]   16
+## [4,]    5
+## [5,]   -1
+## [6,]    5</code></pre>
+<ol start="6" style="list-style-type: decimal">
+<li><code>gregexpr</code> 函数返回的一个与原始向量长度一样的一个列表 (list)。列表的一个成分分别对应于原始向量的一个成分，用于表示搜索字符串在该成分中<strong>每次出现</strong>的位置：</li>
+</ol>
+<pre class="r"><code>reg &lt;- gregexpr(&quot;.at&quot;, example)
+do.call(qpcR:::rbind.na, reg)</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]   -1   NA   NA   NA   NA
+## [2,]    5    9   13   22   NA
+## [3,]   16   20   29   NA   NA
+## [4,]    5   15   19   23   32
+## [5,]   -1   NA   NA   NA   NA
+## [6,]    5    9   13   24   NA</code></pre>
+<ol start="7" style="list-style-type: decimal">
+<li><code>sub(pattern, replacement, x)</code> 函数返回的是把向量 <code>x</code> 中每个成分中<strong>首次出现</strong>的符合正则表达式的<code>pattern</code>替换为<code>replacement</code>：</li>
+</ol>
+<pre class="r"><code>sub(&quot;.at&quot;,  9, example)</code></pre>
+<pre><code>## [1] &quot;The quick brown fox jumps over the lazy dog&quot;
+## [2] &quot;The 9 rat sat on a mat.&quot;                    
+## [3] &quot;The frog and a 9 sat on a mat.&quot;             
+## [4] &quot;The 9 and a fat rat sat on a cat.&quot;          
+## [5] &quot;Colorless green ideas sleep furiously&quot;      
+## [6] &quot;The 9 cat sat on the mat.&quot;</code></pre>
+<ol start="8" style="list-style-type: decimal">
+<li><code>gsub(pattern, replacement, x)</code> 函数返回的是把向量 <code>x</code> 中每个成分中<strong>所有出现</strong>的符合正则表达式的<code>pattern</code>替换为<code>replacement</code>：</li>
+</ol>
+<pre class="r"><code>gsub(&quot;.at&quot;,  9, example)</code></pre>
+<pre><code>## [1] &quot;The quick brown fox jumps over the lazy dog&quot;
+## [2] &quot;The 9 9 9 on a 9.&quot;                          
+## [3] &quot;The frog and a 9 9 on a 9.&quot;                 
+## [4] &quot;The 9 and a 9 9 9 on a 9.&quot;                  
+## [5] &quot;Colorless green ideas sleep furiously&quot;      
+## [6] &quot;The 9 9 9 on the 9.&quot;</code></pre>

@@ -6,15 +6,15 @@ lastmod: "`r Sys.Date()`"
 output:
   pdf_document:
     includes:
-      in_header: header.tex
+      in_header: cv-en-header.tex
     latex_engine: xelatex
     md_extensions: -autolink_bare_uris+hard_line_breaks
-    template: cv_no_title.latex
+    template: cv-en-template.latex
   html_document:
     df_print: paged
   word_document: default
 geometry: margin=1in
-pdf: /en/cv/LZhan.pdf
+pdf: /en/cv-en/LZhanEN.pdf
 type: cv
 urlcolor: blue
 fontsize: 10pt

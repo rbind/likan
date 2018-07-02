@@ -25,3 +25,11 @@ mf[(c(1L,m))]
 m <- match(c("formula", "data", "subset", "weights", "na.action", #
         "offset"), names(mf), 0L)
 m
+file.create("example1.txt")#
+cat("file A\n XX 100", file = "example1.txt")#
+file.create("example2.txt")#
+cat("file B\n YY 200", file = "example2.txt")#
+file.exists("example2.txt")
+file.show("example1.txt")
+list.files
+?list.files

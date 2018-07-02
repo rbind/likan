@@ -33,7 +33,7 @@ enableGitInfo = false
 
 [[menu.en]]
     name = "CV"
-    url = "/en/cv/LZhan"
+    url = "/en/cv-en/LZhanEN"
     weight = 3
 
 [[menu.en]]
@@ -87,9 +87,14 @@ enableGitInfo = false
     weight = 6
 
 [[menu.cn]]
+    name = "简历"
+    url = "/cn/cv-cn/LZhanCN"
+    weight = 7
+
+[[menu.cn]]
     name = "English"
     url = "/en/"
-    weight = 7
+    weight = 8
 
 [params]
     description = "The personal website of Likan Zhan"
