@@ -8,7 +8,6 @@ categories: []
 tags: []
 ---
 
-
 1. 函数 'file.exists()' 文档是否存在。例如，当前工作区中不存在一个名称为 'example1.txt' 和名称为 'example2.txt' 的纯文本文档，所以输出的结果应该为 'FALSE'。
 
 ```{r, results = "hold"}
