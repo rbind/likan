@@ -90,6 +90,10 @@ fontsize: 10pt
 
 2. Periodicals
 
+- **Zhan, L.** (In Press). Using eye movements recorded in the visual world paradigm to explore the online processing of spoken language. *Journal of Visualized Experiments*.
+
+- Zhou, P., Ma, W., **Zhan, L.**, & Ma, H (In Press). Using the visual world paradigm to study sentence comprehension in Mandarin-speaking children with autism. *Journal of Visualized Experiments*.
+
 - **Zhan, L.**, Zhou, P., & Crain, S. (2018). Using the visual-world paradigm to explore the meaning of conditionals in natural language. *Language, Cognition and Neuroscience*. doi: 10.1080/23273798.2018.1448935 <i class="fa fa-file-pdf-o"> [FullText](https://publications.likan.info/LangCognNeurosci2018.pdf)</i>
 
 - **Zhan, L.** (2018). Scalar and ignorance inferences are both computed immediately upon encountering the sentential connective: The online processing of sentences with disjunction using the visual world paradigm. *Frontiers in Psychology, 9*. doi: 10.3389/fpsyg.2018.00061  <i class="fa fa-file-pdf-o"> [FullText](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00061/full)</i>
