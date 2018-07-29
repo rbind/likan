@@ -1,0 +1,60 @@
+---
+title: R语言中的 diff 函数
+author: ~
+date: '2018-07-29'
+slug: diff-function-in-r
+categories: []
+tags: []
+---
+
+
+
+<p><code>diff()</code> 是R语言中的一个简单函数。该函数有三个基本参数：<code>x</code>, <code>lag = 1</code> 和 <code>differences = 1</code>。</p>
+<pre class="r"><code>args(diff.default)</code></pre>
+<pre><code>## function (x, lag = 1L, differences = 1L, ...) 
+## NULL</code></pre>
+<p>其中 <code>x</code> 表示待计算的数据。当输入数据<code>x</code>为数组时，其基本功能是计算数组中序列值之间的差异。例如：</p>
+<pre class="r"><code>(x &lt;- cumsum(cumsum(1:10)))</code></pre>
+<pre><code>##  [1]   1   4  10  20  35  56  84 120 165 220</code></pre>
+<pre class="r"><code>x1 &lt;- x[1:(length(x) - 1)]
+x2 &lt;- x[2:length(x)]
+x2 - x1</code></pre>
+<pre><code>## [1]  3  6 10 15 21 28 36 45 55</code></pre>
+<pre class="r"><code>diff(x)</code></pre>
+<pre><code>## [1]  3  6 10 15 21 28 36 45 55</code></pre>
+<p>其中 <code>lag = 1</code> 序列中要计算差值的两个数值之间的距离，例如：</p>
+<pre class="r"><code>lag &lt;- 2
+x1 &lt;- x[1:(length(x) - lag)]
+x2 &lt;- x[(lag + 1):length(x)]
+x2 - x1</code></pre>
+<pre><code>## [1]   9  16  25  36  49  64  81 100</code></pre>
+<pre class="r"><code>diff(x, lag = 2)</code></pre>
+<pre><code>## [1]   9  16  25  36  49  64  81 100</code></pre>
+<p>而参数 <code>differences</code> 表示计算差值的次数。例如，如果 <code>differences = 2</code>，则：</p>
+<pre class="r"><code>lag &lt;- 2
+x11 &lt;- x[1:(length(x) - lag)]
+x12 &lt;- x[(lag + 1):length(x)]
+x20 &lt;- x12 - x11
+x21 &lt;- x20[1:(length(x20) - lag)]
+x22 &lt;- x20[(lag + 1):length(x20)]
+x30 &lt;- x22 - x21
+x30</code></pre>
+<pre><code>## [1] 16 20 24 28 32 36</code></pre>
+<pre class="r"><code>diff(x, lag = 2, differences = 2)</code></pre>
+<pre><code>## [1] 16 20 24 28 32 36</code></pre>
+<p>当输入数据<code>x</code>为矩阵时，<code>diff</code> 函数对每一列进行上述计算，例如</p>
+<pre class="r"><code>(x &lt;- matrix(cumsum(cumsum(1:25)), ncol = 5))</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1   56  286  816 1771
+## [2,]    4   84  364  969 2024
+## [3,]   10  120  455 1140 2300
+## [4,]   20  165  560 1330 2600
+## [5,]   35  220  680 1540 2925</code></pre>
+<pre class="r"><code>diff(x, lag = 2, differences = 1)</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    9   64  169  324  529
+## [2,]   16   81  196  361  576
+## [3,]   25  100  225  400  625</code></pre>
+<pre class="r"><code>diff(x, lag = 2, differences = 2)</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]   16   36   56   76   96</code></pre>

@@ -1,0 +1,56 @@
+---
+title: R语言中的 diff 函数
+author: ~
+date: '2018-07-29'
+slug: diff-function-in-r
+categories: []
+tags: []
+---
+
+`diff()` 是R语言中的一个简单函数。该函数有三个基本参数：`x`,  `lag = 1` 和 `differences = 1`。
+
+```{r}
+args(diff.default)
+```
+其中 `x` 表示待计算的数据。当输入数据`x`为数组时，其基本功能是计算数组中序列值之间的差异。例如：
+
+```{r}
+(x <- cumsum(cumsum(1:10)))
+x1 <- x[1:(length(x) - 1)]
+x2 <- x[2:length(x)]
+x2 - x1
+diff(x)
+```
+
+其中 `lag = 1` 序列中要计算差值的两个数值之间的距离，例如：
+
+```{r}
+lag <- 2
+x1 <- x[1:(length(x) - lag)]
+x2 <- x[(lag + 1):length(x)]
+x2 - x1
+diff(x, lag = 2)
+```
+
+而参数 `differences` 表示计算差值的次数。例如，如果 `differences = 2`，则：
+
+```{r}
+lag <- 2
+x11 <- x[1:(length(x) - lag)]
+x12 <- x[(lag + 1):length(x)]
+x20 <- x12 - x11
+x21 <- x20[1:(length(x20) - lag)]
+x22 <- x20[(lag + 1):length(x20)]
+x30 <- x22 - x21
+x30
+
+diff(x, lag = 2, differences = 2)
+```
+
+当输入数据`x`为矩阵时，`diff` 函数对每一列进行上述计算，例如
+
+```{r}
+(x <- matrix(cumsum(cumsum(1:25)), ncol = 5))
+diff(x, lag = 2, differences = 1)
+diff(x, lag = 2, differences = 2)
+```
