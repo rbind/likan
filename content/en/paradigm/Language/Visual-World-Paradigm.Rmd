@@ -17,8 +17,7 @@ categories: []
 
 # 1. A brief description
 
-   This paradigm relies on two seminal work published by @RN906 and by @RN907.
-
+   This paradigm relies on two seminal work published by @RN906 and by @RN907. In a typical eye tracking study using the visual world paradigm, participants’ eye movements to objects or pictures in the visual workspace are recorded via an eye tracker as the participant produces or comprehends a spoken language describing the concurrent visual world. This paradigm has high versatility, as it can be used in a wide range of populations, including those who cannot read and/or who cannot overtly give their behavioral responses, such as preliterate children, elderly adults, and patients. More importantly, the paradigm is extremely sensitive to fine grained manipulations of the speech signal, and it can be used to study the online processing of most topics in language comprehension at multiple levels, such as the fine grained acoustic phonetic features, the properties of words, and the linguistic structures.
 
 # 2. Recent Applications
 
