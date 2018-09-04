@@ -22,7 +22,7 @@ TBA
 # 5. Lecture Notes
 
 - Part I. Introduction
-    - Chapter 01. Science and Scientific Research
+    - Chapter 01. Science and Scientific Research <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Scientific-Research/Sci.Res.CH.01.pdf)</i>
 
 - Part II. Academic reading
     - Chapter 02. Category and structure of academic articles

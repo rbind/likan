@@ -1,16 +1,17 @@
 ---
 title: "R for Modeling and Visualizing Data"
-author: "Likan"
+author: "Likan Zhan"
 date: '2017-09-01'
-lastmod: '2017-12-21'
-show_title: true
+lastmod: "`r Sys.Date()`"
 disable_comments: true
-show_toc: true
+output:
+  blogdown::html_page:
+    toc: yes
 ---
 # 1. Lecture Time and Location
 
-- Time: TBA
-- Location: TBA
+- Time: 08:00 - 11:00, Start from Sep 17.
+- Location: 206, Teaching Building 2.
 
 # 2. Prerequisites
 
@@ -18,25 +19,11 @@ Students of this course should be familiar with the basic concepts used in stati
 
 # 3. Course Information
 
-![R](http://www.nature.com/polopoly_fs/7.22631.1418912852!/image/TB1.jpg_gen/derivatives/landscape_630/TB1.jpg)
+![](TB1.jpg)
 
 [R](https://cran.r-project.org) is a language and environment for **statistical computing** and **graphics**. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories by John Chambers and colleagues. R provides a wide variety of statistical (linear and nonlinear modeling, classical statistical tests, time-series analysis, classification, clustering, …) and graphical techniques, and is highly extensible. One of R's strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed.
 
 Linear models, their variants, and extensions are among the most useful and widely used statistical tools for social research. This course aims to provide an accessible, in-depth, modern treatment of *regression analysis*, *linear models*, *generalized linear models*, and closely related methods.
-
-# 4. Final Examination
-
-- To sucessfully complete the examination, your computer should have already installed the *R* software and the *R studio* software. One extra package, i.e., *car* should have also been installed before you attend this examination.
-- The exanimation paper and the data set used in the final examination are avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.
-- Download the two files from the following links: *TBA* file and the data set file *TBA*.
-- Rename the `Rmd` file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
-- Open the renamed *`.Rmd`* file with *`RStudio`*.
-- Change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
-- Write your *R* code in the region enclosed by *···{r} XXX ···*, i.e. the XXX area.
-Write your answers that don't include R code out of the region enclosed by *···{r} XXX ···*. For more information concerning on the syntax of *Markdown* and *Rmarkdown*, please download the [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) cheatsheet and the  [R markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf) cheatsheet.
-- Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from questions 2- 6 to answer.
-- After finishing all your answers, click the *`knit to HTML`* button in the *`knit`* drop-down menu of *`RStudio`*.
-- Send both the filled *`.Rmd`* file and the knitted *`.html`* file to the following email address: `zhanlikan@blcu.edu.cn` before **2018-01-15, 0900**.
 
 # 5. Tools
 
@@ -45,7 +32,7 @@ Write your answers that don't include R code out of the region enclosed by *··
 # 6. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction
+    - 01. Course introduction  <i class="fa fa-file-pdf-o"> [Slides](https://appendix.likan.info/R-Model-Vis/2018_CH_01.pdf)</i>
     - 02. R basics
 - Part I: Data craft
     - 03. Examining Data
@@ -71,7 +58,6 @@ Write your answers that don't include R code out of the region enclosed by *··
     - 18. Linear Mixed-Effects Models
     - 19. Generalized Linear and Nonlinear Mixed-Effects Models
 
-
 # 7. References
 
 - R manuals
@@ -88,6 +74,8 @@ Write your answers that don't include R code out of the region enclosed by *··
     - Chambers, J. M. (1998). *Programming with data: A guide to the S language*. New York, NY: Springer. (The **Green** book)
     - Chambers, J. M. (2016). *Extending R*. Boca Baton, UK: CRC Press.
     - Wickham, H. (2015). *Advanced R*. Boca Baton, UK: CRC Press. [Full text](http://adv-r.had.co.nz)
+    - Wickham, H. (In Progress). *Advanced R* (2 ed.). Boca Baton, UK: CRC Press. [Full text](https://adv-r.hadley.nz)
+    - Wickham, H. (2016). *R Packages: Organize, Test, Document, and Share Your Code*. Sebastopol, CA: O'Reilly Media.
     - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [Full text](http://r4ds.had.co.nz)
 
 - R graphics
@@ -109,5 +97,30 @@ Write your answers that don't include R code out of the region enclosed by *··
     - Ugarte, M. D., Militino, A. F., & Arnholt, A. T. (2016). *Probability and statistics with R* (2 ed.). Boca Raton, UK: CRC Press.
     - Stewart, J. (2016). *Calculus: Early transcendentals* (8 ed.). Boston, MA: Cengage Learning.
 
-- Typesetting
+- Dynamic documenting
     - Xie, Y. (2014). *Dynamic Documents with R and knitr* (2 ed.). Boca Raton, FL: CRC Press.
+    - Xie, Y., Allaire, J. J., & Grolemund, G. (2018). *R Markdown: The Definitive Guide*. Boca Raton, FL: CRC Press. [Full text](https://bookdown.org/yihui/rmarkdown/)
+
+
+# 4. Final Examination
+
+  - To sucessfully complete the examination, your computer should have already installed the *R* software and the *R studio* software. One extra package, i.e., *car* should have also been installed before you attend this examination.
+
+  - The exanimation paper and the data set used in the final examination are avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.
+
+  - Download the two files from the following links: *TBA* file and the data set file *TBA*.
+
+  - Rename the `Rmd` file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
+
+  - Open the renamed *`.Rmd`* file with *`RStudio`*.
+
+  - Change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
+
+  - Write your *R* code in the region enclosed by *···{r} XXX ···*, i.e. the XXX area.
+    Write your answers that don't include R code out of the region enclosed by *···{r} XXX ···*. For more information concerning on the syntax of *Markdown* and *Rmarkdown*, please download the [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) cheatsheet and the  [R markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf) cheatsheet.
+
+  - Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from questions 2- 6 to answer.
+
+  - After finishing all your answers, click the *`knit to HTML`* button in the *`knit`* drop-down menu of *`RStudio`*.
+
+  - Send both the filled *`.Rmd`* file and the knitted *`.html`* file to the following email address: `zhanlikan@blcu.edu.cn` before **2018-01-15, 0900**.

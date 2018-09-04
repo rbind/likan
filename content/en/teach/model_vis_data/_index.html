@@ -1,0 +1,198 @@
+---
+title: "R for Modeling and Visualizing Data"
+author: "Likan Zhan"
+date: '2017-09-01'
+lastmod: "2018-09-04"
+disable_comments: true
+output:
+  blogdown::html_page:
+    toc: yes
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#lecture-time-and-location">1. Lecture Time and Location</a></li>
+<li><a href="#prerequisites">2. Prerequisites</a></li>
+<li><a href="#course-information">3. Course Information</a></li>
+<li><a href="#tools">5. Tools</a></li>
+<li><a href="#syllabus-and-lecture-notes">6. Syllabus and Lecture Notes</a></li>
+<li><a href="#references">7. References</a></li>
+<li><a href="#final-examination">4. Final Examination</a></li>
+</ul>
+</div>
+
+<div id="lecture-time-and-location" class="section level1">
+<h1>1. Lecture Time and Location</h1>
+<ul>
+<li>Time: 08:00 - 11:00, Start from Sep 17.</li>
+<li>Location: 206, Teaching Building 2.</li>
+</ul>
+</div>
+<div id="prerequisites" class="section level1">
+<h1>2. Prerequisites</h1>
+<p>Students of this course should be familiar with the basic concepts used in statistics, such as <em>Mean</em>, <em>Standard Deviation</em>, <em>Normal Distribution</em>, <em>t-statistic</em>, <em>ANOVA</em>, <em>F-ratio</em>, <a href="https://likan.info/cn/post/2017-08-11-p-values-bayes-factor/"><em>p-value</em></a>, <em>Hypothesis Testing</em> etc. To acheive this, Students should have already finished some introductory courses in statistics, such as <a href="/en/teach/stat_behav_sci/">Statistics for the Behavioral Sciences</a>, or other courses at the same level. Students can also learn these basic concepts by themselves.</p>
+</div>
+<div id="course-information" class="section level1">
+<h1>3. Course Information</h1>
+<p><img src="TB1.jpg" /></p>
+<p><a href="https://cran.r-project.org">R</a> is a language and environment for <strong>statistical computing</strong> and <strong>graphics</strong>. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories by John Chambers and colleagues. R provides a wide variety of statistical (linear and nonlinear modeling, classical statistical tests, time-series analysis, classification, clustering, …) and graphical techniques, and is highly extensible. One of R’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed.</p>
+<p>Linear models, their variants, and extensions are among the most useful and widely used statistical tools for social research. This course aims to provide an accessible, in-depth, modern treatment of <em>regression analysis</em>, <em>linear models</em>, <em>generalized linear models</em>, and closely related methods.</p>
+</div>
+<div id="tools" class="section level1">
+<h1>5. Tools</h1>
+<ul>
+<li><a href="/en/teach/model_vis_data/InteractiveR/">An interactive learning widget for R</a></li>
+</ul>
+</div>
+<div id="syllabus-and-lecture-notes" class="section level1">
+<h1>6. Syllabus and Lecture Notes</h1>
+<ul>
+<li>Part 0: Introduction
+<ul>
+<li><ol style="list-style-type: decimal">
+<li>Course introduction <i class="fa fa-file-pdf-o"> <a href="https://appendix.likan.info/R-Model-Vis/2018_CH_01.pdf">Slides</a></i></li>
+</ol></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li>R basics</li>
+</ol></li>
+</ul></li>
+<li>Part I: Data craft
+<ul>
+<li><ol start="3" style="list-style-type: decimal">
+<li>Examining Data</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: decimal">
+<li>Transforming Data</li>
+</ol></li>
+</ul></li>
+<li>Part II: Linear models and least squares
+<ul>
+<li><ol start="5" style="list-style-type: decimal">
+<li>Linear least-squares regression</li>
+</ol></li>
+<li><ol start="6" style="list-style-type: decimal">
+<li>Statistical Inference for Regression</li>
+</ol></li>
+<li><ol start="7" style="list-style-type: decimal">
+<li>Dummy-variable regression</li>
+</ol></li>
+<li><ol start="8" style="list-style-type: decimal">
+<li>Analysis of variance</li>
+</ol></li>
+</ul></li>
+<li>Part III: Linear-model diagnostics
+<ul>
+<li><ol start="9" style="list-style-type: decimal">
+<li>Unusual and influential data</li>
+</ol></li>
+<li><ol start="10" style="list-style-type: decimal">
+<li>Non-Normality, Nonconstant Error Variance, and Nonlinearity</li>
+</ol></li>
+<li><ol start="11" style="list-style-type: decimal">
+<li>Collinearity and Its Purported Remedies</li>
+</ol></li>
+</ul></li>
+<li>Part IV: Generalized linear models
+<ul>
+<li><ol start="12" style="list-style-type: decimal">
+<li>Logit and Probit Models for Categorical Response Variables</li>
+</ol></li>
+<li><ol start="13" style="list-style-type: decimal">
+<li>Generalized Linear Models</li>
+</ol></li>
+</ul></li>
+<li>Part V. Extending Linear and Generalized Linear Models
+<ul>
+<li><ol start="14" style="list-style-type: decimal">
+<li>Time-Series Regression and Generalized Least Squares</li>
+</ol></li>
+<li><ol start="15" style="list-style-type: decimal">
+<li>Nonlinear Regression</li>
+</ol></li>
+<li><ol start="16" style="list-style-type: decimal">
+<li>Nonparametric Regression</li>
+</ol></li>
+<li><ol start="17" style="list-style-type: decimal">
+<li>Bootstrapping Regression Models</li>
+</ol></li>
+</ul></li>
+<li>Part VI: Mixed-Effects Models
+<ul>
+<li><ol start="18" style="list-style-type: decimal">
+<li>Linear Mixed-Effects Models</li>
+</ol></li>
+<li><ol start="19" style="list-style-type: decimal">
+<li>Generalized Linear and Nonlinear Mixed-Effects Models</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+<div id="references" class="section level1">
+<h1>7. References</h1>
+<ul>
+<li>R manuals
+<ul>
+<li>An Introduction to R, <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">Full text</a></li>
+<li>R Data Import/Export, <a href="https://cran.r-project.org/doc/manuals/r-release/R-data.pdf">Full text</a></li>
+<li>R Installation and Administration, <a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.pdf">Full text</a></li>
+<li>Writing R Extensions, <a href="https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf">Full text</a></li>
+<li>The R language definition, <a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf">Full text</a></li>
+<li>R Internals, <a href="https://cran.r-project.org/doc/manuals/r-release/R-ints.pdf">Full text</a></li>
+<li>The R reference Index, <a href="https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf">Full text</a></li>
+</ul></li>
+<li>R language in General
+<ul>
+<li>Becker, R. A., Chambers, J. M., &amp; Wilks, A. R. (1988). <em>The New S Language: A Programming Environment for Data Analysis and Statistics</em>. Pacific Grove , CA : Wadsworth. (The <strong>Blue</strong> book)</li>
+<li>Chambers, J. M. (1998). <em>Programming with data: A guide to the S language</em>. New York, NY: Springer. (The <strong>Green</strong> book)</li>
+<li>Chambers, J. M. (2016). <em>Extending R</em>. Boca Baton, UK: CRC Press.</li>
+<li>Wickham, H. (2015). <em>Advanced R</em>. Boca Baton, UK: CRC Press. <a href="http://adv-r.had.co.nz">Full text</a></li>
+<li>Wickham, H. (In Progress). <em>Advanced R</em> (2 ed.). Boca Baton, UK: CRC Press. <a href="https://adv-r.hadley.nz">Full text</a></li>
+<li>Wickham, H. (2016). <em>R Packages: Organize, Test, Document, and Share Your Code</em>. Sebastopol, CA: O’Reilly Media.</li>
+<li>Wickham, H., &amp; Grolemund, G. (2016). <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. Sebastopol, CA: O’Reilly Media. <a href="http://r4ds.had.co.nz">Full text</a></li>
+</ul></li>
+<li>R graphics
+<ul>
+<li>Murrell, P. (2011). <em>R Graphics</em> (2 ed.). Boca Raton, FL: CRC Press.</li>
+<li>Kassambara, A. (2015). <em>Complete Guide to 3D Plots in R</em>: STHDA.</li>
+<li>Wickham, H. (2009). <em>ggplot2: Elegant Graphics for Data Analysis</em>. New York, NY: Springer.</li>
+</ul></li>
+<li>Statistical models
+<ul>
+<li>Chambers, J. M., &amp; Hastie, T. J. (Eds.). (1993). <em>Statistical Models in S</em>. London, UK: Champman &amp; Hall. (The <strong>White</strong> book)</li>
+<li><strong>Fox, J. (2016). <em>Applied Regression Analysis and Generalized Linear Models</em> (3 ed.). Thousand Oaks, CA: SAGE.</strong></li>
+<li>Hastie, T. J., &amp; Tibshirani, R. J. (1990). <em>Generalized additive models</em>. Landon, UK: Chapman and Hall.</li>
+<li>Venables, W. N., &amp; Ripley, B. D. (2002). <em>Modern Applied Statistics with S</em>. Springer.</li>
+<li>Wood, S. N. (2006). <em>Generalized Additive Models: an introduction with R</em>: CRC Press.</li>
+<li>Bates, D., Mächler, M., Bolker, B., &amp; Walker, S. (2015). Fitting Linear Mixed-Effects Models Using lme4. <em>Journal of Statistical Software, 67</em>(1). <a href="doi:10.18637/jss.v067.i01" class="uri">doi:10.18637/jss.v067.i01</a></li>
+</ul></li>
+<li>Probability and statistics
+<ul>
+<li>Fieller, N. (2016). <em>Basics of matrix algebra for statistics with R</em>. Boca Raton, FL: CRC Press.</li>
+<li>Poole, D. (2015). <em>Linear Algebra: A Modern Introduction</em> (4 ed.). Stamford, CT: Gengage Learning.</li>
+<li>Ugarte, M. D., Militino, A. F., &amp; Arnholt, A. T. (2016). <em>Probability and statistics with R</em> (2 ed.). Boca Raton, UK: CRC Press.</li>
+<li>Stewart, J. (2016). <em>Calculus: Early transcendentals</em> (8 ed.). Boston, MA: Cengage Learning.</li>
+</ul></li>
+<li>Dynamic documenting
+<ul>
+<li>Xie, Y. (2014). <em>Dynamic Documents with R and knitr</em> (2 ed.). Boca Raton, FL: CRC Press.</li>
+<li>Xie, Y., Allaire, J. J., &amp; Grolemund, G. (2018). <em>R Markdown: The Definitive Guide</em>. Boca Raton, FL: CRC Press. <a href="https://bookdown.org/yihui/rmarkdown/">Full text</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="final-examination" class="section level1">
+<h1>4. Final Examination</h1>
+<ul>
+<li><p>To sucessfully complete the examination, your computer should have already installed the <em>R</em> software and the <em>R studio</em> software. One extra package, i.e., <em>car</em> should have also been installed before you attend this examination.</p></li>
+<li><p>The exanimation paper and the data set used in the final examination are avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.</p></li>
+<li><p>Download the two files from the following links: <em>TBA</em> file and the data set file <em>TBA</em>.</p></li>
+<li><p>Rename the <code>Rmd</code> file into the following format <em><code>SurnameGivenname_Student number.Rmd</code></em> in Pinyin, such as <em><code>ZhangSan_20170708.Rmd</code></em>.</p></li>
+<li><p>Open the renamed <em><code>.Rmd</code></em> file with <em><code>RStudio</code></em>.</p></li>
+<li><p>Change the <em><code>Name-Number</code></em> region in the front matter of the <em><code>Rmd</code></em> file to your own name in Chinese characters and your student number, such as <em><code>张三 - 20170708</code></em>.</p></li>
+<li><p>Write your <em>R</em> code in the region enclosed by <em>···{r} XXX ···</em>, i.e. the XXX area.
+Write your answers that don’t include R code out of the region enclosed by <em>···{r} XXX ···</em>. For more information concerning on the syntax of <em>Markdown</em> and <em>Rmarkdown</em>, please download the <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">Markdown</a> cheatsheet and the <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">R markdown</a> cheatsheet.</p></li>
+<li><p>Question <strong>one</strong> is mandatory. The remaining 5 questions are optional, you can choose any and only <strong>three</strong> questions from questions 2- 6 to answer.</p></li>
+<li><p>After finishing all your answers, click the <em><code>knit to HTML</code></em> button in the <em><code>knit</code></em> drop-down menu of <em><code>RStudio</code></em>.</p></li>
+<li><p>Send both the filled <em><code>.Rmd</code></em> file and the knitted <em><code>.html</code></em> file to the following email address: <code>zhanlikan@blcu.edu.cn</code> before <strong>2018-01-15, 0900</strong>.</p></li>
+</ul>
+</div>
