@@ -32,7 +32,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 6. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction  <i class="fa fa-file-pdf-o"> [Slides](https://appendix.likan.info/R-Model-Vis/2018_CH_01.pdf)</i>
+    - 01. Course introduction [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-Model-Vis/2018_CH_01.pdf)
     - 02. R basics
 - Part I: Data craft
     - 03. Examining Data
