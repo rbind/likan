@@ -1,6 +1,6 @@
 ---
-title: 'Foundations of Scientific Research'
-author: "Likan"
+title: 'Science and Scientific Research'
+author: "Likan Zhan"
 date: '2017-03-01'
 show_title: true
 disable_comments: true
@@ -21,30 +21,40 @@ TBA
 
 # 5. Lecture Notes
 
-- Part I. Introduction
-    - Chapter 01. Science and Scientific Research <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Scientific-Research/Sci.Res.CH.01.pdf)</i>
+- Part I. Science and Scientific Research <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Scientific-Research/Sci.Res.CH.01.pdf)</i>
+    - 01. What is science
+    - 02. Falsifiability
+    - 03. Operationism and essentialism
+    - 04. Testimonials and case study
+    - 05. Correlation and causation
+    - 06. Getting things under control
+    - 07. The artificality criticism
+    - 08. The importance of converging evidence
+    - 09. The issue of multiple causation
+    - 10. Probablistic reasoning
+    - 11. The role of chance
 
 - Part II. Academic reading
-    - Chapter 02. Category and structure of academic articles
-    - Chapter 03. References in academic articles
-    - Chapter 04. Databases, journals, and search engines
-    - Chapter 05. Bibliography softwares
+    - 12. Category and structure of academic articles
+    - 13. References in academic articles
+    - 14. Databases, journals, and search engines
+    - 15. Bibliography softwares
 
 - Part III. Academic writing
-    - Chapter 06. Good writing
-    - Chapter 07. Window onto the worold
-    - Chapter 08. Curse of knowledge
-    - Chapter 09. Web, tree, and string
-    - Chapter 10. Arcs of coherence
+    - 16. Good writing
+    - 17. Window onto the worold
+    - 18. Curse of knowledge
+    - 19. Web, tree, and string
+    - 20. Arcs of coherence
 
-- Part IV. Reforming the Culture of Scientific Practice
-    - Chapter 11. The sin of bias
-    - Chapter 13. The sin of hidden flexibility
-    - Chapter 13. The sin of unreliability
-    - Chapter 14. The sin of data horarding
-    - Chapter 15. The sin of corruptibility
-    - Chapter 16. The sin of internment
-    - Chapter 17. Redemption
+- Part IV. Remaining problems in scientific practice
+    - 21. Bias
+    - 22. Hidden flexibility
+    - 23. Unreliability
+    - 24. Data horarding
+    - 25. Corruptibility
+    - 26. Internment
+    - 27. Redemption
 
 # 3. References
 

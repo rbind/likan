@@ -1,5 +1,5 @@
 ---
-title: "R for Modeling and Visualizing Data"
+title: "R for Statistics and Data Visualization"
 author: "Likan Zhan"
 date: '2017-09-01'
 lastmod: "`r Sys.Date()`"
@@ -15,7 +15,7 @@ output:
 
 # 2. Prerequisites
 
-Students of this course should be familiar with the basic concepts used in statistics, such as *Mean*, *Standard Deviation*, *Normal Distribution*, *t-statistic*, *ANOVA*, *F-ratio*, [*p-value*](https://likan.info/cn/post/2017-08-11-p-values-bayes-factor/), *Hypothesis Testing* etc. To acheive this, Students should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/), or other courses at the same level. Students can also learn these basic concepts by themselves.
+Students of this course should be familiar with the basic concepts used in statistics, such as *Mean*, *Standard Deviation*, *Normal Distribution*, *t-statistic*, *ANOVA*, *F-ratio*, [*p-value*](https://likan.info/cn/post/2017-08-11-p-values-bayes-factor/), *Hypothesis Testing* etc. To acheive this, Students should have already finished some introductory courses in statistics, such as [Statistics for the Behavioral Sciences](/en/teach/Statistics-for-the-Behavioral-Sciences/), or other courses at the same level. Students can also learn these basic concepts by themselves.
 
 # 3. Course Information
 
@@ -25,15 +25,11 @@ Students of this course should be familiar with the basic concepts used in stati
 
 Linear models, their variants, and extensions are among the most useful and widely used statistical tools for social research. This course aims to provide an accessible, in-depth, modern treatment of *regression analysis*, *linear models*, *generalized linear models*, and closely related methods.
 
-# 5. Tools
-
-- [An interactive learning widget for R](/en/teach/model_vis_data/InteractiveR/)
-
-# 6. Syllabus and Lecture Notes
+# 4. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-Model-Vis/2018_CH_01.pdf)
-    - 02. R basics
+    - 01. Course introduction [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_01.pdf)
+    - 02. R foundations
 - Part I: Data craft
     - 03. Examining Data
     - 04. Transforming Data
@@ -58,7 +54,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 18. Linear Mixed-Effects Models
     - 19. Generalized Linear and Nonlinear Mixed-Effects Models
 
-# 7. References
+# 5. References
 
 - R manuals
     - An Introduction to R, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
@@ -101,8 +97,12 @@ Linear models, their variants, and extensions are among the most useful and wide
     - Xie, Y. (2014). *Dynamic Documents with R and knitr* (2 ed.). Boca Raton, FL: CRC Press.
     - Xie, Y., Allaire, J. J., & Grolemund, G. (2018). *R Markdown: The Definitive Guide*. Boca Raton, FL: CRC Press. [Full text](https://bookdown.org/yihui/rmarkdown/)
 
+# 6. Tools
 
-# 4. Final Examination
+  - [An interactive learning widget for R](/en/teach/model_vis_data/InteractiveR/)
+
+
+# 7. Final Examination
 
   - To sucessfully complete the examination, your computer should have already installed the *R* software and the *R studio* software. One extra package, i.e., *car* should have also been installed before you attend this examination.
 

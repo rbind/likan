@@ -39,25 +39,25 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 # 4. Syllabus and Lecture Notes
 
 - Part I. Introduction and Descriptive Statistics
-  - Chapter 01. Introduction to Statistics. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.01.pdf)</i>
-  - Chapter 02. Frequency Distributions. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.02.pdf)</i>
-  - Chapter 03. Central Tendency. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.03.pdf)</i>
-  - Chapter 04. Variability. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.04.pdf)</i>
+  - Chapter 01. Introduction to Statistics. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.01.pdf)</i>
+  - Chapter 02. Frequency Distributions. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.02.pdf)</i>
+  - Chapter 03. Central Tendency. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.03.pdf)</i>
+  - Chapter 04. Variability. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.04.pdf)</i>
 
 - Part II. Foundations of Inferential Statistics
-  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [Slides](http://appendix.likan.info/teach/StatBehavSci/CH05.html)
-  - Chapter 06. Probability. [Slides](http://appendix.likan.info/teach/StatBehavSci/CH06.html)
-  - Chapter 07. Probability and Samples: The Distribution of Sample Means. [Slides](http://appendix.likan.info/teach/StatBehavSci/CH07.html)
-  - Chapter 08. Introduction to Hypothesis Testing. [Slides](http://appendix.likan.info/teach/StatBehavSci/CH08.html)
+  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [Slides](http://appendix.likan.info/teach/Statistics-for-the-Behavioral-Sciences/CH05.html)
+  - Chapter 06. Probability. [Slides](http://appendix.likan.info/teach/Statistics-for-the-Behavioral-Sciences/CH06.html)
+  - Chapter 07. Probability and Samples: The Distribution of Sample Means. [Slides](http://appendix.likan.info/teach/Statistics-for-the-Behavioral-Sciences/CH07.html)
+  - Chapter 08. Introduction to Hypothesis Testing. [Slides](http://appendix.likan.info/teach/Statistics-for-the-Behavioral-Sciences/CH08.html)
 
 - Part III. Using *t*-Statistics for Inferences
-  - Chapter 09. Introduction to the *t* Statistic. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.09.pdf)</i>
-  - Chapter 10. The *t* Test for Two Independent Samples. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.10.pdf)</i>
-  - Chapter 11. The *t* Test for Two Related Samples.<i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.11.pdf)</i>
+  - Chapter 09. Introduction to the *t* Statistic. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.09.pdf)</i>
+  - Chapter 10. The *t* Test for Two Independent Samples. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.10.pdf)</i>
+  - Chapter 11. The *t* Test for Two Related Samples.<i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.11.pdf)</i>
 
 - Part IV. Analysis of Variance
-  - Chapter 12. Introduction to Analysis of Variance. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.12.pdf)</i>
-  - Chapter 13. Repeated-Measures Analysis of Variance. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/StatBehavSci/CH.13.pdf)</i>
+  - Chapter 12. Introduction to Analysis of Variance. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.12.pdf)</i>
+  - Chapter 13. Repeated-Measures Analysis of Variance. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.13.pdf)</i>
   - Chapter 14. Two-Factor Analysis of Variance (Independent Measures).
 
 - Part V. Correlations and Nonparametric Tests
