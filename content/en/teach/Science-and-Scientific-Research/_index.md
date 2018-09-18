@@ -2,6 +2,7 @@
 title: 'Science and Scientific Research'
 author: "Likan Zhan"
 date: '2017-03-01'
+lastmod: "2018-09-18"
 disable_comments: yes
 output:
   blogdown::html_page:
