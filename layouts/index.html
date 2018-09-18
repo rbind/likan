@@ -1,15 +1,17 @@
 {{ partial "header.html" . }}
 
-{{ if .Content }} {{ .Content }} {{ end }}
+{{ if .Content }}
 
-<div class="strike">
-   <span> Recent Updates </span>
-</div>
+{{ .Content }}
+
+<hr class="style-one">
+
+{{ end }}
 
 <ul>
-  <li> English </li>
+  <li> Recent updates </li>
 <ul>
-  {{ range first 5 ( where .Site.Pages.ByLastmod.Reverse "Section" "en") }}
+  {{ range first 8 ( where .Site.Pages.ByLastmod.Reverse "Section" "en") }}
   <li>
     <span class="date">{{ .Lastmod.Format "2006/01/02" }}</span>
     <a href="{{ .URL }}">{{ .Title }}</a>
@@ -18,10 +20,10 @@
 </ul>
 
 </br>
-<li> 中文 </li>
+<li> 最近更新 </li>
 
  <ul>
-  {{ range first 5 ( where .Site.Pages.ByLastmod.Reverse "Section" "cn") }}
+  {{ range first 8 ( where .Site.Pages.ByLastmod.Reverse "Section" "cn") }}
   <li>
     <span class="date">{{ .Lastmod.Format "2006/01/02" }}</span>
     <a href="{{ .URL }}">{{ .Title }}</a>
