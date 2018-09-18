@@ -2,7 +2,6 @@
 title: 'Science and Scientific Research'
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "`r Sys.Date()`"
 disable_comments: yes
 output:
   blogdown::html_page:
