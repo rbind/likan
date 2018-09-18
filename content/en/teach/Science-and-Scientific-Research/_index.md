@@ -2,26 +2,24 @@
 title: 'Science and Scientific Research'
 author: "Likan Zhan"
 date: '2017-03-01'
-show_title: true
-disable_comments: true
-show_toc: true
+lastmod: "`r Sys.Date()`"
+disable_comments: yes
+output:
+  blogdown::html_page:
+    toc: yes
 ---
 # 1. Lecture Time and Location
 
-- Time: TBA
-- Location: TBA
+- Time: 08:00 - 11:00, Each Wednesday
+- Location: 434, Teach Building 2.
 
 # 2. Course Information
 
 This course is designed to expose students to the academic side of scientific research. They will learn the basic concepts of science and scientific research. They will also learn how to synthesize results, present them, and explore related topics. Students will analyze and discuss published research articles, engage in conversations with the teacher about different aspects of research, and design and present their own research.
 
-# 4. Grading
+# 3. Lecture Notes
 
-TBA
-
-# 5. Lecture Notes
-
-- Part I. Science and Scientific Research <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Scientific-Research/Sci.Res.CH.01.pdf)</i>
+- Part I. Science and Scientific Research [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.01.pdf)
     - 01. What is science
     - 02. Falsifiability
     - 03. Operationism and essentialism
@@ -56,7 +54,11 @@ TBA
     - 26. Internment
     - 27. Redemption
 
-# 3. References
+# 4. Grading
+
+TBA
+
+# 5. References
 
 - Procedure of Scientific Research
     - Chambers, C. (2017). *The seven deadly sins of psychology: A manifesto for reforming the culture of scientific practice*. Princeton, NJ: Princeton University Press.
