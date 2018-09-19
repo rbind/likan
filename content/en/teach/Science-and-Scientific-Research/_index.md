@@ -57,7 +57,8 @@ This course is designed to expose students to the academic side of scientific re
 
 # 4. Grading
 
-TBA
+- Oral presentations
+    - Presentation Lists: [Link](http://appendix.likan.info/Science-and-Scientific-Research/reading-lists/Presentation_Lists.xlsx)
 
 # 5. References
 
