@@ -29,7 +29,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 - Part 0: Introduction
     - 01. Course introduction [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_01.pdf)
-    - 02. R foundations
+    - 02. R foundations [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_02.pdf)
 - Part I: Data craft
     - 03. Examining Data
     - 04. Transforming Data
