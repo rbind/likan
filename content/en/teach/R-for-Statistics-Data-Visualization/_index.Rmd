@@ -77,7 +77,8 @@ Linear models, their variants, and extensions are among the most useful and wide
 - R graphics
     - Murrell, P. (2011). *R Graphics* (2 ed.). Boca Raton, FL: CRC Press.
     - Kassambara, A. (2015). *Complete Guide to 3D Plots in R*: STHDA.
-    - Wickham, H. (2009). *ggplot2: Elegant Graphics for Data Analysis*. New York, NY: Springer.
+    - Sarkar, D. (2008). *Lattice: Multivariate Data Visualization with R*. New York, NY: Springer.
+    - Wickham, H. (2016). *ggplot2: Elegant Graphics for Data Analysis* (2 ed.). New York, NY: Springer.
 
 - Statistical models
     - Chambers, J. M., & Hastie, T. J. (Eds.). (1993). *Statistical Models in S*. London, UK: Champman & Hall. (The **White** book)
