@@ -99,7 +99,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 # 6. Tools
 
-  - [An interactive learning widget for R](/en/teach/model_vis_data/InteractiveR/)
+  - [An interactive learning widget for R](/en/teach/R-for-Statistics-Data-Visualization/InteractiveR/)
 
 
 # 7. Final Examination

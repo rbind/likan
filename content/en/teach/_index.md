@@ -6,7 +6,7 @@ disable_comments: true
 ---
 
 ### Semester one (September - January)
-- [R for Modeling and Visualizing Data](/en/teach/R-for-Statistics-Data-Visualization/) <br>
+- [R for Statistics and Data Visualization](/en/teach/R-for-Statistics-Data-Visualization/) <br>
   Targeted Students: Postgraduate and PhD students <br>
 - [Science and Scientific Research](/en/teach/Science-and-Scientific-Research/) <br>
   Targeted Students: Undergraduate students
