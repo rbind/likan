@@ -37,7 +37,7 @@ fontsize: 10pt
 
 - 2010.10 ~ 2014.09 <br>
   澳大利亚麦考瑞大学，认知科学专业，哲学博士
-  
+
 
 - 2007.09 ~ 2010.07 <br>
   北京语言大学，认知心理学专业，教育学硕士
@@ -91,15 +91,15 @@ fontsize: 10pt
 
 2. 杂志论文
 
-- **Zhan, L.** (In Press). Using eye movements recorded in the visual world paradigm to explore the online processing of spoken language. *Journal of Visualized Experiments*.
+- **Zhan, L.** (2018). Using eye movements recorded in the visual world paradigm to explore the online processing of spoken language. *Journal of Visualized Experiments, 140*, e58086. doi: 10.3791/58086 <i class="fa fa-file-pdf-o"> [全文链接](https://publications.likan.info/jove-protocol-58086.pdf)</i>
 
-- Zhou, P., Ma, W., **Zhan, L.**, & Ma, H (In Press). Using the visual world paradigm to study sentence comprehension in Mandarin-speaking children with autism. *Journal of Visualized Experiments*.
+- Zhou, P., Ma, W., **Zhan, L.**, & Ma, H (2018). Using the visual world paradigm to study sentence comprehension in Mandarin-speaking children with autism. *Journal of Visualized Experiments, 140*, e58452. doi: 10.3791/58452 <i class="fa fa-file-pdf-o"> [全文链接](https://publications.likan.info/jove-protocol-58452.pdf)</i>
 
 - **Zhan, L.**, Zhou, P., & Crain, S. (2018). Using the visual-world paradigm to explore the meaning of conditionals in natural language. *Language, Cognition and Neuroscience, 33*(8), 1049-1062. doi: 10.1080/23273798.2018.1448935 <i class="fa fa-file-pdf-o"> [全文链接](https://publications.likan.info/LangCognNeurosci2018.pdf)</i>
 
 - **Zhan, L.** (2018). Scalar and ignorance inferences are both computed immediately upon encountering the sentential connective: The online processing of sentences with disjunction using the visual world paradigm. *Frontiers in Psychology, 9*. doi: 10.3389/fpsyg.2018.00061  <i class="fa fa-file-pdf-o"> [全文链接](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00061/full)</i>
 
-- Moscati, V., **Zhan, L.**, & Zhou, P. (2017). Children's on-line processing of epistemic modals. *Journal of Child Language, 44*(5), 1025-1040. doi: 10.1017/S0305000916000313 
+- Moscati, V., **Zhan, L.**, & Zhou, P. (2017). Children's on-line processing of epistemic modals. *Journal of Child Language, 44*(5), 1025-1040. doi: 10.1017/S0305000916000313
 <i class="fa fa-file-pdf-o"> [全文链接](https://publications.likan.info/JChildLang2016.pdf)</i>
 
 - **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 <i class="fa fa-file-pdf-o"> [全文链接](https://publications.likan.info/JCognPsychol2015.pdf)</i>
