@@ -47,13 +47,13 @@ fontsize: 10pt
 
 ## 教学经历
 
-- 行为科学统计学（本科生+硕士研究生）, <i class="fa fa-file-text-o"> [更多信息..](https://likan.info/en/teach/stat_behav_sci/)</i>
+- 行为科学统计学（本科生+硕士研究生）, <i class="fa fa-file-text-o"> [更多...](https://likan.info/en/teach/Statistics-for-the-Behavioral-Sciences/)</i>
 
-- R语言与数据统计和数据可视化（硕士研究生+博士研究生）, <i class="fa fa-file-text-o"> [更多信息..](https://likan.info/en/teach/model_vis_data/)</i>
+- R语言与数据统计和数据可视化（硕士研究生+博士研究生）, <i class="fa fa-file-text-o"> [更多...](https://likan.info/en/teach/R-for-Statistics-Data-Visualization/)</i>
 
-- 认知神经科学导论（硕士研究生+博士研究生）, <i class="fa fa-file-text-o"> [更多信息..](https://likan.info/en/teach/cogn_neurosci/)</i>
+- 认知神经科学导论（硕士研究生+博士研究生）, <i class="fa fa-file-text-o"> [更多...](https://likan.info/en/teach/Introduction-to-Cognitive-Neuroscience/)</i>
 
-- 医学文献检索与导读（本科生）, <i class="fa fa-file-text-o"> [更多信息..](https://likan.info/en/teach/found_sci_res/)</i>
+- 医学文献检索与导读（本科生）, <i class="fa fa-file-text-o"> [更多...](https://likan.info/en/teach/Science-and-Scientific-Research/)</i>
 
 ## 专业技能
 
