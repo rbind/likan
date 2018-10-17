@@ -1,6 +1,5 @@
 ---
-title: "False belief task"
-subtitle: "Theory of mind"
+title: "Theory of mind"
 author: "Likan Zhan"
 date: '2018-06-06'
 lastmod: "`r Sys.Date()`"
