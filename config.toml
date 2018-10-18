@@ -108,6 +108,10 @@ enableGitInfo = false
     highlightjsTheme = "github"
     dateFormat = "2006-01-02" # "2006-01-02, Mon, "
 
+#[params.footer]
+#      en = "&copy; [Likan Zhan](/) 2017 - 2018"
+#      cn = "&copy; [战立侃](/) 2017 - 2018"
+
 [params.author]
       en = "Likan Zhan"
       cn = "战立侃"

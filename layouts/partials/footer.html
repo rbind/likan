@@ -1,10 +1,16 @@
   <footer>
   {{ partial "foot_custom.html" . }}
   {{ partial "footer_highlightjs" . }}
+
+  {{ if eq .URL "/" }}
+  <div class="copyright">Likan Zhan  &copy; 2017-2018 </div>
+  {{ else }}
   {{ with .Site.Params.footer }}
-  <!-- <hr> ---> <!--- Remove horizontal line 20180205 by Likan Zhan --->
+   <!--- <hr> ---> <!--- Remove horizontal line 20180205 by Likan Zhan --->
   <div class="copyright">{{ . | markdownify }}</div>
   {{ end }}
+  {{ end }}
+
   </footer>
   </article>
   {{ template "_internal/google_analytics.html" . }}
