@@ -2,7 +2,7 @@
 title: 'Science and Scientific Research'
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "2018-09-18"
+lastmod: "2018-10-30"
 show_toc: yes
 disable_comments: yes
 output:
@@ -34,8 +34,10 @@ This course is designed to expose students to the academic side of scientific re
     - 11. The role of chance
 
 - Part II. Academic reading
-    - 12. Category and structure of academic articles
-    - 13. References in academic articles
+    - 12. Category and structure of academic articles [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.02.pdf)
+          - Sample article 1: [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.02.Sample.01.pdf)
+          - Sample article 2: [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.02.Sample.02.pdf)
+    - 13. References in academic articles [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.03.pdf)
     - 14. Databases, journals, and search engines
     - 15. Bibliography softwares
 
