@@ -191,15 +191,25 @@ output:
 <li><p>Download the file from the following link: <a href="https://appendix.likan.info/R-for-Statistics-Data-Visualization/Exam_Sample.Rmd"><em>Exam_Sample.rmd</em></a>. The link is avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.</p></li>
 <li><p>Rename the <code>Rmd</code> file into the following format <em><code>SurnameGivenname_Student number.Rmd</code></em> in Pinyin, such as <em><code>ZhangSan_20170708.Rmd</code></em>.</p></li>
 <li><p>Open the renamed <em><code>.Rmd</code></em> file with <em><code>R</code></em> and change the <em><code>Name-Number</code></em> region in the front matter of the <em><code>Rmd</code></em> file to your own name in Chinese characters and your student number, such as <em><code>张三 - 20170708</code></em>.</p></li>
-<li><p>A Rmd document can include both normal texts and legial R code. The <em>R</em> code should be enclosed by <code>```{r} XXX ```</code>, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,</p></li>
 </ul>
-<pre class="markdown"><code>a. You can add any texts here
+<pre class="yaml"><code>---
+title: &quot;Exam Sample&quot;
+author: &quot;张三-20181030&quot; # &lt;- Your name and student number
+lastmod: &quot;2018-10-30&quot;
+date: &#39;2018-10-30&#39;
+output:
+  html_document
+---</code></pre>
+<ul>
+<li>A Rmd document can include both normal texts and legial R code. The <em>R</em> code should be enclosed by <code>```{r} XXX ```</code>, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,</li>
+</ul>
+<pre class="markdown"><code>a. You can add any text here.
 
 ```{r}
 # You can add comments here
 str(Titanic) # &lt;- This should be eligible R code.
 ```
-b. You can also add any texts here.</code></pre>
+b. You can also add any text here.</code></pre>
 <ul>
 <li>After finishing all your answers, use R to render the Rmd file into a html file with the function:</li>
 </ul>

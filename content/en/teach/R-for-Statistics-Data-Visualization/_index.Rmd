@@ -114,6 +114,17 @@ Linear models, their variants, and extensions are among the most useful and wide
 
   - Open the renamed *`.Rmd`* file with *`R`* and change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
 
+  ```yaml
+---
+  title: "Exam Sample"
+  author: "张三-20181030" # <- Your name and student number
+  lastmod: "`r Sys.Date()`"
+  date: '2018-10-30'
+  output:
+    html_document
+---
+```
+
   - A Rmd document can include both normal texts and legial R code. The *R* code should be enclosed by ```` ```{r} XXX ``` ````, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,
 
   ````markdown
