@@ -99,12 +99,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - Xie, Y. (2014). *Dynamic Documents with R and knitr* (2 ed.). Boca Raton, FL: CRC Press.
     - Xie, Y., Allaire, J. J., & Grolemund, G. (2018). *R Markdown: The Definitive Guide*. Boca Raton, FL: CRC Press. [Full text](https://bookdown.org/yihui/rmarkdown/)
 
-# 6. Tools
-
-  - [An interactive learning widget for R](/en/teach/R-for-Statistics-Data-Visualization/InteractiveR/)
-
-
-# 7. Final Examination
+# 6. Final Examination
 
   - To sucessfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
@@ -117,12 +112,12 @@ Linear models, their variants, and extensions are among the most useful and wide
   ```yaml
 ---
   title: "Exam Sample"
-  author: "张三-20181030" # <- Your name and student number
+  author: "张三-20181030"    # <- Your name and student number
   lastmod: "`r Sys.Date()`"
   date: '2018-10-30'
   output:
     html_document
----
+---                       # <- You can write any text after this
 ```
 
   - A Rmd document can include both normal texts and legial R code. The *R* code should be enclosed by ```` ```{r} XXX ``` ````, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,
@@ -149,3 +144,8 @@ rmarkdown::render(
   - Send both the filled *`.Rmd`* file and the knitted *`.html`* file to the following email address: `zhanlikan@blcu.edu.cn` before **2018-01-15, 0900**.
 
   - Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from questions 2- 6 to answer.
+
+
+# 7. Tools
+
+  - [An interactive learning widget for R](/en/teach/R-for-Statistics-Data-Visualization/InteractiveR/)
