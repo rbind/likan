@@ -106,23 +106,35 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 # 7. Final Examination
 
-  - To sucessfully complete the examination, your computer should have already installed the *R* software and the *R studio* software. One extra package, i.e., *car* should have also been installed before you attend this examination.
+  - To sucessfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
-  - The exanimation paper and the data set used in the final examination are avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.
-
-  - Download the two files from the following links: *TBA* file and the data set file *TBA*.
+  - Download the file from the following link: [*Exam_Sample.rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Exam_Sample.Rmd). The link is avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.
 
   - Rename the `Rmd` file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
 
-  - Open the renamed *`.Rmd`* file with *`RStudio`*.
+  - Open the renamed *`.Rmd`* file with *`R`* and change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
 
-  - Change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
+  - A Rmd document can include both normal texts and legial R code. The *R* code should be enclosed by ```` ```{r} XXX ``` ````, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,
 
-  - Write your *R* code in the region enclosed by *···{r} XXX ···*, i.e. the XXX area.
-    Write your answers that don't include R code out of the region enclosed by *···{r} XXX ···*. For more information concerning on the syntax of *Markdown* and *Rmarkdown*, please download the [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) cheatsheet and the  [R markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf) cheatsheet.
+  ````markdown
+  a. You can add any texts here
+  
+  `r ''````{r}
+  # You can add comments here
+  str(Titanic) # <- This should be eligible R code.
+  ```
+  b. You can also add any texts here.
+  ````
 
-  - Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from questions 2- 6 to answer.
+  - After finishing all your answers, use R to render the Rmd file into a html file with the function:
 
-  - After finishing all your answers, click the *`knit to HTML`* button in the *`knit`* drop-down menu of *`RStudio`*.
+  ```{r eval = FALSE}
+install.packages("rmarkdown", dependencies = TRUE)
+rmarkdown::render(
+    "directory/to/your/file/ZhangSan_20170708.rmd",
+    output_format = "html_document")
+  ```
 
   - Send both the filled *`.Rmd`* file and the knitted *`.html`* file to the following email address: `zhanlikan@blcu.edu.cn` before **2018-01-15, 0900**.
+
+  - Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from questions 2- 6 to answer.

@@ -2,7 +2,7 @@
 title: "R for Statistics and Data Visualization"
 author: "Likan Zhan"
 date: '2017-09-01'
-lastmod: "2018-10-25"
+lastmod: "2018-10-30"
 disable_comments: true
 output:
   blogdown::html_page:
@@ -187,16 +187,28 @@ output:
 <div id="final-examination" class="section level1">
 <h1>7. Final Examination</h1>
 <ul>
-<li><p>To sucessfully complete the examination, your computer should have already installed the <em>R</em> software and the <em>R studio</em> software. One extra package, i.e., <em>car</em> should have also been installed before you attend this examination.</p></li>
-<li><p>The exanimation paper and the data set used in the final examination are avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.</p></li>
-<li><p>Download the two files from the following links: <em>TBA</em> file and the data set file <em>TBA</em>.</p></li>
+<li><p>To sucessfully complete the examination, your computer should have already installed the <em>R</em> software and at least two extra R packages: <em>rmarkdown</em> and <em>car</em>.</p></li>
+<li><p>Download the file from the following link: <a href="https://appendix.likan.info/R-for-Statistics-Data-Visualization/Exam_Sample.Rmd"><em>Exam_Sample.rmd</em></a>. The link is avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.</p></li>
 <li><p>Rename the <code>Rmd</code> file into the following format <em><code>SurnameGivenname_Student number.Rmd</code></em> in Pinyin, such as <em><code>ZhangSan_20170708.Rmd</code></em>.</p></li>
-<li><p>Open the renamed <em><code>.Rmd</code></em> file with <em><code>RStudio</code></em>.</p></li>
-<li><p>Change the <em><code>Name-Number</code></em> region in the front matter of the <em><code>Rmd</code></em> file to your own name in Chinese characters and your student number, such as <em><code>张三 - 20170708</code></em>.</p></li>
-<li><p>Write your <em>R</em> code in the region enclosed by <em>···{r} XXX ···</em>, i.e. the XXX area.
-Write your answers that don’t include R code out of the region enclosed by <em>···{r} XXX ···</em>. For more information concerning on the syntax of <em>Markdown</em> and <em>Rmarkdown</em>, please download the <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">Markdown</a> cheatsheet and the <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">R markdown</a> cheatsheet.</p></li>
-<li><p>Question <strong>one</strong> is mandatory. The remaining 5 questions are optional, you can choose any and only <strong>three</strong> questions from questions 2- 6 to answer.</p></li>
-<li><p>After finishing all your answers, click the <em><code>knit to HTML</code></em> button in the <em><code>knit</code></em> drop-down menu of <em><code>RStudio</code></em>.</p></li>
+<li><p>Open the renamed <em><code>.Rmd</code></em> file with <em><code>R</code></em> and change the <em><code>Name-Number</code></em> region in the front matter of the <em><code>Rmd</code></em> file to your own name in Chinese characters and your student number, such as <em><code>张三 - 20170708</code></em>.</p></li>
+<li><p>A Rmd document can include both normal texts and legial R code. The <em>R</em> code should be enclosed by <code>```{r} XXX ```</code>, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,</p></li>
+</ul>
+<pre class="markdown"><code>a. You can add any texts here
+
+```{r}
+# You can add comments here
+str(Titanic) # &lt;- This should be eligible R code.
+```
+b. You can also add any texts here.</code></pre>
+<ul>
+<li>After finishing all your answers, use R to render the Rmd file into a html file with the function:</li>
+</ul>
+<pre class="r"><code>install.packages(&quot;rmarkdown&quot;, dependencies = TRUE)
+rmarkdown::render(
+  &quot;directory/to/your/file/ZhangSan_20170708.rmd&quot;,
+  output_format = &quot;html_document&quot;)</code></pre>
+<ul>
 <li><p>Send both the filled <em><code>.Rmd</code></em> file and the knitted <em><code>.html</code></em> file to the following email address: <code>zhanlikan@blcu.edu.cn</code> before <strong>2018-01-15, 0900</strong>.</p></li>
+<li><p>Question <strong>one</strong> is mandatory. The remaining 5 questions are optional, you can choose any and only <strong>three</strong> questions from questions 2- 6 to answer.</p></li>
 </ul>
 </div>
