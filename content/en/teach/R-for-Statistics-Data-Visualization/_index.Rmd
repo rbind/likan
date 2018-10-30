@@ -117,13 +117,13 @@ Linear models, their variants, and extensions are among the most useful and wide
   - A Rmd document can include both normal texts and legial R code. The *R* code should be enclosed by ```` ```{r} XXX ``` ````, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,
 
   ````markdown
-  a. You can add any texts here
-  
+  a. You can add any text here.
+
   `r ''````{r}
   # You can add comments here
   str(Titanic) # <- This should be eligible R code.
   ```
-  b. You can also add any texts here.
+  b. You can also add any text here.
   ````
 
   - After finishing all your answers, use R to render the Rmd file into a html file with the function:
