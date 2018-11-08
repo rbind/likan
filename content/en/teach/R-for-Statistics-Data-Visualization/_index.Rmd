@@ -36,7 +36,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 05. Transforming Data [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_04.pdf)
 - Part II: Linear models and least squares
     - 06. Linear least-squares regression [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_05.pdf)
-    - 07. Statistical Inference for Regression
+    - 07. Statistical Inference for Regression [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_06.pdf)
     - 08. Dummy-variable regression
     - 09. Analysis of variance
 - Part III: Linear-model diagnostics
