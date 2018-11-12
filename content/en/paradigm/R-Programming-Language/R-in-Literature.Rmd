@@ -1,0 +1,30 @@
+---
+title: "R used in literature"
+# subtitle: "A Programming Language"
+author: "Likan Zhan"
+date: '2018-10-12'
+lastmod: "`r Sys.Date()`"
+bibliography: [../bibliography/paradigm.bib]
+link-citations: yes
+csl: [../bibliography/apa-old-doi-prefix.csl]
+output:
+  blogdown::html_page:
+    toc: true
+slug: []
+tags: []
+categories: []
+---
+
+# 1. A brief description
+
+   This post will summarize the advancement of using R to analyze data obtained in behavioral and relevant areas.
+
+# 2. Recent Applications
+
+01. @RN1544
+
+To be added
+
+02. To be added
+
+# 3. References
