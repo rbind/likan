@@ -38,7 +38,7 @@ This course is designed to expose students to the academic side of scientific re
           - Sample article 1: [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.02.Sample.01.pdf)
           - Sample article 2: [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.02.Sample.02.pdf)
     - 13. References in academic articles [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.03.pdf)
-    - 14. Databases, journals, and search engines
+    - 14. Databases, journals, and search engines [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.04.pdf)
     - 15. Bibliography softwares
 
 - Part III. Academic writing
