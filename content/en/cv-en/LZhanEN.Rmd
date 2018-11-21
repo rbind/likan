@@ -116,24 +116,28 @@ fontsize: 10pt
 - **Zhan, L.**, Crain, S., & Zhou, P. (2013). The anticipatory e ects of focus operators: A visual- world paradigm eye-tracking study of “only if” and “even if” conditionals. In N. Goto, K. Otaki, A. Sato, & K. Takita (Eds.), *Proceedings of GLOW in Asia IX 2012*. Mie University, Japan.
 
 
-4. Conference presentations
+4. Conference presentations and invited talks
+
+- **Zhan, L.** (2018, November). *Visual world paradigm: An eye-tracking technique to study the real time processing of spoken Language*. Inivted presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="fa fa-download" style="font-size:1em"> slides </i>](https://publications.likan.info/VWP.pdf)
+
+- **Zhan, L.** (2018, October). *Experimental Builder: A What-You-See-Is-What-You-Get tool to build experiment scripts*. Inivted presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="fa fa-download" style="font-size:1em"> Example materials </i>](https://publications.likan.info/Eyelink_Experiment_Builder_Training_Materials/)
 
 - **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Paper presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China
 
-- Moscati, V., **Zhan, L.**, & Zhou, P. (2013). Reasoning on possibilities: An eye tracking study on modal knowledge. In *the 38th Annual Boston University Conference on Language Development*. Boston, USA.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013, November). *Going beyond the information that is perceived: The hypothetical property of if-conditionals in Mandarin Chinese*. Paper session presented at the Second International Conference on Psycholinguistics in China, Fuzhou, China.
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2013). Going beyond the information that is perceived: The hypothetical property of if-conditionals in Mandarin Chinese. In the *Second International Conference on Psycholinguistics in China*. Fuzhou, China.
+- Moscati, V., **Zhan, L.**, & Zhou, P. (2013, November). *Reasoning on possibilities: An eye tracking study on modal knowledge*. Poster session presented at the 38th Annual Boston University Conference on Language Development, Boston University, MA.
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2013). The hypothetical property of “if”-statements: A visual- world paradigm eye-tracking study. In *CUNY2013: The 26th annual CUNY Sentence Processing Conference*. Columbia, SC.
+- Zhou, P., Crain, S., & **Zhan, L.** (2013, November). *Anticipatory eye movements in children’s processing of grammatical aspect*. Poster session presented at the 38th Annual Boston University Conference on Language Development, Boston University, MA.
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2013). The interpretation of conditionals. In *the 7th International Conference on Thinking (ICT2012)*. Birkbeck/UCL, London, UK.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013, March). *The hypothetical property of “if”-statements: A visual- world paradigm eye-tracking study*. Poster session presented at CUNY2013: The 26th annual CUNY Sentence Processing Conference, Columbia, SC.
 
-- Zhou, P., Crain, S., & **Zhan, L.** (2013). Anticipatory eye movements in children’s processing of grammatical aspect. In *the 38th Annual Boston University Conference on Language Development*. Boston University, United States.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2012, July). *The interpretation of conditionals*. Paper presented at the 7th International Conference on Thinking (ICT2012), Birkbeck/UCL, London, UK.
 
-- Zhou, P., Crain, S., & **Zhan, L.** (2012). Children’s pragmatic use of prosody in sentence processing. In *the 35th Generative Linguistics in the Old World (GLOW) Workshop: Production and Perception of Prosodically-Encoded Information Structure*. University of Potsdam, Potsdam, Germany.
+- Zhou, P., Crain, S., & **Zhan, L.** (2012, March). *Children’s pragmatic use of prosody in sentence processing*. Poster session presented at the 35th Generative Linguistics in the Old World (GLOW) Workshop: Production and Perception of Prosodically-Encoded Information Structure, University of Potsdam, Potsdam, Germany.
 
-- **Zhan, L.**, Crain, S., & Khlentzos, D. (2011). The basic semantics of conditionals in natural language. In *The Harvard-Australia Workshop on: Language, Learning and Logic*. Macquarie University, Sydney, Australia.
+- **Zhan, L.**, Crain, S., & Khlentzos, D. (2011, August). *The basic semantics of conditionals in natural language*. Paper presented at the Harvard-Australia Workshop on: Language, Learning and Logic, Macquarie University, Sydney, Australia.
 
-- Zhou, P., Crain, S., Gao, L., & **Zhan, L.** (2010). The role of prosody in children’s focus identi cation. In *the Generative Approaches to Language Acquisition - North America 4 (GALANA- 4)*. Toronto, Canada.
+- Zhou, P., Crain, S., Gao, L., & **Zhan, L.** (2010, September). *The role of prosody in children’s focus identification*. Paper presented at the Generative Approaches to Language Acquisition - North America 4 (GALANA- 4), Toronto, Canada.
 
-- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2010). Children’s use of prosodic information in ambiguity resolution. In *the 8th Conference of Generative Linguistics in the Old World Asia (GLOW-in-Asia 8)*. Beijing, China.
+- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2010, August). *Children’s use of prosodic information in ambiguity resolution*. Paper presented at the 8th Conference of Generative Linguistics in the Old World Asia (GLOW-in-Asia 8), Beijing, China.
