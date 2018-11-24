@@ -48,7 +48,7 @@ fontsize: 10pt
 
 ## Teaching responsibilities
 
-- Statistics for the Behavioral Sciences, <i class="fa fa-file-text-o"> [More Info ...](https://likan.info/en/teach/Statistics-for-the-Behavioral-Sciences/)</i>
+- Statistics for the Behavioral Sciences , <i class="fa fa-file-text-o"> [More Info ...](https://likan.info/en/teach/Statistics-for-the-Behavioral-Sciences/)</i>
 
 - R for Modeling and Visualizing Data, <i class="fa fa-file-text-o"> [More Info ...](https://likan.info/en/teach/R-for-Statistics-Data-Visualization/)</i>
 
@@ -67,17 +67,18 @@ fontsize: 10pt
 ## Grants and awards
 
 1. Grants
-- 2015 - 2016. Experimental explorations of possible world semantics, The Fundamental Re- search Funds for the Central Universities, [Grant No.: 15YBB29], Zhan, L., ¥20,000.
+- *The Fundamental Research Funds for the Central Universities [15YBB29]* (2015 - 2016) "Experimental explorations of possible world semantics." Zhan, L. (¥20,000)
 
-- 2015 - 2016. Introduction to psychology and introduction to scienti c research, The Funds Supporting the Growth of the New Teachers, [Grant No.: FD201530], Zhan, L., ¥7,000.
+- *The Funds Supporting the Growth of the New Teachers [FD201530]* 2015 - 2016 "Introduction to psychology and introduction to scientific research." Zhan, L. (¥7,000)
 
-- 2015 - 2016. Processing and acquisition of tone perception in Mandarin Chinese, The Fundamental Research Funds for the Central Universities, [Grant No.: 15YJ050003], Zhan, L., Shi, F., Gao, L., & Zhang, L., ¥70,000.
+- *The Fundamental Research Funds for the Central Universities, [15YJ050003]* (2015 - 2016) "Processing and acquisition of tone perception in Mandarin Chinese" Zhan, L., Shi, F., Gao, L., & Zhang, L. (¥70,000)
 
-- 2010 - 2014. The interpretation of conditionals in natural language, Cognitive Science Post- graduate Research Grant of Macquarie University, Zhan, L., $10,570.
+- *Cognitive Science Postgraduate Research Grant of Macquarie University* (2010 - 2014) "The interpretation of conditionals in natural language" Zhan, L. ($10,570)
 
-- 2013.10. The hypothetical property of conditionals in natural language, Macquarie University Postgraduate Research Fund, Zhan, L., $4,684.
+- *Macquarie University Postgraduate Research Fund* (2013) "The hypothetical property of conditionals in natural language" Zhan, L. ($4,684)
 
 2. Awards
+
 - 2013.11. 38th Boston University Conference on Language Development, Paula Menyuk Travel Award, $300.
 
 - 2013.04. 26th Annual CUNY Sentence Processing Conference, Travel Award, $350.
@@ -136,8 +137,8 @@ fontsize: 10pt
 
 - Zhou, P., Crain, S., & **Zhan, L.** (2012, March). *Children’s pragmatic use of prosody in sentence processing*. Poster session presented at the 35th Generative Linguistics in the Old World (GLOW) Workshop: Production and Perception of Prosodically-Encoded Information Structure, University of Potsdam, Potsdam, Germany.
 
-- **Zhan, L.**, Crain, S., & Khlentzos, D. (2011, August). *The basic semantics of conditionals in natural language*. Paper presented at the Harvard-Australia Workshop on: Language, Learning and Logic, Macquarie University, Sydney, Australia.
+- **Zhan, L.**, Crain, S., & Khlentzos, D. (2011, August). *The basic semantics of conditionals in natural language*. Paper presented at the Harvard-Australia Workshop on Language, Learning and Logic, Macquarie University, Sydney, Australia.
 
-- Zhou, P., Crain, S., Gao, L., & **Zhan, L.** (2010, September). *The role of prosody in children’s focus identification*. Paper presented at the Generative Approaches to Language Acquisition - North America 4 (GALANA- 4), Toronto, Canada.
+- Zhou, P., Crain, S., Gao, L., & **Zhan, L.** (2010, September). *The role of prosody in children’s focus identification*. Paper presented at the Generative Approaches to Language Acquisition - North America 4 (GALANA-4), Toronto, Canada.
 
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2010, August). *Children’s use of prosodic information in ambiguity resolution*. Paper presented at the 8th Conference of Generative Linguistics in the Old World Asia (GLOW-in-Asia 8), Beijing, China.
