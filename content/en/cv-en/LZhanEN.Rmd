@@ -24,7 +24,7 @@ fontsize: 10pt
 
 - Add: 15, Xueyuan Rd., Haidian District, Beijing 100083, China
 - Tel:  +86 10 8230 3468
-- Email: zhanlikan AT hotmail.com
+- Email: zhanlikan AT hotmail DOT com
 - Personal website: <https://likan.info>
 
 ## Academic appointment
@@ -48,7 +48,7 @@ fontsize: 10pt
 
 ## Teaching responsibilities
 
-- Statistics for the Behavioral Sciences , <i class="fa fa-file-text-o"> [More Info ...](https://likan.info/en/teach/Statistics-for-the-Behavioral-Sciences/)</i>
+- Statistics for the Behavioral Sciences, <i class="fa fa-file-text-o"> [More Info ...](https://likan.info/en/teach/Statistics-for-the-Behavioral-Sciences/)</i>
 
 - R for Modeling and Visualizing Data, <i class="fa fa-file-text-o"> [More Info ...](https://likan.info/en/teach/R-for-Statistics-Data-Visualization/)</i>
 
@@ -118,6 +118,8 @@ fontsize: 10pt
 
 
 4. Conference presentations and invited talks
+
+- **Zhan, L.** (2018, November). *Methods of Cognitive Neuroscience: Focus on Language*. Inivted presentation given at the Child Cognition Laboratory, Department of Foreign Languages and Literatures, Tsinghua University, Beijing, China. [<i class="fa fa-download" style="font-size:1em"> slides </i>](https://publications.likan.info/MethodsCognNeurosciLang2018NOV.pdf)
 
 - **Zhan, L.** (2018, November). *Visual world paradigm: An eye-tracking technique to study the real time processing of spoken Language*. Inivted presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="fa fa-download" style="font-size:1em"> slides </i>](https://publications.likan.info/VWP.pdf)
 

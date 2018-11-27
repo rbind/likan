@@ -119,6 +119,8 @@ fontsize: 10pt
 
 4. 大会报告或受邀报告
 
+- **Zhan, L.** (2018, November). *Methods of Cognitive Neuroscience: Focus on Language*. Inivted presentation given at the Child Cognition Laboratory, Department of Foreign Languages and Literatures, Tsinghua University, Beijing, China. [<i class="fa fa-download" style="font-size:1em"> 报告讲义 </i>](https://publications.likan.info/MethodsCognNeurosciLang2018NOV.pdf)
+
 - **Zhan, L.** (2018, November). *Visual world paradigm: An eye-tracking technique to study the real time processing of spoken Language*. Inivted presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="fa fa-download" style="font-size:1em"> 报告讲义 </i>](https://publications.likan.info/VWP.pdf)
 
 - **Zhan, L.** (2018, October). *Experimental Builder: A What-You-See-Is-What-You-Get tool to build experiment scripts*. Inivted presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="fa fa-download" style="font-size:1em"> 参考资料 </i>](https://publications.likan.info/Eyelink_Experiment_Builder_Training_Materials/)
