@@ -41,7 +41,7 @@ This course is designed to expose students to the academic side of scientific re
     - 14. Databases, journals, and search engines [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.04.pdf)
     - 15. Bibliography softwares
 
-- Part III. Academic writing
+- Part III. Academic writing [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.06.pdf)
     - 16. Good writing
     - 17. Window onto the worold
     - 18. Curse of knowledge
