@@ -103,18 +103,18 @@ Linear models, their variants, and extensions are among the most useful and wide
 
   - To sucessfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
-  - Download the file from the following link: [*Exam_Sample.rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Exam_Sample.Rmd). The link is avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.
+  - Download the file from the following link: [*Final_Exam.rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam.Rmd). The link is avaliable from 2019-01-04, 0900 to 2019-01-05, 0900.
 
   - Rename the `Rmd` file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
 
-  - Open the renamed *`.Rmd`* file with *`R`* and change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20170708`*.
+  - Open the renamed *`.Rmd`* file with *`R`* and change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20181030`*.
 
   ```yaml
 ---
   title: "Exam Sample"
-  author: "张三-20181030"    # <- Your name and student number
+  author: "张三 - 20181030"    # <- Your name and student number
   lastmod: "`r Sys.Date()`"
-  date: '2018-10-30'
+  date: '2019-01-04'
   output:
     html_document
 ---                       # <- You can write any text after this
@@ -137,14 +137,11 @@ Linear models, their variants, and extensions are among the most useful and wide
   ```{r eval = FALSE}
 install.packages("rmarkdown", dependencies = TRUE)
 rmarkdown::render(
-    "directory/to/your/file/ZhangSan_20170708.rmd",
+    "directory/to/your/file/ZhangSan_20181030.rmd",
     output_format = "html_document")
   ```
 
-  - Send both the filled *`.Rmd`* file and the knitted *`.html`* file to the following email address: `zhanlikan@blcu.edu.cn` before **2018-01-15, 0900**.
-
-  - Question **one** is mandatory. The remaining 5 questions are optional, you can choose any and only **three** questions from questions 2- 6 to answer.
-
+  - Send both the finished *'.Rmd'* file, such as [*ZhangSan_20181030.rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_2018.Rmd)  and the knitted *'.html'* file， such as [*ZhangSan_20181030.html*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_2018.html) to the following email address: `zhanlikan@blcu.edu.cn` before **2019-01-05, 0900**.
 
 # 7. Tools
 

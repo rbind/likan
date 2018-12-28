@@ -2,7 +2,7 @@
 title: "R for Statistics and Data Visualization"
 author: "Likan Zhan"
 date: '2017-09-01'
-lastmod: "2018-12-14"
+lastmod: "2018-12-28"
 disable_comments: true
 output:
   blogdown::html_page:
@@ -182,15 +182,15 @@ output:
 <h1>6. Final Examination</h1>
 <ul>
 <li><p>To sucessfully complete the examination, your computer should have already installed the <em>R</em> software and at least two extra R packages: <em>rmarkdown</em> and <em>car</em>.</p></li>
-<li><p>Download the file from the following link: <a href="https://appendix.likan.info/R-for-Statistics-Data-Visualization/Exam_Sample.Rmd"><em>Exam_Sample.rmd</em></a>. The link is avaliable from 2018-01-11, 0900 to 2018-01-15, 0900.</p></li>
+<li><p>Download the file from the following link: <a href="https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam.Rmd"><em>Final_Exam.rmd</em></a>. The link is avaliable from 2019-01-04, 0900 to 2019-01-05, 0900.</p></li>
 <li><p>Rename the <code>Rmd</code> file into the following format <em><code>SurnameGivenname_Student number.Rmd</code></em> in Pinyin, such as <em><code>ZhangSan_20170708.Rmd</code></em>.</p></li>
-<li><p>Open the renamed <em><code>.Rmd</code></em> file with <em><code>R</code></em> and change the <em><code>Name-Number</code></em> region in the front matter of the <em><code>Rmd</code></em> file to your own name in Chinese characters and your student number, such as <em><code>张三 - 20170708</code></em>.</p></li>
+<li><p>Open the renamed <em><code>.Rmd</code></em> file with <em><code>R</code></em> and change the <em><code>Name-Number</code></em> region in the front matter of the <em><code>Rmd</code></em> file to your own name in Chinese characters and your student number, such as <em><code>张三 - 20181030</code></em>.</p></li>
 </ul>
 <pre class="yaml"><code>---
 title: &quot;Exam Sample&quot;
-author: &quot;张三-20181030&quot;    # &lt;- Your name and student number
-lastmod: &quot;2018-12-14&quot;
-date: &#39;2018-10-30&#39;
+author: &quot;张三 - 20181030&quot;    # &lt;- Your name and student number
+lastmod: &quot;2018-12-28&quot;
+date: &#39;2019-01-04&#39;
 output:
   html_document
 ---                       # &lt;- You can write any text after this</code></pre>
@@ -209,11 +209,10 @@ b. You can also add any text here.</code></pre>
 </ul>
 <pre class="r"><code>install.packages(&quot;rmarkdown&quot;, dependencies = TRUE)
 rmarkdown::render(
-  &quot;directory/to/your/file/ZhangSan_20170708.rmd&quot;,
+  &quot;directory/to/your/file/ZhangSan_20181030.rmd&quot;,
   output_format = &quot;html_document&quot;)</code></pre>
 <ul>
-<li><p>Send both the filled <em><code>.Rmd</code></em> file and the knitted <em><code>.html</code></em> file to the following email address: <code>zhanlikan@blcu.edu.cn</code> before <strong>2018-01-15, 0900</strong>.</p></li>
-<li><p>Question <strong>one</strong> is mandatory. The remaining 5 questions are optional, you can choose any and only <strong>three</strong> questions from questions 2- 6 to answer.</p></li>
+<li>Send both the finished <em>‘.Rmd’</em> file, such as <a href="https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_2018.Rmd"><em>ZhangSan_2018.rmd</em></a> and the knitted <em>‘.html’</em> file， such as <a href="https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_2018.html"><em>ZhangSan_2018.html</em></a> to the following email address: <code>zhanlikan@blcu.edu.cn</code> before <strong>2019-01-05, 0900</strong>.</li>
 </ul>
 </div>
 <div id="tools" class="section level1">
