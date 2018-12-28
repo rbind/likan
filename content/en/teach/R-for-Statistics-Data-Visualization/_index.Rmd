@@ -103,7 +103,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 
   - To sucessfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
-  - Download the file from the following link: [*Final_Exam.rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam.Rmd). The link is avaliable from **2019-01-04, 0900** to **2019-01-05, 0900**.
+  - Download the file from the following link: [*Final_Exam.Rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam.Rmd). The link is avaliable from **2019-01-04, 0900** to **2019-01-05, 0900**.
 
   - Rename the `Rmd` file into the following format *`SurnameGivenname_Student number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
 
@@ -121,7 +121,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 ---                       # <- You can write any text after this
 ```
 
-  - A *Rmd* document can include both normal texts and legical R code. The *R* code should be enclosed by ```` ```{r} XXX ``` ````, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,
+  - A *Rmd* document can include both normal texts and legal R code. The *R* code should be enclosed by ```` ```{r} XXX ``` ````, i.e., the XXX region; and the normal texts that do not include the R code should be out of those regions. For example,
 
   ````markdown
   a. You can add any text here.
