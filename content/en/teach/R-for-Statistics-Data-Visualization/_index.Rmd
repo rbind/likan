@@ -141,7 +141,7 @@ rmarkdown::render(
     output_format = "html_document")
   ```
 
-  - Send both the finished *'.Rmd'* file, such as [*ZhangSan_20181030.rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_2018.Rmd)  and the knitted *'.html'* file， such as [*ZhangSan_20181030.html*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_2018.html) to the following email address: `zhanlikan@blcu.edu.cn` before **2019-01-05, 0900**.
+  - Send both the finished *.Rmd* file, such as [*ZhangSan_20181030.rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_20181030.Rmd)  and the knitted *.html* file， such as [*ZhangSan_20181030.html*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_20181030.html) to the following email address: `zhanlikan@blcu.edu.cn` before **2019-01-05, 0900**.
 
 # 7. Tools
 
