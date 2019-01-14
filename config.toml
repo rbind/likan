@@ -109,8 +109,8 @@ enableGitInfo = false
 
 [params.footer]
     home = "Likan Zhan      &copy; 2017 - 2019"
-    en   = "[Likan Zhan](/) &copy; 2017 - 2019|[<i class='fab fa-github fa-1x'></i>](https://github.com/likanzhan) | [<i class='ai ai-google-scholar ai-1x'></i>](https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en) | [<i class='ai ai-researchgate ai-1x'></i>](https://www.researchgate.net/profile/Likan_Zhan) | [<i class='fab fa-stack-overflow fa-1x'></i>](https://stackoverflow.com/users/2263930/likan-zhan)"
-    cn   = "[战立侃] (/) &copy; 2017 - 2019|[<i class='fab fa-github'></i>](https://github.com/likanzhan) | [<i class='ai ai-google-scholar ai-1x'></i>](https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en) | [<i class='ai ai-researchgate ai-1x'></i>](https://www.researchgate.net/profile/Likan_Zhan) | [<i class='fab fa-stack-overflow'></i>](https://stackoverflow.com/users/2263930/likan-zhan) | [<i class='fab fa-weibo'></i>](http://weibo.com/1763551555)"
+    en   = "[Likan Zhan](/) &copy; 2017 - 2019 | [<i class='fab fa-github fa-1x'></i>](https://github.com/likanzhan) | [<i class='ai ai-google-scholar ai-1x'></i>](https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en) | [<i class='ai ai-researchgate ai-1x'></i>](https://www.researchgate.net/profile/Likan_Zhan) | [<i class='fab fa-stack-overflow fa-1x'></i>](https://stackoverflow.com/users/2263930/likan-zhan)"
+    cn   = "[战立侃] (/) &copy; 2017 - 2019 | [<i class='fab fa-github'></i>](https://github.com/likanzhan) | [<i class='ai ai-google-scholar ai-1x'></i>](https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en) | [<i class='ai ai-researchgate ai-1x'></i>](https://www.researchgate.net/profile/Likan_Zhan) | [<i class='fab fa-stack-overflow'></i>](https://stackoverflow.com/users/2263930/likan-zhan) | [<i class='fab fa-weibo'></i>](http://weibo.com/1763551555)"
 
 [params.author]
     en = "Likan Zhan"
