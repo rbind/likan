@@ -98,7 +98,6 @@ enableGitInfo = false
 
 [params]
     description = "The personal website of Likan Zhan"
-    footer = "&copy; [Likan Zhan](/) 2017 - 2018 | [Github](https://github.com/likanzhan) | [Twitter](https://twitter.com/likanzhan) | [Weibo](http://weibo.com/1763551555)"
     disqusURL = "https://likanzhan.github.io"
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
     githubContentURL = "https://github.com/rbind/likan/edit/master/content/"
@@ -108,23 +107,24 @@ enableGitInfo = false
     highlightjsTheme = "github"
     dateFormat = "2006-01-02" # "2006-01-02, Mon, "
 
-#[params.footer]
-#      en = "&copy; [Likan Zhan](/) 2017 - 2018"
-#      cn = "&copy; [战立侃](/) 2017 - 2018"
+[params.footer]
+    home = "Likan Zhan      &copy; 2017 - 2019"
+    en   = "[Likan Zhan](/) &copy; 2017 - 2019|[<i class='fab fa-github fa-1x'></i>](https://github.com/likanzhan) | [<i class='ai ai-google-scholar ai-1x'></i>](https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en) | [<i class='ai ai-researchgate ai-1x'></i>](https://www.researchgate.net/profile/Likan_Zhan) | [<i class='fab fa-stack-overflow fa-1x'></i>](https://stackoverflow.com/users/2263930/likan-zhan)"
+    cn   = "[战立侃] (/) &copy; 2017 - 2019|[<i class='fab fa-github'></i>](https://github.com/likanzhan) | [<i class='ai ai-google-scholar ai-1x'></i>](https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en) | [<i class='ai ai-researchgate ai-1x'></i>](https://www.researchgate.net/profile/Likan_Zhan) | [<i class='fab fa-stack-overflow'></i>](https://stackoverflow.com/users/2263930/likan-zhan) | [<i class='fab fa-weibo'></i>](http://weibo.com/1763551555)"
 
 [params.author]
-      en = "Likan Zhan"
-      cn = "战立侃"
+    en = "Likan Zhan"
+    cn = "战立侃"
 
 [params.logo.en]
-     img = "/logo/bodhi.png"
-     url = "/"
-     alt = "Likan Zhan"
-     tag = ""
+    img = "/logo/bodhi.png"
+    url = "/"
+    alt = "Likan Zhan"
+    tag = ""
 
 [params.lang.edit]
-     cn = "编辑"
+    cn = "编辑"
 [params.lang.license]
-     cn = "版权"
+    cn = "版权"
 [params.lang.subscribe]
-     cn = "订阅"
+    cn = "订阅"
