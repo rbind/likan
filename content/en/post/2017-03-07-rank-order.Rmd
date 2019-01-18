@@ -2,18 +2,32 @@
 title: Rank-Order
 author: "Likan Zhan"
 date: '2017-03-07'
-tags: [statistics, R]
+tags: []
 ---
-Adapted from duffymo's Stack Overflow [post](http://stackoverflow.com/questions/2315601/understanding-the-order-function)
 
-1. `rank` tells you what order the numbers are in,
+1. `rank` tells you what order the numbers are in, while `order` tells you how to get them in ascending order. In other words, `order(x)` tells you which element of the original vector needs to be put first, second, etc., so as to sort the original vector, whereas `rank(x)` tell you which element has the lowest, second lowest, etc., value. For example:
 
 ```{r}
-a <- c(4.1, 3.2, 6.1, 3.1)
+a <- c(45, 50, 10, 96)
+order(a)
 rank(a)
 ````
 
-2. `order` tells you how to get them in ascending order.
-```{r}
-order(a)
-````
+2. So order(a) is saying, 'put the third element first when you sort... ', whereas rank(a) is saying, 'the first element is the second lowest... '. (Note that they both agree on which element is lowest, etc.; they just present the information differently.) Thus we see that we can use order() to sort, but we can't use `rank()` that way:
+```r
+a[order(a)]
+sort(a)
+a[rank(a)]
+```
+
+3. In general, `order()` will not equal `rank()` unless the vector has been sorted already:
+```r
+b <- sort(a)
+order(b) == rank(b)
+```
+
+4. Also, since `order()` is (essentially) operating over ranks of the data, you could compose them without affecting the information, but the other way around produces gibberish:
+```r
+order(rank(a))==order(a)
+rank(order(a))==rank(a)
+```

@@ -1,0 +1,72 @@
+---
+title: 如何在多个图之间画一条线？
+author: ~
+date: '2018-06-05'
+lastmod: "2018-07-03"
+slug: line-across-a-multiple-figure-environmentRmd
+categories: []
+tags: []
+---
+
+
+
+<p><a href="https://stackoverflow.com/questions/9985013/how-do-you-draw-a-line-across-a-multiple-figure-environment-in-r">原文链接</a></p>
+<ol style="list-style-type: decimal">
+<li>方法一</li>
+</ol>
+<pre class="r"><code>## Create three example plots
+par(mfrow=c(1,3))
+barplot(VADeaths, border = &quot;dark blue&quot;) 
+barplot(VADeaths, border = &quot;yellow&quot;) 
+barplot(VADeaths, border = &quot;green&quot;) 
+
+## From third plot, get the &quot;normalized device coordinates&quot; of a point at a height of 50 on the y-axis.
+(Y &lt;- grconvertY(50, &quot;user&quot;, &quot;ndc&quot;))</code></pre>
+<pre><code>## [1] 0.32732</code></pre>
+<pre class="r"><code>## Add the horizontal line using grid
+library(grid)
+pushViewport(viewport())
+grid.lines(x = c(0,1), y = Y, gp = gpar(col = &quot;red&quot;))
+popViewport()</code></pre>
+<p><img src="/cn/post/2018-06-05-line-across-a-multiple-figure-environment_files/figure-html/Figure-1-1.png" width="672" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>方法二</li>
+</ol>
+<pre class="r"><code>library(grid)
+library(gridBase)
+par(mfrow=c(1,3))
+
+# barplot #1
+barplot(VADeaths, border = &quot;dark blue&quot;) 
+X1 &lt;- grconvertX(0, &quot;user&quot;, &quot;ndc&quot;)
+# barplot #2
+barplot(VADeaths, border = &quot;yellow&quot;) 
+# barplot #3
+m &lt;- barplot(VADeaths, border = &quot;green&quot;) 
+X2 &lt;- grconvertX(tail(m, 1) + 0.5, &quot;user&quot;, &quot;ndc&quot;) # default width of bars = 1
+Y &lt;- grconvertY(50, &quot;user&quot;, &quot;ndc&quot;)
+
+## Horizontal line
+pushViewport(viewport())
+grid.lines(x = c(X1, X2), y = Y, gp = gpar(col = &quot;red&quot;))
+popViewport()</code></pre>
+<p><img src="/cn/post/2018-06-05-line-across-a-multiple-figure-environment_files/figure-html/Figure-2-1.png" width="672" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>方法三</li>
+</ol>
+<pre class="r"><code>library(grid)
+library(gridBase)
+par(mfrow=c(1,3))
+
+barplot(VADeaths); vps1 &lt;- do.call(vpStack, baseViewports())
+barplot(VADeaths) 
+barplot(VADeaths); vps3 &lt;- do.call(vpStack, baseViewports())
+
+pushViewport(vps1)
+Y &lt;- convertY(unit(50, &quot;native&quot;), &quot;npc&quot;)
+popViewport(3)
+
+grid.move.to(x = unit(0, &quot;npc&quot;), y = Y, vp = vps1)
+grid.line.to(x = unit(1, &quot;npc&quot;), y = Y, vp = vps3, 
+             gp = gpar(col = &quot;red&quot;))</code></pre>
+<p><img src="/cn/post/2018-06-05-line-across-a-multiple-figure-environment_files/figure-html/Figure-3-1.png" width="672" /></p>

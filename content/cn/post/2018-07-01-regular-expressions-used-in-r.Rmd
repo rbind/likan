@@ -1,0 +1,331 @@
+---
+title: R 使用的正则表达式
+author: ~
+date: '2018-07-01'
+lastmod: "`r Sys.Date()`"
+slug: regular-expressions-used-in-r
+categories: []
+tags: []
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 4    
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk[["set"]](results = "hold", comment=NA)
+```
+
+### 1. 正则表达式 {#regular-expression}
+
+正则表达式（regular expression）是描述文本串的模式（pattern）的一种方法。R默认使用的是扩展的正则表达式（extended regular expression）；当相关函数 `perl = TRUE` 时，R使用的是 Perl 风格的正则表达式(Perl-like regular expressions)。另外，当 `fixed = TRUE` 时，该函数使用的字面意义上的正则表达式（literal regular expression）。
+
+使用正则表达式模式的函数包括 `grep` 及其相关函数如 `grepl`、`regexpr` 、`gregexpr`、 `sub`、 `gsub`、 `strsplit` 等。使用正则表达式的函数还包括一些底层使用 `grep` 的函数，如 `apropos`、`browseEnv`、`help.search`、`list.files` 和`ls`等。
+
+正则表达式的建构类似于数学表达式：用一系列操作算子把较小的表达式组合到一起。整个表达式匹配到一个或多个字符（characters）上。其中如果函数中 `useBytes = TRUE`，匹配的单位则为字节（byte）。
+
+正则表达式的基本组成单元为一个字符相匹配的表达式。正则表达式中大多数字符包括字母和数字都与他们自己相匹配。正则表达式中某些有特殊含义的字符叫做元字符（metacharacter）。正则表达式中常见的元字符有下面一些：
+
+```
+. \ | ( ) [ ] { } ^ $ * + ?
+```
+
+如果想在正则表达式中让元字符恢复其字面意思，则需要在该字符前添加一个反斜线 `\`。又因为反斜线 `\` 本身也是一个元字符，所以我们首先需要添加一个反斜线让反斜线本身恢复其字面意思。所以在R语言中如果要在正则表达式中恢复元字符的字面意义，我们需要在元字符前添加**双斜线**。与此相对应，正则表达式中的模式在函数 `cat` 中必须是合法的输入。 例如
+
+```{r}
+     sub(pattern =   "$", replacement = "",  x = "$Money")   # 错误
+     sub(pattern = "\\$", replacement = "",  x = "$Money")   # 正确
+   # sub(pattern =  "\$", replacement = "",  x = "$Money")   # 错误，cat("\$") 不合法
+```
+
+### 2. 反斜线 {#backslash}
+
+R 语言中，出现在一个字符常量（character constants）中的反斜线（backslash）（`\`）用于标示转义字符串（Escape Sequence）的开始。R语言中合法的转义字符串有下面一些：
+
+```{r, echo = FALSE}
+acqr::print_help_console(topic = "Quotes", lines = 29:43)
+```
+如果反斜线后的转义字符串不在上表范围内，系统就会报错。例如，要在字符常量中输入反斜线，我们需要输入两个反斜线，即 `\\`，而不是一个。此时，如果要替换该文本中的反斜线，则需要四条反斜线：
+
+```{r}
+# print("X\X")  # 不合法的字符常量
+  print("X\\X") # 合法的字符常量
+  sub(pattern  = "\\\\", replacement = "", x = "X\\X" )
+```
+
+### 3. 字符组
+
+#### 3.1 何为字符组 {#character-class}
+
+正则表达式中另外一个重要的元字符是方括号(square brackets, [])。两个方括号 `[]` 标定出来的由一系列字符组成的列表（list）叫做字符组(Character Classes)。是一个由，搜索过程中，搜索和替换过程中，原始向量成分中与字符集中任何和一个元素匹配都会返回正确值或得到替换。下面是几个例子
+
+-  正则表达式 "[Tt]he" 表示无论是 The 还是 the 都符合搜索要求， 例如
+
+```{r, results = "hold"}
+gsub("[Tt]he",  9, "The fat cat sat on the mat.")
+```
+
+- 正则表达式 "[a-z]at" 表示 aat, bat, cat, ..., zat 都符合搜索要求，例如
+
+```{r, results = "hold"}
+gsub("[a-z]at",  9, "The fat cat sat on the mat.")
+```
+注： "[a-z]" 用连字符 `-` 把 `a` 和 `z` 连起来，说的是该字符组中包含了a到z的所有小写字母 一系列字符串可以通过给出第一个字符、最后一个字符。
+
+- 正则表达式 "[^c]at" 表示所有长度为三个字母，后两个字母是 at， 但首字母不是 c 的字符串都符合要求，如
+
+```{r, results = "hold"}
+gsub("[^c]at", 9, "The fat cat sat on the mat.")
+```
+注：脱字符 `^` 开头表示否定。
+
+- 正则表达式 "at." 则表示所有长度为三个字母，前面两个字母是 at 的字符串都符合要求；而 "at[.]" 则表示只有当一个长度为三的字符串为 "at." 才符合要求。比较这两个例子
+
+```{r, results = "hold"}
+gsub("at.",  9, "The fat cat sat on the mat.")
+gsub("at[.]",  9, "The fat cat sat on the mat.")
+```
+
+注：大部分元字符在字符组（character class）中都丧失了其特殊意义，其中只有三个元字符是例外，即 `^`、`-`、`]`。在一个字符组中，元字符 `^` 只要不在最左边的位置，它就没有特殊意义；元字符 `]` 只要在最左边就没有特殊意义；而元字符 `-` 无论是在最左边还是在最右面都没有特殊意义。
+
+#### 3.2. 字符组名称 {#class-name}
+
+正则表达式还通过某些名称（class name）预先定义了一些字符组，使用者可以通过这些名称直接调用这些字符组。`POSIX` 标准下定义的字符组以下面这种形式存在：`[:keyword:]`
+
+- `[:digit:]` 数字
+   
+  ```{r, echo = FALSE} 
+  grep("[[:digit:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+
+- `[:xdigit:]` 十六进制数字 = `[:digit:]` + `[a-e]` + `A-E`
+    
+  ```{r, echo = FALSE} 
+  grep("[[:xdigit:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+
+- `[:lower:]` 小写字母
+
+  ```{r, echo = FALSE} 
+  grep("[[:lower:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+
+- `[:upper:]` 大写字母
+    
+  ```{r, echo = FALSE} 
+  grep("[[:upper:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+
+- `[:blank:]` 空白字符
+    
+  ```{r, echo = FALSE} 
+  grep("[[:blank:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+
+- `[:space:]` 间隔字符 = `[:blank:]` + 换行等
+    
+  ```{r, echo = FALSE} 
+  grep("[[:space:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+
+- `[:punct:]` 标点符号
+    
+  ```{r, echo = FALSE} 
+  grep("[[:punct:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+
+- `[:cntrl:]` 控制字符
+
+  ```{r, echo = FALSE} 
+  grep("[[:cntrl:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+   
+- `[:alpha:]` 字母 =  `[:upper:]` + `[:lower:]`
+    
+  ```{r, echo = FALSE, eval = FALSE} 
+  grep("[[:alpha:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+    
+- `[:alnum:]` 文字数字式字符 =  `[:digit:]` + `[:alpha:]`
+    
+  ```{r, echo = FALSE, eval = FALSE} 
+  grep("[[:alnum:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```  
+
+- `[:graph:]` 图形字符 =  `[:punct:]` + `[:alnum:]` 
+    
+  ```{r, echo = FALSE, eval = FALSE} 
+  grep("[[:graph:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```  
+
+- `[:print:]` 可打印字符 =  `[:graph:]` + `[:space:]`
+    
+  ```{r, echo = FALSE, eval = FALSE} 
+  grep("[[:print:]]", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+  
+   - 例如 "[[:lower:]]at" 的意思是一个长度为三个字母的字符串，第一个字母为任意小写字母，后面两个字母是 "at"。 看下面的例子：
+ 
+```{r, results = "hold"}
+gsub("[[:lower:]]at",  9, "The fat Cat sat on the mat.")
+```
+
+注意：在这些字符组名称中的方括号是其符号名称的一部分，所以我们在使用它们的时候，需要把这个名称放入到另一个方括号中，用于定界（delimit）该字符串。
+
+#### 3.3. 序列符号{#sequences-symbol}
+
+序列（sequences）定义了一系列用来比较的字符串。
+
+  - `\\d` 数字型字符 = `[[:digit:]]`；`\\D` 非数字型字符 = `[^[:digit:]]`
+  ```{r, echo = FALSE, eval = FALSE}
+  grep("\\d", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  grep("\\D", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+  ```{r}
+    gsub("\\d", "_", "the dandelion war 2010") 
+    gsub("\\D", "_", "the dandelion war 2010") 
+    ```
+  
+  - `\\s` 间隔字符 = `[[:space:]]`；`\\S` 非间隔字符 = `[^[:space:]]`
+  ```{r, echo = FALSE, eval = FALSE}
+  grep("\\s", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  grep("\\S", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+  ```{r}
+    gsub("\\s", "_", "the dandelion war 2010") 
+    gsub("\\S", "_", "the dandelion war 2010") 
+    ```
+
+  - `\\w` 单词型字符 = `[[:alnum:]_]` 文字数字式字符 + `_`；`\\W` 非数字型字符 = `[^[:alnum:]_]`
+  ```{r, echo = FALSE, eval = FALSE}
+  grep("\\w", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  grep("\\W", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+  
+  ```{r}
+    gsub("\\w", "_", "the dandelion war 2010") 
+    gsub("\\W", "_", "the dandelion war 2010") 
+    ```
+
+  - `"\\<"` 用于匹配单词左侧边界的长度为零的字符串；`\\>` 用于匹配单词右侧边界的长度为零的字符串；`\\b` 用于匹配单词左右两侧长度为零的字符串；`\\B` 用于匹配不出与单词边界的长度为零的字符串；
+   
+  ```{r, echo = FALSE, eval = FALSE}
+  grep("\\b", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  grep("\\B", unlist(strsplit(rawToChar(as.raw(1:127)), "")), value = TRUE)
+  ```
+
+```{r}
+    gsub("\\<", "_", "the dandelion war 2010") 
+    gsub("\\>", "_", "the dandelion war 2010")
+    gsub("\\b", "_", "the dandelion war 2010") 
+    gsub("\\B", "_", "the dandelion war 2010")
+```
+
+### 4. 元字符{#meta-characters}
+
+- `.` 用于匹配任何长度为一的字符（换行符除外）。例如我们可以用``.at'` 来代表所有长度为三个字母，且后两个字母为 `at` 的字符串。
+
+```{r}
+gsub(".at",  9, "The fat Cat sat on the mat.")
+```
+ 
+#### 4.1 锚点 {#anchors}
+
+锚点（Anchors）不是用来匹配字符，而是用来匹配字符中某些长度为零的文本特征，例如文本的起点和终点。
+ 
+- `^` 用于匹配每一行开头的空白字符。例如 `"^[Tt]he"` 表示在文本串起试阶段出现了 `The` 或者 `the`。
+
+```{r}
+gsub("[Tt]he",  9, "The fat Cat sat on the mat.")
+gsub("^[Tt]he",  9, "The fat Cat sat on the mat.")
+```
+
+- `$` 用于匹配每一行结尾的空白字符。该符号是为了确认观察到的模式来自于文本的末尾处。例如表达式 `"ab.$"` 表示字符串`ab`的右侧应该没有别的字符，即该字符串应该以`ab` 结尾：
+
+```{r}
+gsub("at.",  9, "The fat Cat sat on the mat.")
+gsub("at.$",  9, "The fat Cat sat on the mat.")
+```
+
+#### 4.2 析取 {#alternation}
+
+- `|` 析取（alternation）连接词把一个正则表达式分成了若干个小的正则表达式。当任何一个子表达式被找到时，匹配就找到了。例如 `"cat|sat"` 表示包含子字符串 `cat` 或者包含子字符串 `sat` 的字符串都符合要求。例如
+
+
+```{r}
+gsub("cat|sat",  9, "The fat cat sat on the mat.")
+```
+
+
+#### 4.3 重复 {#repetitions}
+
+正则表达式中有些元字符用于表示其中某些子模式可以被重复（repetitions）多少次。这些被用于重复的子模式直接位于该元字符之前。默认情况下，被重复的子模式仅包括该元字符之前的那一个字符。但是如果该元字符之前有一个圆括号，那么该元字符就应用于该圆括号包含的整个子模式。
+
+- `?` 表示其前面项目不存在或只能存在一次。例如 `"at[.]?"`表示字符串要包含两个字母 `at`，其后可以包含一个英文句号 `.`。比较：
+
+```{r}
+gsub("at[.]",  9, "The fat cat sat on the mat.")
+gsub("at[.]?",  9, "The fat cat sat on the mat.")
+```
+
+- `*` 表示其前面的项目可以被匹配零次或更多次。例如 `"m*t"` 表示字符串中 `m` 可以出现可以出现也可以不出现，但是 `t` 必须出现， 即所有包含 `t` 的文本：
+
+```{r}
+grep(pattern = "m*t", c("t", "tz",  "m", "mt", "mmtt"), value = TRUE)
+```
+
+- `+` 表示其前面的项目将被匹配一次或更多次。例如 `"m+.t` 表示 `m` 必须出现至少一次，然后是任何一个字符，再然后是 `t`:
+
+```{r}
+grep(pattern = "m+.t", c("t", "mt", "mzt",  "mmzt", "zt"), value = TRUE)
+```
+
+- `{n}` 表示其前面的项目将仅被匹配 `n` 次。例如，`"m{2}.t"` 表示 `m` 出现两次、然后是任意一个字符，然后是 `t`
+
+```{r}
+grep(pattern = "m{2}.t", c("t", "mt", "mzt",  "mmzt", "mmmzt", "zt"), value = TRUE)
+```
+
+- `{n, }` 表示其前面的项目将被匹配 `n` 次或更多次
+
+```{r}
+grep(pattern = "m{2,  }.t", c("t", "mt", "mzt",  "mmzt", "mmmzt",  "mmmmzt",  "zt"), value = TRUE)
+```
+
+#### 4.4 组合 {#grouping}
+
+- `(` 和 `)` 我们可以用圆括号在正则表达式之内定义一个子正则表达式模式（grouping）。这有利于只在一个子模式之内进行析取选择，或者对一个组合而不是一个单一字符进行重复。例如，正则表达式 `(c|s)at` 表示：字符串中应包含字符 `c` 或 `s`，随后是两个字符 `at`。例如：
+
+```{r}
+gsub("(c|s)at",  9, "The fat cat sat on the mat.")
+```
+
+再比如，`"(.at)+"` 表示长度为三，后两个字母为 `at` 的字符串可以重复一次或多次。例如
+
+```{r}
+gsub("(.at)+",  9, "The fat cat sat on the mat.")
+```
+
+#### 4.5 后向引用 {#Backreferences}
+
+R语言中还可以在一个正则表达式内向之前出现的子模式进行反向饮用（backreferences）。
+
+- `\n` 当我们在一个模式中用圆括号定界了一个子字符串时，则随后我们可以用一个特定的符号在随后引用这些子字符串：`\1` 表示第一个子字符串（从左向右）；`\2` 表示第二个字符串。
+
+例如， 正则表达式 `"c(..) s\\1"` 表示：第一个字母是 `c`, 随后是任意两个字符，再之后是一个空格，再往手是一个 `s`，最后是重复字母 `c` 后出现的两个字母：
+
+```{r}
+gsub("c(..) s\\1",  9, "The fat cat sat on the mat.")
+```
+
+### 5 参考资料 {#references}
+
+Sanchez, G. (2013). [*Handling and Processing Strings in R*](http://www.gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf). Berkeley.
+
+Murrell,  P. (2018). [Regular Expressions](https://www.stat.auckland.ac.nz/~paul/ItDT/HTML/node82.html). in *Introduction to Data Technologies* (Ch. 11)
+
+[Regular Expressions as used in R](http://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html)
+
+[https://www.regular-expressions.info](https://www.regular-expressions.info)
+
+

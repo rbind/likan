@@ -6,13 +6,13 @@ disable_comments: true
 ---
 
 ### Semester one (September - January)
-- [R for Modeling and Visualizing Data](/en/teach/model_vis_data/) <br>
+- [R for Statistics and Data Visualization](/en/teach/R-for-Statistics-Data-Visualization/) <br>
   Targeted Students: Postgraduate and PhD students <br>
-- [Foundations of Scientific Research](/en/teach/found_sci_res/) <br>
+- [Science and Scientific Research](/en/teach/Science-and-Scientific-Research/) <br>
   Targeted Students: Undergraduate students
 
 ### Semester two (March - July)
-- [Introduction to Cognitive Neuroscience](/en/teach/cogn_neurosci/) <br>
+- [Introduction to Cognitive Neuroscience](/en/teach/Introduction-to-Cognitive-Neuroscience/) <br>
   Targeted Students: Postgraduate and PhD students
-- [Statistics for the Behavioral Sciences](/en/teach/stat_behav_sci/) <br>
+- [Statistics for the Behavioral Sciences](/en/teach/Statistics-for-the-Behavioral-Sciences/) <br>
   Targeted Students: Undergraduate and Postgraduate students

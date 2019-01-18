@@ -1,0 +1,54 @@
+---
+title: "ggplot2 包 position_dodge 命令中参数 width 什么意思"
+author: "战立侃"
+date: '2018-05-19'
+lastmod: "2018-07-03"
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+
+
+<p><a href="https://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge">原文链接</a></p>
+<ol style="list-style-type: decimal">
+<li>看下面的图</li>
+</ol>
+<pre class="r"><code>df &lt;- data.frame(x = 1, y = 1, grp = c(&quot;A&quot;, &quot;B&quot;))
+DT::datatable(df, rownames = FALSE, width = 50, fillContainer = FALSE, options = list(pageLength = 8, searching = FALSE, info = FALSE, bLengthChange = FALSE))</code></pre>
+<div id="htmlwidget-1" style="width:50px;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","fillContainer":false,"data":[[1,1],[1,1],["A","B"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>x<\/th>\n      <th>y<\/th>\n      <th>grp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"searching":false,"info":false,"bLengthChange":false,"columnDefs":[{"className":"dt-right","targets":[0,1]}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<ol start="2" style="list-style-type: decimal">
+<li><code>ggplot2</code> 软件包中 <code>position_dodge</code> 命令的说明文档如下：</li>
+</ol>
+<pre><code>   width: Dodging width, when different to the width of the individual
+          elements. This is useful when you want to align narrow geoms</code></pre>
+<pre><code>     geom_bar(mapping = NULL, data = NULL, stat = &quot;count&quot;,
+       position = &quot;stack&quot;, ..., width = NULL, binwidth = NULL, na.rm = FALSE,
+       show.legend = NA, inherit.aes = TRUE)
+
+   width: Bar width. By default, set to 90% of the resolution of the
+          data.</code></pre>
+<pre><code>Compute the &quot;resolution&quot; of a numeric vector
+     The resolution is the smallest non-zero distance between adjacent
+     values.  If there is only one unique value, then the resolution is
+     defined to be one. If x is an integer vector, then it is assumed
+     to represent a discrete variable, and the resolution is 1.</code></pre>
+<pre><code>Details:
+
+     Note the the &quot;width&quot; and &quot;height&quot; of a text element are 0, so
+     stacking and dodging text will not work by default, and axis
+     limits are not automatically expanded to include all text.
+     Obviously, labels do have height and width, but they are physical
+     units, not data units. The amount of space they occupy on that
+     plot is not constant in data units: when you resize a plot, labels
+     stay the same size, but the size of the axes changes.</code></pre>

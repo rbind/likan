@@ -1,10 +1,22 @@
   <footer>
   {{ partial "foot_custom.html" . }}
   {{ partial "footer_highlightjs" . }}
-  {{ with .Site.Params.footer }}
-  <!-- <hr> ---> <!--- Remove horizontal line 20180205 by Likan Zhan --->
+
+  {{ if eq .URL "/" }}
+
+  {{ with .Site.Params.footer.home }}
+   <!--- <hr> ---> <!--- Remove horizontal line 20180205 by Likan Zhan --->
   <div class="copyright">{{ . | markdownify }}</div>
   {{ end }}
+
+  {{ else }}
+  {{ $section := default .Section ($.Scratch.Get "section") }}
+  {{ with (index $.Site.Params.footer $section) }}
+<!---  <hr style="border: 1px dashed gray;" /> --->
+  <div class="copyright">{{ . | markdownify }} </div>
+  {{ end }}
+  {{ end }}
+
   </footer>
   </article>
   {{ template "_internal/google_analytics.html" . }}

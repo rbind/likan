@@ -1,0 +1,68 @@
+---
+title: R 中字符串的查找和替换
+author: ~
+date: '2018-07-01'
+lastmod: "`r Sys.Date()`"
+slug: pattern-matching-and-replacement
+categories: []
+tags: []
+---
+
+1. 假如我们有一个名字为 `example` 的向量。该向量包含了五个纯文本元素。其具体内容如下：
+
+```{r, echo = TRUE}
+example <- c(
+"The quick brown fox jumps over the lazy dog",
+"The fat rat sat on a mat.",
+"The frog and a rat sat on a mat.",
+"The bat and a fat rat sat on a cat.",
+"Colorless green ideas sleep furiously",
+"The fat cat sat on the mat."
+)
+```
+
+R中有一系列函数用于查找和替换一个字符串，例如，如果我们想知道字符串 `.at` （有关该字符串的具体含义，请参看 `?"regex"`）在向量 `example` 中出现的情况 如`grep`、`grepl`、`regexpr`、`regexec`、`gregexpr`、`sub`、`gsub`等。，则我们有以下函数可以选择：
+
+2. `grep` 函数返回原始向量中包含所要字符串的成分的所在位置：
+
+```{r, results = "hold"}
+grep(".at", example)
+```
+3. `grepl` 函数返回的是与原始向量长度一致的逻辑向量，表示原始向量中每一个成分是否包含了所要搜索的字符串：
+
+```{r, results = "hold"}
+grepl(".at", example)
+```
+4. `regexpr` 函数返回的是一个与原始长度相同的一个数值型向量，向量的每个成分表示搜索字符串在原始向量每一个成分中的出现位置。其中 `-1` 表示该成分中不存在要搜索的字符串：
+
+```{r, results = "hold"}
+reg <- regexpr(".at", example)
+attributes(reg) <- NULL
+reg
+```
+
+5. `regexec` 函数返回的一个与原始向量长度一样的一个列表 (list)。列表的一个成分分别对应于原始向量的一个成分，用于表示搜索字符串在该成分中的**首次出现**位置：
+
+```{r, results = "hold"}
+reg <- regexec(".at", example)
+do.call(qpcR:::rbind.na, reg)
+```
+
+6. `gregexpr` 函数返回的一个与原始向量长度一样的一个列表 (list)。列表的一个成分分别对应于原始向量的一个成分，用于表示搜索字符串在该成分中**每次出现**的位置：
+
+```{r, results = "hold"}
+reg <- gregexpr(".at", example)
+do.call(qpcR:::rbind.na, reg)
+```
+
+7. `sub(pattern, replacement, x)` 函数返回的是把向量 `x` 中每个成分中**首次出现**的符合正则表达式的`pattern`替换为`replacement`：
+
+```{r, results = "hold"}
+sub(".at",  9, example)
+```
+
+8. `gsub(pattern, replacement, x)` 函数返回的是把向量 `x` 中每个成分中**所有出现**的符合正则表达式的`pattern`替换为`replacement`：
+
+```{r, results = "hold"}
+gsub(".at",  9, example)
+```

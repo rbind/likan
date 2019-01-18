@@ -1,6 +1,6 @@
 baseurl = "https://likan.info/"
 languageCode = "en-us"
-title = "Likan Zhan | 战立侃"
+title = "Zhan, Likan | 战立侃"
 theme = "hugo-ivy"
 googleAnalytics = "UA-112592341-1"
 disqusShortname = "https-likanzhan-github-io"
@@ -33,7 +33,7 @@ enableGitInfo = false
 
 [[menu.en]]
     name = "CV"
-    url = "/en/cv/LZhan"
+    url = "/en/cv-en/LZhanEN"
     weight = 3
 
 [[menu.en]]
@@ -78,7 +78,7 @@ enableGitInfo = false
 
 [[menu.cn]]
     name = "写作"
-    url = "http://probstatr.likan.info"
+    url = "http://appendix.likan.info/probstatr"
     weight = 5
 
 [[menu.cn]]
@@ -87,13 +87,17 @@ enableGitInfo = false
     weight = 6
 
 [[menu.cn]]
+    name = "简历"
+    url = "/cn/cv-cn/LZhanCN"
+    weight = 7
+
+[[menu.cn]]
     name = "English"
     url = "/en/"
-    weight = 7
+    weight = 8
 
 [params]
     description = "The personal website of Likan Zhan"
-    footer = "&copy; [Likan Zhan](/) 2017 - 2018 | [Github](https://github.com/likanzhan) | [Twitter](https://twitter.com/likanzhan) | [Weibo](http://weibo.com/1763551555)"
     disqusURL = "https://likanzhan.github.io"
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
     githubContentURL = "https://github.com/rbind/likan/edit/master/content/"
@@ -103,19 +107,24 @@ enableGitInfo = false
     highlightjsTheme = "github"
     dateFormat = "2006-01-02" # "2006-01-02, Mon, "
 
+[params.footer]
+    home = "Powered by [Hugo](https://gohugo.io) and [Blogdown](https://bookdown.org/yihui/blogdown/) &copy; [Likan Zhan](/) 2017 - 2019"
+    en   = "[<i class='far fa-envelope fa-1x'></i>](mailto:zhanlikan@hotmail.com) &middot; [<i class='fab fa-github fa-1x'></i>](https://github.com/likanzhan) &middot; [<i class='ai ai-google-scholar ai-1x'></i>](https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en) &middot; [<i class='ai ai-researchgate ai-1x'></i>](https://www.researchgate.net/profile/Likan_Zhan) &middot; [<i class='ai ai-academia ai-1x'></i>](https://blcu.academia.edu/likanzhan) &middot; [<i class='ai ai-orcid ai-1x'></i>](https://orcid.org/0000-0002-9275-3557) &middot; [<i class='fab fa-stack-overflow fa-1x'></i>](https://stackoverflow.com/users/2263930/likan-zhan) <br> Powered by [Hugo](https://gohugo.io) and [Blogdown](https://bookdown.org/yihui/blogdown/) &copy; [Likan Zhan](/) 2017 - 2019"
+    cn   = "[<i class='far fa-envelope fa-1x'></i>](mailto:zhanlikan@hotmail.com) &middot; [<i class='fab fa-github'></i>](https://github.com/likanzhan) &middot; [<i class='ai ai-google-scholar ai-1x'></i>](https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en) &middot; [<i class='ai ai-researchgate ai-1x'></i>](https://www.researchgate.net/profile/Likan_Zhan) &middot; [<i class='ai ai-academia ai-1x'></i>](https://blcu.academia.edu/likanzhan) &middot; [<i class='ai ai-orcid ai-1x'></i>](https://orcid.org/0000-0002-9275-3557) &middot; [<i class='fab fa-stack-overflow'></i>](https://stackoverflow.com/users/2263930/likan-zhan) &middot; [<i class='fab fa-weibo'></i>](http://weibo.com/1763551555) <br> Powered by [Hugo](https://gohugo.io) and [Blogdown](https://bookdown.org/yihui/blogdown/) &copy;  [Likan Zhan] (/) 2017 - 2019"
+
 [params.author]
-      en = "Likan Zhan"
-      cn = "战立侃"
+    en = "Likan Zhan"
+    cn = "战立侃"
 
 [params.logo.en]
-     img = "/logo/bodhi.png"
-     url = "/"
-     alt = "Likan Zhan"
-     tag = ""
+    img = "/logo/bodhi.png"
+    url = "/"
+    alt = "Likan Zhan"
+    tag = ""
 
 [params.lang.edit]
-     cn = "编辑"
+    cn = "编辑"
 [params.lang.license]
-     cn = "版权"
+    cn = "版权"
 [params.lang.subscribe]
-     cn = "订阅"
+    cn = "订阅"

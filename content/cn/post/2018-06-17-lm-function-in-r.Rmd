@@ -1,0 +1,301 @@
+---
+title: R 语言中的 lm 函数
+author: ~
+date: '2018-06-17'
+lastmod: "`r Sys.Date()`"
+output:
+  pdf_document:
+    includes:
+      in_header: header-for-chinese.tex
+    latex_engine: xelatex
+  blogdown::html_page:
+    fig_height: 4
+    fig_width: 8
+    toc: yes
+  html_document:
+    df_print: paged
+    toc: yes
+slug: lm-function-in-r
+categories: []
+tags: []
+---
+
+原文链接: [](http://madrury.github.io/jekyll/update/statistics/2016/07/20/lm-in-R.html)
+
+# 1.
+
+
+# 1. R 语言层次
+
+R 语言中一个最基本的函数是 `lm`, 即线性回归模型。线性回归的计算过程不是很复杂，涉及一些线性代数知识和一些简单的微积分知识。
+   
+# 2. C 语言层次
+
+
+# 3. Fortran 语言层次
+
+
+# 4. 附录{#appendix}
+
+## 4.1. R 语言代码
+
+### 4.1.1. R 语言中 `lm` 函数代码
+  
+  ```{r, echo = FALSE, comment = ""}
+  lm
+  ```
+
+### 4.1.2. R 语言 `lm.fit` 函数代码
+   ```{r, echo = FALSE,, comment = ""}
+   lm.fit
+   ```
+   
+### 4.1.3. R 语言 `lm.wfit` 函数代码
+   ```{r, echo = FALSE,, comment = ""}
+   lm.wfit
+   ```
+
+## 4.3. C 语言 `Cdqrls` 函数代码
+
+ - [代码地址](https://github.com/wch/r-source/blob/trunk/src/library/stats/src/lm.c)
+
+```
+/*  R : A Computer Language for Statistical Data Analysis
+ *
+ *  Copyright (C) 2012-2013  The R Core Team
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, a copy is available at
+ *  https://www.R-project.org/Licenses/.
+ */
+
+#include <R.h>
+#include <Rinternals.h>
+#include <R_ext/Applic.h>
+
+#include "statsR.h"
+
+#ifdef ENABLE_NLS
+#include <libintl.h>
+#define _(String) dgettext ("stats", String)
+#else
+#define _(String) (String)
+#endif
+
+/* A wrapper to replace
+
+    z <- .Fortran("dqrls",
+		  qr = x, n = n, p = p,
+		  y = y, ny = ny,
+		  tol = as.double(tol),
+		  coefficients = mat.or.vec(p, ny),
+		  residuals = y, effects = y, rank = integer(1L),
+		  pivot = 1L:p, qraux = double(p), work = double(2*p),
+                  PACKAGE="base")
+
+    with less allocation.
+*/
+
+
+SEXP Cdqrls(SEXP x, SEXP y, SEXP tol, SEXP chk)
+{
+    SEXP ans;
+    SEXP qr, coefficients, residuals, effects, pivot, qraux;
+    int n, ny = 0, p, rank, nprotect = 4, pivoted = 0;
+    double rtol = asReal(tol), *work;
+    Rboolean check = asLogical(chk);
+
+    ans = getAttrib(x, R_DimSymbol);
+    if(check && length(ans) != 2) error(_("'x' is not a matrix"));
+    int *dims = INTEGER(ans);
+    n = dims[0]; p = dims[1];
+    if(n) ny = (int)(XLENGTH(y)/n); /* y :  n x ny, or an n - vector */
+    if(check && n * ny != XLENGTH(y))
+	error(_("dimensions of 'x' (%d,%d) and 'y' (%d) do not match"),
+	      n,p, XLENGTH(y));
+
+    /* These lose attributes, so do after we have extracted dims */
+    if (TYPEOF(x) != REALSXP) {
+	PROTECT(x = coerceVector(x, REALSXP));
+	nprotect++;
+    }
+    if (TYPEOF(y) != REALSXP) {
+	PROTECT(y = coerceVector(y, REALSXP));
+	nprotect++;
+    }
+
+    double *rptr = REAL(x);
+    for (R_xlen_t i = 0 ; i < XLENGTH(x) ; i++)
+	if(!R_FINITE(rptr[i])) error(_("NA/NaN/Inf in '%s'"), "x");
+
+    rptr = REAL(y);
+    for (R_xlen_t i = 0 ; i < XLENGTH(y) ; i++)
+	if(!R_FINITE(rptr[i])) error(_("NA/NaN/Inf in '%s'"), "y");
+
+    const char *ansNms[] = {"qr", "coefficients", "residuals", "effects",
+			    "rank", "pivot", "qraux", "tol", "pivoted", ""};
+    PROTECT(ans = mkNamed(VECSXP, ansNms));
+    SET_VECTOR_ELT(ans, 0, qr = shallow_duplicate(x));
+    coefficients = (ny > 1) ? allocMatrix(REALSXP, p, ny) : allocVector(REALSXP, p);
+    PROTECT(coefficients);
+    SET_VECTOR_ELT(ans, 1, coefficients);
+    SET_VECTOR_ELT(ans, 2, residuals = shallow_duplicate(y));
+    SET_VECTOR_ELT(ans, 3, effects = shallow_duplicate(y));
+    PROTECT(pivot = allocVector(INTSXP, p));
+    int *ip = INTEGER(pivot);
+    for(int i = 0; i < p; i++) ip[i] = i+1;
+    SET_VECTOR_ELT(ans, 5, pivot);
+    PROTECT(qraux = allocVector(REALSXP, p));
+    SET_VECTOR_ELT(ans, 6, qraux);
+    SET_VECTOR_ELT(ans, 7, tol);
+
+    work = (double *) R_alloc(2 * p, sizeof(double));
+    F77_CALL(dqrls)(REAL(qr), &n, &p, REAL(y), &ny, &rtol,
+		    REAL(coefficients), REAL(residuals), REAL(effects),
+		    &rank, INTEGER(pivot), REAL(qraux), work);
+    SET_VECTOR_ELT(ans, 4, ScalarInteger(rank));
+    for(int i = 0; i < p; i++)
+	if(ip[i] != i+1) { pivoted = 1; break; }
+    SET_VECTOR_ELT(ans, 8, ScalarLogical(pivoted));
+    UNPROTECT(nprotect);
+
+    return ans;
+}
+```
+
+## 4.4. Fortran 语言 `dqrls` 函数代码
+
+ - [代码地址](https://github.com/wch/r-source/blob/trunk/src/appl/dqrls.f)
+
+```
+c
+c     dqrfit is a subroutine to compute least squares solutions
+c     to the system
+c
+c     (1)               x * b = y
+c
+c     which may be either under-determined or over-determined.
+c     the user must supply a tolerance to limit the columns of
+c     x used in computing the solution.  in effect, a set of
+c     columns with a condition number approximately bounded by
+c     1/tol is used, the other components of b being set to zero.
+c
+c     on entry
+c
+c        x      double precision(n,p).
+c               x contains n-by-p coefficient matrix of
+c               the system (1), x is destroyed by dqrfit.
+c
+c        n      the number of rows of the matrix x.
+c
+c        p      the number of columns of the matrix x.
+c
+c        y      double precision(n,ny)
+c               y contains the right hand side(s) of the system (1).
+c
+c        ny     the number of right hand sides of the system (1).
+c
+c        tol    double precision
+c               tol is the nonnegative tolerance used to
+c               determine the subset of columns of x included
+c               in the solution.  columns are pivoted out of
+c               decomposition if
+c
+c        jpvt   integer(p)
+c               the values in jpvt are permuted in the same
+c               way as the columns of x.  this can be useful
+c               in unscrambling coefficients etc.
+c
+c        work   double precision(2*p)
+c               work is an array used by dqrdc2 and dqrsl.
+c
+c     on return
+c
+c        x      contains the output array from dqrdc2.
+c               namely the qr decomposition of x stored in
+c               compact form.
+c
+c        b      double precision(p,ny)
+c               b contains the solution vectors with rows permuted
+c               in the same way as the columns of x.  components
+c               corresponding to columns not used are set to zero.
+c
+c        rsd    double precision(n,ny)
+c               rsd contains the residual vectors y-x*b.
+c
+c        qty    double precision(n,ny)     t
+c               qty contains the vectors  q y.   note that
+c               the initial p elements of this vector are
+c               permuted in the same way as the columns of x.
+c
+c        k      integer
+c               k contains the number of columns used in the
+c               solution.
+c
+c        jpvt   has its contents permuted as described above.
+c
+c        qraux  double precision(p)
+c               qraux contains auxiliary information on the
+c               qr decomposition of x.
+c
+c
+c     on return the arrays x, jpvt and qraux contain the
+c     usual output from dqrdc, so that the qr decomposition
+c     of x with pivoting is fully available to the user.
+c     in particular, columns jpvt(1), jpvt(2),...,jpvt(k)
+c     were used in the solution, and the condition number
+c     associated with those columns is estimated by
+c     abs(x(1,1)/x(k,k)).
+c
+c     dqrfit uses the linpack routines dqrdc and dqrsl.
+c
+      subroutine dqrls(x,n,p,y,ny,tol,b,rsd,qty,k,jpvt,qraux,work)
+      integer n,p,ny,k,jpvt(p)
+      double precision x(n,p),y(n,ny),tol,b(p,ny),rsd(n,ny),
+     .                 qty(n,ny),qraux(p),work(p)
+c
+c     internal variables.
+c
+      integer info,j,jj,kk
+c
+c     reduce x.
+c
+      call dqrdc2(x,n,n,p,tol,k,qraux,jpvt,work)
+c
+c     solve the truncated least squares problem for each rhs.
+c
+      if(k .gt. 0) then
+         do 20 jj=1,ny
+            call dqrsl(x,n,n,k,qraux,y(1,jj),rsd(1,jj),qty(1,jj),
+     1           b(1,jj),rsd(1,jj),rsd(1,jj),1110,info)
+   20       continue
+      else
+         do 35 i=1,n
+            do 30 jj=1,ny
+                rsd(i,jj) = y(i,jj)
+   30       continue
+   35   continue
+      endif
+c
+c     set the unused components of b to zero.
+c
+      kk = k + 1
+      do 50 j=kk,p
+         do 40 jj=1,ny
+            b(j,jj) = 0.d0
+   40    continue
+   50 continue
+      return
+      end
+
+```

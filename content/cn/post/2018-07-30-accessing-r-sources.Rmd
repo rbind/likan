@@ -1,0 +1,63 @@
+---
+title: 如何查看 R 函数的源代码
+author: ~
+date: '2018-08-27'
+slug: accessing-r-sources
+categories: []
+tags: []
+---
+
+所谓开源就是软件的源代码是对所有人开放的。R 是一种开源软件。那么其源代码如何查看呢？
+
+1. 查看一个函数的源代码与调用一个函数类似。R语言中的函数可以分为两类没导出和导出（export）的两类。当载入（load）一个R扩展包时，一个已经导出的函数将被加入到当前搜索路径下（search path），可以直接调用。没有载入该扩展包时，也可以通过'软件包::函数'（双冒号）的方式调用该函数。而在载入一个R扩展包时，没有导出的函数将只存在于命名空间（namespace）而不存在于当前搜索路径中，所以不能直接调用，而需要用'软件包名称:::函数名称'的方式调用该函数（三冒号）。要查看一个已经载入的软件包中某个导出函数的源代码，在当前工作区中输入该函数的名称就可以了。例如：
+```{r}
+matrix
+```
+
+2. 如果在工作区输入函数名称时输出的结果是 `UseMethod(‘函数名称’)`，这说明该函数是一个范型函数（generic function），其具体计算方法会因为输入类别（class）的不同而不同。例如：
+```{r}
+plot
+```
+此时可用 `methods()` 函数查看该范型函数的所有运算方法（注意：该输出结果可能会因为载入扩展包的不同而不同，因为软件包可能对范型函数定义了新的计算方法），例如：
+```{r}
+methods(plot)
+```
+列表中不含星号的是已经导出、包含在当前搜索路径的范型函数的范型函数计算方法，而包含星号的是没有导出、不包含在当前搜索路径下的范型函数计算方法。要查看不带星号的函数的计算方法，与方法1类似，在工作区输入该函数就可以了，例如：
+```{r, eval = FALSE}
+plot.default
+```
+
+如果某范型函数计算方法包含星号，没有导出，那么可用 `getAnywhere()`其源代码，如:
+```{r, eval = FALSE}
+getAnywhere(plot.density)
+```
+如果知道函数所在R软件包，也可用三冒号查看，例如
+```{r, eval = FALSE}
+stats:::plot.density
+```
+
+当一个函数的类型是 S4 而不是 S3 时，还可以通过 `getClass()`、`getGeneric()`、 `getMethods()` 等查看函数的源代码。例如，R 包中 `mle` 对象在 `show()` 方法中计算方式的源代码为：
+```{r}
+library("stats4")
+getMethod("show", "mle")
+```
+
+4. 上述方法展示的源代码中备注信息通常是删除掉的。要查看某函数的完整的源代码，需要到 [CRAN](http://cran.r-project.org/mirrors.html) 网站下载源代码版的R或包含该函数的源代码版R扩展包。R基础安装包中函数的源代码存储在 `R_HOME/src/library/PackageName/R/` 文件夹下。而R扩展包有函数的源代码通常存储在解压缩后的 `PackageName/R` 文件夹下。
+
+5. R语言源代码中下面一些函数：`.C()`、`.Call()`、`.Fortran()`、`.External()`、 `.Internal()`、`.Primitive()`是用来调用编译代码（compiled code）中的接入点（entry points）的。编译代码共享对象（Shared Object）、静态库(Static library)、动态链接库（Dynamic Link Library）等。所以要理解包含上述函数的源代码，需要查看这些编译代码的源代码。
+
+要查看这些编译后代码（如C，C++，或 Fortran）的源代码，也需要下载R语言和相关软件包的源代码版。R和R标准包的编译代码源文件存储在 `$R_HOME/src/` 路径下。其中子目录 `$R_HOME/src/main/` 内存储的代码最重要。如果R的调用函数是 `.Internal()` 或 `.Primitive()`，那么我们可以在 `$R_HOME/src/main/names.c` 文件中寻找调用的接入点（entry point）。其他R软件包的编译代码源文件存储在 `PackageName/src/` 路径下。例如:
+```{r}
+sum
+```
+上述结果说明函数 `sum` 中只有一个函数调用 `.Internal()`，该函数调用的内部接入点是 `sum()`。接下来我们到 `names.c` 文件中就可以找到下面几行：
+```{r, eval = FALSE}
+/* 省略掉很多行 */
+{"sum",		do_summary,	0,	1,	-1,	{PP_FUNCALL, PREC_FN,	0}},
+/* 省略掉很多行 */
+```
+这行代码告诉我们该函数的编译源代码运行的是一个叫 `do_summary` 的函数。该函数存放同一目录下的 `summary.c` 文件中。如果函数存放的文件名称不明显，则可以在 `$R_HOME/src/` 路径下用 `grep()` 函数进行搜索。
+
+6. 参考文献
+
+- Ligges, U. (2006). Accessing the Sources. *R News: The Newsletter of the R Project, 6*, 43-45. 
