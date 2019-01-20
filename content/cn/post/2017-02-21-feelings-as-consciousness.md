@@ -23,7 +23,7 @@ show_toc: true
 
 <a  name="fig1">
 <figure align="middle">
-<img src="http://www.pnas.org/content/early/2017/02/14/1619316114/F1.large.jpg" alt="Mountain View" style="width:600px">
+<img src="https://www.pnas.org/content/early/2017/02/14/1619316114/F1.large.jpg" alt="Mountain View" style="width:600px">
 <figcaption>图1.两种情绪情感理论</figcaption>
 </figure>
 </a>
@@ -36,7 +36,7 @@ show_toc: true
 
 <a  name="fig2">
 <figure align="middle">
-<img src="http://www.pnas.org/content/early/2017/02/14/1619316114/F2.large.jpg" alt="Mountain View" style="width:600px">
+<img src="https://www.pnas.org/content/early/2017/02/14/1619316114/F2.large.jpg" alt="Mountain View" style="width:600px">
 <figcaption>图2.意识涉及的脑部区域</figcaption>
 </figure>
 </a>
@@ -57,7 +57,7 @@ show_toc: true
 
 <a  name="fig3">
 <figure align="middle">
-<img src="http://www.pnas.org/content/early/2017/02/14/1619316114/F3.large.jpg" alt="Mountain View" style="width:600px">
+<img src="https://www.pnas.org/content/early/2017/02/14/1619316114/F3.large.jpg" alt="Mountain View" style="width:600px">
 <figcaption>图3.意识的一阶和二阶模型</figcaption>
 </figure>
 </a>
@@ -68,7 +68,7 @@ show_toc: true
 
 <a  name="fig4">
 <figure align="middle">
-<img src="http://www.pnas.org/content/early/2017/02/14/1619316114/F4.large.jpg" alt="Mountain View" style="width:600px">
+<img src="https://www.pnas.org/content/early/2017/02/14/1619316114/F4.large.jpg" alt="Mountain View" style="width:600px">
 <figcaption>图4.意识的三阶模型</figcaption>
 </figure>
 </a>
@@ -80,7 +80,7 @@ show_toc: true
 
 <a  name="fig5">
 <figure align="middle">
-<img src="http://www.pnas.org/content/early/2017/02/14/1619316114/F4.large.jpg" alt="Mountain View" style="width:600px">
+<img src="https://www.pnas.org/content/early/2017/02/14/1619316114/F4.large.jpg" alt="Mountain View" style="width:600px">
 <figcaption>图5.修正后的三阶情绪意识模型</figcaption>
 </figure>
 </a>

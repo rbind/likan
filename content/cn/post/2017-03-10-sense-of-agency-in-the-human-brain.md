@@ -25,7 +25,7 @@ tags: [Agency, Neuroscience]
 
 <a  name="fig1">
 <figure align="middle">
-<img src="http://webimages.netlify.com/nrn.2017.14-f1.jpg" alt="主体感的外显测量" style = "width:600px">
+<img src="https://webimages.netlify.com/nrn.2017.14-f1.jpg" alt="主体感的外显测量" style = "width:600px">
 <figcaption> 图1. 主体感的外显测量 </figcaption>
 </figure>
 </a>
@@ -34,7 +34,7 @@ tags: [Agency, Neuroscience]
 
 <a  name="fig2">
 <figure align="middle">
-<img src="http://webimages.netlify.com/nrn.2017.14-f2.jpg" alt="主体感的内隐测量" style = "width:600px">
+<img src="https://webimages.netlify.com/nrn.2017.14-f2.jpg" alt="主体感的内隐测量" style = "width:600px">
 <figcaption> 图2. 主体感的内隐测量 </figcaption>
 </figure>
 </a>
@@ -59,7 +59,7 @@ b. 另一种理论认为，无论结果怎样，只要被试能在不同的行�
 
 <a  name="fig3">
 <figure align="middle">
-<img src="http://webimages.netlify.com/nrn.2017.14-f3.jpg" alt="主体感的比较模型" style = "width:600px">
+<img src="https://webimages.netlify.com/nrn.2017.14-f3.jpg" alt="主体感的比较模型" style = "width:600px">
 <figcaption> 图3. 主体感的比较模型 </figcaption>
 </figure>
 </a>
@@ -68,7 +68,7 @@ b. 另一种理论认为，无论结果怎样，只要被试能在不同的行�
 
 <a  name="fig4">
 <figure align="middle">
-<img src="http://webimages.netlify.com/nrn.2017.14-f4.jpg" alt="主体感的两个信息来源" style = "width:600px">
+<img src="https://webimages.netlify.com/nrn.2017.14-f4.jpg" alt="主体感的两个信息来源" style = "width:600px">
 <figcaption> 图4. 主体感的两个信息来源 </figcaption>
 </figure>
 </a>
@@ -87,7 +87,7 @@ b. 另一种理论认为，无论结果怎样，只要被试能在不同的行�
 
 <a  name="fig5">
 <figure align="middle">
-<img src="http://webimages.netlify.com/nrn.2017.14-f5.jpg" alt="强迫降低被试的主体感" style = "width:600px">
+<img src="https://webimages.netlify.com/nrn.2017.14-f5.jpg" alt="强迫降低被试的主体感" style = "width:600px">
 <figcaption> 图5. 强迫降低被试的主体感 </figcaption>
 </figure>
 </a>

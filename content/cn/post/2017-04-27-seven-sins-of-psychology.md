@@ -8,7 +8,7 @@ tags: [Sins, Book]
 
 > 该书适合任何对科学如何自我修复感兴趣的人。它应该被列为大学研究方法课程的必读书目。
 
-![](http://press.princeton.edu/images/k10970.gif)
+![](https://press.princeton.edu/images/k10970.gif)
 
 # 1. 关于作者
 作者 Chris Chambers 教授就职于英国卡迪夫大学 (Cardiff University) 心理学院。Chambers 教授是一名认知神经科学家和心理学家。他也是一名变革科学研究过程，以应对科学领域可重复性危机的英雄人物 (Munafo等, 2017)。
