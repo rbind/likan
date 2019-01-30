@@ -1,0 +1,774 @@
+---
+title: "A better cross-lagged panel model, from Hamaker et al. (2015)"
+author: "Likan Zhan"
+date: "2019-01-31"
+bibliography: [./2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015-appendixes/bibliography.bib]
+link-citations: yes
+csl: [./2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015-appendixes/apa-old-doi-prefix.csl]
+output:
+  html_document:
+    toc: true
+---
+
+
+
+<blockquote>
+<p><strong>NOTE</strong>: This post is copied from John C. Flournoy’s post <a href="https://jflournoy.github.io/2017/10/20/riclpm-lavaan-demo/#hamaker_critique_2015">A better cross-lagged panel model, from Hamaker et al. (2015)</a> with minor modifications. Copyright belongs to the orginal author.</p>
+</blockquote>
+<p>This walk-through explains, briefly, why and how to run a RI-CLPM in R.</p>
+<div id="critique-of-cross-lagged-pannel-models" class="section level1">
+<h1>Critique of cross-lagged pannel models</h1>
+<p>This post summarizes critiques of the traditional cross-lagged panel model (CLPM), and an improved model by Hamaker, Kuiper, and Grasman <span class="citation">Hamaker, Kuiper, &amp; Grasman (<a href="#ref-RN417">2015</a>)</span>.</p>
+<p>The primary point Hamaker and colleagues make regarding the CLPM is that it assumes that there are “no trait-like individual differences that endure.” That is, looking at the structure of a CLPM it is clear that individual-level stability must be accounted for entirely by the auto-regressive path between waves. As they put it, it imposes an assumption that there is no between-subject variance of time-invariant, trait-like stability, but only temporal stability, wave to wave, of subjects around the mean score for any particular wave.</p>
+<!--more-->
+</div>
+<div id="ri-clpm" class="section level1">
+<h1>RI-CLPM</h1>
+<p>A key insight of the paper is that “we need to separate the <em>within-person level</em> from the <em>between-person level</em>” (p. 104). The model they propose, the Random Intercept CLPM (RI-CLPM) separates each person’s score on a variable at each wave into the group mean for that wave (<span class="math inline">\(\mu_{t}, \pi_{t}\)</span>), an individual’s stable score over all waves (the random intercept; <span class="math inline">\(\kappa_{i}, \omega_{i}\)</span>) and then an individual level deviation at each wave from the score expected by adding the group-wave-mean and individual trait (<span class="math inline">\(p_{it}, q_{it}\)</span>).</p>
+<p>The model looks like this:</p>
+<div class="figure">
+<img src="../2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015-appendixes/hamaker-diagram.png" alt="RI-CLPM Diagram" />
+<p class="caption">RI-CLPM Diagram</p>
+</div>
+<p>Effectively, now, the paths <span class="math inline">\(\alpha_{t}\)</span> (or <span class="math inline">\(\delta_{t}\)</span>) between <span class="math inline">\(p_{it}\)</span> (or <span class="math inline">\(q_{it}\)</span>) and <span class="math inline">\(p_{i(t+1)}\)</span> (or <span class="math inline">\(q_{i(t+1)}\)</span>) no longer capture rank-order stability of individuals, but rather a within-person carry-over effect.</p>
+<blockquote>
+<p>If it is positive, it implies that occasions on which a person scored above his or her expected score are likely to be followed by occasions on which he or she still scores above the expected score again, and conversely. <span class="citation">(Hamaker et al., <a href="#ref-RN417">2015</a>, p. 104)</span></p>
+</blockquote>
+<p>More importantly, since <span class="math inline">\(\kappa\)</span> and <span class="math inline">\(\omega\)</span> separate out individual-level stability, the cross-lagged paths <span class="math inline">\(\beta_{t}\)</span> and <span class="math inline">\(\gamma_{t}\)</span> are now straightforward to interpret as the within person effect of one variable on the subsequent measurement of a second variable. This interpretive boost is allowed now because, for example, <span class="math inline">\(\beta_{t}\)</span> is the estimate of the additional explanatory power of <em>deviations from trait-stable levels</em> on variable <span class="math inline">\(y_{t}\)</span> on the <em>deviations</em> of the observed variable <span class="math inline">\(x_{t+1}\)</span> from the group mean and individual trait (<span class="math inline">\(\mu_{t+1} + \kappa_{i}\)</span>) after accounting for the expected within-person carry-over effect, <span class="math inline">\(\alpha_{t}\)</span>.</p>
+<p>See the paper (Figure 2) for a demonstration of how terribly traditional CLPM performs when you have a data generating process that matches the RI-CLPM – that is, when you have stable individual differences.</p>
+</div>
+<div id="implemmenting-the-ri-clpm-in-r" class="section level1">
+<h1>Implemmenting the RI-CLPM in R</h1>
+<p>First, make sure we can load the necessary packages. If you haven’t installed them, I’ve included (and commented out) the lines that will allow you to do that. The corresponding git repository is <a href="https://github.com/jflournoy/misc-r-projects/tree/master/lavaan_ri-clpm">here</a>.</p>
+<pre class="r"><code>#if you need to install anything, uncomment the below install lines for now
+#install.packages(&#39;lavaan&#39;)
+#install.packages(&#39;tidyverse&#39;)
+suppressWarnings(require(lavaan))
+suppressMessages(suppressWarnings(require(tidyverse)))</code></pre>
+<div id="some-data" class="section level2">
+<h2>Some data</h2>
+<p>Now, we need some data. I’m using a data set presented on at a methods symposium at SRCD in 1997. Supporting documentation can be found <a href="srcdmeth.pdf">in this pdf</a>. Data and code for importing it was helpfully provided by <a href="http://twitter.com/hardsci">Sanjay Srivastava</a>.</p>
+<p>The variables we’re considering are a measure of antisocial behavior (<code>anti</code>) and reading recognition (<code>read</code>). See the docs for descriptions of the other variables. And for the purpose of the model fitting below, <code>x &lt;- anit</code> and <code>y &lt;- read</code>. Following are some descriptions of the raw data:</p>
+<pre class="r"><code>antiread &lt;- read.table(&quot;2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015-appendixes/srcddata.dat&quot;,
+                       na.strings = c(&quot;999.00&quot;),
+                       col.names = c(&quot;anti1&quot;, &quot;anti2&quot;, &quot;anti3&quot;, &quot;anti4&quot;,
+                                     &quot;read1&quot;, &quot;read2&quot;, &quot;read3&quot;, &quot;read4&quot;,
+                                     &quot;gen&quot;, &quot;momage&quot;, &quot;kidage&quot;, &quot;homecog&quot;,
+                                     &quot;homeemo&quot;, &quot;id&quot;)
+) %&gt;%
+  rename(x1 = anti1, x2 = anti2, x3 = anti3, x4 = anti4,
+         y1 = read1, y2 = read2, y3 = read3, y4 = read4) %&gt;%
+  select(matches(&#39;[xy][1-4]&#39;))
+
+knitr::kable(summary(antiread), format = &#39;markdown&#39;)</code></pre>
+<table>
+<colgroup>
+<col width="2%" />
+<col width="11%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">x1</th>
+<th align="left">x2</th>
+<th align="left">x3</th>
+<th align="left">x4</th>
+<th align="left">y1</th>
+<th align="left">y2</th>
+<th align="left">y3</th>
+<th align="left">y4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Min. :0.000</td>
+<td align="left">Min. : 0.000</td>
+<td align="left">Min. : 0.000</td>
+<td align="left">Min. : 0.000</td>
+<td align="left">Min. :0.100</td>
+<td align="left">Min. :1.600</td>
+<td align="left">Min. :2.200</td>
+<td align="left">Min. :2.500</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">1st Qu.:0.000</td>
+<td align="left">1st Qu.: 0.000</td>
+<td align="left">1st Qu.: 0.000</td>
+<td align="left">1st Qu.: 0.000</td>
+<td align="left">1st Qu.:1.800</td>
+<td align="left">1st Qu.:3.300</td>
+<td align="left">1st Qu.:4.200</td>
+<td align="left">1st Qu.:4.925</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Median :1.000</td>
+<td align="left">Median : 1.500</td>
+<td align="left">Median : 1.000</td>
+<td align="left">Median : 1.500</td>
+<td align="left">Median :2.300</td>
+<td align="left">Median :4.100</td>
+<td align="left">Median :5.000</td>
+<td align="left">Median :5.800</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Mean :1.662</td>
+<td align="left">Mean : 2.027</td>
+<td align="left">Mean : 1.828</td>
+<td align="left">Mean : 2.061</td>
+<td align="left">Mean :2.523</td>
+<td align="left">Mean :4.076</td>
+<td align="left">Mean :5.005</td>
+<td align="left">Mean :5.774</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">3rd Qu.:3.000</td>
+<td align="left">3rd Qu.: 3.000</td>
+<td align="left">3rd Qu.: 3.000</td>
+<td align="left">3rd Qu.: 3.000</td>
+<td align="left">3rd Qu.:3.000</td>
+<td align="left">3rd Qu.:4.900</td>
+<td align="left">3rd Qu.:5.800</td>
+<td align="left">3rd Qu.:6.675</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Max. :9.000</td>
+<td align="left">Max. :10.000</td>
+<td align="left">Max. :10.000</td>
+<td align="left">Max. :10.000</td>
+<td align="left">Max. :7.200</td>
+<td align="left">Max. :8.200</td>
+<td align="left">Max. :8.400</td>
+<td align="left">Max. :8.300</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">NA’s :31</td>
+<td align="left">NA’s :108</td>
+<td align="left">NA’s :111</td>
+<td align="left">NA</td>
+<td align="left">NA’s :30</td>
+<td align="left">NA’s :130</td>
+<td align="left">NA’s :135</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>antiread %&gt;%
+  select(-x4,-y4) %&gt;%
+  mutate(pid = 1:n()) %&gt;%
+  gather(key, value, -pid) %&gt;%
+  extract(col = key, into = c(&#39;var&#39;, &#39;wave&#39;), regex = &#39;(\\w)(\\d)&#39;) %&gt;%
+  ggplot(aes(x = value)) +
+  geom_density(alpha = 1) +
+  facet_grid(wave~var, scales = &#39;free&#39;) +
+  theme_classic()</code></pre>
+<pre><code>## Warning: Removed 299 rows containing non-finite values (stat_density).</code></pre>
+<p><img src="/en/post/2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015_files/figure-html/Variable%20density-1.png" width="576" /></p>
+<pre class="r"><code>antireadLong &lt;- antiread %&gt;%
+  select(-x4,-y4) %&gt;%
+  mutate(pid = 1:n()) %&gt;%
+  gather(key, value, -pid) %&gt;%
+  extract(col = key, into = c(&#39;var&#39;, &#39;wave&#39;), regex = &#39;(\\w)(\\d)&#39;)
+
+antireadLong %&gt;%
+  ggplot(aes(x = wave, y = value, color = var, group = var)) +
+  geom_point(position = position_jitter(w = .2), alpha = .1) +
+  geom_line(stat = &#39;identity&#39;, aes(group = interaction(var, pid)), alpha = .04) +
+  geom_line(stat = &#39;smooth&#39;, method = &#39;lm&#39;, size = 1) +
+  theme_classic()</code></pre>
+<pre><code>## Warning: Removed 299 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 299 rows containing missing values (geom_point).</code></pre>
+<pre><code>## Warning: Removed 271 rows containing missing values (geom_path).</code></pre>
+<p><img src="/en/post/2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015_files/figure-html/Variables%20over%20time-1.png" width="576" /></p>
+</div>
+<div id="fitting-a-ri-clpm" class="section level2">
+<h2>Fitting a RI-CLPM</h2>
+<p>In the below <code>lavaan</code> code, I’ll be using the notation from the diagram. I am explicitly specifying everything in the diagram, which is why in the call to <code>lavaan</code> I set a bunch of <code>auto</code> options to false. This is because often lavaan will try to automatically estimate things that you don’t usually write out but often want estimated, like residuals. Because this model is unorthodox, I want to be as explicit as possible.</p>
+<p>The lavaan code below uses syntax that can be found in their help docs for the <a href="http://lavaan.ugent.be/tutorial/syntax1.html">basic stuff</a> as well as the more <a href="http://lavaan.ugent.be/tutorial/syntax2.html">advanced</a> labeling and constraining.</p>
+<pre class="r"><code>riclpmModel &lt;-
+&#39;
+#Note, the data contain x1-3 and y1-3
+#Latent mean Structure with intercepts
+
+kappa =~ 1*x1 + 1*x2 + 1*x3
+omega =~ 1*y1 + 1*y2 + 1*y3
+
+x1 ~ mu1*1 #intercepts
+x2 ~ mu2*1
+x3 ~ mu3*1
+y1 ~ pi1*1
+y2 ~ pi2*1
+y3 ~ pi3*1
+
+kappa ~~ kappa #variance
+omega ~~ omega #variance
+kappa ~~ omega #covariance
+
+#laten vars for AR and cross-lagged effects
+p1 =~ 1*x1 #each factor loading set to 1
+p2 =~ 1*x2
+p3 =~ 1*x3
+q1 =~ 1*y1
+q2 =~ 1*y2
+q3 =~ 1*y3
+
+#Later, we may constrain autoregression and cross-lagged
+#effects to be the same across both lags.
+p3 ~ alpha3*p2 + beta3*q2
+p2 ~ alpha2*p1 + beta2*q1
+
+q3 ~ delta3*q2 + gamma3*p2
+q2 ~ delta2*q1 + gamma2*p1
+
+p1 ~~ p1 #variance
+p2 ~~ u2*p2
+p3 ~~ u3*p3
+q1 ~~ q1 #variance
+q2 ~~ v2*q2
+q3 ~~ v3*q3
+
+p1 ~~ q1 #p1 and q1 covariance
+p2 ~~ q2 #p2 and q2 covariance
+p3 ~~ q3 #p2 and q2 covariance&#39;
+
+fit &lt;- lavaan(riclpmModel, data = antiread,
+              missing = &#39;ML&#39;, #for the missing data!
+              int.ov.free = F,
+              int.lv.free = F,
+              auto.fix.first = F,
+              auto.fix.single = F,
+              auto.cov.lv.x = F,
+              auto.cov.y = F,
+              auto.var = F)
+summary(fit, standardized = T)</code></pre>
+<pre><code>## lavaan 0.6-3 ended normally after 83 iterations
+## 
+##   Optimization method                           NLMINB
+##   Number of free parameters                         26
+## 
+##   Number of observations                           405
+##   Number of missing patterns                        14
+## 
+##   Estimator                                         ML
+##   Model Fit Test Statistic                       3.213
+##   Degrees of freedom                                 1
+##   P-value (Chi-square)                           0.073
+## 
+## Parameter Estimates:
+## 
+##   Information                                 Observed
+##   Observed information based on                Hessian
+##   Standard Errors                             Standard
+## 
+## Latent Variables:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   kappa =~                                                              
+##     x1                1.000                               1.110    0.671
+##     x2                1.000                               1.110    0.548
+##     x3                1.000                               1.110    0.571
+##   omega =~                                                              
+##     y1                1.000                               0.734    0.794
+##     y2                1.000                               0.734    0.679
+##     y3                1.000                               0.734    0.622
+##   p1 =~                                                                 
+##     x1                1.000                               1.226    0.741
+##   p2 =~                                                                 
+##     x2                1.000                               1.692    0.836
+##   p3 =~                                                                 
+##     x3                1.000                               1.594    0.821
+##   q1 =~                                                                 
+##     y1                1.000                               0.562    0.608
+##   q2 =~                                                                 
+##     y2                1.000                               0.794    0.734
+##   q3 =~                                                                 
+##     y3                1.000                               0.924    0.783
+## 
+## Regressions:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   p3 ~                                                                  
+##     p2      (alp3)    0.353    0.078    4.549    0.000    0.374    0.374
+##     q2      (bet3)   -0.274    0.154   -1.788    0.074   -0.137   -0.137
+##   p2 ~                                                                  
+##     p1      (alp2)    0.162    0.169    0.961    0.336    0.118    0.118
+##     q1      (bet2)   -0.090    0.457   -0.196    0.845   -0.030   -0.030
+##   q3 ~                                                                  
+##     q2      (dlt3)    0.738    0.073   10.048    0.000    0.634    0.634
+##     p2      (gmm3)   -0.008    0.034   -0.241    0.810   -0.015   -0.015
+##   q2 ~                                                                  
+##     q1      (dlt2)    0.374    0.350    1.068    0.286    0.265    0.265
+##     p1      (gmm2)   -0.058    0.079   -0.733    0.464   -0.089   -0.089
+## 
+## Covariances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   kappa ~~                                                              
+##     omega            -0.118    0.157   -0.754    0.451   -0.145   -0.145
+##   p1 ~~                                                                 
+##     q1                0.017    0.160    0.107    0.915    0.025    0.025
+##  .p2 ~~                                                                 
+##    .q2               -0.117    0.114   -1.025    0.305   -0.091   -0.091
+##  .p3 ~~                                                                 
+##    .q3               -0.115    0.071   -1.624    0.104   -0.111   -0.111
+## 
+## Intercepts:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .x1       (mu1)    1.662    0.082   20.217    0.000    1.662    1.005
+##    .x2       (mu2)    1.985    0.103   19.189    0.000    1.985    0.981
+##    .x3       (mu3)    1.898    0.107   17.658    0.000    1.898    0.977
+##    .y1       (pi1)    2.523    0.046   54.925    0.000    2.523    2.729
+##    .y2       (pi2)    4.066    0.055   74.267    0.000    4.066    3.760
+##    .y3       (pi3)    5.023    0.064   78.328    0.000    5.023    4.256
+##     kappa             0.000                               0.000    0.000
+##     omega             0.000                               0.000    0.000
+##     p1                0.000                               0.000    0.000
+##    .p2                0.000                               0.000    0.000
+##    .p3                0.000                               0.000    0.000
+##     q1                0.000                               0.000    0.000
+##    .q2                0.000                               0.000    0.000
+##    .q3                0.000                               0.000    0.000
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##     kappa             1.232    0.271    4.550    0.000    1.000    1.000
+##     omega             0.539    0.177    3.042    0.002    1.000    1.000
+##     p1                1.504    0.281    5.361    0.000    1.000    1.000
+##    .p2        (u2)    2.821    0.316    8.929    0.000    0.985    0.985
+##    .p3        (u3)    2.110    0.204   10.341    0.000    0.830    0.830
+##     q1                0.316    0.172    1.832    0.067    1.000    1.000
+##    .q2        (v2)    0.582    0.086    6.811    0.000    0.923    0.923
+##    .q3        (v3)    0.509    0.046   11.125    0.000    0.596    0.596
+##    .x1                0.000                               0.000    0.000
+##    .x2                0.000                               0.000    0.000
+##    .x3                0.000                               0.000    0.000
+##    .y1                0.000                               0.000    0.000
+##    .y2                0.000                               0.000    0.000
+##    .y3                0.000                               0.000    0.000</code></pre>
+</div>
+<div id="comparing-fits" class="section level2">
+<h2>Comparing fits</h2>
+<div id="ri-clpm-v-clpm" class="section level3">
+<h3>RI-CLPM v CLPM</h3>
+<p>Because the traditional CLPM is nested in the RI-CLPM, we can compare model fit. The correct reference distribution for this comparison is <span class="math inline">\(\chi^2\)</span> but, as Hamaker and colleagues say</p>
+<blockquote>
+<p>However, we can make use of the fact that the regular chi-square difference test is conservative in this context, meaning that, if it is significant, we are certain that the correct (i.e., chi-bar-square difference) test will be significant too. <span class="citation">(Hamaker et al., <a href="#ref-RN417">2015</a>, p. 105)</span></p>
+</blockquote>
+<p>We estimate the traditional CLPM by setting the variance and covariance of <span class="math inline">\(\kappa\)</span> and <span class="math inline">\(\omega\)</span> to 0.</p>
+<pre class="r"><code>clpmModel &lt;- #yes, &quot;Model&quot; is redundant
+&#39;
+#Note, the data contain x1-3 and y1-3
+#Latent mean Structure with intercepts
+
+kappa =~ 1*x1 + 1*x2 + 1*x3
+omega =~ 1*y1 + 1*y2 + 1*y3
+
+x1 ~ mu1*1 #intercepts
+x2 ~ mu2*1
+x3 ~ mu3*1
+y1 ~ pi1*1
+y2 ~ pi2*1
+y3 ~ pi3*1
+
+kappa ~~ 0*kappa #variance nope
+omega ~~ 0*omega #variance nope
+kappa ~~ 0*omega #covariance not even
+
+#laten vars for AR and cross-lagged effects
+p1 =~ 1*x1 #each factor loading set to 1
+p2 =~ 1*x2
+p3 =~ 1*x3
+q1 =~ 1*y1
+q2 =~ 1*y2
+q3 =~ 1*y3
+
+p3 ~ alpha3*p2 + beta3*q2
+p2 ~ alpha2*p1 + beta2*q1
+
+q3 ~ delta3*q2 + gamma3*p2
+q2 ~ delta2*q1 + gamma2*p1
+
+p1 ~~ p1 #variance
+p2 ~~ u2*p2
+p3 ~~ u3*p3
+q1 ~~ q1 #variance
+q2 ~~ v2*q2
+q3 ~~ v3*q3
+
+p1 ~~ q1 #p1 and q1 covariance
+p2 ~~ q2 #p2 and q2 covariance
+p3 ~~ q3 #p2 and q2 covariance&#39;
+
+fitCLPM &lt;- lavaan(clpmModel, data = antiread,
+              missing = &#39;ML&#39;, #for the missing data!
+              int.ov.free = F,
+              int.lv.free = F,
+              auto.fix.first = F,
+              auto.fix.single = F,
+              auto.cov.lv.x = F,
+              auto.cov.y = F,
+              auto.var = F)
+
+anova(fit, fitCLPM)</code></pre>
+<pre><code>## Chi Square Difference Test
+## 
+##         Df    AIC    BIC   Chisq Chisq diff Df diff Pr(&gt;Chisq)    
+## fit      1 6814.1 6918.2  3.2127                                  
+## fitCLPM  4 6825.6 6917.7 20.6779     17.465       3  0.0005669 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>The CLPM fits much worse, with no model comparison statistic favoring the CLPM (the BIC advantage of 1 point is negligible). We can print out the standardized estimates to compare to the unconstrained RI-CLPM above.</p>
+<pre class="r"><code>summary(fitCLPM, standardize = T)</code></pre>
+<pre><code>## lavaan 0.6-3 ended normally after 47 iterations
+## 
+##   Optimization method                           NLMINB
+##   Number of free parameters                         23
+## 
+##   Number of observations                           405
+##   Number of missing patterns                        14
+## 
+##   Estimator                                         ML
+##   Model Fit Test Statistic                      20.678
+##   Degrees of freedom                                 4
+##   P-value (Chi-square)                           0.000
+## 
+## Parameter Estimates:
+## 
+##   Information                                 Observed
+##   Observed information based on                Hessian
+##   Standard Errors                             Standard
+## 
+## Latent Variables:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   kappa =~                                                              
+##     x1                1.000                               0.000    0.000
+##     x2                1.000                               0.000    0.000
+##     x3                1.000                               0.000    0.000
+##   omega =~                                                              
+##     y1                1.000                               0.000    0.000
+##     y2                1.000                               0.000    0.000
+##     y3                1.000                               0.000    0.000
+##   p1 =~                                                                 
+##     x1                1.000                               1.656    1.000
+##   p2 =~                                                                 
+##     x2                1.000                               2.024    1.000
+##   p3 =~                                                                 
+##     x3                1.000                               1.955    1.000
+##   q1 =~                                                                 
+##     y1                1.000                               0.924    1.000
+##   q2 =~                                                                 
+##     y2                1.000                               1.082    1.000
+##   q3 =~                                                                 
+##     y3                1.000                               1.174    1.000
+## 
+## Regressions:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   p3 ~                                                                  
+##     p2      (alp3)    0.559    0.050   11.150    0.000    0.579    0.579
+##     q2      (bet3)   -0.145    0.085   -1.698    0.090   -0.080   -0.080
+##   p2 ~                                                                  
+##     p1      (alp2)    0.538    0.056    9.679    0.000    0.440    0.440
+##     q1      (bet2)   -0.093    0.101   -0.920    0.357   -0.042   -0.042
+##   q3 ~                                                                  
+##     q2      (dlt3)    0.849    0.042   20.402    0.000    0.783    0.783
+##     p2      (gmm3)   -0.016    0.024   -0.677    0.498   -0.028   -0.028
+##   q2 ~                                                                  
+##     q1      (dlt2)    0.763    0.045   16.903    0.000    0.651    0.651
+##     p1      (gmm2)   -0.047    0.025   -1.871    0.061   -0.072   -0.072
+## 
+## Covariances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   kappa ~~                                                              
+##     omega             0.000                                 NaN      NaN
+##   p1 ~~                                                                 
+##     q1               -0.107    0.076   -1.403    0.161   -0.070   -0.070
+##  .p2 ~~                                                                 
+##    .q2               -0.085    0.077   -1.098    0.272   -0.058   -0.058
+##  .p3 ~~                                                                 
+##    .q3               -0.121    0.071   -1.710    0.087   -0.106   -0.106
+## 
+## Intercepts:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .x1       (mu1)    1.662    0.082   20.194    0.000    1.662    1.003
+##    .x2       (mu2)    1.983    0.103   19.189    0.000    1.983    0.980
+##    .x3       (mu3)    1.902    0.109   17.503    0.000    1.902    0.973
+##    .y1       (pi1)    2.523    0.046   54.956    0.000    2.523    2.731
+##    .y2       (pi2)    4.066    0.055   74.277    0.000    4.066    3.759
+##    .y3       (pi3)    5.023    0.064   78.548    0.000    5.023    4.279
+##     kappa             0.000                                 NaN      NaN
+##     omega             0.000                                 NaN      NaN
+##     p1                0.000                               0.000    0.000
+##    .p2                0.000                               0.000    0.000
+##    .p3                0.000                               0.000    0.000
+##     q1                0.000                               0.000    0.000
+##    .q2                0.000                               0.000    0.000
+##    .q3                0.000                               0.000    0.000
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##     kappa             0.000                                 NaN      NaN
+##     omega             0.000                                 NaN      NaN
+##     p1                2.742    0.193   14.230    0.000    1.000    1.000
+##    .p2        (u2)    3.284    0.239   13.726    0.000    0.802    0.802
+##    .p3        (u3)    2.474    0.206   12.035    0.000    0.648    0.648
+##     q1                0.853    0.060   14.230    0.000    1.000    1.000
+##    .q2        (v2)    0.660    0.048   13.698    0.000    0.564    0.564
+##    .q3        (v3)    0.525    0.046   11.509    0.000    0.381    0.381
+##    .x1                0.000                               0.000    0.000
+##    .x2                0.000                               0.000    0.000
+##    .x3                0.000                               0.000    0.000
+##    .y1                0.000                               0.000    0.000
+##    .y2                0.000                               0.000    0.000
+##    .y3                0.000                               0.000    0.000</code></pre>
+</div>
+<div id="adding-constraints-to-ri-clpm" class="section level3">
+<h3>Adding constraints to RI-CLPM</h3>
+<p>For parsimony, I usually try to constraint my autoregressive and cross-lagged paths to be the same across intervals. Oh, and residuals too. I’ll do this in the following code and then check the fit against the unconstrained model. To do this, all I have to do is make sure the paths have the same name, like <code>alpha</code> instead of <code>alpha2</code> and <code>alpha3</code>.</p>
+<pre class="r"><code>riclpmModelConstrainedARCL &lt;-
+&#39;
+#Note, the data contain x1-3 and y1-3
+#Latent mean Structure with intercepts
+
+kappa =~ 1*x1 + 1*x2 + 1*x3
+omega =~ 1*y1 + 1*y2 + 1*y3
+
+x1 ~ mu1*1 #intercepts
+x2 ~ mu2*1
+x3 ~ mu3*1
+y1 ~ pi1*1
+y2 ~ pi2*1
+y3 ~ pi3*1
+
+kappa ~~ kappa #variance
+omega ~~ omega #variance
+kappa ~~ omega #covariance
+
+#laten vars for AR and cross-lagged effects
+p1 =~ 1*x1 #each factor loading set to 1
+p2 =~ 1*x2
+p3 =~ 1*x3
+q1 =~ 1*y1
+q2 =~ 1*y2
+q3 =~ 1*y3
+
+#constrain autoregression and cross lagged effects to be the same across both lags.
+p3 ~ alpha*p2 + beta*q2
+p2 ~ alpha*p1 + beta*q1
+
+q3 ~ delta*q2 + gamma*p2
+q2 ~ delta*q1 + gamma*p1
+
+p1 ~~ p1 #variance
+p2 ~~ u*p2
+p3 ~~ u*p3
+q1 ~~ q1 #variance
+q2 ~~ v*q2
+q3 ~~ v*q3
+
+p1 ~~ q1 #p1 and q1 covariance
+p2 ~~ uv*q2 #p2 and q2 covariance should also be constrained to be the same as
+p3 ~~ uv*q3 #p3 and q3 covariance&#39;
+
+fitConstrainedARCL &lt;- lavaan(riclpmModelConstrainedARCL, data = antiread,
+              missing = &#39;ML&#39;, #for the missing data!
+              int.ov.free = F,
+              int.lv.free = F,
+              auto.fix.first = F,
+              auto.fix.single = F,
+              auto.cov.lv.x = F,
+              auto.cov.y = F,
+              auto.var = F)
+
+anova(fit, fitConstrainedARCL)</code></pre>
+<pre><code>## Chi Square Difference Test
+## 
+##                    Df    AIC    BIC   Chisq Chisq diff Df diff Pr(&gt;Chisq)
+## fit                 1 6814.1 6918.2  3.2127                              
+## fitConstrainedARCL  8 6820.2 6896.2 23.2640     20.051       7    0.00546
+##                      
+## fit                  
+## fitConstrainedARCL **
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Well, according to AIC and the <span class="math inline">\(\chi^2\)</span> test, the constrained model fits worse. But BIC loves the constrained model because it hates parameters. Interpretive ease hates parameters too (most of the time), so let’s look at the summary for our simplified model.</p>
+<pre class="r"><code>summary(fitConstrainedARCL, standardized = T)</code></pre>
+<pre><code>## lavaan 0.6-3 ended normally after 78 iterations
+## 
+##   Optimization method                           NLMINB
+##   Number of free parameters                         26
+##   Number of equality constraints                     7
+## 
+##   Number of observations                           405
+##   Number of missing patterns                        14
+## 
+##   Estimator                                         ML
+##   Model Fit Test Statistic                      23.264
+##   Degrees of freedom                                 8
+##   P-value (Chi-square)                           0.003
+## 
+## Parameter Estimates:
+## 
+##   Information                                 Observed
+##   Observed information based on                Hessian
+##   Standard Errors                             Standard
+## 
+## Latent Variables:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   kappa =~                                                              
+##     x1                1.000                               1.025    0.616
+##     x2                1.000                               1.025    0.525
+##     x3                1.000                               1.025    0.516
+##   omega =~                                                              
+##     y1                1.000                               0.566    0.612
+##     y2                1.000                               0.566    0.519
+##     y3                1.000                               0.566    0.484
+##   p1 =~                                                                 
+##     x1                1.000                               1.311    0.788
+##   p2 =~                                                                 
+##     x2                1.000                               1.662    0.851
+##   p3 =~                                                                 
+##     x3                1.000                               1.702    0.857
+##   q1 =~                                                                 
+##     y1                1.000                               0.732    0.791
+##   q2 =~                                                                 
+##     y2                1.000                               0.932    0.855
+##   q3 =~                                                                 
+##     y3                1.000                               1.024    0.875
+## 
+## Regressions:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   p3 ~                                                                  
+##     p2      (alph)    0.306    0.092    3.331    0.001    0.299    0.299
+##     q2      (beta)   -0.212    0.148   -1.433    0.152   -0.116   -0.116
+##   p2 ~                                                                  
+##     p1      (alph)    0.306    0.092    3.331    0.001    0.241    0.241
+##     q1      (beta)   -0.212    0.148   -1.433    0.152   -0.093   -0.093
+##   q3 ~                                                                  
+##     q2      (delt)    0.713    0.076    9.391    0.000    0.648    0.648
+##     p2      (gamm)   -0.039    0.031   -1.281    0.200   -0.063   -0.063
+##   q2 ~                                                                  
+##     q1      (delt)    0.713    0.076    9.391    0.000    0.560    0.560
+##     p1      (gamm)   -0.039    0.031   -1.281    0.200   -0.055   -0.055
+## 
+## Covariances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   kappa ~~                                                              
+##     omega            -0.046    0.143   -0.321    0.748   -0.079   -0.079
+##   p1 ~~                                                                 
+##     q1               -0.056    0.146   -0.387    0.699   -0.059   -0.059
+##  .p2 ~~                                                                 
+##    .q2        (uv)   -0.116    0.060   -1.949    0.051   -0.094   -0.094
+##  .p3 ~~                                                                 
+##    .q3        (uv)   -0.116    0.060   -1.949    0.051   -0.094   -0.094
+## 
+## Intercepts:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .x1       (mu1)    1.662    0.083   20.095    0.000    1.662    0.999
+##    .x2       (mu2)    1.990    0.100   19.944    0.000    1.990    1.019
+##    .x3       (mu3)    1.890    0.111   16.976    0.000    1.890    0.951
+##    .y1       (pi1)    2.523    0.046   54.891    0.000    2.523    2.728
+##    .y2       (pi2)    4.067    0.055   73.785    0.000    4.067    3.731
+##    .y3       (pi3)    5.018    0.064   78.033    0.000    5.018    4.290
+##     kappa             0.000                               0.000    0.000
+##     omega             0.000                               0.000    0.000
+##     p1                0.000                               0.000    0.000
+##    .p2                0.000                               0.000    0.000
+##    .p3                0.000                               0.000    0.000
+##     q1                0.000                               0.000    0.000
+##    .q2                0.000                               0.000    0.000
+##    .q3                0.000                               0.000    0.000
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##     kappa             1.052    0.253    4.161    0.000    1.000    1.000
+##     omega             0.320    0.167    1.915    0.055    1.000    1.000
+##     p1                1.718    0.254    6.764    0.000    1.000    1.000
+##    .p2         (u)    2.569    0.199   12.895    0.000    0.930    0.930
+##    .p3         (u)    2.569    0.199   12.895    0.000    0.887    0.887
+##     q1                0.535    0.166    3.225    0.001    1.000    1.000
+##    .q2         (v)    0.590    0.036   16.503    0.000    0.680    0.680
+##    .q3         (v)    0.590    0.036   16.503    0.000    0.563    0.563
+##    .x1                0.000                               0.000    0.000
+##    .x2                0.000                               0.000    0.000
+##    .x3                0.000                               0.000    0.000
+##    .y1                0.000                               0.000    0.000
+##    .y2                0.000                               0.000    0.000
+##    .y3                0.000                               0.000    0.000</code></pre>
+</div>
+<div id="plotting-model-fit" class="section level3">
+<h3>Plotting model fit</h3>
+<p>Now, we can plot the model-fitted values. To examine how the model relates to the data, we’ll follow the principle of the model which is to partition the within versus between subject variance. You can reinforce the corresponding intuition by looking back at the path diagram: keep in mind that every observed value will be exactly equal to the wave mean, the individual’s latent intercept, and the per-wave latent residual (that is, <em>p</em> and <em>q</em>). So first, we’ll plot the individual variation around the wave-wise means (the stable, between subject individual differences captured by <span class="math inline">\(\kappa\)</span> and <span class="math inline">\(\omega\)</span>), along with the observed values. You can see that there is a lot of distance between the lines (that is, the expected values based on the random intercept and wave-wise means) and the observed values. It is that deviation that the within-subject portion of the model (the cross-lagged part) is attempting to explain.</p>
+<pre class="r"><code>#get the model-expected means
+means &lt;- fitted(fitConstrainedARCL)$mean
+meansDF &lt;- data.frame(mean = means, key = names(means)) %&gt;%
+  extract(col = key, into = c(&#39;var&#39;, &#39;wave&#39;), regex = &#39;(\\w)(\\d)&#39;)
+
+#plot the model-expected random intercepts
+predict(fitConstrainedARCL) %&gt;%
+  as.data.frame %&gt;%
+  mutate(pid = 1:n()) %&gt;%
+  gather(key, latentvalue, -pid, -kappa, -omega) %&gt;%
+  extract(col = key, into = c(&#39;latentvar&#39;, &#39;wave&#39;), regex = &#39;(\\w)(\\d)&#39;) %&gt;%
+  mutate(var = c(p = &#39;x&#39;, q = &#39;y&#39;)[latentvar]) %&gt;%
+  left_join(meansDF) %&gt;% #those means from above
+  left_join(antireadLong, by = c(&#39;pid&#39;, &#39;wave&#39;, &#39;var&#39;)) %&gt;% #the raw data
+  mutate(expectedLine = ifelse(var == &#39;x&#39;, kappa, omega) + mean,
+         wave = as.numeric(wave)) %&gt;%
+  rowwise() %&gt;%
+  ggplot(aes(x = wave, y = expectedLine, color = var, group = var)) +
+  geom_point(aes(x = wave, y = value, group = interaction(var, pid)), alpha = .1, position = position_jitter(w = .2, h = 0)) +
+  geom_line(aes(y = expectedLine, group = interaction(var, pid)), stat = &#39;identity&#39;, alpha = .1) +
+  geom_line(aes(y = mean), stat = &#39;identity&#39;, alpha = 1, size = 1, color = &#39;black&#39;) +
+  facet_wrap(~var, ncol = 2) +
+  theme_classic()</code></pre>
+<p><img src="/en/post/2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015_files/figure-html/Plot%20predictions-1.png" width="960" /></p>
+<p>We can also look at the correlations between the latent residuals, which are essentially the parts of the observed scores that are not accounted for by the stable individual differences in the above graph.</p>
+<blockquote>
+<p>That is, the autoregressive parameters <span class="math inline">\(\alpha^{*}_{t}\)</span> and <span class="math inline">\(\delta^{*}_{t}\)</span> do not represent
+the stability of the rank order of individuals from one occasion to
+the next, but rather the amount of within-person carry-over effect
+(cf., Hamaker, 2012; Kuppens, Allen, &amp; Sheeber, 2010; Suls,
+Green, &amp; Hillis, 1998): If it is positive, it implies that occasions on
+which a person scored above his or her expected score are likely to
+be followed by occasions on which he or she still scores above the
+expected score again, and vice versa. <span class="citation">(Hamaker et al., <a href="#ref-RN417">2015</a>, pp. 104–105)</span></p>
+</blockquote>
+<p>So you may interpret the raw correlations in the graph below as the basis for the constrained model estimates of the path weights above. In the interest of checking against over-interpreting these relations, though, here is the authors’ footnote to the above statement:</p>
+<blockquote>
+<p>One could also say these autoregressive parameters indicate the stability of the rank-order of individual deviations, but this is less appealing
+from a substantive viewpoint. <span class="citation">(Hamaker et al., <a href="#ref-RN417">2015</a>, p. 105)</span></p>
+</blockquote>
+<pre class="r"><code>suppressMessages(suppressWarnings(library(GGally)))
+predict(fitConstrainedARCL) %&gt;%
+  as.data.frame %&gt;%
+  select(-kappa, -omega) %&gt;%
+  ggpairs(lower = list(continuous = wrap(ggally_smooth, alpha = .5))) +
+  theme_classic()</code></pre>
+<p><img src="/en/post/2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015_files/figure-html/Plot%20clpm-1.png" width="960" /></p>
+<p>Note how different, and one might say diminished, the relations in the above graph are versus the relations in the scatter-plot matrix of the raw data, below. The strength of this model seems to lie in its ability to keep one from being fooled into a within-person explanation of what are largely between-person relations.</p>
+<pre class="r"><code>antiread %&gt;%
+  select(-x4, -y4) %&gt;%
+  ggpairs(lower = list(continuous = wrap(ggally_smooth, alpha = .5))) +
+  theme_classic()</code></pre>
+<p><img src="/en/post/2019-01-30-A-better-cross-lagged-panel-model-from-Hamaker-et-al-2015_files/figure-html/Plot%20raw%20data%20scatter-1.png" width="960" /></p>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-RN417">
+<p>Hamaker, E. L., Kuiper, R. M., &amp; Grasman, R. P. (2015). A critique of the cross-lagged panel model. <em>Psychol Methods</em>, <em>20</em>(1), 102–16. Journal Article. doi:<a href="https://doi.org/10.1037/a0038889">10.1037/a0038889</a></p>
+</div>
+</div>
+</div>
