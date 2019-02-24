@@ -10,9 +10,9 @@ output:
 ---
 # 1. Time and Location
 
-- Time: 0800 - 1000, Each Thursday
+- Time: 0800 - 1000, Each Monday
 
-- Location: Room 113, Main Building South
+- Location: Room 507, Main Building South
 
 - Lecturer: Likan Zhan
 

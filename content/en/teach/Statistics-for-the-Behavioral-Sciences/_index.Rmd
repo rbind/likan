@@ -12,9 +12,9 @@ output:
 
 # 1. Time and Location
 
-- Time: 10:10 - 12:00, Friday
+- Time: 08:00 - 10:00, Thuesday
 
-- Location: Room 202, Teaching Building 2
+- Location: Room 512, Main Building South
 
 - Lecturer: Likan Zhan
 
