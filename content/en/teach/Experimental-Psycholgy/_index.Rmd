@@ -1,5 +1,5 @@
 ---
-title: "An Introduction to Experimental Psychology"
+title: "Experimental Psychology"
 author: "Likan Zhan"
 date: '2017-03-01'
 lastmod: "`r Sys.Date()`"

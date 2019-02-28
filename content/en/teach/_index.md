@@ -16,3 +16,6 @@ disable_comments: true
   Targeted Students: Postgraduate and PhD students
 - [Statistics for the Behavioral Sciences](/en/teach/Statistics-for-the-Behavioral-Sciences/) <br>
   Targeted Students: Undergraduate and Postgraduate students
+
+- [Experimental Psychology](/en/teach/Experimental-Psychology/) <br>
+  Targeted Students: Undergraduate students
