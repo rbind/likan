@@ -30,13 +30,13 @@ output:
 # 4. Lecture Notes
 
 - Part I. Background and methods
-  - Chapter 00. Introduction to the Course. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Introduction-to-Cognitive-Neuroscience/CH.00.pdf)</i>
-  - Chapter 01. A Brief History of Cognitive Neuroscience. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Introduction-to-Cognitive-Neuroscience/CH.01.pdf)</i>
-  - Chapter 02. Structure and Function of the Nervous System.  <i class="fa fa-file-pdf-o">  [Slides](https://pan.baidu.com/s/17WcRf9cdr7_X1xqjZsACfQ)</i>(password: pept)
-  - Chapter 03. Methods of Cognitive Neuroscience. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Introduction-to-Cognitive-Neuroscience/CH.03.pdf)</i>
+  - Chapter 00. Introduction to the Course. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Introduction-to-Cognitive-Neuroscience/CH.00.pdf)
+  - Chapter 01. A Brief History of Cognitive Neuroscience. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Introduction-to-Cognitive-Neuroscience/CH.01.pdf)
+  - Chapter 02. Structure and Function of the Nervous System.
+  - Chapter 03. Methods of Cognitive Neuroscience.
 - Part II. Core Processes
-  - Chapter 04. Hemispheric Specialization. <i class="fa fa-file-pdf-o">  [Slides](https://appendix.likan.info/Introduction-to-Cognitive-Neuroscience/CH.04.pdf)</i>
-  - Chapter 05. Sensation and Perception. <i class="fa fa-file-pdf-o">  [Slides](https://pan.baidu.com/s/1vkErPZIpx5G-atmi6rYjNA)</i>(password: wxmg)
+  - Chapter 04. Hemispheric Specialization.
+  - Chapter 05. Sensation and Perception.
   - Chapter 06. Object Recognition.
   - Chapter 07. Attention.
   - Chapter 08. Action. <a id="presenters"></a>
