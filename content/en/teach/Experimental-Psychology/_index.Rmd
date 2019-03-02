@@ -32,8 +32,8 @@ A brief of the experimental methods used in psychology.
 
 - Part I. Foundations of Research
     - Chapter 01. Introduction. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-01.pdf)
-    - Chapter 02. Research Techniques: Observation and Correlation.
-    - Chapter 03. Research Techniqeus: Experiments
+    - Chapter 02. Variables Used in Experimental Psychology. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-02.pdf)
+    - Chapter 03. Research Techniques: Experiments, Observation and Correlation.
     - Chapter 04. Ethics in Psychological Research
     - Chapter 05. How to Read and Write Research Reports
 
