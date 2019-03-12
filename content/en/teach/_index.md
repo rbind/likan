@@ -12,10 +12,11 @@ disable_comments: true
   Targeted Students: Undergraduate students
 
 ### Semester two (March - July)
+- [Applied Statistics](/en/teach/Applied-Statistics/) <br>
+    Targeted Students: Undergraduate students
+- [Experimental Psychology](/en/teach/Experimental-Psychology/) <br>
+      Targeted Students: Undergraduate students
 - [Introduction to Cognitive Neuroscience](/en/teach/Introduction-to-Cognitive-Neuroscience/) <br>
   Targeted Students: Postgraduate and PhD students
 - [Statistics for the Behavioral Sciences](/en/teach/Statistics-for-the-Behavioral-Sciences/) <br>
   Targeted Students: Undergraduate and Postgraduate students
-
-- [Experimental Psychology](/en/teach/Experimental-Psychology/) <br>
-  Targeted Students: Undergraduate students

@@ -60,12 +60,6 @@ More specifically, you will learn:
   - Chapter 13. Repeated-Measures Analysis of Variance.
   - Chapter 14. Two-Factor Analysis of Variance (Independent Measures).
 
-- Part V. Correlations and Nonparametric Tests
-  - Chapter 15. Correlation.
-  - Chapter 16. Introduction to Regression.
-  - Chapter 17. The Chi-Square Statistic: Tests for Goodness of Fit and Independence
-  - Chapter 18. The Binomial Test
-
 # 5. Examination
 
 To Be Announced
