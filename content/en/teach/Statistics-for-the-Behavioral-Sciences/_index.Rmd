@@ -42,7 +42,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 01. Introduction to Statistics.   [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.01.pdf)
   - Chapter 02. Frequency Distributions. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.02.pdf)
   - Chapter 03. Central Tendency. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.03.pdf)
-  - Chapter 04. Variability.
+  - Chapter 04. Variability. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.04.pdf)
 
 - Part II. Foundations of Inferential Statistics
   - Chapter 05. z-Scores: Location of Scores and Standardized Distributions.
