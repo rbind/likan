@@ -37,7 +37,7 @@ A brief of the experimental methods used in psychology.
 - Part II. Research Methods In Psychology
     - Chapter 03. Descriptive Methods. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-03.pdf)
     - Chapter 04. Experimental Methods. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-04.pdf)
-    - Chapter 05. Applied Research
+    - Chapter 05. Applied Research. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-05.pdf)
 
 - Part III. Principles and Practices of Experimental Psychology
     - Chapter 06. Psychophysics
