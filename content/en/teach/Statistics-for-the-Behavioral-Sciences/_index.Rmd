@@ -70,3 +70,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 
 - Time and location: **08:00-09:50, July 13**, **Room 104, Teaching Building 4**;
 - Structure of the exam: 65 multiple choices, selected from the *learning check* problems of chapters *1 - 13*; 2 essay questions, selected from the *odd-numbered problems* of chapters *9 - 13*.
+
+# 6. Tools
+
+  - [An interactive learning widget for R](/en/teach/R-for-Statistics-Data-Visualization/InteractiveR/)
