@@ -42,7 +42,7 @@ More specifically, you will learn:
   - Chapter 01. Introduction to Statistics. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Applied-Statistics/CH.01.pdf)
   - Chapter 02. Frequency Distributions. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Applied-Statistics/CH.02.pdf)
   - Chapter 03. Central Tendency. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Applied-Statistics/CH.03.pdf)
-  - Chapter 04. Variability.
+  - Chapter 04. Variability. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Applied-Statistics/CH.04.pdf)
 
 - Part II. Foundations of Inferential Statistics
   - Chapter 05. z-Scores: Location of Scores and Standardized Distributions.
