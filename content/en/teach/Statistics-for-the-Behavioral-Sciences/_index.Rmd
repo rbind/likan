@@ -14,7 +14,7 @@ output:
 
 - Time: 08:00 - 10:00, Thuesday
 
-- Location: Room 512, Main Building South
+- Location: **Room 116** (Changed), Main Building South
 
 - Lecturer: Likan Zhan
 
