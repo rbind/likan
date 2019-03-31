@@ -26,7 +26,6 @@ A brief of the experimental methods used in psychology.
 
 - Barry H. Kantowitz, B. H., Roediger, H. L. III, & Elmes, D. G. (2015). *Experimental Psychology* (10 ed.). Cengage Learning.
 - Shaughnessy, J. J., Zechmeister, E. B., & Zechmeister, J. S. (2012). *Research methods in psychology* (9 ed.). New York, NY: McGraw-Hill.
-- 郭秀燕. (2004). 实验心理学. 人民教育出版社.
 
 # 4. Syllabus and Lecture Notes
 
@@ -40,7 +39,8 @@ A brief of the experimental methods used in psychology.
     - Chapter 05. Applied Research. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-05.pdf)
 
 - Part III. Principles and Practices of Experimental Psychology
-    - Chapter 06. Psychophysics
+    - Chapter 06-15. Text Organization. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/Part-03-Chapter-Format.pdf)
+    - Chapter 06. Psychophysics. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-06.pdf)
     - Chapter 07. Perception
     - Chapter 08. Attention and Reaction Time
     - Chapter 09. Conditioning and Learning
