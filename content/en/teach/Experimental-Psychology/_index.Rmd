@@ -41,7 +41,7 @@ A brief of the experimental methods used in psychology.
 - Part III. Principles and Practices of Experimental Psychology
     - Text Organization. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/Part-03-Chapter-Format.pdf)
     - Chapter 06. Psychophysics. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-06.pdf)
-    - Chapter 07. Perception
+    - Chapter 07. Perception. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Experimental-Psychology/CH-07.pdf)
     - Chapter 08. Attention and Reaction Time
     - Chapter 09. Conditioning and Learning
     - Chapter 10. Remembering and Forgetting
