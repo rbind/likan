@@ -48,7 +48,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.05.pdf)
   - Chapter 06. Probability. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.06.pdf)
   - Chapter 07. Probability and Samples: The Distribution of Sample Means. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.07.pdf)
-  - Chapter 08. Introduction to Hypothesis Testing.
+  - Chapter 08. Introduction to Hypothesis Testing. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.08.pdf)
 
 - Part III. Using *t*-Statistics for Inferences
   - Chapter 09. Introduction to the *t* Statistic.
