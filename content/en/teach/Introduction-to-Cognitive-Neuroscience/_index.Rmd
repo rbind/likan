@@ -35,7 +35,7 @@ output:
   - Chapter 02. Structure and Function of the Nervous System. [<i class="fa fa-file-pdf-o"></i>](https://pan.baidu.com/s/1EJezK9NoLhnYFZy1fvJFNQ) PassWord: ajey
   - Chapter 03. Methods of Cognitive Neuroscience. [<i class="fa fa-file-pdf-o"></i>](https://pan.baidu.com/s/1OazdRrMMM8JQ6Q7OEc20RQ) PassWord: 4ux8
 - Part II. Core Processes
-  - Chapter 04. Hemispheric Specialization.
+  - Chapter 04. Hemispheric Specialization. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Introduction-to-Cognitive-Neuroscience/CH.04.pdf)
   - Chapter 05. Sensation and Perception.
   - Chapter 06. Object Recognition.
   - Chapter 07. Attention.
