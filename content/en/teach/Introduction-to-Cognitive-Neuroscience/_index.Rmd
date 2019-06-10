@@ -58,12 +58,12 @@ output:
  - The article you read should
      - be written in English;
      - be an appropriate article for the course;
-     - be published in the last five years, i.e., 2014 - 2018;
+     - be published in the last five years, i.e., 2015 - 2019;
      - be an original research article, not a review article;
      - be NOT related to language.
  - The report you submitted should
      - be written in Chinese;
      - be about 3000 words in length (Chinese Charaters);
      - consist of two main parts:
-         - background, methods, and main findings of the article ( about 2000 - 2500 words);
-         - future directions of this topic (500 - 1000 words).
+         - background, methods, and main findings of the article ( about 1500 - 2000 words);
+         - future directions of this topic (1000 - 1500 words).
