@@ -88,7 +88,7 @@ enableGitInfo = false
 
 [[menu.cn]]
     name = "简历"
-    url = "/cn/cv/likan_zhan_cv_en/"
+    url = "/cn/cv/likan_zhan_cv_cn/"
     weight = 7
 
 [[menu.cn]]
