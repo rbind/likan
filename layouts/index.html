@@ -14,7 +14,7 @@
   {{ range first 8 ( where .Site.Pages.ByLastmod.Reverse "Section" "en") }}
   <li>
     <span class="date">{{ .Lastmod.Format "2006/01/02" }}</span>
-    <a href="{{ .URL }}">{{ .Title }}</a>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
   </li>
   {{ end }}
 </ul>
@@ -26,7 +26,7 @@
   {{ range first 8 ( where .Site.Pages.ByLastmod.Reverse "Section" "cn") }}
   <li>
     <span class="date">{{ .Lastmod.Format "2006/01/02" }}</span>
-    <a href="{{ .URL }}">{{ .Title }}</a>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
   </li>
   {{ end }}
 </ul>

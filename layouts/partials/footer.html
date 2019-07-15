@@ -2,7 +2,7 @@
   {{ partial "foot_custom.html" . }}
   {{ partial "footer_highlightjs" . }}
 
-  {{ if eq .URL "/" }}
+  {{ if eq .RelPermalink "/" }}
 
   {{ with .Site.Params.footer.home }}
    <!--- <hr> ---> <!--- Remove horizontal line 20180205 by Likan Zhan --->

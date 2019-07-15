@@ -2,14 +2,15 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--- Icons --->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" > <!--- Icons --->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Lora&display=swap" > <!--- Add font Lora, by Likan Zhan 2019JUN29 --->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--- Icons --->
     <!--- <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"> --->
     <link rel="stylesheet" href="/fonts/academicons-1.8.6/css/academicons.min.css"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/logo/bodhi.png"> <!--- Likan Icon --->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{ if eq .URL "/" }}
+    {{ if eq .RelPermalink "/" }}
     <title>{{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Site.Title }}">
     <meta property="og:type" content="website">
@@ -22,7 +23,7 @@
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
     {{ end }}
 
-    {{ if eq .URL "/" }}
+    {{ if eq .RelPermalink "/" }}
     <meta property="description" content="{{ .Site.Params.description }}">
     {{ else }}
       {{ if .Description }}
@@ -34,9 +35,10 @@
     <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
     {{ end }}
 
-    {{ if .RSSLink }}
-    <link href="{{ .RSSLink | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
     {{ partial "head_highlightjs" . }}
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/mystyle.css" | relURL }}" /> <!--- 20180124 added by Likan Zhan --->
@@ -44,7 +46,7 @@
     {{ partial "head_custom.html" . }}
   </head>
 
-  {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .URL) }}
+  {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
   <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
     <header class="masthead">
       {{ partial "tagline.html" . }}
