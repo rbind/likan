@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.14)  15 JUL 2019 15:46
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.14)  18 JUL 2019 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1099,10 +1099,8 @@ LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
 (Font)              scaled to size 14.74469pt on input line 144.
 LaTeX Font Info:    Font shape `TU/SongtiSC(1)/bx/n' will be
 (Font)              scaled to size 15.07532pt on input line 144.
-LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
-(Font)              scaled to size 12.02365pt on input line 203.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 9.4725pt on input line 213.
+(Font)              scaled to size 9.4725pt on input line 201.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FFNexusSerif' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1395,21 +1393,23 @@ Package microtype Warning: Unknown slot number of character
 [1
 
 ]
+LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
+(Font)              scaled to size 12.02365pt on input line 312.
 
 LaTeX Font Warning: Font shape `TU/SongtiSC(1)/m/it' undefined
-(Font)              using `TU/SongtiSC(1)/m/n' instead on input line 241.
+(Font)              using `TU/SongtiSC(1)/m/n' instead on input line 312.
 
 [2] [3]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 12.28728pt on input line 366.
-[4] [5] [6] 
+(Font)              scaled to size 12.28728pt on input line 437.
+[4] [5] [6] [7] 
 AED: lastpage setting LastPage
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 592.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 592.
+[8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 663.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 663.
 (./Likan_Zhan_CV_CN.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 592.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 592.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 663.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 663.
 Package rerunfilecheck Info: File `Likan_Zhan_CV_CN.out' has not changed.
 (rerunfilecheck)             Checksum: 7494023F13DA4A3201D858FF42033362.
 
@@ -1417,12 +1417,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 32060 strings out of 492909
- 635039 string characters out of 6132923
- 764459 words of memory out of 5000000
- 35736 multiletter control sequences out of 15000+600000
+ 32071 strings out of 492909
+ 635730 string characters out of 6132923
+ 763459 words of memory out of 5000000
+ 35747 multiletter control sequences out of 15000+600000
  545374 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,11n,129p,813b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,129p,813b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Likan_Zhan_CV_CN.pdf (7 pages).
+Output written on Likan_Zhan_CV_CN.pdf (8 pages).

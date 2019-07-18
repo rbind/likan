@@ -73,11 +73,22 @@ fontsize: 12pt
 
 ## Professional skills
 
-- Experimental techniques. I'm familiar with [E-prime](https://www.pstnet.com/eprime.cfm), [Psychopy](http://www.psychopy.org), [Psychtoolbox](http://psychtoolbox.org), and [Presentation](https://www.neurobs.com/presentation) for presenting test stimuli. I have advanced experience in using Eyelink II/1000 plus (SR Research Ltd.), such as *Experiment Builder* for experiment building, and *Data Viewer* for data analysis. I am in charge of establishing the first Child MEG lab in China, familiar with *Yokogawa* MEG system for equipment maintenance and MEG data acquisition. I'm also familiar with *BESA*, and some Matlab packages for analyzing the E/MEG data, such as [*fieldtrip*](http://www.fieldtriptoolbox.org) and [*SPM12*](https://github.com/neurodebian/spm12).
+1. Experiment techniques
 
-- Statistics and programming. I have moderate experience in using *R* for statistical modeling and data visualization. Besides the basic R, I used the following R packages a lot: [*data.table*](http://r-datatable.com), [*dplyr*](http://dplyr.tidyverse.org), [*ggplot2*](http://ggplot2.tidyverse.org), [*car*](https://cran.r-project.org/web/packages/car/index.html), [*lme4*](https://github.com/lme4/lme4), [*gam*](https://cran.r-project.org/web/packages/gam/index.html) etc. I also created a R package myself, called [*acqr*](https://github.com/likanzhan/acqr). Because of the speed limitations of R, I recently started to use the programming language [*julia*](https://julialang.org) to do data analyses, especially the [*MixedModels*](https://github.com/dmbates/MixedModels.jl) package.
+- Test stimuli: [ImageMagick](https://imagemagick.org), its implementation in R [magick](https://cran.r-project.org/web/packages/magick/index.html), [OmniGraffle](https://www.omnigroup.com/omnigraffle/) (Proprietary), and [Pixelmator](https://www.pixelmator.com) (Proprietary) for image creating and editting; [praat](http://www.fon.hum.uva.nl/praat/), R packages [tuneR](https://cran.r-project.org/web/packages/tuneR/index.html) and [seewave](https://cran.r-project.org/package=seewave), and [Adobe Audition](https://www.adobe.com/products/audition.html) (Proprietary) for audio processing; [blender](https://www.blender.org) and [Autodesk Maya](https://www.autodesk.com/products/maya/overview) (Proprietary) for video and 3d modeling; [ffmpeg](https://ffmpeg.org) for audio and video format converting;
+- Experiments building: [Psychopy](http://www.psychopy.org) under [Python](https://www.python.org), [Psychtoolbox](http://psychtoolbox.org) under [Matlab](https://www.mathworks.com/products/matlab.html), [E-prime](https://www.pstnet.com/eprime.cfm) (Proprietary), [Presentation](https://www.neurobs.com/presentation) (Proprietary), and [Experiment Builder](https://www.sr-research.com/experiment-builder/) (Proprietary);
+- Eye-tracker: Advanced experience in using [Eyelink II/1000 plus](https://www.sr-research.com), as well as [Experiment Builder](https://www.sr-research.com/experiment-builder/) for experiment building, and [Data Viewer](https://www.sr-research.com/data-viewer/) for data prepossing;
+- E/MEG: In charge of establishing the first Child MEG lab in China; familiar with Yokogawa MEG system for equipment maintenance and MEG data acquisition, as well as [BESA](http://www.besa.de), [fieldtrip](http://www.fieldtriptoolbox.org), and [SPM12](https://github.com/neurodebian/spm12) for data processing.
 
-- Markup languages. I like to do typesettng with [LaTeX](https://www.latex-project.org), Markdown, and R Markdown. I created my [personal website](https://likan.info) with [*hugo*](https://gohugo.io) and [*blogdown*](https://github.com/rstudio/blogdown).
+2. Data processing
+
+- R: Moderate experience in using [R](https://www.r-project.org) for statistical modeling and data visualization, especially: [data.table](http://r-datatable.com), [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html), and [tidyr](https://cran.r-project.org/web/packages/tidyr/index.html) for data preprossing; [graphics](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html), [lattice](https://cran.r-project.org/package=lattice), and [ggplot2](http://ggplot2.tidyverse.org) for data visualization; [car](https://cran.r-project.org/web/packages/car/index.html), [lme4](https://github.com/lme4/lme4), and [gam](https://cran.r-project.org/web/packages/gam/index.html) for computational modeling; Create a R package myself called [acqr](https://github.com/likanzhan/acqr) for teaching statistics and data analysing;
+- Julia: Because of the speed limitations of R, I recently started to use the programming language [julia](https://julialang.org) to do data analyses, especially the [MixedModels](https://github.com/dmbates/MixedModels.jl) package.
+
+3. Other
+
+- Markup languages: [LaTeX](https://www.latex-project.org), [markdown](https://daringfireball.net/projects/markdown/), and [R markdown](https://rmarkdown.rstudio.com) for typesetting; [Pandoc](https://pandoc.org) for converting files from one markup format into another;
+- Personal website: Use [hugo](https://gohugo.io) under [Go](https://golang.org) language and the R package [blogdown](https://github.com/rstudio/blogdown) to build my personal website [https://likan.info](https://likan.info).
 
 ## Grants, projects, and awards
 
@@ -97,7 +108,7 @@ fontsize: 12pt
 
 - **Zhan, L.** (2015 - 2016). Introduction to psychology and the scientific research. *The Funds Supporting the Growth of the New Teachers*. [Grant No. FD201530]. (¥7,000). Role: Principle Investigator.
 
-- **Zhan, L.**, Shi, F., Gao, L., & Zhang, L. (2015 - 2016). The Processing and acquisition of tone in Mandarin Chinese. *The Fundamental Research Funds for the Central Universities*. [Grant No. 15YJ050003]. (¥70,000). Role: Principle Investigator
+- **Zhan, L.**, Shi, F., Gao, L., & Zhang, L. (2015 - 2016). The Processing and acquisition of tone in Mandarin Chinese. *The Fundamental Research Funds for the Central Universities*. [Grant No. 15YJ050003]. (¥70,000). Role: Principle Investigator.
 
 - **Zhan, L.** (2010 - 2014). The interpretation of conditionals in natural language. *Cognitive Science Postgraduate Research Grant of Macquarie University*. ($10,570). Role: Principle Investigator.
 
@@ -105,36 +116,34 @@ fontsize: 12pt
 
 2. Projects
 
-- Zhang, L., et al. (2018 - Now). The psychological and brain development of atypical developing adolensences. *The Program of WuTong Inovations Platforms*. Role: Co-Investigator
+- Zhang, L., et al. (2018 - Now). The psychological and brain development of atypical developing adolensences. *The Program of WuTong Inovations Platforms*. Role: Co-Investigator.
 
-- Chen, M., et al. (2019 - Now). The study of Chinese as a second language acquisition and second language teaching (The JunCai Group). *The Program of Establishing First-Class Disciplines in BLCU*. Role: Co-Investigator
+- Chen, M., et al. (2019 - Now). The study of Chinese as a second language acquisition and second language teaching (The JunCai Group). *The Program of Establishing First-Class Disciplines in BLCU*. Role: Co-Investigator.
 
 3. Awards
 
-- 2013.11. The Paula Menyuk Travel Award for the 38th Boston University Conference on Language Development, $300.
+- 2013.11. The Paula Menyuk Travel Award for the 38th Boston University Conference on Language Development. ($300).
 
-- 2013.04. The Travel Award for the 26th Annual CUNY Sentence Processing Conference, $350.
+- 2013.04. The Travel Award for the 26th Annual CUNY Sentence Processing Conference. ($350).
 
 ## Professional activities
 
 1. Organization of international meetings
 
-- Academic Advisory Committee, The 24th annual conference of the International Association of Chinese Linguistics ([IACL-24](http://iacl24.blcu.edu.cn)), Beijing Language and Culture University, Beijing, China
+- Academic Advisory Committee, The 24th annual conference of the International Association of Chinese Linguistics ([IACL-24](http://iacl24.blcu.edu.cn)), Beijing Language and Culture University, Beijing, China.
 
 
 2. Ad-hoc reviews
 
-- Scientific Reports (2019)
-
-- Journal of visualized experiments (2018)
-
-- Language Teaching and Linguistic Studies (In Chinese, 2016)
+- Scientific Reports. (2019);
+- Journal of visualized experiments. (2018);
+- Language Teaching and Linguistic Studies. (In Chinese, 2016).
 
 3. Clinical licenses
 
-- Licensed Examiner of Wechsler Preschool and Primary Scale of Intelligence 4th Edition (WPPSI-VI) Chinese Version
+- Licensed Examiner of Wechsler Preschool and Primary Scale of Intelligence 4th Edition (WPPSI-VI) Chinese Version.
 
-- Licensed Examiner of Adaptive Behavior Assessment System 2nd Edition (ABAS-II) Chinese Version
+- Licensed Examiner of Adaptive Behavior Assessment System 2nd Edition (ABAS-II) Chinese Version.
 
 ## Publications
 
@@ -156,7 +165,7 @@ fontsize: 12pt
 
 - Moscati, V., **Zhan, L.**, & Zhou, P. (2017). Children's on-line processing of epistemic modals. *Journal of Child Language, 44*(5), 1025-1040. doi: 10.1017/S0305000916000313 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JChildLang2016.pdf)
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/ 20445911.2015.1016527 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JCognPsychol2015.pdf)
+- **Zhan, L.**, Crain, S., & Zhou, P. (2015). The online processing of only if- and even if- conditional statements: Implications for mental models. *Journal of Cognitive Psychology, 26*(7), 367-379. doi: 10.1080/20445911.2015.1016527 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JCognPsychol2015.pdf)
 
 - Zhou, P., Crain, S., & **Zhan, L.** (2014). Grammatical aspect and event recognition in children's online sentence comprehension. *Cognition, 133*(1), 262-276. doi: 10.1016/j.cognition.2014.06.018 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://publications.likan.info/Periodicals/Cognition2014.pdf)
 
