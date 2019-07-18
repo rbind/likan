@@ -83,7 +83,7 @@ fontsize: 12pt
 2. Data processing
 
 - R: Moderate experience in using [R](https://www.r-project.org) for statistical modeling and data visualization, especially: [data.table](http://r-datatable.com), [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html), and [tidyr](https://cran.r-project.org/web/packages/tidyr/index.html) for data preprossing; [graphics](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html), [lattice](https://cran.r-project.org/package=lattice), and [ggplot2](http://ggplot2.tidyverse.org) for data visualization; [car](https://cran.r-project.org/web/packages/car/index.html), [lme4](https://github.com/lme4/lme4), and [gam](https://cran.r-project.org/web/packages/gam/index.html) for computational modeling; create the R package [acqr](https://github.com/likanzhan/acqr) for teaching statistics and illustrating data visualization;
-- Julia: Because of the speed limitations of R, I recently started to use [julia](https://julialang.org) for computational modeling, especially the [MixedModels](https://github.com/dmbates/MixedModels.jl) package.
+- Julia: Recently started to use [julia](https://julialang.org) for computational modeling, especially the [MixedModels](https://github.com/dmbates/MixedModels.jl) package, because of the speed limitations of R.
 
 3. Other
 
