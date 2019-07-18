@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.14)  18 JUL 2019 12:36
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.14)  18 JUL 2019 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1387,25 +1387,25 @@ Package microtype Warning: Unknown slot number of character
 [1
 
 ]
-Underfull \hbox (badness 2261) in paragraph at lines 230--240
+Underfull \hbox (badness 2261) in paragraph at lines 231--241
 []\TU/FFNexusSerif(0)/m/n/13 Experiments building: [][]Psychopy[][] under [][]P
 ython[][], [][]Psychtoolbox[][] under [][]Matlab[][],
  []
 
 [2]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 12.28728pt on input line 326.
+(Font)              scaled to size 12.28728pt on input line 327.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
-(Font)              scaled to size 12.02365pt on input line 328.
+(Font)              scaled to size 12.02365pt on input line 329.
 [3] [4] [5]
-Underfull \hbox (badness 1077) in paragraph at lines 546--553
+Underfull \hbox (badness 1077) in paragraph at lines 547--554
 \TU/FFNexusSerif(0)/m/n/13 in children’s online sentence comprehension. \TU/FFN
 exusSerif(0)/m/it/13 Cognition, 133\TU/FFNexusSerif(0)/m/n/13 (1), 262-276. doi
 :
  []
 
 [6] [7]
-Underfull \hbox (badness 1097) in paragraph at lines 683--690
+Underfull \hbox (badness 1097) in paragraph at lines 684--691
 \TU/FFNexusSerif(0)/m/n/13 Inivted presentation given at the Child Cognition La
 boratory, Department of
  []
@@ -1413,11 +1413,11 @@ boratory, Department of
 
 AED: lastpage setting LastPage
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 708.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 708.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 709.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 709.
 (./Likan_Zhan_CV_EN.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 708.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 708.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 709.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 709.
 Package rerunfilecheck Info: File `Likan_Zhan_CV_EN.out' has not changed.
 (rerunfilecheck)             Checksum: EA5E714F7820583553F455E0850C7FF4.
  ) 
