@@ -9,7 +9,7 @@ output:
       in_header: ~/Documents/ADMIN/Website/LaTex/Preamble_Blogdown_CV.tex
     latex_engine: xelatex
     md_extensions: -autolink_bare_uris +hard_line_breaks
-    keep_tex: false
+    keep_tex: false    
   html_document:
     df_print: paged
   word_document: default

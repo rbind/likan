@@ -8,15 +8,13 @@ output:
     includes:
       in_header: ~/Documents/ADMIN/Website/LaTex/Preamble_Blogdown_CV.tex
     latex_engine: xelatex
-    md_extensions: -autolink_bare_uris+hard_line_breaks
-  html_document:
-    df_print: paged
-  word_document: default
+    md_extensions: -autolink_bare_uris +hard_line_breaks
+    keep_tex: false
 geometry: margin=1in
 pdf: /cn/cv/Likan_Zhan_CV_CN.pdf
 type: cv
 urlcolor: blue
-fontsize: 10pt
+fontsize: 12pt
 ---
 
 # 战立侃
@@ -67,7 +65,7 @@ fontsize: 10pt
 
 - 实验材料：能用 [LaTeX](https://www.latex-project.org) 包 [PGF](https://ctan.org/pkg/pgf?lang=en)、 [ImageMagick](https://imagemagick.org)、R包 [magick](https://cran.r-project.org/web/packages/magick/index.html)、 [OmniGraffle](https://www.omnigroup.com/omnigraffle/) (非开源)、和 [Pixelmator](https://www.pixelmator.com) (非开源) 等设计和编辑测试用图片；用 [praat](http://www.fon.hum.uva.nl/praat/)、R包 [tuneR](https://cran.r-project.org/web/packages/tuneR/index.html)、[seewave](https://cran.r-project.org/package=seewave)、和 [Adobe Audition](https://www.adobe.com/products/audition.html) (非开源) 等编辑测试用声音材料；用 [blender](https://www.blender.org) 和 [Autodesk Maya](https://www.autodesk.com/products/maya/overview) (非开源) 等设计和编辑视频及三维材料；用 [ffmpeg](https://ffmpeg.org) 等转化视频和音频文件的格式；
 - 实验设计: 能用 [Python](https://www.python.org) 下的 [Psychopy](http://www.psychopy.org) 包、 [Matlab](https://www.mathworks.com/products/matlab.html) 下的 [Psychtoolbox](http://psychtoolbox.org) 包、 [E-prime](https://www.pstnet.com/eprime.cfm) (非开源)、 [Presentation](https://www.neurobs.com/presentation)  (非开源), 和 [Experiment Builder](https://www.sr-research.com/experiment-builder/)  (非开源) 等设计实验程序；
-- 眼动技术: 熟悉 [Eyelink II/1000 plus](https://www.sr-research.com) 型眼动仪、 能用 [Experiment Builder](https://www.sr-research.com/experiment-builder/) 编程、和 [Data Viewer](https://www.sr-research.com/data-viewer/) 数据分析经验；
+- 眼动技术: 熟悉 [Eyelink II/1000 plus](https://www.sr-research.com) 型眼动仪、 能用 [Experiment Builder](https://www.sr-research.com/experiment-builder/) 进行实验程序的设计和 [Data Viewer](https://www.sr-research.com/data-viewer/) 进行数据分析；
 - 脑电/磁图仪：主持建立了中国第一个儿童脑磁图实验室; 熟悉日本 Yokogawa 脑磁图仪的设备维护和数据采集；能用 [BESA](http://www.besa.de)、 [fieldtrip](http://www.fieldtriptoolbox.org)、和 [SPM12](https://github.com/neurodebian/spm12) 等对脑电/磁数据进行分析。
 
 2. 数据分析
@@ -78,7 +76,7 @@ fontsize: 10pt
 3. 其他技能
 
 - 标记语言：喜欢用 [LaTeX](https://www.latex-project.org)、[markdown](https://daringfireball.net/projects/markdown/)
-和 [R markdown](https://rmarkdown.rstudio.com) (R包) 等进行学术写作和排版；用 [knitr](https://cran.r-project.org/web/packages/knitr/index.html)（R包）把R语言代码嵌入文本写作中；还喜欢用 [Pandoc](https://pandoc.org) 在文件的不同格式间进行转换；
+和 [R markdown](https://rmarkdown.rstudio.com) (R包) 等进行学术写作和排版；用 [knitr](https://cran.r-project.org/web/packages/knitr/index.html)（R包）把R语言代码嵌入文本写作中；用 [Pandoc](https://pandoc.org) 在文件的不同格式间进行转换；
 - 个人网站：用 [go](https://golang.org) 语言下的 [hugo](https://gohugo.io) 和R语言下的 [blogdown](https://github.com/rstudio/blogdown) 包建立了的个人网站 [https://likan.info](https://likan.info)。
 
 
@@ -106,21 +104,19 @@ fontsize: 10pt
 
 - 2013.10，自然语言中条件句假设特征研究，*麦考瑞大学博士生研究基金*，0.46万澳元, 主持人
 
-
-2. 合作平台
+2. 合作平台  
 
 - 2019 ~ 现在，汉语作为第二语言的习得和教学研究创新团队，*北京语言大学一流学科团队建设计划（隽才计划）*，参与者
 
 - 2018 ~ 现在，特殊儿童青少年的心智发展和脑发育特征研究创新平台，*北京语言大学梧桐创新平台*，参与者
 
+3. 奖励  
 
-3. 奖励
+- 2013.11：第38届波士顿儿童语言发展研讨会，旅行奖励 300 美元  
 
-- 2013.11：第38届波士顿儿童语言发展研讨会，旅行奖励 300 美元
+- 2013.04：第26届纽约城市大学句子加工会议，旅行奖励 350 美元  
 
-- 2013.04：第26届纽约城市大学句子加工会议，旅行奖励 350 美元
-
-## 学术兼职
+## 学术兼职  
 
 1. 会议组织
 

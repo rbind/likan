@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.24)  24 JUL 2019 16:04
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.25)  25 JUL 2019 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -862,44 +862,40 @@ File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
 Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (SongtiSC(0)).
 
 
-Package fontspec Warning: Font "Songti SC" does not contain requested Script
-(fontspec)                "CJK".
+Package fontspec Info: Source Han Sans SC scale = 0.7937352335291027.
 
 
-Package fontspec Info: Songti SC scale = 0.9663638421171751.
+Package fontspec Info: Could not resolve font "Source Han Sans SC/I" (it
+(fontspec)             probably doesn't exist).
 
 
-Package fontspec Info: Could not resolve font "Songti SC/I" (it probably
-(fontspec)             doesn't exist).
+Package fontspec Info: Source Han Sans SC scale = 0.7937352335291027.
 
 
-Package fontspec Info: Songti SC scale = 0.9663638421171751.
+Package fontspec Info: Source Han Sans SC/B scale = 0.7937352335291027.
 
 
-Package fontspec Info: Songti SC/B scale = 0.9663638421171751.
+Package fontspec Info: Source Han Sans SC/BI scale = 0.7937352335291027.
 
 
-Package fontspec Info: Songti SC/BI scale = 0.9663638421171751.
-
-
-Package fontspec Info: Font family 'SongtiSC(1)' created for font 'Songti SC'
-(fontspec)             with options
+Package fontspec Info: Font family 'SourceHanSansSC(0)' created for font
+(fontspec)             'Source Han Sans SC' with options
 (fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Songti
-(fontspec)             SC/OT:mapping=tex-text;"
+(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
+(fontspec)             SC/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Songti
-(fontspec)             SC/B/OT:mapping=tex-text;"
+(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
+(fontspec)             SC/B/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Songti
-(fontspec)             SC/BI/OT:mapping=tex-text;"
+(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
+(fontspec)             SC/BI/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 
@@ -1106,11 +1102,11 @@ Package rerunfilecheck Info: File `Likan_Zhan_CV_EN.out' has not changed.
 (rerunfilecheck)             Checksum: EA5E714F7820583553F455E0850C7FF4.
  ) 
 Here is how much of TeX's memory you used:
- 30571 strings out of 494894
- 601271 string characters out of 6176363
- 710588 words of memory out of 5000000
+ 30573 strings out of 494894
+ 601545 string characters out of 6176363
+ 710850 words of memory out of 5000000
  34152 multiletter control sequences out of 15000+600000
- 545350 words of font info for 76 fonts, out of 8000000 for 9000
+ 545358 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,11n,129p,813b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 

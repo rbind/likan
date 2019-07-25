@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.24)  24 JUL 2019 16:06
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.25)  25 JUL 2019 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ entering extended mode
 LaTeX2e <2018-12-01>
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -862,44 +862,40 @@ File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
 Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (SongtiSC(0)).
 
 
-Package fontspec Warning: Font "Songti SC" does not contain requested Script
-(fontspec)                "CJK".
+Package fontspec Info: Source Han Sans SC scale = 0.7937352335291027.
 
 
-Package fontspec Info: Songti SC scale = 0.9663638421171751.
+Package fontspec Info: Could not resolve font "Source Han Sans SC/I" (it
+(fontspec)             probably doesn't exist).
 
 
-Package fontspec Info: Could not resolve font "Songti SC/I" (it probably
-(fontspec)             doesn't exist).
+Package fontspec Info: Source Han Sans SC scale = 0.7937352335291027.
 
 
-Package fontspec Info: Songti SC scale = 0.9663638421171751.
+Package fontspec Info: Source Han Sans SC/B scale = 0.7937352335291027.
 
 
-Package fontspec Info: Songti SC/B scale = 0.9663638421171751.
+Package fontspec Info: Source Han Sans SC/BI scale = 0.7937352335291027.
 
 
-Package fontspec Info: Songti SC/BI scale = 0.9663638421171751.
-
-
-Package fontspec Info: Font family 'SongtiSC(1)' created for font 'Songti SC'
-(fontspec)             with options
+Package fontspec Info: Font family 'SourceHanSansSC(0)' created for font
+(fontspec)             'Source Han Sans SC' with options
 (fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Songti
-(fontspec)             SC/OT:mapping=tex-text;"
+(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
+(fontspec)             SC/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Songti
-(fontspec)             SC/B/OT:mapping=tex-text;"
+(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
+(fontspec)             SC/B/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Songti
-(fontspec)             SC/BI/OT:mapping=tex-text;"
+(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
+(fontspec)             SC/BI/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 
@@ -982,10 +978,10 @@ LaTeX Font Info:    ... okay on input line 122.
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=11.69997pt plus 5.19942pt minus 2.60054pt
 * \hoffset=0.0pt
@@ -1033,10 +1029,10 @@ LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
 (Font)              scaled to size 17.73254pt on input line 126.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
 (Font)              scaled to size 17.6937pt on input line 126.
-LaTeX Font Info:    Font shape `TU/SongtiSC(1)/bx/n' will be
-(Font)              scaled to size 18.09047pt on input line 126.
-LaTeX Font Info:    Font shape `TU/SongtiSC(1)/m/n' will be
-(Font)              scaled to size 12.5628pt on input line 131.
+LaTeX Font Info:    Font shape `TU/SourceHanSansSC(0)/bx/n' will be
+(Font)              scaled to size 14.85867pt on input line 126.
+LaTeX Font Info:    Font shape `TU/SourceHanSansSC(0)/m/n' will be
+(Font)              scaled to size 10.31851pt on input line 131.
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 136.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 136.
 
@@ -1076,30 +1072,44 @@ LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
 (Font)              scaled to size 14.77705pt on input line 144.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
 (Font)              scaled to size 14.74469pt on input line 144.
-LaTeX Font Info:    Font shape `TU/SongtiSC(1)/bx/n' will be
-(Font)              scaled to size 15.07532pt on input line 144.
+LaTeX Font Info:    Font shape `TU/SourceHanSansSC(0)/bx/n' will be
+(Font)              scaled to size 12.38217pt on input line 144.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 9.4725pt on input line 191.
+(Font)              scaled to size 11.367pt on input line 191.
 [1
 
 ] [2]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
-(Font)              scaled to size 12.02365pt on input line 313.
+(Font)              scaled to size 12.02365pt on input line 314.
 
-LaTeX Font Warning: Font shape `TU/SongtiSC(1)/m/it' undefined
-(Font)              using `TU/SongtiSC(1)/m/n' instead on input line 313.
+LaTeX Font Warning: Font shape `TU/SourceHanSansSC(0)/m/it' undefined
+(Font)              using `TU/SourceHanSansSC(0)/m/n' instead on input line 314
+.
 
 [3]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 12.28728pt on input line 438.
-[4] [5] [6] [7] 
+(Font)              scaled to size 12.28728pt on input line 439.
+[4]
+Underfull \hbox (badness 1077) in paragraph at lines 503--510
+\TU/FFNexusSerif(0)/m/n/13 in children’s online sentence comprehension. \TU/FFN
+exusSerif(0)/m/it/13 Cognition, 133\TU/FFNexusSerif(0)/m/n/13 (1), 262-276. doi
+:
+ []
+
+[5] [6]
+Underfull \hbox (badness 1097) in paragraph at lines 640--647
+\TU/FFNexusSerif(0)/m/n/13 Inivted presentation given at the Child Cognition La
+boratory, Department of
+ []
+
+
 AED: lastpage setting LastPage
-[8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 664.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 664.
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 665.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 665.
 (./Likan_Zhan_CV_CN.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 664.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 664.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 665.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 665.
 Package rerunfilecheck Info: File `Likan_Zhan_CV_CN.out' has not changed.
 (rerunfilecheck)             Checksum: 7494023F13DA4A3201D858FF42033362.
 
@@ -1107,12 +1117,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30735 strings out of 494894
- 611137 string characters out of 6176363
- 712012 words of memory out of 5000000
+ 30737 strings out of 494894
+ 612638 string characters out of 6176363
+ 712283 words of memory out of 5000000
  34312 multiletter control sequences out of 15000+600000
- 545374 words of font info for 79 fonts, out of 8000000 for 9000
+ 545382 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,11n,129p,813b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Likan_Zhan_CV_CN.pdf (8 pages).
+Output written on Likan_Zhan_CV_CN.pdf (7 pages).
