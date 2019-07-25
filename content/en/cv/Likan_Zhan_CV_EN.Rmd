@@ -135,9 +135,10 @@ fontsize: 12pt
 
 2. Ad-hoc reviews
 
-- Scientific Reports. (2019);
-- Journal of visualized experiments. (2018);
-- Language Teaching and Linguistic Studies. (In Chinese, 2016).
+- Scientific Reports. (2018 - 2019);
+- Journal of visualized experiments. (2018 - 2019);
+- Language Teaching and Linguistic Studies. (In Chinese, 2016);
+- SAGE Open. (2016).
 
 3. Clinical licenses
 

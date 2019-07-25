@@ -124,11 +124,10 @@ fontsize: 12pt
 
 2. 匿名评审
 
-- Scientific Reports (2019)
-
-- Journal of visualized experiments (2018)
-
-- 《语言教学与研究》（2016）
+- Scientific Reports. (2018 - 2019)
+- Journal of visualized experiments. (2018 - 2019)
+- Language Teaching and Linguistic Studies. (In Chinese, 2016)
+- SAGE Open. (2016)
 
 3. 执业资格
 
