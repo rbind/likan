@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.25)  25 JUL 2019 18:58
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.25)  27 JUL 2019 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -862,40 +862,41 @@ File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
 Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (SongtiSC(0)).
 
 
-Package fontspec Info: Source Han Sans SC scale = 0.7937352335291027.
+Package fontspec Info: Source Han Serif scale = 0.8385177843950382.
 
 
-Package fontspec Info: Could not resolve font "Source Han Sans SC/I" (it
+Package fontspec Info: Could not resolve font "Source Han Serif/I" (it
 (fontspec)             probably doesn't exist).
 
 
-Package fontspec Info: Source Han Sans SC scale = 0.7937352335291027.
+Package fontspec Info: Source Han Serif scale = 0.8385177843950382.
 
 
-Package fontspec Info: Source Han Sans SC/B scale = 0.7937352335291027.
+Package fontspec Info: Source Han Serif/B scale = 0.8385177843950382.
 
 
-Package fontspec Info: Source Han Sans SC/BI scale = 0.7937352335291027.
+Package fontspec Info: Source Han Serif/BI scale = 0.8385177843950382.
 
 
-Package fontspec Info: Font family 'SourceHanSansSC(0)' created for font
-(fontspec)             'Source Han Sans SC' with options
+Package fontspec Info: Font family 'SourceHanSerif(0)' created for font
+(fontspec)             'Source Han Serif' with options
 (fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
-(fontspec)             SC/OT:script=hani;language=DFLT;mapping=tex-text;"
+(fontspec)             <->s*[0.8385177843950382]"Source Han
+(fontspec)             Serif/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
-(fontspec)             SC/B/OT:script=hani;language=DFLT;mapping=tex-text;"
+(fontspec)             <->s*[0.8385177843950382]"Source Han
+(fontspec)             Serif/B/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
-(fontspec)             <->s*[0.7937352335291027]"Source Han Sans
-(fontspec)             SC/BI/OT:script=hani;language=DFLT;mapping=tex-text;"
+(fontspec)             <->s*[0.8385177843950382]"Source Han
+(fontspec)             Serif/BI/OT:script=hani;language=DFLT;mapping=tex-text;"
+
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 
@@ -1029,10 +1030,10 @@ LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
 (Font)              scaled to size 17.73254pt on input line 126.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
 (Font)              scaled to size 17.6937pt on input line 126.
-LaTeX Font Info:    Font shape `TU/SourceHanSansSC(0)/bx/n' will be
-(Font)              scaled to size 14.85867pt on input line 126.
-LaTeX Font Info:    Font shape `TU/SourceHanSansSC(0)/m/n' will be
-(Font)              scaled to size 10.31851pt on input line 131.
+LaTeX Font Info:    Font shape `TU/SourceHanSerif(0)/bx/n' will be
+(Font)              scaled to size 15.69704pt on input line 126.
+LaTeX Font Info:    Font shape `TU/SourceHanSerif(0)/m/n' will be
+(Font)              scaled to size 10.90071pt on input line 131.
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 136.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 136.
 
@@ -1072,8 +1073,8 @@ LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
 (Font)              scaled to size 14.77705pt on input line 144.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
 (Font)              scaled to size 14.74469pt on input line 144.
-LaTeX Font Info:    Font shape `TU/SourceHanSansSC(0)/bx/n' will be
-(Font)              scaled to size 12.38217pt on input line 144.
+LaTeX Font Info:    Font shape `TU/SourceHanSerif(0)/bx/n' will be
+(Font)              scaled to size 13.08081pt on input line 144.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
 (Font)              scaled to size 11.367pt on input line 191.
 [1
@@ -1082,9 +1083,9 @@ LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
 (Font)              scaled to size 12.02365pt on input line 314.
 
-LaTeX Font Warning: Font shape `TU/SourceHanSansSC(0)/m/it' undefined
-(Font)              using `TU/SourceHanSansSC(0)/m/n' instead on input line 314
-.
+LaTeX Font Warning: Font shape `TU/SourceHanSerif(0)/m/it' undefined
+(Font)              using `TU/SourceHanSerif(0)/m/n' instead on input line 314.
+
 
 [3]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
@@ -1102,9 +1103,9 @@ Underfull \hbox (badness 1097) in paragraph at lines 643--650
 boratory, Department of
  []
 
-
+[7] 
 AED: lastpage setting LastPage
-[7]
+[8]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 668.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 668.
 (./Likan_Zhan_CV_CN.aux)
@@ -1118,11 +1119,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  30706 strings out of 494894
- 610465 string characters out of 6176363
- 712283 words of memory out of 5000000
+ 610266 string characters out of 6176363
+ 712257 words of memory out of 5000000
  34281 multiletter control sequences out of 15000+600000
  545382 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,11n,129p,813b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Likan_Zhan_CV_CN.pdf (7 pages).
+Output written on Likan_Zhan_CV_CN.pdf (8 pages).
