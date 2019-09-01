@@ -8,8 +8,13 @@ disable_comments: true
 ### Semester one (September - January)
 - [R for Statistics and Data Visualization](/en/teach/R-for-Statistics-Data-Visualization/) <br>
   Targeted Students: Postgraduate and PhD students <br>
-- [Science and Scientific Research](/en/teach/Science-and-Scientific-Research/) <br>
-  Targeted Students: Undergraduate students
+
+- [Statistics for the Behavioral Sciences](/en/teach/Statistics-for-the-Behavioral-Sciences/) <br>
+  Targeted Students: Undergraduate and Postgraduate students
+
+- [Introduction to Neurolinguistics](/en/teach/Introduction-to-Neurolinguistics/) <br>
+  Targeted Students: Postgraduate and PhD students
+
 
 ### Semester two (March - July)
 - [Applied Statistics](/en/teach/Applied-Statistics/) <br>
@@ -20,3 +25,6 @@ disable_comments: true
   Targeted Students: Postgraduate and PhD students
 - [Statistics for the Behavioral Sciences](/en/teach/Statistics-for-the-Behavioral-Sciences/) <br>
   Targeted Students: Undergraduate and Postgraduate students
+  - [Science and Scientific Research](/en/teach/Science-and-Scientific-Research/) <br>
+  Targeted Students: Undergraduate students
+

@@ -1,0 +1,68 @@
+---
+title: "Introduction to Neurolinguistics"
+author: "Likan Zhan"
+date: '2019-09-01'
+lastmod: "`r Sys.Date()`"
+show_toc: yes
+disable_comments: yes
+output:
+  blogdown::html_page:
+    toc: yes
+---
+
+# 1. Time and Location
+
+- Time: 17:00 - 19:50, Thuesday
+
+- Location: Room 213, Teaching Building 5
+
+- Lecturer: Likan Zhan
+
+# 2. Course Information
+
+- TBA
+
+# 3. References
+
+- Ingram, J. C. L. (2007). *Neurolinguistics: An Introduction to Spoken Language Processing and its Disorders*. Cambridge, UK: Cambridge University Press.
+- Ahlsen, E. (2006). *Introduction to Neurolinguistics*. Amsterdam, The Netherlands: John Benjamins Publishing.
+- Friederici, A. D. (2017). *Language in Our Brain: The Origins of a Uniquely Human Capacity*. Cambridge, MA: The MIT Press.
+- Kemmerer, D. (2014). *Cognitive Neuroscience of Language*. New York, NY: Psychology Press.
+- Schnelle, H. (2010). *Language in the Brain*. Cambirdge, UK: Cambridge University Press.
+
+# 4. Syllabus and Lecture Notes
+
+- Part I. Foundational concepts and issues
+  - Chapter 01. Introduction and overview
+  - Chapter 02. Aspects of linguistic competence
+  - Chapter 03. The neuroanatomy of language
+  - Chapter 04. On modularity and method
+
+- Part II. Speech perception and auditory processing
+  - Chapter 05. The problem of speech recognition
+  - Chapter 06. Speech perception: paradigms and findings
+  - Chapter 07. The speech recognition lexicon
+  - Chapter 08. Disorders of auditory processing
+
+- Part III. Lexical semantics
+  - Chapter 09. Morphology and the mental lexicon
+  - Chapter 10. Lexical semantics
+  - Chapter 11. Lexical semantic disorders in aphasia
+
+- Part IV. Sentence comprehension
+  - Chapter 12. Sentence comprehension and syntactic parsing
+  - Chapter 13. On-line processing, working memory and modularity
+  - Chapter 14. Agrammatism revisited
+
+- Part V. Discourse: language comprehension in context
+  - Chapter 15. Discourse processing
+  - Chapter 16. Breakdown of discourse
+  - Chapter 17. Conclusion and prospectus
+
+# 5. Examination
+
+- TBA
+<!---
+- Time and location: **08:00-09:50, July 13**, **Room 104, Teaching Building 4**;
+- Structure of the exam: 65 multiple choices, selected from the *learning check* problems of chapters *1 - 13*; 2 essay questions, selected from the *odd-numbered problems* of chapters *9 - 13*.
+--->
