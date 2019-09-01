@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.8.16)  1 SEP 2019 14:45
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.8.16)  1 SEP 2019 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1425,8 +1425,8 @@ Package rerunfilecheck Info: File `Likan_Zhan_CV_EN.out' has not changed.
 (rerunfilecheck)             Checksum: EA5E714F7820583553F455E0850C7FF4.
  ) 
 Here is how much of TeX's memory you used:
- 31841 strings out of 494894
- 626218 string characters out of 6176363
+ 31842 strings out of 494894
+ 626235 string characters out of 6176363
  756599 words of memory out of 5000000
  35392 multiletter control sequences out of 15000+600000
  545358 words of font info for 77 fonts, out of 8000000 for 9000
