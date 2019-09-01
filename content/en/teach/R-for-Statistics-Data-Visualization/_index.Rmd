@@ -28,17 +28,17 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_01.pdf)
-    - 02. R foundations [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_02.pdf)
+    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_01.pdf)
+    - 02. R foundations [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_02.pdf)
 - Part I: Data craft
-    - 03. Data wrangling [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_03A.pdf)
-    - 04. Examining Data [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_03B.pdf)
-    - 05. Transforming Data [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_04.pdf)
+    - 03. Data wrangling [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_03A.pdf)
+    - 04. Examining Data [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_03B.pdf)
+    - 05. Transforming Data [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_04.pdf)
 - Part II: Linear models and least squares
-    - 06. Linear least-squares regression [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_05.pdf)
-    - 07. Statistical Inference for Regression [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_06.pdf)
-    - 08. Dummy-variable regression [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_07.pdf)
-    - 09. Analysis of variance  [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_08.pdf)
+    - 06. Linear least-squares regression [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_05.pdf)
+    - 07. Statistical Inference for Regression [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_06.pdf)
+    - 08. Dummy-variable regression [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_07.pdf)
+    - 09. Analysis of variance [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_08.pdf)
 - Part III: Linear-model diagnostics
     - 10. Unusual and influential data
     - 11. Non-Normality, Nonconstant Error Variance, and Nonlinearity
@@ -52,19 +52,19 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 17. Nonparametric Regression
     - 18. Bootstrapping Regression Models
 - Part VI: Mixed-Effects Models
-    - 19. Linear Mixed-Effects Models [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_23.pdf)
+    - 19. Linear Mixed-Effects Models [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_23.pdf)
     - 20. Generalized Linear and Nonlinear Mixed-Effects Models
 
 # 5. Bibliographies
 
 - R manuals
-    - An Introduction to R, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
-    - R Data Import/Export, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
-    - R Installation and Administration, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-admin.pdf)
-    - Writing R Extensions, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf)
-    - The R language definition, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf)
-    - R Internals, [Full text](https://cran.r-project.org/doc/manuals/r-release/R-ints.pdf)
-    - The R reference Index, [Full text](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)
+    - An Introduction to R, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
+    - R Data Import/Export, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
+    - R Installation and Administration, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/R-admin.pdf)
+    - Writing R Extensions, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf)
+    - The R language definition, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf)
+    - R Internals, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/R-ints.pdf)
+    - The R reference Index, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)
 
 - R language in General
     - Becker, R. A., Chambers, J. M., & Wilks, A. R. (1988). *The New S Language: A Programming Environment for Data Analysis and Statistics*. Pacific Grove , CA : Wadsworth. (The **Blue** book)
@@ -100,6 +100,10 @@ Linear models, their variants, and extensions are among the most useful and wide
     - Xie, Y., Allaire, J. J., & Grolemund, G. (2018). *R Markdown: The Definitive Guide*. Boca Raton, FL: CRC Press. [Full text](https://bookdown.org/yihui/rmarkdown/)
 
 # 6. Final Examination
+
+- TBA
+
+<!---
 
   - To sucessfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
@@ -143,6 +147,8 @@ rmarkdown::render(
   ```
 
   - Send both the finished *.Rmd* file, such as [*ZhangSan_20181030.Rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_20181030.Rmd)  and the knitted *.html* file， such as [*ZhangSan_20181030.html*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_20181030.html) to the following email address: `zhanlikan@blcu.edu.cn` before **2019-01-05, 0900**.
+
+--->
 
 # 7. Tools
 
