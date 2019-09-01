@@ -24,40 +24,32 @@ output:
 
 # 3. References
 
-- Ingram, J. C. L. (2007). *Neurolinguistics: An Introduction to Spoken Language Processing and its Disorders*. Cambridge, UK: Cambridge University Press.
 - Ahlsen, E. (2006). *Introduction to Neurolinguistics*. Amsterdam, The Netherlands: John Benjamins Publishing.
-- Friederici, A. D. (2017). *Language in Our Brain: The Origins of a Uniquely Human Capacity*. Cambridge, MA: The MIT Press.
+- **Friederici, A. D. (2017). *Language in Our Brain: The Origins of a Uniquely Human Capacity*. Cambridge, MA: The MIT Press.**
+- Ingram, J. C. L. (2007). *Neurolinguistics: An Introduction to Spoken Language Processing and its Disorders*. Cambridge, UK: Cambridge University Press.
 - Kemmerer, D. (2014). *Cognitive Neuroscience of Language*. New York, NY: Psychology Press.
 - Schnelle, H. (2010). *Language in the Brain*. Cambirdge, UK: Cambridge University Press.
 
 # 4. Syllabus and Lecture Notes
 
-- Part I. Foundational concepts and issues
-  - Chapter 01. Introduction and overview
-  - Chapter 02. Aspects of linguistic competence
-  - Chapter 03. The neuroanatomy of language
-  - Chapter 04. On modularity and method
+- Part 0. Introduction
+  - Chapter.00. Introduction to the Course
 
-- Part II. Speech perception and auditory processing
-  - Chapter 05. The problem of speech recognition
-  - Chapter 06. Speech perception: paradigms and findings
-  - Chapter 07. The speech recognition lexicon
-  - Chapter 08. Disorders of auditory processing
+- Part I. The brain regions affording Language
+  - Chapter 01. Language Functions in the Brain
+  - Chapter 02. Excursions
 
-- Part III. Lexical semantics
-  - Chapter 09. Morphology and the mental lexicon
-  - Chapter 10. Lexical semantics
-  - Chapter 11. Lexical semantic disorders in aphasia
+- Part II. The network affording Language
+  - Chapter 03. The Structural Language Network
+  - Chapter 04. The Functional Language Network
 
-- Part IV. Sentence comprehension
-  - Chapter 12. Sentence comprehension and syntactic parsing
-  - Chapter 13. On-line processing, working memory and modularity
-  - Chapter 14. Agrammatism revisited
+- Part III. The brain and the language acquisiton
+  - Chapter 05. The Brain’s Critical Period for Language Acquisition
+  - Chapter 06. Ontogeny of the Neural Language Network
 
-- Part V. Discourse: language comprehension in context
-  - Chapter 15. Discourse processing
-  - Chapter 16. Breakdown of discourse
-  - Chapter 17. Conclusion and prospectus
+- Part IV. The evolution of language
+  - Chapter 07. Evolution of Language
+  - Chapter 08. The Neural Basis of Language
 
 # 5. Examination
 
