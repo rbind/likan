@@ -28,17 +28,17 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_01.pdf)
-    - 02. R foundations [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_02.pdf)
+    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2019_CH_01.pdf)
+    - 02. R foundations
 - Part I: Data craft
-    - 03. Data wrangling [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_03A.pdf)
-    - 04. Examining Data [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_03B.pdf)
-    - 05. Transforming Data [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_04.pdf)
+    - 03. Data wrangling
+    - 04. Examining Data
+    - 05. Transforming data
 - Part II: Linear models and least squares
-    - 06. Linear least-squares regression [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_05.pdf)
-    - 07. Statistical Inference for Regression [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_06.pdf)
-    - 08. Dummy-variable regression [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_07.pdf)
-    - 09. Analysis of variance [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_08.pdf)
+    - 06. Linear least-squares regression
+    - 07. Statistical Inference for Regression
+    - 08. Dummy-variable regression
+    - 09. Analysis of variance
 - Part III: Linear-model diagnostics
     - 10. Unusual and influential data
     - 11. Non-Normality, Nonconstant Error Variance, and Nonlinearity
