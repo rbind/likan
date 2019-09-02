@@ -10,10 +10,10 @@ disable_comments: true
     Targeted Students: Postgraduate and PhD students <br>
 
 - [Statistics for the Behavioral Sciences](/en/teach/Statistics-for-the-Behavioral-Sciences/) <br>
-    Targeted Students: Undergraduate and Postgraduate students
+    Targeted Students: Undergraduate students
 
 - [Introduction to Neurolinguistics](/en/teach/Introduction-to-Neurolinguistics/) <br>
-    Targeted Students: Postgraduate and PhD students
+    Targeted Students: Underpostgraduate Students
 
 
 ### Semester two (March - July)
