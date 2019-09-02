@@ -28,7 +28,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2019_CH_01.pdf)
+    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/CH_01.pdf)
     - 02. R foundations
 - Part I: Data craft
     - 03. Data wrangling
@@ -52,7 +52,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 17. Nonparametric Regression
     - 18. Bootstrapping Regression Models
 - Part VI: Mixed-Effects Models
-    - 19. Linear Mixed-Effects Models [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/2018_CH_23.pdf)
+    - 19. Linear Mixed-Effects Models
     - 20. Generalized Linear and Nonlinear Mixed-Effects Models
 
 # 5. Bibliographies

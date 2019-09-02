@@ -43,21 +43,21 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 # 4. Syllabus and Lecture Notes
 
 - Part I. Introduction and Descriptive Statistics
-  - Chapter 01. Introduction to Statistics.   [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.01.pdf)
-  - Chapter 02. Frequency Distributions. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.02.pdf)
-  - Chapter 03. Central Tendency. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.03.pdf)
-  - Chapter 04. Variability. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.04.pdf)
+  - Chapter 01. Introduction to Statistics [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.01.pdf)
+  - Chapter 02. Frequency Distributions
+  - Chapter 03. Central Tendency
+  - Chapter 04. Variability
 
 - Part II. Foundations of Inferential Statistics
-  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.05.pdf)
-  - Chapter 06. Probability. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.06.pdf)
-  - Chapter 07. Probability and Samples: The Distribution of Sample Means. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.07.pdf)
-  - Chapter 08. Introduction to Hypothesis Testing. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.08.pdf)
+  - Chapter 05. z-Scores: Location of Scores and Standardized Distributions
+  - Chapter 06. Probability
+  - Chapter 07. Probability and Samples: The Distribution of Sample Means
+  - Chapter 08. Introduction to Hypothesis Testing
 
 - Part III. Using *t*-Statistics for Inferences
-  - Chapter 09. Introduction to the *t* Statistic. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.09.pdf)
-  - Chapter 10. The *t* Test for Two Independent Samples. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.10.pdf)
-  - Chapter 11. The *t* Test for Two Related Samples. [<i class="fa fa-file-pdf-o"></i>](https://appendix.likan.info/Statistics-for-the-Behavioral-Sciences/CH.11.pdf)
+  - Chapter 09. Introduction to the *t* Statistic
+  - Chapter 10. The *t* Test for Two Independent Samples
+  - Chapter 11. The *t* Test for Two Related Samples
 
 - Part IV. Analysis of Variance
   - Chapter 12. Introduction to Analysis of Variance.
