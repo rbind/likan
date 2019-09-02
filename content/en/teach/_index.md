@@ -13,7 +13,7 @@ disable_comments: true
     Targeted Students: Undergraduate students
 
 - [Introduction to Neurolinguistics](/en/teach/Introduction-to-Neurolinguistics/) <br>
-    Targeted Students: Underpostgraduate Students
+    Targeted Students: Undergraduate Students
 
 
 ### Semester two (March - July)
