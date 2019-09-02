@@ -12,7 +12,7 @@ output:
 
 # 1. Time and Location
 
-- Time: 17:00 - 19:50, Thuesday
+- Time: 17:00 - 18:50, Thuesday
 
 - Location: Room 213, Teaching Building 5
 
@@ -20,7 +20,7 @@ output:
 
 # 2. Course Information
 
-- Thi calss intends to provide a coherent view on the relation between language and the brain based on the multifold empirical data coming from different research fields: elec- trophysiological and functional neuroimaging data of the adult language system, neurosci- entific data of the developmental language system, and data on the brain structure and its maturation in humans as well as in non-human primates.
+- This calss intends to provide a coherent view on the relation between language and the brain based on the multifold empirical data coming from different research fields: electrophysiological and functional neuroimaging data of the adult language system, neuroscientific data of the developmental language system, and data on the brain structure and its maturation in humans as well as in non-human primates.
 
 # 3. References
 
