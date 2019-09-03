@@ -26,9 +26,6 @@ disable_comments: true
 - [Introduction to Cognitive Neuroscience](/en/teach/Introduction-to-Cognitive-Neuroscience/) <br>
     Targeted Students: Postgraduate and PhD students
 
-- [Statistics for the Behavioral Sciences](/en/teach/Statistics-for-the-Behavioral-Sciences/) <br>
-    Targeted Students: Undergraduate and Postgraduate students
-
 - [Science and Scientific Research](/en/teach/Science-and-Scientific-Research/) <br>
     Targeted Students: Undergraduate students
 
