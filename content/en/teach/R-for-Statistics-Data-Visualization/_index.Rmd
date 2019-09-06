@@ -10,7 +10,7 @@ output:
 ---
 # 1. Lecture Time and Location
 
-- Time: 19:00 - 21:50, Each Friday.
+- Time: 19:00 - 21:50, Each Friday, **Start From September, 20**.
 - Location: 514, Main Building South.
 
 # 2. Prerequisites
