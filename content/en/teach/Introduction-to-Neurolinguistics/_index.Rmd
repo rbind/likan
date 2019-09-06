@@ -12,7 +12,7 @@ output:
 
 # 1. Time and Location
 
-- Time: 17:00 - 18:50, Each Thuesday, **Start From September, 20**.
+- Time: 17:00 - 18:50, Each Thuesday, Start from **September 17th**.
 
 - Location: Room 213, Teaching Building 5
 
