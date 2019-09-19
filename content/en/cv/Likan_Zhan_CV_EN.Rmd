@@ -30,11 +30,11 @@ fontsize: 12pt
 
 ## Academic appointment
 
-- 2019.07 ~ Now, Associate professor,<br>
+- 2018.12 ~ Now, Associate professor,<br>
   School of Communication Science,<br>
   Beijing Language and Culture University, Beijing, China
 
-- 2014.10 ~ 2019.06, Assistant professor,<br>
+- 2014.10 ~ 2018.11, Assistant professor,<br>
   MEG Laboratory for Brain Sciences, <br>
   Institute for Speech Pathology and the Brain Science,<br>
   Beijing Language and Culture University, Beijing, China
@@ -55,6 +55,9 @@ fontsize: 12pt
 
 - 2019 ~ Now. Experimental Psychology, <br>
   Undergraduates, 4 hours per week, 68 hours in total
+
+- 2019 ~ Now. Introduction to Neurolinguistics, <br>
+  Undergraduates, 2 hours per week, 34 hours in total
 
 - 2017 ~ Now. Statistics for the Behavioral Sciences, <br>
   Undergraduates and post-graduates, 2 hours per week, 34 hours in total
@@ -87,7 +90,7 @@ fontsize: 12pt
 
 3. Other
 
-- Markup languages: Be familiar with [LaTeX](https://www.latex-project.org), [markdown](https://daringfireball.net/projects/markdown/), and [R markdown](https://rmarkdown.rstudio.com) (R package) for document preparing; [knitr](https://cran.r-project.org/web/packages/knitr/index.html)  (R package) for dynamically integrating R code into a document;  [Pandoc](https://pandoc.org) for converting files from one markup format into another;
+- Markup languages: Be familiar with [LaTeX](https://www.latex-project.org), [markdown](https://daringfireball.net/projects/markdown/), [R markdown](https://rmarkdown.rstudio.com) (R package) , and [Jupyter](https://jupyter.org) for document preparing; [knitr](https://cran.r-project.org/web/packages/knitr/index.html) (R package) for dynamically integrating R code into a document; [Pandoc](https://pandoc.org) for markup format conversion;
 - Personal website: Use [hugo](https://gohugo.io) under [go](https://golang.org) language and the R package [blogdown](https://github.com/rstudio/blogdown) to build my personal website [https://likan.info](https://likan.info).
 
 ## Grants, projects, and awards

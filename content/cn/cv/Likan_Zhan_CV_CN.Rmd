@@ -27,9 +27,9 @@ fontsize: 12pt
 
 ## 职业经历
 
-- 2019.07 ~ 现在，副教授，北京语言大学语言康复学院
+- 2018.12 ~ 现在，副教授，北京语言大学语言康复学院
 
-- 2014.10 ~ 2019.06，助理研究员，北京语言大学语言病理与脑科学研究所
+- 2014.10 ~ 2018.11，助理研究员，北京语言大学语言病理与脑科学研究所
 
 ## 教育经历
 
@@ -43,6 +43,9 @@ fontsize: 12pt
 
 - 2019 ~ 现在，实验心理学，<br>
   每周4课时，共68课时，言语听觉本科生
+
+- 2019 ~ 现在，神经语言学，<br>
+  每周2课时，共34课时，言语听觉本科生
 
 - 2017 ~ 现在，行为科学统计学，<br>
   每周2课时，共34课时，言语听觉本科生和相关专业硕士研究生
@@ -75,8 +78,7 @@ fontsize: 12pt
 
 3. 其他技能
 
-- 标记语言：喜欢用 [LaTeX](https://www.latex-project.org)、[markdown](https://daringfireball.net/projects/markdown/)
-和 [R markdown](https://rmarkdown.rstudio.com) (R包) 等进行学术写作和排版；用 [knitr](https://cran.r-project.org/web/packages/knitr/index.html)（R包）把R语言代码嵌入文本写作中；用 [Pandoc](https://pandoc.org) 在文件的不同格式间进行转换；
+- 标记语言：喜欢用 [\LaTeX](https://www.latex-project.org)、[markdown](https://daringfireball.net/projects/markdown/)、[R markdown](https://rmarkdown.rstudio.com) (R包)、和 [Jupyter](https://jupyter.org) 等进行学术排版和写作；用 [knitr](https://cran.r-project.org/web/packages/knitr/index.html)（R包）把R语言代码嵌入文本写作中；用 [Pandoc](https://pandoc.org) 在文件的不同格式间进行转换；
 - 个人网站：用 [go](https://golang.org) 语言下的 [hugo](https://gohugo.io) 和R语言下的 [blogdown](https://github.com/rstudio/blogdown) 包建立了的个人网站 [https://likan.info](https://likan.info)。
 
 
