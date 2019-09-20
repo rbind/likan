@@ -57,22 +57,22 @@ fontsize: 12pt
   Undergraduates, 4 hours per week, 68 hours in total
 
 - 2019 ~ Now. Introduction to Neurolinguistics, <br>
-  Undergraduates, 2 hours per week, 34 hours in total
+  Postgraduates, 2 hours per week, 34 hours in total
 
 - 2017 ~ Now. Statistics for the Behavioral Sciences, <br>
-  Undergraduates and post-graduates, 2 hours per week, 34 hours in total
+  Undergraduates and Postgraduates, 2 hours per week, 34 hours in total
 
 - 2016 ~ Now. R for Modeling and Visualizing Data, <br>
-  Post-graduates and PhD candicates, 4 hours per week, 68 hours in total
+  Postgraduates and PhD candicates, 4 hours per week, 68 hours in total
 
 - 2015 ~ Now. Introduction to Cognitive Neuroscience,  <br>
-  Post-graduates and PhD candicates, 2 hours per week, 34 hours in total
+  Postgraduates and PhD candicates, 2 hours per week, 34 hours in total
 
 - 2015 ~ Now. Foundations of Scientific Research, <br>
-  Under-graduates, 3 hours per week, 54 hours in total
+  Undergraduates, 3 hours per week, 54 hours in total
 
 - 2015 Fall. General Psychology, <br>
-  Under-graduates, 3 hours per week, 54 hours in total
+  Undergraduates, 3 hours per week, 54 hours in total
 
 ## Professional skills
 

@@ -1,0 +1,730 @@
+\documentclass[12pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{unicode=true,
+            pdftitle={Curriculum Vitae},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Curriculum Vitae}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{}
+    \preauthor{}\postauthor{}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2016-01-22}
+
+\usepackage[fontsize=13pt]{scrextend}
+
+%%%%%% 1. Change font %%%%%%
+\setmainfont{FF Nexus Serif} %% FF Nexus Serif, FF Nexus Sans, Adobe Caslon Pro
+\usepackage{ctex}
+\setCJKmainfont{Source Han Serif} % Source Han Serif SC; STKaiti
+
+%%%%%% 2. Reduce after enumerate and itemized environment %%%%%%
+\let\oldendenumerate=\endenumerate
+\def\endenumerate{\oldendenumerate %
+   \vspace*{-\baselineskip}%
+   }%
+   
+\let\oldenditemize=\enditemize
+\def\enditemize{\oldenditemize %
+   \vspace*{-\baselineskip}%
+   }%
+
+%%% 3. Used font awesome in latex %%%%
+\usepackage[fixed]{fontawesome5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 2. Change page style
+\AtBeginDocument{\let\maketitle\relax} % Supress \maketitle
+\usepackage{datetime2}
+\usepackage{fancyhdr}
+\usepackage{lastpage} % LastPage
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
+\rhead{} % Likan Zhan's CV
+\rfoot{} % Last update: \today
+\fancyfoot[C]{--~\thepage/\pageref*{LastPage}~--}
+
+\begin{document}
+\maketitle
+
+\hypertarget{likan-zhan}{%
+\section{Likan ZHAN}\label{likan-zhan}}
+
+\begin{itemize}
+\tightlist
+\item
+  \faUniversity ~ No.~15, Xueyuan Road, Haidian District, Beijing
+  100083, China
+\item
+  \faPhone* ~ + 86 10 8230 3468
+\item
+  \faEnvelope[regular] ~
+  \href{mailto:zhanlikan@hotmail.com}{\nolinkurl{zhanlikan@hotmail.com}}
+\item
+  \faGlobe ~ \url{https://likan.info}
+\item
+  Last update: 2019-09-20
+\end{itemize}
+
+\hypertarget{academic-appointment}{%
+\subsection{Academic appointment}\label{academic-appointment}}
+
+\begin{itemize}
+\item
+  2018.12 \textasciitilde{} Now, Associate professor,\\
+  School of Communication Science,\\
+  Beijing Language and Culture University, Beijing, China
+\item
+  2014.10 \textasciitilde{} 2018.11, Assistant professor,\\
+  MEG Laboratory for Brain Sciences, \\
+  Institute for Speech Pathology and the Brain Science,\\
+  Beijing Language and Culture University, Beijing, China
+\end{itemize}
+
+\hypertarget{education}{%
+\subsection{Education}\label{education}}
+
+\begin{itemize}
+\item
+  2010.10 \textasciitilde{} 2014.09, Ph.D.~Cognitive Science, \\
+  Macquarie University, Sydney, Australia
+\item
+  2007.09 \textasciitilde{} 2010.07, M.E. Cognitive Psychology, \\
+  Beijing Language and Culture University, Beijing, China
+\item
+  2000.09 \textasciitilde{} 2004.07, B.A. Teaching Chinese as a Second
+  Language, \\
+  Beijing Language and Culture University, Beijing, China
+\end{itemize}
+
+\hypertarget{teaching-experience}{%
+\subsection{Teaching experience}\label{teaching-experience}}
+
+\begin{itemize}
+\item
+  2019 \textasciitilde{} Now. Experimental Psychology, \\
+  Undergraduates, 4 hours per week, 68 hours in total
+\item
+  2019 \textasciitilde{} Now. Introduction to Neurolinguistics, \\
+  Postgraduates, 2 hours per week, 34 hours in total
+\item
+  2017 \textasciitilde{} Now. Statistics for the Behavioral Sciences, \\
+  Undergraduates and Postgraduates, 2 hours per week, 34 hours in total
+\item
+  2016 \textasciitilde{} Now. R for Modeling and Visualizing Data, \\
+  Postgraduates and PhD candicates, 4 hours per week, 68 hours in total
+\item
+  2015 \textasciitilde{} Now. Introduction to Cognitive Neuroscience, \\
+  Postgraduates and PhD candicates, 2 hours per week, 34 hours in total
+\item
+  2015 \textasciitilde{} Now. Foundations of Scientific Research, \\
+  Undergraduates, 3 hours per week, 54 hours in total
+\item
+  2015 Fall. General Psychology, \\
+  Undergraduates, 3 hours per week, 54 hours in total
+\end{itemize}
+
+\hypertarget{professional-skills}{%
+\subsection{Professional skills}\label{professional-skills}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Experiment techniques
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Test stimuli: Be familiar with
+  \href{https://ctan.org/pkg/pgf?lang=en}{PGF} package in
+  \href{https://www.latex-project.org}{LaTeX},
+  \href{https://imagemagick.org}{ImageMagick} and its implementation in
+  R
+  \href{https://cran.r-project.org/web/packages/magick/index.html}{magick},
+  \href{https://www.omnigroup.com/omnigraffle/}{OmniGraffle}
+  (Proprietary), and \href{https://www.pixelmator.com}{Pixelmator}
+  (Proprietary) for image creating and editting;
+  \href{http://www.fon.hum.uva.nl/praat/}{praat}, R packages
+  \href{https://cran.r-project.org/web/packages/tuneR/index.html}{tuneR}
+  and \href{https://cran.r-project.org/package=seewave}{seewave}, and
+  \href{https://www.adobe.com/products/audition.html}{Adobe Audition}
+  (Proprietary) for audio editting and processing;
+  \href{https://www.blender.org}{blender} and
+  \href{https://www.autodesk.com/products/maya/overview}{Autodesk Maya}
+  (Proprietary) for video and 3d modeling;
+  \href{https://ffmpeg.org}{ffmpeg} for audio and video format
+  converting;
+\item
+  Experiments building: Be familiar with
+  \href{http://www.psychopy.org}{Psychopy} under
+  \href{https://www.python.org}{Python},
+  \href{http://psychtoolbox.org}{Psychtoolbox} under
+  \href{https://www.mathworks.com/products/matlab.html}{Matlab},
+  \href{https://www.pstnet.com/eprime.cfm}{E-prime} (Proprietary),
+  \href{https://www.neurobs.com/presentation}{Presentation}
+  (Proprietary), and
+  \href{https://www.sr-research.com/experiment-builder/}{Experiment
+  Builder} (Proprietary);
+\item
+  Eye-tracker: Advanced experience in using
+  \href{https://www.sr-research.com}{Eyelink II/1000 plus} (Proprietary)
+  for conducting experiments,
+  \href{https://www.sr-research.com/experiment-builder/}{Experiment
+  Builder} (Proprietary) for experiment building, and
+  \href{https://www.sr-research.com/data-viewer/}{Data Viewer}
+  (Proprietary) for data prepossing;
+\item
+  E/MEG: In charge of establishing the first Child MEG lab in China;
+  familiar with Yokogawa MEG system for equipment maintenance and MEG
+  data acquisition, as well as \href{http://www.besa.de}{BESA}
+  (Proprietary), \href{http://www.fieldtriptoolbox.org}{fieldtrip} (Open
+  source under Matlab), and
+  \href{https://github.com/neurodebian/spm12}{SPM12} (Open source under
+  Matlab) for data processing.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Data processing
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  R: Besides base \href{https://www.r-project.org}{R}, be familiar with
+  \href{http://r-datatable.com}{data.table},
+  \href{https://cran.r-project.org/web/packages/dplyr/index.html}{dplyr},
+  and
+  \href{https://cran.r-project.org/web/packages/tidyr/index.html}{tidyr}
+  for data preprossing;
+  \href{https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html}{graphics},
+  \href{https://cran.r-project.org/package=lattice}{lattice}, and
+  \href{http://ggplot2.tidyverse.org}{ggplot2} for data visualization;
+  \href{https://cran.r-project.org/web/packages/car/index.html}{car},
+  \href{https://github.com/lme4/lme4}{lme4}, and
+  \href{https://cran.r-project.org/web/packages/gam/index.html}{gam} for
+  computational modeling; Create the R package
+  \href{https://github.com/likanzhan/acqr}{acqr} for teaching statistics
+  and illustrating data visualization;
+\item
+  Julia: Recently start to use \href{https://julialang.org}{julia} for
+  computational modeling, especially the
+  \href{https://github.com/dmbates/MixedModels.jl}{MixedModels} package,
+  because of the speed limitations of R.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Other
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Markup languages: Be familiar with
+  \href{https://www.latex-project.org}{LaTeX},
+  \href{https://daringfireball.net/projects/markdown/}{markdown},
+  \href{https://rmarkdown.rstudio.com}{R markdown} (R package) , and
+  \href{https://jupyter.org}{Jupyter} for document preparing;
+  \href{https://cran.r-project.org/web/packages/knitr/index.html}{knitr}
+  (R package) for dynamically integrating R code into a document;
+  \href{https://pandoc.org}{Pandoc} for markup format conversion;
+\item
+  Personal website: Use \href{https://gohugo.io}{hugo} under
+  \href{https://golang.org}{go} language and the R package
+  \href{https://github.com/rstudio/blogdown}{blogdown} to build my
+  personal website \url{https://likan.info}.
+\end{itemize}
+
+\hypertarget{grants-projects-and-awards}{%
+\subsection{Grants, projects, and
+awards}\label{grants-projects-and-awards}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Grants
+\end{enumerate}
+
+\begin{itemize}
+\item
+  \textbf{Zhan, L.}, Zhou, P., Zhang, L., \& Crain, S. (2019 - 2023).
+  The Acquisition and Online Processing of Irrealis in Mandarin Chinese.
+  \emph{The National Social Science Fund of China}. {[}Grant
+  No.~19BYY087{]}. (¥200,000). Role: Principle Investigator.
+\item
+  \textbf{Zhan, L.}, Qu, Y., Xu, J., Xiao, Y., \& Li, N. (2019 - 2020).
+  The eye movements pattern and neural oscitation markers of predictive
+  processing in language comprehension. \emph{The Fundamental Research
+  Funds for the Central Universities}. {[}Grant No.~19YJ080002{]}.
+  (¥70,000). Role: Principle Investigator.
+\item
+  \textbf{Zhan, L.}, Shi, F., Gao, L., \& Zhang, L. (2019 - 2020). The
+  online prrocessing and acquisition of lexical tone in Mandarin
+  Chinese. \emph{The Fundamental Research Funds for the Central
+  Universities}. {[}Grant No.~18YBT15{]}. (¥70,000). Role: Principle
+  Investigator.
+\item
+  Shi, D., et al.~(2019 - 2023). Studies of Chinese in Generative
+  Grammar and Development of Chinese Grammar in the New Era. \emph{The
+  Major Project of the National Social Science Found of China}. {[}Grant
+  No.~18ZDA291{]}. (¥800,000). Role: Co-Investigator.
+\item
+  Si, F., et al.~(2018 - 2023). Language acquisition and language
+  cognition under the perspective of syntactic cartography. \emph{The
+  Fundamental Research Funds for the Central Universities}. {[}Grant
+  No.~18ZDJ06{]}. (¥300,000). Role: Co-Investigator.
+\item
+  \textbf{Zhan, L.} (2015 - 2016). Experimental explorations of possible
+  world semantics. \emph{The Fundamental Research Funds for the Central
+  Universities}. {[}Grant No.~15YBB29{]}. (¥20,000). Role: Principle
+  Investigator.
+\item
+  \textbf{Zhan, L.} (2015 - 2016). Introduction to psychology and the
+  scientific research. \emph{The Funds Supporting the Growth of the New
+  Teachers}. {[}Grant No.~FD201530{]}. (¥7,000). Role: Principle
+  Investigator.
+\item
+  \textbf{Zhan, L.}, Shi, F., Gao, L., \& Zhang, L. (2015 - 2016). The
+  Processing and acquisition of tone in Mandarin Chinese. \emph{The
+  Fundamental Research Funds for the Central Universities}. {[}Grant
+  No.~15YJ050003{]}. (¥70,000). Role: Principle Investigator.
+\item
+  \textbf{Zhan, L.} (2010 - 2014). The interpretation of conditionals in
+  natural language. \emph{Cognitive Science Postgraduate Research Grant
+  of Macquarie University}. (\$10,570). Role: Principle Investigator.
+\item
+  \textbf{Zhan, L.} (20103). The hypothetical property of conditionals
+  in natural language. \emph{Macquarie University Postgraduate Research
+  Fund}. (\$4,684). Role: Principle Investigator.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Projects
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Zhang, L., et al.~(2018 - Now). The psychological and brain
+  development of atypical developing adolensences. \emph{The Program of
+  WuTong Inovations Platforms}. Role: Co-Investigator.
+\item
+  Chen, M., et al.~(2019 - Now). The study of Chinese as a second
+  language acquisition and second language teaching (The JunCai Group).
+  \emph{The Program of Establishing First-Class Disciplines in BLCU}.
+  Role: Co-Investigator.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Awards
+\end{enumerate}
+
+\begin{itemize}
+\item
+  2013.11. The Paula Menyuk Travel Award for the 38th Boston University
+  Conference on Language Development. (\$300).
+\item
+  2013.04. The Travel Award for the 26th Annual CUNY Sentence Processing
+  Conference. (\$350).
+\end{itemize}
+
+\hypertarget{professional-activities}{%
+\subsection{Professional activities}\label{professional-activities}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Organization of international meetings
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Academic Advisory Committee, The 24th annual conference of the
+  International Association of Chinese Linguistics
+  (\href{http://iacl24.blcu.edu.cn}{IACL-24}), Beijing Language and
+  Culture University, Beijing, China.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Ad-hoc reviews
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Scientific Reports. (2018 - 2019);
+\item
+  Journal of visualized experiments. (2018 - 2019);
+\item
+  Language Teaching and Linguistic Studies. (In Chinese, 2016);
+\item
+  SAGE Open. (2016).
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Clinical licenses
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Licensed Examiner of Wechsler Preschool and Primary Scale of
+  Intelligence 4th Edition (WPPSI-VI) Chinese Version.
+\item
+  Licensed Examiner of Adaptive Behavior Assessment System 2nd Edition
+  (ABAS-II) Chinese Version.
+\end{itemize}
+
+\hypertarget{publications}{%
+\subsection{Publications}\label{publications}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Book
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Zhan, L.} (2015). \emph{The Interpretation of Conditionals in
+  Natural Language}. Saarbrucken, Germany: Lap Lambert Academic
+  Publishing.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Periodicals
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Zhou, P., \textbf{Zhan, L.}, \& Ma, H. (2019). Understanding Others'
+  Minds: Social Inference in Preschool Children with Autism Spectrum
+  Disorder. \emph{Journal of Autism and Developmental Disorders}.
+  doi:10.1007/s10803-019-04167-x
+  \href{https://publications.likan.info/Periodicals/JAutismDevDisord2019.pdf}{
+  \faFilePdf[regular] }
+\item
+  Zhou, P., \textbf{Zhan, L.}, \& Ma, H. (2018). Predictive language
+  processing in preschool children with Autism Spectrum Disorder: An
+  eye-tracking study. \emph{Journal of Psycholinguistic Research}.
+  doi:10.1007/s10936-018-9612-5
+  \href{https://publications.likan.info/Periodicals/JPsycholinguistRes2018.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.} (2018). Using eye movements recorded in the visual
+  world paradigm to explore the online processing of spoken language.
+  \emph{Journal of Visualized Experiments, 140}, e58086. doi:
+  10.3791/58086
+  \href{https://publications.likan.info/Periodicals/jove-protocol-58086.pdf}{
+  \faFilePdf[regular] }
+\item
+  Zhou, P., Ma, W., \textbf{Zhan, L.}, \& Ma, H (2018). Using the visual
+  world paradigm to study sentence comprehension in Mandarin-speaking
+  children with autism. \emph{Journal of Visualized Experiments, 140},
+  e58452. doi: 10.3791/58452
+  \href{https://publications.likan.info/Periodicals/jove-protocol-58452.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.}, Zhou, P., \& Crain, S. (2018). Using the
+  visual-world paradigm to explore the meaning of conditionals in
+  natural language. \emph{Language, Cognition and Neuroscience, 33}(8),
+  1049-1062. doi: 10.1080/23273798.2018.1448935
+  \href{https://publications.likan.info/Periodicals/LangCognNeurosci2018.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.} (2018). Scalar and ignorance inferences are both
+  computed immediately upon encountering the sentential connective: The
+  online processing of sentences with disjunction using the visual world
+  paradigm. \emph{Frontiers in Psychology, 9}. doi:
+  10.3389/fpsyg.2018.00061
+  \href{https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00061/full}{
+  \faFilePdf[regular] }
+\item
+  Moscati, V., \textbf{Zhan, L.}, \& Zhou, P. (2017). Children's on-line
+  processing of epistemic modals. \emph{Journal of Child Language,
+  44}(5), 1025-1040. doi: 10.1017/S0305000916000313
+  \href{https://publications.likan.info/Periodicals/JChildLang2016.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.}, Crain, S., \& Zhou, P. (2015). The online
+  processing of only if- and even if- conditional statements:
+  Implications for mental models. \emph{Journal of Cognitive Psychology,
+  26}(7), 367-379. doi: 10.1080/20445911.2015.1016527
+  \href{https://publications.likan.info/Periodicals/JCognPsychol2015.pdf}{
+  \faFilePdf[regular] }
+\item
+  Zhou, P., Crain, S., \& \textbf{Zhan, L.} (2014). Grammatical aspect
+  and event recognition in children's online sentence comprehension.
+  \emph{Cognition, 133}(1), 262-276. doi:
+  10.1016/j.cognition.2014.06.018
+  \href{http://publications.likan.info/Periodicals/Cognition2014.pdf}{
+  \faFilePdf[regular] }
+\item
+  Zhou, P., Crain, S., \& \textbf{Zhan, L.} (2012). Sometimes children
+  are as good as adults: The pragmatic use of prosody in children's
+  on-line sentence processing. \emph{Journal of Memory and Language,
+  67}(1), 149-164. doi: 10.1016/j.jml.2012.03.005
+  \href{https://publications.likan.info/Periodicals/JMemLang2012.pdf}{
+  \faFilePdf[regular] }
+\item
+  Zhou, P., Su, Y., Crain, S., Gao, L., \& \textbf{Zhan, L.} (2012).
+  Children's use of phonological information in ambiguity resolution: a
+  view from Mandarin Chinese. \emph{Journal of Child Language, 39}(04),
+  687-730. doi: 10.1017/S0305000911000249
+  \href{https://publications.likan.info/Periodicals/JChildLang2012.pdf}{
+  \faFilePdf[regular] }
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Book chapters and conference proceedings
+\end{enumerate}
+
+\begin{itemize}
+\item
+  \textbf{Zhan, L.} (2018). Magnetoencephalography (MEG) as a Technique
+  for Imaging Brain Function and Dysfunction. In \emph{Top 10
+  Contributions on Psychology} (Chapter 4, pp.~1-38). Telangana, India:
+  Avid Science
+\item
+  \textbf{Zhan, L.}, Crain, S., \& Zhou, P. (2013). The anticipatory e
+  ects of focus operators: A visual- world paradigm eye-tracking study
+  of ``only if'' and ``even if'' conditionals. In N. Goto, K. Otaki, A.
+  Sato, \& K. Takita (Eds.), \emph{Proceedings of GLOW in Asia IX 2012}.
+  Mie University, Japan.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Peer reviewed conference presentations
+\end{enumerate}
+
+\begin{itemize}
+\item
+  \textbf{Zhan, L.}, \& Zhou, P. (2019, June). \emph{Children differ
+  from adults in interpreting disjunctions: Evidence from an
+  eye-tracking study }. Poster session presented at Psycholinguistics in
+  Iceland - Parsing and Prediction, University of Iceland, Reykjavík,
+  Iceland. \href{https://publications.likan.info/Talks/PIPP_Poster.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.} (2017, September). \emph{Scalar implicature and
+  ignorance inference are both locally computed: Evidence from the
+  online processing of disjunctions using the visual world paradigm}.
+  Paper presented at the Second High-level Forum on Cognitive
+  Linguistics, University of International Business and Economics,
+  Beijing, China.
+  \href{https://publications.likan.info/Talks/ZhanL2017UIBE.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.}, Crain, S., \& Zhou, P. (2013, November).
+  \emph{Going beyond the information that is perceived: The hypothetical
+  property of if-conditionals in Mandarin Chinese}. Paper session
+  presented at the Second International Conference on Psycholinguistics
+  in China, Fuzhou, China.
+\item
+  Moscati, V., \textbf{Zhan, L.}, \& Zhou, P. (2013, November).
+  \emph{Reasoning on possibilities: An eye tracking study on modal
+  knowledge}. Poster session presented at the 38th Annual Boston
+  University Conference on Language Development, Boston University, MA.
+\item
+  Zhou, P., Crain, S., \& \textbf{Zhan, L.} (2013, November).
+  \emph{Anticipatory eye movements in children's processing of
+  grammatical aspect}. Poster session presented at the 38th Annual
+  Boston University Conference on Language Development, Boston
+  University, MA.
+\item
+  \textbf{Zhan, L.}, Crain, S., \& Zhou, P. (2013, March). \emph{The
+  hypothetical property of ``if''-statements: A visual- world paradigm
+  eye-tracking study}. Poster session presented at CUNY2013: The 26th
+  annual CUNY Sentence Processing Conference, Columbia, SC.
+\item
+  \textbf{Zhan, L.}, Crain, S., \& Zhou, P. (2012, July). \emph{The
+  interpretation of conditionals}. Paper presented at the 7th
+  International Conference on Thinking (ICT2012), Birkbeck/UCL, London,
+  UK.
+\item
+  Zhou, P., Crain, S., \& \textbf{Zhan, L.} (2012, March).
+  \emph{Children's pragmatic use of prosody in sentence processing}.
+  Poster session presented at the 35th Generative Linguistics in the Old
+  World (GLOW) Workshop: Production and Perception of
+  Prosodically-Encoded Information Structure, University of Potsdam,
+  Potsdam, Germany.
+\item
+  \textbf{Zhan, L.}, Crain, S., \& Khlentzos, D. (2011, August).
+  \emph{The basic semantics of conditionals in natural language}. Paper
+  presented at the Harvard-Australia Workshop on Language, Learning and
+  Logic, Macquarie University, Sydney, Australia.
+\item
+  Zhou, P., Crain, S., Gao, L., \& \textbf{Zhan, L.} (2010, September).
+  \emph{The role of prosody in children's focus identification}. Paper
+  presented at the Generative Approaches to Language Acquisition - North
+  America 4 (GALANA-4), Toronto, Canada.
+\item
+  Zhou, P., Su, Y., Crain, S., Gao, L., \& \textbf{Zhan, L.} (2010,
+  August). \emph{Children's use of prosodic information in ambiguity
+  resolution}. Paper presented at the 8th Conference of Generative
+  Linguistics in the Old World Asia (GLOW-in-Asia 8), Beijing, China.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Invited talks
+\end{enumerate}
+
+\begin{itemize}
+\item
+  \textbf{Zhan, L.} (2019, August). \emph{Gardener or Carpenter: Some
+  thoughts on nurturing a child}. Invited Presentation given at Smiland
+  Daycare Center. \href{https://publications.likan.info/talks/parent/}{
+  \faExternalLink* }
+\item
+  \textbf{Zhan, L.} (2018, December). \emph{Sentential Reasoning and
+  Sentential Connectives: Conditional, Disjunction, Negation, and
+  Modality}. Inivted presentation given at the Workshop of Theoretical
+  and Experimental Linguistics, Tsinghua University, Beijing, China.
+  \href{https://publications.likan.info/Talks/Sentential_Reasoning_Sentential_Connectives.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.} (2018, November). \emph{Methods of Cognitive
+  Neuroscience: Focus on Language}. Inivted presentation given at the
+  Child Cognition Laboratory, Department of Foreign Languages and
+  Literatures, Tsinghua University, Beijing, China.
+  \href{https://publications.likan.info/Talks/MethodsCognNeurosciLang2018NOV.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.} (2018, November). \emph{Visual world paradigm: An
+  eye-tracking technique to study the real time processing of spoken
+  Language}. Inivted presentation given at the Center for Studies of
+  Chinese as a Second Language, Beijing Language and Culture University,
+  Beijing, China.
+  \href{https://publications.likan.info/Talks/Visual_World_Paradigm.pdf}{
+  \faFilePdf[regular] }
+\item
+  \textbf{Zhan, L.} (2018, October). \emph{Experimental Builder: A
+  What-You-See-Is-What-You-Get tool to build experiment scripts}.
+  Inivted presentation given at the Center for Studies of Chinese as a
+  Second Language, Beijing Language and Culture University, Beijing,
+  China.
+  \href{https://publications.likan.info/Eyelink_Experiment_Builder_Training_Materials/}{
+  \faFilePdf[regular] }
+\end{itemize}
+
+
+\end{document}
