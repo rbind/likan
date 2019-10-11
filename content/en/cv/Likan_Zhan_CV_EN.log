@@ -1,14 +1,14 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.9.19)  20 SEP 2019 16:13
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.10.11)  11 OCT 2019 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Likan_Zhan_CV_EN.tex
 (./Likan_Zhan_CV_EN.tex
-LaTeX2e <2018-12-01>
+LaTeX2e <2019-10-01>
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+File: size12.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -62,10 +62,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
+Package: amsmath 2019/04/01 v2.17c AMS math features
 \@mathmargin=\skip43
 For additional information on amsmath, use the `?' option.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -81,20 +82,20 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 223.
+LaTeX Info: Redefining \frac on input line 227.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 385.
+LaTeX Info: Redefining \overline on input line 389.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -115,8 +116,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -135,26 +136,28 @@ Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 Package: mathspec 2016/12/22 v0.2b LaTeX Package (Mathematics font selection fo
 r XeLaTeX)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2019/09/09 v2.5g e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count100
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-09-08 L3 programming layer (loader) 
+Package: expl3 2019-10-02 L3 programming layer (loader) 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-09-08 L3 programming layer (code)
+Package: expl3 2019-10-02 L3 programming layer (code)
 \c_max_int=\count101
 \l_tmpa_int=\count102
 \l_tmpb_int=\count103
 \g_tmpa_int=\count104
 \g_tmpb_int=\count105
-\g__kernel_prg_map_int=\count106
-\c__ior_term_noprompt_ior=\count107
-\c_log_iow=\count108
-\l_iow_line_count_int=\count109
-\l__iow_line_target_int=\count110
-\l__iow_one_indent_int=\count111
-\l__iow_indent_int=\count112
+\l__seq_internal_a_int=\count106
+\l__seq_internal_b_int=\count107
+\g__kernel_prg_map_int=\count108
+\c__ior_term_noprompt_ior=\count109
+\c_log_iow=\count110
+\l_iow_line_count_int=\count111
+\l__iow_line_target_int=\count112
+\l__iow_one_indent_int=\count113
+\l__iow_indent_int=\count114
 \c_zero_dim=\dimen112
 \c_max_dim=\dimen113
 \l_tmpa_dim=\dimen114
@@ -173,76 +176,76 @@ Package: expl3 2019-09-08 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count113
-\l__intarray_loop_int=\count114
+\l_keys_choice_int=\count115
+\l__intarray_loop_int=\count116
 \c__intarray_sp_dim=\dimen118
-\g__intarray_font_int=\count115
-\c__fp_leading_shift_int=\count116
-\c__fp_middle_shift_int=\count117
-\c__fp_trailing_shift_int=\count118
-\c__fp_big_leading_shift_int=\count119
-\c__fp_big_middle_shift_int=\count120
-\c__fp_big_trailing_shift_int=\count121
-\c__fp_Bigg_leading_shift_int=\count122
-\c__fp_Bigg_middle_shift_int=\count123
-\c__fp_Bigg_trailing_shift_int=\count124
-\g__fp_array_int=\count125
-\l__fp_array_loop_int=\count126
-\l__sort_length_int=\count127
-\l__sort_min_int=\count128
-\l__sort_top_int=\count129
-\l__sort_max_int=\count130
-\l__sort_true_max_int=\count131
-\l__sort_block_int=\count132
-\l__sort_begin_int=\count133
-\l__sort_end_int=\count134
-\l__sort_A_int=\count135
-\l__sort_B_int=\count136
-\l__sort_C_int=\count137
-\l__str_internal_int=\count138
-\l__tl_analysis_normal_int=\count139
-\l__tl_analysis_index_int=\count140
-\l__tl_analysis_nesting_int=\count141
-\l__tl_analysis_type_int=\count142
-\l__regex_internal_a_int=\count143
-\l__regex_internal_b_int=\count144
-\l__regex_internal_c_int=\count145
-\l__regex_balance_int=\count146
-\l__regex_group_level_int=\count147
-\l__regex_mode_int=\count148
-\c__regex_cs_in_class_mode_int=\count149
-\c__regex_cs_mode_int=\count150
-\l__regex_catcodes_int=\count151
-\l__regex_default_catcodes_int=\count152
-\c__regex_catcode_L_int=\count153
-\c__regex_catcode_O_int=\count154
-\c__regex_catcode_A_int=\count155
-\c__regex_all_catcodes_int=\count156
-\l__regex_show_lines_int=\count157
-\l__regex_min_state_int=\count158
-\l__regex_max_state_int=\count159
-\l__regex_left_state_int=\count160
-\l__regex_right_state_int=\count161
-\l__regex_capturing_group_int=\count162
-\l__regex_min_pos_int=\count163
-\l__regex_max_pos_int=\count164
-\l__regex_curr_pos_int=\count165
-\l__regex_start_pos_int=\count166
-\l__regex_success_pos_int=\count167
-\l__regex_curr_char_int=\count168
-\l__regex_curr_catcode_int=\count169
-\l__regex_last_char_int=\count170
-\l__regex_case_changed_char_int=\count171
-\l__regex_curr_state_int=\count172
-\l__regex_step_int=\count173
-\l__regex_min_active_int=\count174
-\l__regex_max_active_int=\count175
-\l__regex_replacement_csnames_int=\count176
-\l__regex_match_count_int=\count177
-\l__regex_min_submatch_int=\count178
-\l__regex_submatch_int=\count179
-\l__regex_zeroth_submatch_int=\count180
-\g__regex_trace_regex_int=\count181
+\g__intarray_font_int=\count117
+\c__fp_leading_shift_int=\count118
+\c__fp_middle_shift_int=\count119
+\c__fp_trailing_shift_int=\count120
+\c__fp_big_leading_shift_int=\count121
+\c__fp_big_middle_shift_int=\count122
+\c__fp_big_trailing_shift_int=\count123
+\c__fp_Bigg_leading_shift_int=\count124
+\c__fp_Bigg_middle_shift_int=\count125
+\c__fp_Bigg_trailing_shift_int=\count126
+\g__fp_array_int=\count127
+\l__fp_array_loop_int=\count128
+\l__sort_length_int=\count129
+\l__sort_min_int=\count130
+\l__sort_top_int=\count131
+\l__sort_max_int=\count132
+\l__sort_true_max_int=\count133
+\l__sort_block_int=\count134
+\l__sort_begin_int=\count135
+\l__sort_end_int=\count136
+\l__sort_A_int=\count137
+\l__sort_B_int=\count138
+\l__sort_C_int=\count139
+\l__str_internal_int=\count140
+\l__tl_analysis_normal_int=\count141
+\l__tl_analysis_index_int=\count142
+\l__tl_analysis_nesting_int=\count143
+\l__tl_analysis_type_int=\count144
+\l__regex_internal_a_int=\count145
+\l__regex_internal_b_int=\count146
+\l__regex_internal_c_int=\count147
+\l__regex_balance_int=\count148
+\l__regex_group_level_int=\count149
+\l__regex_mode_int=\count150
+\c__regex_cs_in_class_mode_int=\count151
+\c__regex_cs_mode_int=\count152
+\l__regex_catcodes_int=\count153
+\l__regex_default_catcodes_int=\count154
+\c__regex_catcode_L_int=\count155
+\c__regex_catcode_O_int=\count156
+\c__regex_catcode_A_int=\count157
+\c__regex_all_catcodes_int=\count158
+\l__regex_show_lines_int=\count159
+\l__regex_min_state_int=\count160
+\l__regex_max_state_int=\count161
+\l__regex_left_state_int=\count162
+\l__regex_right_state_int=\count163
+\l__regex_capturing_group_int=\count164
+\l__regex_min_pos_int=\count165
+\l__regex_max_pos_int=\count166
+\l__regex_curr_pos_int=\count167
+\l__regex_start_pos_int=\count168
+\l__regex_success_pos_int=\count169
+\l__regex_curr_char_int=\count170
+\l__regex_curr_catcode_int=\count171
+\l__regex_last_char_int=\count172
+\l__regex_case_changed_char_int=\count173
+\l__regex_curr_state_int=\count174
+\l__regex_step_int=\count175
+\l__regex_min_active_int=\count176
+\l__regex_max_active_int=\count177
+\l__regex_replacement_csnames_int=\count178
+\l__regex_match_count_int=\count179
+\l__regex_min_submatch_int=\count180
+\l__regex_submatch_int=\count181
+\l__regex_zeroth_submatch_int=\count182
+\g__regex_trace_regex_int=\count183
 \c_empty_box=\box29
 \l_tmpa_box=\box30
 \l_tmpb_box=\box31
@@ -287,9 +290,9 @@ Package: expl3 2019-09-08 L3 programming layer (code)
 \l__coffin_display_x_dim=\dimen142
 \l__coffin_display_y_dim=\dimen143
 \g__char_data_ior=\read1
-\l__seq_internal_a_int=\count182
-\l__seq_internal_b_int=\count183
-)
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+))
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfm
 x.def
 File: l3backend-xdvipdfmx.def 2019-04-06 v L3 backend support: xdvipdfmx
@@ -468,7 +471,7 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks23
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2019/09/12 v6.88i Hypertext links for LaTeX
+Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.s
 ty
@@ -518,47 +521,47 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@linkcounter=\count277
 \Hy@pagecounter=\count278
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2019/09/12 v6.88i Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count279
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4550.
-Package hyperref Info: Link nesting OFF on input line 4555.
-Package hyperref Info: Hyper index ON on input line 4558.
-Package hyperref Info: Plain pages OFF on input line 4565.
-Package hyperref Info: Backreferencing OFF on input line 4570.
+Package hyperref Info: Hyper figures OFF on input line 4540.
+Package hyperref Info: Link nesting OFF on input line 4545.
+Package hyperref Info: Hyper index ON on input line 4548.
+Package hyperref Info: Plain pages OFF on input line 4555.
+Package hyperref Info: Backreferencing OFF on input line 4560.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4803.
+Package hyperref Info: Bookmarks ON on input line 4793.
 \c@Hy@tempcnt=\count280
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5156.
+LaTeX Info: Redefining \url on input line 5152.
 \XeTeXLinkMargin=\dimen157
 \Fld@menulength=\count281
 \Field@Width=\dimen158
 \Fld@charsize=\dimen159
-Package hyperref Info: Hyper figures OFF on input line 6411.
-Package hyperref Info: Link nesting OFF on input line 6416.
-Package hyperref Info: Hyper index ON on input line 6419.
-Package hyperref Info: backreferencing OFF on input line 6426.
-Package hyperref Info: Link coloring OFF on input line 6431.
-Package hyperref Info: Link coloring with OCG OFF on input line 6436.
-Package hyperref Info: PDF/A mode OFF on input line 6441.
-LaTeX Info: Redefining \ref on input line 6481.
-LaTeX Info: Redefining \pageref on input line 6485.
+Package hyperref Info: Hyper figures OFF on input line 6423.
+Package hyperref Info: Link nesting OFF on input line 6428.
+Package hyperref Info: Hyper index ON on input line 6431.
+Package hyperref Info: backreferencing OFF on input line 6438.
+Package hyperref Info: Link coloring OFF on input line 6443.
+Package hyperref Info: Link coloring with OCG OFF on input line 6448.
+Package hyperref Info: PDF/A mode OFF on input line 6453.
+LaTeX Info: Redefining \ref on input line 6493.
+LaTeX Info: Redefining \pageref on input line 6497.
 \Hy@abspage=\count282
 \c@Item=\count283
 \c@Hfootnote=\count284
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2019/09/12 v6.88i Hyperref driver for XeTeX
+File: hxetex.def 2019/09/28 v7.00a Hyperref driver for XeTeX
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2019/09/12 v6.88i Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2019/09/28 v7.00a Hyperref: PDF Unicode definition (HO)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/stringenc.sty
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
@@ -587,13 +590,13 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 33.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 105.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
@@ -623,6 +626,10 @@ Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
  basics and keyval usage)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
+
+LaTeX Warning: Command \InputIfFileExists  has changed.
+               Check if current package is valid.
+
 )))
 
 LaTeX Warning: Command \@footnotemark  has changed.
@@ -879,41 +886,40 @@ File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
 Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (SongtiSC(0)).
 
 
-Package fontspec Info: Source Han Serif scale = 0.8385177843950382.
+Package fontspec Info: Source Han Serif SC scale = 0.8385177843950382.
 
 
-Package fontspec Info: Could not resolve font "Source Han Serif/I" (it
+Package fontspec Info: Could not resolve font "Source Han Serif SC/I" (it
 (fontspec)             probably doesn't exist).
 
 
-Package fontspec Info: Source Han Serif scale = 0.8385177843950382.
+Package fontspec Info: Source Han Serif SC scale = 0.8385177843950382.
 
 
-Package fontspec Info: Source Han Serif/B scale = 0.8385177843950382.
+Package fontspec Info: Source Han Serif SC/B scale = 0.8385177843950382.
 
 
-Package fontspec Info: Source Han Serif/BI scale = 0.8385177843950382.
+Package fontspec Info: Source Han Serif SC/BI scale = 0.8385177843950382.
 
 
-Package fontspec Info: Font family 'SourceHanSerif(0)' created for font
-(fontspec)             'Source Han Serif' with options
+Package fontspec Info: Font family 'SourceHanSerifSC(0)' created for font
+(fontspec)             'Source Han Serif SC' with options
 (fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.8385177843950382]"Source Han
-(fontspec)             Serif/OT:script=hani;language=DFLT;mapping=tex-text;"
+(fontspec)             <->s*[0.8385177843950382]"Source Han Serif
+(fontspec)             SC/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->s*[0.8385177843950382]"Source Han
-(fontspec)             Serif/B/OT:script=hani;language=DFLT;mapping=tex-text;"
+(fontspec)             <->s*[0.8385177843950382]"Source Han Serif
+(fontspec)             SC/B/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
-(fontspec)             <->s*[0.8385177843950382]"Source Han
-(fontspec)             Serif/BI/OT:script=hani;language=DFLT;mapping=tex-text;"
-
+(fontspec)             <->s*[0.8385177843950382]"Source Han Serif
+(fontspec)             SC/BI/OT:script=hani;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 
@@ -925,20 +931,20 @@ Package: fontawesome5 2019/06/07 v5.9.0 Font Awesome 5
 ex-helper.sty
 Package: fontawesome5-utex-helper 2019/06/07 v5.9.0 uTeX helper for fontawesome
 5
-LaTeX Font Info:    Try loading font information for TU+fontawesomefree on inpu
-t line 69.
+LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on i
+nput line 69.
 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomefr
 ee.fd)
-LaTeX Font Info:    Try loading font information for TU+fontawesomebrands on in
-put line 70.
+LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on
+ input line 70.
 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomebr
 ands.fd))) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/datetime2/datetim
 e2.sty
 Package: datetime2 2018/07/20 v1.5.3 (NLCT) date and time formats
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/tracklang/tracklang.sty
-Package: tracklang 2019/08/31 v1.3.7 (NLCT) Track Languages
+Package: tracklang 2019/10/06 v1.3.8 (NLCT) Track Languages
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/tracklang/tracklang.tex)))
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
@@ -1029,7 +1035,7 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
 Package hyperref Info: Link coloring ON on input line 122.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/12 v2.45 Cross-referencing by name of section
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/gettitlestring.st
 y
@@ -1054,8 +1060,8 @@ LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
 (Font)              scaled to size 17.6937pt on input line 126.
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 137.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 137.
-
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+37.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1064,18 +1070,18 @@ n.cfg
 File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
 ern Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 137.
-
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+37.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 137
-.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+137.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 137
-.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+137.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1085,13 +1091,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9.09996> on input line 137.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6.5> on input line 137.
-LaTeX Font Info:    Try loading font information for U+msa on input line 137.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 137
+.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 137.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 137
+.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1424,12 +1432,12 @@ Package rerunfilecheck Info: File `Likan_Zhan_CV_EN.out' has not changed.
 (rerunfilecheck)             Checksum: EA5E714F7820583553F455E0850C7FF4.
  ) 
 Here is how much of TeX's memory you used:
- 31860 strings out of 494894
- 626948 string characters out of 6176363
- 757065 words of memory out of 5000000
- 35431 multiletter control sequences out of 15000+600000
+ 32207 strings out of 494467
+ 630101 string characters out of 6172910
+ 772636 words of memory out of 5000000
+ 36203 multiletter control sequences out of 15000+600000
  545358 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 68i,11n,129p,813b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,129p,813b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Likan_Zhan_CV_EN.pdf (9 pages).

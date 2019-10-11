@@ -78,7 +78,7 @@ fontsize: 12pt
 
 3. 其他技能
 
-- 标记语言：喜欢用 [\LaTeX](https://www.latex-project.org)、[markdown](https://daringfireball.net/projects/markdown/)、[R markdown](https://rmarkdown.rstudio.com) (R包)、和 [Jupyter](https://jupyter.org) 等进行学术排版和写作；用 [knitr](https://cran.r-project.org/web/packages/knitr/index.html)（R包）把R语言代码嵌入文本写作中；用 [Pandoc](https://pandoc.org) 在文件的不同格式间进行转换；
+- 标记语言：喜欢用 [\LaTeX](https://www.latex-project.org)、[markdown](https://daringfireball.net/projects/markdown/)、[R markdown](https://rmarkdown.rstudio.com) (R包)、和 [Jupyter](https://jupyter.org) 等进行学术排版和写作；用 [knitr](https://cran.r-project.org/web/packages/knitr/index.html)（R包）进行文本和 R 或 Julia 语言代码的混排；用 [Pandoc](https://pandoc.org) 进行文本格式的转换；
 - 个人网站：用 [go](https://golang.org) 语言下的 [hugo](https://gohugo.io) 和R语言下的 [blogdown](https://github.com/rstudio/blogdown) 包建立了的个人网站 [https://likan.info](https://likan.info)。
 
 
