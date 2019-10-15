@@ -12,9 +12,9 @@ output:
 
 # 1. Time and Location
 
-- Time: **19:00 - 20:50** (Changed !!), Each Thuesday
+- Time: 19:00 - 20:50, Each Thuesday
 
-- Location: **Room 512, Main Building South** (Changed !!)
+- Location: Room 512, Main Building South
 
 - Lecturer: Likan Zhan
 
@@ -22,13 +22,16 @@ output:
 
 - This calss intends to provide a coherent view on the relation between language and the brain based on the multifold empirical data coming from different research fields: electrophysiological and functional neuroimaging data of the adult language system, neuroscientific data of the developmental language system, and data on the brain structure and its maturation in humans as well as in non-human primates.
 
-# 3. References
+# 3. TextBook
 
+- Friederici, A. D. (2017). *Language in Our Brain: The Origins of a Uniquely Human Capacity*. Cambridge, MA: The MIT Press.
+
+<!---
 - Ahlsen, E. (2006). *Introduction to Neurolinguistics*. Amsterdam, The Netherlands: John Benjamins Publishing.
-- **Friederici, A. D. (2017). *Language in Our Brain: The Origins of a Uniquely Human Capacity*. Cambridge, MA: The MIT Press.**
 - Ingram, J. C. L. (2007). *Neurolinguistics: An Introduction to Spoken Language Processing and its Disorders*. Cambridge, UK: Cambridge University Press.
 - Kemmerer, D. (2014). *Cognitive Neuroscience of Language*. New York, NY: Psychology Press.
 - Schnelle, H. (2010). *Language in the Brain*. Cambirdge, UK: Cambridge University Press.
+--->
 
 # 4. Syllabus and Lecture Notes
 
@@ -37,6 +40,9 @@ output:
 
 - Part I. The brain regions affording Language
   - Chapter 01. Language Functions in the Brain
+    - Section 1: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/Introduction-to-Neurolinguistics/CH_01_1.pdf)
+    - Section 2: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/Introduction-to-Neurolinguistics/CH_01_2.pdf)
+
   - Chapter 02. Excursions
 
 - Part II. The brain networks affording Language
