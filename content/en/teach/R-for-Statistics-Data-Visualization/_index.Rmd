@@ -6,11 +6,18 @@ lastmod: "`r Sys.Date()`"
 disable_comments: true
 output:
   blogdown::html_page:
-    toc: yes
+    toc: false
 ---
+
+<br/><br/>
+
+# <span style="color:red">**NO CLASS ON OCTOBER 25 !!!**</span>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
 # 1. Lecture Time and Location
 
-- Time: 19:00 - 21:50, Each Friday, Start from **September 20th**.
+- Time: 19:00 - 21:50, Each Friday, Start from September 20th.
 - Location: 514, Main Building South.
 
 # 2. Prerequisites
