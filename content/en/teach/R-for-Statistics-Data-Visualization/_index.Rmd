@@ -6,16 +6,8 @@ lastmod: "`r Sys.Date()`"
 disable_comments: true
 output:
   blogdown::html_page:
-    toc: false
+    toc: true
 ---
-
-<br/><br/>
-
-# <span style="color:red">**NO R CLASS ON OCTOBER 25th !!!**</span>
-# <span style="color:red">**10月25号的R语言课暂停一次 !!!**</span>
-
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 # 1. Lecture Time and Location
 
