@@ -90,8 +90,8 @@
 
 %%%%%% 1. Change font %%%%%%
 \setmainfont{FF Nexus Serif} %% FF Nexus Serif, FF Nexus Sans, Adobe Caslon Pro
-\usepackage{ctex}
-\setCJKmainfont{Source Han Serif} % Source Han Serif SC; STKaiti
+\usepackage[fontset = none]{ctex}
+\setCJKmainfont{Source Han Serif SC} %% Kaiti SC; Source Han Serif SC; Source Han Sans SC; simhei.ttf; simfang.ttf
 
 %%%%%% 2. Reduce after enumerate and itemized environment %%%%%%
 \let\oldendenumerate=\endenumerate
@@ -137,7 +137,7 @@
 \item
   \faGlobe ~ \url{https://likan.info}
 \item
-  最近更新：2019-09-20
+  最近更新：2019-10-28
 \end{itemize}
 
 \hypertarget{section-1}{%
@@ -289,11 +289,12 @@
 \tightlist
 \item
   标记语言：喜欢用
-  \href{https://www.latex-project.org}{\LaTeX}、\href{https://daringfireball.net/projects/markdown/}{markdown}、\href{https://rmarkdown.rstudio.com}{R
+  \href{https://www.latex-project.org}{LaTeX}、\href{https://daringfireball.net/projects/markdown/}{markdown}、\href{https://rmarkdown.rstudio.com}{R
   markdown} (R包)、和 \href{https://jupyter.org}{Jupyter}
   等进行学术排版和写作；用
-  \href{https://cran.r-project.org/web/packages/knitr/index.html}{knitr}（R包）把R语言代码嵌入文本写作中；用
-  \href{https://pandoc.org}{Pandoc} 在文件的不同格式间进行转换；
+  \href{https://cran.r-project.org/web/packages/knitr/index.html}{knitr}（R包）进行文本和
+  R 或 Julia 语言代码的混排；用 \href{https://pandoc.org}{Pandoc}
+  进行文本格式的转换；
 \item
   个人网站：用 \href{https://golang.org}{go} 语言下的
   \href{https://gohugo.io}{hugo} 和R语言下的
