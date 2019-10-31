@@ -98,7 +98,7 @@ enableGitInfo = false
 
 [params]
     description = "The personal website of Likan Zhan"
-    disqusURL = "https://likanzhan.github.io"
+    disqusURL = "https://likan.info"
     customJS = ["js/center-img.js", "js/right-quote.js", "js/no-highlight.js", "js/fix-footnote.js"]
     githubContentURL = "https://github.com/rbind/likan/edit/master/content/"
     # options for highlight.js (version, additional languages, and theme)
