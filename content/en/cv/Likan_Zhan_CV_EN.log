@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.10.11)  11 OCT 2019 17:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.10.30)  8 NOV 2019 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Likan_Zhan_CV_EN.tex
 (./Likan_Zhan_CV_EN.tex
-LaTeX2e <2019-10-01>
+LaTeX2e <2019-10-01> patch level 1
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
@@ -141,9 +141,9 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-10-02 L3 programming layer (loader) 
+Package: expl3 2019-10-28 L3 programming layer (loader) 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-10-02 L3 programming layer (code)
+Package: expl3 2019-10-28 L3 programming layer (code)
 \c_max_int=\count101
 \l_tmpa_int=\count102
 \l_tmpb_int=\count103
@@ -295,21 +295,21 @@ File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
 ))
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfm
 x.def
-File: l3backend-xdvipdfmx.def 2019-04-06 v L3 backend support: xdvipdfmx
+File: l3backend-xdvipdfmx.def 2019-04-06 L3 backend support: xdvipdfmx
 \g__graphics_track_int=\count184
 \l__pdf_internal_box=\box47
 \g__pdf_backend_object_int=\count185
 \g__pdf_backend_annotation_int=\count186
 ))
-Package: xparse 2019-05-28 L3 Experimental document command parser
+Package: xparse 2019-10-11 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count187
 \g__xparse_grabber_int=\count188
 \l__xparse_m_args_int=\count189
 \l__xparse_v_nesting_int=\count190
 )
-Package: fontspec 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTeX
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTe
+Package: fontspec-xetex 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count191
 \l__fontspec_language_int=\count192
@@ -331,12 +331,12 @@ Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 )) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg)
-LaTeX Info: Redefining \itshape on input line 4051.
-LaTeX Info: Redefining \slshape on input line 4056.
-LaTeX Info: Redefining \scshape on input line 4061.
-LaTeX Info: Redefining \upshape on input line 4066.
-LaTeX Info: Redefining \em on input line 4096.
-LaTeX Info: Redefining \emph on input line 4121.
+LaTeX Info: Redefining \itshape on input line 4047.
+LaTeX Info: Redefining \slshape on input line 4052.
+LaTeX Info: Redefining \scshape on input line 4057.
+LaTeX Info: Redefining \upshape on input line 4062.
+LaTeX Info: Redefining \em on input line 4092.
+LaTeX Info: Redefining \emph on input line 4117.
 )) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/User
@@ -434,22 +434,22 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
+Package: microtype 2019/10/10 v2.7c Micro-typographical refinements (RS)
 \MT@toks=\toks22
 \MT@count=\count272
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen147
-LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1347.
 \MT@listname@count=\count273
 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.de
 f
-File: microtype-xetex.def 2019/02/28 v2.7b Definitions specific to xetex (RS)
+File: microtype-xetex.def 2019/10/10 v2.7c Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 258.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
+File: microtype.cfg 2019/10/10 v2.7c microtype main configuration file (RS)
 )) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -590,7 +590,7 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 33.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
@@ -616,20 +616,16 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmargin=\skip54
 \droptitle=\skip55
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrextend.sty
-Package: scrextend 2019/02/01 v3.26b KOMA-Script package (extend other classes 
-with features of KOMA-Script classes)
+Package: scrextend 2019/10/12 v3.27 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-dependent 
-basics and keyval usage)
+Package: scrkbase 2019/10/12 v3.27 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
+Package: scrbase 2019/10/12 v3.27 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
-
-LaTeX Warning: Command \InputIfFileExists  has changed.
-               Check if current package is valid.
-
+Package: scrlfile 2019/10/12 v3.27 KOMA-Script package (loading files)
 )))
 
 LaTeX Warning: Command \@footnotemark  has changed.
@@ -684,7 +680,7 @@ Package: ctex 2019/05/29 v2.4.16 Chinese adapter in LaTeX (CTEX)
 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e
 .sty
-Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2019-10-11 LaTeX2e option processing using LaTeX3 keys
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty
 Package: ctexhook 2019/05/29 v2.4.16 Document and package hooks (CTEX)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty
@@ -713,7 +709,7 @@ Package: xeCJK 2019/06/02 v3.7.4 Typesetting CJK scripts with XeLaTeX
 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtempla
 te.sty
-Package: xtemplate 2019-05-28 L3 Experimental prototype document functions
+Package: xtemplate 2019-10-11 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen163
 \l__xtemplate_tmp_int=\count292
 \l__xtemplate_tmp_muskip=\muskip18
@@ -823,68 +819,9 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
 (Font)              scaled to size 10.262pt on input line 737.
-
-(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-ma
-c.def
-File: ctex-fontset-mac.def 2019/05/29 v2.4.16 Mac OS X fonts definition (CTEX)
-
-(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-ma
-cnew.def
-File: ctex-fontset-macnew.def 2019/05/29 v2.4.16 Mac OS X fonts definition for 
-El Capitan or later version (CTEX)
-
-Package fontspec Warning: Font "Songti SC Light" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: Songti SC Light scale = 0.9663638421171751.
-
-
-Package fontspec Info: Songti SC Light scale = 0.9663638421171751.
-
-
-Package fontspec Info: Songti SC Bold scale = 0.9663638421171751.
-
-
-Package fontspec Info: Kaiti SC scale = 0.9663638421171751.
-
-
-Package fontspec Info: Kaiti SC Bold scale = 0.9663638421171751.
-
-
-Package fontspec Info: Font family 'SongtiSC(0)' created for font 'Songti SC'
-(fontspec)             with options
-(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Script={CJK},Upright
-Font={*
-(fontspec)             Light},BoldItalicFont={Kaiti SC Bold},BoldFont={*
-(fontspec)             Bold},ItalicFont={Kaiti SC}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Songti SC
-(fontspec)             Light/OT:mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Songti SC
-(fontspec)             Bold/OT:mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Kaiti
-(fontspec)             SC/OT:mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
-(fontspec)             <->s*[0.9663638421171751]"Kaiti SC
-(fontspec)             Bold/OT:mapping=tex-text;"
-(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-
-))) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
 )
-
-Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (SongtiSC(0)).
-
 
 Package fontspec Info: Source Han Serif SC scale = 0.8385177843950382.
 
@@ -942,7 +879,7 @@ LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomebr
 ands.fd))) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/datetime2/datetim
 e2.sty
-Package: datetime2 2018/07/20 v1.5.3 (NLCT) date and time formats
+Package: datetime2 2019/10/21 v1.5.4 (NLCT) date and time formats
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2019/10/06 v1.3.8 (NLCT) Track Languages
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/tracklang/tracklang.tex)))
@@ -963,27 +900,27 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 ) (./Likan_Zhan_CV_EN.aux)
 \openout1 = `Likan_Zhan_CV_EN.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Info: Redefining \microtypecontext on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Info: Redefining \microtypecontext on input line 127.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -1033,7 +970,7 @@ Package color Info: Driver file: xetex.def on input line 147.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-Package hyperref Info: Link coloring ON on input line 122.
+Package hyperref Info: Link coloring ON on input line 127.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1043,25 +980,25 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 127.
+LaTeX Info: Redefining \pageref on input line 127.
+LaTeX Info: Redefining \nameref on input line 127.
 (./Likan_Zhan_CV_EN.out) (./Likan_Zhan_CV_EN.out)
 \@outlinefile=\write3
 \openout3 = `Likan_Zhan_CV_EN.out'.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 122.
+LaTeX Info: Redefining \selectfont on input line 127.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 122.
+(lastpage)             ! on input line 127.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 17.73254pt on input line 126.
+(Font)              scaled to size 17.73254pt on input line 131.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 17.6937pt on input line 126.
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 137.
+(Font)              scaled to size 17.6937pt on input line 131.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 142.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-37.
+42.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1071,34 +1008,34 @@ File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
 ern Roman (RS)
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-37.
+42.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-137.
+142.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-137.
+142.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 137.
+(Font)              <13> on input line 142.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.09996> on input line 137.
+(Font)              <9.09996> on input line 142.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.5> on input line 137.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 137
+(Font)              <6.5> on input line 142.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 142
 .
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 137
+LaTeX Font Info:    Trying to load font information for U+msb on input line 142
 .
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1106,316 +1043,34 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 14.77705pt on input line 145.
+(Font)              scaled to size 14.77705pt on input line 150.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 14.74469pt on input line 145.
+(Font)              scaled to size 14.74469pt on input line 150.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 11.367pt on input line 189.
+(Font)              scaled to size 11.367pt on input line 194.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FFNexusSerif' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\k A'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\u A'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\k a'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\u a'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'C'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v C'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'c'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v c'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v D'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v d'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
 Package microtype Info: Character `\dj ' is missing
 (microtype)             in font `\TU/FFNexusSerif(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\k E'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v E'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\k e'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v e'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\u G'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\u g'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\.I'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'L'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v L'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'l'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v l'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'N'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v N'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'n'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v n'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\H O'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\H o'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'R'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v R'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'r'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v r'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'S'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\c S'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'s'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\c s'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\c T'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v T'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\c t'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\v t'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\H U'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\r U'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\H u'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\r u'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'Z'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\.Z'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\'z'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `\.z'
-(microtype)                in font encoding `TU' in inheritance list
-(microtype)                `microtype.cfg/376(protrusion)'.
-
 [1
 
 ] [2]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 12.28728pt on input line 335.
+(Font)              scaled to size 12.28728pt on input line 340.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
-(Font)              scaled to size 12.02365pt on input line 337.
+(Font)              scaled to size 12.02365pt on input line 342.
 [3] [4] [5]
-Underfull \hbox (badness 1077) in paragraph at lines 563--570
+Underfull \hbox (badness 1077) in paragraph at lines 575--582
 \TU/FFNexusSerif(0)/m/n/13 in children’s online sentence comprehension. \TU/FFN
 exusSerif(0)/m/it/13 Cognition, 133\TU/FFNexusSerif(0)/m/n/13 (1), 262-276. doi
 :
  []
 
 [6] [7]
-Underfull \hbox (badness 1097) in paragraph at lines 705--712
+Underfull \hbox (badness 1097) in paragraph at lines 717--724
 \TU/FFNexusSerif(0)/m/n/13 Inivted presentation given at the Child Cognition La
 boratory, Department of
  []
@@ -1423,21 +1078,21 @@ boratory, Department of
 [8] 
 AED: lastpage setting LastPage
 [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 730.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 730.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 742.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 742.
 (./Likan_Zhan_CV_EN.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 730.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 730.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 742.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 742.
 Package rerunfilecheck Info: File `Likan_Zhan_CV_EN.out' has not changed.
 (rerunfilecheck)             Checksum: EA5E714F7820583553F455E0850C7FF4.
  ) 
 Here is how much of TeX's memory you used:
- 32207 strings out of 494467
- 630101 string characters out of 6172910
- 772636 words of memory out of 5000000
- 36203 multiletter control sequences out of 15000+600000
- 545358 words of font info for 77 fonts, out of 8000000 for 9000
+ 32220 strings out of 494468
+ 630164 string characters out of 6172922
+ 775753 words of memory out of 5000000
+ 36231 multiletter control sequences out of 15000+600000
+ 545318 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 68i,11n,129p,813b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,11n,119p,813b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Likan_Zhan_CV_EN.pdf (9 pages).

@@ -145,6 +145,8 @@ fontsize: 12pt
 
 2. 杂志论文
 
+- Zhou, P., Ma, W., & **Zhan, L.** (2019). A deficit in using prosodic cues to understand communicative intentions by children with autism spectrum disorders: An eye-tracking study. *First Language*. doi:10.1177/0142723719885270 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/FirstLang2019.pdf)
+
 - Zhou, P., **Zhan, L.**, & Ma, H. (2019). Understanding Others' Minds: Social Inference in Preschool Children with Autism Spectrum Disorder. *Journal of Autism and Developmental Disorders*. doi:10.1007/s10803-019-04167-x [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JAutismDevDisord2019.pdf)
 
 - Zhou, P., **Zhan, L.**, & Ma, H. (2018). Predictive language processing in preschool children with Autism Spectrum Disorder: An eye-tracking study. *Journal of Psycholinguistic Research*. doi:10.1007/s10936-018-9612-5 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JPsycholinguistRes2018.pdf)
@@ -167,7 +169,7 @@ fontsize: 12pt
 
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JChildLang2012.pdf)
 
-3. 会议论文集
+3. 会议论文集或书的章节
 
 - **Zhan, L.** (2018). Magnetoencephalography (MEG) as a Technique for Imaging Brain Function and Dysfunction. In *Top 10 Contributions on Psychology* (Chapter 4, pp. 1-38). Telangana, India: Avid Science
 

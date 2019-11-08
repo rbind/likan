@@ -90,7 +90,7 @@
 
 %%%%%% 1. Change font %%%%%%
 \setmainfont{FF Nexus Serif} %% FF Nexus Serif, FF Nexus Sans, Adobe Caslon Pro
-\usepackage{ctex}
+\usepackage[fontset = none]{ctex}
 \setCJKmainfont{Source Han Serif SC} %% Kaiti SC; Source Han Serif SC; Source Han Sans SC; simhei.ttf; simfang.ttf
 
 %%%%%% 2. Reduce after enumerate and itemized environment %%%%%%
@@ -119,6 +119,11 @@
 \rfoot{} % Last update: \today
 \fancyfoot[C]{--~\thepage/\pageref*{LastPage}~--}
 
+%%%%%%%%%% Remove Warnings: Package microtype Warning: Unknown slot number of character
+\makeatletter
+\def\MT@warn@unknown{}
+\makeatother
+
 \begin{document}
 \maketitle
 
@@ -138,7 +143,7 @@
 \item
   \faGlobe ~ \url{https://likan.info}
 \item
-  Last update: 2019-10-11
+  Last update: 2019-11-08
 \end{itemize}
 
 \hypertarget{academic-appointment}{%
@@ -503,6 +508,13 @@ awards}\label{grants-projects-and-awards}}
 \end{enumerate}
 
 \begin{itemize}
+\item
+  Zhou, P., Ma, W., \& \textbf{Zhan, L.} (2019). A deficit in using
+  prosodic cues to understand communicative intentions by children with
+  autism spectrum disorders: An eye-tracking study. \emph{First
+  Language}. doi:10.1177/0142723719885270
+  \href{https://publications.likan.info/Periodicals/FirstLang2019.pdf}{
+  \faFilePdf[regular] }
 \item
   Zhou, P., \textbf{Zhan, L.}, \& Ma, H. (2019). Understanding Others'
   Minds: Social Inference in Preschool Children with Autism Spectrum
