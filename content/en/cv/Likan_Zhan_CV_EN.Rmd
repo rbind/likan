@@ -216,7 +216,7 @@ fontsize: 12pt
 
 5. Invited talks
 
-- **Zhan, L.** (2019, August). *Gardener or Carpenter: Some thoughts on nurturing a child*. Invited Presentation given at Smiland Daycare Center. [<i class="fas fa-external-link-alt fa-sm"> \faExternalLink* </i>](https://publications.likan.info/talks/parent/)
+- **Zhan, L.** (2019, August). *Gardener or Carpenter: Some thoughts on nurturing a child*. Invited Presentation given at Smiland Daycare Center. [<i class="fas fa-external-link-alt fa-sm"> \footnotesize \faExternalLink* </i>](https://publications.likan.info/talks/parent/)
 
 - **Zhan, L.** (2018, December). *Sentential Reasoning and Sentential Connectives: Conditional, Disjunction, Negation, and Modality*. Inivted presentation given at the Workshop of Theoretical and Experimental Linguistics, Tsinghua University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Sentential_Reasoning_Sentential_Connectives.pdf)
 
