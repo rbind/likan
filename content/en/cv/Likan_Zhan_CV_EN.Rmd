@@ -194,9 +194,9 @@ fontsize: 12pt
 
 - **Zhan, L.**, & Zhou, P. (2019, June). *Children differ from adults in interpreting disjunctions: Evidence from an eye-tracking study *. Poster session presented at Psycholinguistics in Iceland - Parsing and Prediction, University of Iceland, Reykjavík, Iceland. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/PIPP_Poster.pdf)
 
-- **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Paper presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/ZhanL2017UIBE.pdf)
+- **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Oral session presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/ZhanL2017UIBE.pdf)
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2013, November). *Going beyond the information that is perceived: The hypothetical property of if-conditionals in Mandarin Chinese*. Paper session presented at the Second International Conference on Psycholinguistics in China, Fuzhou, China.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013, November). *Going beyond the information that is perceived: The hypothetical property of if-conditionals in Mandarin Chinese*. Oral session presented at the Second International Conference on Psycholinguistics in China, Fuzhou, China.
 
 - Moscati, V., **Zhan, L.**, & Zhou, P. (2013, November). *Reasoning on possibilities: An eye tracking study on modal knowledge*. Poster session presented at the 38th Annual Boston University Conference on Language Development, Boston University, MA.
 
@@ -204,15 +204,15 @@ fontsize: 12pt
 
 - **Zhan, L.**, Crain, S., & Zhou, P. (2013, March). *The hypothetical property of “if”-statements: A visual- world paradigm eye-tracking study*. Poster session presented at CUNY2013: The 26th annual CUNY Sentence Processing Conference, Columbia, SC.
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2012, July). *The interpretation of conditionals*. Paper presented at the 7th International Conference on Thinking (ICT2012), Birkbeck/UCL, London, UK.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2012, July). *The interpretation of conditionals*. Oral session presented at the 7th International Conference on Thinking (ICT2012), Birkbeck/UCL, London, UK.
 
 - Zhou, P., Crain, S., & **Zhan, L.** (2012, March). *Children’s pragmatic use of prosody in sentence processing*. Poster session presented at the 35th Generative Linguistics in the Old World (GLOW) Workshop: Production and Perception of Prosodically-Encoded Information Structure, University of Potsdam, Potsdam, Germany.
 
-- **Zhan, L.**, Crain, S., & Khlentzos, D. (2011, August). *The basic semantics of conditionals in natural language*. Paper presented at the Harvard-Australia Workshop on Language, Learning and Logic, Macquarie University, Sydney, Australia.
+- **Zhan, L.**, Crain, S., & Khlentzos, D. (2011, August). *The basic semantics of conditionals in natural language*. Oral session presented at the Harvard-Australia Workshop on Language, Learning and Logic, Macquarie University, Sydney, Australia.
 
-- Zhou, P., Crain, S., Gao, L., & **Zhan, L.** (2010, September). *The role of prosody in children’s focus identification*. Paper presented at the Generative Approaches to Language Acquisition - North America 4 (GALANA-4), Toronto, Canada.
+- Zhou, P., Crain, S., Gao, L., & **Zhan, L.** (2010, September). *The role of prosody in children’s focus identification*. Oral session presented at the Generative Approaches to Language Acquisition - North America 4 (GALANA-4), Toronto, Canada.
 
-- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2010, August). *Children’s use of prosodic information in ambiguity resolution*. Paper presented at the 8th Conference of Generative Linguistics in the Old World Asia (GLOW-in-Asia 8), Beijing, China.
+- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2010, August). *Children’s use of prosodic information in ambiguity resolution*. Oral session presented at the 8th Conference of Generative Linguistics in the Old World Asia (GLOW-in-Asia 8), Beijing, China.
 
 5. Invited talks
 
