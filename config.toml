@@ -47,6 +47,11 @@ enableGitInfo = false
     weight = 5
 
 [[menu.en]]
+    name = "Collection"
+    url = "/en/collection/"
+    weight = 6
+
+[[menu.en]]
     name = "Paradigm"
     url = "/en/paradigm/"
     weight = 6
