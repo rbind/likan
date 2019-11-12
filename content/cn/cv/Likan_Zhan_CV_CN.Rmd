@@ -70,7 +70,7 @@ fontsize: 12pt
 
 - 实验材料：能用 [LaTeX](https://www.latex-project.org) 包 [PGF](https://ctan.org/pkg/pgf?lang=en)、 [ImageMagick](https://imagemagick.org)、R包 [magick](https://cran.r-project.org/web/packages/magick/index.html)、 [OmniGraffle](https://www.omnigroup.com/omnigraffle/) (非开源)、和 [Pixelmator](https://www.pixelmator.com) (非开源) 等设计和编辑测试用图片；用 [praat](http://www.fon.hum.uva.nl/praat/)、R包 [tuneR](https://cran.r-project.org/web/packages/tuneR/index.html)、[seewave](https://cran.r-project.org/package=seewave)、和 [Adobe Audition](https://www.adobe.com/products/audition.html) (非开源) 等编辑测试用声音材料；用 [blender](https://www.blender.org) 和 [Autodesk Maya](https://www.autodesk.com/products/maya/overview) (非开源) 等设计和编辑视频及三维材料；用 [ffmpeg](https://ffmpeg.org) 等转化视频和音频文件的格式；
 
-- 实验设计: 能用 [Python](https://www.python.org) 下的 [Psychopy](http://www.psychopy.org) 包、 [Matlab](https://www.mathworks.com/products/matlab.html) 下的 [Psychtoolbox](http://psychtoolbox.org) 包、 [E-prime](https://www.pstnet.com/eprime.cfm) (非开源)、 [Presentation](https://www.neurobs.com/presentation)  (非开源), 和 [Experiment Builder](https://www.sr-research.com/experiment-builder/)  (非开源) 等设计实验程序；
+- 实验程序: 能用 [Python](https://www.python.org) 下的 [Psychopy](http://www.psychopy.org) 包、 [Matlab](https://www.mathworks.com/products/matlab.html) 下的 [Psychtoolbox](http://psychtoolbox.org) 包、 [E-prime](https://www.pstnet.com/eprime.cfm) (非开源)、 [Presentation](https://www.neurobs.com/presentation)  (非开源), 和 [Experiment Builder](https://www.sr-research.com/experiment-builder/)  (非开源) 等设计实验程序；
 
 - 眼动技术: 熟悉 [Eyelink II/1000 plus](https://www.sr-research.com) 型眼动仪、 能用 [Experiment Builder](https://www.sr-research.com/experiment-builder/) 进行实验程序的设计和 [Data Viewer](https://www.sr-research.com/data-viewer/) 进行数据分析；
 
