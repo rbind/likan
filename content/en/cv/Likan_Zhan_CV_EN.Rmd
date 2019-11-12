@@ -162,7 +162,7 @@ fontsize: 12pt
 
 - Zhou, P., Ma, W., & **Zhan, L.** (2019). A deficit in using prosodic cues to understand communicative intentions by children with autism spectrum disorders: An eye-tracking study. *First Language*. doi: 10.1177/0142723719885270 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/FirstLang2019.pdf)
 
-- Zhou, P., **Zhan, L.**, & Ma, H. (2019). Understanding Others' Minds: Social Inference in Preschool Children with Autism Spectrum Disorder. *Journal of Autism and Developmental Disorders, 49*(11), 4523-4534. doi: 10.1007/s10803-019-04167-x [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JAutismDevDisord2019.pdf)
+- Zhou, P., **Zhan, L.**, & Ma, H. (2019). Understanding others' minds: Social inference in preschool children with autism spectrum disorder. *Journal of Autism and Developmental Disorders, 49*(11), 4523-4534. doi: 10.1007/s10803-019-04167-x [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JAutismDevDisord2019.pdf)
 
 - Zhou, P., **Zhan, L.**, & Ma, H. (2019). Predictive language processing in preschool children with Autism Spectrum Disorder: An eye-tracking study. *Journal of Psycholinguistic Research, 48*(2), 431-452. doi: 10.1007/s10936-018-9612-5 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JPsycholinguistRes2018.pdf)
 
@@ -182,7 +182,7 @@ fontsize: 12pt
 
 - Zhou, P., Crain, S., & **Zhan, L.** (2012). Sometimes children are as good as adults: The pragmatic use of prosody in children’s on-line sentence processing. *Journal of Memory and Language, 67*(1), 149-164. doi: 10.1016/j.jml.2012.03.005 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JMemLang2012.pdf)
 
-- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: a view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JChildLang2012.pdf)
+- Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: A view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JChildLang2012.pdf)
 
 3. Book chapters and conference proceedings
 
@@ -192,7 +192,7 @@ fontsize: 12pt
 
 4. Peer reviewed conference presentations
 
-- **Zhan, L.**, & Zhou, P. (2019, June). *Children differ from adults in interpreting disjunctions: Evidence from an eye-tracking study *. Poster session presented at Psycholinguistics in Iceland - Parsing and Prediction, University of Iceland, Reykjavík, Iceland. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/PIPP_Poster.pdf)
+- **Zhan, L.**, & Zhou, P. (2019, June). *Children differ from adults in interpreting disjunctions: Evidence from an eye-tracking study*. Poster session presented at Psycholinguistics in Iceland - Parsing and Prediction, University of Iceland, Reykjavík, Iceland. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/PIPP_Poster.pdf)
 
 - **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Oral session presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/ZhanL2017UIBE.pdf)
 
@@ -202,7 +202,7 @@ fontsize: 12pt
 
 - Zhou, P., Crain, S., & **Zhan, L.** (2013, November). *Anticipatory eye movements in children’s processing of grammatical aspect*. Poster session presented at the 38th Annual Boston University Conference on Language Development, Boston University, MA.
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2013, March). *The hypothetical property of “if”-statements: A visual- world paradigm eye-tracking study*. Poster session presented at CUNY2013: The 26th annual CUNY Sentence Processing Conference, Columbia, SC.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013, March). *The hypothetical property of “if”-statements: A visual-world paradigm eye-tracking study*. Poster session presented at CUNY2013: The 26th annual CUNY Sentence Processing Conference, Columbia, SC.
 
 - **Zhan, L.**, Crain, S., & Zhou, P. (2012, July). *The interpretation of conditionals*. Oral session presented at the 7th International Conference on Thinking (ICT2012), Birkbeck/UCL, London, UK.
 
@@ -218,10 +218,10 @@ fontsize: 12pt
 
 - **Zhan, L.** (2019, August). *Gardener or Carpenter: Some thoughts on nurturing a child*. Invited Presentation given at Smiland Daycare Center. [<i class="fas fa-external-link-alt fa-sm"> \footnotesize \faExternalLink* </i>](https://publications.likan.info/talks/parent/)
 
-- **Zhan, L.** (2018, December). *Sentential Reasoning and Sentential Connectives: Conditional, Disjunction, Negation, and Modality*. Inivted presentation given at the Workshop of Theoretical and Experimental Linguistics, Tsinghua University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Sentential_Reasoning_Sentential_Connectives.pdf)
+- **Zhan, L.** (2018, December). *Sentential reasoning and sentential connectives: Conditional, disjunction, negation, and modality*. Invited presentation given at the Workshop of Theoretical and Experimental Linguistics, Tsinghua University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Sentential_Reasoning_Sentential_Connectives.pdf)
 
-- **Zhan, L.** (2018, November). *Methods of Cognitive Neuroscience: Focus on Language*. Inivted presentation given at the Child Cognition Laboratory, Department of Foreign Languages and Literatures, Tsinghua University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/MethodsCognNeurosciLang2018NOV.pdf)
+- **Zhan, L.** (2018, November). *Methods of cognitive neuroscience: Focus on language*. Invited presentation given at the Child Cognition Laboratory, Department of Foreign Languages and Literatures, Tsinghua University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/MethodsCognNeurosciLang2018NOV.pdf)
 
-- **Zhan, L.** (2018, November). *Visual world paradigm: An eye-tracking technique to study the real time processing of spoken Language*. Inivted presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Visual_World_Paradigm.pdf)
+- **Zhan, L.** (2018, November). *Visual world paradigm: An eye-tracking technique to study the real time processing of spoken Language*. Invited presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Visual_World_Paradigm.pdf)
 
-- **Zhan, L.** (2018, October). *Experimental Builder: A What-You-See-Is-What-You-Get tool to build experiment scripts*. Inivted presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Eyelink_Experiment_Builder_Training_Materials/)
+- **Zhan, L.** (2018, October). *Experimental Builder: A What-You-See-Is-What-You-Get tool to build experiment scripts*. Invited presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Eyelink_Experiment_Builder_Training_Materials/)
