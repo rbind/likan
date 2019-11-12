@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.10.30)  12 NOV 2019 13:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.10.30)  12 NOV 2019 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1067,19 +1067,19 @@ Package microtype Info: Character `\dj ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 [1
 
-]
+] [2]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
-(Font)              scaled to size 12.02365pt on input line 331.
+(Font)              scaled to size 12.02365pt on input line 329.
 
 LaTeX Font Warning: Font shape `TU/SourceHanSerifSC(0)/m/it' undefined
-(Font)              using `TU/SourceHanSerifSC(0)/m/n' instead on input line 33
-1.
+(Font)              using `TU/SourceHanSerifSC(0)/m/n' instead on input line 32
+9.
 
-[2] [3]
+[3]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 12.28728pt on input line 459.
+(Font)              scaled to size 12.28728pt on input line 457.
 [4]
-Underfull \hbox (badness 1077) in paragraph at lines 537--544
+Underfull \hbox (badness 1077) in paragraph at lines 535--542
 \TU/FFNexusSerif(0)/m/n/13 in children’s online sentence comprehension. \TU/FFN
 exusSerif(0)/m/it/13 Cognition, 133\TU/FFNexusSerif(0)/m/n/13 (1), 262-276. doi
 :
@@ -1088,11 +1088,11 @@ exusSerif(0)/m/it/13 Cognition, 133\TU/FFNexusSerif(0)/m/n/13 (1), 262-276. doi
 [5] [6] [7] 
 AED: lastpage setting LastPage
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 705.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 705.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 703.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 703.
 (./Likan_Zhan_CV_CN.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 705.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 705.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 703.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 703.
 Package rerunfilecheck Info: File `Likan_Zhan_CV_CN.out' has not changed.
 (rerunfilecheck)             Checksum: 7494023F13DA4A3201D858FF42033362.
 
@@ -1102,7 +1102,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  32614 strings out of 494468
  642014 string characters out of 6172922
- 788604 words of memory out of 5000000
+ 787604 words of memory out of 5000000
  36620 multiletter control sequences out of 15000+600000
  545350 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

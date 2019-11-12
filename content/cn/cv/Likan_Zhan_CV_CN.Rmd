@@ -69,13 +69,17 @@ fontsize: 12pt
 1. 实验技能
 
 - 实验材料：能用 [LaTeX](https://www.latex-project.org) 包 [PGF](https://ctan.org/pkg/pgf?lang=en)、 [ImageMagick](https://imagemagick.org)、R包 [magick](https://cran.r-project.org/web/packages/magick/index.html)、 [OmniGraffle](https://www.omnigroup.com/omnigraffle/) (非开源)、和 [Pixelmator](https://www.pixelmator.com) (非开源) 等设计和编辑测试用图片；用 [praat](http://www.fon.hum.uva.nl/praat/)、R包 [tuneR](https://cran.r-project.org/web/packages/tuneR/index.html)、[seewave](https://cran.r-project.org/package=seewave)、和 [Adobe Audition](https://www.adobe.com/products/audition.html) (非开源) 等编辑测试用声音材料；用 [blender](https://www.blender.org) 和 [Autodesk Maya](https://www.autodesk.com/products/maya/overview) (非开源) 等设计和编辑视频及三维材料；用 [ffmpeg](https://ffmpeg.org) 等转化视频和音频文件的格式；
+
 - 实验设计: 能用 [Python](https://www.python.org) 下的 [Psychopy](http://www.psychopy.org) 包、 [Matlab](https://www.mathworks.com/products/matlab.html) 下的 [Psychtoolbox](http://psychtoolbox.org) 包、 [E-prime](https://www.pstnet.com/eprime.cfm) (非开源)、 [Presentation](https://www.neurobs.com/presentation)  (非开源), 和 [Experiment Builder](https://www.sr-research.com/experiment-builder/)  (非开源) 等设计实验程序；
+
 - 眼动技术: 熟悉 [Eyelink II/1000 plus](https://www.sr-research.com) 型眼动仪、 能用 [Experiment Builder](https://www.sr-research.com/experiment-builder/) 进行实验程序的设计和 [Data Viewer](https://www.sr-research.com/data-viewer/) 进行数据分析；
+
 - 脑电/磁图仪：主持建立了中国第一个儿童脑磁图实验室; 熟悉日本 Yokogawa 脑磁图仪的设备维护和数据采集；能用 [BESA](http://www.besa.de)、 [fieldtrip](http://www.fieldtriptoolbox.org)、和 [SPM12](https://github.com/neurodebian/spm12) 等对脑电/磁数据进行分析。
 
 2. 数据分析
 
 - R语言：除了 [R](https://www.r-project.org) 基本包外，擅长用 [data.table](http://r-datatable.com)、 [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html)、和 [tidyr](https://cran.r-project.org/web/packages/tidyr/index.html) 对数据进行预处理; 用 [graphics](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html)、 [lattice](https://cran.r-project.org/package=lattice)、和 [ggplot2](http://ggplot2.tidyverse.org) 等对数据进行可视化分析；用 [car](https://cran.r-project.org/web/packages/car/index.html)、[lme4](https://github.com/lme4/lme4)、和 [gam](https://cran.r-project.org/web/packages/gam/index.html) 等进行计算模型模拟；自己编写了R包 [acqr](https://github.com/likanzhan/acqr) 以辅助统计教学和数据可视化展示；
+
 - Julia语言：由于R语言在计算速度上的不足，近期开始使用 [julia](https://julialang.org) 语言，尤其是包 [MixedModels](https://github.com/dmbates/MixedModels.jl) 开展数据分析。
 
 3. 其他技能
@@ -203,7 +207,7 @@ fontsize: 12pt
 
 5. 受邀报告
 
-- **Zhan, L.** (2019, August). *Gardener or carpenter: Some thoughts on nurturing a child*. Invited Presentation given at Smiland Daycare Center. [<i class="fas fa-external-link-alt fa-sm"> \footnotesize \faExternalLink* </i>](https://publications.likan.info/talks/parent/)
+- **Zhan, L.** (2019, August). *Gardener or carpenter: Some thoughts on nurturing a child*. Invited presentation given at Smiland Daycare Center. [<i class="fas fa-external-link-alt fa-sm"> \footnotesize \faExternalLink* </i>](https://publications.likan.info/talks/parent/)
 
 - **Zhan, L.** (2018, December). *Sentential reasoning and sentential connectives: Conditional, disjunction, negation, and modality*. Invited presentation given at the Workshop of Theoretical and Experimental Linguistics, Tsinghua University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Sentential_Reasoning_Sentential_Connectives.pdf)
 
@@ -211,4 +215,4 @@ fontsize: 12pt
 
 - **Zhan, L.** (2018, November). *Visual world paradigm: An eye-tracking technique to study the real time processing of spoken Language*. Invited presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Visual_World_Paradigm.pdf)
 
-- **Zhan, L.** (2018, October). *Experimental Builder: A What-You-See-Is-What-You-Get tool to build experiment scripts*. Invited presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Eyelink_Experiment_Builder_Training_Materials/)
+- **Zhan, L.** (2018, October). *Experimental Builder: A what-you-see-is-what-you-get tool to build experiment scripts*. Invited presentation given at the Center for Studies of Chinese as a Second Language, Beijing Language and Culture University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Eyelink_Experiment_Builder_Training_Materials/)
