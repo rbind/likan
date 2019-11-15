@@ -1,0 +1,2726 @@
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.11.12)  12 NOV 2019 21:47
+ restricted system commands enabled.
+ file:line:error style messages enabled.
+**Likan_Zhan_CV_EN.tex
+(./Likan_Zhan_CV_EN.tex
+LaTeX2e <2019-10-01> patch level 2
+Lua module: luaotfload-main 2019-11-04 3.1 luaotfload entry point
+Lua module: luaotfload-init 2019-11-04 3.1 luaotfload submodule / initialization
+Lua module: lualibs 2019-11-06 2.69 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2019-11-06 2.69 ConTeXt Lua libraries -- extended collection.
+Lua module: luaotfload-log 2019-11-04 3.1 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2019-11-04 3.1 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2019-11-04 3.1 luaotfload submodule / config file reader
+luaotfload | conf : Root cache directory is /Users/lzhan/Library/TinyTeX/texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2019-10-29.lua” from kpse-resolved path “/Users/lzhan/Library/TinyTeX/texmf-dist/tex/luatex/luaotfload/fontloader-2019-10-29.lua”.
+Lua-only attribute luaotfload@state = 2
+Lua-only attribute luaotfload@noligature = 3
+Lua-only attribute luaotfload@syllabe = 4
+luaotfload | init : Context OpenType loader version “3.11”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2019-11-04 3.1 luaotfload submodule / callback handling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2019-11-04 3.1 luaotfload submodule / database
+Lua module: luaotfload-unicode 2019-11-04 3.1 luaotfload submodule / Unicode helpers
+Lua module: luaotfload-colors 2019-11-04 3.1 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 5
+Lua module: luaotfload-resolvers 2019-11-04 3.1 luaotfload submodule / resolvers
+luaotfload | conf : Root cache directory is /Users/lzhan/Library/TinyTeX/texmf-var/luatex-cache/generic/names.
+Lua module: luaotfload-features 2019-11-04 3.1 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2019-11-04 3.1 luaotfload submodule / color
+Lua module: luaotfload-embolden 2019-11-04 3.1 luaotfload submodule / color
+Lua module: luaotfload-notdef 2019-11-04 3.1 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2019-11-04 3.1 luaotfload submodule / auxiliary functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-multiscript 2019-11-04 3.1 luaotfload submodule / multiscript
+Lua module: luaotfload-tounicode 2019-11-04 3.1 luaotfload submodule / tounicode
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'.
+luaotfload | main : initialization completed in 0.123 seconds
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /Users/lzhan/Library/TinyTeX/texmf-var/luatex-cache/generic/names/luaotfload-names.luc)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen103
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-11-07 L3 programming layer (loader) 
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-11-07 L3 programming layer (code)
+\c_max_int=\count100
+\l_tmpa_int=\count101
+\l_tmpb_int=\count102
+\g_tmpa_int=\count103
+\g_tmpb_int=\count104
+\l__seq_internal_a_int=\count105
+\l__seq_internal_b_int=\count106
+\g__kernel_prg_map_int=\count107
+\c__ior_term_noprompt_ior=\count108
+\c_log_iow=\count109
+\l_iow_line_count_int=\count110
+\l__iow_line_target_int=\count111
+\l__iow_one_indent_int=\count112
+\l__iow_indent_int=\count113
+\c_zero_dim=\dimen112
+\c_max_dim=\dimen113
+\l_tmpa_dim=\dimen114
+\l_tmpb_dim=\dimen115
+\g_tmpa_dim=\dimen116
+\g_tmpb_dim=\dimen117
+\c_zero_skip=\skip46
+\c_max_skip=\skip47
+\l_tmpa_skip=\skip48
+\l_tmpb_skip=\skip49
+\g_tmpa_skip=\skip50
+\g_tmpb_skip=\skip51
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count114
+\l__intarray_loop_int=\count115
+\c__intarray_sp_dim=\dimen118
+\g__intarray_font_int=\count116
+\c__fp_leading_shift_int=\count117
+\c__fp_middle_shift_int=\count118
+\c__fp_trailing_shift_int=\count119
+\c__fp_big_leading_shift_int=\count120
+\c__fp_big_middle_shift_int=\count121
+\c__fp_big_trailing_shift_int=\count122
+\c__fp_Bigg_leading_shift_int=\count123
+\c__fp_Bigg_middle_shift_int=\count124
+\c__fp_Bigg_trailing_shift_int=\count125
+\g__fp_array_int=\count126
+\l__fp_array_loop_int=\count127
+\l__sort_length_int=\count128
+\l__sort_min_int=\count129
+\l__sort_top_int=\count130
+\l__sort_max_int=\count131
+\l__sort_true_max_int=\count132
+\l__sort_block_int=\count133
+\l__sort_begin_int=\count134
+\l__sort_end_int=\count135
+\l__sort_A_int=\count136
+\l__sort_B_int=\count137
+\l__sort_C_int=\count138
+\l__str_internal_int=\count139
+\l__tl_analysis_normal_int=\count140
+\l__tl_analysis_index_int=\count141
+\l__tl_analysis_nesting_int=\count142
+\l__tl_analysis_type_int=\count143
+\l__regex_internal_a_int=\count144
+\l__regex_internal_b_int=\count145
+\l__regex_internal_c_int=\count146
+\l__regex_balance_int=\count147
+\l__regex_group_level_int=\count148
+\l__regex_mode_int=\count149
+\c__regex_cs_in_class_mode_int=\count150
+\c__regex_cs_mode_int=\count151
+\l__regex_catcodes_int=\count152
+\l__regex_default_catcodes_int=\count153
+\c__regex_catcode_L_int=\count154
+\c__regex_catcode_O_int=\count155
+\c__regex_catcode_A_int=\count156
+\c__regex_all_catcodes_int=\count157
+\l__regex_show_lines_int=\count158
+\l__regex_min_state_int=\count159
+\l__regex_max_state_int=\count160
+\l__regex_left_state_int=\count161
+\l__regex_right_state_int=\count162
+\l__regex_capturing_group_int=\count163
+\l__regex_min_pos_int=\count164
+\l__regex_max_pos_int=\count165
+\l__regex_curr_pos_int=\count166
+\l__regex_start_pos_int=\count167
+\l__regex_success_pos_int=\count168
+\l__regex_curr_char_int=\count169
+\l__regex_curr_catcode_int=\count170
+\l__regex_last_char_int=\count171
+\l__regex_case_changed_char_int=\count172
+\l__regex_curr_state_int=\count173
+\l__regex_step_int=\count174
+\l__regex_min_active_int=\count175
+\l__regex_max_active_int=\count176
+\l__regex_replacement_csnames_int=\count177
+\l__regex_match_count_int=\count178
+\l__regex_min_submatch_int=\count179
+\l__regex_submatch_int=\count180
+\l__regex_zeroth_submatch_int=\count181
+\g__regex_trace_regex_int=\count182
+\c_empty_box=\box29
+\l_tmpa_box=\box30
+\l_tmpb_box=\box31
+\g_tmpa_box=\box32
+\g_tmpb_box=\box33
+\l__box_top_dim=\dimen119
+\l__box_bottom_dim=\dimen120
+\l__box_left_dim=\dimen121
+\l__box_right_dim=\dimen122
+\l__box_top_new_dim=\dimen123
+\l__box_bottom_new_dim=\dimen124
+\l__box_left_new_dim=\dimen125
+\l__box_right_new_dim=\dimen126
+\l__box_internal_box=\box34
+\l__coffin_internal_box=\box35
+\l__coffin_internal_dim=\dimen127
+\l__coffin_offset_x_dim=\dimen128
+\l__coffin_offset_y_dim=\dimen129
+\l__coffin_x_dim=\dimen130
+\l__coffin_y_dim=\dimen131
+\l__coffin_x_prime_dim=\dimen132
+\l__coffin_y_prime_dim=\dimen133
+\c_empty_coffin=\box36
+\l__coffin_aligned_coffin=\box37
+\l__coffin_aligned_internal_coffin=\box38
+\l_tmpa_coffin=\box39
+\l_tmpb_coffin=\box40
+\g_tmpa_coffin=\box41
+\g_tmpb_coffin=\box42
+\l__coffin_bounding_shift_dim=\dimen134
+\l__coffin_left_corner_dim=\dimen135
+\l__coffin_right_corner_dim=\dimen136
+\l__coffin_bottom_corner_dim=\dimen137
+\l__coffin_top_corner_dim=\dimen138
+\l__coffin_scaled_total_height_dim=\dimen139
+\l__coffin_scaled_width_dim=\dimen140
+\c__coffin_empty_coffin=\box43
+\l__coffin_display_coffin=\box44
+\l__coffin_display_coord_coffin=\box45
+\l__coffin_display_pole_coffin=\box46
+\l__coffin_display_offset_dim=\dimen141
+\l__coffin_display_x_dim=\dimen142
+\l__coffin_display_y_dim=\dimen143
+\g__char_data_ior=\read1
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count183
+\l__pdf_internal_box=\box47
+))
+Package: xparse 2019-10-11 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count184
+\g__xparse_grabber_int=\count185
+\l__xparse_m_args_int=\count186
+\l__xparse_v_nesting_int=\count187
+)
+Package: fontspec 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2019/10/19 2.7d Font selection for XeLaTeX and LuaLaTeX (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count188
+\l__fontspec_language_int=\count189
+\l__fontspec_strnum_int=\count190
+\l__fontspec_tmp_int=\count191
+\l__fontspec_tmpa_int=\count192
+\l__fontspec_tmpb_int=\count193
+\l__fontspec_tmpc_int=\count194
+\l__fontspec_em_int=\count195
+\l__fontspec_emdef_int=\count196
+\l__fontspec_strong_int=\count197
+\l__fontspec_strongdef_int=\count198
+\l__fontspec_tmpa_dim=\dimen144
+\l__fontspec_tmpb_dim=\dimen145
+\l__fontspec_tmpc_dim=\dimen146
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3785.
+LaTeX Info: Redefining \slshape on input line 3790.
+LaTeX Info: Redefining \scshape on input line 3795.
+LaTeX Info: Redefining \upshape on input line 3800.
+LaTeX Info: Redefining \em on input line 3830.
+LaTeX Info: Redefining \emph on input line 3855.
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2019/10/10 v2.7c Micro-typographical refinements (RS)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+\MT@toks=\toks21
+\MT@count=\count199
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen147
+LaTeX Info: Redefining \textmicrotypecontext on input line 1347.
+\MT@listname@count=\count266
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-luatex.def
+File: microtype-luatex.def 2019/10/10 v2.7c Definitions specific to luatex (RS)
+Module microtype Info: overwriting function `keepligature' on input line 59
+LaTeX Info: Redefining \lsstyle on input line 681.
+LaTeX Info: Redefining \lslig on input line 681.
+\MT@outer@space=\skip52
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2019/10/10 v2.7c microtype main configuration file (RS)
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count267
+\Gm@cntv=\count268
+\c@Gm@tempcnt=\count269
+\Gm@bindingoffset=\dimen148
+\Gm@wd@mp=\dimen149
+\Gm@odd@mp=\dimen150
+\Gm@even@mp=\dimen151
+\Gm@layoutwidth=\dimen152
+\Gm@layoutheight=\dimen153
+\Gm@layouthoffset=\dimen154
+\Gm@layoutvoffset=\dimen155
+\Gm@dimlist=\toks22
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2019/10/27
+hobsub not currently supported, see hobsub.dtx to extract original code
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks23
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+))
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/pdfescape.sty
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2016/05/16 xcolor patch
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/hopatch.sty
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+))) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/letltxmacro.sty
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen156
+\Hy@linkcounter=\count270
+\Hy@pagecounter=\count271
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count272
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4540.
+Package hyperref Info: Link nesting OFF on input line 4545.
+Package hyperref Info: Hyper index ON on input line 4548.
+Package hyperref Info: Plain pages OFF on input line 4555.
+Package hyperref Info: Backreferencing OFF on input line 4560.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4793.
+\c@Hy@tempcnt=\count273
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5152.
+\XeTeXLinkMargin=\dimen157
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/bitset.sty
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count274
+\Field@Width=\dimen158
+\Fld@charsize=\dimen159
+Package hyperref Info: Hyper figures OFF on input line 6423.
+Package hyperref Info: Link nesting OFF on input line 6428.
+Package hyperref Info: Hyper index ON on input line 6431.
+Package hyperref Info: backreferencing OFF on input line 6438.
+Package hyperref Info: Link coloring OFF on input line 6443.
+Package hyperref Info: Link coloring with OCG OFF on input line 6448.
+Package hyperref Info: PDF/A mode OFF on input line 6453.
+LaTeX Info: Redefining \ref on input line 6493.
+LaTeX Info: Redefining \pageref on input line 6497.
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+)
+\Hy@abspage=\count275
+\c@Item=\count276
+\c@Hfootnote=\count277
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2019/09/28 v7.00a Hyperref driver for luaTeX
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2019/09/28 v7.00a Hyperref: PDF Unicode definition (HO)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/atveryend.sty
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count278
+\c@bookmark@seq@number=\count279
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/uniquecounter.sty
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip53
+)
+Package hyperref Info: Option `unicode' set `true' on input line 33.
+Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+Package hyperref Info: Option `breaklinks' set `true' on input line 33.
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 105.
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/03 v2.0 Extended file name support for graphics (legacy)
+Package grffile Info: This package is an empty stub for compatibility on input line 40.
+)
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count280
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip54
+\thanksmargin=\skip55
+\droptitle=\skip56
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/moresize/moresize.sty
+Package: moresize 1999/07/26 v1.9 (more font sizes)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2019/10/12 v3.27 KOMA-Script package (extend other classes with features of KOMA-Script classes)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2019/10/12 v3.27 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2019/10/12 v3.27 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2019/10/12 v3.27 KOMA-Script package (loading files)
+)
+Package scrbase Info: \ifpdftex already defined.
+(scrbase)             If \ifpdftex does not behave like
+(scrbase)             it was described at the KOMA-Script manual, try to
+(scrbase)             load `scrbase.sty' earlier or find out at which
+(scrbase)             package or class \ifpdftex was defined before.
+Package scrbase Info: \ifVTeX already defined.
+(scrbase)             If \ifVTeX does not behave like
+(scrbase)             it was described at the KOMA-Script manual, try to
+(scrbase)             load `scrbase.sty' earlier or find out at which
+(scrbase)             package or class \ifVTeX was defined before.
+))
+
+LaTeX Warning: Command \@footnotemark  has changed.
+               Check if current package is valid.
+
+)
+luaotfload | cache : Lookup cache loaded from /Users/lzhan/Library/TinyTeX/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+
+Package fontspec Info: FFNexusSerif scale = 0.947253285867224.
+
+
+Package fontspec Info: FFNexusSerif scale = 0.947253285867224.
+
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: FFNexusSerif/B scale = 0.8778005144436263.
+
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: FFNexusSerif/I scale = 0.9248923849608456.
+
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: FFNexusSerif/BI scale = 0.9248923849608456.
+
+luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: Font family 'FFNexusSerif(0)' created for font 'FF
+(fontspec)             Nexus Serif' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.947253285867224]"FFNexusSerif:mode=node;script=latn;language=DFLT;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[0.8778005144436263]"FFNexusSerif/B:mode=node;script=latn;language=DFLT;+tlig;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.9248923849608456]"FFNexusSerif/I:mode=node;script=latn;language=DFLT;+tlig;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
+(fontspec)             <->s*[0.9248923849608456]"FFNexusSerif/BI:mode=node;script=latn;language=DFLT;+tlig;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+
+LaTeX Info: Redefining \rmfamily on input line 97.
+LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
+(Font)              scaled to size 12.31425pt on input line 97.
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctex.sty
+Package: ctex 2019/05/29 v2.4.16 Chinese adapter in LaTeX (CTEX)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2019-10-11 LaTeX2e option processing using LaTeX3 keys
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2019/05/29 v2.4.16 Document and package hooks (CTEX)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2019/05/29 v2.4.16 Patching commands (CTEX)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\l__ctex_tmp_int=\count281
+\l__ctex_tmp_box=\box48
+\l__ctex_tmp_dim=\dimen162
+\g__ctex_section_depth_int=\count282
+\g__ctex_font_size_int=\count283
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2019/05/29 v2.4.16 Option configuration file (CTEX)
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def
+File: ctex-engine-luatex.def 2019/05/29 v2.4.16 LuaLaTeX adapter (CTEX)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/luatex/luatexja/luatexja.sty
+Package: luatexja 2019/09/26 Japanese Typesetting with Lua(La)TeX
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+Package: luatexja-core 2017/11/12 Core of LuaTeX-ja
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count284
+)
+\CatcodeTableOther=\catcodetable5
+\CatcodeTableExpl=\catcodetable6
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count285
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\AtBeginShipoutBox=\box49
+\ltjlineendcomment=\count286
+\ltj@zw=\dimen163
+\ltj@zh=\dimen164
+\jQ=\dimen165
+\ltj@icflag=\attribute6
+\ltj@curjfnt=\attribute7
+\ltj@curtfnt=\attribute8
+\ltj@charclass=\attribute9
+\ltj@charcode=\attribute10
+\ltj@autospc=\attribute11
+\ltj@autoxspc=\attribute12
+\ltj@yablshift=\attribute13
+\ltj@ykblshift=\attribute14
+\ltj@tablshift=\attribute15
+\ltj@tkblshift=\attribute16
+\jfam=\attribute17
+\ltj@vert@ori=\attribute18
+\ltj@dir=\attribute19
+\ltj@@japanese=\language2
+\ltj@tempcnta=\count287
+\ltj@kcat0=\attribute20
+\ltj@kcat1=\attribute21
+\ltj@kcat2=\attribute22
+\ltj@kcat3=\attribute23
+\ltj@kcat4=\attribute24
+\ltj@kcat5=\attribute25
+\ltj@kcat6=\attribute26
+Custom whatsit inhibitglue = 1
+Custom whatsit stack_marker = 2
+Custom whatsit begin_par = 3
+Custom whatsit direction = 4
+Custom whatsit box_boundary = 5
+Custom whatsit ja_al_boundary = 6...ry/TinyTeX/texmf-dist/tex/luatex/luatexja/ltj-rmlgbm.lua:213: attempt to index a nil value (field '?')
+stack traceback:
+	...ry/TinyTeX/texmf-dist/tex/luatex/luatexja/ltj-rmlgbm.lua:213: in upvalue 'make_cid_font'
+	...ry/TinyTeX/texmf-dist/tex/luatex/luatexja/ltj-rmlgbm.lua:258: in upvalue 'read_cid_font'
+	...ry/TinyTeX/texmf-dist/tex/luatex/luatexja/ltj-rmlgbm.lua:275: in local 'prepare_cid_font'
+	...ry/TinyTeX/texmf-dist/tex/luatex/luatexja/ltj-rmlgbm.lua:419: in main chunk
+	[C]: in function 'require'
+	...rary/TinyTeX/texmf-dist/tex/luatex/luatexja/luatexja.lua:16: in local 'load_module'
+	...rary/TinyTeX/texmf-dist/tex/luatex/luatexja/luatexja.lua:98: in main chunk
+	[C]: in function 'dofile'
+	[\directlua]:1: in main chunk.
+l.180 }
+     
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/luatex/luatexja/ltj-base.sty
+Package: ltj-base 2017/05/05
+\ltj@tempcntb=\count288
+\ltj@tempcntc=\count289
+\ltj@tempdima=\dimen166
+\ltj@afbox=\box50
+)
+\ltj@@italic@inner=\luafunction1
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.206 }
+     
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+\ltj@@jfont@inner=\luafunction2
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.218 }
+     
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+\ltj@zw@inner=\luafunction3
+\ltj@zh@inner=\luafunction4
+\ltj@reset@globaldefs@inner=\luafunction5
+\ltj@restore@globaldefs@inner=\luafunction6
+\ltj@@ihb@inner=\luafunction7
+\ltj@@fakeparbegin@inner=\luafunction8
+\ltj@@fakeboxbdd@inner=\luafunction9
+[\directlua]:1: attempt to index a nil value (field 'jfmglue')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.253 }
+     
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+\ltj@@stack=\count290
+\ltj@@group@level=\count291
+[\directlua]:1: attempt to index a nil value (field 'stack')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.288   }
+       %
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'stack')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.293   }
+       %
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+\ltjsetkanjiskip@inner=\luafunction10
+\ltjsetxkanjiskip@inner=\luafunction11
+[\directlua]:1: attempt to index a nil value (field 'stack')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.394 }
+     
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+\ltj@alljachar@inner=\luafunction12
+[\directlua]:1: attempt to index a nil value (field 'direction')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\yoko ....direction.set_list_direction(4, 'yoko')}
+                                                  
+l.576 \yoko
+         
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'stack')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.600   }
+       $%
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+\ltj@@i@everyhbox=\toks26
+\ltj@@i@everyvbox=\toks27
+\ltj@@box@dirhook=\luafunction13
+\ltj@@reset@badness@inner=\luafunction14
+\ltj@temp@cctb=\catcodetable7
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty
+Package: luatexja-compat 2018/03/29 Compatibility with pTeX
+Lua module: luatexja.stack 2019/09/26 LuaTeX-ja stack system(load cache: /Users/lzhan/.TinyTeX/texmf-var/luatexja/ltj-jisx0208.luc)...ry/TinyTeX/texmf-dist/tex/luatex/luatexja/ltj-compat.lua:133: attempt to index a nil value (field 'binary_pars')
+stack traceback:
+	...ry/TinyTeX/texmf-dist/tex/luatex/luatexja/ltj-compat.lua:133: in main chunk
+	[C]: in function 'require'
+	...rary/TinyTeX/texmf-dist/tex/luatex/luatexja/luatexja.lua:16: in field 'load_module'
+	[\directlua]:1: in main chunk.
+\ltj@requirelua@submod ...xluaescapestring {#1}")}
+                                                  
+l.96 \def
+       \euc{\ltj@code@conv{euc}}
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+\hour=\count292
+\minute=\count293
+))[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.48 \ltjdefcharrange{1}{"80-"36F, "1E00-"1EFF}
+                                             
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.48 \ltjdefcharrange{1}{"80-"36F, "1E00-"1EFF}
+                                             
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.49 \ltjdefcharrange{2}{"370-"4FF, "1F00-"1FFF}
+                                              
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.49 \ltjdefcharrange{2}{"370-"4FF, "1F00-"1FFF}
+                                              
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.52   "2B00-"2BFF}
+                 
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.52   "2B00-"2BFF}
+                 
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.52   "2B00-"2BFF}
+                 
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.52   "2B00-"2BFF}
+                 
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.52   "2B00-"2BFF}
+                 
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.52   "2B00-"2BFF}
+                 
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.56 ...2F, "FE70-"FEFF, "10000-"1FFFF, "E000-"F8FF}
+                                                   % non-Japanese
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.57 ...{"D800-"DFFF, "E0000-"E00FF, "E01F0-"10FFFF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.57 ...{"D800-"DFFF, "E0000-"E00FF, "E01F0-"10FFFF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.57 ...{"D800-"DFFF, "E0000-"E00FF, "E01F0-"10FFFF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.60 ..., "FE10-"FE6F, "20000-"2FFFF, "E0100-"E01EF}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.63   "A830-"A83F, "AC00-"D7FF}
+                              
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.63   "A830-"A83F, "AC00-"D7FF}
+                              
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.63   "A830-"A83F, "AC00-"D7FF}
+                              
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.63   "A830-"A83F, "AC00-"D7FF}
+                              
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.63   "A830-"A83F, "AC00-"D7FF}
+                              
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.63   "A830-"A83F, "AC00-"D7FF}
+                              
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.64 ...e{8}{"A7, "A8, "B0, "B1, "B4, "B6, "D7, "F7}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.64 ...e{8}{"A7, "A8, "B0, "B1, "B4, "B6, "D7, "F7}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.64 ...e{8}{"A7, "A8, "B0, "B1, "B4, "B6, "D7, "F7}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.64 ...e{8}{"A7, "A8, "B0, "B1, "B4, "B6, "D7, "F7}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.64 ...e{8}{"A7, "A8, "B0, "B1, "B4, "B6, "D7, "F7}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.64 ...e{8}{"A7, "A8, "B0, "B1, "B4, "B6, "D7, "F7}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.64 ...e{8}{"A7, "A8, "B0, "B1, "B4, "B6, "D7, "F7}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.64 ...e{8}{"A7, "A8, "B0, "B1, "B4, "B6, "D7, "F7}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@dcrangeB ...tempcntb , \the \ltj@tempcntc )}
+                                                  
+l.66 ...D, "2013, "2014, "2025, "2026, "2027, "2E3A}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@scrange ...obal,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@next ..._global,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@next ..._global,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@next ..._global,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@next ..._global,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@next ..._global,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@next ..._global,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@next ..._global,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@next ..._global,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.67 ...rrange={-1, -2, -3, -4, -5, +6, +7, -8, +9}}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'math')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.68 ...luatexja.math.is_math_letters[x] = true end}
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:78: Missing number, treated as zero.
+<to be read again> 
+p
+l.78 }
+    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:78: Illegal unit of measure (pt inserted).
+<to be read again> 
+p
+l.78 }
+    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:78: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 }
+    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[\directlua]:1: attempt to index a nil value (upvalue 'ltjf')
+stack traceback:
+	[\directlua]:1: in function <[\directlua]:1>.
+\zw ->\luafunction \ltj@zw@inner 
+                                 \ltj@zw 
+l.78 }
+    
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:78: Missing number, treated as zero.
+<to be read again> 
+p
+l.78 }
+    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:78: Illegal unit of measure (pt inserted).
+<to be read again> 
+p
+l.78 }
+    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[\directlua]:1: attempt to call a nil value (field 'ext_print_global')
+stack traceback:
+	[\directlua]:1: in main chunk.
+<argument> ...pacing \directlua {luatexja.ext_print_global()}
+                                                  \ltj@autospc \@ne \else \d...
+l.78 }
+    
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to call a nil value (field 'ext_print_global')
+stack traceback:
+	[\directlua]:1: in main chunk.
+<argument> ...pacing \directlua {luatexja.ext_print_global()}
+                                                  \ltj@autoxspc \@ne \else \...
+l.78 }
+    
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'charrange')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\ltj@@scrange ...obal,\ltj@safe@num@or {nil}{#1})}
+                                                  \fi \ltj@@next 
+l.78 }
+    
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfmglue')
+stack traceback:
+	[\directlua]:1: in main chunk.
+<argument> ...tlua {luatexja.jfmglue.diffmet_rule = math.max}
+                                                  \or \directlua {luatexja.j...
+l.78 }
+    
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfmglue')
+stack traceback:
+	[\directlua]:1: in main chunk.
+<argument> ...texja.jfmglue.diffmet_rule = math.two_paverage}
+                                                  \or \directlua {luatexja.j...
+l.78 }
+    
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
+Package: xunicode-addon 2019/06/02 v3.7.4 addon file for xunicode
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many other characters in Unicode lower plane
+ (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/sl' in size <13> not available
+(Font)              Font shape `TU/FFNexusSerif(0)/m/it' tried instead on input line 316.
+LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
+(Font)              scaled to size 12.02365pt on input line 316.
+LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
+(Font)              scaled to size 11.4115pt on input line 356.
+)
+\tipaTiiicode=\count294
+\tipasavetokens=\toks28
+\tipachecktokens=\toks29
+)
+\l__xunadd_tmp_coffin=\box51
+\l__xunadd_circle_coffin=\box52
+\l_xunadd_slot_int=\count295
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many other characters in Unicode lower plane
+
+*** Reloading Xunicode for encoding 'TU' ***
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
+File: xunicode-extra.def 2019/06/02 v3.7.4 extra definition for xunicode
+)[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\lua_now:e #1->\__lua_now:n {#1}
+                                
+l.318 ...xja.jfont.add_kyenc_list('\CJK@encoding') }
+                                                  
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+\symCJKmath=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
+(Font)                  LTJY3/song/m/n --> LTJY3/song/bx/n on input line 330.
+\g__ctex_ltj_family_int=\count296
+Package hyperref Info: Option `unicode' set `true' on input line 1050.
+
+Package ctex Warning: Functions of `CJKfntef' is not available in LuaLaTeX.
+
+\ccwd=\dimen167
+\l__ctex_ccglue_skip=\skip57
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: LaTeX Error: Missing begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Extra fi.
+define@newfont ...@fontshape else extract@font fi 
+                                                  endgroup 
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+I'm ignoring this; it doesn't match any \if.
+
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106: Undefined control sequence.
+\font@name ->\LTJY3/song/m/n/13 
+                                
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+lua_now:e #1->__lua_now:n {#1}
+                              
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+[\directlua]:1: attempt to index a nil value (field 'jfont')
+stack traceback:
+	[\directlua]:1: in main chunk.
+globaljfont ...texluaescapestring {noexpand #1}')}
+                                                  
+l.1106 \tl_set:Nn \CJK@family { song } \selectfont
+                                                
+(That makes 100 errors; please try again.)
+
+Here is how much of LuaTeX's memory you used:
+ 30360 strings out of 493861
+ 100000,794899 words of node,token memory allocated
+ 8364 words of node memory still in use:
+   6 hlist, 1 rule, 2 disc, 2 local_par, 1 dir, 38 glue, 5 kern, 1 penalty, 950 glyph, 455 attribute, 55 glue_spec, 31 attribute_list, 1 temp, 1 write nodes
+   avail lists: 1:2,2:7,3:4,4:1,5:7,6:1,8:1
+ 34380 multiletter control sequences out of 65536+600000
+ 41 fonts using 6599735 bytes
+ 53i,1n,116p,978b,429s stack positions out of 5000i,500n,10000p,200000b,100000s
+/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def:1106:  ==> Fatal error occurred, no output PDF file produced!

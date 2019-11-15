@@ -19,15 +19,15 @@ fontsize: 12pt
 
 # 战立侃
 
-- <i class="fas fa-university">\faUniversity</i> &nbsp; 北京市海淀区学院路15号，北京语言大学，综合楼1235室
-- <i class="fas fa-phone">\faPhone*</i> &nbsp; + 86 10 8230 3468
-- <i class="far fa-envelope">\faEnvelope[regular]</i> &nbsp; <zhanlikan@hotmail.com>
-- <i class="fas fa-globe">\faGlobe</i> &nbsp; <https://likan.info>
+- <i class="fas fa-university"> \footnotesize \faUniversity </i> &nbsp; 北京市海淀区学院路15号，北京语言大学，综合楼1235室
+- <i class="fas fa-phone"> \footnotesize \faPhone* </i> &nbsp; + 86 10 8230 3468
+- <i class="far fa-envelope"> \footnotesize \faEnvelope[regular]</i> &nbsp; <zhanlikan@hotmail.com>
+- <i class="fas fa-globe"> \footnotesize \faGlobe </i> &nbsp; <https://likan.info>
 - 最近更新：`r Sys.Date()`
 
 ## 职业经历
 
-- 2018.12 ~ 现在，    副教授，北京语言大学语言康复学院
+- 2018.12 ~ 现在，副教授，北京语言大学语言康复学院
 
 - 2016.06 ~ 2018.11，助理研究员，北京语言大学语言康复学院
 

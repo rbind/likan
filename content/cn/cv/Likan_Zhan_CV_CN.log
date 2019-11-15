@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.10.30)  12 NOV 2019 14:21
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.10.30)  12 NOV 2019 18:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -615,6 +615,8 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip53
 \thanksmargin=\skip54
 \droptitle=\skip55
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/moresize/moresize.sty
+Package: moresize 1999/07/26 v1.9 (more font sizes)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrextend.sty
 Package: scrextend 2019/10/12 v3.27 KOMA-Script package (extend other classes w
 ith features of KOMA-Script classes)
@@ -672,9 +674,9 @@ Package fontspec Info: Font family 'FFNexusSerif(0)' created for font 'FF
 (fontspec)             Serif/BI/OT:mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Info: Redefining \rmfamily on input line 93.
+LaTeX Info: Redefining \rmfamily on input line 97.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 12.31425pt on input line 93.
+(Font)              scaled to size 12.31425pt on input line 97.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctex.sty
 Package: ctex 2019/05/29 v2.4.16 Chinese adapter in LaTeX (CTEX)
 
@@ -913,27 +915,27 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 ) (./Likan_Zhan_CV_CN.aux)
 \openout1 = `Likan_Zhan_CV_CN.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Info: Redefining \microtypecontext on input line 133.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Info: Redefining \microtypecontext on input line 137.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -974,7 +976,7 @@ Package microtype Info: No adjustment of kerning.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring ON on input line 133.
+Package hyperref Info: Link coloring ON on input line 137.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -984,29 +986,30 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 133.
-LaTeX Info: Redefining \pageref on input line 133.
-LaTeX Info: Redefining \nameref on input line 133.
+LaTeX Info: Redefining \ref on input line 137.
+LaTeX Info: Redefining \pageref on input line 137.
+LaTeX Info: Redefining \nameref on input line 137.
 (./Likan_Zhan_CV_CN.out) (./Likan_Zhan_CV_CN.out)
 \@outlinefile=\write3
 \openout3 = `Likan_Zhan_CV_CN.out'.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 133.
+LaTeX Info: Redefining \selectfont on input line 137.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 133.
+(lastpage)             ! on input line 137.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 17.73254pt on input line 137.
+(Font)              scaled to size 17.73254pt on input line 141.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 17.6937pt on input line 137.
+(Font)              scaled to size 17.6937pt on input line 141.
 LaTeX Font Info:    Font shape `TU/SourceHanSerifSC(0)/bx/n' will be
-(Font)              scaled to size 15.69704pt on input line 137.
+(Font)              scaled to size 15.69704pt on input line 141.
 LaTeX Font Info:    Font shape `TU/SourceHanSerifSC(0)/m/n' will be
-(Font)              scaled to size 10.90071pt on input line 142.
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 147.
+(Font)              scaled to size 9.08403pt on input line 147.
+LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 15
+2.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-47.
+52.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1016,34 +1019,34 @@ File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
 ern Roman (RS)
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-47.
+52.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-147.
+152.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-147.
+152.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 147.
+(Font)              <10.83347> on input line 152.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.09996> on input line 147.
+(Font)              <7.58339> on input line 152.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.5> on input line 147.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 147
+(Font)              <5.41673> on input line 152.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 152
 .
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 147
+LaTeX Font Info:    Trying to load font information for U+msb on input line 152
 .
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1051,13 +1054,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 14.77705pt on input line 155.
+(Font)              scaled to size 14.77705pt on input line 160.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 14.74469pt on input line 155.
+(Font)              scaled to size 14.74469pt on input line 160.
 LaTeX Font Info:    Font shape `TU/SourceHanSerifSC(0)/bx/n' will be
-(Font)              scaled to size 13.08081pt on input line 155.
+(Font)              scaled to size 13.08081pt on input line 160.
+LaTeX Font Info:    Font shape `TU/SourceHanSerifSC(0)/m/n' will be
+(Font)              scaled to size 10.90071pt on input line 164.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/n' will be
-(Font)              scaled to size 11.367pt on input line 205.
+(Font)              scaled to size 11.367pt on input line 210.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FFNexusSerif' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1067,19 +1072,27 @@ Package microtype Info: Character `\dj ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 [1
 
-] [2]
+]
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 318.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <13> on input line 318.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9.09996> on input line 318.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.5> on input line 318.
+[2]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
-(Font)              scaled to size 12.02365pt on input line 329.
+(Font)              scaled to size 12.02365pt on input line 334.
 
 LaTeX Font Warning: Font shape `TU/SourceHanSerifSC(0)/m/it' undefined
-(Font)              using `TU/SourceHanSerifSC(0)/m/n' instead on input line 32
-9.
+(Font)              using `TU/SourceHanSerifSC(0)/m/n' instead on input line 33
+4.
 
 [3]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 12.28728pt on input line 457.
+(Font)              scaled to size 12.28728pt on input line 462.
 [4]
-Underfull \hbox (badness 1077) in paragraph at lines 535--542
+Underfull \hbox (badness 1077) in paragraph at lines 540--547
 \TU/FFNexusSerif(0)/m/n/13 in children’s online sentence comprehension. \TU/FFN
 exusSerif(0)/m/it/13 Cognition, 133\TU/FFNexusSerif(0)/m/n/13 (1), 262-276. doi
 :
@@ -1088,11 +1101,11 @@ exusSerif(0)/m/it/13 Cognition, 133\TU/FFNexusSerif(0)/m/n/13 (1), 262-276. doi
 [5] [6] [7] 
 AED: lastpage setting LastPage
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 703.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 703.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 708.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 708.
 (./Likan_Zhan_CV_CN.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 703.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 703.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 708.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 708.
 Package rerunfilecheck Info: File `Likan_Zhan_CV_CN.out' has not changed.
 (rerunfilecheck)             Checksum: 7494023F13DA4A3201D858FF42033362.
 
@@ -1100,12 +1113,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 32614 strings out of 494468
- 642014 string characters out of 6172922
- 787604 words of memory out of 5000000
- 36620 multiletter control sequences out of 15000+600000
- 545350 words of font info for 76 fonts, out of 8000000 for 9000
+ 32709 strings out of 494468
+ 645290 string characters out of 6172922
+ 788397 words of memory out of 5000000
+ 36699 multiletter control sequences out of 15000+600000
+ 557398 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,11n,119p,813b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,11n,119p,813b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Likan_Zhan_CV_CN.pdf (8 pages).

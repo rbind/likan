@@ -9,7 +9,7 @@ output:
       in_header: ~/Documents/ADMIN/Website/LaTex/Preamble_Blogdown_CV.tex
     latex_engine: xelatex
     md_extensions: -autolink_bare_uris +hard_line_breaks
-    keep_tex: false    
+    keep_tex: false
   html_document:
     df_print: paged
   word_document: default
@@ -22,10 +22,10 @@ fontsize: 12pt
 
 # Likan ZHAN
 
-- <i class="fas fa-university">\faUniversity</i> &nbsp; No. 15, Xueyuan Road, Haidian District, Beijing 100083, China
-- <i class="fas fa-phone">\faPhone*</i> &nbsp; + 86 10 8230 3468
-- <i class="far fa-envelope">\faEnvelope[regular]</i> &nbsp; <zhanlikan@hotmail.com>
-- <i class="fas fa-globe">\faGlobe</i> &nbsp; <https://likan.info>
+- <i class="fas fa-university"> \faUniversity </i> &nbsp; No. 15, Xueyuan Road, Haidian District, Beijing 100083, China
+- <i class="fas fa-phone"> \faPhone* </i> &nbsp; + 86 10 8230 3468
+- <i class="far fa-envelope"> \faEnvelope[regular] </i> &nbsp; <zhanlikan@hotmail.com>
+- <i class="fas fa-globe"> \faGlobe </i> &nbsp; <https://likan.info>
 - Last update: `r Sys.Date()`
 
 ## Academic Appointment
