@@ -124,3 +124,12 @@ sup a {
     left: 100%;
     margin-left: 15px;
 }
+
+/* Italic Quote Block, 20191116 by Likan Zhan */
+
+blockquote {
+  margin: 1em 0;
+  padding: 0 2em;
+  border-left: 3px solid #ddd;
+  font-style: italic;
+}

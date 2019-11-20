@@ -56,8 +56,8 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 # 5. Text Books
 
-- Wickham, H. (2019). *Advanced R* (2 ed.). Boca Baton, UK: CRC Press. [<i class="fas fa-external-link-alt"> \faExternalLink* </i>](https://adv-r.hadley.nz)
-- Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [<i class="fas fa-external-link-alt"> \faExternalLink* </i>](http://r4ds.had.co.nz)
+- Wickham, H. (2019). *Advanced R* (2 ed.). Boca Baton, UK: CRC Press. [<i class="fas fa-external-link-alt fa-sm"> \faExternalLink* </i>](https://adv-r.hadley.nz)
+- Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [<i class="fas fa-external-link-alt fa-sm"> \faExternalLink* </i>](http://r4ds.had.co.nz)
 - **Fox, J. (2016). *Applied Regression Analysis and Generalized Linear Models* (3 ed.). Thousand Oaks, CA: SAGE.**
 
 <!---
