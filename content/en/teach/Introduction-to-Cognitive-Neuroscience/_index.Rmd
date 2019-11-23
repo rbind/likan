@@ -10,11 +10,16 @@ output:
 ---
 # 1. Time and Location
 
+Coming on semester two !
+
+<!---
 - Time: 0800 - 1000, Each Monday
 
 - Location: **Room 211, Teaching Building 5** (Changed!!)
 
 - Lecturer: Likan Zhan
+
+--->
 
 # 2. Course Information
 

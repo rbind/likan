@@ -11,8 +11,12 @@ output:
 ---
 # 1. Lecture Time and Location
 
+Coming on semester two !
+
+<!---
 - Time: 08:00 - 11:00, Each Wednesday
 - Location: 434, Teach Building 2.
+--->
 
 # 2. Course Information
 
