@@ -5,14 +5,14 @@
   {{ if eq .RelPermalink "/" }}
 
   {{ with .Site.Params.footer.home }}
-   <!--- <hr> ---> <!--- Remove horizontal line 20180205 by Likan Zhan --->
+  <hr>
   <div class="copyright">{{ . | markdownify }}</div>
   {{ end }}
 
   {{ else }}
   {{ $section := default .Section ($.Scratch.Get "section") }}
   {{ with (index $.Site.Params.footer $section) }}
-<!---  <hr style="border: 1px dashed gray;" /> --->
+  <hr style="border: 1px dashed gray;" />
   <div class="copyright">{{ . | markdownify }} </div>
   {{ end }}
   {{ end }}
