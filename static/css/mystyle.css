@@ -13,7 +13,7 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
 
 /*  Make the format of the TOC from Rmd the same as md  */
 #TOC {
-/*  background-color: #f8f8f8; */
+  background-color: #f8f8f8;
   padding: .5em;
 }
 
