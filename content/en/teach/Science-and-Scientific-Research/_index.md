@@ -20,7 +20,7 @@ This course is designed to expose students to the academic side of scientific re
 
 # 3. Lecture Notes
 
-- Part I. Science and Scientific Research [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.01.pdf)
+- Part I. Science and Scientific Research
     - 01. What is science
     - 02. Falsifiability
     - 03. Operationism and essentialism
@@ -34,14 +34,12 @@ This course is designed to expose students to the academic side of scientific re
     - 11. The role of chance
 
 - Part II. Academic reading
-    - 12. Category and structure of academic articles [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.02.pdf)
-          - Sample article 1: [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.02.Sample.01.pdf)
-          - Sample article 2: [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.02.Sample.02.pdf)
-    - 13. References in academic articles [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.03.pdf)
-    - 14. Databases, journals, and search engines [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.04.pdf)
+    - 12. Category and structure of academic articles
+    - 13. References in academic articles
+    - 14. Databases, journals, and search engines
     - 15. Bibliography softwares
 
-- Part III. Academic writing [<i class="fa fa-download" style="font-size:1em"></i>](https://appendix.likan.info/Science-and-Scientific-Research/Sci.Res.CH.06.pdf)
+- Part III. Academic writing
     - 16. Good writing
     - 17. Window onto the worold
     - 18. Curse of knowledge

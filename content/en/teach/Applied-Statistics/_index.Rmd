@@ -9,7 +9,7 @@ output:
   blogdown::html_page:
     toc: yes
 ---
-
+<!--- 
 # 1. Time and Location
 
 - Time: 19:00 - 22:00, Thuesday
@@ -61,5 +61,6 @@ More specifically, you will learn:
   - Chapter 14. Two-Factor Analysis of Variance (Independent Measures).
 
 # 5. Examination
+--->
 
 To Be Announced

@@ -1,0 +1,61 @@
+---
+title: "Experimental Psychology"
+author: "Likan Zhan"
+date: '2017-03-01'
+lastmod: "`r Sys.Date()`"
+show_toc: yes
+disable_comments: yes
+output:
+  blogdown::html_page:
+    toc: yes
+---
+
+# 1. Time and Location
+
+To Be Anounced
+
+<!---
+
+- Time: 14:00 - 18:00, Thuesday
+
+- Location: Room 512, Main Building South
+
+- Lecturer: Likan Zhan
+
+--->
+
+# 2. Course Information
+
+A brief and systematic introduction of the research methods used in behaviorial science and releted areas.
+
+# 3. Bibliographies
+
+- Barry H. Kantowitz, B. H., Roediger, H. L. III, & Elmes, D. G. (2015). *Experimental Psychology* (10 ed.). Cengage Learning.
+- Shaughnessy, J. J., Zechmeister, E. B., & Zechmeister, J. S. (2012). *Research methods in psychology* (9 ed.). New York, NY: McGraw-Hill.
+
+# 4. Syllabus and Lecture Notes
+
+- Part I. Foundations of Research
+    - Chapter 01. Introduction
+    - Chapter 02. Variables Used in Experimental Psychology
+
+- Part II. Research Methods In Psychology
+    - Chapter 03. Descriptive Methods
+    - Chapter 04. Experimental Methods
+    - Chapter 05. Applied Research
+
+- Part III. Principles and Practices of Experimental Psychology
+    - Chapter 06. Psychophysics
+    - Chapter 07. Perception
+    - Chapter 08. Attention and Reaction Time
+    - Chapter 09. Conditioning and Learning
+    - Chapter 10. Remembering and Forgetting
+    - Chapter 11. Thinking and Problem Solving
+    - Chapter 12. Individual Differences and Development
+    - Chapter 13. Social Psychology
+    - Chapter 14. Environmental Psychology
+    - Chapter 15. Human Factors
+
+# 5. Examination
+
+To Be Added

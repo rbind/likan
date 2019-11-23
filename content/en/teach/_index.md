@@ -6,6 +6,7 @@ disable_comments: true
 ---
 
 ### Semester one (September - January)
+
 - [R for Statistics and Data Visualization](/en/teach/R-for-Statistics-Data-Visualization/) <br>
     Targeted Students: Postgraduate and PhD students <br>
 
@@ -15,10 +16,12 @@ disable_comments: true
 - [Introduction to Neurolinguistics](/en/teach/Introduction-to-Neurolinguistics/) <br>
     Targeted Students: Undergraduate Students
 
-
 ### Semester two (March - July)
+
+<!---
 - [Applied Statistics](/en/teach/Applied-Statistics/) <br>
     Targeted Students: Undergraduate students
+--->
 
 - [Experimental Psychology](/en/teach/Experimental-Psychology/) <br>
     Targeted Students: Undergraduate students
