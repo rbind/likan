@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.11.12)  12 NOV 2019 22:02
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.11.21)  23 NOV 2019 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Likan_Zhan_CV_EN.tex
 (./Likan_Zhan_CV_EN.tex
-LaTeX2e <2019-10-01> patch level 2
+LaTeX2e <2019-10-01> patch level 3
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
@@ -66,7 +66,7 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2019/04/01 v2.17c AMS math features
+Package: amsmath 2019/11/16 v2.17d AMS math features
 \@mathmargin=\skip43
 For additional information on amsmath, use the `?' option.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -116,8 +116,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2855.
-LaTeX Info: Redefining \] on input line 2856.
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
@@ -435,22 +435,22 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2019/10/10 v2.7c Micro-typographical refinements (RS)
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
 \MT@toks=\toks22
 \MT@count=\count272
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen147
-LaTeX Info: Redefining \textmicrotypecontext on input line 1347.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
 \MT@listname@count=\count273
 
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.de
 f
-File: microtype-xetex.def 2019/10/10 v2.7c Definitions specific to xetex (RS)
+File: microtype-xetex.def 2019/11/18 v2.7d Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 258.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2019/10/10 v2.7c microtype main configuration file (RS)
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
 )) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
@@ -471,12 +471,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks23
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
-
-(/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.s
-ty
-Package: hobsub-hyperref 2019/10/27
-hobsub not currently supported, see hobsub.dtx to extract original code
+Package: hyperref 2019/11/10 v7.00c Hypertext links for LaTeX
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
@@ -507,7 +502,7 @@ Package: xcolor-patch 2016/05/16 xcolor patch
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 ))) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/letltxmacro.sty
 Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-)) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
@@ -516,7 +511,7 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@linkcounter=\count277
 \Hy@pagecounter=\count278
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2019/11/10 v7.00c Hyperref: PDFDocEncoding definition (HO)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/intcalc.sty
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 )
@@ -524,19 +519,19 @@ Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4540.
-Package hyperref Info: Link nesting OFF on input line 4545.
-Package hyperref Info: Hyper index ON on input line 4548.
-Package hyperref Info: Plain pages OFF on input line 4555.
-Package hyperref Info: Backreferencing OFF on input line 4560.
+Package hyperref Info: Hyper figures OFF on input line 4535.
+Package hyperref Info: Link nesting OFF on input line 4540.
+Package hyperref Info: Hyper index ON on input line 4543.
+Package hyperref Info: Plain pages OFF on input line 4550.
+Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4793.
+Package hyperref Info: Bookmarks ON on input line 4788.
 \c@Hy@tempcnt=\count280
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5152.
+LaTeX Info: Redefining \url on input line 5147.
 \XeTeXLinkMargin=\dimen157
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/bitset.sty
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
@@ -547,15 +542,15 @@ Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 \Fld@menulength=\count281
 \Field@Width=\dimen158
 \Fld@charsize=\dimen159
-Package hyperref Info: Hyper figures OFF on input line 6423.
-Package hyperref Info: Link nesting OFF on input line 6428.
-Package hyperref Info: Hyper index ON on input line 6431.
-Package hyperref Info: backreferencing OFF on input line 6438.
-Package hyperref Info: Link coloring OFF on input line 6443.
-Package hyperref Info: Link coloring with OCG OFF on input line 6448.
-Package hyperref Info: PDF/A mode OFF on input line 6453.
-LaTeX Info: Redefining \ref on input line 6493.
-LaTeX Info: Redefining \pageref on input line 6497.
+Package hyperref Info: Hyper figures OFF on input line 6418.
+Package hyperref Info: Link nesting OFF on input line 6423.
+Package hyperref Info: Hyper index ON on input line 6426.
+Package hyperref Info: backreferencing OFF on input line 6433.
+Package hyperref Info: Link coloring OFF on input line 6438.
+Package hyperref Info: Link coloring with OCG OFF on input line 6443.
+Package hyperref Info: PDF/A mode OFF on input line 6448.
+LaTeX Info: Redefining \ref on input line 6488.
+LaTeX Info: Redefining \pageref on input line 6492.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 )
@@ -565,9 +560,9 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2019/09/28 v7.00a Hyperref driver for XeTeX
+File: hxetex.def 2019/11/10 v7.00c Hyperref driver for XeTeX
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2019/09/28 v7.00a Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2019/11/10 v7.00c Hyperref: PDF Unicode definition (HO)
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/oberdiek/stringenc.sty
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
@@ -586,7 +581,7 @@ Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+85.
 )
 \Hy@SectionHShift=\skip52
 )
@@ -615,7 +610,7 @@ File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 \Gin@req@height=\dimen160
 \Gin@req@width=\dimen161
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/grffile/grffile.sty
-Package: grffile 2019/11/03 v2.0 Extended file name support for graphics (legac
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
 y)
 Package grffile Info: This package is an empty stub for compatibility on input 
 line 40.
@@ -916,9 +911,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/datetime2/datetime2.sty
-Package: datetime2 2019/10/21 v1.5.4 (NLCT) date and time formats
+Package: datetime2 2019/11/11 v1.5.5 (NLCT) date and time formats
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/tracklang/tracklang.sty
-Package: tracklang 2019/10/06 v1.3.8 (NLCT) Track Languages
+Package: tracklang 2019/11/11 v1.3.9 (NLCT) Track Languages
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/generic/tracklang/tracklang.tex)))
 (/Users/lzhan/Library/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
@@ -1089,32 +1084,32 @@ Package microtype Info: Character `\dj ' is missing
 
 ] [2]
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/bx/n' will be
-(Font)              scaled to size 12.28728pt on input line 350.
+(Font)              scaled to size 12.28728pt on input line 345.
 LaTeX Font Info:    Font shape `TU/FFNexusSerif(0)/m/it' will be
-(Font)              scaled to size 12.02365pt on input line 352.
-[3] [4] [5] [6]
-Underfull \hbox (badness 1077) in paragraph at lines 585--592
+(Font)              scaled to size 12.02365pt on input line 347.
+[3] [4] [5]
+Underfull \hbox (badness 1077) in paragraph at lines 580--587
 \TU/FFNexusSerif(0)/m/n/13 in children’s online sentence comprehension. \TU/FFN
 exusSerif(0)/m/it/13 Cognition, 133\TU/FFNexusSerif(0)/m/n/13 (1), 262-276. doi
 :
  []
 
-[7] [8] 
+[6] [7] [8] 
 AED: lastpage setting LastPage
 [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 753.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 753.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 748.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 748.
 (./Likan_Zhan_CV_EN.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 753.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 753.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 748.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 748.
 Package rerunfilecheck Info: File `Likan_Zhan_CV_EN.out' has not changed.
 (rerunfilecheck)             Checksum: 2507C9322564EFBF78B20905DA5F446C.
  ) 
 Here is how much of TeX's memory you used:
  32529 strings out of 494465
- 635064 string characters out of 6172851
- 781769 words of memory out of 5000000
- 36486 multiletter control sequences out of 15000+600000
+ 634886 string characters out of 6172851
+ 781856 words of memory out of 5000000
+ 36489 multiletter control sequences out of 15000+600000
  545326 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,11n,119p,813b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
