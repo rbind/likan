@@ -38,10 +38,18 @@ iframe, twitterwidget, video {
   display: block;
   margin: auto;
 }
+
 #TableOfContents {
   background-color: #f8f8f8;
   padding: .5em;
 }
+/* ---- Added By Likan Zhan, on 20191123 ---> */
+#TOC {
+  background-color: #f8f8f8;
+  padding: .5em;
+}
+/* ---------- */
+
 table {
   min-width: 50%;
   max-width: 100%;
