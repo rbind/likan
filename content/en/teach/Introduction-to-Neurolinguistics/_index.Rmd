@@ -44,7 +44,7 @@ output:
     - Section 2. Acoustic-Phonological Processes [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/Introduction-to-Neurolinguistics/CH_01_2.pdf)
     - Section 3. From Word Form to Syntactic and Lexical-Semantic Information [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/Introduction-to-Neurolinguistics/CH_01_3.pdf)
     - Section 4. Initial Phrase Structure Building [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/Introduction-to-Neurolinguistics/CH_01_4.pdf)
-    - Section 5. Syntactic Relations during Sentence Processing
+    - Section 5. Syntactic Relations during Sentence Processing  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/Introduction-to-Neurolinguistics/CH_01_5.pdf)
     - Section 6. Processing Semantic Relations
     - Section 7. Thematic Role Assignment: Semantic and Syntactic Features
     - Section 8. Processing Prosodic Information
