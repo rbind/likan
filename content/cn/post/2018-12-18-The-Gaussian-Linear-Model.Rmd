@@ -8,6 +8,14 @@ tags: []
 categories: []
 ---
 
+# 简介
+
+# 高斯线性模型
+
+# 最小方差法
+
+# 矩阵分解
+
 1. QR 分解
 
 ```{r, results = "hold"}

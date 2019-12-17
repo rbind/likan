@@ -78,3 +78,4 @@ output:
   - consist of two main parts:
     - background, methods, and main findings of the article ( about 1500 - 2000 words);
     - future directions of this topic (1000 - 1500 words).
+- Your should send your report to my email address before **January 11, 2020, 23:59**.
