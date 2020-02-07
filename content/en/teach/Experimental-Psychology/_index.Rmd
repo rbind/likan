@@ -28,21 +28,20 @@ Coming on semester two !
 
 A brief and systematic introduction of the research methods used in behaviorial science and releted areas.
 
-# 3. Bibliographies
+# 3. Textbook
 
 - Barry H. Kantowitz, B. H., Roediger, H. L. III, & Elmes, D. G. (2015). *Experimental Psychology* (10 ed.). Cengage Learning.
-- Shaughnessy, J. J., Zechmeister, E. B., & Zechmeister, J. S. (2012). *Research methods in psychology* (9 ed.). New York, NY: McGraw-Hill.
 
 # 4. Syllabus and Lecture Notes
 
 - Part I. Foundations of Research
-    - Chapter 01. Introduction
-    - Chapter 02. Variables Used in Experimental Psychology
-
-- Part II. Research Methods In Psychology
-    - Chapter 03. Descriptive Methods
-    - Chapter 04. Experimental Methods
-    - Chapter 05. Applied Research
+    - Chapter 01. Explanation in Scientific Psychology
+        - Text: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Experimental-Psychology/CH-01-TEXT.pdf)
+        - (Slides)
+    - Chapter 02. Research Techniques: Observation and Correlation
+    - Chapter 03. Research Techniques: Experiments
+    - Chapter 04. Ethics in Psychological Research
+    - Chapter 05. How to Read and Write Research Reports
 
 - Part III. Principles and Practices of Experimental Psychology
     - Chapter 06. Psychophysics
