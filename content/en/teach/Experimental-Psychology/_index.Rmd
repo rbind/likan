@@ -45,7 +45,8 @@ Therefore, this course should help you:
         ^[Further reading: Shaughnessy et al., 2012, Part II.], 
         [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Experimental-Psychology/CH-02.pdf)
     - Chapter 03. Experimental Methods 
-        ^[Further reading: Shaughnessy et al., 2012, Part III.]
+        ^[Further reading: Shaughnessy et al., 2012, Part III.],
+        [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Experimental-Psychology/CH-03.pdf)
     - Chapter 04. Applied Research 
         ^[Further reading: Shaughnessy et al., 2012, Part IV.]
     - Chapter 05. Ethics in Psychological Research 
