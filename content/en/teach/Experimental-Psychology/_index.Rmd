@@ -12,38 +12,47 @@ output:
 
 # 1. Time and Location
 
-Coming on semester two !
+Because of the coronavirus outbreak in China, on-site teaching this semester will not be avaliable at least until April.
 
 <!---
-
 - Time: 14:00 - 18:00, Thuesday
-
 - Location: Room 512, Main Building South
-
 - Lecturer: Likan Zhan
-
 --->
 
 # 2. Course Information
 
-A brief and systematic introduction of the research methods used in behaviorial science and releted areas.
+Experimental psychology is part of the very core of the discipline of psychology. Whether your interest is in learning about animal or human behavior, pure theoretical questions or applied problems, research or practice with children or adults, you cannot correctly understand your material, investigate your questions, or apply your knowledge without a clear understanding and ability to use the principles and methods of experimental psychology. 
 
-# 3. Textbook
+Therefore, this course should help you:
 
-- Barry H. Kantowitz, B. H., Roediger, H. L. III, & Elmes, D. G. (2015). *Experimental Psychology* (10 ed.). Cengage Learning.
+  a). Understand the rationale, strengths and limitations of the experimental method of gaining knowledge about mental and behavioral processes.
+  b). Learn how to design experimental and non-experimental studies.
+  c). Know how to use the various methods used in experimental psychology, including those for humans, both self-report and non self-report based.
+
+# 3. Text Books
+
+- Kantowitz, B. H., Roediger, H. L., III, & Elmes, D. G. (2015). *Experimental Psychology* (10 ed.). Cengage Learning.
+- Shaughnessy, J. J., Zechmeister, E. B., & Zechmeister, J. S. (2012). *Research methods in psychology* (9 ed.). McGraw-Hill.
 
 # 4. Syllabus and Lecture Notes
 
 - Part I. Foundations of Research
-    - Chapter 01. Explanation in Scientific Psychology
-        - Text: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Experimental-Psychology/CH-01-TEXT.pdf)
-        - (Slides)
-    - Chapter 02. Research Techniques: Observation and Correlation
-    - Chapter 03. Research Techniques: Experiments
-    - Chapter 04. Ethics in Psychological Research
-    - Chapter 05. How to Read and Write Research Reports
+    - Chapter 01. Explanation in Scientific Psychology 
+        ^[Further reading: Kantowitz et al., 2015, Chapter 1.], 
+        [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Experimental-Psychology/CH-01.pdf)
+    - Chapter 02. Descriptive Methods 
+        ^[Further reading: Shaughnessy et al., 2012, Part II.], 
+        [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Experimental-Psychology/CH-02.pdf)
+    - Chapter 03. Experimental Methods 
+        ^[Further reading: Shaughnessy et al., 2012, Part III.]
+    - Chapter 04. Applied Research 
+        ^[Further reading: Shaughnessy et al., 2012, Part IV.]
+    - Chapter 05. Ethics in Psychological Research 
+        ^[Further reading: Kantowitz et al., 2015, Chapter 4.]
 
-- Part III. Principles and Practices of Experimental Psychology
+- Part II. Principles and Practices of Experimental Psychology 
+        ^[Further reading: Kantowitz et al., 2015, Corresponding chapters.]
     - Chapter 06. Psychophysics
     - Chapter 07. Perception
     - Chapter 08. Attention and Reaction Time

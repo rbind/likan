@@ -2,7 +2,7 @@
 title: 'Science and Scientific Research'
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "2018-10-30"
+lastmod: "`r Sys.Date()`"
 show_toc: yes
 disable_comments: yes
 output:
@@ -11,7 +11,7 @@ output:
 ---
 # 1. Lecture Time and Location
 
-Coming on semester two !
+Because of the coronavirus outbreak in China, on-site teaching this semester will not be avaliable at least until April.
 
 <!---
 - Time: 08:00 - 11:00, Each Wednesday
@@ -22,14 +22,20 @@ Coming on semester two !
 
 This course is designed to expose students to the academic side of scientific research. They will learn the basic concepts of science and scientific research. They will also learn how to synthesize results, present them, and explore related topics. Students will analyze and discuss published research articles, engage in conversations with the teacher about different aspects of research, and design and present their own research.
 
-# 3. Lecture Notes
+# 3. Text Books
 
-- Part I. Science and Scientific Research
-    - 01. What is science
-    - 02. Falsifiability
-    - 03. Operationism and essentialism
-    - 04. Testimonials and case study
-    - 05. Correlation and causation
+- Chambers, C. (2017). *The seven deadly sins of psychology: A manifesto for reforming the culture of scientific practice*. Princeton, NJ: Princeton University Press.
+- Stanovich, K. E. (2013). *How to think straight about psychology* (10 ed.). Boston, MA: Pearson Education.
+
+# 4. Lecture Notes
+
+- Part I. Science and Scientific Research 
+          ^[Further reading: Stanovich, K. E. (2013).]
+    - 01. What is science, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-01.pdf)
+    - 02. Falsifiability, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-02.pdf)
+    - 03. Operationism and essentialism, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-03.pdf)
+    - 04. Testimonials and case study, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-04.pdf)
+    - 05. Correlation and causation, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-05.pdf)
     - 06. Getting things under control
     - 07. The artificality criticism
     - 08. The importance of converging evidence
@@ -37,6 +43,17 @@ This course is designed to expose students to the academic side of scientific re
     - 10. Probablistic reasoning
     - 11. The role of chance
 
+- Part II. Remaining problems in scientific practice
+           ^[Further reading: Chambers, C. (2017).]
+    - 12. Bias
+    - 13. Hidden flexibility
+    - 14. Unreliability
+    - 15. Data horarding
+    - 16. Corruptibility
+    - 17. Internment
+    - 18. Redemption
+
+<!---
 - Part II. Academic reading
     - 12. Category and structure of academic articles
     - 13. References in academic articles
@@ -49,23 +66,18 @@ This course is designed to expose students to the academic side of scientific re
     - 18. Curse of knowledge
     - 19. Web, tree, and string
     - 20. Arcs of coherence
-
-- Part IV. Remaining problems in scientific practice
-    - 21. Bias
-    - 22. Hidden flexibility
-    - 23. Unreliability
-    - 24. Data horarding
-    - 25. Corruptibility
-    - 26. Internment
-    - 27. Redemption
+--->
 
 # 4. Grading
 
+TBA
+
+<!---
 - Oral presentations
     - Presentation Lists: [Link](http://appendix.likan.info/Science-and-Scientific-Research/reading-lists/Presentation_Lists.xlsx)
+--->
 
-# 5. References
-
+<!---
 - Procedure of Scientific Research
     - Chambers, C. (2017). *The seven deadly sins of psychology: A manifesto for reforming the culture of scientific practice*. Princeton, NJ: Princeton University Press.
     - Evans, J. S. B. T. (2016). *How to Be a Researcher: A strategic guide for academic success*. East Sussex, FA: Routledge.
@@ -82,3 +94,4 @@ This course is designed to expose students to the academic side of scientific re
 
 - Other References
     - Hock, R. R. (2009). *Forty studies that changed psychology: Explorations into the history of psychological research* (6 ed.). New Jersey, NJ: Pearson Education.
+--->
