@@ -12,13 +12,15 @@ output:
 
 # 1. Time and Location
 
-Because of the coronavirus outbreak in China, on-site teaching this semester will not be avaliable at least until April.
+<span style="font-weight:bold; color: red; font-size:120%;">
+On-site teaching this semester will not be avaliable <br>
+until at least April,  <br>
+because of the coronavirus outbreak in China.
+</span>
 
-<!---
-- Time: 14:00 - 18:00, Thuesday
-- Location: Room 512, Main Building South
-- Lecturer: Likan Zhan
---->
+- ~~Time: 14:00 - 18:00, Monday~~
+- ~~Location: 119, Teaching Building 5~~
+- ~~Lecturer: Likan Zhan~~
 
 # 2. Course Information
 
@@ -26,9 +28,9 @@ Experimental psychology is part of the very core of the discipline of psychology
 
 Therefore, this course should help you:
 
-  a). Understand the rationale, strengths and limitations of the experimental method of gaining knowledge about mental and behavioral processes.
-  b). Learn how to design experimental and non-experimental studies.
-  c). Know how to use the various methods used in experimental psychology, including those for humans, both self-report and non self-report based.
+  a. Understand the rationale, strengths and limitations of the experimental method of gaining knowledge about mental and behavioral processes.
+  b. Learn how to design experimental and non-experimental studies.
+  c. Know how to use the various methods used in experimental psychology, including those for humans, both self-report and non self-report based.
 
 # 3. Text Books
 

@@ -11,12 +11,16 @@ output:
 ---
 # 1. Lecture Time and Location
 
-Because of the coronavirus outbreak in China, on-site teaching this semester will not be avaliable at least until April.
+<span style="font-weight:bold; color: red; font-size:120%;">
+On-site teaching this semester will not be avaliable <br>
+until at least April,  <br>
+because of the coronavirus outbreak in China.
+</span>
 
-<!---
-- Time: 08:00 - 11:00, Each Wednesday
-- Location: 434, Teach Building 2.
---->
+- ~~Time: 10:00 - 12:00, Thuesday~~
+- ~~Location: 211, Teaching Building 5~~
+- ~~Lecturer: Likan Zhan~~
+
 
 # 2. Course Information
 
