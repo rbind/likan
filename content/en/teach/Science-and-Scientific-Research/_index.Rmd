@@ -35,11 +35,11 @@ This course is designed to expose students to the academic side of scientific re
 
 - Part I. Science and Scientific Research 
           ^[Further reading: Stanovich, K. E. (2013).]
-    - 01. What is science, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-01.pdf)
-    - 02. Falsifiability, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-02.pdf)
-    - 03. Operationism and essentialism, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-03.pdf)
-    - 04. Testimonials and case study, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-04.pdf)
-    - 05. Correlation and causation, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://teachings.likan.info/Scientific-Research/CH-1-05.pdf)
+    - 01. What is science, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-01.pdf)
+    - 02. Falsifiability, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-02.pdf)
+    - 03. Operationism and essentialism, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-03.pdf)
+    - 04. Testimonials and case study, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-04.pdf)
+    - 05. Correlation and causation, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-05.pdf)
     - 06. Getting things under control
     - 07. The artificality criticism
     - 08. The importance of converging evidence
