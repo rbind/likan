@@ -23,6 +23,15 @@ document.addEventListener('keyup', function(e) {
 
 {{ partial "disqus.html" . }}
 
+<script 
+  src="https://utteranc.es/client.js" 
+  repo="rbind/likan" 
+  issue-term="pathname" 
+  theme="github-light"
+  crossorigin="anonymous" 
+  async>
+  </script>
+
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
 {{ end }}
