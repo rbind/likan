@@ -1,0 +1,12 @@
+{{ if and (not (eq .Site.DisqusShortname "")) (and (not .Params.disable_comments) (or (eq .Kind "404") (and (not .IsHome) .Content))) }}
+<section class="comments">
+<script 
+    src="https://utteranc.es/client.js" 
+    repo="rbind/likan" 
+    issue-term="pathname" 
+    theme="github-light"
+    crossorigin="anonymous" 
+    async>
+  </script>
+</section>
+{{ end }}
