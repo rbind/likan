@@ -21,7 +21,9 @@ document.addEventListener('keyup', function(e) {
 </script>
 {{ end }}
 
-{{ partial "disqus.html" . }}
+{{ partial "gitalk.html" . }}
+
+<!--- {{ partial "disqus.html" . }} --->
 
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
