@@ -138,10 +138,9 @@ enableGitInfo = false
 [params.gitalk] 
     clientID = "980f54eb68b4cd95a74d" # Your client ID
     clientSecret = "245607de8056e64b5ebea76d4fbb2dce42ddd604" # Your client secret
-    repo = "https://github.com/rbind/likan" # The repo to store comments
+    repo = "rbind/likan" # The repo to store comments
     owner = "likanzhan" # Your GitHub ID
     admin= "likanzhan" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
-    id= "location.pathname" # The unique id of the page.
     labels= "gitalk" # Github issue labels. If you used to use Gitment, you can change it
     perPage= 15 # Pagination size, with maximum 100.
     pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
