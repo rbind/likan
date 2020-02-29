@@ -1,0 +1,8 @@
+---
+title: Graphical Statistical Tools Based on R
+author: ~
+date: '2020-02-29'
+slug: graphical-statistical-tools-based-on-r
+categories: []
+tags: []
+---
