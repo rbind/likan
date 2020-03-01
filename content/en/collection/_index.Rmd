@@ -3,7 +3,7 @@ title: Useful websites and links
 author: "Likan Zhan"
 date: '2019-11-02'
 lastmod: "`r Sys.Date()`"
-disable_comments: false
+disable_comments: yes
 output:
   blogdown::html_page:
     toc: true
