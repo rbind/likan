@@ -1,5 +1,5 @@
 ---
-title: Personal or group websites in relevant areas
+title: Personal or group websites in academics
 author: "Likan Zhan"
 date: '2019-11-02'
 lastmod: "`r Sys.Date()`"
