@@ -1,0 +1,48 @@
+---
+title: Academic webs
+author: "Likan Zhan"
+date: '2019-11-02'
+lastmod: "`r Sys.Date()`"
+disable_comments: false
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+# Personal websites
+
+- [Yi Xu](http://www.homepages.ucl.ac.uk/~uclyyix/), Professor of Speech Sciences, University College London, London, UK.
+
+- [Tecumseh Fitch](https://homepage.univie.ac.at/tecumseh.fitch/), Professor of Cognitive Biology, University of Vienna, Austria.
+
+- [Dale Barr](https://www.gla.ac.uk/researchinstitutes/neurosciencepsychology/staff/dalebarr/), Institute of Neuroscience & Psychology, University of Glasgow, UK
+
+- [Yi Ting Huang](https://hesp.umd.edu/facultyprofile/huang/yi-ting), Associate Professor, Department of Hearing and Speech Sciences, University of Maryland, MD.
+
+- [Cecilia Heyes](http://users.ox.ac.uk/~ascch/index.htm), Senior Research Fellow in Theoretical Life Sciences, University of Oxford, UK.
+
+- [Uta Frith](https://sites.google.com/site/utafrith/), Emeritus Professor of Cognitive Development, Institute of Cognitive Neuroscience, UCL.
+
+- [Matthew Traxler](https://psychology.ucdavis.edu/people/traxler), Professor of Psychology, Center for Mind and Brain, University of California at Davis, Davis, CA
+
+- [Keith Johnson](http://linguistics.berkeley.edu/~kjohnson/index.html), Department of linguistics, University of California at Berkeley, Berkeley, CA.
+
+- [Steven Sloman](https://sites.google.com/site/slomanlab/lab-members), Professor of cognitive, linguistic, and psychological sciences, Brown University,
+
+# Research groups
+
+- [Critical Analysis Project](http://critical-analysis.org/)
+
+- [Dynamics of cognition and communication](https://www.thedocc.com), lead by [Zheng (Joyce) Wang](https://www.thedocc.com/wp-content/uploads/2018/10/WangCV.pdf), at The Ohio State University, Columbus, OH.
+
+- [Cultural Brain](https://culturalbrain.org), lead by [Falk Huettig](https://www.mpi.nl/people/huettig-falk), at Max Planck Institute for Psycholinguistics, Nijmegen, the Netherlands. 
+
+- [The Markman Lab](http://markmanlab.stanford.edu/index.html), lead by Ellen M. Markman, at Stanford University, Stanford, CA.
+
+- [The Language Learning Lab](http://web.sas.upenn.edu/trueswell-lab/), lead by Professor [John Trueswell](http://web.sas.upenn.edu/trueswell-lab/people/trueswell/), at University of Pennsylvania, Philadelphia, PA. 
+
+- [Poeppel Lab](https://wp.nyu.edu/poeppellab/), lead by Professor [David Poeppel](http://as.nyu.edu/content/nyu-as/as/faculty/david-poeppel.html), at New York University, New York, NY.
+
+- [Language & Cognitive Dynamics Laboratory](http://www.danmirman.org/Home)
+
+- [Brain and Language Lab](https://brainlang.georgetown.edu), lead by Professor [Michael Ullman](https://georgetown.app.box.com/s/5lrbyhfe5iq07xim1b13t15tjx7m9hyl), at Georgetown University, Washington, D.C.

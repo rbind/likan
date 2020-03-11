@@ -9,7 +9,7 @@ output:
     toc: true
 ---
 
-1. [Academic websites for Scientists or research groups in relevant areas](/en/collection/Personal_or_Group_Websites_For_Academics/)
+1. [Academic websites](/en/collection/Academic_Websites/)
 
 2. [Graphical statistical tools based on R](/en/collection/Graphical-statistical-tools-based-on-r/)
 
