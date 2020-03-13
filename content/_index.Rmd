@@ -3,30 +3,4 @@ title: "About"
 date: "2016-05-05"
 ---
 
-# COVID-19
-
-```{r echo = FALSE, error = FALSE, warning = FALSE, message = FALSE}
-library(nCov2019)
-library(maps)
-library(chinamap)
-China_Map = get_map_china()
-China_Map$province <- trans_province(China_Map$province)
-CoVid19 = get_nCov2019(lang = 'en')
-```
-
-```{r echo = FALSE, error = FALSE, warning = FALSE, message = FALSE}
-plot(CoVid19, 
-     region = 'china', 
-     continuous_scale = FALSE,
-     chinamap = China_Map, font.size = 2,
-     title = "China"
-     )
-```
-
-```{r echo = FALSE, error = FALSE, warning = FALSE, message = FALSE}
-plot(CoVid19,
-     continuous_scale = FALSE,
-     font.size = 2,
-     title = "The world"
-     )
-```
+<iframe src="http://www.bcloud.org/e/" width=1500 height=600"></iframe>
