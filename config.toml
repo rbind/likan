@@ -1,4 +1,4 @@
-baseurl = "https://likan.info/"
+baseurl = "//likan.info/"
 languageCode = "en-us"
 title = "Zhan, Likan | 战立侃"
 theme = "hugo-ivy"
