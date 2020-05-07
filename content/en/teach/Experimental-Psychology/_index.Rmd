@@ -57,9 +57,10 @@ Therefore, this course should help you:
 
 - Part II. Principles and Practices of Experimental Psychology 
         ^[Further reading: Kantowitz et al., 2015, Corresponding chapters.]
-    - Chapter 06. Psychophysics, ,
+    - Chapter 06. Psychophysics,
         [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Experimental-Psychology/CH-06.pdf)
-    - Chapter 07. Perception
+    - Chapter 07. Perception,
+        [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Experimental-Psychology/CH-07.pdf)
     - Chapter 08. Attention and Reaction Time
     - Chapter 09. Conditioning and Learning
     - Chapter 10. Remembering and Forgetting

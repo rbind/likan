@@ -45,7 +45,22 @@ This course is designed to expose students to the academic side of scientific re
     - 08. The importance of converging evidence, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-08.pdf)
     - 09. The issue of multiple causation, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-09.pdf)
     - 10. Probablistic reasoning, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-10.pdf)
-    - 11. The role of chance
+    - 11. The role of chance, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-11.pdf)
+
+- Part II. Academic reading
+    - 12. Category and structure of academic articles, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-02.pdf)
+    - 13. References in academic articles
+    - 14. Databases, journals, and search engines
+    - 15. Bibliography softwares
+
+<!---
+
+- Part III. Academic writing
+    - 16. Good writing
+    - 17. Window onto the worold
+    - 18. Curse of knowledge
+    - 19. Web, tree, and string
+    - 20. Arcs of coherence
 
 - Part II. Remaining problems in scientific practice
            ^[Further reading: Chambers, C. (2017).]
@@ -56,20 +71,6 @@ This course is designed to expose students to the academic side of scientific re
     - 16. Corruptibility
     - 17. Internment
     - 18. Redemption
-
-<!---
-- Part II. Academic reading
-    - 12. Category and structure of academic articles
-    - 13. References in academic articles
-    - 14. Databases, journals, and search engines
-    - 15. Bibliography softwares
-
-- Part III. Academic writing
-    - 16. Good writing
-    - 17. Window onto the worold
-    - 18. Curse of knowledge
-    - 19. Web, tree, and string
-    - 20. Arcs of coherence
 --->
 
 # 4. Grading
