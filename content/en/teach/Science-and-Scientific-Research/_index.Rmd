@@ -28,13 +28,13 @@ This course is designed to expose students to the academic side of scientific re
 
 # 3. Text Books
 
-- Chambers, C. (2017). *The seven deadly sins of psychology: A manifesto for reforming the culture of scientific practice*. Princeton, NJ: Princeton University Press.
+- American psychological association. (2010). *Publication manual of the American Psychological Association* (6 ed.). Washington, DC: American psychological association.
 - Stanovich, K. E. (2013). *How to think straight about psychology* (10 ed.). Boston, MA: Pearson Education.
 
 # 4. Lecture Notes
 
 - Part I. Science and Scientific Research 
-          ^[Further reading: Stanovich, K. E. (2013).]
+        ^[Further reading: Stanovich, K. E. (2013).]
     - 01. What is science, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-01.pdf)
     - 02. Falsifiability, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-02.pdf)
     - 03. Operationism and essentialism, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-03.pdf)
@@ -48,6 +48,7 @@ This course is designed to expose students to the academic side of scientific re
     - 11. The role of chance, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-11.pdf)
 
 - Part II. Academic reading
+        ^[Further reading: American psychological association. (2010).]
     - 12. Category and structure of academic articles, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-02.pdf)
     - 13. References in academic articles
     - 14. Databases, journals, and search engines
