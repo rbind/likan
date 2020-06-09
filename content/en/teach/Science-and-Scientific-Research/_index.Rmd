@@ -12,15 +12,21 @@ output:
 # 1. Lecture Time and Location
 
 <span style="font-weight:bold; color: red; font-size:120%;">
+The online exam will be held between 1400-1600 on 2020-06-15. <br>
+See section [Final Examination](#final-examination) for more information.
+</span>
+
+<!---
+<span style="font-weight:bold; color: red; font-size:120%;">
 On-site teaching this semester will not be avaliable <br>
 until at least April,  <br>
 because of the coronavirus outbreak in China.
 </span>
 
-- ~~Time: 10:00 - 12:00, Thuesday~~
-- ~~Location: 211, Teaching Building 5~~
-- ~~Lecturer: Likan Zhan~~
-
+- Time: 10:00 - 12:00, Thuesday
+- Location: 211, Teaching Building 5
+- Lecturer: Likan Zhan
+--->
 
 # 2. Course Information
 
@@ -50,11 +56,11 @@ This course is designed to expose students to the academic side of scientific re
 - Part II. Academic reading
         ^[Further reading: American psychological association. (2010).]
     - 12. Category and structure of academic articles, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-02.pdf)
-    - 13. References in academic articles
-    - 14. Databases, journals, and search engines
-    - 15. Bibliography softwares
+    - 13. References in academic articles, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-03.pdf)
 
 <!---
+    - 14. Databases, journals, and search engines
+    - 15. Bibliography softwares
 
 - Part III. Academic writing
     - 16. Good writing
@@ -74,9 +80,19 @@ This course is designed to expose students to the academic side of scientific re
     - 18. Redemption
 --->
 
-# 4. Grading
+# 4. Final examination
 
-TBA
+  - Download the exam file from the following link: [*Final_Exam.pdf*](https://teachings.likan.info/Scientific-Research/XXXX.pdf) during **2020-06-15, 1400** to **2020-06-15, 1600**.
+  
+  - Write your answers in **Mandarin CHINESE**.
+
+  - Include your name, your student ID, name of the course in your answer sheet.
+
+  - Rename your answer sheet with the following pattern `ID-Name`.
+
+  - Save your answer sheet both in **.doc / .docx** format and in  **.PDF** format.
+
+  - Send the two files to the following email address: `zhanlikan@blcu.edu.cn` before **2020-06-15, 1601**.
 
 <!---
 - Oral presentations

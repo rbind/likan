@@ -13,14 +13,21 @@ output:
 # 1. Time and Location
 
 <span style="font-weight:bold; color: red; font-size:120%;">
+The online exam will be held between 1000-1200 on 2020-06-17. <br>
+See section [Final Examination](#final-examination) for more information.
+</span>
+
+<!---
+<span style="font-weight:bold; color: red; font-size:120%;">
 On-site teaching this semester will not be avaliable <br>
 until at least April,  <br>
 because of the coronavirus outbreak in China.
 </span>
 
-- ~~Time: 14:00 - 18:00, Monday~~
-- ~~Location: 119, Teaching Building 5~~
-- ~~Lecturer: Likan Zhan~~
+- Time: 14:00 - 18:00, Monday
+- Location: 119, Teaching Building 5
+- Lecturer: Likan Zhan
+--->
 
 # 2. Course Information
 
@@ -70,6 +77,17 @@ Therefore, this course should help you:
     - Chapter 14. Environmental Psychology
     - Chapter 15. Human Factors
 
-# 5. Examination
 
-To Be Added
+# 6. Final Examination
+
+  - Download the exam file from the following link: [*Final_Exam.pdf*](https://teachings.likan.info/Experimental-Psychology/XXXX.pdf) during **2020-06-17, 1000** to **2020-06-17, 1200**.
+  
+  - Write your answers in **Mandarin CHINESE**.
+
+  - Include your name, your student ID, name of the course in your answer sheet.
+
+  - Rename your answer sheet in the following pattern `ID-Name`.
+
+  - Save your answer sheet both in **.doc / .docx** format and in  **.PDF** format.
+
+  - Send the two files to the following email address: `zhanlikan@blcu.edu.cn` before **2020-06-17, 1201**.
