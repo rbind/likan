@@ -12,7 +12,7 @@ output:
 # 1. Lecture Time and Location
 
 <span style="font-weight:bold; color: red; font-size:120%;">
-The online exam will be held between 1400-1600 on 2020-06-15. <br>
+The online exam will be held between 1000-1200 on 2020-06-17. <br>
 See section [Final Examination](#final-examination) for more information.
 </span>
 
@@ -82,7 +82,7 @@ This course is designed to expose students to the academic side of scientific re
 
 # 4. Final examination
 
-  - Download the exam file from the following link: [*Final_Exam.pdf*](https://teachings.likan.info/Scientific-Research/XXXX.pdf) during **2020-06-15, 1400** to **2020-06-15, 1600**.
+  - Download the exam file from the following link: [*Final_Exam.pdf*](https://teachings.likan.info/Scientific-Research/XXXX.pdf) during **2020-06-17, 1000** to **2020-06-17, 1200**.
   
   - Write your answers in **Mandarin CHINESE**.
 
@@ -92,7 +92,7 @@ This course is designed to expose students to the academic side of scientific re
 
   - Save your answer sheet both in **.doc / .docx** format and in  **.PDF** format.
 
-  - Send the two files to the following email address: `zhanlikan@blcu.edu.cn` before **2020-06-15, 1601**.
+  - Send the two files to the following email address: `zhanlikan@blcu.edu.cn` before **2020-06-17, 1201**.
 
 <!---
 - Oral presentations
