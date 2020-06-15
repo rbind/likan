@@ -13,7 +13,7 @@ output:
 # 1. Time and Location
 
 <span style="font-weight:bold; color: red; font-size:120%;">
-The online exam will be held between 1400-1600 on 2020-06-15. <br>
+The online exam will be held between 1410-1610 on 2020-06-15. <br>
 See section [Final Examination](#final-examination) for more information.
 </span>
 
@@ -80,7 +80,7 @@ Therefore, this course should help you:
 
 # 6. Final Examination
 
-  - Download the exam file from the following link during **2020-06-15, 1400** to **2020-06-15, 1600**.
+  - Download the exam file from the following link during **2020-06-15, 1410** to **2020-06-15, 1610**.
     - Link: [https://pan.baidu.com/s/1GvoFcXwqdlnHLcMV7GIGzQ](https://pan.baidu.com/s/1GvoFcXwqdlnHLcMV7GIGzQ)  
     - Password: ov3u
   
@@ -92,4 +92,4 @@ Therefore, this course should help you:
 
   - Save your answer sheet both in **.doc / .docx** format and in  **.PDF** format.
 
-  - Send the two files to the following email address: `zhanlikan@blcu.edu.cn` before **2020-06-15, 1601**.
+  - Send the two files to the following email address: `zhanlikan@blcu.edu.cn` before **2020-06-15, 1611**.
