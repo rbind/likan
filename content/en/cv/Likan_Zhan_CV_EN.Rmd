@@ -5,6 +5,7 @@ date: '2016-01-22'
 lastmod: "`r Sys.Date()`"
 output:
   pdf_document:
+    template: ~/Documents/ADMIN/Website/LaTex/my_pandoc_template.latex
     includes:
       in_header: ~/Documents/ADMIN/Website/LaTex/Preamble_Blogdown_CV.tex
     latex_engine: xelatex
@@ -66,10 +67,10 @@ fontsize: 12pt
   Undergraduates and Postgraduates, 2 hours per week, 34 hours in total
 
 - 2016 ~ Now. R for Modeling and Visualizing Data, <br>
-  Postgraduates and PhD candicates, 4 hours per week, 68 hours in total
+  Postgraduates and PhD candidates, 4 hours per week, 68 hours in total
 
 - 2015 ~ Now. Introduction to Cognitive Neuroscience,  <br>
-  Postgraduates and PhD candicates, 2 hours per week, 34 hours in total
+  Postgraduates and PhD candidates, 2 hours per week, 34 hours in total
 
 - 2015 ~ Now. Foundations of Scientific Research, <br>
   Undergraduates, 3 hours per week, 54 hours in total
@@ -85,7 +86,7 @@ fontsize: 12pt
 
 - Experiments building: Be familiar with package [Psychtoolbox](http://psychtoolbox.org) under [Matlab](https://www.mathworks.com/products/matlab.html), [Presentation](https://www.neurobs.com/presentation), package [Psychopy](http://www.psychopy.org) under [Python](https://www.python.org), [E-prime](https://www.pstnet.com/eprime.cfm), and [Experiment Builder](https://www.sr-research.com/experiment-builder/) for script building;
 
-- Eye-tracker: Having advanced experience in using [Eyelink II/1000 plus](https://www.sr-research.com) for experiment conducting, [Experiment Builder](https://www.sr-research.com/experiment-builder/) for experiment building, and [Data Viewer](https://www.sr-research.com/data-viewer/) for data prepossing;
+- Eye-tracker: Having advanced experience in using [Eyelink II/1000 plus](https://www.sr-research.com) for experiment conducting, [Experiment Builder](https://www.sr-research.com/experiment-builder/) for experiment building, and [Data Viewer](https://www.sr-research.com/data-viewer/) for data pre-processing;
 
 - E/MEG: In charge of establishing the first Child MEG lab in China; be familiar with Yokogawa MEG system for equipment maintenance and MEG data acquisition, packages [fieldtrip](http://www.fieldtriptoolbox.org) and [SPM12](https://github.com/neurodebian/spm12) under Matlab, and [BESA](http://www.besa.de) for data processing.
 
@@ -101,15 +102,17 @@ fontsize: 12pt
 
 - Personal website: Use [hugo](https://gohugo.io) under [go](https://golang.org) language and the R package [blogdown](https://github.com/rstudio/blogdown) to build my personal website [https://likan.info](https://likan.info).
 
+- Be familiar with the distributed version control system [git](https://git-scm.com), package managers [homebrew](https://brew.sh) and [npm](https://www.npmjs.com).
+
 ## Grants, Projects, and Awards
 
 1. Grants
 
-- **Zhan, L.**, Zhou, P., Zhang, L., & Crain, S. (2019 - 2023). The Acquisition and Online Processing of Irrealis in Mandarin Chinese. *The National Social Science Fund of China*. [Grant No. 19BYY087]. (¥200,000). Role: Principle Investigator.
+- **Zhan, L.**, Zhou, P., Zhang, L., & Crain, S. (2019 - 2023). The acquisition and online processing of irrealis in Mandarin Chinese. *The National Social Science Fund of China*. [Grant No. 19BYY087]. (¥200,000). Role: Principle Investigator.
 
 - **Zhan, L.**, Qu, Y., Xu, J., Xiao, Y., & Li, N. (2019 - 2020). The eye movements pattern and neural oscitation markers of predictive processing in language comprehension. *The Fundamental Research Funds for the Central Universities*. [Grant No. 19YJ080002]. (¥70,000). Role: Principle Investigator.
 
-- **Zhan, L.**, Shi, F., Gao, L., & Zhang, L. (2019 - 2020). The online prrocessing and acquisition of lexical tone in Mandarin Chinese. *The Fundamental Research Funds for the Central Universities*. [Grant No. 18YBT15]. (¥70,000). Role: Principle Investigator.
+- **Zhan, L.**, Shi, F., Gao, L., & Zhang, L. (2019 - 2020). The online processing and acquisition of lexical tone in Mandarin Chinese. *The Fundamental Research Funds for the Central Universities*. [Grant No. 18YBT15]. (¥70,000). Role: Principle Investigator.
 
 - Shi, D., et al. (2018 - 2023). Studies of Chinese in Generative Grammar and Development of Chinese Grammar in the New Era. *The Major Project of the National Social Science Found of China*. [Grant No. 18ZDA291]. (¥800,000). Role: Co-Investigator.
 
@@ -127,7 +130,7 @@ fontsize: 12pt
 
 2. Projects
 
-- Zhang, L., et al. (2018 - Now). The psychological and brain development of atypical developing adolensences. *The Program of WuTong Inovations Platforms*. Role: Co-Investigator.
+- Zhang, L., et al. (2018 - Now). The psychological and brain development of atypical developing adolescences. *The Program of WuTong Innovations Platforms*. Role: Co-Investigator.
 
 - Chen, M., et al. (2019 - Now). The study of Chinese as a second language acquisition and second language teaching (The JunCai Group). *The Program of Establishing First-Class Disciplines in BLCU*. Role: Co-Investigator.
 
@@ -139,19 +142,22 @@ fontsize: 12pt
 
 ## Professional Activities
 
-1. Organization of international meetings
+1. Frontiers in Psychology, Review Editor in Language Sciences (2020 - )
+
+2. Organization of international meetings
 
 - Academic Advisory Committee, The 24th annual conference of the International Association of Chinese Linguistics ([IACL-24](http://iacl24.blcu.edu.cn)), Beijing Language and Culture University, Beijing, China.
 
 
-2. Ad-hoc reviews
+3. Ad-hoc reviews
 
+- Frontiers in Psychology. (2020 - )
 - Scientific Reports. (2018 - 2019);
 - Journal of visualized experiments. (2018 - 2019);
 - Language Teaching and Linguistic Studies. (In Chinese, 2016);
 - SAGE Open. (2016).
 
-3. Clinical licenses
+4. Clinical licenses
 
 - Licensed Examiner of Wechsler Preschool and Primary Scale of Intelligence 4th Edition (WPPSI-VI) Chinese Version.
 
@@ -193,7 +199,7 @@ fontsize: 12pt
 
 - **Zhan, L.** (2018). Magnetoencephalography (MEG) as a Technique for Imaging Brain Function and Dysfunction. In *Top 10 Contributions on Psychology* (Chapter 4, pp. 1-38). Telangana, India: Avid Science
 
-- **Zhan, L.**, Crain, S., & Zhou, P. (2013). The anticipatory e ects of focus operators: A visual- world paradigm eye-tracking study of “only if” and “even if” conditionals. In N. Goto, K. Otaki, A. Sato, & K. Takita (Eds.), *Proceedings of GLOW in Asia IX 2012*. Mie University, Japan.
+- **Zhan, L.**, Crain, S., & Zhou, P. (2013). The anticipatory effects of focus operators: A visual-world paradigm eye-tracking study of “only if” and “even if” conditionals. In N. Goto, K. Otaki, A. Sato, & K. Takita (Eds.), *Proceedings of GLOW in Asia IX 2012*. Mie University, Japan.
 
 4. Peer reviewed conference presentations
 

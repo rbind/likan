@@ -5,6 +5,7 @@ date: '2016-01-22'
 lastmod: "`r Sys.Date()`"
 output:
   pdf_document:
+    template: ~/Documents/ADMIN/Website/LaTex/my_pandoc_template.latex
     includes:
       in_header: ~/Documents/ADMIN/Website/LaTex/Preamble_Blogdown_CV.tex
     latex_engine: xelatex
@@ -124,7 +125,9 @@ fontsize: 12pt
 
 - 2013.04：第26届纽约城市大学句子加工会议，旅行奖励 350 美元  
 
-## 学术兼职  
+## 学术兼职
+
+1. Frontiers in Psychology, Review Editor in Language Sciences (2020 - )
 
 1. 会议组织
 
@@ -132,9 +135,14 @@ fontsize: 12pt
 
 2. 匿名评审
 
+- Frontiers in Psychology. (2020 - )
+
 - Scientific Reports. (2018 - 2019)
+
 - Journal of visualized experiments. (2018 - 2019)
+
 - 语言教学与研究 (2016)
+
 - SAGE Open. (2016)
 
 3. 执业资格
