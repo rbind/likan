@@ -92,17 +92,19 @@ fontsize: 12pt
 
 2. Data processing
 
-- R: Besides base [R](https://www.r-project.org), be familiar with [data.table](http://r-datatable.com), [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html), and [tidyr](https://cran.r-project.org/web/packages/tidyr/index.html) for data preprossing; [graphics](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html), [lattice](https://cran.r-project.org/package=lattice), and [ggplot2](http://ggplot2.tidyverse.org) for data visualization; [car](https://cran.r-project.org/web/packages/car/index.html), [lme4](https://github.com/lme4/lme4), and [gam](https://cran.r-project.org/web/packages/gam/index.html) for computational modeling; Create the R package [acqr](https://github.com/likanzhan/acqr) for teaching statistics and illustrating data visualization;
+- R: Besides base [R](https://www.r-project.org), be familiar with [data.table](http://r-datatable.com), [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html), and [tidyr](https://cran.r-project.org/web/packages/tidyr/index.html) etc. for data preprocessing; [graphics](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html), [lattice](https://cran.r-project.org/package=lattice), and [ggplot2](http://ggplot2.tidyverse.org) etc. for data visualization; [car](https://cran.r-project.org/web/packages/car/index.html), [lme4](https://github.com/lme4/lme4), and [gam](https://cran.r-project.org/web/packages/gam/index.html) for computational modeling. Create the R package [acqr](https://github.com/likanzhan/acqr) etc. for teaching statistics and illustrating data visualization;
 
-- Julia: Recently start to use [julia](https://julialang.org) for computational modeling, especially the [MixedModels](https://github.com/dmbates/MixedModels.jl) package, because of the speed limitations of R.
+- Julia: Recently start to use [julia](https://julialang.org), because of the [speed limitations](https://julialang.org/benchmarks/) of R. Besides the base and standard libraries, be familiar with [CSV.jl](https://github.com/JuliaData/CSV.jl), [DataFrames.jl](https://github.com/JuliaData/DataFrames.jl) ([Database benchmark](https://h2oai.github.io/db-benchmark/)), and [DataFramesMeta.jl](https://github.com/JuliaData/DataFramesMeta.jl) etc. for data preprocessing; [Plots.jl](https://github.com/JuliaPlots/Plots.jl), [StatsPlots.jl](https://github.com/JuliaPlots/StatsPlots.jl), and [Gadfly.jl](https://github.com/GiovineItalia/Gadfly.jl) for data visualization; as well as [Distributions.jl](https://github.com/JuliaStats/Distributions.jl), [StatsBase.jl](https://github.com/JuliaStats/StatsBase.jl), [StatsModels.jl](https://github.com/JuliaStats/StatsModels.jl), [GLM.jl](https://github.com/JuliaStats/GLM.jl), and [MixedModels.jl](https://github.com/JuliaStats/MixedModels.jl) for computational modeling;
 
 3. Other
 
-- Markup languages: Be familiar with [LaTeX](https://www.latex-project.org), [markdown](https://daringfireball.net/projects/markdown/), [R markdown](https://rmarkdown.rstudio.com) (R package) , and [Jupyter](https://jupyter.org) for document preparing; [knitr](https://cran.r-project.org/web/packages/knitr/index.html) (R package) for dynamically integrating R code into a document; [Pandoc](https://pandoc.org) for markup format conversion;
+- Markup languages: Be familiar with [LaTeX](https://www.latex-project.org), [markdown](https://daringfireball.net/projects/markdown/), [R markdown](https://rmarkdown.rstudio.com) (R flavoured markdown), [Pluto.jl](https://github.com/fonsp/Pluto.jl) (julia package), and [Jupyter](https://jupyter.org) for document preparing; [knitr](https://cran.r-project.org/web/packages/knitr/index.html) (R package) [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl) and [Weave.jl](https://github.com/JunoLab/Weave.jl) (Julia package) for dynamically integrating R or Julia source code into a document; [Pandoc](https://pandoc.org) for format conversion;
+
+- Be familiar with the free source-code editor [visual studio code](https://code.visualstudio.com);
+
+- Be familiar with the distributed version control system [git](https://git-scm.com), package managers [conda](https://docs.conda.io/en/latest/), [homebrew](https://brew.sh), and [npm](https://www.npmjs.com);
 
 - Personal website: Use [hugo](https://gohugo.io) under [go](https://golang.org) language and the R package [blogdown](https://github.com/rstudio/blogdown) to build my personal website [https://likan.info](https://likan.info).
-
-- Be familiar with the distributed version control system [git](https://git-scm.com), package managers [homebrew](https://brew.sh) and [npm](https://www.npmjs.com).
 
 ## Grants, Projects, and Awards
 
@@ -147,7 +149,6 @@ fontsize: 12pt
 2. Organization of international meetings
 
 - Academic Advisory Committee, The 24th annual conference of the International Association of Chinese Linguistics ([IACL-24](http://iacl24.blcu.edu.cn)), Beijing Language and Culture University, Beijing, China.
-
 
 3. Ad-hoc reviews
 

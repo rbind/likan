@@ -81,11 +81,16 @@ fontsize: 12pt
 
 - R语言：除了 [R](https://www.r-project.org) 基本包外，擅长用 [data.table](http://r-datatable.com)、 [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html)、和 [tidyr](https://cran.r-project.org/web/packages/tidyr/index.html) 对数据进行预处理; 用 [graphics](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html)、 [lattice](https://cran.r-project.org/package=lattice)、和 [ggplot2](http://ggplot2.tidyverse.org) 等对数据进行可视化分析；用 [car](https://cran.r-project.org/web/packages/car/index.html)、[lme4](https://github.com/lme4/lme4)、和 [gam](https://cran.r-project.org/web/packages/gam/index.html) 等进行计算模型模拟；自己编写了R包 [acqr](https://github.com/likanzhan/acqr) 以辅助统计教学和数据可视化展示；
 
-- Julia语言：由于R语言在计算速度上的不足，近期开始使用 [julia](https://julialang.org) 语言，尤其是包 [MixedModels](https://github.com/dmbates/MixedModels.jl) 开展数据分析。
+- Julia语言：由于R语言在[计算速度上的不足](https://julialang.org/benchmarks/)，近期开始使用 [julia](https://julialang.org) 语言。除了基本库和标准库外，熟悉[CSV.jl](https://github.com/JuliaData/CSV.jl), [DataFrames.jl](https://github.com/JuliaData/DataFrames.jl) ([Database benchmark](https://h2oai.github.io/db-benchmark/)), 和 [DataFramesMeta.jl](https://github.com/JuliaData/DataFramesMeta.jl) 等预分析数据；[Plots.jl](https://github.com/JuliaPlots/Plots.jl), [StatsPlots.jl](https://github.com/JuliaPlots/StatsPlots.jl), 和 [Gadfly.jl](https://github.com/GiovineItalia/Gadfly.jl) 等可视化数据；以及 [Distributions.jl](https://github.com/JuliaStats/Distributions.jl), [StatsBase.jl](https://github.com/JuliaStats/StatsBase.jl), [StatsModels.jl](https://github.com/JuliaStats/StatsModels.jl), [GLM.jl](https://github.com/JuliaStats/GLM.jl), 和 [MixedModels.jl](https://github.com/JuliaStats/MixedModels.jl) 等进行统计建模。
 
 3. 其他技能
 
-- 标记语言：喜欢用 [LaTeX](https://www.latex-project.org)、[markdown](https://daringfireball.net/projects/markdown/)、[R markdown](https://rmarkdown.rstudio.com) (R包)、和 [Jupyter](https://jupyter.org) 等进行学术排版和写作；用 [knitr](https://cran.r-project.org/web/packages/knitr/index.html)（R包）进行文本和 R 或 Julia 语言代码的混排；用 [Pandoc](https://pandoc.org) 进行文本格式的转换；
+- 标记语言：喜欢用 [LaTeX](https://www.latex-project.org)、[markdown](https://daringfireball.net/projects/markdown/)、[R markdown](https://rmarkdown.rstudio.com) (R包)、[Pluto](https://github.com/fonsp/Pluto.jl)（julia 包），和 [Jupyter](https://jupyter.org) 等进行学术排版和写作；用 [knitr](https://cran.r-project.org/web/packages/knitr/index.html)（R包）、[Documenter.jl](https://github.com/JuliaDocs/Documenter.jl) 和 [Weave.jl](https://github.com/JunoLab/Weave.jl) (Julia 包) 进行文本和 R 或 Julia 语言代码的混排；用 [Pandoc](https://pandoc.org) 进行文本格式的转换；
+
+- 熟悉开源代码编辑器 [visual studio code](https://code.visualstudio.com);
+
+- 熟悉分布式版本控制系统 [git](https://git-scm.com), 包管理器 [conda](https://docs.conda.io/en/latest/), [homebrew](https://brew.sh), 和 [npm](https://www.npmjs.com);
+
 - 个人网站：用 [go](https://golang.org) 语言下的 [hugo](https://gohugo.io) 和R语言下的 [blogdown](https://github.com/rstudio/blogdown) 包建立了的个人网站 [https://likan.info](https://likan.info)。
 
 
