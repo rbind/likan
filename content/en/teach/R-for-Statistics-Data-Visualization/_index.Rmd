@@ -107,7 +107,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 # 6. Final Examination
 
-  - To sucessfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
+  - To successfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
   - Download the file from the following link: [*Final_Exam.Rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam/Final_Exam.Rmd), [*Final_Exam.html*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam/Final_Exam.html), as well as [*Final_Exam.pdf*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam/Final_Exam.pdf). The link is avaliable from **2020-01-03, 1900** to **2019-01-04, 1900**.
 
