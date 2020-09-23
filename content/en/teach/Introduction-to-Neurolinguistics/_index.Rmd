@@ -36,8 +36,7 @@ This class intends to provide a coherent view on the relation between language a
 # 4. Syllabus and Lecture Notes
 
 - Part 0. Introduction
-  - Chapter.00. Introduction to the Course: 
-  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://pan.baidu.com/s/1wGQxe1nVyfAnQ8Yexfhjlw); 44qg
+  - Chapter.00. Introduction to the Course: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_00.pdf)
 
 - Part I. The brain regions affording Language
   - Chapter 1. Language Functions in the Brain

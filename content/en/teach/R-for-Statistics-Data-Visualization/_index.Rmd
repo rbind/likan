@@ -11,8 +11,8 @@ output:
 
 # 1. Lecture Time and Location
 
-- Time: 19:00 - 21:50, Each Friday, Start from September 20th.
-- Location: 514, Main Building South.
+- Time: 14:00 - 16:50, Each Friday
+- Location: 439, Main Building North
 
 # 2. Prerequisites
 
@@ -27,15 +27,15 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/CH_01.pdf)
-    - 02. R foundations [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/CH_02.pdf)
+    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_01.pdf)
+    - 02. R foundations
 - Part I: Data craft
-    - 03. Data wrangling [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/CH_03A.pdf)
-    - 04. Examining Data [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/CH_03B.pdf)
-    - 05. Transforming data [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/CH_04.pdf)
+    - 03. Data wrangling
+    - 04. Examining Data
+    - 05. Transforming data
 - Part II: Linear models and least squares
-    - 06. Linear least-squares regression [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/CH_05.pdf)
-    - 07. Statistical Inference for Regression  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://appendix.likan.info/R-for-Statistics-Data-Visualization/CH_06.pdf)
+    - 06. Linear least-squares regression
+    - 07. Statistical Inference for Regression
     - 08. Dummy-variable regression
     - 09. Analysis of variance
 - Part III: Linear-model diagnostics
@@ -107,6 +107,10 @@ Linear models, their variants, and extensions are among the most useful and wide
 
 # 6. Final Examination
 
+To Be Announced
+
+<!---
+
   - To successfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
   - Download the file from the following link: [*Final_Exam.Rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam/Final_Exam.Rmd), [*Final_Exam.html*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam/Final_Exam.html), as well as [*Final_Exam.pdf*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/Final_Exam/Final_Exam.pdf). The link is avaliable from **2020-01-03, 1900** to **2019-01-04, 1900**.
@@ -149,6 +153,8 @@ rmarkdown::render(
   ```
 
   - Send both the finished *.Rmd* file, such as [*ZhangSan_20181030.Rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_20181030.Rmd)  and the knitted *.html* file， such as [*ZhangSan_20181030.html*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_20181030.html) to the following email address: `zhanlikan@blcu.edu.cn` before **2019-01-04, 1900**.
+
+--->
 
 
 # 7. Tools
