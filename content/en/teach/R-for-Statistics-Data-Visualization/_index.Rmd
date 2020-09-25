@@ -27,7 +27,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 # 4. Syllabus and Lecture Notes
 
 - Part 0: Introduction
-    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_01.pdf)
+    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i> Link](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_01.pdf)
     - 02. R foundations
 - Part I: Data craft
     - 03. Data wrangling
