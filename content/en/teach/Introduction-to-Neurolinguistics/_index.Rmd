@@ -38,8 +38,8 @@ This class intends to provide a coherent view on the relation between language a
 - Part 0. Introduction
   - Chapter.00. Introduction to the Course: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i> Link](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_00.pdf)
 
-- Part I. The brain regions affording Language
-  - Chapter 1. Language Functions in the Brain: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i> Link](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_01_0.pdf)
+- Part I. The brain regions affording Language: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i> Link](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_01_0_0.pdf)
+  - Chapter 1. Language Functions in the Brain: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i> Link](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_01_0_1.pdf)
     - Section 1.1. A Cognitive Model of Auditory Language Comprehension: [<i class="far fa-file-pdf"> \faFilePdf[regular] </i> Link](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_01_1.pdf)
     - Section 1.2. Acoustic-Phonological Processes
     - Section 1.3. From Word Form to Syntactic and Lexical-Semantic Information
