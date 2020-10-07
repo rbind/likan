@@ -9,7 +9,7 @@
 {{ end }}
 
 <ul>
-  <li> Recent updates (Content in English) </li>
+  <li> Content in English (Recent updates) </li>
 <ul>
   {{ range first 8 ( where .Site.Pages.ByLastmod.Reverse "Section" "en") }}
   <li>
@@ -20,7 +20,7 @@
 </ul>
 
 </br>
-<li> 最近更新 (中文内容)</li>
+<li> 中文内容 (最近更新) </li>
 
  <ul>
   {{ range first 8 ( where .Site.Pages.ByLastmod.Reverse "Section" "cn") }}
