@@ -4,17 +4,31 @@
 
   {{ if eq .RelPermalink "/" }}
 
-  {{ with .Site.Params.footer.home }}
+  {{ with .Site.Params.footer.en }}
   <hr>
   <div class="copyright">{{ . | markdownify }}</div>
   {{ end }}
 
   {{ else }}
+
+  <hr style="border: 1px dashed gray;" />
+  <div class="copyright">
+  <a href="mailto:{{ .Site.Params.accounts.email }}">   <i class='far fa-envelope fa-1x'></i></a> &middot;
+  <a href="{{ .Site.Params.accounts.github }}">         <i class='fab fa-github fa-1x'></i></a> &middot;
+  <a href="{{ .Site.Params.accounts.google_scholar }}"> <i class='ai ai-google-scholar ai-1x'></i></a> &middot;
+  <a href="{{ .Site.Params.accounts.academia}}">        <i class='ai ai-academia ai-1x'></i></a> &middot;
+  <a href="{{ .Site.Params.accounts.orcid }}">          <i class='ai ai-orcid ai-1x'></i></a> &middot;
+  <a href="{{ .Site.Params.accounts.publons }}">        <i class='ai ai-publons ai-1x'></i></a> &middot;
+  <a href="{{ .Site.Params.accounts.researchgate}}">    <i class='ai ai-researchgate ai-1x'></i></a> &middot;
+  <a href="{{ .Site.Params.accounts.osf}}">             <i class='ai ai-osf ai-1x'></i></a> &middot;
+  <a href="{{ .Site.Params.accounts.stack_overflow }}">  <i class='fab fa-stack-overflow fa-1x'></i></a> &middot;
+  </div>
+
   {{ $section := default .Section ($.Scratch.Get "section") }}
   {{ with (index $.Site.Params.footer $section) }}
-  <hr style="border: 1px dashed gray;" />
   <div class="copyright">{{ . | markdownify }} </div>
   {{ end }}
+
   {{ end }}
 
   </footer>

@@ -28,5 +28,3 @@ document.addEventListener('keyup', function(e) {
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
 {{ end }}
-
-<script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>

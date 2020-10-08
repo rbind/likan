@@ -1,0 +1,12 @@
+.main {
+  border-left: 2px solid black; /* Change weight from 3 to 2 */
+  border-color: WhiteSmoke; /* Change the color to WiteSmoke */
+}
+
+.masthead {
+  position: fixed; /* Change to Fixed Position */
+}
+
+.masthead img {
+  max-width: 80px;
+}
