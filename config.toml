@@ -102,13 +102,13 @@ enableGitInfo = false
     weight = 8
 
 [params]
-    description = "Personal website of Likan Zhan"
-    disqusURL = "https://likan.info"
-    githubContentURL = "https://github.com/rbind/likan/edit/master/content/"
+    description        = "Personal website of Likan Zhan"
+    disqusURL          = "https://likan.info"
+    githubContentURL   = "https://github.com/rbind/likan/edit/master/content/"
     highlightjsVersion = "9.12.0"
-    highlightjsLang = ["r", "yaml", "tex"]
-    highlightjsTheme = "github"
-    dateFormat = "2006-01-02" # "2006-01-02, Mon, "
+    highlightjsLang    = ["r", "yaml", "tex"]
+    highlightjsTheme   = "github"
+    dateFormat         = "2006-01-02" # "2006-01-02, Mon, "
 
 [params.accounts]
     email          = "zhanlikan@hotmail.com"
