@@ -1,11 +1,56 @@
-.main {
-  border-left: 2px solid black; /* Change weight from 3 to 2 */
-  border-color: WhiteSmoke; /* Change the color to WiteSmoke */
+/* Layout */
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px 0;
 }
+
+.masthead {
+  width: 260px;
+  padding: 20px 50px 20px 10px;
+  float: left;
+  position: fixed; /* Change to Fixed Position */
+}
+
+.main {
+  width: 700px;
+  padding: 32px 10px 20px 50px;
+  margin-left: 260px;
+  border-left: 2px solid black; /* Change weight from 3 to 2 */
+  border-color: WhiteSmoke;    /* Change the color to WiteSmoke */
+  min-height: calc(100vh - 60px);
+}
+
+/* Masthead */
+
+.masthead a, .copyright a {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: none;
+}
+
+.masthead a:hover, .copyright a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.masthead sup a, .copyright sup a {
+  border-bottom: none;
+}
+
 
 .masthead img {
   max-width: 80px;
 }
+
+/**
+ * -------------------------------------------------------------------------
+ *  Media Queries
+ * -------------------------------------------------------------------------
+ */
 
 @media screen and (max-width: 960px) {
 
@@ -23,7 +68,7 @@
     margin-right: 10px;
     border-bottom: 3px solid black;
     border-color: White; /* Change to White */
-    position: static;  /* Change to Fixed Position */
+    position: static;      /* Change to Fixed Position */
   }
 
   .main {
