@@ -72,29 +72,29 @@ enableGitInfo = false
     weight = 2
 
 [[menu.cn]]
-    name = "读书"
-    url = "/cn/read/"
+    name = "简历"
+    url = "/cn/cv/likan_zhan_cv_cn/"
     weight = 3
+
+[[menu.cn]]
+    name = "写作"
+    url = "/cn/write/"
+    weight = 4
 
 [[menu.cn]]
     name = "博客"
     url = "/cn/post/"
-    weight = 4
-
-[[menu.cn]]
-    name = "写作"
-    url = "http://appendix.likan.info/probstatr"
     weight = 5
 
 [[menu.cn]]
-    name = "研究"
+    name = "项目"
     url = "/cn/research/"
     weight = 6
 
-[[menu.cn]]
-    name = "简历"
-    url = "/cn/cv/likan_zhan_cv_cn/"
-    weight = 7
+#[[menu.cn]]
+#    name = "读书"
+#    url = "/cn/read/"
+#    weight = 7
 
 [[menu.cn]]
     name = "English"
