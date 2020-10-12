@@ -12,7 +12,7 @@ output:
 # 1. Lecture Time and Location
 
 - Time: 14:00 - 16:50, Each Friday
-- Location: 439, Main Building North
+- Location: **501, Main Building South** (<= <a style="color:red"> !CHANGED! </a>)
 
 # 2. Prerequisites
 
