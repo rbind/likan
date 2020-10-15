@@ -172,6 +172,8 @@ fontsize: 12pt
 
 2. Periodicals
 
+- Zhou, P., Shi, J., & **Zhan, L.** (in press). Real-time comprehension of garden-path constructions by preschoolers: A Mandarin perspective. *Applied Psycholinguistics*.
+
 - Zhou, P., Ma, W., & **Zhan, L.** (2019). A deficit in using prosodic cues to understand communicative intentions by children with autism spectrum disorders: An eye-tracking study. *First Language*. doi: 10.1177/0142723719885270 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/FirstLang2019.pdf)
 
 - Zhou, P., **Zhan, L.**, & Ma, H. (2019). Understanding others' minds: Social inference in preschool children with autism spectrum disorder. *Journal of Autism and Developmental Disorders, 49*(11), 4523-4534. doi: 10.1007/s10803-019-04167-x [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JAutismDevDisord2019.pdf)

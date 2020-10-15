@@ -1,0 +1,55 @@
+---
+title: MEEG 数据报告的基本要求
+author: ~
+date: '2020-10-15'
+slug: issues-and-recommendations-from-the-ohbm-cobidas-meeg-committee-for-reproducible-eeg-and-meg-research
+categories: []
+tags: []
+bibliography: [bibliography/bibliography.bib]
+link-citations: yes
+csl: [bibliography/apa-old-doi-prefix.csl]
+output:
+  html_document:
+    fig_width: 6
+    fig_caption: true
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>国际人类脑影像组织（OHBM， Organization for Human Brain Mapping）于2018年发布了脑电脑磁数据报告的 <a href="https://osf.io/a8dhx/">白皮书</a>。<span class="citation">Pernet et al. (<a href="#ref-RN1675" role="doc-biblioref">2020</a>)</span> 对该白皮书进行了精简和进一步发展。</p>
+<ol style="list-style-type: decimal">
+<li>MEEG 中专有名词的使用</li>
+</ol>
+<p>这主要包括两部分：第一、数据收集过程中涉及到的专有名词和解释，如 Session，Run，Event，Trial，Epoch，Sensors，Channels，Fiducials，Anatomical Landmarks， Sensor Space，Source Space 等；第二、数据分析过程中涉及的专有名词的使用规则，如各种事件相关电位或脑电成分的命名一致性问题，神经振荡（Oscillation）的含义等。</p>
+<ol start="2" style="list-style-type: decimal">
+<li>文章需要报告的相关信息。</li>
+</ol>
+<p>主要包括被试选择、实验设置、实验任务、行为测量等。被试选择应该包含的信息包括数据整体、招募方式、抽样策略、人口学特征、知情同意书等；实验设置包括测试环境、测试姿势是躺着还是坐着、如果被试处于麻醉状态，还要包括用药的计量和方式等；实验任务信息应该包含实验指导语、session 或 run 的次数、实验刺激和特征、刺激呈现的软件和硬件、实验条件及刺激呈现的顺序和时间特征、任务相关时间的确定标准等；无任务的实验中应该报告被试的眼睛是否是闭着的，如果眼睛是睁着的，还要报告是否有注视点；行为测量应该描述行为反应的特征、反应收集设备、行为于MEEG设备的接口和校准程序等、错误和极端值的处理，以及统计分析等。</p>
+<p>数据报告中经常缺失但非常重要的信息有下面几点：第一、基本的硬件、软件和数据收集参数，如数据是连续收集还是分段收集的（epoched）？硬件采样率是多少？数据收集设备的高通滤波和低通滤波的值分别设置为多少？第二、EEG的参考参考电极(reference electrode)是什么？电极阻抗（electrode impedance)是多少？第三、本研究的先验统计效力是多少？</p>
+<ol start="3" style="list-style-type: decimal">
+<li>数据预处理需要注意的问题</li>
+</ol>
+<p>通常的数据预处理过程如下图，建议读者阅读 <a href="https://osf.io/a8dhx/">白皮书</a> 了解每一个步骤需要注意的问题：</p>
+<figure id="fig1">
+<img src="../images/2020-10-15-issues-and-recommendations-from-the-ohbm-cobidas-meeg-committee-for-reproducible-eeg-and-meg-research-Fig-2.png">
+<figcaption style="text-align:center;">
+图 1.
+</figcaption>
+</figure>
+<ol start="4" style="list-style-type: decimal">
+<li>数据分析需要注意的问题</li>
+</ol>
+<p>研究者应该解释选择某一种数据分析方法的逻辑合理性。例如，源定位分析需要报告分析的前向模型（forward model）、源模型（source model）和源定位方法，以及使用的软件和版本；以及兴趣区分析、单元统计分析、多元统计推论、多变量模式分类、链接分析等方面需要注意的问题等。</p>
+<ol start="4" style="list-style-type: decimal">
+<li>数据报告和展示需要注意的问题</li>
+</ol>
+<p>图片中应该包含变异性信息和尺度；统计结果应该报告检验统计量、模型假设和效应值大小等等。</p>
+<ol start="4" style="list-style-type: decimal">
+<li>原始文献</li>
+</ol>
+<div id="refs" class="references hanging-indent">
+<div id="ref-RN1675">
+<p>Pernet, C., Garrido, M. I., Gramfort, A., Maurits, N., Michel, C. M., Pang, E., … Puce, A. (2020). Issues and recommendations from the ohbm cobidas meeg committee for reproducible eeg and meg research. <em>Nature Neuroscience</em>. doi: <a href="https://doi.org/10.1038/s41593-020-00709-0">10.1038/s41593-020-00709-0</a></p>
+</div>
+</div>
