@@ -2,26 +2,3 @@
 title: "About"
 date: "2016-05-05"
 ---
-<div style="text-align:center; color:red; font-size: 150%">
-<hr>
-
-！！注意！！
-
-《R语言与统计和数据可视化》的上课地点变更为
-
-！！**主楼南501**！！
-
-上课时间不变
-
-!! IMPORTANT !!
-
-The location of 
-
-**R for Statistics and Data Visualization** 
-
-has been changed to 
-
-!!! **501, Main Building SOUTH** !!!
-
-<hr>
-</div>
