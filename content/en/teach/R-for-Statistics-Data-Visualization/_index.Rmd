@@ -12,7 +12,7 @@ output:
 # 1. Lecture Time and Location
 
 - Time: 14:00 - 16:50, Each Friday
-- Location: **501, Main Building South** (<= <a style="color:red"> !CHANGED! </a>)
+- Location: 501, Main Building South
 
 # 2. Prerequisites
 
@@ -30,7 +30,7 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_01.pdf)
     - 02. R foundations [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_02.pdf)
 - Part I: Data craft
-    - 03. Data wrangling
+    - 03. Data wrangling [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_03A.pdf)
     - 04. Examining Data
     - 05. Transforming data
 - Part II: Linear models and least squares
