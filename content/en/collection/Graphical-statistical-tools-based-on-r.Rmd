@@ -12,6 +12,12 @@ output:
     toc: true
 ---
 
+# JASP
+
+a. Website: [JASP-desktop](https://github.com/jasp-stats/jasp-desktop)
+
+b. Introduction: JASP is an open-source statistics program that is free, friendly, and flexible. Armed with an easy-to-use GUI, JASP allows both classical and Bayesian analyses.
+
 # jamovi
 
 a. Website: __[https://www.jamovi.org/](https://www.jamovi.org/)__.
