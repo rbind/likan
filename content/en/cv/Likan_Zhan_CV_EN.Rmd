@@ -206,6 +206,8 @@ fontsize: 12pt
 
 4. Peer reviewed conference presentations
 
+- **Zhan, L.** (2020, October). *Non-factual property entailed by conditionals has to be endorsed by a valid theory of verbal reasoning*. Oral session presented at the 13th Biennial Academic Conference of Beijing Language and Culture University, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://likan.oss-cn-beijing.aliyuncs.com/Talks/Conditional_Verbal_Reasoning.pdf)
+
 - **Zhan, L.**, & Zhou, P. (2019, June). *Children differ from adults in interpreting disjunctions: Evidence from an eye-tracking study*. Poster session presented at Psycholinguistics in Iceland - Parsing and Prediction, University of Iceland, Reykjavík, Iceland. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/PIPP_Poster.pdf)
 
 - **Zhan, L.** (2017, September). *Scalar implicature and ignorance inference are both locally computed: Evidence from the online processing of disjunctions using the visual world paradigm*. Oral session presented at the Second High-level Forum on Cognitive Linguistics, University of International Business and Economics, Beijing, China. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/ZhanL2017UIBE.pdf)
