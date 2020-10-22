@@ -230,7 +230,7 @@ fontsize: 12pt
 
 5. Invited talks
 
-- **Zhan, L.** (2020, October). *Language and Language Development*. Invited lecture given at the course of *Language +* organized by Prof. Si. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://likan.oss-cn-beijing.aliyuncs.com/Talks/Language_and_Language_Development.pdf)
+- **Zhan, L.** (2020, October). *Language and Language Development*. Invited lecture given at the course of *Language +* organized by Prof. Si. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Language_and_Language_Development.pdf)
 
 - **Zhan, L.** (2019, August). *Gardener or Carpenter: Some thoughts on nurturing a child*. Invited presentation given at Smiland Daycare Center. [<i class="fas fa-external-link-alt fa-sm"> \footnotesize \faExternalLink* </i>](https://publications.likan.info/talks/parent/)
 
