@@ -1,5 +1,14 @@
 {{ partial "header.html" . }}
 
+{{ if eq .Params.type "cv" }}
+
+<div style="text-align: center; width: 150px; float:right;">
+<a href = "{{ .Params.pdf }}" class = "far fa-file-pdf" title = "PDF version "> PDF </a>
+</div>
+
+{{ end }}
+
+
 {{ .Content }}
 
 {{ partial "footer.html" . }}
