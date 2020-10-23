@@ -15,4 +15,5 @@ output:
 
 3. [De-Jargonizer](http://scienceandpublic.com/): An online tool that assesses and scores the accessibility of text.
 
+3. [International Picture Naming Project website](https://crl.ucsd.edu/experiments/ipnp/1stimuli.html): The picture stimuli set consist of black-and-white line drawings of 520 common objects and 275 transitive and intransitive actions.
 
