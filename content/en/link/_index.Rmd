@@ -13,9 +13,9 @@ output:
 
 - [ThreeDWorld](http://www.threedworld.org): A High-Fidelity, Multi-Modal Platform for Interactive Physical Simulation
 
-- [De-Jargonizer](http://scienceandpublic.com/): An online tool that assesses and scores the accessibility of text.
-
 - [International Picture Naming Project website](https://crl.ucsd.edu/experiments/ipnp/1stimuli.html): The picture stimuli set consist of black-and-white line drawings of 520 common objects and 275 transitive and intransitive actions.
+
+- [De-Jargonizer](http://scienceandpublic.com/): An online tool that assesses and scores the accessibility of text.
 
 - [Critical Analysis Project](http://critical-analysis.org/)
 
@@ -29,38 +29,32 @@ output:
 
 # Research groups and personal websites
 
-## Research groups
+- [Barr, Dale](https://www.gla.ac.uk/researchinstitutes/neurosciencepsychology/staff/dalebarr/), Institute of Neuroscience & Psychology, University of Glasgow, UK
 
-- [Dynamics of cognition and communication](https://www.thedocc.com), lead by [Zheng (Joyce) Wang](https://www.thedocc.com/wp-content/uploads/2018/10/WangCV.pdf), at The Ohio State University, Columbus, OH.
+- [Fitch, Tecumseh](https://homepage.univie.ac.at/tecumseh.fitch/), Professor of Cognitive Biology, University of Vienna, Austria.
 
-- [Cultural Brain](https://culturalbrain.org), lead by [Falk Huettig](https://www.mpi.nl/people/huettig-falk), at Max Planck Institute for Psycholinguistics, Nijmegen, the Netherlands. 
+- [Frith, Uta](https://sites.google.com/site/utafrith/), Emeritus Professor of Cognitive Development, Institute of Cognitive Neuroscience, UCL.
 
-- [The Markman Lab](http://markmanlab.stanford.edu/index.html), lead by Ellen M. Markman, at Stanford University, Stanford, CA.
+- [Heyes, Cecilia](http://users.ox.ac.uk/~ascch/index.htm), Senior Research Fellow in Theoretical Life Sciences, University of Oxford, UK.
 
-- [The Language Learning Lab](http://web.sas.upenn.edu/trueswell-lab/), lead by Professor [John Trueswell](http://web.sas.upenn.edu/trueswell-lab/people/trueswell/), at University of Pennsylvania, Philadelphia, PA. 
+- [Huang, Yi Ting](https://hesp.umd.edu/facultyprofile/huang/yi-ting), Associate Professor, Department of Hearing and Speech Sciences, University of Maryland, MD.
 
-- [Poeppel Lab](https://wp.nyu.edu/poeppellab/), lead by Professor [David Poeppel](http://as.nyu.edu/content/nyu-as/as/faculty/david-poeppel.html), at New York University, New York, NY.
+- [Huettig, Falk](https://www.mpi.nl/people/huettig-falk) and [Cultural Brain](https://culturalbrain.org) at Max Planck Institute for Psycholinguistics, Nijmegen, the Netherlands.
 
-- [Language & Cognitive Dynamics Laboratory](http://www.danmirman.org/Home)
+- [Johnson, Keith](http://linguistics.berkeley.edu/~kjohnson/index.html), Department of linguistics, University of California at Berkeley, Berkeley, CA.
 
-- [Brain and Language Lab](https://brainlang.georgetown.edu), lead by Professor [Michael Ullman](https://georgetown.app.box.com/s/5lrbyhfe5iq07xim1b13t15tjx7m9hyl), at Georgetown University, Washington, D.C.
+- [Markman, Ellen M.](http://markmanlab.stanford.edu/index.html) at Stanford University, Stanford, CA.
 
-## Personal websites
+- [Poeppel, David](http://as.nyu.edu/content/nyu-as/as/faculty/david-poeppel.html) and [Poeppel Lab](https://wp.nyu.edu/poeppellab/) at New York University, New York, NY.
 
-- [Yi Xu](http://www.homepages.ucl.ac.uk/~uclyyix/), Professor of Speech Sciences, University College London, London, UK.
+- [Sloman, Steven](https://sites.google.com/site/slomanlab/lab-members), Professor of cognitive, linguistic, and psychological sciences, Brown University.
 
-- [Tecumseh Fitch](https://homepage.univie.ac.at/tecumseh.fitch/), Professor of Cognitive Biology, University of Vienna, Austria.
+- [Traxler, Matthew](https://psychology.ucdavis.edu/people/traxler), Professor of Psychology, Center for Mind and Brain, University of California at Davis, Davis, CA
 
-- [Dale Barr](https://www.gla.ac.uk/researchinstitutes/neurosciencepsychology/staff/dalebarr/), Institute of Neuroscience & Psychology, University of Glasgow, UK
+- [Trueswell, John](http://web.sas.upenn.edu/trueswell-lab/people/trueswell/) and [The Language Learning Lab](http://web.sas.upenn.edu/trueswell-lab/) at University of Pennsylvania, Philadelphia, PA.
 
-- [Yi Ting Huang](https://hesp.umd.edu/facultyprofile/huang/yi-ting), Associate Professor, Department of Hearing and Speech Sciences, University of Maryland, MD.
+- [Ullman, Michael](https://georgetown.app.box.com/s/5lrbyhfe5iq07xim1b13t15tjx7m9hyl) and [Brain and Language Lab](https://brainlang.georgetown.edu) at Georgetown University, Washington, D.C.
 
-- [Cecilia Heyes](http://users.ox.ac.uk/~ascch/index.htm), Senior Research Fellow in Theoretical Life Sciences, University of Oxford, UK.
+- [Wang, Zheng](https://www.thedocc.com/wp-content/uploads/2018/10/WangCV.pdf) and [Dynamics of cognition and communication](https://www.thedocc.com) at The Ohio State University, Columbus, OH.
 
-- [Uta Frith](https://sites.google.com/site/utafrith/), Emeritus Professor of Cognitive Development, Institute of Cognitive Neuroscience, UCL.
-
-- [Matthew Traxler](https://psychology.ucdavis.edu/people/traxler), Professor of Psychology, Center for Mind and Brain, University of California at Davis, Davis, CA
-
-- [Keith Johnson](http://linguistics.berkeley.edu/~kjohnson/index.html), Department of linguistics, University of California at Berkeley, Berkeley, CA.
-
-- [Steven Sloman](https://sites.google.com/site/slomanlab/lab-members), Professor of cognitive, linguistic, and psychological sciences, Brown University,
+- [Xu, Yi](http://www.homepages.ucl.ac.uk/~uclyyix/), Professor of Speech Sciences, University College London, London, UK.
