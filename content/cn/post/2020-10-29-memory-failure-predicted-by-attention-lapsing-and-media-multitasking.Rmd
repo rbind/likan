@@ -1,0 +1,47 @@
+---
+title: 多线程碎片化工作模式损害记忆效果
+author: ~
+date: '2020-10-29'
+slug: memory-failure-predicted-by-attention-lapsing-and-media-multitasking
+categories: []
+tags: []
+bibliography: [bibliography/bibliography.bib]
+link-citations: yes
+csl: [bibliography/apa-old-doi-prefix.csl]
+output:
+  html_document:
+    fig_width: 6
+    fig_caption: true
+---
+
+@RN1677 考察了信息时代，多线程碎片化的学习方式如何损伤了个体的记忆效果。文章收集了被试的一系列个体日常生活特征，如媒体多工量表 (Media Multitasking Inventory，MMI): 被试自陈每周同时进行如下9种行为中的任意两种的频率：进行阅读、家庭作业、看视频、看电视/电影、听音乐/收音机/电子书等、玩游戏、浏览互联网、社交媒体聊天、打电话等。被试还完成了一个持续注意能力测验：给被试呈现一系列城市（90%）或山川（10%）图片共497副，被试的任务是看到城市时按键（go），而看到山川时不按键（hold）。反应指标 CER 指被试看到山川时错误按键的次数和山川出现总次数的比率。
+
+研究主实验是一个记忆(encoding)和再认(retrieval)实验，具体过程如<a href="#figS1">图S1a</a>：记忆编码阶段，被试需要从概念(愉悦 vs 不愉悦)或知觉(大 VS 小？)维度对物体图片进行判断；再认阶段，过程与编码阶段类似，但是测试图片有学过的有没学过的。在实验的再认阶段，研究者还记录了被试的脑电和眼动反应(图1B)。
+
+<figure id = "figS1">
+<img src="../images/2020-10-29-memory-failure-predicted-by-attention-lapsing-and-media-multitasking-Fig-S1.png">
+<figcaption style="text-align:center;"> 图 S1 </figcaption>
+</figure>
+
+从整体实验结果来看，实验任务出现前alpha波的波幅越大或瞳孔越小（注意力散失的两个指标），该试次的回忆成绩就越差；而注意力散失对记忆效果的影响可能是通过额中部活动来实现的（<a href="#fig1">图1</a>和<a href="#figS1">图S1a</a>）。
+
+<figure id = "fig1">
+<img src="../images/2020-10-29-memory-failure-predicted-by-attention-lapsing-and-media-multitasking-Fig-1.png">
+<figcaption style="text-align:center;"> 图 1 </figcaption>
+</figure>
+
+从实验结果的个体差异来看，任务出现前个体的平均 alpha 波波幅越大或瞳孔变异性越大，个体的持续注意能力 (CER) 也就越差，从而导致个体记忆能力变差 (图2<a href="#fig2">图2</a>)
+
+<figure id = "fig2">
+<img src="../images/2020-10-29-memory-failure-predicted-by-attention-lapsing-and-media-multitasking-Fig-2.png">
+<figcaption style="text-align:center;"> 图 2 </figcaption>
+</figure>
+
+从个体特征差异来看，多线程碎片化学习的程度越高 (MMI分数高)，个体的持续注意能力 (CER) 越差，个体的记忆能力也就越差 (<a href="#fig3">图3</a>)。
+
+<figure id = "fig3">
+<img src="../images/2020-10-29-memory-failure-predicted-by-attention-lapsing-and-media-multitasking-Fig-3.png">
+<figcaption style="text-align:center;"> 图 3 </figcaption>
+</figure>
+
+原始文献
