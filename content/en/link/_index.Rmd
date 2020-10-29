@@ -3,7 +3,6 @@ title: Useful links
 author: "Likan Zhan"
 date: '2019-11-02'
 lastmod: "`r Sys.Date()`"
-disable_comments: yes
 output:
   blogdown::html_page:
     toc: true
@@ -12,49 +11,30 @@ output:
 # Un-categorized useful links
 
 - [ThreeDWorld](http://www.threedworld.org): A High-Fidelity, Multi-Modal Platform for Interactive Physical Simulation
-
 - [International Picture Naming Project website](https://crl.ucsd.edu/experiments/ipnp/1stimuli.html): The picture stimuli set consist of black-and-white line drawings of 520 common objects and 275 transitive and intransitive actions.
-
 - [De-Jargonizer](http://scienceandpublic.com/): An online tool that assesses and scores the accessibility of text.
-
 - [Critical Analysis Project](http://critical-analysis.org/)
 
 # Graphical statistical tools based on R
 
 - [JASP](https://github.com/jasp-stats/jasp-desktop): JASP is an open-source statistics program that is free, friendly, and flexible. Armed with an easy-to-use GUI, JASP allows both classical and Bayesian analyses.
-
 - [jamovi](https://www.jamovi.org/): jamovi is a new “3rd generation” statistical spreadsheet.
-
 - [The R Commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/index.html): The R Commander is a graphical user interface (GUI) to the free, open-source R statistical software. The R Commander is implemented as an R package, the Rcmdr package, which is freely available on CRAN (the R package archive).
 
 # Research groups and personal websites
 
-- [Barr, Dale](https://www.gla.ac.uk/researchinstitutes/neurosciencepsychology/staff/dalebarr/), Institute of Neuroscience & Psychology, University of Glasgow, UK
-
-- [Fitch, Tecumseh](https://homepage.univie.ac.at/tecumseh.fitch/), Professor of Cognitive Biology, University of Vienna, Austria.
-
-- [Frith, Uta](https://sites.google.com/site/utafrith/), Emeritus Professor of Cognitive Development, Institute of Cognitive Neuroscience, UCL.
-
-- [Heyes, Cecilia](http://users.ox.ac.uk/~ascch/index.htm), Senior Research Fellow in Theoretical Life Sciences, University of Oxford, UK.
-
-- [Huang, Yi Ting](https://hesp.umd.edu/facultyprofile/huang/yi-ting), Associate Professor, Department of Hearing and Speech Sciences, University of Maryland, MD.
-
-- [Huettig, Falk](https://www.mpi.nl/people/huettig-falk) and [Cultural Brain](https://culturalbrain.org) at Max Planck Institute for Psycholinguistics, Nijmegen, the Netherlands.
-
-- [Johnson, Keith](http://linguistics.berkeley.edu/~kjohnson/index.html), Department of linguistics, University of California at Berkeley, Berkeley, CA.
-
-- [Markman, Ellen M.](http://markmanlab.stanford.edu/index.html) at Stanford University, Stanford, CA.
-
-- [Poeppel, David](http://as.nyu.edu/content/nyu-as/as/faculty/david-poeppel.html) and [Poeppel Lab](https://wp.nyu.edu/poeppellab/) at New York University, New York, NY.
-
-- [Sloman, Steven](https://sites.google.com/site/slomanlab/lab-members), Professor of cognitive, linguistic, and psychological sciences, Brown University.
-
-- [Traxler, Matthew](https://psychology.ucdavis.edu/people/traxler), Professor of Psychology, Center for Mind and Brain, University of California at Davis, Davis, CA
-
-- [Trueswell, John](http://web.sas.upenn.edu/trueswell-lab/people/trueswell/) and [The Language Learning Lab](http://web.sas.upenn.edu/trueswell-lab/) at University of Pennsylvania, Philadelphia, PA.
-
-- [Ullman, Michael](https://georgetown.app.box.com/s/5lrbyhfe5iq07xim1b13t15tjx7m9hyl) and [Brain and Language Lab](https://brainlang.georgetown.edu) at Georgetown University, Washington, D.C.
-
-- [Wang, Zheng](https://www.thedocc.com/wp-content/uploads/2018/10/WangCV.pdf) and [Dynamics of cognition and communication](https://www.thedocc.com) at The Ohio State University, Columbus, OH.
-
-- [Xu, Yi](http://www.homepages.ucl.ac.uk/~uclyyix/), Professor of Speech Sciences, University College London, London, UK.
+- [Barr, Dale](https://www.gla.ac.uk/researchinstitutes/neurosciencepsychology/staff/dalebarr/), University of Glasgow, UK
+- [Fitch, Tecumseh](https://homepage.univie.ac.at/tecumseh.fitch/), University of Vienna, Austria.
+- [Frith, Uta](https://sites.google.com/site/utafrith/), University College London, UK.
+- [Heyes, Cecilia](http://users.ox.ac.uk/~ascch/index.htm), University of Oxford, UK.
+- [Huang, Yi Ting](https://hesp.umd.edu/facultyprofile/huang/yi-ting), University of Maryland, MD.
+- [Huettig, Falk](https://www.mpi.nl/people/huettig-falk) and [Cultural Brain](https://culturalbrain.org), MPI for Psycholinguistics, the Netherlands.
+- [Johnson, Keith](http://linguistics.berkeley.edu/~kjohnson/index.html), University of California at Berkeley, CA.
+- [Markman, Ellen M.](http://markmanlab.stanford.edu/index.html), Stanford University, CA.
+- [Poeppel, David](http://as.nyu.edu/content/nyu-as/as/faculty/david-poeppel.html) and [Poeppel Lab](https://wp.nyu.edu/poeppellab/), New York University, NY.
+- [Sloman, Steven](https://sites.google.com/site/slomanlab/lab-members), Brown University.
+- [Traxler, Matthew](https://psychology.ucdavis.edu/people/traxler), University of California at Davis, CA
+- [Trueswell, John](http://web.sas.upenn.edu/trueswell-lab/people/trueswell/) and [The Language Learning Lab](http://web.sas.upenn.edu/trueswell-lab/), University of Pennsylvania, PA.
+- [Ullman, Michael](https://georgetown.app.box.com/s/5lrbyhfe5iq07xim1b13t15tjx7m9hyl) and [Brain and Language Lab](https://brainlang.georgetown.edu), Georgetown University, Washington, D.C.
+- [Wang, Zheng](https://www.thedocc.com/wp-content/uploads/2018/10/WangCV.pdf) and [Dynamics of cognition and communication](https://www.thedocc.com), The Ohio State University, OH.
+- [Xu, Yi](http://www.homepages.ucl.ac.uk/~uclyyix/), University College London, UK.
