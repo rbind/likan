@@ -47,8 +47,8 @@ enableGitInfo = false
     weight = 5
 
 [[menu.en]]
-    name = "Collection"
-    url = "/en/collection/"
+    name = "link"
+    url = "/en/link/"
     weight = 6
 
 [[menu.en]]
