@@ -30,17 +30,16 @@ output:
 
 通常的数据预处理过程如下图，建议读者阅读 [白皮书](https://osf.io/a8dhx/) 了解每一个步骤需要注意的问题：
 
-<figure id = "fig1">
-<img src="../images/2020-10-15-issues-and-recommendations-from-the-ohbm-cobidas-meeg-committee-for-reproducible-eeg-and-meg-research-Fig-2.png">
-<figcaption style="text-align:center;"> 图 1. </figcaption>
-</figure>
-
 4. 数据分析需要注意的问题
 
 研究者应该解释选择某一种数据分析方法的逻辑合理性。例如，源定位分析需要报告分析的前向模型（forward model）、源模型（source model）和源定位方法，以及使用的软件和版本；以及兴趣区分析、单元统计分析、多元统计推论、多变量模式分类、链接分析等方面需要注意的问题等。
 
-4. 数据报告和展示需要注意的问题
+5. 数据报告和展示需要注意的问题
 
 图片中应该包含变异性信息和尺度；统计结果应该报告检验统计量、模型假设和效应值大小等等。
 
-4. 原始文献
+6. 附图
+
+![图 1](https://supporting-information.oss-cn-beijing.aliyuncs.com/posts/2020-10-15-issues-and-recommendations-from-the-ohbm-cobidas-meeg-committee-for-reproducible-eeg-and-meg-research-Fig-2.png)
+
+7. 原始文献

@@ -24,11 +24,6 @@ output:
 
 以自我身体为中心的空间知觉，如相对于知觉者自身的左右、上下或远近，通常会激活颞叶皮层。另外，人类某些概念领域-如时间 (图1D左)、数字、校价 (图1D右)、社会和情感联系-的表征也都是用基于感知运动经验的较低纬度的自我中心空间知觉模版来表征的。例如，以自我为中心的情感 (关系比较近/远的朋友) 和时间 (几秒钟后/几年后) 上的距离都会激活顶叶下部 (inferior parietal lobule, IPL) (图1C)。
 
-<figure id = "fig1">
-<img src="../images/2020-10-31-knowledge-across-reference-frames-cognitive-maps-and-image-spaces-Fig-1.png">
-<figcaption style="text-align:center;"> 图 1 </figcaption>
-</figure>
-
 - 知识导航需要不同的参考框架
 
 认知地图和图形空间实际上是同一个知识表征系统的两个面，是人脑在低维度空间中(low-dimensional)如何组织知识的一种表现。在导航系统中，以世界为中心的空间关系是视角无关、持久、但不够精确的，而以自我为中心的空间关系则是视角相关的、易变、和精确的。一项脑损伤病人研究发现，顶叶受损影响了个体以自我为中心的认知，但不影响其以世界为中心的认知 (图1E)。
@@ -39,9 +34,10 @@ output:
 
 因为高维度知识在认知上是困难的 (Curse of Dimensionality, 图2B左)，所以虽然自然界中物体的特征往往是高维度 (high-dimensional space) 的, 但实际表征过程的维度往往是低维度的 (图2B右)。也正是这种低维度的表征方式，让人类更容易作出相似性比较 (图2C)，更容易理解概念的隐喻(图2D)。
 
-<figure id = "fig2">
-<img src="../images/2020-10-31-knowledge-across-reference-frames-cognitive-maps-and-image-spaces-Fig-2.png">
-<figcaption style="text-align:center;"> 图 2 </figcaption>
-</figure>
+- 附图
+
+![图 1](https://supporting-information.oss-cn-beijing.aliyuncs.com/posts/2020-10-31-knowledge-across-reference-frames-cognitive-maps-and-image-spaces-Fig-1.png)
+
+![图 2](https://supporting-information.oss-cn-beijing.aliyuncs.com/posts/2020-10-31-knowledge-across-reference-frames-cognitive-maps-and-image-spaces-Fig-2.png)
 
 - 参考文献

@@ -20,37 +20,27 @@ output:
 
 实验过程中，如果另外一个主体同时在完成一个不同的行为，那么被试反应的准确率会降低，反应时间会变长(图B1)。就算被试被要求只关注自己的任务，这种干扰效应 (interference effect) 依然会出现，如西蒙任务 (Simon task) 和弗兰克任务 (Flanker task)。另外环境中其他主体对物体的可供性 (Affordance) 也会影响被试行为。
 
-<figure id = "figb1">
-<img src="../images/2020-11-01-altercentric-cognition-how-others-influence-our-cognitive-processing-Fig-B1.png">
-<figcaption style="text-align:center;"> 图 B1 </figcaption>
-</figure>
-
 - 非自我中心性对感知和决策的影响
 
 环境中其他个体的视角能够影响个体对物体和身体部位的判断，如手和面孔等。环境中他人的视角也会阻碍或易化被试的反应。当主体 (Agent) 视角与被试视角相矛盾时，被试在点注视角范式 (dot-perspective taking task) 的反应时间 (图B2) 和在数字确认任务 (number verification task) 中对对称数字如6和9的识别时间变长。当环境中主体视角与被试视角一致时，被试对字母旋转的反应时间变短 (图2A)，对 Gabor 模型的识别率提高 (图2D)。环境中主体不但影响被试的视角，还影响被试的注意力，如当物体的倾斜角度与主体的注视方向一致时，被试倾向于高估物体的倾斜角度 (图2B)。甚至其他主体不是真的存在而只是被推测为存在也会影响被试的反应。
-
-<figure id = "figb2">
-<img src="../images/2020-11-01-altercentric-cognition-how-others-influence-our-cognitive-processing-Fig-B2.png">
-<figcaption style="text-align:center;"> 图 B2 </figcaption>
-</figure>
 
 - 非自我中心性对记忆的影响
 
 被试对环境中被主体注视着的物体的记忆效果更好 (图2C)。当被试认为他人与自己经历相似的过程时，这种记忆提升效果更明显。他人影响个体的具体方式 (way) 也能够影响被试记住的信息。这种注意力的改变不但改变了记忆效果也提升了个体对其喜好感。这种效应在实验室外的自然环境中也可以被观察到。
 
-<figure id = "fig2">
-<img src="../images/2020-11-01-altercentric-cognition-how-others-influence-our-cognitive-processing-Fig-2.png">
-<figcaption style="text-align:center;"> 图 2 </figcaption>
-</figure>
-
 - 总结：非自我中心性影响模型
 
 图1总结了非自我中心性影响的范围。图中橘黄色和紫色分别代表自我和他人的知觉范围。橘黄色方块表示他人加工注意目标 (绿色的树) 的可能方式，紫色方块表示我们自己对注意目标的加工方式。他人的加工方式会对我们自己的加工过程产生影响。红色方框表示影响非自我中心性影响程度的因素，这其中包括我们对他人任务的理解，以及他人与我们之间关系的理解。
 
-<figure id = "fig1">
-<img src="../images/2020-11-01-altercentric-cognition-how-others-influence-our-cognitive-processing-Fig-1.png">
-<figcaption style="text-align:center;"> 图 1 </figcaption>
-</figure>
+- 附图
+
+![图 1](https://supporting-information.oss-cn-beijing.aliyuncs.com/posts/2020-11-01-altercentric-cognition-how-others-influence-our-cognitive-processing-Fig-1.png)
+
+![图 2](https://supporting-information.oss-cn-beijing.aliyuncs.com/posts/2020-11-01-altercentric-cognition-how-others-influence-our-cognitive-processing-Fig-2.png)
+
+![图 B1](https://supporting-information.oss-cn-beijing.aliyuncs.com/posts/2020-11-01-altercentric-cognition-how-others-influence-our-cognitive-processing-Fig-B1.png)
+
+![图 B2](https://supporting-information.oss-cn-beijing.aliyuncs.com/posts/2020-11-01-altercentric-cognition-how-others-influence-our-cognitive-processing-Fig-B2.png)
 
 - 原始文献
 
