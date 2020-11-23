@@ -21,6 +21,11 @@ enableGitInfo = false
     url = "/cn/"
     weight = 2
 
+[[menu.main]]
+    name = "小组"
+    url = "https://sapere-aude.group"
+    weight = 3
+
 [[menu.en]]
     name = "Home"
     url = "/"
@@ -100,6 +105,11 @@ enableGitInfo = false
     name = "English"
     url = "/en/"
     weight = 8
+
+[[menu.main]]
+    name = "小组"
+    url = "https://sapere-aude.group"
+    weight = 9
 
 [params]
     description        = "Personal website of Likan Zhan"
