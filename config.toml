@@ -22,7 +22,7 @@ enableGitInfo = false
     weight = 2
 
 [[menu.main]]
-    name = "团队"
+    name = "小组"
     url = "https://sapere-aude.group"
     weight = 3
 
@@ -62,14 +62,14 @@ enableGitInfo = false
     weight = 6
 
 [[menu.en]]
-    name = "中文"
-    url = "/cn/"
+    name = "Team"
+    url = "https://sapere-aude.group"
     weight = 7
 
 [[menu.en]]
-    name = "Team"
-    url = "https://sapere-aude.group"
-    weight = 9
+    name = "中文"
+    url = "/cn/"
+    weight = 70
 
 [[menu.cn]]
     name = "首页"
@@ -107,14 +107,14 @@ enableGitInfo = false
 #    weight = 7
 
 [[menu.cn]]
-    name = "English"
-    url = "/en/"
+    name = "团队"
+    url = "https://sapere-aude.group"
     weight = 8
 
 [[menu.cn]]
-    name = "团队"
-    url = "https://sapere-aude.group"
-    weight = 9
+    name = "English"
+    url = "/en/"
+    weight = 80
 
 [params]
     description        = "Personal website of Likan Zhan"
