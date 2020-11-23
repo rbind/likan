@@ -22,7 +22,7 @@ enableGitInfo = false
     weight = 2
 
 [[menu.main]]
-    name = "小组"
+    name = "团队""
     url = "https://sapere-aude.group"
     weight = 3
 
@@ -66,6 +66,11 @@ enableGitInfo = false
     url = "/cn/"
     weight = 7
 
+[[menu.en]]
+    name = "team"
+    url = "https://sapere-aude.group"
+    weight = 9
+
 [[menu.cn]]
     name = "首页"
     url = "/"
@@ -106,8 +111,8 @@ enableGitInfo = false
     url = "/en/"
     weight = 8
 
-[[menu.main]]
-    name = "小组"
+[[menu.cn]]
+    name = "团队"
     url = "https://sapere-aude.group"
     weight = 9
 
