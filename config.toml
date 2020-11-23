@@ -22,7 +22,7 @@ enableGitInfo = false
     weight = 2
 
 [[menu.main]]
-    name = "团队"
+    name = "小组"
     url = "https://sapere-aude.group"
     weight = 3
 
@@ -67,7 +67,7 @@ enableGitInfo = false
     weight = 7
 
 [[menu.en]]
-    name = "team"
+    name = "Team"
     url = "https://sapere-aude.group"
     weight = 9
 
