@@ -34,8 +34,8 @@ Linear models, their variants, and extensions are among the most useful and wide
     - 04. Examining Data [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_03B.pdf)
     - 05. Transforming data [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_04.pdf)
 - Part II: Linear models and least squares
-    - 06. Linear least-squares regression
-    - 07. Statistical Inference for Regression
+    - 06. Linear least-squares regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_05.pdf)
+    - 07. Statistical Inference for Regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_06.pdf)
     - 08. Dummy-variable regression
     - 09. Analysis of variance
 - Part III: Linear-model diagnostics
@@ -60,7 +60,7 @@ Linear models, their variants, and extensions are among the most useful and wide
 - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [<i class="fas fa-external-link-alt fa-sm"> \faExternalLink* </i>](http://r4ds.had.co.nz)
 - **Fox, J. (2016). *Applied Regression Analysis and Generalized Linear Models* (3 ed.). Thousand Oaks, CA: SAGE.**
 
-<!---
+<!--
 - R manuals
     - An Introduction to R, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
     - R Data Import/Export, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
@@ -103,13 +103,13 @@ Linear models, their variants, and extensions are among the most useful and wide
     - Xie, Y. (2014). *Dynamic Documents with R and knitr* (2 ed.). Boca Raton, FL: CRC Press.
     - Xie, Y., Allaire, J. J., & Grolemund, G. (2018). *R Markdown: The Definitive Guide*. Boca Raton, FL: CRC Press. [Full text](https://bookdown.org/yihui/rmarkdown/)
 
---->
+-->
 
 # 6. Final Examination
 
 To Be Announced
 
-<!---
+<!--
 
   - To successfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
@@ -154,7 +154,7 @@ rmarkdown::render(
 
   - Send both the finished *.Rmd* file, such as [*ZhangSan_20181030.Rmd*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_20181030.Rmd)  and the knitted *.html* file， such as [*ZhangSan_20181030.html*](https://appendix.likan.info/R-for-Statistics-Data-Visualization/ZhangSan_20181030.html) to the following email address: `zhanlikan@blcu.edu.cn` before **2019-01-04, 1900**.
 
---->
+-->
 
 
 # 7. Tools

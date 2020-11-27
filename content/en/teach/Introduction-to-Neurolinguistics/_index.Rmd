@@ -13,9 +13,7 @@ output:
 # 1. Time and Location
 
 - Time: 10:10 - 12:00, Each Monday
-
 - Location: Room 514, Teaching Building one
-
 - Lecturer: Likan Zhan
 
 # 2. Course Information
@@ -68,7 +66,7 @@ This class intends to provide a coherent view on the relation between language a
 
 To Be Announced
 
-<!---
+<!--
 - Your will write a reading report of an academic article.
 - The article you read should
   - be written in English;
@@ -82,4 +80,4 @@ To Be Announced
     - background, methods, and main findings of the article ( about 1500 - 2000 words);
     - future directions of this topic (1000 - 1500 words).
 - Your should send your report to my email address before **January 11, 2020, 23:59**.
---->
+-->

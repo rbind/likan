@@ -13,12 +13,9 @@ output:
 
 # 1. Time and Location
 
-<span style="font-weight:bold; color: red; font-size:120%;">
-The online exam will be held between 1410-1610 on 2020-06-15. <br>
-See section [Final Examination](#final-examination) for more information.
-</span>
+To Be Announced
 
-<!---
+<!--
 <span style="font-weight:bold; color: red; font-size:120%;">
 On-site teaching this semester will not be available <br>
 until at least April,  <br>
@@ -28,7 +25,7 @@ because of the coronavirus outbreak in China.
 - Time: 14:00 - 18:00, Monday
 - Location: 119, Teaching Building 5
 - Lecturer: Likan Zhan
---->
+-->
 
 # 2. Course Information
 
@@ -48,22 +45,13 @@ Therefore, this course should help you:
 # 4. Syllabus and Lecture Notes
 
 - Part I. Foundations of Research
-    - Chapter 01. Explanation in Scientific Psychology 
-        ^[Further reading: Kantowitz et al., 2015, Chapter 1.]
-        <!--- 
-        [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Experimental-Psychology/CH-01.pdf)
-        --->
-    - Chapter 02. Descriptive Methods 
-        ^[Further reading: Shaughnessy et al., 2012, Part II.]
-    - Chapter 03. Experimental Methods 
-        ^[Further reading: Shaughnessy et al., 2012, Part III.]
-    - Chapter 04. Applied Research 
-        ^[Further reading: Shaughnessy et al., 2012, Part IV.]
-    - Chapter 05. Ethics in Psychological Research 
-        ^[Further reading: Kantowitz et al., 2015, Chapter 4.]
+    - Chapter 01. Explanation in Scientific Psychology
+    - Chapter 02. Descriptive Methods
+    - Chapter 03. Experimental Methods
+    - Chapter 04. Applied Research
+    - Chapter 05. Ethics in Psychological Research
 
 - Part II. Principles and Practices of Experimental Psychology 
-        ^[Further reading: Kantowitz et al., 2015, Corresponding chapters.]
     - Chapter 06. Psychophysics
     - Chapter 07. Perception
     - Chapter 08. Attention and Reaction Time
@@ -75,19 +63,15 @@ Therefore, this course should help you:
     - Chapter 14. Environmental Psychology
     - Chapter 15. Human Factors
 
-
 # 6. Final Examination
 
+To Be Announced
+
+<!--
   - Download the exam file from the following link during **2020-06-15, 1410** to **2020-06-15, 1610**.
-    - Link: [https://pan.baidu.com/s/1GvoFcXwqdlnHLcMV7GIGzQ](https://pan.baidu.com/s/1GvoFcXwqdlnHLcMV7GIGzQ)  
-    - Password: ov3u
-  
   - Write your answers in **Mandarin CHINESE**.
-
   - Include your name, your student ID, name of the course in your answer sheet.
-
   - Rename your answer sheet in the following pattern `ID-Name`.
-
   - Save your answer sheet both in **.doc / .docx** format and in  **.PDF** format.
-
   - Send the two files to the following email address: `zhanlikan@blcu.edu.cn` before **2020-06-15, 1611**.
+-->

@@ -2,7 +2,8 @@
 title: 'Introduction to Cognitive Neuroscience'
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "`r Sys.Date()`"
+lastmod: "`2017-03-01`"
+#lastmod: "`r Sys.Date()`"
 disable_comments: yes
 output:
   blogdown::html_page:
@@ -10,16 +11,12 @@ output:
 ---
 # 1. Time and Location
 
-Coming on semester two !
+Not Available This Semester
 
-<!---
+<!--
 - Time: 0800 - 1000, Each Monday
-
 - Location: **Room 211, Teaching Building 5** (Changed!!)
-
 - Lecturer: Likan Zhan
-
---->
 
 # 2. Course Information
 
@@ -29,8 +26,7 @@ Coming on semester two !
 
 ![](CognNeurosci-CoverImage.jpg)
 
-- Gazzaniga, M. S., Ivry, R. B., & Mangun, G. R. (2014). *[Cognitive neuroscience: The biology of the mind](https://www.amazon.com/Cognitive-Neuroscience-Biology-Mind-4th/dp/0393913481/ref=sr_1_1?s=books&ie=UTF8&qid=1489241498&sr=1-1&keywords=Cognitive+neuroscience%3A+The+biology+of+the+mind)* (4 ed.). New York, NY: Norton
-
+- Gazzaniga, M. S., Ivry, R. B., & Mangun, G. R. (2014). *Cognitive neuroscience: The biology of the mind* (4 ed.). New York, NY: Norton
 
 # 4. Lecture Notes
 
@@ -44,8 +40,8 @@ Coming on semester two !
   - Chapter 05. Sensation and Perception.
   - Chapter 06. Object Recognition.
   - Chapter 07. Attention.
-  - Chapter 08. Action. <a id="presenters"></a>
-  - Chapter 09. Memory.
+    - Chapter 08. Action.
+    - Chapter 09. Memory.
   - Chapter 10. Emotion.
   - Chapter 11. Language.
 - Part III. Control Processes
@@ -56,8 +52,6 @@ Coming on semester two !
 # 4. Grading
 
 - Oral Presentation: 50 %
-  - See the [syllabus](#presenters) part for the oral presentation groups;
-  - Submit your [__Scores__](https://likan.typeform.com/to/qt6XYY);
 - Reading Report: 50 %
  - Your will write a reading report of an academic article.
  - The article you read should
@@ -72,3 +66,4 @@ Coming on semester two !
      - consist of two main parts:
          - background, methods, and main findings of the article ( about 1500 - 2000 words);
          - future directions of this topic (1000 - 1500 words).
+-->

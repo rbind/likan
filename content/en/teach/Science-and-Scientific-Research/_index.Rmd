@@ -2,7 +2,8 @@
 title: 'Science and Scientific Research'
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "`r Sys.Date()`"
+lastmod: "2020-06-17"
+# lastmod: "`r Sys.Date()`"
 show_toc: yes
 disable_comments: no
 output:
@@ -11,12 +12,9 @@ output:
 ---
 # 1. Lecture Time and Location
 
-<span style="font-weight:bold; color: red; font-size:120%;">
-The online exam will be held between 1000-1200 on 2020-06-17. <br>
-See section [Final Examination](#final-examination) for more information.
-</span>
+To Be Announced
 
-<!---
+<!--
 <span style="font-weight:bold; color: red; font-size:120%;">
 On-site teaching this semester will not be avaliable <br>
 until at least April,  <br>
@@ -26,7 +24,7 @@ because of the coronavirus outbreak in China.
 - Time: 10:00 - 12:00, Thuesday
 - Location: 211, Teaching Building 5
 - Lecturer: Likan Zhan
---->
+-->
 
 # 2. Course Information
 
@@ -37,28 +35,26 @@ This course is designed to expose students to the academic side of scientific re
 - American psychological association. (2010). *Publication manual of the American Psychological Association* (6 ed.). Washington, DC: American psychological association.
 - Stanovich, K. E. (2013). *How to think straight about psychology* (10 ed.). Boston, MA: Pearson Education.
 
-# 4. Lecture Notes
+# 4. Syllabus and Lecture Notes
 
-- Part I. Science and Scientific Research 
-        ^[Further reading: Stanovich, K. E. (2013).]
-    - 01. What is science, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-01.pdf)
-    - 02. Falsifiability, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-02.pdf)
-    - 03. Operationism and essentialism, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-03.pdf)
-    - 04. Testimonials and case study, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-04.pdf)
-    - 05. Correlation and causation, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-05.pdf)
-    - 06. Getting things under control, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-06.pdf)
-    - 07. The artificality criticism, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-07.pdf)
-    - 08. The importance of converging evidence, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-08.pdf)
-    - 09. The issue of multiple causation, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-09.pdf)
-    - 10. Probablistic reasoning, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-10.pdf)
-    - 11. The role of chance, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-1-11.pdf)
+- Part I. Science and Scientific Research
+    - 01. What is science
+    - 02. Falsifiability
+    - 03. Operationism and essentialism
+    - 04. Testimonials and case study
+    - 05. Correlation and causation
+    - 06. Getting things under control
+    - 07. The artificality criticism
+    - 08. The importance of converging evidence
+    - 09. The issue of multiple causation
+    - 10. Probablistic reasoning
+    - 11. The role of chance
 
 - Part II. Academic reading
-        ^[Further reading: American psychological association. (2010).]
-    - 12. Category and structure of academic articles, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://teachings.likan.info/Scientific-Research/CH-02.pdf)
-    - 13. References in academic articles, [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://pan.baidu.com/s/1IFWXKSRq2y7OwsmyHj6bsg), SN: ah7d
+    - 12. Category and structure of academic articles
+    - 13. References in academic articles
 
-<!---
+<!--
     - 14. Databases, journals, and search engines
     - 15. Bibliography softwares
 
@@ -78,31 +74,23 @@ This course is designed to expose students to the academic side of scientific re
     - 16. Corruptibility
     - 17. Internment
     - 18. Redemption
---->
+-->
 
 # 4. Final examination
 
+To Be Announced
+
+<!--
   - Download the exam file from the following link during **2020-06-17, 1000** to **2020-06-17, 1200**.
-  
-    - 链接:https://pan.baidu.com/s/1GzL-1m62crsjuJ9YrCOXsA  
-    - 密码:9dp8
-  
   - Write your answers in **Mandarin CHINESE**.
-
   - Include your name, your student ID, name of the course in your answer sheet.
-
   - Rename your answer sheet with the following pattern `ID-Name`.
-
   - Save your answer sheet both in **.doc / .docx** format and in  **.PDF** format.
-
   - Send the two files to the following email address: `zhanlikan@blcu.edu.cn` before **2020-06-17, 1201**.
 
-<!---
 - Oral presentations
     - Presentation Lists: [Link](http://appendix.likan.info/Science-and-Scientific-Research/reading-lists/Presentation_Lists.xlsx)
---->
 
-<!---
 - Procedure of Scientific Research
     - Chambers, C. (2017). *The seven deadly sins of psychology: A manifesto for reforming the culture of scientific practice*. Princeton, NJ: Princeton University Press.
     - Evans, J. S. B. T. (2016). *How to Be a Researcher: A strategic guide for academic success*. East Sussex, FA: Routledge.
@@ -119,4 +107,4 @@ This course is designed to expose students to the academic side of scientific re
 
 - Other References
     - Hock, R. R. (2009). *Forty studies that changed psychology: Explorations into the history of psychological research* (6 ed.). New Jersey, NJ: Pearson Education.
---->
+-->

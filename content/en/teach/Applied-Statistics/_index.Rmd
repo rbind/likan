@@ -2,7 +2,8 @@
 title: "Applied Statistics"
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "`r Sys.Date()`"
+lastmod: '2017-03-01'
+#lastmod: "`r Sys.Date()`"
 show_toc: yes
 disable_comments: yes
 output:
@@ -10,9 +11,9 @@ output:
     toc: yes
 ---
 
-Not Avaliable for Now
+Not Available for Now
 
-<!--- 
+<!--
 # 1. Time and Location
 
 - Time: 19:00 - 22:00, Thuesday
@@ -64,6 +65,6 @@ More specifically, you will learn:
   - Chapter 14. Two-Factor Analysis of Variance (Independent Measures).
 
 # 5. Examination
---->
+-->
 
 To Be Announced
