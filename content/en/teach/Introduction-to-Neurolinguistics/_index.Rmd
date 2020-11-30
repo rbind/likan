@@ -45,7 +45,7 @@ This class intends to provide a coherent view on the relation between language a
     - Section 1.5. Syntactic Relations during Sentence Processing: [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_01_5.pdf)
     - Section 1.6. Processing Semantic Relations: [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_01_6.pdf)
     - Section 1.7. Thematic Role Assignment: Semantic and Syntactic Features: [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_01_7.pdf)
-    - Section 1.8. Processing Prosodic Information
+    - Section 1.8. Processing Prosodic Information: [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_01_8.pdf)
     - Section 1.9. Functional Neuroanatomy of Language Comprehension
 
   - Chapter 2. Excursions
