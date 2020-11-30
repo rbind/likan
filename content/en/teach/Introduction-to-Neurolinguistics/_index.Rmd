@@ -64,20 +64,16 @@ This class intends to provide a coherent view on the relation between language a
 
 # 5. Examination
 
-To Be Announced
-
-<!--
 - Your will write a reading report of an academic article.
 - The article you read should
   - be written in English;
   - be an appropriate article for the course, i.e., relating to neurolinguistics;
-  - be published in the last five years, i.e., 2015 - 2019;
+  - be published in the last five years, i.e., 2016 - 2020;
   - be an original research article, not a review article;
 - The report you submitted should
   - be written in Chinese;
-  - be about 3000 words in length (Chinese Charaters);
+  - be about 3000 words in length (Chinese Characters);
   - consist of two main parts:
     - background, methods, and main findings of the article ( about 1500 - 2000 words);
     - future directions of this topic (1000 - 1500 words).
-- Your should send your report to my email address before **January 11, 2020, 23:59**.
--->
+- Your should send your report to my email address before **December 23, 2020, 23:59**.
