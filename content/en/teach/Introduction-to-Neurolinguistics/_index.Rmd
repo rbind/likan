@@ -62,7 +62,7 @@ This class intends to provide a coherent view on the relation between language a
   - Chapter 7. Evolution of Language
   - Chapter 8. The Neural Basis of Language
 
-# 5. Examination
+# 5. Examination (Updated!)
 
 - Your will write a reading report of an academic article.
 - The article you read should
@@ -76,4 +76,5 @@ This class intends to provide a coherent view on the relation between language a
   - consist of two main parts:
     - background, methods, and main findings of the article ( about 1500 - 2000 words);
     - future directions of this topic (1000 - 1500 words).
-- Your should send your report to my email address before **December 23, 2020, 23:59**.
+- Your should send your report to the following address before **December 23, 2020, 23:59**. \
+  [zhanlikan@blcu.edu.cn](mailto: zhanlikan@blcu.edu.cn)
