@@ -24,37 +24,8 @@ Students of this course should be familiar with the basic concepts used in stati
 
 Linear models, their variants, and extensions are among the most useful and widely used statistical tools for social research. This course aims to provide an accessible, in-depth, modern treatment of *regression analysis*, *linear models*, *generalized linear models*, and closely related methods.
 
-# 4. Syllabus and Lecture Notes
 
-- Part 0: Introduction
-    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_01.pdf)
-    - 02. R foundations [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_02.pdf)
-- Part I: Data craft
-    - 03. Data wrangling [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_03A.pdf)
-    - 04. Examining Data [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_03B.pdf)
-    - 05. Transforming data [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_04.pdf)
-- Part II: Linear models and least squares
-    - 06. Linear least-squares regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_05.pdf)
-    - 07. Statistical Inference for Regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_06.pdf)
-    - 08. Dummy-variable regression
-    - 09. Analysis of variance
-- Part III: Linear-model diagnostics
-    - 10. Unusual and influential data
-    - 11. Non-Normality, Nonconstant Error Variance, and Nonlinearity
-    - 12. Collinearity and Its Purported Remedies
-- Part IV: Generalized linear models
-    - 13. Logit and Probit Models for Categorical Response Variables
-    - 14. Generalized Linear Models
-- Part V. Extending Linear and Generalized Linear Models
-    - 15. Time-Series Regression and Generalized Least Squares
-    - 16. Nonlinear Regression
-    - 17. Nonparametric Regression
-    - 18. Bootstrapping Regression Models
-- Part VI: Mixed-Effects Models
-    - 19. Linear Mixed-Effects Models
-    - 20. Generalized Linear and Nonlinear Mixed-Effects Models
-
-# 5. Text Books
+# 4. Text Books
 
 - Wickham, H. (2019). *Advanced R* (2 ed.). Boca Baton, UK: CRC Press. [<i class="fas fa-external-link-alt fa-sm"> \faExternalLink* </i>](https://adv-r.hadley.nz)
 - Wickham, H., & Grolemund, G. (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data*. Sebastopol, CA: O’Reilly Media. [<i class="fas fa-external-link-alt fa-sm"> \faExternalLink* </i>](http://r4ds.had.co.nz)
@@ -104,6 +75,36 @@ Linear models, their variants, and extensions are among the most useful and wide
     - Xie, Y., Allaire, J. J., & Grolemund, G. (2018). *R Markdown: The Definitive Guide*. Boca Raton, FL: CRC Press. [Full text](https://bookdown.org/yihui/rmarkdown/)
 
 -->
+
+# 5. Syllabus and Lecture Notes
+
+- Part 0: Introduction
+    - 01. Course introduction [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_01.pdf)
+    - 02. R foundations [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_02.pdf)
+- Part I: Data craft
+    - 03. Data wrangling [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_03A.pdf)
+    - 04. Examining Data [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_03B.pdf)
+    - 05. Transforming data [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_04.pdf)
+- Part II: Linear models and least squares
+    - 06. Linear least-squares regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_05.pdf)
+    - 07. Statistical Inference for Regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_06.pdf)
+    - 08. Dummy-variable regression
+    - 09. Analysis of variance
+- Part III: Linear-model diagnostics
+    - 10. Unusual and influential data
+    - 11. Non-Normality, Nonconstant Error Variance, and Nonlinearity
+    - 12. Collinearity and Its Purported Remedies
+- Part IV: Generalized linear models
+    - 13. Logit and Probit Models for Categorical Response Variables
+    - 14. Generalized Linear Models
+- Part V. Extending Linear and Generalized Linear Models
+    - 15. Time-Series Regression and Generalized Least Squares
+    - 16. Nonlinear Regression
+    - 17. Nonparametric Regression
+    - 18. Bootstrapping Regression Models
+- Part VI: Mixed-Effects Models
+    - 19. Linear Mixed-Effects Models
+    - 20. Generalized Linear and Nonlinear Mixed-Effects Models
 
 # 6. Final Examination
 

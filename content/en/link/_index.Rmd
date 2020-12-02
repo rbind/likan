@@ -8,12 +8,10 @@ output:
     toc: true
 ---
 
-# Free online books for Julia and Statistics
+# Experiment design
 
-- [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/) – Vectors, Matrices, and Least Squares
-- [Statistics with Julia](https://statisticswithjulia.org/index.html): Fundamentals for Data Science, Machine Learning and Artificial Intelligence
-- [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/): A Bayesian Course with Examples in R and Stan
-
+- [jsPsych](https://www.jspsych.org): A JavaScript library for creating and running behavioral experiments in a web browser.
+- [PsychoPy](http://psychopy.org): PsychoPy is a free cross-platform package allowing you to run a wide range of experiments in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics...)
 # Research groups and personal websites
 
 1. Language
@@ -36,6 +34,13 @@ output:
 - [Heyes, Cecilia](http://users.ox.ac.uk/~ascch/index.htm), University of Oxford, UK.
 - [Sloman, Steven](https://sites.google.com/site/slomanlab/lab-members), Brown University.
 - [Wang, Zheng](https://www.thedocc.com), The Ohio State University, OH.
+- [Jerome R. Busemeyer](https://jbusemey.pages.iu.edu/home.html) and his [Judgment and Decision Research Lab](https://jbusemey.pages.iu.edu/lab/Lab.htm), Indiana University.
+
+# Free online books for Julia and Statistics
+
+- [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/) – Vectors, Matrices, and Least Squares
+- [Statistics with Julia](https://statisticswithjulia.org/index.html): Fundamentals for Data Science, Machine Learning and Artificial Intelligence
+- [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/): A Bayesian Course with Examples in R and Stan
 
 # Graphical statistical tools based on R
 
