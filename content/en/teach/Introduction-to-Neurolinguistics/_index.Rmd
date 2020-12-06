@@ -24,12 +24,12 @@ This class intends to provide a coherent view on the relation between language a
 
 - Friederici, A. D. (2017). *Language in Our Brain: The Origins of a Uniquely Human Capacity*. Cambridge, MA: The MIT Press.
 
-<!---
+<!--
 - Ahlsen, E. (2006). *Introduction to Neurolinguistics*. Amsterdam, The Netherlands: John Benjamins Publishing.
 - Ingram, J. C. L. (2007). *Neurolinguistics: An Introduction to Spoken Language Processing and its Disorders*. Cambridge, UK: Cambridge University Press.
 - Kemmerer, D. (2014). *Cognitive Neuroscience of Language*. New York, NY: Psychology Press.
 - Schnelle, H. (2010). *Language in the Brain*. Cambridge, UK: Cambridge University Press.
---->
+-->
 
 # 4. Syllabus and Lecture Notes
 
@@ -50,11 +50,11 @@ This class intends to provide a coherent view on the relation between language a
 
   - Chapter 2. Excursions
 
-- Part II. The brain networks affording Language
+- Part II. The brain networks affording Language: [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/CH_03_Part_Introduction.pdf)
   - Chapter 3. The Structural Language Network
   - Chapter 4. The Functional Language Network
 
-- Part III. The brain basis of language acquisition
+- Part III. The brain basis of language acquisition: [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/NeuroLing/LangAcquis.pdf)
   - Chapter 5. The Brain’s Critical Period for Language Acquisition
   - Chapter 6. Ontogeny of the Neural Language Network
 

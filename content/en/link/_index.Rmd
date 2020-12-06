@@ -37,6 +37,10 @@ output:
 - [Wang, Zheng](https://www.thedocc.com), The Ohio State University, OH.
 - [Jerome R. Busemeyer](https://jbusemey.pages.iu.edu/home.html) and his [Judgment and Decision Research Lab](https://jbusemey.pages.iu.edu/lab/Lab.htm), Indiana University.
 
+3. Reasoning
+
+- [Shira Elqayam](https://www.dmu.ac.uk/about-dmu/academic-staff/health-and-life-sciences/shira-elqayam/shira-elqayam.aspx), De Montfort University, UK
+
 # Free online books for Julia and Statistics
 
 - [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/) – Vectors, Matrices, and Least Squares
