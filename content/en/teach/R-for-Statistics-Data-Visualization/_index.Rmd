@@ -88,8 +88,8 @@ Linear models, their variants, and extensions are among the most useful and wide
 - Part II: Linear models and least squares
     - 06. Linear least-squares regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_05.pdf)
     - 07. Statistical Inference for Regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_06.pdf)
-    - 08. Dummy-variable regression
-    - 09. Analysis of variance
+    - 08. Dummy-variable regression [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_07.pdf)
+    - 09. Analysis of variance [<i class="far fa-file-pdf"> \faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/RStats/CH_08.pdf)
 - Part III: Linear-model diagnostics
     - 10. Unusual and influential data
     - 11. Non-Normality, Nonconstant Error Variance, and Nonlinearity
