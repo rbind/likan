@@ -1,0 +1,21 @@
+---
+title: 视觉加工的第三条神经通路
+author: ~
+date: '2020-12-16'
+slug: evidence-for-a-third-visual-pathway-specialized-for-social-perception
+categories: []
+tags: []
+bibliography: [bibliography/bibliography.bib]
+link-citations: yes
+csl: [bibliography/apa-old-doi-prefix.csl]
+output:
+  html_document:
+    fig_width: 6
+    fig_caption: true
+---
+
+传统模型认为视觉加工分为腹侧和背侧两个神经通路：腹侧通路负责物体的识别，而背侧同路则用于计算物体的运动和与该物体有关的行为。但是 @RN1685 认为视觉加工似乎存在着第三条通路(图1)，该通路从初级视觉区经运动相关区域最后到达颞叶上回。颞上沟主要用于处理面部和身体的运动，如表情、眼睛注视、听视觉整合、目的和情绪等。所以该通路的作用似乎是专门用于社会性知觉有关的动态方面的加工。
+
+![图1](https://supporting-information.oss-cn-beijing.aliyuncs.com/posts/2020-12-16-evidence-for-a-third-visual-pathway-specialized-for-social-perception-K-Figure.png)
+
+参考文献
