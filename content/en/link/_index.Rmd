@@ -59,3 +59,4 @@ output:
 - [International Picture Naming Project website](https://crl.ucsd.edu/experiments/ipnp/1stimuli.html): The picture stimuli set consist of black-and-white line drawings of 520 common objects and 275 transitive and intransitive actions.
 - [De-Jargonizer](http://scienceandpublic.com/): An online tool that assesses and scores the accessibility of text.
 - [Critical Analysis Project](http://critical-analysis.org/)
+- [THINGS object concept and object image database](https://osf.io/jum2f/)
