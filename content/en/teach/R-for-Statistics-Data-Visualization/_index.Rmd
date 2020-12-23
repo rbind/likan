@@ -110,9 +110,9 @@ Linear models, their variants, and extensions are among the most useful and wide
 
   - To successfully complete the examination, your computer should have already installed the *R* software and at least two extra R packages: *rmarkdown* and *car*.
 
-  - Download the file from the following link: [*Final_Exam.Rmd*](Final_Exam.Rmd). The link is available from **2020-12-23, 0900** to **2020-12-24, 2359**.
+  - Download the file from the following link: [Final_Exam](Final_Exam.zip). The link is available from **2020-12-23, 0900** to **2020-12-24, 2359**.
 
-  - Rename the `Rmd` file into the following format *`SurnameGivenname_Student Number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
+  - Unzip and rename the `Rmd` file into the following format *`SurnameGivenname_Student Number.Rmd`* in Pinyin, such as *`ZhangSan_20170708.Rmd`*.
 
   - Open the renamed *`.Rmd`* file with *`R`* and change the *`Name-Number`* region in the front matter of the *`Rmd`* file to your own name in Chinese characters and your student number, such as *`张三 - 20181030`*.
 
