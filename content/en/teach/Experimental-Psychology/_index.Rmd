@@ -2,8 +2,8 @@
 title: "Experimental Psychology"
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "`2020-06-30"
-# lastmod: "`r Sys.Date()`"
+#lastmod: "`2021-03-02"
+lastmod: "`r Sys.Date()`"
 show_toc: yes
 disable_comments: no
 output:
