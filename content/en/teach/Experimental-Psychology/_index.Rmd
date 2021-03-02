@@ -13,19 +13,9 @@ output:
 
 # 1. Time and Location
 
-To Be Announced
-
-<!--
-<span style="font-weight:bold; color: red; font-size:120%;">
-On-site teaching this semester will not be available <br>
-until at least April,  <br>
-because of the coronavirus outbreak in China.
-</span>
-
-- Time: 14:00 - 18:00, Monday
-- Location: 119, Teaching Building 5
+- Time: 08:00 - 12:00, Wednesday
+- Location: 203, Main Building South
 - Lecturer: Likan Zhan
--->
 
 # 2. Course Information
 
@@ -45,7 +35,7 @@ Therefore, this course should help you:
 # 4. Syllabus and Lecture Notes
 
 - Part I. Foundations of Research
-    - Chapter 01. Explanation in Scientific Psychology
+    - Chapter 01. Explanation in Scientific Psychology [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-01.pdf)
     - Chapter 02. Descriptive Methods
     - Chapter 03. Experimental Methods
     - Chapter 04. Applied Research
