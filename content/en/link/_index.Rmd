@@ -62,3 +62,4 @@ output:
 - [THINGS object concept and object image database](https://osf.io/jum2f/)
 - [Biological Motion Lab](https://www.biomotionlab.ca)
 - [Advent of Code](https://adventofcode.com)
+- [EasyChair](https://easychair.org)

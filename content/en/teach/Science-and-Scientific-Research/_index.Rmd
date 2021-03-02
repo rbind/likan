@@ -1,8 +1,8 @@
 ---
 title: 'Science and Scientific Research'
 author: "Likan Zhan"
-date: '2017-03-01'
-lastmod: "2020-06-17"
+date: "2017-03-01"
+lastmod: "2021-03-02"
 # lastmod: "`r Sys.Date()`"
 show_toc: yes
 disable_comments: no
@@ -12,19 +12,9 @@ output:
 ---
 # 1. Lecture Time and Location
 
-To Be Announced
-
-<!--
-<span style="font-weight:bold; color: red; font-size:120%;">
-On-site teaching this semester will not be avaliable <br>
-until at least April,  <br>
-because of the coronavirus outbreak in China.
-</span>
-
-- Time: 10:00 - 12:00, Thuesday
-- Location: 211, Teaching Building 5
+- Time: 14:00 - 16:00 (Odd week) / 18:00 (Even week), Tuesday
+- Location: 507, Teaching Building 1
 - Lecturer: Likan Zhan
--->
 
 # 2. Course Information
 
@@ -38,7 +28,7 @@ This course is designed to expose students to the academic side of scientific re
 # 4. Syllabus and Lecture Notes
 
 - Part I. Science and Scientific Research
-    - 01. What is science
+    - 01. What is science [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-01.pdf)
     - 02. Falsifiability
     - 03. Operationism and essentialism
     - 04. Testimonials and case study
