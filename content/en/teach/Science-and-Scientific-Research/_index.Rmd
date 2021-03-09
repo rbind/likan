@@ -29,8 +29,8 @@ This course is designed to expose students to the academic side of scientific re
 
 - Part I. Science and Scientific Research
     - 01. What is science [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-01.pdf)
-    - 02. Falsifiability
-    - 03. Operationism and essentialism
+    - 02. Falsifiability [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-02.pdf)
+    - 03. Operationism and essentialism [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-03.pdf)
     - 04. Testimonials and case study
     - 05. Correlation and causation
     - 06. Getting things under control
