@@ -36,7 +36,7 @@ Therefore, this course should help you:
 
 - Part I. Foundations of Research
     - Chapter 01. Explanation in Scientific Psychology [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-01.pdf)
-    - Chapter 02. Descriptive Methods
+    - Chapter 02. Descriptive Methods  [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-02.pdf)
     - Chapter 03. Experimental Methods
     - Chapter 04. Applied Research
     - Chapter 05. Ethics in Psychological Research
