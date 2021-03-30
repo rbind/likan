@@ -32,8 +32,8 @@ This course is designed to expose students to the academic side of scientific re
     - 02. Falsifiability [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-02.pdf)
     - 03. Operationism and essentialism [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-03.pdf)
     - 04. Testimonials and case study [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-04.pdf)
-    - 05. Correlation and causation  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-05.pdf)
-    - 06. Getting things under control
+    - 05. Correlation and causation [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-05.pdf)
+    - 06. Getting things under control [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-06.pdf)
     - 07. The artificality criticism
     - 08. The importance of converging evidence
     - 09. The issue of multiple causation
