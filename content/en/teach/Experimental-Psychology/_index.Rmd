@@ -38,7 +38,7 @@ Therefore, this course should help you:
     - Chapter 01. Explanation in Scientific Psychology [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-01.pdf)
     - Chapter 02. Descriptive Methods [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-02.pdf)
     - Chapter 03. Experimental Methods [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-03.pdf)
-    - Chapter 04. Applied Research [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-03.pdf)
+    - Chapter 04. Applied Research [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-04.pdf)
     - Chapter 05. Ethics in Psychological Research
 
 - Part II. Principles and Practices of Experimental Psychology 
