@@ -8,10 +8,36 @@ output:
     toc: true
 ---
 
+# Un-categorized useful links
+
+- [ThreeDWorld](http://www.threedworld.org): A High-Fidelity, Multi-Modal Platform for Interactive Physical Simulation
+- [International Picture Naming Project website](https://crl.ucsd.edu/experiments/ipnp/1stimuli.html): The picture stimuli set consist of black-and-white line drawings of 520 common objects and 275 transitive and intransitive actions.
+- [De-Jargonizer](http://scienceandpublic.com/): An online tool that assesses and scores the accessibility of text.
+- [Critical Analysis Project](http://critical-analysis.org/)
+- [THINGS object concept and object image database](https://osf.io/jum2f/)
+- [Biological Motion Lab](https://www.biomotionlab.ca)
+- [Advent of Code](https://adventofcode.com)
+- [EasyChair](https://easychair.org)
+- [regex101](https://regex101.com): build, test, and debug regex
+- [mathigon.org](https://mathigon.org): The Textbook of the Future: Interactive. Personalised. Free.
+
+
 # Experiment design
 
 - [jsPsych](https://www.jspsych.org): A JavaScript library for creating and running behavioral experiments in a web browser.
 - [PsychoPy](http://psychopy.org): PsychoPy is a free cross-platform package allowing you to run a wide range of experiments in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics...)
+
+# Free online books for Julia and Statistics
+
+- [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/) – Vectors, Matrices, and Least Squares
+- [Statistics with Julia](https://statisticswithjulia.org/index.html): Fundamentals for Data Science, Machine Learning and Artificial Intelligence
+- [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/): A Bayesian Course with Examples in R and Stan
+
+# Graphical statistical tools based on R
+
+- [JASP](https://github.com/jasp-stats/jasp-desktop): JASP is an open-source statistics program that is free, friendly, and flexible. Armed with an easy-to-use GUI, JASP allows both classical and Bayesian analyses.
+- [jamovi](https://www.jamovi.org/): jamovi is a new “3rd generation” statistical spreadsheet.
+- [The R Commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/index.html): The R Commander is a graphical user interface (GUI) to the free, open-source R statistical software. The R Commander is implemented as an R package, the Rcmdr package, which is freely available on CRAN (the R package archive).
 
 # Research groups and personal websites
 
@@ -40,27 +66,3 @@ output:
 3. Reasoning
 
 - [Shira Elqayam](https://www.dmu.ac.uk/about-dmu/academic-staff/health-and-life-sciences/shira-elqayam/shira-elqayam.aspx), De Montfort University, UK
-
-# Free online books for Julia and Statistics
-
-- [Introduction to Applied Linear Algebra](https://web.stanford.edu/~boyd/vmls/) – Vectors, Matrices, and Least Squares
-- [Statistics with Julia](https://statisticswithjulia.org/index.html): Fundamentals for Data Science, Machine Learning and Artificial Intelligence
-- [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/): A Bayesian Course with Examples in R and Stan
-
-# Graphical statistical tools based on R
-
-- [JASP](https://github.com/jasp-stats/jasp-desktop): JASP is an open-source statistics program that is free, friendly, and flexible. Armed with an easy-to-use GUI, JASP allows both classical and Bayesian analyses.
-- [jamovi](https://www.jamovi.org/): jamovi is a new “3rd generation” statistical spreadsheet.
-- [The R Commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/index.html): The R Commander is a graphical user interface (GUI) to the free, open-source R statistical software. The R Commander is implemented as an R package, the Rcmdr package, which is freely available on CRAN (the R package archive).
-
-# Un-categorized useful links
-
-- [ThreeDWorld](http://www.threedworld.org): A High-Fidelity, Multi-Modal Platform for Interactive Physical Simulation
-- [International Picture Naming Project website](https://crl.ucsd.edu/experiments/ipnp/1stimuli.html): The picture stimuli set consist of black-and-white line drawings of 520 common objects and 275 transitive and intransitive actions.
-- [De-Jargonizer](http://scienceandpublic.com/): An online tool that assesses and scores the accessibility of text.
-- [Critical Analysis Project](http://critical-analysis.org/)
-- [THINGS object concept and object image database](https://osf.io/jum2f/)
-- [Biological Motion Lab](https://www.biomotionlab.ca)
-- [Advent of Code](https://adventofcode.com)
-- [EasyChair](https://easychair.org)
-- [regex101](https://regex101.com): build, test, and debug regex
