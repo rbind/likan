@@ -1,0 +1,23 @@
+---
+title: 元认知决策和内部概率判断, Neuron, 4.21
+author: ''
+date: '2021-04-25'
+slug: identification-and-disruption-of-a-neural-mechanism-for-accumulating-prospective-metacognitive-information-prior-to-decision-making
+categories: []
+tags: []
+bibliography: [bibliography/bibliography.bib]
+link-citations: yes
+csl: [bibliography/apa-old-doi-prefix.csl]
+---
+
+实验刺激为两个随机点运动图 (random- dot kinematogram, RDK)：A类包含了全部100%的点，但运动方向是不一致的(一致性在0%-75%之间); B类只包含了部分点(10%-100%), 但运动方向是一致的(一致性为100%).
+
+被试的任务是按键判断点的运动方向 (Perceptual decision), 在判断正确的前提下, 被试得到奖赏的概率是图中随机点的个数: 正确判断A类图运动方向将会100%获得奖赏; 而正确判断B类图运动方向获得奖赏的概率将会因为点数量的限制位于10%-100%之间.
+
+实验开始第一阶段会同时呈现A和B类图各一个, 被试要在这两个图中进行选择 (metacognitive judgments), 以便最大化自己获得奖赏的可能性. 此时A类选择可被认为是 "内部概率判断''(internal probability task), 因为被试要对自己的认知能力进行主观判断，自己能否正确辨认该图的整体运动方向, 因为只要判断正确就能获得奖赏; 而B类选择则被认为是 "外部概率判断'' (external), 即被试需要判断图中这些点能够获得奖赏的概率, 因为点的运动方向容易判断, 但获得奖赏的概率受点的个数的限制.
+
+@RN1691 通过行为记录、核磁共振和经颅磁刺激研究发现外侧前额叶前端 (aIPFC) 是基于内部概率判断进行元认知判断的大脑区域。
+
+原始文献
+
+
