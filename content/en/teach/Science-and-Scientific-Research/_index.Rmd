@@ -36,8 +36,8 @@ This course is designed to expose students to the academic side of scientific re
     - 06. Getting things under control [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-06.pdf)
     - 07. The artificality criticism [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-07.pdf)
     - 08. The importance of converging evidence [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-08.pdf)
-    - 09. The issue of multiple causation [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-08.pdf)
-    - 10. Probablistic reasoning
+    - 09. The issue of multiple causation [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-09.pdf)
+    - 10. Probablistic reasoning  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-10.pdf)
     - 11. The role of chance
 
 - Part II. Academic reading
