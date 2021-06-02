@@ -43,8 +43,8 @@ Therefore, this course should help you:
 
 - Part II. Principles and Practices of Experimental Psychology 
     - Chapter 06. Psychophysics [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-06.pdf)
-    - Chapter 07. Perception  [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-07.pdf)
-    - Chapter 08. Attention and Reaction Time
+    - Chapter 07. Perception [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-07.pdf)
+    - Chapter 08. Attention and Reaction Time [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/ExpPsychol/CH-08.pdf)
     - Chapter 09. Conditioning and Learning
     - Chapter 10. Remembering and Forgetting
     - Chapter 11. Thinking and Problem Solving
