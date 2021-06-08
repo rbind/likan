@@ -41,8 +41,8 @@ This course is designed to expose students to the academic side of scientific re
     - 11. The role of chance [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-1-11.pdf)
 
 - Part II. Academic reading
-    - 12. Category and structure of academic articles
-    - 13. References in academic articles
+    - 12. Category and structure of academic articles  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-2-1.pdf)
+    - 13. References in academic articles  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://likan.oss-cn-beijing.aliyuncs.com/SciRec/CH-2-2.pdf)
 
 <!--
     - 14. Databases, journals, and search engines
