@@ -7,10 +7,10 @@ date: "2016-05-05"
 
 他给自己的定位是：一名教员，一个科研工作者，一只小白程序员，一头科普工作者。
 
-想了解这名教员，可以去看看他教过的或正在教的[课程](en\teach)；
+想了解这名教员，可以去看看他教过的或正在教的[课程](en/teach)；
 
-想了解这个科研工作者，可以去看看他的[简历](http://localhost:4321/en/cv/likan_zhan_cv_en)、他的[小组成员](https://sapere-aude.group/member/)、和 [小组开展的项目](https://sapere-aude.group/projects/)；
+想了解这个科研工作者，可以去看看他的[简历](/en/cv/likan_zhan_cv_en)、他的[小组成员](https://sapere-aude.group/member/)、和 [小组开展的项目](https://sapere-aude.group/projects/)；
 
-想了解这只小白程序员，可以看看他的[技能简介](http://localhost:4321/cn/cv/likan_zhan_cv_cn/#专业技能)，以及他在R语言、julia语言、和 StackOverflow 等领域留下的足迹；
+想了解这只小白程序员，可以看看他的[技能简介](/cn/cv/likan_zhan_cv_cn/#专业技能)，以及他在R语言、julia语言、和 StackOverflow 等领域留下的足迹；
 
 想了解这头科普工作者，可以看看他做的公开演讲、公开课程、和微博更新。
