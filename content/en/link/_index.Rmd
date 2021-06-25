@@ -20,6 +20,7 @@ output:
 - [EasyChair](https://easychair.org)
 - [regex101](https://regex101.com): build, test, and debug regex
 - [mathigon.org](https://mathigon.org): The Textbook of the Future: Interactive. Personalised. Free.
+- [Character Lab](https://characterlab.org): Actionable advice for parents and teachers based on science. 
 
 
 # Experiment design
