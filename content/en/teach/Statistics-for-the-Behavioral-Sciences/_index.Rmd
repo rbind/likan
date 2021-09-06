@@ -2,7 +2,7 @@
 title: "Statistics for the Behavioral Sciences"
 author: "Likan Zhan"
 date: '2017-03-01'
-lastmod: "2020-01-01"
+lastmod: "2021-09-06"
 show_toc: yes
 disable_comments: yes
 output:
@@ -12,14 +12,9 @@ output:
 
 # 1. Time and Location
 
-To Be Announced
-
-<!--
-
-- Time: 08:00 - 10:00, Thuesday
-- Location: Room 107, Main Building South
+- Time: 08:00 - 11:00, Monday
+- Location: Room 451, Main Building North
 - Lecturer: Likan Zhan
--->
 
 # 2. Course Information
 
@@ -44,11 +39,12 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 
 # 4. Syllabus and Lecture Notes
 
-- Part I. Introduction and Descriptive Statistics
+- Part I. Introduction and Descriptive Statistics [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.01.pdf)
   - Chapter 01. Introduction to Statistics
   - Chapter 02. Frequency Distributions
   - Chapter 03. Central Tendency
   - Chapter 04. Variability
+
 
 - Part II. Foundations of Inferential Statistics
   - Chapter 05. z-Scores: Location of Scores and Standardized Distributions
