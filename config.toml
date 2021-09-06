@@ -10,6 +10,7 @@ enableEmoji = true
 footnotereturnlinkcontents = "↩"
 MetaDataFormat = "yaml" # format of a new post
 enableGitInfo = false
+disablePathToLower = true
 
 [[menu.main]]
     name = "English"
