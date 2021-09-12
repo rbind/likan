@@ -20,7 +20,7 @@ output:
 
 Statistical procedures provide researchers with objective and systematic methods for describing and interpreting their research results. Scientific research is the system that we use to gather information, and statistics are the tools that we use to distill the information into sensible and justified conclusions. The goal of this course is not only to teach the methods of statistics, but also to convey the basic principles of objectivity and logic that are essential for science and valuable for decision making in everyday life.
 
-This course is an introductory course of *Statistics for the the Behavioral Sciences*. A primary goal of this course is to make the task of learning statistics as easy and painless as possible. Topics of this course include Frequency Distribution, Centtral Tendency, Variability, z-scores, Probability and Samples, Hypothesis Testing, t-test, ANOVA, Correlation, Regression, Chi-Square test, and Binomal test etc. At the end of the course you should be able to read behavioural research that uses basic statistical methods; to undertake elementary data analysis; and to take more advanced courses in statistics, such as the course *[R for Modeling and Visualizing Data](/en/teach/R-for-Statistics-Data-Visualization/)*. More specifically, you will learn:
+This course is an introductory course of *Statistics for the the Behavioral Sciences*. A primary goal of this course is to make the task of learning statistics as easy and painless as possible. Topics of this course include Frequency Distribution, Centtral Tendency, Variability, z-scores, Probability and Samples, Hypothesis Testing, t-test, ANOVA, Correlation, Regression, Chi-Square test, and Binomal test etc. At the end of the course you should be able to read behavioural research that uses basic statistical methods; to undertake elementary data analysis; and to take more advanced courses in statistics, such as the course *Data Science With Julia*. More specifically, you will learn:
 
 - to summarize statistical data and to discover patterns in data;
 - to draw inferences from a sample to a larger population from which the sample was drawn; and
@@ -40,7 +40,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 # 4. Syllabus and Lecture Notes
 
 - Part I. Introduction and Descriptive Statistics [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.01.pdf)
-  - Chapter 01. Introduction to Statistics
+  - Chapter 01. Introduction to Statistics [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.02.pdf)
   - Chapter 02. Frequency Distributions
   - Chapter 03. Central Tendency
   - Chapter 04. Variability
