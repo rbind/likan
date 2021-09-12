@@ -39,9 +39,9 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 
 # 4. Syllabus and Lecture Notes
 
-- Part I. Introduction and Descriptive Statistics [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.01.pdf)
-  - Chapter 01. Introduction to Statistics [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.02.pdf)
-  - Chapter 02. Frequency Distributions
+- Part I. Introduction and Descriptive Statistics
+  - Chapter 01. Introduction to Statistics [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.01.pdf)
+  - Chapter 02. Frequency Distributions [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.02.pdf)
   - Chapter 03. Central Tendency
   - Chapter 04. Variability
 
