@@ -11,11 +11,8 @@ output:
 ---
 # 1. Time and Location
 
-Not Available This Semester
-
-<!--
-- Time: 0800 - 1000, Each Monday
-- Location: **Room 211, Teaching Building 5** (Changed!!)
+- Time: 0800 - 1000, Each Friday
+- Location: Room 216, Main Building South
 - Lecturer: Likan Zhan
 
 # 2. Course Information
@@ -31,8 +28,8 @@ Not Available This Semester
 # 4. Lecture Notes
 
 - Part I. Background and methods
-  - Chapter 00. Introduction to the Course
-  - Chapter 01. A Brief History of Cognitive Neuroscience
+  - Chapter 00. Introduction to the Course [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/CognNeurosci/Ch.00.pdf)
+  - Chapter 01. A Brief History of Cognitive Neuroscience [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/CognNeurosci/Ch.01.pdf)
   - Chapter 02. Structure and Function of the Nervous System
   - Chapter 03. Methods of Cognitive Neuroscience
 - Part II. Core Processes
@@ -40,8 +37,8 @@ Not Available This Semester
   - Chapter 05. Sensation and Perception.
   - Chapter 06. Object Recognition.
   - Chapter 07. Attention.
-    - Chapter 08. Action.
-    - Chapter 09. Memory.
+  - Chapter 08. Action.
+  - Chapter 09. Memory.
   - Chapter 10. Emotion.
   - Chapter 11. Language.
 - Part III. Control Processes
@@ -57,13 +54,12 @@ Not Available This Semester
  - The article you read should
      - be written in English;
      - be an appropriate article for the course;
-     - be published in the last five years, i.e., 2015 - 2019;
+     - be published in the last five years, i.e., 2017 - 2021;
      - be an original research article, not a review article;
      - be NOT related to language.
  - The report you submitted should
      - be written in Chinese;
-     - be about 3000 words in length (Chinese Charaters);
+     - be about 3000 words in length (Chinese Characters);
      - consist of two main parts:
          - background, methods, and main findings of the article ( about 1500 - 2000 words);
          - future directions of this topic (1000 - 1500 words).
--->
