@@ -43,7 +43,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 01. Introduction to Statistics [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.01.pdf)
   - Chapter 02. Frequency Distributions [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.02.pdf)
   - Chapter 03. Central Tendency [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.03.pdf)
-  - Chapter 04. Variability
+  - Chapter 04. Variability [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.04.pdf)
 
 
 - Part II. Foundations of Inferential Statistics
