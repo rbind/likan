@@ -30,7 +30,7 @@ output:
 - Part I. Background and methods
   - Chapter 00. Introduction to the Course [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/CognNeurosci/Ch.00.pdf)
   - Chapter 01. A Brief History of Cognitive Neuroscience [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/CognNeurosci/Ch.01.pdf)
-  - Chapter 02. Structure and Function of the Nervous System
+  - Chapter 02. Structure and Function of the Nervous System  [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/CognNeurosci/Ch.02.pdf)
   - Chapter 03. Methods of Cognitive Neuroscience
 - Part II. Core Processes
   - Chapter 04. Hemispheric Specialization
