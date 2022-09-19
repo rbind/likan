@@ -140,15 +140,21 @@ fontsize: 12pt
 
 2. 匿名评审
 
-- Frontiers in Psychology. (2020 - )
+- International Journal of Developmental Disabilities (2021 - );
 
-- Scientific Reports. (2018 - 2019)
+- Language, Cognition and Neuroscience (2021 - );
 
-- Journal of visualized experiments. (2018 - 2019)
+- First Language. (2021 - );
 
-- 语言教学与研究 (2016)
+- Frontiers in Psychology. (2020 - );
 
-- SAGE Open. (2016)
+- Scientific Reports. (2018 - 2019);
+
+- Journal of visualized experiments. (2018 - 2019);
+
+- 语言教学与研究. (In Chinese, 2016 - );
+
+- SAGE Open. (2016).
 
 3. 执业资格
 
@@ -223,6 +229,8 @@ fontsize: 12pt
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2010, August). *Children’s use of prosodic information in ambiguity resolution*. Oral session presented at the 8th Conference of Generative Linguistics in the Old World Asia (GLOW-in-Asia 8), Beijing, China.
 
 5. 受邀报告
+
+- **Zhan, L.** (2021, March). *Mixed Models with Julia*. Invited virtual lecture given at the course of *Language +* organized by Prof. Si. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Language_and_Language_Development.pdf)
 
 - **Zhan, L.** (2020, October). *Language and Language Development*. Invited lecture given at the course of *Language +* organized by Prof. Si. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Language_and_Language_Development.pdf)
 

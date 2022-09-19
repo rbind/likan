@@ -12,8 +12,8 @@ output:
 
 # 1. Time and Location
 
-- Time: 08:00 - 11:00, Monday
-- Location: Room 451, Main Building North
+- Time: 08:00 - 11:00, Tuesday
+- Location: Room 106, Main Building South
 - Lecturer: Likan Zhan
 
 # 2. Course Information

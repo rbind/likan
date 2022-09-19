@@ -157,3 +157,7 @@ disablePathToLower = true
     cn = "版权"
 [params.lang.subscribe]
     cn = "订阅"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
