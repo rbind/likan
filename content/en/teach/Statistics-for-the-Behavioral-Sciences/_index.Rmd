@@ -53,7 +53,7 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
   - Chapter 08. Introduction to Hypothesis Testing [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.08.pdf)
 
 - Part III. Using *t*-Statistics for Inferences
-  - Chapter 09. Introduction to the *t* Statistic
+  - Chapter 09. Introduction to the *t* Statistic  [<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/CH.09.pdf)
   - Chapter 10. The *t* Test for Two Independent Samples
   - Chapter 11. The *t* Test for Two Related Samples
 
