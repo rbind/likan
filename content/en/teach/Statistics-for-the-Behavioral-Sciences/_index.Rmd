@@ -70,8 +70,17 @@ This course is an introductory course of *Statistics for the the Behavioral Scie
 
 # 5. Examination
 
-- To Be Announced
 <!--
 - Time and location: **08:00-09:50, July 13**, **Room 104, Teaching Building 4**;
 - Structure of the exam: 65 multiple choices, selected from the *learning check* problems of chapters *1 - 13*; 2 essay questions, selected from the *odd-numbered problems* of chapters *9 - 13*.
 -->
+- 试题课本：[<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/TextBook.pdf)
+- 试题需要：[<i class="far fa-file-pdf">\faFilePdf[regular]</i>](http://likan.oss-cn-beijing.aliyuncs.com/StatBehavSci/%E7%BB%9F%E8%AE%A1%E8%AF%BE%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A.pdf)
+- 1月3号8早晨8点前提交试卷
+- 做好的试卷发到任课老师学校的邮箱: zhanlikan@blcu.edu.cn
+- 试卷的文件名称：学号-姓名-科目
+- 中英文作答都可以
+
+
+
+
