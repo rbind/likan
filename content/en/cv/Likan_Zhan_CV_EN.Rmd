@@ -5,15 +5,12 @@ date: '2016-01-22'
 lastmod: "`r Sys.Date()`"
 output:
   pdf_document:
-    template: ~/Documents/ADMIN/Website/LaTex/my_pandoc_template.latex
+    template: /Users/likanzhan/Documents/Meta/Technique/LaTeX/Archives/my_pandoc_template.latex
     includes:
-      in_header: ~/Documents/ADMIN/Website/LaTex/Preamble_Blogdown_CV.tex
+      in_header: /Users/likanzhan/Documents/Meta/Technique/LaTeX/Archives/Preamble_Blogdown_CV.tex
     latex_engine: xelatex
     md_extensions: -autolink_bare_uris +hard_line_breaks
     keep_tex: false
-  html_document:
-    df_print: paged
-  word_document: default
 geometry: margin=1in
 pdf: /en/cv/Likan_Zhan_CV_EN.pdf
 type: cv
@@ -175,7 +172,9 @@ fontsize: 12pt
 
 2. Periodicals
 
-- Zhou, P., Shi, J., & **Zhan, L.** (in press). Real-time comprehension of garden-path constructions by preschoolers: A Mandarin perspective. *Applied Psycholinguistics*.
+- **Zhan, L.**, & Zhou, P. (2023). The online processing of hypothetical events: A visual world eye-tracking study on conditionals and causal statements. *Experimental Psychology, 70*(2), 108-117. doi: 10.1027/1618-3169/a000579  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/ExpPsychol2023.pdf)
+
+- Zhou, P., Shi, J., & **Zhan, L.** (2021). Real-time comprehension of garden-path constructions by preschoolers: A Mandarin perspective. *Applied Psycholinguistics, 42*(1), 181-205. doi: 10.1017/S0142716420000697  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/ApplPsycholinguist2021.pdf)
 
 - Zhou, P., Ma, W., & **Zhan, L.** (2019). A deficit in using prosodic cues to understand communicative intentions by children with autism spectrum disorders: An eye-tracking study. *First Language*. doi: 10.1177/0142723719885270 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/FirstLang2019.pdf)
 
