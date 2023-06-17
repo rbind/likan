@@ -5,9 +5,9 @@ date: '2016-01-22'
 lastmod: "`r Sys.Date()`"
 output:
   pdf_document:
-    template: /Users/likanzhan/Documents/Meta/Technique/LaTeX/Archives/my_pandoc_template.latex
+    template: /Users/likanzhan/Documents/Meta/Technique/LaTeX/WebCVs/my_pandoc_template.latex
     includes:
-      in_header: /Users/likanzhan/Documents/Meta/Technique/LaTeX/Archives/Preamble_Blogdown_CV.tex
+      in_header: /Users/likanzhan/Documents/Meta/Technique/LaTeX/WebCVs/Preamble_Blogdown_CV.tex
     latex_engine: xelatex
     md_extensions: -autolink_bare_uris +hard_line_breaks
     keep_tex: false
@@ -20,10 +20,9 @@ fontsize: 12pt
 
 # Likan ZHAN
 
-- <i class="fas fa-university"> \faUniversity </i> &nbsp; No. 15, Xueyuan Road, Haidian District, Beijing 100083, China
-- <i class="fas fa-phone"> \faPhone* </i> &nbsp; + 86 10 8230 3468
-- <i class="far fa-envelope"> \faEnvelope[regular] </i> &nbsp; <zhanlikan@hotmail.com>
-- <i class="fas fa-globe"> \faGlobe </i> &nbsp; <https://likan.info>
+- <i class="fas fa-university"> \faUniversity </i> &nbsp; No. 15, Xueyuan Road, Beijing 100083, P.R. China
+- <i class="far fa-envelope"> \faEnvelope[regular] </i> &nbsp; <zhan@likan.org>
+- <i class="fas fa-globe"> \faGlobe </i> &nbsp; <https://likan.org>
 - Last update: `r Sys.Date()`
 
 ## Academic Appointment
@@ -54,54 +53,18 @@ fontsize: 12pt
 
 ## Teaching Experience
 
-- 2019 ~ Now. Experimental Psychology, <br>
-  Undergraduates, 4 hours per week, 68 hours in total
+- 2021 ~ Now, Statistics with Julia, Postgraduates, 2 hours per week
 
-- 2019 ~ Now. Introduction to Neurolinguistics, <br>
-  Postgraduates, 2 hours per week, 34 hours in total
+- 2017 ~ Now. Statistics for the Behavioral Sciences, Undergraduates, 2 hours per week
 
-- 2017 ~ Now. Statistics for the Behavioral Sciences, <br>
-  Undergraduates and Postgraduates, 2 hours per week, 34 hours in total
+- 2022 ~ Now, Educational Psychology, Undergraduates, 2 hours per week
 
-- 2016 ~ Now. R for Modeling and Visualizing Data, <br>
-  Postgraduates and PhD candidates, 4 hours per week, 68 hours in total
-
-- 2015 ~ Now. Introduction to Cognitive Neuroscience,  <br>
-  Postgraduates and PhD candidates, 2 hours per week, 34 hours in total
-
-- 2015 ~ Now. Foundations of Scientific Research, <br>
-  Undergraduates, 3 hours per week, 54 hours in total
-
-- 2015 Fall. General Psychology, <br>
-  Undergraduates, 3 hours per week, 54 hours in total
-
-## Professional Skills
-
-1. Experiment techniques
-
-- Test stimuli: Package [PGF](https://ctan.org/pkg/pgf?lang=en) in [LaTeX](https://www.latex-project.org), [ImageMagick](https://imagemagick.org) and its implementation in R [magick](https://cran.r-project.org/web/packages/magick/index.html), [OmniGraffle](https://www.omnigroup.com/omnigraffle/), as well as [Pixelmator](https://www.pixelmator.com) for image creating and editting; [praat](http://www.fon.hum.uva.nl/praat/), Packages [tuneR](https://cran.r-project.org/web/packages/tuneR/index.html) and [seewave](https://cran.r-project.org/package=seewave) in R, as well as [Adobe Audition](https://www.adobe.com/products/audition.html) for audio editing and processing; [blender](https://www.blender.org) and [Autodesk Maya](https://www.autodesk.com/products/maya/overview) for video and 3d modeling; and [ffmpeg](https://ffmpeg.org) for audio and video format converting;
-
-- Experiments building: Be familiar with package [Psychtoolbox](http://psychtoolbox.org) under [Matlab](https://www.mathworks.com/products/matlab.html), [Presentation](https://www.neurobs.com/presentation), package [Psychopy](http://www.psychopy.org) under [Python](https://www.python.org), [E-prime](https://www.pstnet.com/eprime.cfm), and [Experiment Builder](https://www.sr-research.com/experiment-builder/) for script building;
-
-- Eye-tracker: Having advanced experience in using [Eyelink II/1000 plus](https://www.sr-research.com) for experiment conducting, [Experiment Builder](https://www.sr-research.com/experiment-builder/) for experiment building, and [Data Viewer](https://www.sr-research.com/data-viewer/) for data pre-processing;
-
-- E/MEG: In charge of establishing the first Child MEG lab in China; be familiar with Yokogawa MEG system for equipment maintenance and MEG data acquisition, packages [fieldtrip](http://www.fieldtriptoolbox.org) and [SPM12](https://github.com/neurodebian/spm12) under Matlab, and [BESA](http://www.besa.de) for data processing.
-
-2. Data processing
-
-- R: Besides base [R](https://www.r-project.org), be familiar with [data.table](http://r-datatable.com), [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html), and [tidyr](https://cran.r-project.org/web/packages/tidyr/index.html) etc. for data preprocessing; [graphics](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html), [lattice](https://cran.r-project.org/package=lattice), and [ggplot2](http://ggplot2.tidyverse.org) etc. for data visualization; [car](https://cran.r-project.org/web/packages/car/index.html), [lme4](https://github.com/lme4/lme4), and [gam](https://cran.r-project.org/web/packages/gam/index.html) for computational modeling. Create the R package [acqr](https://github.com/likanzhan/acqr) etc. for teaching statistics and illustrating data visualization;
-
-- Julia: Recently start to use [julia](https://julialang.org), because of the [speed limitations](https://julialang.org/benchmarks/) of R. Besides the base and standard libraries, be familiar with [CSV.jl](https://github.com/JuliaData/CSV.jl), [DataFrames.jl](https://github.com/JuliaData/DataFrames.jl) ([Database benchmark](https://h2oai.github.io/db-benchmark/)), and [DataFramesMeta.jl](https://github.com/JuliaData/DataFramesMeta.jl) etc. for data preprocessing; [Plots.jl](https://github.com/JuliaPlots/Plots.jl), [StatsPlots.jl](https://github.com/JuliaPlots/StatsPlots.jl), and [Gadfly.jl](https://github.com/GiovineItalia/Gadfly.jl) for data visualization; as well as [Distributions.jl](https://github.com/JuliaStats/Distributions.jl), [StatsBase.jl](https://github.com/JuliaStats/StatsBase.jl), [StatsModels.jl](https://github.com/JuliaStats/StatsModels.jl), [GLM.jl](https://github.com/JuliaStats/GLM.jl), and [MixedModels.jl](https://github.com/JuliaStats/MixedModels.jl) for computational modeling;
-
-3. Other
-
-- Markup languages: Be familiar with [LaTeX](https://www.latex-project.org), [markdown](https://daringfireball.net/projects/markdown/), [R markdown](https://rmarkdown.rstudio.com) (R flavoured markdown), [Pluto.jl](https://github.com/fonsp/Pluto.jl) (julia package), and [Jupyter](https://jupyter.org) for document preparing; [knitr](https://cran.r-project.org/web/packages/knitr/index.html) (R package) [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl) and [Weave.jl](https://github.com/JunoLab/Weave.jl) (Julia package) for dynamically integrating R or Julia source code into a document; [Pandoc](https://pandoc.org) for format conversion;
-
-- Be familiar with the free source-code editor [visual studio code](https://code.visualstudio.com);
-
-- Be familiar with the distributed version control system [git](https://git-scm.com), package managers [conda](https://docs.conda.io/en/latest/), [homebrew](https://brew.sh), and [npm](https://www.npmjs.com);
-
-- Personal website: Use [hugo](https://gohugo.io) under [go](https://golang.org) language and the R package [blogdown](https://github.com/rstudio/blogdown) to build my personal website [https://likan.info](https://likan.info).
+- Archives: 
+  R for Modeling and Visualizing Data (2016 ~ 2021)
+  Experimental Psychology (2019 ~ 2021), 
+  Introduction to Neurolinguistics (2019 ~ 2021)
+  Introduction to Cognitive Neuroscience (2015 ~ 2020)
+  Foundations of Scientific Research (2015 ~ 2021)
 
 ## Grants, Projects, and Awards
 
@@ -141,14 +104,9 @@ fontsize: 12pt
 
 ## Professional Activities
 
-1. Frontiers in Psychology, Review Editor in Language Sciences (2020 - )
+1. Ad-hoc reviews
 
-2. Organization of international meetings
-
-- Academic Advisory Committee, The 24th annual conference of the International Association of Chinese Linguistics ([IACL-24](http://iacl24.blcu.edu.cn)), Beijing Language and Culture University, Beijing, China.
-
-3. Ad-hoc reviews
-
+- Cognition (2020 - );
 - International Journal of Developmental Disabilities (2021 - );
 - Language, Cognition and Neuroscience (2021 - );
 - First Language. (2021 - );
@@ -158,19 +116,22 @@ fontsize: 12pt
 - Language Teaching and Linguistic Studies. (In Chinese, 2016);
 - SAGE Open. (2016).
 
-4. Clinical licenses
+2. Clinical licenses
 
 - Licensed Examiner of Wechsler Preschool and Primary Scale of Intelligence 4th Edition (WPPSI-VI) Chinese Version.
 
 - Licensed Examiner of Adaptive Behavior Assessment System 2nd Edition (ABAS-II) Chinese Version.
 
+3. Frontiers in Psychology, Review Editor in Language Sciences (2020 - )
+
+4. Organization of international meetings
+
+- Academic Advisory Committee, The 24th annual conference of the International Association of Chinese Linguistics ([IACL-24](http://iacl24.blcu.edu.cn)), Beijing Language and Culture University, Beijing, China.
+
+
 ## Publications
 
-1. Book
-
-- **Zhan, L.** (2015). *The Interpretation of Conditionals in Natural Language*. Saarbrucken, Germany: Lap Lambert Academic Publishing.
-
-2. Periodicals
+1. Periodicals
 
 - **Zhan, L.**, & Zhou, P. (2023). The online processing of hypothetical events: A visual world eye-tracking study on conditionals and causal statements. *Experimental Psychology, 70*(2), 108-117. doi: 10.1027/1618-3169/a000579  [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/ExpPsychol2023.pdf)
 
@@ -200,7 +161,9 @@ fontsize: 12pt
 
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2012). Children's use of phonological information in ambiguity resolution: A view from Mandarin Chinese. *Journal of Child Language, 39*(04), 687-730. doi: 10.1017/S0305000911000249 [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Periodicals/JChildLang2012.pdf)
 
-3. Book chapters and conference proceedings
+2. Book, book chapters and conference proceedings
+
+- **Zhan, L.** (2015). *The Interpretation of Conditionals in Natural Language*. Saarbrucken, Germany: Lap Lambert Academic Publishing.
 
 - **Zhan, L.** (2018). Magnetoencephalography (MEG) as a Technique for Imaging Brain Function and Dysfunction. In *Top 10 Contributions on Psychology* (Chapter 4, pp. 1-38). Telangana, India: Avid Science
 
@@ -232,7 +195,7 @@ fontsize: 12pt
 
 - Zhou, P., Su, Y., Crain, S., Gao, L., & **Zhan, L.** (2010, August). *Children’s use of prosodic information in ambiguity resolution*. Oral session presented at the 8th Conference of Generative Linguistics in the Old World Asia (GLOW-in-Asia 8), Beijing, China.
 
-5. Invited talks
+3. Invited talks
 
 - **Zhan, L.** (2020, October). *Language and Language Development*. Invited lecture given at the course of *Language +* organized by Prof. Si. [<i class="far fa-file-pdf"> \faFilePdf[regular] </i>](https://publications.likan.info/Talks/Language_and_Language_Development.pdf)
 
