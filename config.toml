@@ -1,4 +1,4 @@
-baseurl = "https://likan.info/"
+baseurl = "https://likan.org/"
 languageCode = "en-us"
 title = "Zhan, Likan | 战立侃"
 theme = "hugo-ivy"
@@ -80,7 +80,7 @@ disablePathToLower = true
 
 [params]
     description        = "Personal website of Likan Zhan"
-    disqusURL          = "https://likan.info"
+    disqusURL          = "https://likan.org"
     githubContentURL   = "https://github.com/rbind/likan/edit/master/content/"
     highlightjsVersion = "9.12.0"
     highlightjsLang    = ["r", "yaml", "tex"]
@@ -88,7 +88,7 @@ disablePathToLower = true
     dateFormat         = "2006-01-02" # "2006-01-02, Mon, "
 
 [params.accounts]
-    email          = "zhanlikan@hotmail.com"
+    email          = "zhan@likan.org"
     github         = "https://github.com/likanzhan"
     google_scholar = "https://scholar.google.com/citations?user=QvyaktcAAAAJ&hl=en"
     academia       = "https://blcu.academia.edu/likanzhan"
@@ -100,7 +100,7 @@ disablePathToLower = true
 
 [params.footer]
     en = "Powered by [Hugo](https://gohugo.io) and [Blogdown](https://bookdown.org/yihui/blogdown/)  &copy; [Likan Zhan](/) 2017 - 2023"
-    cn = "本站由 [Hugo](https://gohugo.io) 和 [Blogdown](https://bookdown.org/yihui/blogdown/) 强力驱动 &copy; [战立侃](/)      2017 - 2023"
+    cn = "本站由 [Hugo](https://gohugo.io) 和 [Blogdown](https://bookdown.org/yihui/blogdown/) 驱动 &copy; [战立侃](/)      2017 - 2023"
 
 [params.author]
     en = "Likan Zhan"
