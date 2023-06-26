@@ -14,7 +14,7 @@ disablePathToLower = true
 
 [[menu.main]]
     name = "English"
-    url = "/en／"
+    url = "/en/"
     weight = 1
 
 [[menu.main]]
@@ -99,8 +99,8 @@ disablePathToLower = true
     osf            = "https://osf.io/j8wrg"
 
 [params.footer]
-    en = "Powered by [Hugo](https://gohugo.io) and [Blogdown](https://bookdown.org/yihui/blogdown/)  &copy; [Likan Zhan](/) 2017 - 2020"
-    cn = "本站由 [Hugo](https://gohugo.io) 和 [Blogdown](https://bookdown.org/yihui/blogdown/) 强力驱动 &copy; [战立侃](/)      2017 - 2020"
+    en = "Powered by [Hugo](https://gohugo.io) and [Blogdown](https://bookdown.org/yihui/blogdown/)  &copy; [Likan Zhan](/) 2017 - 2023"
+    cn = "本站由 [Hugo](https://gohugo.io) 和 [Blogdown](https://bookdown.org/yihui/blogdown/) 强力驱动 &copy; [战立侃](/)      2017 - 2023"
 
 [params.author]
     en = "Likan Zhan"
