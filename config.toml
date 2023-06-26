@@ -22,11 +22,6 @@ disablePathToLower = true
     url = "/cn/"
     weight = 2
 
-[[menu.main]]
-    name = "小组"
-    url = "https://sapere-aude.group"
-    weight = 3
-
 [[menu.en]]
     name = "Home"
     url = "/"
