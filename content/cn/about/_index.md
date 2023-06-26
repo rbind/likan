@@ -14,6 +14,6 @@ disable_comments: true
 
 更多信息请访问其
 
-个人网站：https://likan.info
+个人网站：https://likan.org
 
 新浪微博: http://weibo.com/likanzhan
