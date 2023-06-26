@@ -33,11 +33,6 @@ disablePathToLower = true
     weight = 1
 
 [[menu.en]]
-    name = "About"
-    url = "/en/about/"
-    weight = 2
-
-[[menu.en]]
     name = "CV"
     url = "/en/cv/likan_zhan_cv_en/"
     weight = 3
@@ -56,11 +51,6 @@ disablePathToLower = true
     name = "首页"
     url = "/"
     weight = 1
-
-[[menu.cn]]
-    name = "关于"
-    url = "/cn/about/"
-    weight = 2
 
 [[menu.cn]]
     name = "简历"
