@@ -29,7 +29,7 @@ disablePathToLower = true
 
 [[menu.en]]
     name = "Teach"
-    url = "/teach"
+    url = "/en/teach"
     weight = 1
 
 [[menu.en]]
