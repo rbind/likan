@@ -28,6 +28,11 @@ disablePathToLower = true
     weight = 1
 
 [[menu.en]]
+    name = "Teach"
+    url = "/teach"
+    weight = 1
+
+[[menu.en]]
     name = "CV"
     url = "/en/cv/likan_zhan_cv_en/"
     weight = 3
