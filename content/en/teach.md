@@ -1,5 +1,5 @@
 ---
-title: "Lecture Notes"
+title: "Statistics for the Behavioral Sciences"
 date: "2023-09-20"
 disable_comments: true
 ---
