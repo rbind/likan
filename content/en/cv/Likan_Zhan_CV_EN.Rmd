@@ -105,8 +105,9 @@ fontsize: 12pt
 ## Professional Activities
 
 1. Ad-hoc reviews
-
-- Cognition (2020 - );
+- Journal of Psycholinguistic Research (2023 - )
+- Journal of Pragmatics(2022 - )、
+- Cognition (2021 - );
 - International Journal of Developmental Disabilities (2021 - );
 - Language, Cognition and Neuroscience (2021 - );
 - First Language. (2021 - );

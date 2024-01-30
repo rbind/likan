@@ -91,23 +91,17 @@ fontsize: 12pt
 
 1. 匿名评审
 
-- Cognition (2021 - )
-
-- International Journal of Developmental Disabilities (2021 - );
-
-- Language, Cognition and Neuroscience (2021 - );
-
-- First Language. (2021 - );
-
-- Frontiers in Psychology. (2020 - );
-
-- Scientific Reports. (2018 - 2019);
-
-- Journal of visualized experiments. (2018 - 2019);
-
-- 语言教学与研究. (In Chinese, 2016 - );
-
-- SAGE Open. (2016).
+Journal of Psycholinguistic Research (2023 - )
+Journal of Pragmatics(2022 - )、
+Cognition (2021 - )、
+International Journal of Developmental Disabilities (2021 - )、
+Language, Cognition and Neuroscience (2021 - )、
+First Language. (2021 - )、
+Frontiers in Psychology. (2020 - )、
+Scientific Reports. (2018 - )、
+Journal of visualized experiments. (2018 - )、
+语言教学与研究. (In Chinese, 2016 - )、
+SAGE Open. (2016 - )、
 
 2. Frontiers in Psychology, Review Editor in Language Sciences (2020 - )
 
@@ -156,7 +150,6 @@ fontsize: 12pt
 2. 会议论文集、书、或书的章节
 
 - **Zhan, L.** (2015). *The Interpretation of Conditionals in Natural Language*. Saarbrucken, Germany: Lap Lambert Academic Publishing.
-
 
 - **Zhan, L.** (2018). Magnetoencephalography (MEG) as a Technique for Imaging Brain Function and Dysfunction. In *Top 10 Contributions on Psychology* (Chapter 4, pp. 1-38). Telangana, India: Avid Science
 
